@@ -1,21 +1,21 @@
-# **The Standard Order Protocol (The Accelerator)**
+# The Standard Order Protocol (The Accelerator)
 
 Version: 1.0  
 Phase: Lane 1 (Toaster / PLG)  
 Audience: Account Executives / Sales Ops / CS Lead  
 Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" handoffs.
 
-## **⚠️ The Triage Check**
+## ⚠️ The Triage Check
 
 *Before using this protocol, verify the Deal Score:*
 
-* **Risk Calculator Score:** Must be **\< 10**.  
-* **Override Check:** Customer has **NOT** asked for a Pilot, POC, or Custom Security Review.  
-* **Asset Specificity:** No deep integration required.
+- **Risk Calculator Score:** Must be **\< 10**.  
+- **Override Check:** Customer has **NOT** asked for a Pilot, POC, or Custom Security Review.  
+- **Asset Specificity:** No deep integration required.
 
 **The Rule:** If the score is \> 10, STOP. You are in the wrong lane. Deploy the *Contextual Blueprint* (Lane 2).
 
-## **Step 1: The "No-Touch" Configuration**
+## Step 1: The "No-Touch" Configuration
 
 *We do not "sell" Toasters; we facilitate their purchase.*
 
@@ -23,7 +23,7 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 2. **The Discovery:** Limited to BANT (Budget, Authority, Need, Timing). Do not map political stakeholders.  
 3. **The Pricing:** Standard tier only. No custom discounting requiring CFO approval.
 
-## **Step 2: The Prospect Evaluation Form (Internal Handoff)**
+## Step 2: The Prospect Evaluation Form (Internal Handoff)
 
 *Goal: A 2-minute "Fit Check" for Customer Success. We want speed, but not blindness.*
 
@@ -41,23 +41,23 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 
 **Logic:** If Technical Fit is NO or Karen Check is RED, this is not a Toaster. It is a Bridge in disguise. **Abort Velocity Motion.**
 
-## **Step 3: The Standard Order Form (External)**
+## Step 3: The Standard Order Form (External)
 
 *Goal: Zero Friction. One signature.*
 
 **The Contract Structure:**
 
-* **Term:** 12 Months Auto-Renew.  
-* **Payment:** Credit Card or ACH (Net 15).  
-* **Legal:** Click-through MSA (Master Services Agreement). **No redlines accepted.**  
+- **Term:** 12 Months Auto-Renew.  
+- **Payment:** Credit Card or ACH (Net 15).  
+- **Legal:** Click-through MSA (Master Services Agreement). **No redlines accepted.**  
   * *Script:* "To keep our pricing this competitive, we use a standard, non-negotiable MSA for this tier. If legal review is required, we can move you to our Enterprise tier (3x cost)."
 
 **The Delivery Mechanism:**
 
-* Send via PandaDoc/DocuSign with **Auto-Provisioning** trigger.  
-* Upon signature, the "Welcome Email" with login credentials is sent *immediately*.
+- Send via PandaDoc/DocuSign with **Auto-Provisioning** trigger.  
+- Upon signature, the "Welcome Email" with login credentials is sent *immediately*.
 
-## **Step 4: The "Silent" Handoff**
+## Step 4: The "Silent" Handoff
 
 *There is no "Handoff Call" for Lane 1\. The product is the onboarding.*
 
@@ -66,7 +66,7 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 3. **Rep Duty:** Send one personal "Thank You" video (30 seconds).  
 4. **Post-Sale Support:** Direct customer to Knowledge Base and Support Ticket portal.
 
-## **Summary of Differences (Bridge vs. Toaster)**
+## Summary of Differences (Bridge vs. Toaster)
 
 | Feature | Bridge (Lane 2\) | Toaster (Lane 1\) |
 | :---- | :---- | :---- |

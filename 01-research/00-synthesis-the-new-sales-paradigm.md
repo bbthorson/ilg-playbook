@@ -6,19 +6,19 @@ The traditional B2B sales playbook—built on persuasion, relationship-building,
 
 ### 1. The Core Problem: The Fear Economy
 The primary barrier to B2B sales is not price or competition, but **Fear**.
-*   **Fear of Failure (FOMU):** Buyers are paralyzed by the risk of messing up. As established in *Fear of Failure.md*, the personal cost of a bad decision (blame, job loss) outweighs the corporate benefit of a good one.
-*   **Loss Aversion:** *Prospect Theory.md* proves that buyers are ~2.25x more sensitive to potential losses than gains. A "safe" status quo is mathematically preferred over a "high-ROI" change.
-*   **Omission Bias:** Buyers prefer to do nothing (omission) rather than take an action that might fail (commission), leading to the "No Decision" epidemic.
+-   **Fear of Failure (FOMU):** Buyers are paralyzed by the risk of messing up. As established in *Fear of Failure.md*, the personal cost of a bad decision (blame, job loss) outweighs the corporate benefit of a good one.
+-   **Loss Aversion:** *Prospect Theory.md* proves that buyers are ~2.25x more sensitive to potential losses than gains. A "safe" status quo is mathematically preferred over a "high-ROI" change.
+-   **Omission Bias:** Buyers prefer to do nothing (omission) rather than take an action that might fail (commission), leading to the "No Decision" epidemic.
 
 ### 2. The Economic Reality: Friction is Necessary
 Contrary to the popular belief in "frictionless" experiences, complex B2B transactions *require* friction to function.
-*   **Costly Signals:** As detailed in *Costly Signals.md*, "friction" (long discovery, paid pilots, security audits) acts as a proof of quality. In a "Market for Lemons" (*Game Theory and NRR.md*), easy promises are "Cheap Talk." Only "Costly Signals" separate high-quality vendors from vaporware.
-*   **Transaction Costs:** *Total Cost Economics.md* explains that high "Asset Specificity" (deep integration) creates risk. The sales process is an *ex ante* investment to reduce *ex post* transaction costs (maladaptation, holdup).
+-   **Costly Signals:** As detailed in *Costly Signals.md*, "friction" (long discovery, paid pilots, security audits) acts as a proof of quality. In a "Market for Lemons" (*Game Theory and NRR.md*), easy promises are "Cheap Talk." Only "Costly Signals" separate high-quality vendors from vaporware.
+-   **Transaction Costs:** *Total Cost Economics.md* explains that high "Asset Specificity" (deep integration) creates risk. The sales process is an *ex ante* investment to reduce *ex post* transaction costs (maladaptation, holdup).
 
 ### 3. The Solution: Sales as Implementation Science
 To overcome fear and build trust, we must treat sales as an implementation science discipline.
-*   **CFIR Framework:** Use the *Consolidated Framework for Implementation Research* to diagnose the "Inner Setting" of the buyer. Resistance is not an objection to be handled; it is data about implementation readiness.
-*   **RE-AIM Protocol:** Redefine success using the *RE-AIM Framework*:
+-   **CFIR Framework:** Use the *Consolidated Framework for Implementation Research* to diagnose the "Inner Setting" of the buyer. Resistance is not an objection to be handled; it is data about implementation readiness.
+-   **RE-AIM Protocol:** Redefine success using the *RE-AIM Framework*:
     *   **Reach:** Are we reaching the right users? (Avoid Shelfware)
     *   **Effectiveness:** Are we driving real ROI? (Avoid Vanity Metrics)
     *   **Adoption:** Are users habituating the tool? (Avoid Shallow Usage)
@@ -27,8 +27,8 @@ To overcome fear and build trust, we must treat sales as an implementation scien
 
 ### 4. The Game Theoretic Alignment
 The current "Hunter" (Sales) vs. "Farmer" (CS) model creates a Prisoner's Dilemma where "Overselling" is the dominant strategy (*Game Theory and NRR.md*).
-*   **Shadow of the Future:** We must extend the "Shadow of the Future" into the sales cycle. Sales reps must be incentivized on NRR and long-term retention, not just bookings.
-*   **Separating Equilibrium:** We must use "Costly Signals" (e.g., paid trials, consumption pricing) to prove we are "Peaches" in a market of "Lemons."
+-   **Shadow of the Future:** We must extend the "Shadow of the Future" into the sales cycle. Sales reps must be incentivized on NRR and long-term retention, not just bookings.
+-   **Separating Equilibrium:** We must use "Costly Signals" (e.g., paid trials, consumption pricing) to prove we are "Peaches" in a market of "Lemons."
 
 ### 5. The New Playbook: From "Always Be Closing" to "Always Be Validating"
 The new sales motion is diagnostic and scientific.

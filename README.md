@@ -21,10 +21,10 @@ ILG addresses these through **costly signals** (workshops, blueprints, pre-morte
 
 ## Repository Structure
 
-### [00. Foundation](./00.%20Foundation)
+### [00-foundation](./00-foundation)
 **The core theoretical framework**
 
-- **[ILG Constitution](./00.%20Foundation/ILG%20Constitution.md)** - The complete economic and behavioral theory
+- **[ILG Constitution](./00-foundation/ilg-constitution.md)** - The complete economic and behavioral theory
   - Part I: Core Economic Theory (Fundamental Equation, Deal Zone, Repeated Game)
   - Part II: The Six Axioms (Diagnostic, Behavioral, and Structural Laws)
   - Part III: Organizational Corollary (Mapping Costs to Departments)
@@ -35,65 +35,65 @@ ILG addresses these through **costly signals** (workshops, blueprints, pre-morte
 
 ---
 
-### [01. Research](./01.%20Research)
+### [01-research](./01-research)
 **Academic evidence and deep dives**
 
 Supporting research that validates the ILG framework:
-- [CFIR.md](./01.%20Research/CFIR.md) - Implementation Science framework
-- [Costly Signals.md](./01.%20Research/Costly%20Signals.md) - Signaling theory in sales
-- [Fear of Failure.md](./01.%20Research/Fear%20of%20Failure.md) - The JOLT Effect and buyer inaction
-- [Game Theory and NRR.md](./01.%20Research/Game%20Theory%20and%20NRR.md) - Repeated games and retention
-- [Total Cost Economics.md](./01.%20Research/Total%20Cost%20Economics.md) - Transaction cost theory
+- [cfir.md](./01-research/cfir.md) - Implementation Science framework
+- [costly-signals.md](./01-research/costly-signals.md) - Signaling theory in sales
+- [fear-of-failure.md](./01-research/fear-of-failure.md) - The JOLT Effect and buyer inaction
+- [game-theory-and-nrr.md](./01-research/game-theory-and-nrr.md) - Repeated games and retention
+- [total-cost-economics.md](./01-research/total-cost-economics.md) - Transaction cost theory
 
 ---
 
-### [02. Market Data](./02.%20Market%20Data)
+### [02-market-data](./02-market-data)
 **Empirical validation and case studies**
 
 *Currently being populated*
 
 ---
 
-### [03. Field Assets](./03.%20Field%20Assets)
+### [03-field-assets](./03-field-assets)
 **Practical tools for sales execution**
 
 Operational playbooks and processes:
-- [ILG/](./03.%20Field%20Assets/ILG) - Implementation-Led Growth motion
-- [PLG/](./03.%20Field%20Assets/PLG) - Product-Led Growth motion
-- [Process Calculator.md](./03.%20Field%20Assets/Process%20Calculator.md) - Deal triage tool
+- [ilg-motion/](./03-field-assets/ilg-motion) - Implementation-Led Growth motion
+- [plg-motion/](./03-field-assets/plg-motion) - Product-Led Growth motion
+- [process-calculator.md](./03-field-assets/process-calculator.md) - Deal triage tool
 
 ---
 
-### [04. Internal Ops](./04.%20Internal%20Ops)
+### [04-internal-ops](./04-internal-ops)
 **Governance and alignment mechanisms**
 
 Internal tools for organizational alignment:
-- [Bilateral Asymmetry Scorecard.md](./04.%20Internal%20Ops/Bilateral%20Asymetry%20Scorecard.md) - Diagnose information gaps
-- [Deal Calibration.md](./04.%20Internal%20Ops/Deal%20Calibration.md) - Qualify deal fit
-- [Vested Commission Agreement.md](./04.%20Internal%20Ops/Vested%20Commission%20Agreement.md) - Align rep incentives with outcomes
+- [asymmetry-scorecard.md](./04-internal-ops/04-incentives-asymmetry-scorecard.md) - Diagnose information gaps
+- [deal-calibration.md](./04-internal-ops/01-governance-deal-calibration.md) - Qualify deal fit
+- [vested-commission.md](./04-internal-ops/03-incentives-vested-commission.md) - Align rep incentives with outcomes
 
 ---
 
-### [05. Learning Plan](./05.%20Learning%20Plan)
+### [05-learning-plan](./05-learning-plan)
 **Training curriculum and onboarding**
 
-- [Curriculum.md](./05.%20Learning%20Plan/Curriculum.md) - Training program structure
+- [curriculum.md](./05-learning-plan/curriculum.md) - Training program structure
 
 ---
 
-### [tools/](./tools)
+### [06-tools](./06-tools)
 **AI and automation resources**
 
-- [AI Persona.md](./tools/AI%20Persona.md) - Instructions for AI-assisted deal analysis
+- [ai-persona.md](./06-tools/ai-persona.md) - Instructions for AI-assisted deal analysis
 
 ---
 
 ## Quick Start
 
-1. **Understand the Theory** → Read [ILG Constitution](./00.%20Foundation/ILG%20Constitution.md)
-2. **See the Evidence** → Browse [01. Research](./01.%20Research) for academic backing
-3. **Apply in Practice** → Use [03. Field Assets](./03.%20Field%20Assets) for execution
-4. **Align Your Team** → Implement [04. Internal Ops](./04.%20Internal%20Ops) governance
+1. **Understand the Theory** → Read [ILG Constitution](./00-foundation/ilg-constitution.md)
+2. **See the Evidence** → Browse [01-research](./01-research) for academic backing
+3. **Apply in Practice** → Use [03-field-assets](./03-field-assets) for execution
+4. **Align Your Team** → Implement [04-internal-ops](./04-internal-ops) governance
 
 ---
 
@@ -133,7 +133,7 @@ Where:
 ## Contributing
 
 This knowledge base is a living document. As you apply ILG in the field:
-- Document case studies in `02. Market Data`
+- Document case studies in `02-market-data`
 - Refine field assets based on what works
 - Update research with new evidence
 

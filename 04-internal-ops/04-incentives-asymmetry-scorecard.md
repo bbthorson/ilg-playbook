@@ -1,14 +1,14 @@
-# **The Bilateral Asymmetry Scorecard**
+# The Bilateral Asymmetry Scorecard
 
 Type: Internal Ops / Deal Desk  
 Owner: Sales Manager & Rep  
 Frequency: Weekly Forecast Call  
 **Purpose:** To measure if the deal is "symmetric" enough to close.
 
-* **Theory:** A deal only sticks when Information Asymmetry ($I\_A$) for *both* parties reaches 0\.  
-* **Rule:** If the Delta \> 5, the deal is at high risk of "No Decision" or Churn.
+- **Theory:** A deal only sticks when Information Asymmetry ($I\_A$) for *both* parties reaches 0\.  
+- **Rule:** If the Delta \> 5, the deal is at high risk of "No Decision" or Churn.
 
-## **Part 1: Seller Asymmetry (What WE don't know)**
+## Part 1: Seller Asymmetry (What WE don't know)
 
 *Rate from 0 (Total Ignorance) to 5 (Perfect Clarity)*
 
@@ -27,7 +27,7 @@ Frequency: Weekly Forecast Call
 
 **Seller Clarity Score (Total / 15):** \_\_\_\_\_\_
 
-## **Part 2: Buyer Asymmetry (What THEY don't know)**
+## Part 2: Buyer Asymmetry (What THEY don't know)
 
 *Rate from 0 (Total Ignorance/Hallucination) to 5 (Perfect Clarity)*
 
@@ -46,11 +46,11 @@ Frequency: Weekly Forecast Call
 
 **Buyer Clarity Score (Total / 15):** \_\_\_\_\_\_
 
-## **The Asymmetry Delta**
+## The Asymmetry Delta
 
 *Calculate: |Seller Score \- Buyer Score|*
 
-* **Delta \< 3 (Symmetric):** ✅ **Forecastable.** (The deal is real and honest).  
-* **Delta \> 5 (Asymmetric):** ⚠️ **Risk.** (One side is blind).  
+- **Delta \< 3 (Symmetric):** ✅ **Forecastable.** (The deal is real and honest).  
+- **Delta \> 5 (Asymmetric):** ⚠️ **Risk.** (One side is blind).  
   * *If Seller Score is low:* You are flying blind. Go back to Blueprint.  
   * *If Buyer Score is low:* They are hallucinating. Go back to Red Team.

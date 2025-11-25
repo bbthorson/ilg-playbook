@@ -1,18 +1,18 @@
-# **Deal Calibration Sheet (The Manager's View)**
+# Deal Calibration Sheet (The Manager's View)
 
 Type: Internal Ops / Forecast  
 Owner: VP Sales / CRO  
 Goal: To calibrate the "Commit" forecast based on Friction, not Hope.
 
-## **The Classification Check**
+## The Classification Check
 
 *First, validate the Lane.*
 
-* **Deal Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
-* **Lane:** \[ \] Lane 1 (Toaster) / \[ \] Lane 2 (Bridge)  
-* **Manager Challenge:** "Why is this a Bridge? Show me the Risk Calculator score." (Score: \_\_\_\_)
+- **Deal Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+- **Lane:** \[ \] Lane 1 (Toaster) / \[ \] Lane 2 (Bridge)  
+- **Manager Challenge:** "Why is this a Bridge? Show me the Risk Calculator score." (Score: \_\_\_\_)
 
-## **The Friction Audit (For Bridge Deals Only)**
+## The Friction Audit (For Bridge Deals Only)
 
 *Do not ask 'When will it close?' Ask 'Have we done the work?'*
 
@@ -22,7 +22,7 @@ Goal: To calibrate the "Commit" forecast based on Friction, not Hope.
 | **What** | **Red Team Workshop** | "Did we find a failure mode, or was it a 'Happy Ears' demo?" | \[ \] |
 | **How** | **MIP (Governance)** | "Is the resource plan attached to the contract?" | \[ \] |
 
-## **The "No Decision" Risk Analysis**
+## The "No Decision" Risk Analysis
 
 *If the deal slips, it will be because of one of these three variables.*
 
@@ -33,10 +33,10 @@ Goal: To calibrate the "Commit" forecast based on Friction, not Hope.
 3. **Asymmetry Risk (**$I\_A$**):** Do they not trust us?  
    * *Fix:* Offer a "Paid Pilot" (Costly Signal) to prove intent.
 
-## **The Forecast Verdict**
+## The Forecast Verdict
 
-* **Commit:** All Artifacts Green \+ Asymmetry Delta \< 3\.  
-* **Best Case:** Artifacts in progress.  
-* **Pipeline:** Blueprint not signed.
+- **Commit:** All Artifacts Green \+ Asymmetry Delta \< 3\.  
+- **Best Case:** Artifacts in progress.  
+- **Pipeline:** Blueprint not signed.
 
 **Manager's Oath:** "I will not commit a Bridge deal that has not survived a Red Team Workshop."

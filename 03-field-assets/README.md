@@ -16,7 +16,7 @@ This directory contains the practical artifacts you deploy with customers during
 
 The ILG motion uses three sequential artifacts to drive information asymmetry ($I_A$) to zero before signature:
 
-### [01. Contextual Blueprint](./ILG/01.%20Contextual%20Blueprint.md)
+### [01. Contextual Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md)
 
 **Purpose:** Closes the **Preference Gap** (Seller Asymmetry)
 
@@ -32,7 +32,7 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 ---
 
-### [02. Red Team Protocol](./ILG/02.%20Red%20Team%20Protocol.md)
+### [02. Red Team Protocol](./ilg-motion/02-validation-red-team-protocol.md)
 
 **Purpose:** Closes the **Performance Gap** (Buyer Asymmetry)
 
@@ -48,7 +48,7 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 ---
 
-### [03. Mutual Implementation Plan](./ILG/03.%20Mutual%20Implementation%20Plan.md)
+### [03. Mutual Implementation Plan](./ilg-motion/03-closing-mutual-implementation-plan.md)
 
 **Purpose:** Governance & Incentive Alignment
 
@@ -86,7 +86,7 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 **When to Use:** Toaster deals (score 3-9 on diagnostic rubric)
 
-### [PLG](./PLG)
+### [PLG](./plg-motion)
 
 **Strategy:** Optimize for velocity, not safety
 
@@ -102,7 +102,7 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 ## Triage Tool
 
-### [Process Calculator](./Process%20Calculator.md)
+### [Process Calculator](./process-calculator.md)
 
 **Purpose:** Classify deals as Bridge or Toaster
 
@@ -168,10 +168,10 @@ ILG artifacts systematically reduce these costs by driving $I_A \to 0$ before si
 
 ## Related Resources
 
-- [ILG Constitution](../00.%20Foundation/ILG%20Constitution.md) - Theoretical framework
-- [Bilateral Asymmetry Scorecard](../04.%20Internal%20Ops/Bilateral%20Asymetry%20Scorecard.md) - Measure deal symmetry
-- [Deal Calibration](../04.%20Internal%20Ops/Deal%20Calibration.md) - Manager's forecast tool
-- [Learning Plan](../05.%20Learning%20Plan) - Training curriculum
+- [ILG Constitution](../00-foundation/ilg-constitution.md) - Theoretical framework
+- [Bilateral Asymmetry Scorecard](../04-internal-ops/04-incentives-asymmetry-scorecard.md) - Measure deal symmetry
+- [Deal Calibration](../04-internal-ops/01-governance-deal-calibration.md) - Manager's forecast tool
+- [Learning Plan](../05-learning-plan) - Training curriculum
 
 ---
 

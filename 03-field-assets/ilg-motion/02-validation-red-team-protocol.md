@@ -1,54 +1,54 @@
-# **The Red Team Protocol (The Validator)**
+# The Red Team Protocol (The Validator)
 
 Version: 2.0  
 Phase: 02\_The\_What (Product Reality & Stress Test)  
 Audience: Technical Evaluators / End Users / Skeptics  
 Goal: To convert "Rational Fear" into "Confidence" and identify the Saboteur.
 
-## **⚠️ Rep Compliance: The Ratio Check**
+## ⚠️ Rep Compliance: The Ratio Check
 
 *Before the workshop, verify your content density:*
 
-* \[ \] **20% Business (Why):** Re-state the North Star (briefly).  
-* \[ \] **50% Product (What):** Stress-test the failure modes.  
-* \[ \] **30% Technical (How):** Preview the resource cost of the fix.
+- \[ \] **20% Business (Why):** Re-state the North Star (briefly).  
+- \[ \] **50% Product (What):** Stress-test the failure modes.  
+- \[ \] **30% Technical (How):** Preview the resource cost of the fix.
 
-## **Section 1: The Pre-Mortem (The Product What)**
+## Section 1: The Pre-Mortem (The Product What)
 
 *Assume it is 12 months from now, and the project has failed. Why?*
 
-### **1.1 The Failure Modes (Inverted RE-AIM)**
+### 1.1 The Failure Modes (Inverted RE-AIM)
 
-* **Adoption Failure:** Users didn't log in because... (e.g., "Too many clicks")  
-* **Technical Failure:** The integration broke because... (e.g., "Bad data quality")  
-* **Political Failure:** The project was killed because... (e.g., "Sponsor left")
+- **Adoption Failure:** Users didn't log in because... (e.g., "Too many clicks")  
+- **Technical Failure:** The integration broke because... (e.g., "Bad data quality")  
+- **Political Failure:** The project was killed because... (e.g., "Sponsor left")
 
-### **1.2 The Gap Analysis (Honesty Hour)**
+### 1.2 The Gap Analysis (Honesty Hour)
 
 *Where does the product struggle in your specific environment?*
 
-* **Gap Identified:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
-* **Proposed Workaround:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
-* **Buyer Sign-off:** "We accept this workaround." \[Yes/No\]
+- **Gap Identified:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+- **Proposed Workaround:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+- **Buyer Sign-off:** "We accept this workaround." \[Yes/No\]
 
-## **Section 2: The Resource Preview (The Technical How)**
+## Section 2: The Resource Preview (The Technical How)
 
 *If these failures happen, what is the cost to fix them?*
 
-### **2.1 The Crisis Response Team**
+### 2.1 The Crisis Response Team
 
-* **When X breaks, who fixes it?**  
-* **Buyer Owner:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
-* **Vendor Owner:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- **When X breaks, who fixes it?**  
+- **Buyer Owner:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+- **Vendor Owner:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-## **Section 3: The Stakeholder Diagnosis (Internal Only)**
+## Section 3: The Stakeholder Diagnosis (Internal Only)
 
 *Map the room during the session.*
 
-### **3.1 The Resistance Profile**
+### 3.1 The Resistance Profile
 
-* **The Skeptic:** Asked hard questions about data/features. (Action: **Co-opt** with answers).  
-* **The Saboteur:** Asked vague questions about "culture" or "timing"; blocked access. (Action: **Contain** via Political Map).
+- **The Skeptic:** Asked hard questions about data/features. (Action: **Co-opt** with answers).  
+- **The Saboteur:** Asked vague questions about "culture" or "timing"; blocked access. (Action: **Contain** via Political Map).
 
 **Decision Gate:** Do we have a credible path to technical victory? If Yes \-\> Proceed to MIP.
 
@@ -56,7 +56,7 @@ Goal: To convert "Rational Fear" into "Confidence" and identify the Saboteur.
 
 Triage this original content:
 
-# **The Red Team Facilitator Guide**
+# The Red Team Facilitator Guide
 
 Internal Name: The Pre-Mortem / Red Team Workshop
 
@@ -70,7 +70,7 @@ Required Attendees: Your Champion \+ The Skeptic (Technical/Operational Lead)
 
 ---
 
-## **Phase I: The Rules of Engagement (5 Minutes)**
+## Phase I: The Rules of Engagement (5 Minutes)
 
 *Set the stage. You must disarm the "Sales Resistance" immediately.*
 
@@ -86,68 +86,68 @@ Today, we are going to use a method called **'Prospective Hindsight.'** We are g
 
 ---
 
-## **Phase II: The "Failure Rounds" (Inverted RE-AIM) (35 Minutes)**
+## Phase II: The "Failure Rounds" (Inverted RE-AIM) (35 Minutes)
 
 *The Rep leads 5 rapid-fire rounds. Do not argue with the risks raised. Validate them and write them down.*
 
-### **Round 1: Reach Failure (The "Ghost Town" Risk)**
+### Round 1: Reach Failure (The "Ghost Town" Risk)
 
 **The Prompt:**
 
 "Imagine it is Launch Day \+ 30\. The system is live, but **50% of your target users don't even know it exists.** Why did that happen?"
 
-* **Facilitator Probes:**  
+- **Facilitator Probes:**  
   * Did the email training get caught in spam?  
   * Are remote employees excluded from the network?  
   * Did we rely on a "Intranet post" that nobody reads?
 
-### **Round 2: Adoption Failure (The "Rebellion" Risk)**
+### Round 2: Adoption Failure (The "Rebellion" Risk)
 
 **The Prompt:**
 
 "Everyone knows about the tool, but a specific department or location **refuses to log in**. They are sticking to their spreadsheets. Who is it, and why?"
 
-* **Facilitator Probes:**  
+- **Facilitator Probes:**  
   * Is it the \[Department identified in Blueprint\] because of the "Sacred Cow"?  
   * Is the Union blocking it?  
   * Is the new workflow actually *slower* for them than the old one?
 
-### **Round 3: Implementation Failure (The "Crash" Risk)**
+### Round 3: Implementation Failure (The "Crash" Risk)
 
 **The Prompt:**
 
 "We flip the switch, and the system breaks immediately. Or, it breaks a downstream system (like your ERP). **What broke first?**"
 
-* **Facilitator Probes:**  
+- **Facilitator Probes:**  
   * Did the API token expire?  
   * Did the firewall block the data sync?  
   * Did we accidentally corrupt the data migration?
 
-### **Round 4: Effectiveness Failure (The "So What?" Risk)**
+### Round 4: Effectiveness Failure (The "So What?" Risk)
 
 **The Prompt:**
 
 "People are using it, the tech is stable, but 6 months from now the CFO says **'This was a waste of money.'** Why are we failing to show ROI?"
 
-* **Facilitator Probes:**  
+- **Facilitator Probes:**  
   * Are we measuring the wrong KPI?  
   * Is the data "clean" enough to trust the reports?  
   * Did we save time but fail to cut costs?
 
-### **Round 5: Maintenance Failure (The "Churn" Risk)**
+### Round 5: Maintenance Failure (The "Churn" Risk)
 
 **The Prompt:**
 
 "It is one year from now. The project started well, but usage has dropped off a cliff, and you are cancelling the contract. **What changed?**"
 
-* **Facilitator Probes:**  
+- **Facilitator Probes:**  
   * Did the Champion (you) leave the company?  
   * Did a new Executive come in with a different agenda?  
   * Did we stop training new hires?
 
 ---
 
-## **Phase III: The Mitigation Map (20 Minutes)**
+## Phase III: The Mitigation Map (20 Minutes)
 
 *This is where you turn "Complaints" into "Contracts." You categorize every risk identified.*
 
@@ -171,7 +171,7 @@ My Solutions Architect needs 48 hours to investigate if we can build a custom br
 
 ---
 
-### **Facilitator Notes (Internal Training)**
+### Facilitator Notes (Internal Training)
 
 1. **Silence is Data:** If you ask "Who will refuse to use this?" and the room is silent, **call on the Saboteur**. "John, from an IT perspective, who usually complains the loudest about new tools?"  
 2. **Don't defend the Product:** If they say "Your UI looks confusing," do not say "Actually, it's very intuitive." Say: "Noted. UI complexity is an Adoption Risk. Let's write that down." Validation lowers defenses.  
@@ -179,7 +179,7 @@ My Solutions Architect needs 48 hours to investigate if we can build a custom br
 
 ---
 
-### **Next Step**
+### Next Step
 
 This covers the **Stress Test**. We have identified the risks.
 

@@ -17,15 +17,15 @@ This curriculum is designed to train sales reps on the ILG framework through int
 ## Getting Started
 
 1. **Read the [README](./README.md)** for complete usage instructions
-2. **Load [LLM Tutor Instructions](./LLM%20Tutor%20Instructions.md)** into your AI assistant
+2. **Load [LLM Tutor Instructions](./llm-tutor-instructions.md)** into your AI assistant
 3. **Work through modules sequentially** (0 → 1 → 2 → 3)
-4. **Practice with [Simulations](./Simulations.md)** after completing modules
+4. **Practice with [Simulations](./simulations.md)** after completing modules
 
 ---
 
 ## Module Structure
 
-### [Module 0: Triage Protocol](./Module%200%20-%20Triage%20Protocol.md) (2 hours)
+### [Module 0: Triage Protocol](./courses/module-0-triage-protocol.md) (2 hours)
 
 **Goal:** Classify deals as "Bridge" or "Toaster" using the diagnostic rubric
 
@@ -43,7 +43,7 @@ This curriculum is designed to train sales reps on the ILG framework through int
 
 ---
 
-### [Module 1: Economics of Fear](./Module%201%20-%20Economics%20of%20Fear.md) (3 hours)
+### [Module 1: Economics of Fear](./courses/module-1-economics-of-fear.md) (3 hours)
 
 **Goal:** Diagnose information asymmetry and fear-based objections
 
@@ -62,7 +62,7 @@ This curriculum is designed to train sales reps on the ILG framework through int
 
 ---
 
-### [Module 2: Science of Resistance](./Module%202%20-%20Science%20of%20Resistance.md) (3 hours)
+### [Module 2: Science of Resistance](./courses/module-2-science-of-resistance.md) (3 hours)
 
 **Goal:** Map political dynamics and build containment strategies
 
@@ -81,7 +81,7 @@ This curriculum is designed to train sales reps on the ILG framework through int
 
 ---
 
-### [Module 3: Infinite Game](./Module%203%20-%20Infinite%20Game.md) (2 hours)
+### [Module 3: Infinite Game](./courses/module-3-infinite-game.md) (2 hours)
 
 **Goal:** Understand retention economics and incentive alignment
 
@@ -102,7 +102,7 @@ This curriculum is designed to train sales reps on the ILG framework through int
 
 ## Simulations & Practice
 
-### [Simulations](./Simulations.md) (Ongoing)
+### [Simulations](./simulations.md) (Ongoing)
 
 **6 Interactive Scenarios:**
 1. Red Team Workshop Facilitation
@@ -118,7 +118,7 @@ This curriculum is designed to train sales reps on the ILG framework through int
 
 ## LLM Integration
 
-### [LLM Tutor Instructions](./LLM%20Tutor%20Instructions.md)
+### [LLM Tutor Instructions](./llm-tutor-instructions.md)
 
 Complete guide for configuring an LLM to facilitate ILG training, including:
 - Persona configuration (forensic, Socratic, anti-fluff)
@@ -132,10 +132,10 @@ Complete guide for configuring an LLM to facilitate ILG training, including:
 ## Knowledge Base Integration
 
 Throughout the curriculum, learners reference:
-- [ILG Constitution](../00.%20Foundation/ILG%20Constitution.md) - Core theory
-- [Research Papers](../01.%20Research) - Academic evidence
-- [Field Assets](../03.%20Field%20Assets) - Practical tools
-- [Internal Ops](../04.%20Internal%20Ops) - Governance mechanisms
+- [ILG Constitution](../00-foundation/ilg-constitution.md) - Core theory
+- [Research Papers](../01-research) - Academic evidence
+- [Field Assets](../03-field-assets) - Practical tools
+- [Internal Ops](../04-internal-ops) - Governance mechanisms
 
 ---
 
