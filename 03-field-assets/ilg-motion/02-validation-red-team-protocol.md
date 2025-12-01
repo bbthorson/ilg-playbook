@@ -145,6 +145,22 @@ Today, we are going to use a method called **'Prospective Hindsight.'** We are g
   * Did a new Executive come in with a different agenda?  
   * Did we stop training new hires?
 
+### Round 6: Workflow Chaos (The "Automation Trap" Risk)
+
+**The Prompt:**
+
+"Imagine we automate your current process **exactly as it is today**, without changing anything. Does it break? Does it expose problems that were previously hidden by manual workarounds?"
+
+- **Facilitator Probes:**  
+  * Is your current process actually broken, but people work around it?  
+  * Are there manual "judgment calls" that can't be automated?  
+  * Do different teams follow different versions of the process?  
+  * Is the process actually undefined (ad-hoc, varies by person)?
+
+**Critical Decision:** If the answer reveals that the workflow is undefined or fundamentally broken, **STOP.**  
+
+**Action:** This is **Quadrant III: The Chaos Trap.** Redirect to Consulting to define the SOP before attempting to sell software.
+
 ---
 
 ## Phase III: The Mitigation Map (20 Minutes)

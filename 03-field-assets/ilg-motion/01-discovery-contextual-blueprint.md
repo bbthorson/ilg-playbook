@@ -89,6 +89,27 @@ We use this Blueprint to map your specific environment—your politics, your dat
 
 ---
 
+### Part V: The Negative Capability Declaration (Costly Signal)
+
+*Goal: Build trust by explicitly stating what the platform CANNOT do. Only a high-quality vendor can afford to admit limitations.*
+
+**Theory:** This is a "Costly Signal" (Spence, 1973). "Lemons" must hide their flaws. "Peaches" can afford transparency. By stating our boundaries upfront, we validate that we are not lying about capabilities.
+
+**7. What We Cannot Do** *(Replace these examples with your actual platform limitations)*
+
+> [!IMPORTANT]
+> **Instructions for Implementation:** The examples below are placeholders. Replace them with YOUR platform's actual limitations. Be honest and specific.
+
+1. **Example Limitation 1:** We do not support real-time bi-directional sync with legacy on-premise databases (e.g., Oracle 9i). We can do batch imports every 4 hours, but not live streaming.
+
+2. **Example Limitation 2:** Our mobile app currently does not support offline mode. Users must have an active internet connection to access data.
+
+3. **Example Limitation 3:** We cannot generate custom compliance reports for industry-specific regulations (e.g., HIPAA audit logs) without a 30-day professional services engagement.
+
+**Why This Matters:** If any of these limitations are dealbreakers for your use case, we need to know NOW, not after contract signature.
+
+---
+
 ### Sales Rep Decision Gate (Internal Use Only)
 
 - **Green Light:** Catalyst is a "Crisis" \+ Skeptic is identified \+ Artifacts provided. \-\> *Move to Red Team Workshop.*  

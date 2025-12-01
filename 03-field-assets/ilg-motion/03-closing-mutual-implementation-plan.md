@@ -44,6 +44,41 @@ Goal: To contractualize the outcome and lock in the "Infinite Game."
   * \[ \] Solutions Engineer (5 hrs/week).  
   * \[ \] Custom Training Session.
 
+### 2.3 Resource Expiry Clause (Buyer Hostage / "Use It or Lose It")
+
+*Goal: Prevent buyer opportunism by creating accountability for timely implementation. This clause acts as "Skin in the Game" for the buyer.*
+
+**Theory:** Without a forcing function, buyers can internalize their coordination costs onto the vendor by stalling indefinitely. This clause creates Loss Aversion by making the buyer's inaction costly.
+
+**The Clause:**
+
+> Implementation resources (Solutions Engineering, Training, Support Hours) are reserved for **[DEFINE TIMEFRAME]** from contract signature (T-0).  
+>
+> If buyer-caused delays (e.g., delayed data access, unavailable stakeholders, postponed training sessions) cause the project to stall beyond **T+[TIMEFRAME]**, the following occurs:
+>
+> - \[ \] **Option A:** Implementation resources expire. Restart requires a **Restart Fee** of $\_\_\_\_\_\_.
+> - \[ \] **Option B:** Resource reservation extends for an additional **[TIMEFRAME]** at a **Holding Fee** of $\_\_\_\_\_/month.
+> - \[ \] **Option C:** *(Custom arrangement based on your business model)*
+
+**Defining the Timeframe:** 
+
+> [!WARNING]
+> **Calibration Required:** The timeframe must be defensible and aligned with typical implementation cycles in your industry. Use the following exercise:
+
+**Exercise: How to Set [TIMEFRAME]**
+
+1. **Review Historical Data:** What is the median time-to-value for successful implementations? (e.g., 90 days, 120 days)
+2. **Add Buffer:** Add 25-50% buffer for buyer coordination delays. (e.g., 90 days × 1.5 = 135 days)
+3. **Round to Milestone:** Align to a natural milestone (e.g., 90 days, 120 days, 6 months).
+4. **Test with Champion:** "If we can't get this live within [X] days due to delays on your side, should we pause and restart later?" (Gauge their reaction)
+
+**Safe Harbor Exceptions:** Resource expiry is waived for delays caused by:
+- Vendor-side technical failures
+- Force majeure events (M&A, leadership changes, regulatory changes)
+- Mutually agreed scope changes
+
+**Rationale:** This prevents the buyer from treating your implementation team as infinite, free labor. It internalizes their coordination costs and creates urgency.
+
 ## Section 3: The "Go / No-Go" Protocol
 
 *We do not launch until we are safe.*

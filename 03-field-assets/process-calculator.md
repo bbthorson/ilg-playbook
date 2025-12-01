@@ -1,9 +1,32 @@
 # The Mid-Market Risk Calculator (Automated Triage)
 
-Version: 1.0  
+Version: 2.0  
 Phase: 04\_Mid\_Market\_Lite  
 Audience: Internal Rep / Pre-Sales  
 Goal: To determine if a Mid-Market deal needs the "Heavy" Bridge or the "Lite" Toaster motion.
+
+## ⚠️ CRITICAL: The Workflow Maturity Gate (Pre-Qualification)
+
+**Before scoring the factors below, you MUST answer this binary question:**
+
+### Does a documented standard operating procedure (SOP) exist for this problem today?
+
+- [ ] **YES** - A documented workflow exists (written process, documented steps, known sequence of activities)
+- [ ] **NO** - The workflow is undefined, ad-hoc, or varies by person/team
+
+**If NO:** 🛑 **STOP. Do not proceed to Lane 2.**  
+
+**Diagnosis:** This is **Quadrant III: The Chaos Trap** (High Specificity + Undefined Workflow).  
+
+**Action Required:** Redirect to **Consulting/Paid Workshop** to define the SOP first. The prospect must graduate from Consulting → ILG.  
+
+**Rationale:** Selling software to automate an undefined workflow creates churn. You cannot digitize chaos.
+
+---
+
+**If YES:** ✅ Proceed to score the specificity factors below.
+
+---
 
 ## Instructions
 

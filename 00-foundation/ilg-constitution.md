@@ -48,7 +48,23 @@ SaaS is an "Infinite Game" governed by the Shadow of the Future.
 
 **Evidence:** Coase's Theorem (1937); Gartner (2025) on personalization regret.
 
-#### Axiom II: The Rationality of Inaction
+#### Axiom II: The Law of The Boundary (Workflow Definition)
+
+- **Definition:** High Asset Specificity is only solvable with software IF a defined workflow exists. Without workflow maturity, you are not selling to a Bridge—you are selling to a Construction Site.
+- **Operating Instruction:** "We do not sell to Chaos. If a prospect has high asset specificity but no defined workflow (no SOP), they are not ready for ILG. We must sell them Consulting first to define the workflow, then ILG to digitize it."
+
+**The Workflow vs. Specificity Matrix:**
+
+| | **Low Specificity** | **High Specificity** |
+|---|---|---|
+| **Defined Workflow** | **Quadrant I: Toaster**<br>*Strategy: PLG/SLG*<br>Low friction, commoditized | **Quadrant II: Bridge**<br>*Strategy: ILG*<br>High friction, governable |
+| **Undefined Workflow** | **Quadrant IV: Commodity**<br>*Strategy: Self-Service*<br>No workflow needed | **Quadrant III: Chaos**<br>*Strategy: Consulting*<br>**DO NOT SELL SOFTWARE** |
+
+**The Critical Rule:** Quadrant III (High Specificity + Undefined Workflow) is the "Chaos Trap." Selling software here creates churn. The prospect must graduate from Consulting → ILG.
+
+**Evidence:** Workflow Maturity Models; Implementation Science (CFIR Framework).
+
+#### Axiom III: The Rationality of Inaction
 
 - **Definition:** "No Decision" is a rational calculation where Fear ($I_A$) > Value ($V$).
 - **Operating Instruction:** "Fight indecision with risk mitigation (Certainty), not benefits (ROI)."
@@ -57,14 +73,14 @@ SaaS is an "Infinite Game" governed by the Shadow of the Future.
 
 ### Pillar 2: The Behavioral Laws (The Intervention)
 
-#### Axiom IV: The Law of Asymmetry Convergence
+#### Axiom V: The Law of Asymmetry Convergence
 
 - **Definition:** Trust requires closing the gap between -1 (Seller Asymmetry) and +1 (Buyer Asymmetry).
 - **Operating Instruction:** "Reject 'Cheap Talk' (Marketing). Deploy 'Costly Signals' (Workshops) OR leverage Brand Equity to demand high-friction validation. The deal cannot close until both parties reach the 'Symmetry Zone' (0)."
 
 **Evidence:** Signaling Theory (Spence, 1973); The Market for Lemons (Akerlof, 1970).
 
-#### Axiom V: The Law of Prospective Hindsight
+#### Axiom VI: The Law of Prospective Hindsight
 
 - **Definition:** The brain cannot predict failure while planning for success. Resistance is data.
 - **Operating Instruction:** "Use 'Pre-Mortems' to diagnose the resistance profile via Implementation Science principles:
@@ -75,14 +91,14 @@ SaaS is an "Infinite Game" governed by the Shadow of the Future.
 
 ### Pillar 3: The Structural Laws (The Governance)
 
-#### Axiom III: The Asset Specificity Trap
+#### Axiom IV: The Asset Specificity Trap
 
 - **Definition:** High lock-in requires a governance structure, not a contract.
 - **Operating Instruction:** "If the solution requires the buyer to rewire their workflow, you cannot sell with a 'Free Trial.' You must sell a Governance Structure (The Mutual Implementation Plan)."
 
 **Evidence:** Transaction Cost Economics (Williamson, 1981).
 
-#### Axiom VI: The Principal-Agent Alignment
+#### Axiom VII: The Principal-Agent Alignment
 
 - **Definition:** Sales fails when the Agent (Rep) is paid for the Signature, but the Principal (Buyer) pays for the Outcome.
 - **The Vested Interest Model:**
