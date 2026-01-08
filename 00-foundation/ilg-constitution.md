@@ -1,6 +1,6 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 8.0 (The Definitive Edition)  
+**Version:** 9.0 
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales.
 
 ---
@@ -37,77 +37,38 @@ SaaS is an "Infinite Game" governed by the Shadow of the Future.
 
 ---
 
-## Part II: The Six Axioms (System Instructions)
+## Part II: The Three Axioms (The System Core)
 
-### Pillar 1: The Diagnostic Laws (Market Physics)
+### Axiom I: The Law of Economic Boundaries (The Why)
+This axiom establishes the specific sales motion required based on the **Asset Specificity** of the transaction.
 
-#### Axiom I: The Law of Commercial Friction
+*   **The Mechanism:** Grounded in Coase’s "Make vs. Buy" boundary, a firm will only purchase from a market if the **total transaction costs** (search, bargaining, and enforcement) are lower than the cost of internal production.
+*   **The Trigger:** When a solution has **High Asset Specificity**—meaning it is deeply entangled with a buyer's unique data, workflows, and human training—it becomes "The Bridge". 
+*   **The Mandate:** In these high-specificity deals, the price mechanism alone fails because the risk of "lock-in" is too high. To keep "buying" more efficient than "making," the vendor must provide a **"Blueprint"** (Governance Structure) to lower these transaction costs. 
+*   **Operating Instruction:** **"Never apply a Bridge motion to a Toaster, and never sell a Bridge without a Blueprint"**.
 
-- **Definition:** Sales is the management of transaction costs.
-- **Operating Instruction:** "Diagnose the asset specificity first. Never apply a Bridge motion to a Toaster, and never sell a Bridge without a Blueprint."
+**Evidence:** Coase's Theorem (1937); Transaction Cost Economics (Williamson, 1981).
 
-**Evidence:** Coase's Theorem (1937); Gartner (2025) on personalization regret.
+### Axiom II: The Law of Asymmetry Convergence (The Certainty)
+This axiom explains why you must drive **Information Asymmetry ($I_A$)** toward zero to overcome the buyer's rational paralysis.
 
-#### Axiom II: The Law of The Boundary (Workflow Definition)
+*   **The Physics:** The **$I_A$ Multiplier** acts as a force multiplier on all friction; if asymmetry is high, transaction costs explode.
+*   **The Psychology:** Because of **Loss Aversion ($\lambda \approx 2.25$)**, the buyer's brain weights the personal risk of failure twice as heavily as the business gain of success. This leads to **Omission Bias**, where the "Safe No" (inaction) feels safer than a risky "Yes".
+*   **The Strategy:** To move a buyer down the "potential well" to $I_A = 0$, you must reject **"Cheap Talk"** (marketing claims) and deploy **"Costly Signals"** (workshops, technical audits, paid pilots). 
+*   **The Outcome:** These signals provide the individual decision-maker with an **"Alibi of Rigor"**—the evidence of due diligence required to protect their career if the project fails.
 
-- **Definition:** High Asset Specificity is only solvable with software IF a defined workflow exists. Without workflow maturity, you are not selling to a Bridge—you are selling to a Construction Site.
-- **Operating Instruction:** "We do not sell to Chaos. If a prospect has high asset specificity but no defined workflow (no SOP), they are not ready for ILG. We must sell them Consulting first to define the workflow, then ILG to digitize it."
+**Evidence:** Signaling Theory (Spence, 1973); Prospect Theory (Kahneman & Tversky, 1979); The JOLT Effect (Dixon & McKenna, 2022).
 
-**The Workflow vs. Specificity Matrix:**
+### Axiom III: The Law of Bilateral Governance (The Alignment)
+This axiom ensures that both parties stay aligned through the **"Fundamental Transformation"** into a long-term **Repeated Game**.
 
-| | **Low Specificity** | **High Specificity** |
-|---|---|---|
-| **Defined Workflow** | **Quadrant I: Toaster**<br>*Strategy: PLG/SLG*<br>Low friction, commoditized | **Quadrant II: Bridge**<br>*Strategy: ILG*<br>High friction, governable |
-| **Undefined Workflow** | **Quadrant IV: Commodity**<br>*Strategy: Self-Service*<br>No workflow needed | **Quadrant III: Chaos**<br>*Strategy: Consulting*<br>**DO NOT SELL SOFTWARE** |
+*   **The Mechanism:** Once high-specificity investments are made, the relationship shifts from a competitive market to a **Bilateral Monopoly**. Both parties are locked in, creating the **"Holdup Problem"** where one side can exploit the other's sunk costs.
+*   **The Alignment:** To ensure a stable equilibrium (NRR), you must contractualize **"Mutual Skin in the Game"**.
+*   **The Tactics:** 
+    *   **Bilateral Hostages:** Use a **Mutual Implementation Plan (MIP)** where the buyer commits their best resources and budget as a credible commitment.
+    *   **Vested Commissions:** Align the sales agent with the "Shadow of the Future" by splitting commissions between the signature ($T_0$), the successful "Go-Live" ($T_3$), and the first renewal ($T_{12}$).
 
-**The Critical Rule:** Quadrant III (High Specificity + Undefined Workflow) is the "Chaos Trap." Selling software here creates churn. The prospect must graduate from Consulting → ILG.
-
-**Evidence:** Workflow Maturity Models; Implementation Science (CFIR Framework).
-
-#### Axiom III: The Rationality of Inaction
-
-- **Definition:** "No Decision" is a rational calculation where Fear ($I_A$) > Value ($V$).
-- **Operating Instruction:** "Fight indecision with risk mitigation (Certainty), not benefits (ROI)."
-
-**Evidence:** The JOLT Effect (56% of losses due to fear).
-
-### Pillar 2: The Behavioral Laws (The Intervention)
-
-#### Axiom V: The Law of Asymmetry Convergence
-
-- **Definition:** Trust requires closing the gap between -1 (Seller Asymmetry) and +1 (Buyer Asymmetry).
-- **Operating Instruction:** "Reject 'Cheap Talk' (Marketing). Deploy 'Costly Signals' (Workshops) OR leverage Brand Equity to demand high-friction validation. The deal cannot close until both parties reach the 'Symmetry Zone' (0)."
-
-**Evidence:** Signaling Theory (Spence, 1973); The Market for Lemons (Akerlof, 1970).
-
-#### Axiom VI: The Law of Prospective Hindsight
-
-- **Definition:** The brain cannot predict failure while planning for success. Resistance is data.
-- **Operating Instruction:** "Use 'Pre-Mortems' to diagnose the resistance profile via Implementation Science principles:
-  1. **The Skeptic (Rational Fear):** Co-opt via Pre-Mortem validation.
-  2. **The Adversary (Irrational/Political):** Contain via Political Mapping."
-
-**Evidence:** Prospective Hindsight (Klein, 2007); CFIR Framework (Damschroder, 2009).
-
-### Pillar 3: The Structural Laws (The Governance)
-
-#### Axiom IV: The Asset Specificity Trap
-
-- **Definition:** High lock-in requires a governance structure, not a contract.
-- **Operating Instruction:** "If the solution requires the buyer to rewire their workflow, you cannot sell with a 'Free Trial.' You must sell a Governance Structure (The Mutual Implementation Plan)."
-
-**Evidence:** Transaction Cost Economics (Williamson, 1981).
-
-#### Axiom VII: The Principal-Agent Alignment
-
-- **Definition:** Sales fails when the Agent (Rep) is paid for the Signature, but the Principal (Buyer) pays for the Outcome.
-- **The Vested Interest Model:**
-  * **Front-Load CAC:** Pay 100% of Commission on Signature to solve liquidity.
-  * **The Clawback:** Commission is subject to clawback if MIP metrics are missed (Loss Aversion).
-  * **Safe Harbor:** Clawbacks are waived for risks outside Rep control (e.g., M&A).
-- **Operating Instruction:** "Align the Rep with the 'Infinite Game' by tying compensation to the success of the governance structure."
-
-**Evidence:** Agency Theory (Jensen & Meckling, 1976).
+**Evidence:** Agency Theory (Jensen & Meckling, 1976); Game Theory (The Prisoner's Dilemma).
 
 ---
 

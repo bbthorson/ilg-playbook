@@ -26,7 +26,7 @@ ILG addresses these through **costly signals** (workshops, blueprints, pre-morte
 
 - **[ILG Constitution](./00-foundation/ilg-constitution.md)** - The complete economic and behavioral theory
   - Part I: Core Economic Theory (Fundamental Equation, Deal Zone, Repeated Game)
-  - Part II: The Six Axioms (Diagnostic, Behavioral, and Structural Laws)
+  - Part II: The Three Axioms (The System Core)
   - Part III: Organizational Corollary (Mapping Costs to Departments)
   - Part IV: Strategy & Triage Protocol (Bridge vs. Toaster)
   - Part V: The Artifacts (Blueprint, Red Team Workshop, Mutual Implementation Plan)
@@ -107,14 +107,11 @@ Where:
 - $TC_{total}$ = Total Transaction Costs (search + consensus + implementation) × (1 + |$I_A$|)
 - $I_A$ = Information Asymmetry Multiplier (-1 to +1)
 
-### The Six Axioms
+### The Three Axioms
 
-1. **Law of Commercial Friction** - Sales is the management of transaction costs
-2. **Rationality of Inaction** - "No Decision" is rational when Fear > Value
-3. **Asset Specificity Trap** - High lock-in requires governance, not just contracts
-4. **Asymmetry Convergence** - Trust requires closing the gap between seller and buyer knowledge
-5. **Prospective Hindsight** - Use pre-mortems to surface resistance
-6. **Principal-Agent Alignment** - Align rep compensation with customer outcomes
+1. **Law of Economic Boundaries** - Commercial friction is driven by Asset Specificity (Bridge vs. Toaster).
+2. **Law of Asymmetry Convergence** - Trust requires closing the gap between fear and value (Information Asymmetry).
+3. **Law of Bilateral Governance** - Long-term alignment requires mutual skin in the game (Principal-Agent Alignment).
 
 ### Bridge vs. Toaster
 
@@ -145,5 +142,5 @@ This framework is designed to be a **source of truth** for organizations buildin
 
 ---
 
-**Version:** 8.0  
-**Last Updated:** 2025-11-24
+**Version:** 9.0  
+**Last Updated:** 2026-01-06

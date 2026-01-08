@@ -39,7 +39,7 @@ Resistance to change comes from two sources:
 
 **The Critical Mistake:** Treating adversaries like skeptics (trying to convince them with evidence when they have political motivations).
 
-### Prospective Hindsight (Axiom V)
+### Prospective Hindsight
 
 **The Insight:** The brain cannot predict failure while planning for success.
 
@@ -79,7 +79,7 @@ Instead of asking "Will this work?" ask:
 
 ## Why This Matters
 
-**From the ILG Constitution (Axiom V):**
+**From the ILG Constitution:**
 
 > "Resistance is data. Use Pre-Mortems to diagnose the resistance profile."
 
@@ -97,7 +97,7 @@ Unaddressed resistance leads to:
 
 ## Knowledge Base References
 
-- [ILG Constitution - Part II](../../00.%20Foundation/ILG%20Constitution.md) (Axiom V)
+- [ILG Constitution - Part II](../../00.%20Foundation/ILG%20Constitution.md)
 - [CFIR Research](../../01.%20Research/CFIR.md) (Implementation science framework)
 - [Red Team Protocol](../../03.%20Field%20Assets/ILG/02.%20Red%20Team%20Protocol.md) (Practical tool)
 - [Contextual Blueprint](../../03.%20Field%20Assets/ILG/01.%20Contextual%20Blueprint.md) (Political mapping)

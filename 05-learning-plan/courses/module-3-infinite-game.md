@@ -44,7 +44,7 @@ When players know they'll interact again, **cooperation becomes rational**.
 
 **The ILG Principle:** We must drive $I_A \to 0$ at $T_0$ to secure $T_2$.
 
-### The Principal-Agent Problem (Axiom VI)
+### The Principal-Agent Problem
 
 **The Misalignment:**
 
@@ -139,7 +139,7 @@ In traditional sales comp:
 
 ## Knowledge Base References
 
-- [ILG Constitution - Part I & II](../../00.%20Foundation/ILG%20Constitution.md) (Repeated Game, Axiom VI)
+- [ILG Constitution - Part I & II](../../00.%20Foundation/ILG%20Constitution.md) (Repeated Game, Axiom III)
 - [Game Theory and NRR](../../01.%20Research/Game%20Theory%20and%20NRR.md) (Academic foundation)
 - [Vested Commission Agreement](../../04.%20Internal%20Ops/Vested%20Commission%20Agreement.md) (Practical template)
 - [Mutual Implementation Plan](../../03.%20Field%20Assets/ILG/03.%20Mutual%20Implementation%20Plan.md) (Governance tool)

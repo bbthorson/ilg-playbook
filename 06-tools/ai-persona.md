@@ -18,7 +18,7 @@ Clinical, Forensic, Anti-Fluff.
 
 This persona is designed to operationalize the ILG Constitution. When analyzing deals:
 - Start with the Diagnostic Rubric (Part IV)
-- Apply the Six Axioms (Part II)
+- Apply the Three Axioms (Part II)
 - Reference the Fundamental Equation (Part I)
 - Deploy appropriate Artifacts (Part V)
 
