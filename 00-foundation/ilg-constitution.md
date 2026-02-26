@@ -1,7 +1,10 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 9.0 
+**Version:** 9.1  
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales.
+
+> [!IMPORTANT]
+> **The Offensive Paradigm:** In ILG, we treat the Buyer and Seller as a single **Offensive Unit**. The "Defense" is not the buyer; the Defense is the **Market Friction** (Transaction Costs, Asymmetry, and Inertia). To score (succeed), both parties must align on a single "Playbook" (The Blueprint).
 
 ---
 
@@ -59,28 +62,28 @@ This axiom explains why you must drive **Information Asymmetry ($I_A$)** toward 
 
 **Evidence:** Signaling Theory (Spence, 1973); Prospect Theory (Kahneman & Tversky, 1979); The JOLT Effect (Dixon & McKenna, 2022).
 
-### Axiom III: The Law of Bilateral Governance (The Alignment)
-This axiom ensures that both parties stay aligned through the **"Fundamental Transformation"** into a long-term **Repeated Game**.
+### Axiom III: The Law of Bilateral Governance (The Playbook)
+This axiom ensures that both parties stay aligned as a single **Offensive Unit** through the **"Fundamental Transformation"** into a long-term **Repeated Game**.
 
 *   **The Mechanism:** Once high-specificity investments are made, the relationship shifts from a competitive market to a **Bilateral Monopoly**. Both parties are locked in, creating the **"Holdup Problem"** where one side can exploit the other's sunk costs.
 *   **The Alignment:** To ensure a stable equilibrium (NRR), you must contractualize **"Mutual Skin in the Game"**.
 *   **The Tactics:** 
-    *   **Bilateral Hostages:** Use a **Mutual Implementation Plan (MIP)** where the buyer commits their best resources and budget as a credible commitment.
+    *   **Bilateral Hostages:** Use a **Mutual Implementation Plan (MIP)**—the "Offensive Playbook"—where the buyer commits their best resources and budget as a credible commitment.
     *   **Vested Commissions:** Align the sales agent with the "Shadow of the Future" by splitting commissions between the signature ($T_0$), the successful "Go-Live" ($T_3$), and the first renewal ($T_{12}$).
 
 **Evidence:** Agency Theory (Jensen & Meckling, 1976); Game Theory (The Prisoner's Dilemma).
 
 ---
 
-## Part III: The Organizational Corollary
+## Part III: The Organizational Corollary (The Offensive Line)
 
 **The Mapping of Costs to Departments:**
 
-1. **Marketing** minimizes **Search Costs** (Relevance Gap).
-2. **Sales** minimizes **Consensus Costs** (Preference Gap).
-3. **Customer Success** minimizes **Enforcement Costs** (Performance Gap).
+1. **Marketing** minimizes **Search Costs** (Opening the Running Lanes).
+2. **Sales** minimizes **Consensus Costs** (Clearing the Defensive Line).
+3. **Customer Success** minimizes **Enforcement Costs** (Protecting the Pocket/Ensuring Yardage).
 
-**The Operational Rule:** Revenue friction occurs at the "Handoff Points." RevOps must ensure the Blueprint travels from Sales to CS to prevent $I_A$ from resetting to +1.
+**The Operational Rule:** Revenue friction occurs at the "Handoff Points." RevOps must ensure the Blueprint travels from Sales to CS to prevent $I_A$ from resetting to +1 (A "Fumbled Handoff").
 
 ---
 
