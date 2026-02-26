@@ -20,6 +20,28 @@
 
 ---
 
+## The Bridge Taxonomy: Friction × Asset Specificity
+
+The sales motion is determined by two axes: **Friction** (how hard is the buying/implementation process?) and **Asset Specificity** (how deeply embedded does the solution become?).
+
+| | **Low Asset Specificity** | **High Asset Specificity** |
+|---|---|---|
+| **Low Friction** | **PLG** — Slack, Figma, Notion. Self-serve trial → buy. Low switching cost. The product sells itself. | **Open Infrastructure** — Kubernetes, Postgres, Terraform. Community-driven adoption, but architecture becomes deeply dependent. High switching cost hidden inside low sales friction. |
+| **High Friction** | **SLG** — The seller must *create the market*. Heavy buyer education (they can't describe the problem). Complex procurement, but the buyer isn't locked in — they could switch, build in-house, or revert. **Friction is educational.** | **ILG** — "The Bridge." EHR, ERP, Security platforms. Both the sales process AND the asset create deep dependency. Cross-functional impact, multi-stakeholder consensus, deep integration. **Friction is structural.** |
+
+**Key distinction between SLG and ILG friction:**
+
+- **SLG friction is educational** — the sales rep is teaching the buyer *that they have a problem* and *what a solution category looks like*. The friction is cognitive. Once they understand, switching to a competitor is relatively easy because the asset specificity is low.
+- **ILG friction is structural** — the buyer already knows they have a problem. The friction comes from the *implementation itself*: integration depth, data migration, workflow rewiring, multi-stakeholder consensus. The friction is organizational.
+
+**This matters because:**
+- SLG reps need to be *educators* (Challenger-style commercial teaching)
+- ILG reps need to be *implementation scientists* (CFIR diagnostic model)
+- Applying ILG tactics to an SLG deal over-engineers it
+- Applying SLG tactics to an ILG deal under-prepares the buyer
+
+---
+
 ## Detailed Comparison
 
 ### When to Use Each Motion

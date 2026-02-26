@@ -349,6 +349,59 @@ Corporate culture acts as a Focal Point.
 
 Changing the Focal Point requires "Cheap Talk" (Mission Statements) to be backed by "Costly Signals" (Firing top-performing sales reps who have high churn rates). When a company fires a "Rainmaker" because they sold bad deals, it sends a massive, costly signal to the rest of the organization that the game has changed.35
 
+### 6.4 Formal Nash Equilibrium Comparison: Traditional vs. ILG Compensation
+
+The preceding sections describe the mechanisms qualitatively. We now formalize the equilibrium shift using numerical payoff matrices to prove that ILG compensation structures change the **dominant strategy** from Defection to Cooperation.
+
+#### Game 1: Traditional SLG Compensation (One-Shot Game)
+
+The rep receives a one-time commission at close. No clawbacks. No NRR tie. The customer evaluates based on the pitch. Payoffs are expressed as (Rep Utility, Customer Utility) on a relative scale.
+
+| | **Customer Cooperates** (shares real needs, invests in evaluation) | **Customer Defects** (hides objections, rushes to "get it over with") |
+|---|---|---|
+| **Rep Cooperates** (honest scoping, flags risks) | **(8, 8)** — Good deal, good fit. Rep spent extra cycles but no premium payoff. | **(3, 6)** — Rep did the work; customer wasted their time. Rep loses. |
+| **Rep Defects** (oversells, hides limitations) | **(10, 2)** — Rep closes fast, gets full commission. Customer gets burned on implementation. | **(5, 4)** — Both cut corners. Mediocre deal closes. Nobody wins big. |
+
+**Nash Equilibrium: (Defect, Defect) → payoff (5, 4).**
+
+*Proof:* Examine the Rep's strategy regardless of the Customer's choice:
+- If Customer cooperates: Rep gets 10 by defecting vs. 8 by cooperating → **defect is better**
+- If Customer defects: Rep gets 5 by defecting vs. 3 by cooperating → **defect is still better**
+
+Defecting is the *dominant strategy* for the Rep. The Customer, anticipating this (or having learned from past experience), also defects. This is the classic Prisoner's Dilemma — both players end up with a suboptimal outcome that neither prefers, but neither can unilaterally escape.
+
+**Result:** Deals close, but they are built on information asymmetry. This produces the "Challenged" and "Failed" outcomes reflected in the Standish data (84% non-success rate).
+
+#### Game 2: ILG Compensation (Repeated Game with Extended Shadow)
+
+Now add ILG-style structural changes: 12-month clawback, NRR-based quota multiplier, and deferred commission tied to implementation success milestones.
+
+| | **Customer Cooperates** | **Customer Defects** |
+|---|---|---|
+| **Rep Cooperates** (honest scoping, flags risks) | **(9, 9)** — Strong implementation. Rep earns full commission + NRR bonus over time. Customer gets real value. | **(4, 5)** — Rep did honest work but customer wasn't ready. Rep keeps base. Small loss. |
+| **Rep Defects** (oversells, hides limitations) | **(6, 2)** — Rep oversells and closes fast, BUT clawback triggers when implementation fails. Net payoff drops. Customer gets burned. | **(3, 3)** — Both cut corners. Deal closes but churns. Rep loses clawback + NRR bonus. Customer loses investment. |
+
+**Nash Equilibrium: (Cooperate, Cooperate) → payoff (9, 9).**
+
+*Proof:* Examine the Rep's strategy under ILG compensation:
+- If Customer cooperates: Rep gets 9 by cooperating vs. 6 by defecting (clawback risk eats the quick win) → **cooperate is better**
+- If Customer defects: Rep gets 4 by cooperating vs. 3 by defecting → **cooperate is still better**
+
+Cooperating is now the *dominant strategy* because the compensation structure extends the Shadow of the Future ($\omega$). The Rep's payoff is no longer concentrated at the moment of close — it is distributed across the implementation lifecycle. The mathematics of the game, not moral exhortation, drive the behavioral change.
+
+#### The Equilibrium Shift Summarized
+
+| Dimension | Traditional (SLG) | ILG |
+|---|---|---|
+| **Game Type** | Single-Shot | Repeated (via compensation) |
+| **Dominant Strategy** | Defect (Oversell) | Cooperate (Honest Scoping) |
+| **Nash Equilibrium** | (Defect, Defect) → (5, 4) | (Cooperate, Cooperate) → (9, 9) |
+| **Shadow of the Future ($\omega$)** | Near 0 (commission paid at close) | High (deferred over 12+ months) |
+| **Predicted Outcome** | High close rate, high churn, low NRR | Moderate close rate, low churn, high NRR |
+| **Who bears implementation risk?** | Customer (alone) | Shared (Rep has skin in the game) |
+
+**Key Insight:** The structural change in incentives is more powerful than any amount of "values training" or "customer-first culture" messaging. Culture as a Focal Point (Section 6.3) matters, but it is the *payoff matrix* that determines behavior. ILG's contribution is making Cooperation the dominant strategy through mechanism design, not persuasion.
+
 ---
 
 ## Part VII: Conclusion

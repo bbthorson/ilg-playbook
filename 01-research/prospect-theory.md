@@ -402,6 +402,33 @@ Use "Social Proof" not just as a testimonial, but as a risk-reduction mechanism.
 
 ---
 
+### 8.5 Temporal Prospect Theory: Reference Point Migration Across the Sales Cycle
+
+The preceding analysis treats the buyer's reference point ($r$) as static. In reality, reference points shift throughout a sales cycle, and these shifts create strategic inflection points where the vendor can intentionally redirect psychological momentum.
+
+#### The Reference Point Migration Model
+
+| Stage | Reference Point ($r$) | Buyer's Frame | λ Implications | **Required ILG Activity** |
+|---|---|---|---|---|
+| **1. Pre-Contact** | Status quo (current tools/processes) | "Things are fine" (or at least tolerable) | Any new vendor = pure potential loss. λ amplifies every risk of change. | **Cost of Inaction analysis** — reframe the status quo as a loss position. Shift $r$ upward to "where competitors are." |
+| **2. Discovery** | Status quo + awareness of pain | "We have a problem, but change is scary" | Loss of admitting the problem is real vs. gain of acknowledging it. The "Certainty Gap" is at its maximum. | **Diagnostic framing** — help the buyer quantify the pain. Make the abstract concrete. This is where CFIR "Tension for Change" is measured. |
+| **3. POC / Pilot** | The *demo experience* becomes the new anchor | "We've seen what's possible" | **Critical inflection:** The Endowment Effect kicks in. Taking away the pilot now feels like a *loss*. λ starts working *for* the vendor. | **Make the pilot sticky** — use real data, real workflows. The more the buyer invests, the more the reference point shifts to the new system. |
+| **4. Negotiation** | The agreed deal terms | "We've committed to this path" | Any concession from either side = a loss from the new $r$. Discounting feels like "taking away." Feature cuts feel like theft. | **Hold firm on scope** — use the Endowment Effect strategically. Frame scope changes as implementation risk, not negotiation leverage. |
+| **5. Post-Close** | The *promised outcome* | "We expect what was sold" | If reality < promise → loss (regret, the 56% Gartner stat). If reality ≥ promise → gain (but diminished by α). | **Under-promise, over-deliver** — set $r$ conservatively during sales so that post-close reality exceeds it. This prevents the "Challenged" trap. |
+
+#### The Certainty Gap and Stage-Gated Assets
+
+Each stage transition represents a moment where the buyer's certainty gap either closes or widens. A properly designed ILG sales process must include **gated activities at each stage** specifically designed to close the gap:
+
+- **Stage 1→2:** Cost of Inaction calculator (reframes $r$ from "stable" to "losing ground")
+- **Stage 2→3:** Technical deep-dive / architecture review (reduces the overweighting of failure risk, $w(p)$ moves toward true $p$)
+- **Stage 3→4:** Pilot results with real metrics (shifts Endowment Effect to favor the new system)
+- **Stage 4→5:** Mutual Implementation Plan (reduces the post-close expectation gap between promised and delivered value)
+
+The critical insight: **Stage 3 is the pivot.** Before the POC, λ works *against* the vendor (the buyer fears losing what they have). After a successful POC with real data, λ works *for* the vendor (the buyer fears losing the *new* system). The entire ILG sales process should be designed to reach Stage 3 as efficiently as possible while investing enough in Stage 2 to ensure the POC succeeds.
+
+---
+
 ## 9\. Conclusion
 
 The mathematical and psychological evidence is incontrovertible. The B2B buyer is not a calculator; they are a nervous system. They are governed by the neural architecture of **Prospect Theory**, where the amygdala's response to fear (Loss Aversion) is biologically stronger than the striatum's response to reward.

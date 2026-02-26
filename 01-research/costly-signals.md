@@ -320,6 +320,54 @@ This creates a structured "Ordeal." It tells the Omission-Biased buyer: "We are 
 
 ---
 
+## Part VIII: Buyer Costly Signals — The Missing Half of the Model
+
+The preceding analysis focuses on how the **vendor** signals quality to the **buyer**. But signaling is a two-way street. In complex B2B transactions, the vendor also faces an information asymmetry problem: *they cannot tell if the buyer is a serious implementer or a tire-kicker.* The buyer must also produce costly signals to reduce this imbalance.
+
+### 8.1 The Bilateral Signaling Equilibrium
+
+The complete signaling model requires two flows:
+
+- **Vendor Costly Signal → Buyer:** "We are a Peach" (rigorous discovery, paid pilots, security audits, transparent pricing)
+- **Buyer Costly Signal → Vendor:** "We are serious" (executive sponsorship, data sharing, dedicated project resources, willingness to pay for assessment)
+
+**Both signals are required** to reduce information asymmetry ($I_A$) to the level needed for a quality implementation. A vendor who invests heavily in costly signals but receives no buyer signals in return is operating with a one-sided information deficit. They cannot properly diagnose the buyer's Inner Setting (CFIR), which means the implementation plan will be built on assumptions — exactly the condition that produces the 84% "Challenged/Failed" rate (Standish).
+
+### 8.2 Types of Buyer Costly Signals
+
+Just as vendor signals must be hard to fake, buyer signals must impose a real cost to be credible:
+
+| Buyer Signal | What It Proves | Cost to Buyer | Red Flag If Absent |
+|---|---|---|---|
+| **Named implementation lead** assigned before contract | Organizational commitment and resource allocation | Staff time diverted from BAU | "We'll figure that out later" = low Tension for Change |
+| **Willingness to share current-state data** and workflows | Trust in the vendor + genuine problem definition | Vulnerability (exposing internal dysfunction) | Withholding data = buyer can't describe the problem OR doesn't trust you |
+| **Executive sponsor attends** discovery/scoping sessions | Authority, priority, and political capital invested | Senior leader's calendar time (genuinely scarce) | Delegated to a coordinator = low Relative Priority (CFIR) |
+| **Participation in a paid assessment** or discovery | Budget commitment + "skin in the game" | Direct financial cost | Insistence on "free" everything = Cheap Talk from buyer side |
+| **Internal stakeholder map shared** with vendor | Network transparency | Political exposure (reveals internal dynamics) | "Just work through me" = hidden Saboteurs |
+| **Documented success criteria** provided by buyer | Clear expectations and accountability | Effort of defining measurable outcomes | Vague goals = no consensus on what success means |
+
+### 8.3 The Connection to Information Asymmetry and CFIR
+
+When the buyer refuses to provide costly signals, they are maintaining information asymmetry *from their side*. This has cascading effects:
+
+1. **The vendor cannot diagnose the Inner Setting.** Without data about the buyer's structural characteristics, networks, culture, and implementation climate, the vendor is flying blind. The CFIR diagnostic questions (Section 6.1 in Beyond Objections) require buyer participation to answer.
+
+2. **The implementation plan becomes a guess.** Without shared current-state data, the Mutual Implementation Plan is built on the vendor's assumptions about the buyer's environment. These assumptions will be wrong, creating the "Promise Gap" that drives churn.
+
+3. **The deal appears qualified but isn't.** A prospect who passes BANT (Budget, Authority, Need, Timing) but fails to produce costly signals is a "False Positive." They have the logistics for a deal but lack the organizational commitment for an implementation.
+
+### 8.4 The AI Amplification Effect
+
+In the AI era, the Cheap Talk problem extends to buyers as well as vendors:
+
+- **Pre-AI:** A buyer requesting a detailed RFP response was producing a buyercostly signal (investing time in evaluation).
+- **Post-AI:** A buyer can generate an AI-written RFP and distribute it to 20 vendors simultaneously — zero cost, zero signal value.
+- **Implication:** Vendors must now demand *interactive* buyer signals (live workshops, real-data pilots, exec meetings) rather than *document-based* signals (RFPs, questionnaires) because the latter have been commoditized by AI.
+
+The bilateral signaling model becomes the qualification mechanism: **a deal is only real when both sides are producing signals that are genuinely costly to fake.**
+
+---
+
 ## Conclusion: The Trust Equilibrium
 
 The synthesis of Spence, Akerlof, and Kahneman leads to an inescapable conclusion for B2B strategy: **Trust is an economic asset that must be purchased with the currency of costly action.**
