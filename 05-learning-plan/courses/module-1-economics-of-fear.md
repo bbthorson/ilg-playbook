@@ -99,10 +99,10 @@ In a **repeated game** (SaaS with renewals), hiding flaws leads to:
 
 ## Knowledge Base References
 
-- [ILG Constitution - Part I & II](../../00.%20Foundation/ILG%20Constitution.md) (Fundamental Equation, Axiom II)
-- [Fear of Failure Research](../../01.%20Research/Fear%20of%20Failure.md) (JOLT Effect)
-- [Game Theory and NRR](../../01.%20Research/Game%20Theory%20and%20NRR.md) (Repeated game dynamics)
-- [Bilateral Asymmetry Scorecard](../../04.%20Internal%20Ops/Bilateral%20Asymetry%20Scorecard.md) (Diagnostic tool)
+- [ILG Constitution - Part I & II](../../00-foundation/ilg-constitution.md) (Fundamental Equation, Axiom II)
+- [Fear of Failure Research](../../01-research/fear-of-failure.md) (JOLT Effect)
+- [Game Theory and NRR](../../01-research/game-theory-and-nrr.md) (Repeated game dynamics)
+- [Bilateral Asymmetry Scorecard](../../04-internal-ops/04-incentives-asymmetry-scorecard.md) (Diagnostic tool)
 
 ---
 
@@ -289,6 +289,6 @@ When evaluating responses:
 ## Next Steps
 
 Once you've completed this module:
-- ✅ Move to [Module 2 - Science of Resistance](./Module%202%20-%20Science%20of%20Resistance.md)
+- ✅ Move to [Module 2 - Science of Resistance](./module-2-science-of-resistance.md)
 - 🔄 Apply the Bilateral Asymmetry Scorecard to your current deals
 - 📊 Practice diagnosing fear vs. price in your pipeline

@@ -1,7 +1,7 @@
 # Vested Commission Agreement (The Incentive)
 
 Type: Comp Plan Addendum  
-Axiom: VI (Principal-Agent Alignment)  
+Axiom: III (The Law of Bilateral Governance / Principal-Agent Alignment)  
 Goal: To align Sales Rep compensation with Customer NRR (Net Revenue Retention).
 
 ## 1\. The Philosophy

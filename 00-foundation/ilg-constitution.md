@@ -1,6 +1,6 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 9.1  
+**Version:** 10.0
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales.
 
 > [!IMPORTANT]
@@ -89,20 +89,35 @@ This axiom ensures that both parties stay aligned as a single **Offensive Unit**
 
 ## Part IV: The Strategy & Triage Protocol
 
-### The Diagnostic Rubric (Score 1-5)
+### Pre-Qualification Gate: Workflow Maturity
 
-1. **Tech Specificity:** How hard is it to rip out?
-2. **Org Specificity:** How many habits must change?
-3. **Political Complexity:** >3 Stakeholders?
-4. **Retention Horizon:** One-Shot vs. Repeat Game?
+Before scoring, answer one binary question: **Does a documented standard operating procedure (SOP) exist for this problem today?**
+
+*   **YES** → Proceed to the Diagnostic Rubric.
+*   **NO** → **STOP.** This is the **Chaos Trap** (High Specificity + Undefined Workflow). You cannot digitize chaos. Redirect to **Consulting/Paid Workshop** to define the SOP first. The prospect must graduate from Consulting → ILG.
+
+**Rationale:** Selling software to automate an undefined workflow creates churn. The Chaos Trap is not a Bridge deal with extra friction; it is a fundamentally different situation that requires process definition before technology selection.
+
+### The Diagnostic Rubric (Score 1-5 per factor)
+
+| Factor | Score 1 (Low) | Score 3 (Medium) | Score 5 (High) |
+|--------|---------------|-------------------|-----------------|
+| **1. Tech Specificity** — How hard is it to rip out? | Standalone tool, no integration | Standard API integration | Deep ERP/core infrastructure, custom code |
+| **2. Org Specificity** — How many habits must change? | Single team (<5 users) | Single department, minor process change | Cross-functional, total workflow overhaul |
+| **3. Political Complexity** — How many stakeholders can say no? | Single decision maker | Committee (3-4 stakeholders) | Board/Procurement/Security audit required |
+| **4. Retention Horizon** — One-shot or repeat game? | One-time project, no renewal | Annual contract, moderate switching cost | Multi-year platform, deep dependency |
+
+**Total Score Range:** 4-20
 
 ### The Decision Matrix
 
-- **Lane 1 (The Toaster):** Score 3-8.
-  * **Strategy:** SLG/PLG (Velocity).
-- **Lane 2 (The Bridge):** Score 9-20.
-  * **Strategy:** ILG (Safety).
-  * **Gate:** If Blueprint requires >10 hours SE time, utilize **Paid Diagnostic** to validate intent.
+*   **Lane 1 (The Toaster):** Score 4-9.
+    *   **Strategy:** SLG/PLG (Velocity).
+*   **Lane 2 (The Bridge):** Score 10-20.
+    *   **Strategy:** ILG (Safety).
+    *   **Gate:** If Blueprint requires >10 hours SE time, utilize **Paid Diagnostic** to validate intent.
+
+**Override Rule:** If the prospect asks for a "Pilot" or "Proof of Concept," immediately upgrade the score to 20 (Bridge). Pilots are strictly governed by the Red Team Protocol.
 
 ---
 

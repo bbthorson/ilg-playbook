@@ -363,10 +363,10 @@ Learner must demonstrate:
 
 Throughout the curriculum, reference:
 
-- **[ILG Constitution](../00.%20Foundation/ILG%20Constitution.md)** - Core theory and axioms
-- **[Research Papers](../01.%20Research)** - Academic evidence
-- **[Field Assets](../03.%20Field%20Assets)** - Practical tools
-- **[Internal Ops](../04.%20Internal%20Ops)** - Governance mechanisms
+- **[ILG Constitution](../00-foundation/ilg-constitution.md)** - Core theory and axioms
+- **[Research Papers](../01-research)** - Academic evidence
+- **[Field Assets](../03-field-assets)** - Practical tools
+- **[Internal Ops](../04-internal-ops)** - Governance mechanisms
 
 When learners struggle with concepts, direct them to relevant sections of the knowledge base for deeper study.
 

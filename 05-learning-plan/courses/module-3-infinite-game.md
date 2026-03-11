@@ -139,10 +139,10 @@ In traditional sales comp:
 
 ## Knowledge Base References
 
-- [ILG Constitution - Part I & II](../../00.%20Foundation/ILG%20Constitution.md) (Repeated Game, Axiom III)
-- [Game Theory and NRR](../../01.%20Research/Game%20Theory%20and%20NRR.md) (Academic foundation)
-- [Vested Commission Agreement](../../04.%20Internal%20Ops/Vested%20Commission%20Agreement.md) (Practical template)
-- [Mutual Implementation Plan](../../03.%20Field%20Assets/ILG/03.%20Mutual%20Implementation%20Plan.md) (Governance tool)
+- [ILG Constitution - Part I & II](../../00-foundation/ilg-constitution.md) (Repeated Game, Axiom III)
+- [Game Theory and NRR](../../01-research/game-theory-and-nrr.md) (Academic foundation)
+- [Vested Commission Agreement](../../04-internal-ops/03-incentives-vested-commission.md) (Practical template)
+- [Mutual Implementation Plan](../../03-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) (Governance tool)
 
 ---
 
@@ -350,7 +350,7 @@ When evaluating responses:
 You've completed the ILG Learning Curriculum. 
 
 **Next Steps:**
-- 🎯 Practice with [Simulations](./Simulations.md)
+- 🎯 Practice with [Simulations](../simulations.md)
 - 🔄 Apply ILG methodology to your current pipeline
-- 📊 Use the [Field Assets](../../03.%20Field%20Assets) in real deals
-- 🧠 Continue learning with the [Research Papers](../../01.%20Research)
+- 📊 Use the [Field Assets](../../03-field-assets) in real deals
+- 🧠 Continue learning with the [Research Papers](../../01-research)

@@ -10,7 +10,7 @@
 By the end of this module, you will be able to:
 
 1. **Classify deals** as "Bridge" (high friction) or "Toaster" (low friction) using the diagnostic rubric
-2. **Score deals** accurately on tech specificity, org specificity, and political complexity
+2. **Score deals** accurately on tech specificity, org specificity, political complexity, and retention horizon
 3. **Apply the decision matrix** to determine the appropriate sales motion (ILG vs. SLG/PLG)
 4. **Explain the rationale** for why asset specificity drives transaction costs
 
@@ -34,9 +34,16 @@ By the end of this module, you will be able to:
   - Complex stakeholder dynamics
   - **Strategy:** Optimize for safety and certainty (ILG)
 
+### Pre-Qualification: The Workflow Maturity Gate
+
+Before scoring, answer one binary question: **Does a documented SOP exist for this problem today?**
+
+- **YES** → Proceed to scoring.
+- **NO** → **STOP.** This is the **Chaos Trap** (High Specificity + Undefined Workflow). Redirect to Consulting first.
+
 ### The Diagnostic Rubric
 
-Score each deal on three dimensions (1-5 scale):
+Score each deal on four dimensions (1-5 scale):
 
 1. **Tech Specificity:** How hard is it to rip out?
    - 1 = Standalone tool, no integration
@@ -53,12 +60,17 @@ Score each deal on three dimensions (1-5 scale):
    - 3 = Committee (3-4 stakeholders)
    - 5 = Board approval/procurement/security audit required
 
+4. **Retention Horizon:** One-shot or repeat game?
+   - 1 = One-time project, no renewal expected
+   - 3 = Annual contract, moderate switching cost
+   - 5 = Multi-year platform, deep dependency, high switching cost
+
 ### The Decision Matrix
 
-- **Score 3-9:** Lane 1 (Toaster) → Use SLG/PLG motion
-- **Score 10-15:** Lane 2 (Bridge) → Deploy ILG motion
+- **Score 4-9:** Lane 1 (Toaster) → Use SLG/PLG motion
+- **Score 10-20:** Lane 2 (Bridge) → Deploy ILG motion
 
-**Override Rule:** If prospect asks for a "Pilot" or "POC," immediately upgrade to Bridge (score 15).
+**Override Rule:** If prospect asks for a "Pilot" or "POC," immediately upgrade to Bridge (score 20).
 
 ---
 
@@ -84,9 +96,9 @@ Misclassifying a Bridge as a Toaster leads to:
 
 ## Knowledge Base References
 
-- [ILG Constitution - Part IV](../../00.%20Foundation/ILG%20Constitution.md) (Strategy & Triage Protocol)
-- [Process Calculator](../../03.%20Field%20Assets/Process%20Calculator.md) (Practical scoring tool)
-- [Transaction Cost Economics](../../01.%20Research/Total%20Cost%20Economics.md) (Academic foundation)
+- [ILG Constitution - Part IV](../../00-foundation/ilg-constitution.md) (Strategy & Triage Protocol)
+- [Deal Triage Calculator](../../03-field-assets/process-calculator.md) (Practical scoring tool)
+- [Transaction Cost Economics](../../01-research/total-cost-economics.md) (Academic foundation)
 
 ---
 
@@ -94,7 +106,7 @@ Misclassifying a Bridge as a Toaster leads to:
 
 ### Exercise 1: Score Sample Deals
 
-**Instructions:** For each deal below, score it on the three dimensions and classify as Bridge or Toaster.
+**Instructions:** For each deal below, score it on the four dimensions and classify as Bridge or Toaster.
 
 #### Deal A: Marketing Automation Platform
 - **Context:** Mid-market SaaS company wants to replace their email tool
@@ -107,6 +119,7 @@ Misclassifying a Bridge as a Toaster leads to:
 - Tech Specificity: ___
 - Org Specificity: ___
 - Political Complexity: ___
+- Retention Horizon: ___
 - **Total Score:** ___
 - **Classification:** [ ] Toaster [ ] Bridge
 - **Reasoning:**
@@ -124,6 +137,7 @@ Misclassifying a Bridge as a Toaster leads to:
 - Tech Specificity: ___
 - Org Specificity: ___
 - Political Complexity: ___
+- Retention Horizon: ___
 - **Total Score:** ___
 - **Classification:** [ ] Toaster [ ] Bridge
 - **Reasoning:**
@@ -141,6 +155,7 @@ Misclassifying a Bridge as a Toaster leads to:
 - Tech Specificity: ___
 - Org Specificity: ___
 - Political Complexity: ___
+- Retention Horizon: ___
 - **Total Score:** ___
 - **Classification:** [ ] Toaster [ ] Bridge
 - **Reasoning:**
@@ -159,6 +174,7 @@ Misclassifying a Bridge as a Toaster leads to:
 - Tech Specificity: ___
 - Org Specificity: ___
 - Political Complexity: ___
+- Retention Horizon: ___
 - **Total Score:** ___
 - **Classification:** [ ] Toaster [ ] Bridge
 - **Reasoning (include override rule consideration):**
@@ -176,6 +192,7 @@ Misclassifying a Bridge as a Toaster leads to:
 - Tech Specificity: ___
 - Org Specificity: ___
 - Political Complexity: ___
+- Retention Horizon: ___
 - **Total Score:** ___
 - **Classification:** [ ] Toaster [ ] Bridge
 - **Reasoning:**
@@ -239,17 +256,17 @@ When a rep submits their deal scores:
 
 ### Answer Key (For LLM Tutor Only)
 
-- **Deal A:** Tech=3, Org=2, Political=1, Total=6 → **Toaster**
-- **Deal B:** Tech=5, Org=5, Political=5, Total=15 → **Bridge**
-- **Deal C:** Tech=1, Org=1, Political=1, Total=3 → **Toaster**
-- **Deal D:** Tech=3, Org=2, Political=2, Total=7 → **Toaster** BUT override rule applies (pilot request) → **Bridge (15)**
-- **Deal E:** Tech=5, Org=5, Political=5, Total=15 → **Bridge**
+- **Deal A:** Tech=3, Org=2, Political=1, Retention=3, Total=9 → **Toaster**
+- **Deal B:** Tech=5, Org=5, Political=5, Retention=5, Total=20 → **Bridge**
+- **Deal C:** Tech=1, Org=1, Political=1, Retention=2, Total=5 → **Toaster**
+- **Deal D:** Tech=3, Org=2, Political=2, Retention=3, Total=10 → **Bridge** (borderline), BUT override rule also applies (pilot request) → **Bridge (20)**
+- **Deal E:** Tech=5, Org=5, Political=5, Retention=5, Total=20 → **Bridge**
 
 ---
 
 ## Next Steps
 
 Once you've completed this module:
-- ✅ Move to [Module 1 - Economics of Fear](./Module%201%20-%20Economics%20of%20Fear.md)
+- ✅ Move to [Module 1 - Economics of Fear](./module-1-economics-of-fear.md)
 - 🔄 Apply triage protocol to your current pipeline
-- 📊 Use the [Process Calculator](../../03.%20Field%20Assets/Process%20Calculator.md) as a quick reference tool
+- 📊 Use the [Deal Triage Calculator](../../03-field-assets/process-calculator.md) as a quick reference tool

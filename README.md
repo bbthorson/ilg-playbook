@@ -28,8 +28,10 @@ ILG addresses these through **costly signals** (workshops, blueprints, pre-morte
   - Part I: Core Economic Theory (Fundamental Equation, Deal Zone, Repeated Game)
   - Part II: The Three Axioms (The System Core)
   - Part III: Organizational Corollary (Mapping Costs to Departments)
-  - Part IV: Strategy & Triage Protocol (Bridge vs. Toaster)
+  - Part IV: Strategy & Triage Protocol (Chaos Trap Gate, 4-Factor Diagnostic Rubric, Bridge vs. Toaster)
   - Part V: The Artifacts (Blueprint, Red Team Workshop, Mutual Implementation Plan)
+- **[Sales Motion Comparison](./00-foundation/sales-motion-comparison.md)** - ILG vs. PLG vs. SLG decision framework
+- **[CFIR Field Mapping](./00-foundation/cfir-field-mapping.md)** - How Implementation Science constructs map to ILG field assets
 
 **Start here** to understand the theoretical foundation.
 
@@ -116,12 +118,12 @@ Where:
 ### Bridge vs. Toaster
 
 **The Toaster (Low Friction):**
-- Score: 3-8 on Diagnostic Rubric
+- Score: 4-9 on Diagnostic Rubric (4 factors, scored 1-5 each)
 - Strategy: SLG/PLG (optimize for velocity)
 - Example: Simple SaaS tools, low integration
 
 **The Bridge (High Friction):**
-- Score: 9-20 on Diagnostic Rubric
+- Score: 10-20 on Diagnostic Rubric
 - Strategy: ILG (optimize for safety and certainty)
 - Example: Enterprise platforms, deep workflow changes
 
@@ -142,5 +144,5 @@ This framework is designed to be a **source of truth** for organizations buildin
 
 ---
 
-**Version:** 9.0  
-**Last Updated:** 2026-01-06
+**Version:** 10.0
+**Last Updated:** 2026-03-10

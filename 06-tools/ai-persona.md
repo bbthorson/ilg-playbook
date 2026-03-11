@@ -26,4 +26,4 @@ This persona is designed to operationalize the ILG Constitution. When analyzing 
 
 ## Reference
 
-See [ILG Constitution](../00.%20Foundation/ILG%20Constitution.md) for the complete theoretical framework.
+See [ILG Constitution](../00-foundation/ilg-constitution.md) for the complete theoretical framework.

@@ -9,7 +9,7 @@
 | Dimension | **ILG (Implementation-Led)** | **PLG (Product-Led)** | **SLG (Sales-Led)** |
 |-----------|------------------------------|----------------------|---------------------|
 | **Deal Type** | The Bridge | The Toaster | The Pitch |
-| **Friction Profile** | High (10-15) | Low (3-9) | Medium (6-12) |
+| **Friction Profile** | High (10-20) | Low (4-9) | Medium (6-12) |
 | **Optimization Goal** | Safety & Certainty | Velocity & Volume | Efficiency & Coverage |
 | **Primary Metric** | NRR, Adoption | User Growth, Activation | Win Rate, Pipeline Velocity |
 | **Sales Cycle** | 3-9 months | Self-service (days) | 1-3 months |
@@ -307,18 +307,22 @@ $$TC_{total} = (TC_{search} + TC_{consensus} + TC_{implementation}) \times (1 + 
 
 ## Decision Framework
 
-### Step 1: Triage (Use Process Calculator)
-Score the deal on:
-1. Tech Specificity (1-5)
-2. Org Specificity (1-5)
-3. Political Complexity (1-5)
+### Step 0: Pre-Qualification (Workflow Maturity Gate)
+Does a documented SOP exist? If NO → **Chaos Trap** → Redirect to Consulting.
+
+### Step 1: Triage (Use [Deal Triage Calculator](../03-field-assets/process-calculator.md))
+Score the deal on 4 factors (1-5 each):
+1. Tech Specificity
+2. Org Specificity
+3. Political Complexity
+4. Retention Horizon
 
 ### Step 2: Apply Decision Matrix
-- **Score 3-9:** PLG/SLG (optimize for velocity)
-- **Score 10-15:** ILG (optimize for safety)
+- **Score 4-9:** PLG/SLG (optimize for velocity)
+- **Score 10-20:** ILG (optimize for safety)
 
 ### Step 3: Override Rules
-- If prospect asks for pilot/POC → ILG (score 15)
+- If prospect asks for pilot/POC → ILG (score 20)
 - If self-service viable → PLG
 - If standard enterprise sale → SLG
 

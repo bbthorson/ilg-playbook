@@ -9,7 +9,7 @@
 **Before diving into the deal, validate the lane:**
 
 - [ ] **"Why is this a Bridge?"** 
-  - Show me the Process Calculator score (must be 10-15)
+  - Show me the Process Calculator score (must be 10-20)
   - What's the tech specificity? Org specificity? Political complexity?
   
 - [ ] **"Did the override rule apply?"**

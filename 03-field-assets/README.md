@@ -12,7 +12,7 @@ This directory contains the practical artifacts you deploy with customers during
 
 ## ILG Motion (Implementation-Led Growth)
 
-**When to Use:** Bridge deals (score 10-15 on diagnostic rubric)
+**When to Use:** Bridge deals (score 10-20 on diagnostic rubric)
 
 The ILG motion uses three sequential artifacts to drive information asymmetry ($I_A$) to zero before signature:
 
@@ -84,7 +84,7 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 ## PLG Motion (Product-Led Growth)
 
-**When to Use:** Toaster deals (score 3-9 on diagnostic rubric)
+**When to Use:** Toaster deals (score 4-9 on diagnostic rubric)
 
 ### [PLG](./plg-motion)
 
@@ -106,16 +106,17 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 **Purpose:** Classify deals as Bridge or Toaster
 
-**Diagnostic Rubric:**
-1. Tech Specificity (1-5): How hard to rip out?
-2. Org Specificity (1-5): How many habits change?
-3. Political Complexity (1-5): Who can say no?
+**Diagnostic Rubric (4 factors, scored 1-5 each):**
+1. Tech Specificity: How hard to rip out?
+2. Org Specificity: How many habits change?
+3. Political Complexity: Who can say no?
+4. Retention Horizon: One-shot or repeat game?
 
-**Decision Matrix:**
-- Score 3-9 → Toaster (use PLG motion)
-- Score 10-15 → Bridge (use ILG motion)
+**Decision Matrix (Score Range: 4-20):**
+- Score 4-9 → Toaster (use PLG/SLG motion)
+- Score 10-20 → Bridge (use ILG motion)
 
-**Override Rule:** If prospect asks for pilot/POC, automatically classify as Bridge (score 15)
+**Override Rule:** If prospect asks for pilot/POC, automatically classify as Bridge (score 20)
 
 ---
 

@@ -97,10 +97,11 @@ Unaddressed resistance leads to:
 
 ## Knowledge Base References
 
-- [ILG Constitution - Part II](../../00.%20Foundation/ILG%20Constitution.md)
-- [CFIR Research](../../01.%20Research/CFIR.md) (Implementation science framework)
-- [Red Team Protocol](../../03.%20Field%20Assets/ILG/02.%20Red%20Team%20Protocol.md) (Practical tool)
-- [Contextual Blueprint](../../03.%20Field%20Assets/ILG/01.%20Contextual%20Blueprint.md) (Political mapping)
+- [ILG Constitution - Part II](../../00-foundation/ilg-constitution.md)
+- [CFIR Research](../../01-research/cfir.md) (Implementation science framework)
+- [CFIR Field Mapping](../../00-foundation/cfir-field-mapping.md) (How CFIR maps to ILG tools)
+- [Red Team Protocol](../../03-field-assets/ilg-motion/02-validation-red-team-protocol.md) (Practical tool)
+- [Contextual Blueprint](../../03-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) (Political mapping)
 
 ---
 
@@ -301,6 +302,6 @@ When evaluating responses:
 ## Next Steps
 
 Once you've completed this module:
-- ✅ Move to [Module 3 - Infinite Game](./Module%203%20-%20Infinite%20Game.md)
+- ✅ Move to [Module 3 - Infinite Game](./module-3-infinite-game.md)
 - 🔄 Build political capital maps for your current Bridge deals
 - 📊 Practice pre-mortems in discovery calls
