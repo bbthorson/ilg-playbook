@@ -45,13 +45,13 @@ This curriculum is designed to train sales reps on the ILG framework through int
 
 ### [Module 1: Economics of Fear](./courses/module-1-economics-of-fear.md) (3 hours)
 
-**Goal:** Diagnose information asymmetry and fear-based objections
+**Goal:** Diagnose the bilateral asymmetry gap and fear-based objections
 
 **Key Concepts:**
-- Information asymmetry multiplier ($I_A$)
+- Bilateral asymmetry gap ($\Delta_A$) and the Fear Multiplier
+- Seller ignorance ($I_{seller}$) vs. buyer uncertainty ($I_{buyer}$)
 - Rationality of inaction (JOLT Effect)
 - Fear vs. price objections
-- Bilateral asymmetry (seller and buyer gaps)
 
 **Exercises:**
 - Diagnose 3 objections (fear vs. price)

@@ -109,7 +109,7 @@ The sales motion is determined by two axes: **Friction** (how hard is the buying
 3. **Mutual Implementation Plan** - Governance structure, shared accountability
 
 **Success Criteria:**
-- Information asymmetry ($I_A$) → 0
+- Bilateral asymmetry gap ($\Delta_A$) → 0
 - Saboteur identified and contained
 - Realistic expectations set
 - Resources committed
@@ -203,19 +203,17 @@ The sales motion is determined by two axes: **Friction** (how hard is the buying
 
 ### ILG (High Transaction Costs)
 
-$$TC_{total} = (TC_{search} + TC_{consensus} + TC_{implementation}) \times (1 + |I_A|)$$
+$$F_{effective} = F_{base} \times (1 + \Delta_A)$$
 
-**Where costs are high:**
-- **Search:** Complex requirements, many stakeholders
-- **Consensus:** Political dynamics, competing interests
-- **Implementation:** Deep integration, change management
-- **$I_A$ Multiplier:** Fear of failure amplifies all costs
+**Where friction is high:**
+- **$F_{base}$:** Complex requirements, political dynamics, deep integration, change management
+- **$\Delta_A$:** Bilateral asymmetry gap — seller ignorance ($I_{seller}$) and buyer uncertainty ($I_{buyer}$) amplify perceived cost
 
-**ILG Strategy:** Systematically reduce each cost through artifacts
-- Blueprint → Reduces search costs (clarity on fit)
-- Red Team → Reduces consensus costs (surface resistance)
-- MIP → Reduces implementation costs (governance + resources)
-- All three → Drive $I_A \to 0$ (reduce fear multiplier)
+**ILG Strategy:** Systematically reduce friction through artifacts
+- Blueprint → Maps $F_{base}$ and reduces $I_{seller}$ (discovery + clarity on fit)
+- Red Team → Reduces $I_{buyer}$ through costly signals (surface resistance, validate feasibility)
+- MIP → Locks surplus before the Decay Clock ($V \times e^{-\delta t}$) erodes the buying window
+- All three → Drive $\Delta_A \to 0$ (close whichever gap is wider first)
 
 ---
 
@@ -225,7 +223,7 @@ $$TC_{total} = (TC_{search} + TC_{consensus} + TC_{implementation}) \times (1 + 
 - **Search:** Self-service, clear value prop
 - **Consensus:** Single user or small team
 - **Implementation:** Plug-and-play, no integration
-- **$I_A$ Multiplier:** Low risk (easy to try, easy to leave)
+- **$\Delta_A$:** Low (easy to try, easy to leave — minimal asymmetry)
 
 **PLG Strategy:** Remove all friction
 - Free trial (no search cost)
@@ -240,7 +238,7 @@ $$TC_{total} = (TC_{search} + TC_{consensus} + TC_{implementation}) \times (1 + 
 - **Search:** Demo-driven, clear use cases
 - **Consensus:** Departmental buy-in needed
 - **Implementation:** Standard onboarding
-- **$I_A$ Multiplier:** Moderate (some risk, but proven category)
+- **$\Delta_A$:** Moderate (some risk, but proven category — manageable asymmetry)
 
 **SLG Strategy:** Demonstrate value, handle objections
 - ROI calculator (reduce search cost)

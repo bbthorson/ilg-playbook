@@ -76,7 +76,7 @@ WHAT TO TRY:
 ### Module 1: Economics of Fear
 
 **Learning Objectives:**
-- Understand $I_A$ multiplier
+- Understand bilateral asymmetry gap ($\Delta_A$) and its two components
 - Diagnose fear vs. price objections
 - Prescribe risk mitigation strategies
 
@@ -98,7 +98,7 @@ When learner diagnoses objections:
 
 - "Is this buyer comparing you to a competitor, or to the safety of doing nothing?"
 - "What information asymmetry is driving their fear?"
-- "How would you reduce $I_A$ without discounting?"
+- "How would you reduce $\Delta_A$ without discounting? Which side of the gap would you close first?"
 
 ---
 
@@ -272,7 +272,7 @@ Learner must demonstrate:
 
 Learner must demonstrate:
 - ✅ Correct diagnosis of fear vs. price in 3 scenarios
-- ✅ Understanding of $I_A$ multiplier
+- ✅ Understanding of bilateral asymmetry gap ($\Delta_A$) and the Fear Multiplier
 - ✅ Ability to prescribe risk mitigation (not discounting)
 
 ### Module 2 → Module 3

@@ -183,7 +183,7 @@ A Bridge deal (score 13) has stalled for 6 weeks. The champion says "we're still
 1. Diagnose the asymmetry (use Bilateral Scorecard framework)
 2. Identify what you don't know (seller asymmetry)
 3. Identify what they don't know (buyer asymmetry)
-4. Prescribe interventions to drive $I_A \to 0$
+4. Prescribe interventions to drive $\Delta_A \to 0$ (targeting whichever gap — $I_{seller}$ or $I_{buyer}$ — is wider)
 5. Rescue the deal
 
 **LLM Instructions for Roleplay:**

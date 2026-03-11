@@ -40,12 +40,12 @@ This learning plan is designed for sales reps to master ILG through interactive,
 ---
 
 ### Module 1: Economics of Fear (3 hours)
-**Goal:** Diagnose information asymmetry and fear-based objections
+**Goal:** Diagnose the bilateral asymmetry gap and fear-based objections
 
 **Prerequisites:** Module 0
 
 **You'll Learn:**
-- The $I_A$ multiplier and its impact on deal probability
+- The bilateral asymmetry gap ($\Delta_A$) and the Fear Multiplier ($F_{effective} = F_{base} \times (1 + \Delta_A)$)
 - How to differentiate fear from price objections
 - The JOLT Effect and rationality of inaction
 
@@ -129,6 +129,13 @@ Throughout the curriculum, you'll reference:
 - [Research Papers](../01-research) - Academic evidence
 - [Field Assets](../03-field-assets) - Practical tools
 - [Internal Ops](../04-internal-ops) - Governance mechanisms
+
+---
+
+## Supplementary Materials
+
+### [Plain Language Companion — Part I](./plain-language-part-I-companion.md)
+A rep-friendly version of the Constitution's Part I teaching model. Covers the same four concepts (Surplus, Fear Multiplier, Decay Clock, Boundary Condition) without the math. Recommended as pre-reading before Module 1 or as a standalone onboarding doc for new hires.
 
 ---
 

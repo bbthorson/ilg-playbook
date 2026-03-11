@@ -31,7 +31,7 @@ By the end of this module, you will be able to:
 |---|---|---|
 | **Time Horizon** | One transaction | Ongoing relationship |
 | **Optimal Strategy** | Maximize immediate profit | Maximize lifetime value |
-| **Information Asymmetry** | Hide flaws ($I_A = -1$) | Drive to symmetry ($I_A = 0$) |
+| **Asymmetry Gap ($\Delta_A$)** | Leave gaps wide (hide flaws, skip discovery) | Drive $\Delta_A \to 0$ (close both seller ignorance and buyer uncertainty) |
 | **Consequence of Deception** | None (no future interaction) | Retaliation (churn, bad reviews) |
 
 **The Shadow of the Future:**
@@ -42,7 +42,7 @@ When players know they'll interact again, **cooperation becomes rational**.
 - **$T_1$:** Implementation (they discover the truth)
 - **$T_2$:** Renewal (they decide to stay or churn)
 
-**The ILG Principle:** We must drive $I_A \to 0$ at $T_0$ to secure $T_2$.
+**The ILG Principle:** We must drive $\Delta_A \to 0$ at $T_0$ — closing both seller ignorance and buyer uncertainty — to secure $T_2$.
 
 ### The Principal-Agent Problem
 
@@ -113,8 +113,8 @@ A contractual agreement that:
 **The Economic Logic:**
 
 In traditional sales comp:
-- Rep closes deal with $I_A = -1$ (hides flaws)
-- Customer discovers truth at $T_1$ (implementation)
+- Rep leaves $\Delta_A$ wide (hides flaws, skips discovery)
+- Customer discovers the truth at $T_1$ (implementation)
 - Customer churns at $T_2$ (renewal)
 - Rep has already moved on (no consequence)
 
@@ -124,7 +124,7 @@ In traditional sales comp:
 - Negative word-of-mouth
 
 **With Vested Commission:**
-- Rep drives $I_A \to 0$ at $T_0$ (tells the truth)
+- Rep drives $\Delta_A \to 0$ at $T_0$ (closes both gaps through discovery and costly signals)
 - Customer has realistic expectations
 - Implementation succeeds
 - Customer renews and expands

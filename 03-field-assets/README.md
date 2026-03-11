@@ -14,11 +14,11 @@ This directory contains the practical artifacts you deploy with customers during
 
 **When to Use:** Bridge deals (score 10-20 on diagnostic rubric)
 
-The ILG motion uses three sequential artifacts to drive information asymmetry ($I_A$) to zero before signature:
+The ILG motion uses three sequential artifacts to drive the bilateral asymmetry gap ($\Delta_A$) to zero before signature — reducing seller ignorance ($I_{seller}$) through discovery and buyer uncertainty ($I_{buyer}$) through costly signals:
 
 ### [01. Contextual Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md)
 
-**Purpose:** Closes the **Preference Gap** (Seller Asymmetry)
+**Purpose:** Maps $F_{base}$ and reduces **Seller Ignorance** ($I_{seller}$)
 
 **Function:** Discovery and qualification tool that maps:
 - Economic event (the catalyst)
@@ -34,7 +34,7 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 ### [02. Red Team Protocol](./ilg-motion/02-validation-red-team-protocol.md)
 
-**Purpose:** Closes the **Performance Gap** (Buyer Asymmetry)
+**Purpose:** Reduces **Buyer Uncertainty** ($I_{buyer}$) through costly signals
 
 **Function:** Pre-mortem workshop that:
 - Surfaces hidden resistance (skeptics vs. adversaries)
@@ -50,7 +50,7 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 ### [03. Mutual Implementation Plan](./ilg-motion/03-closing-mutual-implementation-plan.md)
 
-**Purpose:** Governance & Incentive Alignment
+**Purpose:** Locks surplus ($S > 0$) through bilateral governance before the Decay Clock erodes the buying window
 
 **Function:** Contractual agreement that:
 - Defines success metrics (RE-AIM framework)
@@ -58,7 +58,7 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 - Creates shared accountability
 - Turns resources into "tradeable currency"
 
-**Mechanism:** Skin in the game for both parties
+**Mechanism:** Skin in the game for both parties — mutual commitments that make it costly for either side to defect
 
 **Outcome:** Successful implementation, reduced churn risk, foundation for renewal
 
@@ -133,12 +133,11 @@ The ILG motion uses three sequential artifacts to drive information asymmetry ($
 
 **The Economic Logic:**
 
-High asset specificity (Bridge) creates high transaction costs:
-- Implementation effort (the work)
-- Information asymmetry (the fear multiplier)
-- Consensus costs (political complexity)
+High asset specificity (Bridge) creates high effective friction:
+- $F_{base}$: Implementation effort, consensus costs, switching costs (the work)
+- $\Delta_A$: Bilateral asymmetry gap (the fear multiplier) — composed of seller ignorance ($I_{seller}$) and buyer uncertainty ($I_{buyer}$)
 
-ILG artifacts systematically reduce these costs by driving $I_A \to 0$ before signature.
+ILG artifacts systematically reduce these costs by driving $\Delta_A \to 0$ before signature — closing whichever gap is wider first.
 
 ---
 
