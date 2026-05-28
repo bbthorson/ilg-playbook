@@ -8,14 +8,15 @@
 
 **Implementation-Led Growth (ILG)** is a sales methodology designed for high-friction B2B software where traditional Product-Led Growth (PLG) or Sales-Led Growth (SLG) fails. 
 
-The core insight: **Sales probability is driven by risk minimization, not value maximization.**
+The core insight: **In high-specificity deals, reducing friction creates more surplus than increasing value. But friction is amplified by information gaps, and value erodes with time — so the goal is to close the asymmetry gap faster than urgency decays.**
 
 In complex enterprise deals, buyers face:
-- **High transaction costs** (search, consensus, implementation)
-- **Information asymmetry** (fear of hidden flaws, uncertainty about fit)
-- **Asset specificity** (deep workflow integration, high switching costs)
+- **High base friction** ($F_{base}$) — search costs, consensus costs, implementation costs, switching costs
+- **Bilateral asymmetry** ($\Delta_A$) — seller ignorance and buyer uncertainty amplify perceived friction
+- **Decaying urgency** ($\delta$) — the triggering event that opened the buying window has a half-life
+- **Asset specificity** ($k$) — deep workflow integration creates high switching costs
 
-ILG addresses these through **costly signals** (workshops, blueprints, pre-mortems) that drive information asymmetry to zero *before* the sale, ensuring successful implementation and renewal.
+ILG addresses these through **discovery artifacts** (Blueprints) that reduce seller ignorance and **costly signals** (Red Teams, paid pilots) that reduce buyer uncertainty — driving $\Delta_A \to 0$ before the Decay Clock runs out.
 
 ---
 
@@ -28,8 +29,10 @@ ILG addresses these through **costly signals** (workshops, blueprints, pre-morte
   - Part I: Core Economic Theory (Fundamental Equation, Deal Zone, Repeated Game)
   - Part II: The Three Axioms (The System Core)
   - Part III: Organizational Corollary (Mapping Costs to Departments)
-  - Part IV: Strategy & Triage Protocol (Bridge vs. Toaster)
+  - Part IV: Strategy & Triage Protocol (Chaos Trap Gate, 4-Factor Diagnostic Rubric, Bridge vs. Toaster)
   - Part V: The Artifacts (Blueprint, Red Team Workshop, Mutual Implementation Plan)
+- **[Sales Motion Comparison](./00-foundation/sales-motion-comparison.md)** - ILG vs. PLG vs. SLG decision framework
+- **[CFIR Field Mapping](./00-foundation/cfir-field-mapping.md)** - How Implementation Science constructs map to ILG field assets
 
 **Start here** to understand the theoretical foundation.
 
@@ -99,29 +102,31 @@ Internal tools for organizational alignment:
 
 ## Core Concepts at a Glance
 
-### The Fundamental Equation
+### The Teaching Model (4 Concepts)
 
-$$P_{sale} \propto \frac{(V_{solution} - V_{status\_quo})}{TC_{total}}$$
+$$S = \left(V_{solution} \times e^{-\delta t} - V_{next\_best}\right) - F_{base} \times (1 + \Delta_A)$$
 
 Where:
-- $TC_{total}$ = Total Transaction Costs (search + consensus + implementation) × (1 + |$I_A$|)
-- $I_A$ = Information Asymmetry Multiplier (-1 to +1)
+- $S$ = Deal Surplus (must be > 0 for a deal to close)
+- $\Delta_A$ = Bilateral Asymmetry Gap — composed of Seller Ignorance ($I_{seller}$) and Buyer Uncertainty ($I_{buyer}$)
+- $\delta$ = Decay Rate (how quickly urgency fades after the triggering event)
+- Subject to: $k > k_{threshold}$ (high asset specificity) AND $n_{viable} \leq n_{max}$ (thin market)
 
 ### The Three Axioms
 
-1. **Law of Economic Boundaries** - Commercial friction is driven by Asset Specificity (Bridge vs. Toaster).
-2. **Law of Asymmetry Convergence** - Trust requires closing the gap between fear and value (Information Asymmetry).
-3. **Law of Bilateral Governance** - Long-term alignment requires mutual skin in the game (Principal-Agent Alignment).
+1. **Law of Economic Boundaries** — Asset Specificity determines whether ILG applies (Bridge vs. Toaster).
+2. **Law of Asymmetry Convergence** — Drive $\Delta_A \to 0$ by closing whichever gap is wider first (seller ignorance or buyer uncertainty).
+3. **Law of Bilateral Governance** — Long-term alignment requires mutual skin in the game (Principal-Agent Alignment).
 
 ### Bridge vs. Toaster
 
 **The Toaster (Low Friction):**
-- Score: 3-8 on Diagnostic Rubric
+- Score: 4-9 on Diagnostic Rubric (4 factors, scored 1-5 each)
 - Strategy: SLG/PLG (optimize for velocity)
 - Example: Simple SaaS tools, low integration
 
 **The Bridge (High Friction):**
-- Score: 9-20 on Diagnostic Rubric
+- Score: 10-20 on Diagnostic Rubric
 - Strategy: ILG (optimize for safety and certainty)
 - Example: Enterprise platforms, deep workflow changes
 
@@ -142,5 +147,5 @@ This framework is designed to be a **source of truth** for organizations buildin
 
 ---
 
-**Version:** 9.0  
-**Last Updated:** 2026-01-06
+**Version:** 10.0
+**Last Updated:** 2026-03-10

@@ -26,12 +26,13 @@ Goal: To calibrate the "Commit" forecast based on Friction, not Hope.
 
 *If the deal slips, it will be because of one of these three variables.*
 
-1. **Valuation Risk (**$V\_{solution}$**):** Is the ROI too fuzzy?  
-   * *Fix:* Tighten the "Cost of Inaction" in the Blueprint.  
-2. **Transaction Cost Risk (**$TC\_{implementation}$**):** Is the work too scary?  
-   * *Fix:* Deploy a "Concierge Onboarding" offer in the MIP to lower perceived effort.  
-3. **Asymmetry Risk (**$I\_A$**):** Do they not trust us?  
-   * *Fix:* Offer a "Paid Pilot" (Costly Signal) to prove intent.
+1. **Valuation Risk (**$V\_{solution}$**):** Is the ROI too fuzzy? Is the buyer's $V_{next\_best}$ (build in-house, workaround, market withdrawal) more attractive?
+   * *Fix:* Tighten the "Cost of Inaction" and "Decision Alternatives" sections in the Blueprint.
+2. **Friction Risk (**$F\_{base}$**):** Is the work too scary?
+   * *Fix:* Deploy a "Concierge Onboarding" offer in the MIP to lower perceived effort.
+3. **Asymmetry Risk (**$\Delta\_A$**):** Do they not trust us ($I_{buyer}$ high), or do we not understand them ($I_{seller}$ high)?
+   * *Fix for $I_{buyer}$:* Offer a "Paid Pilot" (Costly Signal) to prove intent.
+   * *Fix for $I_{seller}$:* Deeper discovery — revisit Blueprint, map workflows you missed.
 
 ## The Forecast Verdict
 

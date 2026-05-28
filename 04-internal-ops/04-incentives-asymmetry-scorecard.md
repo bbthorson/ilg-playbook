@@ -5,7 +5,7 @@ Owner: Sales Manager & Rep
 Frequency: Weekly Forecast Call  
 **Purpose:** To measure if the deal is "symmetric" enough to close.
 
-- **Theory:** A deal only sticks when Information Asymmetry ($I\_A$) for *both* parties reaches 0\.  
+- **Theory:** A deal only sticks when the Bilateral Asymmetry Gap ($\Delta\_A$) — composed of Seller Ignorance ($I\_{seller}$) and Buyer Uncertainty ($I\_{buyer}$) — reaches 0\.
 - **Rule:** If the Delta \> 5, the deal is at high risk of "No Decision" or Churn.
 
 ## Part 1: Seller Asymmetry (What WE don't know)

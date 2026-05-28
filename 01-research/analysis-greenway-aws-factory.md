@@ -6,7 +6,7 @@
 - **The Opposition (Defense):** The high transaction costs and long deployment timelines (months) for custom medical AI.
 
 ## Step 2: Line of Scrimmage (Economic Friction)
-- **Identify $I_A$ (Information Asymmetry):** Providers often don't know if a "Black Box" AI model will fit their specific clinical workflows, leading to "Lemons" fear.
+- **Identify $\Delta_A$ (Bilateral Asymmetry):** Providers often don't know if a "Black Box" AI model will fit their specific clinical workflows (high $I_{buyer}$), leading to "Lemons" fear. Simultaneously, AI vendors rarely understand the provider's specific clinical context (high $I_{seller}$).
 - **Identify $TC$ (Transaction Costs):**
     - **Search Costs:** High. Finding specialized agents for every clinical niche is overwhelming.
     - **Consensus Costs:** Massive. IT, Legal, and Clinical heads must agree on every new agent's risk profile.

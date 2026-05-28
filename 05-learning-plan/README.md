@@ -13,7 +13,7 @@ This learning plan is designed for sales reps to master ILG through interactive,
 ### With an LLM Platform
 
 1. **Choose your LLM tutor** - Use ChatGPT, Claude, or any conversational AI
-2. **Load the tutor instructions** - Copy [LLM Tutor Instructions.md](./LLM%20Tutor%20Instructions.md) into your LLM session
+2. **Load the tutor instructions** - Copy [LLM Tutor Instructions](./llm-tutor-instructions.md) into your LLM session
 3. **Work through modules sequentially** - Start with Module 0 and progress in order
 4. **Complete exercises** - The LLM will provide feedback and assess your understanding
 5. **Practice with simulations** - Use roleplay scenarios to apply concepts
@@ -40,12 +40,12 @@ This learning plan is designed for sales reps to master ILG through interactive,
 ---
 
 ### Module 1: Economics of Fear (3 hours)
-**Goal:** Diagnose information asymmetry and fear-based objections
+**Goal:** Diagnose the bilateral asymmetry gap and fear-based objections
 
 **Prerequisites:** Module 0
 
 **You'll Learn:**
-- The $I_A$ multiplier and its impact on deal probability
+- The bilateral asymmetry gap ($\Delta_A$) and the Fear Multiplier ($F_{effective} = F_{base} \times (1 + \Delta_A)$)
 - How to differentiate fear from price objections
 - The JOLT Effect and rationality of inaction
 
@@ -125,19 +125,26 @@ This learning plan is designed for sales reps to master ILG through interactive,
 ## Knowledge Base References
 
 Throughout the curriculum, you'll reference:
-- [ILG Constitution](../00.%20Foundation/ILG%20Constitution.md) - Core theory
-- [Research Papers](../01.%20Research) - Academic evidence
-- [Field Assets](../03.%20Field%20Assets) - Practical tools
-- [Internal Ops](../04.%20Internal%20Ops) - Governance mechanisms
+- [ILG Constitution](../00-foundation/ilg-constitution.md) - Core theory
+- [Research Papers](../01-research) - Academic evidence
+- [Field Assets](../03-field-assets) - Practical tools
+- [Internal Ops](../04-internal-ops) - Governance mechanisms
+
+---
+
+## Supplementary Materials
+
+### [Plain Language Companion — Part I](./plain-language-part-I-companion.md)
+A rep-friendly version of the Constitution's Part I teaching model. Covers the same four concepts (Surplus, Fear Multiplier, Decay Clock, Boundary Condition) without the math. Recommended as pre-reading before Module 1 or as a standalone onboarding doc for new hires.
 
 ---
 
 ## Getting Started
 
-1. Read [LLM Tutor Instructions.md](./LLM%20Tutor%20Instructions.md)
-2. Start with [Module 0 - Triage Protocol.md](./Module%200%20-%20Triage%20Protocol.md)
+1. Read [LLM Tutor Instructions](./llm-tutor-instructions.md)
+2. Start with [Module 0 - Triage Protocol](./courses/module-0-triage-protocol.md)
 3. Work sequentially through modules
-4. Practice with [Simulations.md](./Simulations.md)
+4. Practice with [Simulations](./simulations.md)
 
 ---
 

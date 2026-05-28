@@ -331,7 +331,7 @@ The complete signaling model requires two flows:
 - **Vendor Costly Signal → Buyer:** "We are a Peach" (rigorous discovery, paid pilots, security audits, transparent pricing)
 - **Buyer Costly Signal → Vendor:** "We are serious" (executive sponsorship, data sharing, dedicated project resources, willingness to pay for assessment)
 
-**Both signals are required** to reduce information asymmetry ($I_A$) to the level needed for a quality implementation. A vendor who invests heavily in costly signals but receives no buyer signals in return is operating with a one-sided information deficit. They cannot properly diagnose the buyer's Inner Setting (CFIR), which means the implementation plan will be built on assumptions — exactly the condition that produces the 84% "Challenged/Failed" rate (Standish).
+**Both signals are required** to reduce the bilateral asymmetry gap ($\Delta_A$) to the level needed for a quality implementation. Vendor costly signals reduce buyer uncertainty ($I_{buyer}$), while buyer costly signals reduce seller ignorance ($I_{seller}$). A vendor who invests heavily in costly signals but receives no buyer signals in return is operating with a one-sided information deficit — $I_{seller}$ remains high even as $I_{buyer}$ drops. They cannot properly diagnose the buyer's Inner Setting (CFIR), which means the implementation plan will be built on assumptions — exactly the condition that produces the 84% "Challenged/Failed" rate (Standish).
 
 ### 8.2 Types of Buyer Costly Signals
 

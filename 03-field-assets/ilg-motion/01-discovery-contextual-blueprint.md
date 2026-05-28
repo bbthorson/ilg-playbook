@@ -24,7 +24,7 @@
 
 ### 🚨 The "Why" (Read Aloud to Customer)
 
-"Research shows that 83.9% of enterprise IT projects fail to deliver their promised ROI. This failure rarely happens because the software is broken; it happens because the *implementation plan* conflicts with the customer's unique environment.
+"Research consistently shows that two-thirds of enterprise IT projects fail to deliver their promised ROI (Standish Group CHAOS Report, 2020; BCG, 2020). This failure rarely happens because the software is broken; it happens because the *implementation plan* conflicts with the customer's unique environment.
 
 We use this Blueprint to map your specific environment—your politics, your data, and your urgency—so we don't become part of that statistic. If we find a blocker here that we can't solve, we won't ask you to buy."
 

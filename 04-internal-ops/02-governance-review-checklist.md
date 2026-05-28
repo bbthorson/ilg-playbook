@@ -9,7 +9,7 @@
 **Before diving into the deal, validate the lane:**
 
 - [ ] **"Why is this a Bridge?"** 
-  - Show me the Process Calculator score (must be 10-15)
+  - Show me the Process Calculator score (must be 10-20)
   - What's the tech specificity? Org specificity? Political complexity?
   
 - [ ] **"Did the override rule apply?"**
@@ -100,7 +100,7 @@
   - What features did they think we had that we don't?
   - What implementation effort did they underestimate?
 
-**Red Flag:** Buyer still thinks it's "plug and play" → High buyer asymmetry ($I_A = +1$)
+**Red Flag:** Buyer still thinks it's "plug and play" → High buyer uncertainty ($I_{buyer}$)
 
 ---
 
@@ -223,8 +223,9 @@
 2. **Transaction Cost Risk ($TC_{implementation}$):** Work too scary
    - **Fix:** Deploy "Concierge Onboarding" in MIP to lower perceived effort
 
-3. **Asymmetry Risk ($I_A$):** They don't trust us
-   - **Fix:** Offer Paid Pilot (costly signal) to prove intent
+3. **Asymmetry Risk ($\Delta_A$):** They don't trust us (high $I_{buyer}$) or we don't understand them (high $I_{seller}$)
+   - **Fix for $I_{buyer}$:** Offer Paid Pilot (costly signal) to prove intent
+   - **Fix for $I_{seller}$:** Deeper discovery — revisit Blueprint, map workflows you missed
 
 ---
 

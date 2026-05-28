@@ -1,76 +1,69 @@
-# The Mid-Market Risk Calculator (Automated Triage)
+# The Deal Triage Calculator
 
-Version: 2.0  
-Phase: 04\_Mid\_Market\_Lite  
-Audience: Internal Rep / Pre-Sales  
-Goal: To determine if a Mid-Market deal needs the "Heavy" Bridge or the "Lite" Toaster motion.
+Version: 3.0
+Audience: Internal Rep / Pre-Sales
+Goal: To determine if a deal needs the "Heavy" Bridge (ILG) or the "Lite" Toaster (SLG/PLG) motion.
 
-## ⚠️ CRITICAL: The Workflow Maturity Gate (Pre-Qualification)
+**Canonical Reference:** [ILG Constitution, Part IV](../00-foundation/ilg-constitution.md)
 
-**Before scoring the factors below, you MUST answer this binary question:**
+---
+
+## Step 1: The Workflow Maturity Gate (Pre-Qualification)
+
+**Before scoring, answer this binary question:**
 
 ### Does a documented standard operating procedure (SOP) exist for this problem today?
 
-- [ ] **YES** - A documented workflow exists (written process, documented steps, known sequence of activities)
-- [ ] **NO** - The workflow is undefined, ad-hoc, or varies by person/team
+- [ ] **YES** — A documented workflow exists (written process, documented steps, known sequence of activities). → Proceed to Step 2.
+- [ ] **NO** — The workflow is undefined, ad-hoc, or varies by person/team. → **STOP.**
 
-**If NO:** 🛑 **STOP. Do not proceed to Lane 2.**  
-
-**Diagnosis:** This is **Quadrant III: The Chaos Trap** (High Specificity + Undefined Workflow).  
-
-**Action Required:** Redirect to **Consulting/Paid Workshop** to define the SOP first. The prospect must graduate from Consulting → ILG.  
-
-**Rationale:** Selling software to automate an undefined workflow creates churn. You cannot digitize chaos.
+**If NO:** This is the **Chaos Trap** (High Specificity + Undefined Workflow). You cannot digitize chaos. Redirect to **Consulting/Paid Workshop** to define the SOP first. The prospect must graduate from Consulting → ILG.
 
 ---
 
-**If YES:** ✅ Proceed to score the specificity factors below.
+## Step 2: Score the Four Factors (1-5 each)
+
+### 1. Technical Specificity (How deep is the hook?)
+
+- **1:** Standalone tool. No integration needed.
+- **3:** Standard API integration (Salesforce/Slack).
+- **5:** Deep ERP/Core Infrastructure rewrite. Custom code required.
+- **Score:** _____
+
+### 2. Organizational Specificity (How many habits change?)
+
+- **1:** Single team (<5 users). No process change.
+- **3:** Single Department (Sales/Marketing). Minor process tweak.
+- **5:** Cross-Functional (Sales + Finance + Ops). Total workflow overhaul.
+- **Score:** _____
+
+### 3. Political Complexity (Who can say no?)
+
+- **1:** Single Decision Maker.
+- **3:** Committee (3-4 stakeholders).
+- **5:** Board Approval / Procurement / Security Audit required.
+- **Score:** _____
+
+### 4. Retention Horizon (One-shot or repeat game?)
+
+- **1:** One-time project, no renewal expected.
+- **3:** Annual contract, moderate switching cost.
+- **5:** Multi-year platform, deep dependency, high switching cost.
+- **Score:** _____
 
 ---
 
-## Instructions
+## Step 3: Interpret the Result
 
-*Score each factor from 1 (Low Risk) to 5 (High Risk).*
+**Total Score (4-20):** _________
 
-- **Total Score \< 10:** Lane 1 (Toaster). Send Standard Deck \+ Order Form.  
-- **Total Score \> 10:** Lane 2 (Bridge). Deploy Contextual Blueprint.
-
-## The Factors
-
-### 1\. Technical Specificity (How deep is the hook?)
-
-- **1:** Standalone tool. No integration needed.  
-- **3:** Standard API integration (Salesforce/Slack).  
-- **5:** Deep ERP/Core Infrastructure rewrite. Custom code required.  
-- **Score:** \_\_\_\_\_
-
-### 2\. Organizational Specificity (How many habits change?)
-
-- **1:** Single team (\<5 users). No process change.  
-- **3:** Single Department (Sales/Marketing). Minor process tweak.  
-- **5:** Cross-Functional (Sales \+ Finance \+ Ops). Total workflow overhaul.  
-- **Score:** \_\_\_\_\_
-
-### 3\. Political Complexity (Who can say no?)
-
-- **1:** Single Decision Maker.  
-- **3:** Committee (3-4 stakeholders).  
-- **5:** Board Approval / Procurement / Security Audit required.  
-- **Score:** \_\_\_\_\_
-
-## The Result
-
-**Total Score:** \_\_\_\_\_\_\_\_\_
-
-### Interpretation:
-
-- **0 \- 9 (The Toaster):**  
-  * **Action:** Go Fast.  
-  * **Asset:** Standard Demo.  
-  * **Focus:** Speed & Price.  
-- **10 \- 15 (The Bridge):**  
-  * **Action:** Slow Down.  
-  * **Asset:** Contextual Blueprint (Lite).  
+- **4-9 (The Toaster):**
+  * **Action:** Go Fast.
+  * **Asset:** Standard Demo + Order Form.
+  * **Focus:** Speed & Price.
+- **10-20 (The Bridge):**
+  * **Action:** Slow Down.
+  * **Asset:** Deploy Contextual Blueprint.
   * **Focus:** Risk Mitigation.
 
-**Override Rule:** If the prospect asks for a "Pilot" or "Proof of Concept," immediately upgrade the score to **15** (Bridge). Pilots are strictly governed by the Red Team Protocol.
+**Override Rule:** If the prospect asks for a "Pilot" or "Proof of Concept," immediately upgrade the score to **20** (Bridge). Pilots are strictly governed by the Red Team Protocol.

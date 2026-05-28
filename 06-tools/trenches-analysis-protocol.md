@@ -8,7 +8,7 @@
 - **The Opposition:** What is the "Defense"? (Market friction, inertia, regulatory hurdles, or a specific competitor).
 
 ## Step 2: Line of Scrimmage (Economic Friction)
-- **Identify $I_A$ (Information Asymmetry):** What do the players NOT know about each other or the market that could cause a "fumbled handoff"?
+- **Identify $\Delta_A$ (Bilateral Asymmetry):** What do the players NOT know about each other? Diagnose both sides: seller ignorance ($I_{seller}$) and buyer/market uncertainty ($I_{buyer}$). Which gap could cause a "fumbled handoff"?
 - **Identify $TC$ (Transaction Costs):** 
     - **Search Costs:** How hard was it for them to find this "play"?
     - **Consensus Costs:** How many people have to agree to run this play?
@@ -20,7 +20,7 @@
 
 ## Step 4: The Huddle (Strategic Synthesis)
 - **Offensive Synergy:** Why are they working together instead of competing? How does this partnership eliminate "Double Marginalization" or shared friction?
-- **The Goal:** How does this play drive $I_A \to 0$ and $TC \to \min$?
+- **The Goal:** How does this play drive $\Delta_A \to 0$ and $F_{base} \to \min$? Which side of the asymmetry gap does it close?
 
 ---
 

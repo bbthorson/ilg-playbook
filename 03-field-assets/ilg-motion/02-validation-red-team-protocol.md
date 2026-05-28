@@ -54,8 +54,6 @@ Goal: To convert "Rational Fear" into "Confidence" and identify the Saboteur.
 
 ---
 
-Triage this original content:
-
 # The Red Team Facilitator Guide
 
 Internal Name: The Pre-Mortem / Red Team Workshop
@@ -78,7 +76,7 @@ Required Attendees: Your Champion \+ The Skeptic (Technical/Operational Lead)
 
 "Thanks for joining. I want to be clear: **This is not a sales pitch.**
 
-We are here because industry data shows that 83.9% of IT projects fail or are challenged, usually due to unforeseen implementation friction. We refuse to let that happen to our partners.
+We are here because industry data shows that two-thirds of IT projects fail or are challenged, usually due to unforeseen implementation friction (Standish Group, 2020; BCG, 2020). We refuse to let that happen to our partners.
 
 Today, we are going to use a method called **'Prospective Hindsight.'** We are going to fast-forward 6 months and imagine this project has **failed**. Then, we will work backward to figure out why.
 
