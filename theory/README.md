@@ -16,7 +16,7 @@ The canonical ILG framework. The Constitution, the motion-comparison decision to
 
 The academic evidence backing each axiom and artifact. Plus a provenance audit so any quantitative claim can be traced to its primary source.
 
-Start with [00-synthesis-the-new-sales-paradigm.md](02-research/00-synthesis-the-new-sales-paradigm.md) — it integrates the rest and gives a reading guide by audience.
+Start with [00-reading-guide.md](02-research/00-reading-guide.md) — it shows how the papers depend on each other and gives a reading guide by audience.
 
 ## How to read this group
 

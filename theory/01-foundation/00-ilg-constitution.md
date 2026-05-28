@@ -12,11 +12,11 @@
 
 The three axioms govern three aspects of any B2B transaction.
 
-| Axiom | Governs | Scale |
-|---|---|---|
-| **I. Law of Economic Boundaries** | Whether a deal can happen | Market |
-| **II. Law of Friction** | What the deal costs when it happens | Deal |
-| **III. Law of Aligned Adjudication** | Whether the deal persists | Relationship over time |
+| Axiom | Governs | Scale | Tagline |
+|---|---|---|---|
+| **I. Law of Economic Boundaries** | Whether a deal can happen | Market | *"Friction is a feature"* |
+| **II. Law of Friction** | What the deal costs when it happens | Deal | *"Fear > Value"* |
+| **III. Law of Aligned Adjudication** | Whether the deal persists | Relationship over time | *"Structure determines behavior"* |
 
 Together they describe the *existence, economics, and dynamics* of any transaction in a high-friction market. Each axiom generates its own mathematical content; the equations integrate into the Surplus equation in Part III.
 
@@ -39,6 +39,8 @@ The three axioms are progressively visualized through a potential-well diagram t
 ### Axiom I — The Law of Economic Boundaries
 
 > **A market transaction is viable only when asset specificity matches the friction structure deployed. Friction below specificity creates hold-up risk and pushes the buyer to build internally; friction above specificity destroys low-stakes deals by over-engineering them. The deal's asset specificity is the boundary; friction must scale to it.**
+
+> *Tagline: **"Friction is a feature"** in high-specificity deals. Speed kills implementations; the friction is what separates the work from the wishful thinking.*
 
 **Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs; Williamson operationalized this through *asset specificity* — the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the ILG artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Toaster does not need a Blueprint.
 
@@ -66,6 +68,8 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 ### Axiom II — The Law of Friction
 
 > **Effective transaction cost equals base friction (search + consensus + implementation) amplified by the bilateral information asymmetry between buyer and seller. The amplifier shrinks when the claimant invests in demonstrations that low-quality competitors cannot affordably replicate — the Single Crossing Property is the test for what counts.**
+
+> *Tagline: **"Fear > Value."** Reducing risk is ~2× more powerful than increasing ROI. The Safe No beats the Logical Yes.*
 
 **Mechanism (Coase + Spence + Kahneman/Tversky).** Coase identified three transaction costs — search, bargaining, and enforcement — that determine when markets fail. We operationalize these for B2B SaaS as $F_{search}$ (finding the category and a viable vendor), $F_{consensus}$ (internal alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Spence's signaling theory provides the mechanism for reducing them: a signal separates quality from noise only when its cost is proportionally lower for the high-quality actor (the Single Crossing Property). Loss aversion ($\lambda \approx 2.25$ as conceptual anchor, likely higher in organizational contexts) explains why asymmetry multiplies friction rather than reducing value — uncertainty inflates the perceived downside.
 
@@ -99,6 +103,8 @@ The four **Friction Allocation Principles** — the operational content of this 
 ### Axiom III — The Law of Aligned Adjudication
 
 > **Long-term alignment requires that every party whose decisions affect outcomes has skin in the game tied to those outcomes. This applies not only to buyer and seller but to the channels, platforms, and governance structures that adjudicate signal quality between them. When an adjudicator has no stake in the outcome it adjudicates, the structure drifts from adjudication toward extraction.**
+
+> *Tagline: **"Structure determines behavior."** Incentive design (comp, process, governance) predicts outcomes more reliably than talent or intent.*
 
 **Mechanism (Williamson hold-up + Axelrod repeated games + recursive extension).** Once asset-specific investments are made, the transaction is no longer a market exchange but a bilateral monopoly. Both parties can hold each other up. Axelrod's iterated prisoner's dilemma shows that cooperation becomes the dominant strategy when each party's discount factor — the weight placed on future payoffs — exceeds the threshold determined by the payoff structure. Vested commission, mutual commitments, and bilateral hostages all raise the discount factor.
 

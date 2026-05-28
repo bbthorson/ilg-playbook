@@ -35,7 +35,7 @@ Each group has its own README explaining what's inside and the reading order.
 | If you want to... | Go here |
 |---|---|
 | Understand the theory cold | [theory/01-foundation/](theory/01-foundation/) |
-| See the academic evidence behind a claim | [theory/02-research/](theory/02-research/), starting with [the synthesis](theory/02-research/00-synthesis-the-new-sales-paradigm.md) |
+| See the academic evidence behind a claim | [theory/02-research/](theory/02-research/), starting with the [reading guide](theory/02-research/00-reading-guide.md) |
 | Run an actual deal | [practice/01-field-assets/](practice/01-field-assets/) |
 | Set up your org for ILG | [practice/02-internal-ops/](practice/02-internal-ops/) |
 | Train reps | [practice/03-learning-plan/](practice/03-learning-plan/) |

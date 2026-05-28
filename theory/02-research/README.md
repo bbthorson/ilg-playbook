@@ -19,7 +19,7 @@ When you need the deeper theoretical synthesis of these papers, that work now li
 
 ## Where to start
 
-If you only read one file, read **[00-synthesis-the-new-sales-paradigm.md](./00-synthesis-the-new-sales-paradigm.md)** — the reading guide that explains how the papers depend on each other and which to read for which audience.
+If you only read one file, read **[00-reading-guide.md](./00-reading-guide.md)** — explains how the papers depend on each other and which to read for which audience.
 
 ## Reading order (theoretical dependency)
 
