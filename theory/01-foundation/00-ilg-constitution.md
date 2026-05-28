@@ -1,0 +1,395 @@
+# The Constitution of Implementation-Led Growth (ILG)
+
+**Version:** 11.0
+**Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
+
+> [!IMPORTANT]
+> **What's new in v11.** The Constitution is now structured as *axioms-first* (load-bearing claims) → *derived concepts* (what falls out of the axioms) → *synthesis* (the integrated model). Operational content from previous versions — the Diagnostic Rubric, the Artifacts, organizational procedures — has moved to [`practice/`](../../practice/) and [`02-cfir-field-mapping.md`](./02-cfir-field-mapping.md). The Constitution is now purely theoretical. If a claim cannot be traced to one of the three axioms, it does not belong here.
+
+---
+
+## Part I: The Three Axioms
+
+The three axioms govern three aspects of any B2B transaction.
+
+| Axiom | Governs | Scale |
+|---|---|---|
+| **I. Law of Economic Boundaries** | Whether a deal can happen | Market |
+| **II. Law of Friction** | What the deal costs when it happens | Deal |
+| **III. Law of Aligned Adjudication** | Whether the deal persists | Relationship over time |
+
+Together they describe the *existence, economics, and dynamics* of any transaction in a high-friction market. Each axiom generates its own mathematical content; the equations integrate into the Surplus equation in Part III.
+
+The three axioms are progressively visualized through a potential-well diagram that develops one panel at a time:
+
+**Panel 1 — Axiom I.** A chart with one horizontal line: the Opportunity Cost ceiling. Above the line: no market.
+
+![Panel 1 — Axiom I: The Opportunity Cost Ceiling](./assets/potential-well-panel-1.png)
+
+**Panel 2 — Axiom II.** Add the U-shaped Transaction Cost curve. The well between the curve and the ceiling is where deals can close.
+
+![Panel 2 — Axiom II: The Transaction Cost Curve](./assets/potential-well-panel-2.png)
+
+**Panel 3 — Axiom III.** Add a deal's trajectory $D(t) = TC(t) - OC(t)$ through time. Without active maintenance, $D(t)$ drifts upward toward the ceiling. With Axiom III sustained, the trajectory stays bounded below it.
+
+![Panel 3 — Axiom III: D(t) Trajectory Through Time](./assets/potential-well-panel-3.png)
+
+---
+
+### Axiom I — The Law of Economic Boundaries
+
+> **A market transaction is viable only when asset specificity matches the friction structure deployed. Friction below specificity creates hold-up risk and pushes the buyer to build internally; friction above specificity destroys low-stakes deals by over-engineering them. The deal's asset specificity is the boundary; friction must scale to it.**
+
+**Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs; Williamson operationalized this through *asset specificity* — the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the ILG artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Toaster does not need a Blueprint.
+
+**Mathematical content.** The boundary condition for ILG applicability:
+
+$$k > k_{threshold} \quad \text{and} \quad F_{deployed} \sim k$$
+
+Where $k$ is the asset specificity of the deal and $F_{deployed}$ is the friction structure used to manage it. The first condition is necessary (Bridge vs. Toaster classification); the second is the scaling requirement (friction must match specificity).
+
+The boundary also has time dynamics. Value erodes from the triggering event:
+
+$$V_{effective}(t) = V_{solution} \cdot e^{-\delta t}$$
+
+As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best}$ — including the "make" alternative. This is one component of the Decay Clock; the other component lives under Axiom II as $\Delta_A(t)$ dynamics.
+
+**Failure modes.**
+
+- **Under-frictioned (PLG on a Bridge).** Asset specificity too high for the friction deployed. The buyer faces hold-up risk and chooses to build internally rather than transact. Manifests as "we decided to handle this in-house" (Stanford ChatEHR, Apple's vertical silicon, any "we built it ourselves" story).
+- **Over-frictioned (ILG on a Toaster).** Asset specificity too low for the friction deployed. The cost of Blueprints, Red Teams, and MIPs exceeds the surplus they unlock. The buyer experiences over-engineering and chooses a competitor with lighter motion.
+
+**Operating instruction.** Before deploying any sales motion, classify the deal against this boundary. The operational tool is the [Process Calculator](../../practice/01-field-assets/process-calculator.md).
+
+---
+
+### Axiom II — The Law of Friction
+
+> **Effective transaction cost equals base friction (search + consensus + implementation) amplified by the bilateral information asymmetry between buyer and seller. The amplifier shrinks when the claimant invests in demonstrations that low-quality competitors cannot affordably replicate — the Single Crossing Property is the test for what counts.**
+
+**Mechanism (Coase + Spence + Kahneman/Tversky).** Coase identified three transaction costs — search, bargaining, and enforcement — that determine when markets fail. We operationalize these for B2B SaaS as $F_{search}$ (finding the category and a viable vendor), $F_{consensus}$ (internal alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Spence's signaling theory provides the mechanism for reducing them: a signal separates quality from noise only when its cost is proportionally lower for the high-quality actor (the Single Crossing Property). Loss aversion ($\lambda \approx 2.25$ as conceptual anchor, likely higher in organizational contexts) explains why asymmetry multiplies friction rather than reducing value — uncertainty inflates the perceived downside.
+
+*Intuitively:* buyer uncertainty acts as noise in the channel between seller and buyer. Base friction is the signal; asymmetry is the noise multiplier. Demonstrations that low-quality competitors cannot replicate reduce the noise without touching the underlying signal cost.
+
+**Mathematical content.** The effective transaction cost equation:
+
+$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
+
+The multiplier $\Delta_A$ does not amplify all three components equally. A confused buyer searches a bit harder (modest impact), but the same buyer drives scope creep, missed requirements, and political backlash through consensus and implementation (large impact). The teaching equation uses a global multiplier; operating diagnosis must identify *which* component is being amplified to choose the right intervention.
+
+Asymmetry also has time dynamics. Without active maintenance, $\Delta_A$ rebuilds as information goes stale:
+
+$$\Delta_A(t) = \Delta_A(0) + \gamma t \quad \text{absent maintenance}$$
+
+This is the second component of the Decay Clock — information staleness pushing the multiplier upward over the sales cycle. Together with $V_{effective}(t)$ from Axiom I, the Decay Clock describes how time threatens deal viability on both sides.
+
+The four **Friction Allocation Principles** — the operational content of this axiom — are derived in Part II as conditions any cost-reducing mechanism must satisfy.
+
+**Failure modes.**
+
+- **Cheap talk.** Signals that do not satisfy the Single Crossing Property carry no information. Effort produces no reduction in $\Delta_A$. (Marketing claims, vanity metrics, "best AI" banners.)
+- **Misallocated friction.** Friction borne by the wrong party — typically the receiver instead of the claimant — destroys signal value and produces the babbling equilibrium. (Cold email's current state.)
+- **Akerlof saturation.** When $\Delta_A$ grows so high that even costly signals cannot credibly reduce it, the buyer leaves the market entirely. This is Akerlof's market for lemons — the limit case of this axiom, where signal mechanisms have lost the ability to separate quality from noise.
+- **Jevons collapse (channel-level).** When a channel's friction was production cost and production cost falls to zero, the Single Crossing Property fails at the channel level — every sender produces an indistinguishable signal regardless of underlying quality. (Email post-Clay/Apollo.)
+
+**Operating instruction.** Diagnose which cost component is binding ($F_{search}$ → channel and marketing problem; $F_{consensus}$ → Blueprint; $F_{implementation}$ → Red Team and MIP). Diagnose which side of $\Delta_A$ is wider ($I_{seller}$ → invest in discovery; $I_{buyer}$ → invest in costly signals). Closing the wrong gap or reducing the wrong cost component is wasted effort.
+
+---
+
+### Axiom III — The Law of Aligned Adjudication
+
+> **Long-term alignment requires that every party whose decisions affect outcomes has skin in the game tied to those outcomes. This applies not only to buyer and seller but to the channels, platforms, and governance structures that adjudicate signal quality between them. When an adjudicator has no stake in the outcome it adjudicates, the structure drifts from adjudication toward extraction.**
+
+**Mechanism (Williamson hold-up + Axelrod repeated games + recursive extension).** Once asset-specific investments are made, the transaction is no longer a market exchange but a bilateral monopoly. Both parties can hold each other up. Axelrod's iterated prisoner's dilemma shows that cooperation becomes the dominant strategy when each party's discount factor — the weight placed on future payoffs — exceeds the threshold determined by the payoff structure. Vested commission, mutual commitments, and bilateral hostages all raise the discount factor.
+
+The recursive extension is the new content of this axiom: any party that adjudicates signal quality (channels, platforms, ratings agencies, governance bodies) must themselves satisfy the cooperation condition, or they drift from adjudication into extraction. The principle that works at the deal level (skin in the game) applies at every level of the system.
+
+**Mathematical content.** Cooperation is dominant if and only if:
+
+$$\delta_{discount} > \frac{T - R}{T - P}$$
+
+Where $T$, $R$, $P$ are the temptation, reward, and punishment payoffs and $\delta_{discount}$ is the party's discount factor. The recursive requirement: this condition must hold *for every party in the system*, including any administrator.
+
+The deal's trajectory $D(t) = TC(t) - OC(t)$ stays bounded below zero (deal viable) only when the cooperation condition is sustained throughout the cycle. When it fails — for buyer, seller, or any administrator in the channel — the trajectory drifts upward through the OC ceiling.
+
+**Failure modes.**
+
+- **Deal-level defection.** $\delta_{discount}$ too low for buyer or seller. One side exploits the asset specificity. The classic Williamson hold-up.
+- **Governance-level drift.** Administrator has no $\delta_{discount}$ tied to signal quality. The structure extracts rather than adjudicates. (GPO drift, KLAS coasting on residual brand, sales enablement platforms paid for sends rather than signal quality.)
+- **Channel collapse.** Administrator (the platform) profits from volume, not signal quality. The channel degrades faster than individual participants can compensate. Jevons accelerates the collapse.
+
+**Operating instruction.** Design governance at every level so each adjudicator has skin tied to outcomes. At the deal level: the Mutual Implementation Plan. At the team level: vested commission. At the channel and platform level: select for structures whose operators *lose something* when signal quality drops. If you cannot identify what an administrator loses when signal quality fails, the structure will drift — regardless of how well-intentioned its current state.
+
+---
+
+## Part II: Derived Concepts
+
+Part II organizes the operational consequences of the axioms. Concepts come in three tiers:
+
+- **Primary derivations** — one axiom → one concept. The operational content of each axiom.
+- **Bridge concepts** — two or more axioms integrated. The places where the axioms talk to each other.
+- **Clarifying concepts** — definitions and elaborations. Reference material for the primary derivations.
+
+### Primary Derivations
+
+#### From Axiom I — The Boundary Condition
+
+The Boundary Condition operationalizes Axiom I's central claim: friction must match asset specificity. It is the test every deal must pass before any ILG investment is justified.
+
+A deal is within the ILG boundary when both conditions hold:
+
+- The asset specificity score exceeds the threshold ($k > k_{threshold}$) — the deal is a Bridge, not a Toaster.
+- The friction structure deployed matches the specificity ($F_{deployed} \sim k$) — the motion is appropriately scaled.
+
+Below the threshold, ILG over-engineers what should be a PLG or SLG motion. Above the threshold with under-deployed friction, the buyer perceives hold-up risk and builds internally.
+
+The operational tool that implements the Boundary Condition is the [Process Calculator](../../practice/01-field-assets/process-calculator.md). The Boundary Condition is *what* the calculator measures; the calculator is *how* it gets measured.
+
+The Boundary Condition is the entry point to ILG. Without it, no other prescription in the framework applies. It is the gate that determines whether the rest of the framework is even relevant.
+
+---
+
+#### From Axiom II — The Friction Allocation Principles
+
+The friction allocation principles operationalize Axiom II: they specify the conditions any cost-reducing mechanism must satisfy to actually reduce $\Delta_A$. Without these conditions, signals are cheap talk and the multiplier does not shrink.
+
+Four principles, each testable by the failure mode it predicts:
+
+**1. Friction must be non-automatable.**
+A signal carries information only when its cost cannot be removed by efficiency tools. Production-cost friction is debaseable; expertise, relationship investment, and demonstrated work are not. This is the Single Crossing Property in plain language. *Failure mode:* cheap talk (vanity metrics, "best AI" banners), and at the channel level, Jevons collapse.
+
+**2. Friction borne by the claimant.**
+The party producing the signal pays the cost. When the receiver bears the cost (filtering, evaluating, deciphering), the signal mechanism is broken regardless of how good any individual signal is. *Failure mode:* misallocated friction, the babbling equilibrium (current state of cold email).
+
+**3. Friction scales with stakes.**
+The signal cost should match the size of the claim. A small claim requires modest signal; a large claim requires substantial signal. Mismatch fails in both directions — over-frictioned small claims feel disproportionate, under-frictioned large claims feel reckless. *Failure mode:* a Bridge sold with PLG-grade signals (under-frictioned) or a Toaster sold with ILG-grade signals (over-frictioned).
+
+**4. Adjudicators bear consequences of their validation.**
+Parties that validate or filter signals — channels, platforms, ratings agencies, governance bodies — must lose something when they let bad signals through. Without this, the adjudicator drifts from gatekeeper to extractor. *Failure mode:* GPO drift, KLAS coasting on residual brand, sales platforms paid for sends rather than signal quality.
+
+The principles function as a diagnostic: if a signal mechanism fails to produce $\Delta_A$ reduction, at least one principle has been violated. They also work as a design tool — when constructing a new signal mechanism, the four principles are the test it must pass.
+
+The operational artifact that implements this check is the [Friction Allocation Diagnostic](../../practice/01-field-assets/friction-allocation-diagnostic.md).
+
+---
+
+#### From Axiom III — Recursive Cooperation
+
+The first primary derivation of Axiom III states the *scope* dimension: cooperation must hold at every level where signal quality is adjudicated, not just at the deal level.
+
+> Every party whose decisions affect signal quality must satisfy the cooperation condition individually. The buyer-seller relationship is one instance, not the whole population.
+
+The cooperation condition must hold for:
+
+- **Buyer and seller** at the deal level — the classic Williamson hold-up case, solved by the MIP.
+- **Sales rep and management** at the team level — the principal-agent case, solved by vested commission.
+- **Vendors and the channel** they operate in — the externality case (no current solution at scale; see Jevons Vulnerability under clarifying concepts).
+- **Vendors and the platform** that adjudicates their access — the gatekeeper case (relevant to KLAS, GPOs, app stores).
+- **Vendors and governance bodies** that certify them — the regulatory adjudication case.
+
+Recursion means: violating the cooperation condition at any one of these levels causes the structure at that level to drift toward extraction, which destabilizes the levels below it.
+
+*Failure mode example:* when sales platforms are paid for sends rather than signal quality, the platform itself fails the cooperation condition (no $\delta_{discount}$ tied to outcomes). The platform becomes an extractor. Vendors who operate through it inherit the consequences — their signal quality degrades regardless of individual effort.
+
+---
+
+#### From Axiom III — Reputation Depreciation
+
+The second primary derivation of Axiom III states the *time* dimension: cooperation must be continuously re-earned, because reputation depreciates without active refresh.
+
+> Past signals lose value with time. Reputation accumulated at $t_0$ does not guarantee credibility at $t_1$ without intervening evidence of continued delivery. Depreciation applies at every level — actor, channel, and governance body.
+
+**Mechanism.** A signal at $t_0$ demonstrated quality *at $t_0$*. As time passes, conditions change — the actor's capability shifts, the market evolves, the work that earned credibility recedes from collective memory. Without refresh, the signal becomes stale. Other parties' rational response is to discount it.
+
+When depreciation is absent from the system — when reputation accumulates indefinitely without refresh — incumbents can coast on historical credibility without continuing to deliver. The structure rewards historical accumulation rather than current performance. This is the failure mode behind KLAS residual brand coasting and the broader phenomenon of "reputation hoarding" in mature markets.
+
+Like recursive cooperation, depreciation is itself recursive. The actor's individual reputation depreciates. The channel's overall signal quality depreciates. The governance body's adjudication credibility depreciates. The same dynamic operates at every scale.
+
+**Prescription: demurrage on credibility.** Healthy structures require current evidence of delivery quality to maintain access — they apply demurrage to reputation. What was earned at $t_0$ must be re-earned at $t_1$ to retain its signal value. This levels the field between incumbents (whose historical credibility decays) and new entrants (whose current evidence has full value), preventing the structure from calcifying around past winners.
+
+---
+
+### Bridge Concepts
+
+Bridge concepts integrate across two or more axioms. They are where the axioms talk to each other.
+
+#### Decay Clock (Axioms I + II)
+
+The Decay Clock captures the pre-close time pressure on deal viability. Two time dynamics operate in parallel:
+
+- From Axiom I: $V_{effective}(t) = V_{solution} \cdot e^{-\delta t}$ — urgency fades from the triggering event, making the buyer's "make" alternative relatively more attractive.
+- From Axiom II: $\Delta_A(t) = \Delta_A(0) + \gamma t$ — information goes stale, raising the asymmetry multiplier on friction.
+
+Together, these push the deal's viability ($S > 0$) toward failure. Even a deal that was clearly viable at $t_0$ may not be by $t_1$ if too much time passes without active intervention.
+
+The Decay Clock is sibling to Axiom III's **Reputation Depreciation** — both are manifestations of "time as adversary" but apply to different phases:
+
+| Concept | Phase | Party affected |
+|---|---|---|
+| Decay Clock | Pre-close | Buyer (urgency fades, perceived friction rises) |
+| Reputation Depreciation | Ongoing / post-close | Seller, channel, adjudicators |
+
+The operational prescription is the same in both cases — fight time with active maintenance — but the specific interventions differ.
+
+---
+
+#### Fundamental Equation (Axioms I + II)
+
+The Fundamental Equation is the synthesis of Axiom I's boundary and Axiom II's friction mechanics:
+
+$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
+
+$$\text{subject to: } k > k_{threshold} \text{ and } F_{deployed} \sim k$$
+
+This equation captures the cost mechanics at any given moment within the boundary. It does not include the time dynamics (which come from the Decay Clock) or the durability conditions (which come from Axiom III). It is the *static* snapshot of deal economics.
+
+---
+
+#### Surplus (All three axioms)
+
+The Surplus equation is the final integration of all three axioms:
+
+$$S = \left(V_{effective}(t) - V_{next\_best}\right) - F_{effective}$$
+
+A deal is viable iff $S > 0$ at the moment of decision *and* the conditions for Axiom III are sustained through the relationship's lifetime.
+
+The equation makes the three axioms' interaction explicit:
+
+- **Axiom I** sets the boundary (when the equation applies at all).
+- **Axiom II** computes the cost ($F_{effective}$).
+- **Axiom III** determines whether $S > 0$ persists over time or decays toward failure.
+
+The full statement with all dynamics and constraints appears in Part III.
+
+---
+
+### Clarifying Concepts
+
+Tight definitions of supporting concepts used in the primary derivations and bridges.
+
+**Market States.** Three stages a market passes through, each with characteristic friction profile:
+- *Nascent* — search dominates; SLG fits.
+- *Efficient* — all costs moderate; PLG fits.
+- *Saturated* — consensus and implementation dominate; ILG fits.
+
+The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" because they are observationally similar from outside (the category is legible, the vendor field is known); the rubric separates them by transaction cost score. *Transitional* refers to the boundary state between Nascent and Mature, when the category is forming but not yet fully legible. Elaborates the Boundary Condition by specifying which motion fits which state.
+
+**Three Transaction Costs.** Coase's decomposition of $F_{base}$ into $F_{search}$ (locating the category and viable vendors), $F_{consensus}$ (internal buyer alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Elaborates Axiom II's cost equation by separating what is summed.
+
+**Akerlof Exit Threshold.** The point at which $\Delta_A$ exceeds the buyer's tolerance for market participation, causing market withdrawal. Mathematically expressed as $\Delta_A^*$. Beyond the threshold, no individual signal mechanism can restore market function — the buyer has exited. Elaborates Axiom II's saturation failure mode.
+
+**Single Crossing Property.** Spence's condition: a signal separates quality from noise only when the cost of producing it is proportionally lower for the high-quality actor. The technical underpinning of Friction Allocation Principle 1 (non-automatable friction).
+
+**Williamson Hold-Up.** The economic problem solved by the MIP. Once a buyer makes asset-specific investments, the seller can demand more than the original price (or vice versa). The MIP, by contractualizing bilateral commitments, makes hold-up costly for either side. Elaborates Axiom I's "build vs buy" decision and Axiom III's deal-level cooperation case.
+
+**Jevons Vulnerability.** A channel is Jevons-vulnerable when the binding constraint on volume is production cost. When production cost falls due to efficiency tools, volume rises and channel signal quality collapses. Channels whose binding constraint is something else — relationships, expertise, time, demonstrated work — are Jevons-resistant. Elaborates the channel-level failure mode of Friction Allocation Principle 1.
+
+---
+
+## Part III: Synthesis
+
+### The Full Surplus Equation
+
+The complete integration of all three axioms, with dynamics and constraints made explicit:
+
+$$S = \left(V_{effective}(t) - V_{next\_best}\right) - F_{effective}$$
+
+Where:
+
+$$V_{effective}(t) = V_{solution} \cdot e^{-\delta t} \quad \text{(Axiom I dynamics)}$$
+
+$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A(t)) \quad \text{(Axiom II)}$$
+
+$$\Delta_A(t) = \Delta_A(0) + \gamma t \quad \text{(Axiom II, absent maintenance)}$$
+
+Subject to:
+
+- $k > k_{threshold}$ and $F_{deployed} \sim k$ (Axiom I boundary)
+- $\delta_{discount} > (T - R) / (T - P)$ for every party in the system (Axiom III recursive cooperation)
+- Continuous reputation refresh at every level (Axiom III depreciation)
+
+A deal closes when $S > 0$ at the moment of decision, and persists when all Axiom III conditions are sustained over time.
+
+### How to Use the Equation
+
+The equation is not a forecasting tool — it is a diagnostic. When a deal stalls, walk through the equation to identify which term failed:
+
+1. **Is the deal within the boundary?** If not, no other prescription applies. Re-classify the deal or disqualify.
+2. **Is $V_{effective}(t)$ collapsing faster than $\Delta_A$ is shrinking?** If yes, urgency is decaying faster than the seller can close the asymmetry. Either intervene to refresh urgency (find a new triggering event) or close faster.
+3. **Is $\Delta_A$ rebuilding faster than maintenance reduces it?** If yes, information is going stale faster than discovery refreshes it. Increase the cadence of discovery touches.
+4. **Is $F_{effective}$ dominated by a single component?** If yes, target that component specifically — generic intervention is wasted effort.
+5. **Has any party's $\delta_{discount}$ dropped below the cooperation threshold?** If yes, the relationship will decay regardless of single-deal economics.
+6. **Has reputation refresh stopped at any level?** If yes, the channel or governance structure is drifting toward extraction.
+
+### Failure Modes Summary
+
+| Axiom | Failure mode | Diagnostic signal |
+|---|---|---|
+| I | Under-frictioned Bridge | Score 10+, treated with PLG motion → buyer builds internally |
+| I | Over-frictioned Toaster | Score 4–9, treated with ILG motion → buyer chooses competitor |
+| II | Cheap talk | Signal violates Single Crossing → no $\Delta_A$ reduction |
+| II | Misallocated friction | Receiver bears cost → babbling equilibrium |
+| II | Akerlof saturation | $\Delta_A > \Delta_A^*$ → buyer exits market |
+| II | Jevons collapse | Channel friction was production cost → signal quality collapses |
+| III | Deal-level defection | Buyer or seller's $\delta_{discount}$ too low → hold-up |
+| III | Governance drift | Adjudicator has no $\delta_{discount}$ tied to outcomes → extraction |
+| III | Reputation hoarding | Past signals not refreshed → incumbents coast on stale credibility |
+
+Every observed deal failure traces to at least one of these modes. When a deal stalls, the diagnostic walks through this table to identify which axiom is being violated and where to intervene.
+
+---
+
+## Part IV: Organizational Corollary (Principle)
+
+The variables in the Surplus equation each have a department owner. This corollary states the *principle* — that the axioms map to organizational responsibility — and points to where the operational procedures live.
+
+### The Principle
+
+Each variable in the model is owned by a specific function. If a variable has no owner, it drifts; if it has multiple owners without coordination, it fragments.
+
+| Variable | Axiom | Primary owner | Supporting |
+|---|---|---|---|
+| $V_{solution}$ | I | Product | Product Marketing |
+| $V_{next\_best}$ | I | Sales | Product Marketing |
+| $V_{effective}(t)$ — urgency monitoring | I | Sales | RevOps |
+| $k$ (asset specificity) | I | Sales Leadership | Product |
+| $F_{search}$ | II | Marketing | Sales (via referrals) |
+| $F_{consensus}$ | II | Sales | Solutions Engineering |
+| $F_{implementation}$ | II | CS / Implementation | Sales (in the Blueprint) |
+| $\Delta_A$ — Seller side ($I_{seller}$) | II | Sales + SE | Product Marketing |
+| $\Delta_A$ — Buyer side ($I_{buyer}$) | II | Marketing (category) + Sales (deal) | CS (post-sale) |
+| $\delta_{discount}$ — Rep level | III | Finance (vested comp) | Sales Leadership |
+| $\delta_{discount}$ — Org level | III | Executive Leadership | All |
+| Reputation refresh | III | Marketing + CS | All |
+
+### The Handoff Rule
+
+The Blueprint travels with the customer through the funnel. The asymmetry assessment that the seller produced must transfer intact to CS at handoff, or $\Delta_A$ resets to near-maximum on the receiving side. The Blueprint is the institutional memory that prevents the Fumbled Handoff failure mode.
+
+### Where Procedures Live
+
+This corollary states the principle. Detailed procedures — CRM field configuration, RACI tables, manager rituals, comp plan mechanics — live in [`practice/02-internal-ops/`](../../practice/02-internal-ops/). The Constitution is the *why*; the procedures are the *how*.
+
+---
+
+## Related
+
+**Sibling theory:**
+- [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — When to use ILG vs. PLG vs. SLG.
+- [02-cfir-field-mapping.md](./02-cfir-field-mapping.md) — How CFIR constructs map to the artifacts.
+
+**Academic backing** (per axiom):
+- Axiom I (Boundaries) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md)
+- Axiom II (Friction) → [costly-signals.md](../02-research/costly-signals.md), [prospect-theory.md](../02-research/prospect-theory.md), [fear-of-failure.md](../02-research/fear-of-failure.md), [cfir.md](../02-research/cfir.md)
+- Axiom III (Aligned Adjudication) → [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md), [re-aim-framework.md](../02-research/re-aim-framework.md)
+
+**Field operationalization:**
+- Triage gate → [process-calculator.md](../../practice/01-field-assets/process-calculator.md)
+- Blueprint → [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md)
+- Red Team → [02-validation-red-team-protocol.md](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md)
+- MIP → [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md)
+
+**Org-level enforcement:**
+- Setup → [00-setup-implementation-guide.md](../../practice/02-internal-ops/00-setup-implementation-guide.md)
+- Governance → [02-governance-review-checklist.md](../../practice/02-internal-ops/02-governance-review-checklist.md)
+- Incentives (Axiom III) → [03-incentives-vested-commission.md](../../practice/02-internal-ops/03-incentives-vested-commission.md)

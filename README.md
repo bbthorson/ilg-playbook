@@ -1,151 +1,84 @@
 # Implementation-Led Growth (ILG) Knowledge Base
 
-**A new paradigm for enterprise software sales based on Transaction Cost Economics and Game Theory.**
+**A sales methodology for high-friction B2B software, grounded in Transaction Cost Economics, Behavioral Economics, and Game Theory.**
 
 ---
 
 ## What is ILG?
 
-**Implementation-Led Growth (ILG)** is a sales methodology designed for high-friction B2B software where traditional Product-Led Growth (PLG) or Sales-Led Growth (SLG) fails. 
+**Implementation-Led Growth (ILG)** is the GTM motion for deals where Product-Led Growth (PLG) and Sales-Led Growth (SLG) fail: deep workflow integration, multi-stakeholder consensus, and long implementation cycles.
 
-The core insight: **In high-specificity deals, reducing friction creates more surplus than increasing value. But friction is amplified by information gaps, and value erodes with time — so the goal is to close the asymmetry gap faster than urgency decays.**
+The core insight:
 
-In complex enterprise deals, buyers face:
-- **High base friction** ($F_{base}$) — search costs, consensus costs, implementation costs, switching costs
-- **Bilateral asymmetry** ($\Delta_A$) — seller ignorance and buyer uncertainty amplify perceived friction
-- **Decaying urgency** ($\delta$) — the triggering event that opened the buying window has a half-life
-- **Asset specificity** ($k$) — deep workflow integration creates high switching costs
+> **In high-specificity deals, reducing friction creates more surplus than increasing value. But friction is amplified by information gaps, and value erodes with time — so the goal is to close the asymmetry gap faster than urgency decays.**
 
-ILG addresses these through **discovery artifacts** (Blueprints) that reduce seller ignorance and **costly signals** (Red Teams, paid pilots) that reduce buyer uncertainty — driving $\Delta_A \to 0$ before the Decay Clock runs out.
+ILG addresses this through **discovery artifacts** (Blueprints) that reduce seller ignorance and **costly signals** (Red Teams, paid pilots) that reduce buyer uncertainty — driving the Bilateral Asymmetry Gap (Δ_A) → 0 before the Decay Clock runs out.
 
 ---
 
-## Repository Structure
+## How this repo is organized
 
-### [00-foundation](./00-foundation)
-**The core theoretical framework**
+The repo serves **three functions**, each in its own top-level directory.
 
-- **[ILG Constitution](./00-foundation/ilg-constitution.md)** - The complete economic and behavioral theory
-  - Part I: Core Economic Theory (Fundamental Equation, Deal Zone, Repeated Game)
-  - Part II: The Three Axioms (The System Core)
-  - Part III: Organizational Corollary (Mapping Costs to Departments)
-  - Part IV: Strategy & Triage Protocol (Chaos Trap Gate, 4-Factor Diagnostic Rubric, Bridge vs. Toaster)
-  - Part V: The Artifacts (Blueprint, Red Team Workshop, Mutual Implementation Plan)
-- **[Sales Motion Comparison](./00-foundation/sales-motion-comparison.md)** - ILG vs. PLG vs. SLG decision framework
-- **[CFIR Field Mapping](./00-foundation/cfir-field-mapping.md)** - How Implementation Science constructs map to ILG field assets
+| Function | Where | What it is |
+|---|---|---|
+| **[theory/](theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the ILG framework. Academic papers, axioms, definitions. |
+| **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` + `practice/03-learning-plan/` | Help sellers and managers actually run ILG. Templates, governance, training. |
+| **[publishing/](publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
 
-**Start here** to understand the theoretical foundation.
+Each group has its own README explaining what's inside and the reading order.
 
 ---
 
-### [01-research](./01-research)
-**Academic evidence and deep dives**
+## Quick start by intent
 
-Supporting research that validates the ILG framework:
-- [cfir.md](./01-research/cfir.md) - Implementation Science framework
-- [costly-signals.md](./01-research/costly-signals.md) - Signaling theory in sales
-- [fear-of-failure.md](./01-research/fear-of-failure.md) - The JOLT Effect and buyer inaction
-- [game-theory-and-nrr.md](./01-research/game-theory-and-nrr.md) - Repeated games and retention
-- [total-cost-economics.md](./01-research/total-cost-economics.md) - Transaction cost theory
-
----
-
-### [02-market-data](./02-market-data)
-**Empirical validation and case studies**
-
-*Currently being populated*
+| If you want to... | Go here |
+|---|---|
+| Understand the theory cold | [theory/01-foundation/](theory/01-foundation/) |
+| See the academic evidence behind a claim | [theory/02-research/](theory/02-research/), starting with [the synthesis](theory/02-research/00-synthesis-the-new-sales-paradigm.md) |
+| Run an actual deal | [practice/01-field-assets/](practice/01-field-assets/) |
+| Set up your org for ILG | [practice/02-internal-ops/](practice/02-internal-ops/) |
+| Train reps | [practice/03-learning-plan/](practice/03-learning-plan/) |
+| See ILG applied to a real deal | [publishing/01-cases/](publishing/01-cases/) |
+| Write about ILG publicly | [publishing/02-tools/](publishing/02-tools/) |
 
 ---
 
-### [03-field-assets](./03-field-assets)
-**Practical tools for sales execution**
+## Core concepts at a glance
 
-Operational playbooks and processes:
-- [ilg-motion/](./03-field-assets/ilg-motion) - Implementation-Led Growth motion
-- [plg-motion/](./03-field-assets/plg-motion) - Product-Led Growth motion
-- [process-calculator.md](./03-field-assets/process-calculator.md) - Deal triage tool
-
----
-
-### [04-internal-ops](./04-internal-ops)
-**Governance and alignment mechanisms**
-
-Internal tools for organizational alignment:
-- [asymmetry-scorecard.md](./04-internal-ops/04-incentives-asymmetry-scorecard.md) - Diagnose information gaps
-- [deal-calibration.md](./04-internal-ops/01-governance-deal-calibration.md) - Qualify deal fit
-- [vested-commission.md](./04-internal-ops/03-incentives-vested-commission.md) - Align rep incentives with outcomes
-
----
-
-### [05-learning-plan](./05-learning-plan)
-**Training curriculum and onboarding**
-
-- [curriculum.md](./05-learning-plan/curriculum.md) - Training program structure
-
----
-
-### [06-tools](./06-tools)
-**AI and automation resources**
-
-- [ai-persona.md](./06-tools/ai-persona.md) - Instructions for AI-assisted deal analysis
-
----
-
-## Quick Start
-
-1. **Understand the Theory** → Read [ILG Constitution](./00-foundation/ilg-constitution.md)
-2. **See the Evidence** → Browse [01-research](./01-research) for academic backing
-3. **Apply in Practice** → Use [03-field-assets](./03-field-assets) for execution
-4. **Align Your Team** → Implement [04-internal-ops](./04-internal-ops) governance
-
----
-
-## Core Concepts at a Glance
-
-### The Teaching Model (4 Concepts)
+### The Fundamental Equation
 
 $$S = \left(V_{solution} \times e^{-\delta t} - V_{next\_best}\right) - F_{base} \times (1 + \Delta_A)$$
 
-Where:
-- $S$ = Deal Surplus (must be > 0 for a deal to close)
-- $\Delta_A$ = Bilateral Asymmetry Gap — composed of Seller Ignorance ($I_{seller}$) and Buyer Uncertainty ($I_{buyer}$)
-- $\delta$ = Decay Rate (how quickly urgency fades after the triggering event)
-- Subject to: $k > k_{threshold}$ (high asset specificity) AND $n_{viable} \leq n_{max}$ (thin market)
+- **S** = Deal Surplus (must be > 0 for a deal to close)
+- **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance + Buyer Uncertainty
+- **δ** = Decay Rate of urgency after the triggering event
+- Applies when **k > k_threshold** (high asset specificity) AND **n_viable ≤ n_max** (thin market)
 
 ### The Three Axioms
 
-1. **Law of Economic Boundaries** — Asset Specificity determines whether ILG applies (Bridge vs. Toaster).
-2. **Law of Asymmetry Convergence** — Drive $\Delta_A \to 0$ by closing whichever gap is wider first (seller ignorance or buyer uncertainty).
-3. **Law of Bilateral Governance** — Long-term alignment requires mutual skin in the game (Principal-Agent Alignment).
+1. **Law of Economic Boundaries** — Asset specificity determines whether ILG applies (Bridge vs. Toaster).
+2. **Law of Asymmetry Convergence** — Drive Δ_A → 0 by closing the wider gap first.
+3. **Law of Bilateral Governance** — Long-term alignment requires mutual skin in the game.
 
 ### Bridge vs. Toaster
 
-**The Toaster (Low Friction):**
-- Score: 4-9 on Diagnostic Rubric (4 factors, scored 1-5 each)
-- Strategy: SLG/PLG (optimize for velocity)
-- Example: Simple SaaS tools, low integration
-
-**The Bridge (High Friction):**
-- Score: 10-20 on Diagnostic Rubric
-- Strategy: ILG (optimize for safety and certainty)
-- Example: Enterprise platforms, deep workflow changes
+| | **Toaster** | **Bridge** |
+|---|---|---|
+| Score | 4–9 on the [Diagnostic Rubric](practice/01-field-assets/process-calculator.md) | 10–20 |
+| Strategy | PLG / SLG — optimize for velocity | ILG — optimize for safety and certainty |
+| Example | Standalone SaaS tools | Enterprise platforms, deep workflow change |
 
 ---
 
 ## Contributing
 
-This knowledge base is a living document. As you apply ILG in the field:
-- Document case studies in `02-market-data`
-- Refine field assets based on what works
-- Update research with new evidence
+This is a living document. As you work:
+- Add new applied analyses to [publishing/01-cases/](publishing/01-cases/) using the trenches protocol.
+- Refine field assets in [practice/01-field-assets/](practice/01-field-assets/) based on what works.
+- Update research with new evidence; the [provenance audit](theory/02-research/audits/citation-provenance-audit.md) tracks source quality.
 
 ---
 
-## License & Usage
-
-This framework is designed to be a **source of truth** for organizations building their own ILG process. Adapt and customize for your specific context.
-
----
-
-**Version:** 10.0
-**Last Updated:** 2026-03-10
+**Version:** 12.0
+**Last updated:** 2026-05-28
