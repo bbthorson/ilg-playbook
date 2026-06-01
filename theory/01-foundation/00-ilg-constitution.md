@@ -1,10 +1,10 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 11.0
+**Version:** 12.0
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 > [!IMPORTANT]
-> **What's new in v11.** The Constitution is now structured as *axioms-first* (load-bearing claims) → *derived concepts* (what falls out of the axioms) → *synthesis* (the integrated model). Operational content from previous versions — the Diagnostic Rubric, the Artifacts, organizational procedures — has moved to [`practice/`](../../practice/) and [`02-cfir-field-mapping.md`](./02-cfir-field-mapping.md). The Constitution is now purely theoretical. If a claim cannot be traced to one of the three axioms, it does not belong here.
+> **What's new in v12.** The three axioms have been renamed and restructured to map explicitly to three well-studied bodies of economics: Axiom I (Transaction Cost Economics — Coase, Williamson), Axiom II (Signaling Theory + Behavioral Economics — Spence, Kahneman/Tversky), Axiom III (Game Theory + Institutional Governance — Axelrod, Williamson). The most significant structural change: Axiom I no longer leads with asset specificity as the classification gate. It now establishes the cost structure — search, consensus, and implementation as independently-arising components — and treats Bridge/Toaster classification as downstream of measuring those costs. Axiom II is renamed to foreground its core claim: uncertainty inflates whatever base costs Axiom I establishes. Axiom III is simplified from "Aligned Adjudication" to "Governance."
 
 ---
 
@@ -14,9 +14,9 @@ The three axioms govern three aspects of any B2B transaction.
 
 | Axiom | Governs | Scale | Tagline |
 |---|---|---|---|
-| **I. Law of Economic Boundaries** | Whether a deal can happen | Market | *"Friction is a feature"* |
-| **II. Law of Friction** | What the deal costs when it happens | Deal | *"Fear > Value"* |
-| **III. Law of Aligned Adjudication** | Whether the deal persists | Relationship over time | *"Structure determines behavior"* |
+| **I. Law of Transaction Cost Composition** | Whether a deal can happen | Market | *"Costs determine the deal"* |
+| **II. Law of Uncertainty Inflation** | What the deal costs when it happens | Deal | *"Fear > Value"* |
+| **III. Law of Governance** | Whether the deal persists | Relationship over time | *"Structure determines behavior"* |
 
 Together they describe the *existence, economics, and dynamics* of any transaction in a high-friction market. Each axiom generates its own mathematical content; the equations integrate into the Surplus equation in Part III.
 
@@ -36,11 +36,11 @@ The three axioms are progressively visualized through a potential-well diagram t
 
 ---
 
-### Axiom I — The Law of Economic Boundaries
+### Axiom I — The Law of Transaction Cost Composition
 
-> **A market transaction is viable only when asset specificity matches the friction structure deployed. Friction below specificity creates hold-up risk and pushes the buyer to build internally; friction above specificity destroys low-stakes deals by over-engineering them. The deal's asset specificity is the boundary; friction must scale to it.**
+> **Transaction costs in B2B deals decompose into three independently-arising components — search, consensus, and implementation — each driven by distinct structural conditions. Their combined level is the primary indicator of whether a deal is viable under a standard velocity motion. When combined costs are low, PLG or SLG is appropriate. When they are high, structured intervention is required. Asset specificity is the principal driver of high combined costs; Bridge/Toaster classification follows from measuring them.**
 
-> *Tagline: **"Friction is a feature"** in high-specificity deals. Speed kills implementations; the friction is what separates the work from the wishful thinking.*
+> *Tagline: **"Costs determine the deal."** The combined level of search, consensus, and implementation costs determines which motion is viable — and what the sales process must do.*
 
 **Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs; Williamson operationalized this through *asset specificity* — the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the ILG artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Toaster does not need a Blueprint.
 
@@ -65,7 +65,7 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 
 ---
 
-### Axiom II — The Law of Friction
+### Axiom II — The Law of Uncertainty Inflation
 
 > **Effective transaction cost equals base friction (search + consensus + implementation) amplified by the bilateral information asymmetry between buyer and seller. The amplifier shrinks when the claimant invests in demonstrations that low-quality competitors cannot affordably replicate — the Single Crossing Property is the test for what counts.**
 
@@ -100,7 +100,7 @@ The four **Friction Allocation Principles** — the operational content of this 
 
 ---
 
-### Axiom III — The Law of Aligned Adjudication
+### Axiom III — The Law of Governance
 
 > **Long-term alignment requires that every party whose decisions affect outcomes has skin in the game tied to those outcomes. This applies not only to buyer and seller but to the channels, platforms, and governance structures that adjudicate signal quality between them. When an adjudicator has no stake in the outcome it adjudicates, the structure drifts from adjudication toward extraction.**
 
