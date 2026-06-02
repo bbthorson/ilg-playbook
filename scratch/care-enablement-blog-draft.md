@@ -101,6 +101,8 @@ So Aetna did the rational thing. Effective July 15, the 60-minute session and th
 
 This is what is happening underneath the data points. It is not Aetna being mean. It is Aetna doing what a rational buyer does when the seller cannot distinguish quality. It is also what Headway's payers will do next, and Grow's, and any other generalized enablement platform whose value proposition was "we made it easier for therapists to be in network."
 
+Credentialing was designed to be that trust mechanism. The ghost network problem showed it wasn't functioning as one — the individual signal existed on paper, and payers were not acting on it. What the platforms solved was the payers' compliance exposure: reachable networks, current directories, providers who answered the phone. They did not solve the trust deficit. Payers funded that trade because it closed a regulatory gap faster than building real quality infrastructure would have. Aetna's rate cut follows from a structural condition that long preceded the platforms.
+
 Making it easier did not create value. It commoditized the supply, and then the buyers priced the commodity.
 
 ## The view from the therapist's office
@@ -181,6 +183,6 @@ The VC-funded care enablement category bet that frictionless supply would solve 
 
 Doing the hard thing is the only thing that works in markets like this. By the hard thing I mean: picking a multi-stakeholder problem, accepting that no single party's friction can be reduced without affecting the others, and building a model that prices in those constraints. The platforms that survive the next two years are the ones that internalized this early. The platforms that do not will, in the kindest version, get bought.
 
-There is a more general lesson here, and it has nothing to do with behavioral health. In any market with multiple stakeholders whose interests are not aligned, removing friction is not the same as creating value. It just looks like it for a while. That covers most B2B markets, all of healthcare, most of education, big chunks of insurance. The bill comes due when the buyer figures out they cannot tell quality from junk, and the friction you removed was the only thing keeping quality and junk apart.
+There is a more general lesson that has nothing to do with behavioral health. Before any product decision, investment thesis, or operational redesign, ask what the friction is standing in for. Some friction is pure overhead — redundant steps, legacy paperwork, coordination costs that carry no informational value. That friction can be removed freely. But some friction is load-bearing. It stands in for trust the system has not yet learned to generate any other way.
 
-Easy at scale is the wrong target. Hard for multi-stakeholder problems is the only target that survives.
+Any friction that stands in for trust cannot be made more efficient without understanding the current trust deficit and replacing it. Applied before the decision, that rule changes what gets built. Applied after, it is a description of what went wrong.
