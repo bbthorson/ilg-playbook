@@ -275,3 +275,35 @@ To survive this structural commoditization, the enablement platforms that define
 ---
 
 *Source list available in original Gemini output; key sources include: PRNewswire, BusinessWire, Tracxn, Sacra, 404 Media, Reddit (r/therapists), Forge Global, businessmodelcanvastemplate.com, Caproasia, Tamradar.*
+
+---
+
+## New Sources — June 2026
+
+### "Small Providers Flock to Therapist Enablement Platforms at the Cost of Autonomy"
+**Source:** Behavioral Health Business, Ashleigh Hollowell, May 27, 2026
+**URL:** https://bhbusiness.com/2026/05/27/small-providers-flock-to-therapist-enablement-platforms-at-the-cost-of-autonomy/
+
+**Key facts confirmed:**
+- CareFirst told Dr. Ajita Robinson (Friends in Transition Counseling, Bethesda MD) her practice would not receive an independent rate review, but contracting through Headway would yield $17 more per session — explicit payer steering in rate negotiations. Robinson called it "unethical" and potentially illegal.
+- CareFirst / Headway formal partnership since 2022.
+- HCSC (Health Care Service Corporation, largest customer-owned BCBS licensee) led Headway's $125M Series C in 2023. Combined with Cigna Ventures + Optum Ventures in Alma's 2022 Series D, confirms three major payers funded the platforms.
+- Provider quotes on loss of autonomy: Steele-Wren ("auditor in disguise"), Aaron Martin ("pseudo insurance company"), Puls (predicts rate cuts once payer funneling is complete).
+- John Puls quote (Full Life Comprehensive Care, Boca Raton): "If it's at a point where they really have no choice but to be on Headway and Alma, why would they continue to pay these higher rates?" — practitioner-level prediction of the Akerlof spiral.
+- Aetna statement: "Our rate policies are based on the level of care provided with an emphasis on shared and measured outcomes aided by technology, not how providers connect with members."
+- Neither BCBS nor Aetna confirmed or denied steering providers toward platforms in rate negotiations.
+
+**Blog utility:** CareFirst steering story is primary evidence for revised payer paragraph. HCSC investment adds third payer-investor data point. Puls quote useful for "access promise was hollow" or "what the theory predicts next."
+
+---
+
+### "Why Headway Wants Your Face"
+**Source:** Health API Guy (Brendan Keeler), May 31, 2026
+**URL:** (Substack, paid)
+
+**Key facts confirmed:**
+- Headway's biometric requirement is not only payer-driven. The DEA's forthcoming Special Registration framework for tele-prescribing controlled substances is expected to require identity verification as a condition of remote prescribing. Headway is positioning ahead of that rule.
+- The Ryan Haight Act (2008) required in-person exams for online controlled substance prescribing; in-person requirement waived since 2020 under temporary DEA flexibilities, currently extended through end of 2026 while a permanent rule is finalized.
+- The proposed framework contemplates identity verification (biometric proofing) as a condition of the Special Registration for tele-prescribing.
+
+**Blog utility:** Adds regulatory dimension to Headway paragraph — two forces (payer pressure + DEA rule anticipation), not one. Does not change the structural argument; adds nuance. The article explicitly does not address the enablement platform commoditization thesis — it is about digital identity in healthcare broadly.
