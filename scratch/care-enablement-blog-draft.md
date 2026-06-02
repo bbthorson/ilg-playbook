@@ -53,6 +53,20 @@ Interest rates rose, and VC patience for unprofitable enablement platforms ran o
 
 What we're watching in 2026 is what happens when all of those pressures arrive at the same platforms at the same time. To see why the platforms are vulnerable to those pressures in the first place, you have to understand what the model was actually doing for the last six years.
 
+## Four economists called this
+
+The story I'm about to tell has been told before, in other industries, by economists who weren't thinking about behavioral health. Four frameworks explain what happened — and what happens next from here.
+
+**Jevons' Paradox (1865).** When you reduce the cost of using a resource, you do not get less consumption of it. You get more. The efficiency gain stimulates demand until demand outpaces the improvement. William Stanley Jevons named it watching Britain burn more coal after James Watt made the steam engine twice as efficient.
+
+**The Tragedy of the Commons (Hardin, 1968).** A shared resource gets destroyed when individuals each acting rationally in their own interest draw from it without contributing to its maintenance. No individual makes a mistake. The collective outcome is still ruin.
+
+**The Logic of Collective Action (Olson, 1965).** When individual incentives and collective outcomes diverge without a coordinating mechanism, rational individual behavior produces irrational collective results. The problem is not bad actors. The problem is a structure with no coordination.
+
+**The Market for Lemons (Akerlof, 1970).** When buyers cannot distinguish quality from junk before they buy, rational buyers price to the average. Sellers of high-quality goods exit. The market spirals toward its worst participants.
+
+None of these were written about therapist credentialing. All of them describe exactly what happened.
+
 ## Jevons comes for the channel
 
 In 1865, William Stanley Jevons published *The Coal Question* and described something that didn't fit. James Watt had doubled the efficiency of the steam engine — the same ton of coal now did twice the work. Every economist of the day predicted Britain would consume less coal. Jevons measured what actually happened: consumption went up. The efficiency gain had made steam power economical across industries and scales that couldn't have justified it before. Demand surged past the improvement. The savings didn't save anything. They funded expansion.
