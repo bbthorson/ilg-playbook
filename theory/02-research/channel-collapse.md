@@ -26,7 +26,7 @@
 - **Axiom II — Law of Friction** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
 - **Friction Allocation Principles** (primary derivation) — Principle 1 (non-automatable) is the diagnostic for Jevons vulnerability.
 - **Jevons Vulnerability** (clarifying concept) — direct.
-- **Axiom III — Law of Aligned Adjudication** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
+- **Axiom III — Law of Governance** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
 - **Reputation Depreciation** (primary derivation) — demurrage on reputation is the channel-level prescription.
 - **Market States** (clarifying concept) — Jevons vulnerability varies by market stage.
 

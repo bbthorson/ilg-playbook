@@ -19,7 +19,7 @@
 - **The Lock-in:** Once the play starts, can they audible? Or are they committed to the "Fundamental Transformation"?
 
 ## Step 4: The Huddle (Strategic Synthesis)
-- **Offensive Synergy:** Why are they working together instead of competing? How does this partnership eliminate "Double Marginalization" or shared friction?
+- **Offensive Alignment:** Why are they working together instead of competing? How does this partnership eliminate "Double Marginalization" or shared friction?
 - **The Goal:** How does this play drive $\Delta_A \to 0$ and $F_{base} \to \min$? Which side of the asymmetry gap does it close?
 
 ---

@@ -17,7 +17,7 @@
 - NRR is the lagging indicator of whether the repeated game is being played well.
 
 **Supports in ILG:**
-- **Axiom III — Law of Aligned Adjudication** — direct theoretical basis. The cooperation condition $\delta_{discount} > (T-R)/(T-P)$ comes from Axelrod.
+- **Axiom III — Law of Governance** — direct theoretical basis. The cooperation condition $\delta_{discount} > (T-R)/(T-P)$ comes from Axelrod.
 - **Recursive Cooperation** (primary derivation) — Shadow of the Future must hold for every party in the system, including adjudicators.
 - **Reputation Depreciation** (primary derivation) — the Promise Gap is what reputation depreciation looks like when not actively refreshed.
 - **Surplus** (bridge concept) — NRR > 100% is the macro-level evidence that surplus is being preserved over time.

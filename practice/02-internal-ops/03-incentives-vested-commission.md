@@ -1,7 +1,7 @@
 # Vested Commission Agreement (The Incentive)
 
 Type: Comp Plan Addendum  
-Axiom: III (The Law of Aligned Adjudication / Principal-Agent Alignment)  
+Axiom: III (The Law of Governance / Principal-Agent Alignment)  
 Goal: To align Sales Rep compensation with Customer NRR (Net Revenue Retention).
 
 | | |
@@ -9,7 +9,7 @@ Goal: To align Sales Rep compensation with Customer NRR (Net Revenue Retention).
 | **Inputs** | A closed Bridge deal with a signed [MIP](../01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md). |
 | **Outputs** | Comp terms: front-load, clawback triggers, safe harbor exceptions, NRR bonus structure. |
 | **Owner** | Finance / RevOps (drafting); rep (acknowledgment). |
-| **Anchored in** | [ILG Constitution, Axiom III](../../theory/01-foundation/00-ilg-constitution.md) — Aligned Adjudication. Vested comp raises rep $\delta_{discount}$ above the cooperation threshold. |
+| **Anchored in** | [ILG Constitution, Axiom III](../../theory/01-foundation/00-ilg-constitution.md) — Governance. Vested comp raises rep $\delta_{discount}$ above the cooperation threshold. |
 
 ## 1\. The Philosophy
 

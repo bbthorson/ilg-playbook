@@ -21,7 +21,7 @@
 - **Boundary Condition** (primary derivation) — $k > k_{threshold}$ is Williamson's threshold for governance preference.
 - **Williamson Hold-Up** (clarifying concept) — direct.
 - **Three Transaction Costs** (clarifying concept) — direct mapping to $F_{search} + F_{consensus} + F_{implementation}$.
-- **Axiom III — Law of Aligned Adjudication** — bilateral hostages and relational contracts are the mechanism behind recursive cooperation.
+- **Axiom III — Law of Governance** — bilateral hostages and relational contracts are the mechanism behind recursive cooperation.
 
 **Notable quotes:**
 - "Speed is risk" when governance structures are immature.

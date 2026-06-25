@@ -62,6 +62,8 @@ The Anti-Hype rule isn't preference — it's defensive. Buyers who have lived th
 
 Em dashes and semicolons have become AI-pattern hallmarks. Use sparingly, for impact only. When in doubt, restructure into a period. A typical post should have no more than 2–3 em dashes total.
 
+Colons follow the same discipline. When em dashes get banned, colons pile up as the substitute, and a draft full of "setup: payoff" sentences reads just as machine-made. Limit prose colons to 2–3 per document, reserved for thesis statements. List intros, headers, and labeled blocks are exempt. A deliberate sentence fragment often does the same work with more punch.
+
 ### 4. Anti-Antithesis Filter
 
 The "it's not X, it's Y" construction can sound canned and pat. Use sparingly. When you do use it, prefer the softer "it's not just X — it's also Y" variant.
@@ -94,7 +96,7 @@ Before publishing or accepting an LLM draft, check:
 
 1. Are technical terms translated to plain English on first use?
 2. Any banned vocabulary present? (Scan the list.)
-3. Em dashes or semicolons used more than 2–3 times? (Restructure.)
+3. Em dashes, semicolons, or prose colons used more than 2–3 times each? (Restructure.)
 4. Any "it's not X, it's Y" constructions without the softening "just"? (Soften.)
 5. Does the post open with a personal anecdote or scene? (If not, ask whether it should.)
 6. Does the post close with a concrete "what to do Monday" prescription? (If not, ask whether it should.)

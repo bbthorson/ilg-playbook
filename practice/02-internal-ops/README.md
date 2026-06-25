@@ -23,7 +23,7 @@ How managers and VPs forecast Bridges based on friction completed, not hope.
 
 How to align rep behavior with long-term customer outcomes, not just signature.
 
-- **[03-incentives-vested-commission.md](./03-incentives-vested-commission.md)** — Comp plan addendum: front-load, clawback, NRR bonus, safe harbor. Operationalizes Axiom III (Aligned Adjudication) at the rep/management level — the cooperation condition's $\delta_{discount}$ requires comp tied to long-term outcomes, not signature.
+- **[03-incentives-vested-commission.md](./03-incentives-vested-commission.md)** — Comp plan addendum: front-load, clawback, NRR bonus, safe harbor. Operationalizes Axiom III (Governance) at the rep/management level — the cooperation condition's $\delta_{discount}$ requires comp tied to long-term outcomes, not signature.
 - **[04-incentives-asymmetry-scorecard.md](./04-incentives-asymmetry-scorecard.md)** — Weekly diagnostic measuring Bilateral Asymmetry Gap (Δ_A) across seller ignorance and buyer uncertainty.
 
 ## Naming convention

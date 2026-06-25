@@ -21,7 +21,7 @@ By the end of this module, you will be able to:
 
 ### The Infinite Game (Repeated Game Theory)
 
-**From the ILG Constitution (Axiom III — Law of Aligned Adjudication):**
+**From the ILG Constitution (Axiom III — Law of Governance):**
 
 > "SaaS is an 'Infinite Game' governed by the Shadow of the Future."
 
@@ -139,7 +139,7 @@ In traditional sales comp:
 
 ## Knowledge Base References
 
-- [ILG Constitution — Axiom III (Law of Aligned Adjudication): Recursive Cooperation + Reputation Depreciation](../../../theory/01-foundation/00-ilg-constitution.md)
+- [ILG Constitution — Axiom III (Law of Governance): Recursive Cooperation + Reputation Depreciation](../../../theory/01-foundation/00-ilg-constitution.md)
 - [Game Theory and NRR](../../../theory/02-research/game-theory-and-nrr.md) (Academic foundation)
 - [Vested Commission Agreement](../../02-internal-ops/03-incentives-vested-commission.md) (Practical template)
 - [Mutual Implementation Plan](../../01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) (Governance tool)

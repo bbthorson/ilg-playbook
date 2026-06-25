@@ -56,7 +56,7 @@ The Red Team also classifies resistance using CFIR constructs. This is the mappi
 
 ---
 
-## Axiom III (Aligned Adjudication) → Mutual Implementation Plan (MIP)
+## Axiom III (Governance) → Mutual Implementation Plan (MIP)
 
 The MIP operationalizes the deal-level case of Axiom III's recursive cooperation principle — bilateral skin in the game between buyer and seller. Its CFIR connections are narrower but critical:
 
