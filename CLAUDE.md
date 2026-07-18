@@ -47,10 +47,11 @@ When writing or editing any document in this repo, apply the voice rules from `p
 
 All framework claims trace to:
 
-$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
+$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A) = OC_{\text{switching}} - y$$
 
 - **S** = Deal Surplus (must be > 0 to close)
 - **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance ($I_{seller}$) + Buyer Uncertainty ($I_{buyer}$)
+- **y** = Total Perceived Transaction Cost = $ax^2 + c$ (where $a = 2.25$ is risk aversion, $x \approx \Delta_A$ is uncertainty, and $c$ is direct cost)
 - **Bridge** = deal scoring 10–20 on Process Calculator → deploy ILG motion
 - **Toaster** = deal scoring 4–9 → deploy PLG/SLG motion
 

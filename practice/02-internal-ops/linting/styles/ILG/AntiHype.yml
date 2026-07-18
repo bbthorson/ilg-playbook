@@ -1,0 +1,11 @@
+extends: existence
+message: "Avoid using '%s'. Use active/anti-hype replacements from the Voice Guide."
+level: error
+ignorecase: true
+tokens:
+  - synergy
+  - revolutionize
+  - disruptive
+  - cutting-edge
+  - seamlessly
+  - unlock potential

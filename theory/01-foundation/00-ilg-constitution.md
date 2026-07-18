@@ -79,7 +79,29 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 
 $$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
 
-The multiplier $\Delta_A$ does not amplify all three components equally. A confused buyer searches a bit harder (modest impact), but the same buyer drives scope creep, missed requirements, and political backlash through consensus and implementation (large impact). The teaching equation uses a global multiplier. Operating diagnosis must identify *which* component is being amplified to choose the right intervention.
+To model transaction cost economics more directly at the deal level, we also express the buyer's perceived transaction cost ($y$) as a function of uncertainty ($x$) and risk aversion ($a$):
+
+$$y = ax^2 + c$$
+
+Where:
+- $y$ is the **total perceived transaction cost** to the buyer.
+- $c$ is the **direct cost** of the solution (COGS + vendor margin).
+- $x$ is the **information asymmetry or uncertainty** ($\approx \Delta_A$). The impact of uncertainty is modeled as quadratic ($x^2$) because information gaps have a compounding, non-linear effect on consensus and implementation friction (a small gap cascades into major project delays and misalignment). Note that $x^2$ serves as a clean simplification of the three underlying friction curves.
+- $a$ is the **risk aversion coefficient** (anchored at $a = 2.25$, derived from prospect theory's loss aversion parameter $\lambda \approx 2.25$).
+
+For a deal to close, the total perceived transaction cost $y$ must be less than the opportunity cost of switching:
+
+$$y < OC_{\text{switching}}$$
+
+Where $OC_{\text{switching}}$ is the buyer's opportunity cost of staying with the status quo (the value leakage or inefficiency of not adopting the solution).
+
+#### The Three Sales Levers
+From this formulation, a seller has exactly three levers to satisfy $y < OC_{\text{switching}}$ and win a deal:
+1. **Lower direct cost (reduce $c$):** The seller can lower their margin. This is the traditional, low-leverage price-discounting motion that destroys vendor profitability.
+2. **Lower risk aversion (reduce $a$):** The seller can implement structures that shift risk back to themselves—the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
+3. **Reduce uncertainty (reduce $x$):** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop).
+
+The multiplier $\Delta_A$ does not amplify all three components equally. A confused buyer searches a bit harder (modest impact), but the same buyer drives scope creep, missed requirements, and political backlash through consensus and implementation (large impact). The teaching equation uses a global multiplier; operating diagnosis must identify *which* component is being amplified to choose the right intervention.
 
 Asymmetry also has time dynamics. Without active maintenance, $\Delta_A$ rebuilds as information goes stale:
 
@@ -241,9 +263,11 @@ The operational prescription is the same in both cases (fight time with active m
 
 #### Fundamental Equation (Axioms I + II)
 
-The Fundamental Equation is the synthesis of Axiom I's boundary and Axiom II's friction mechanics:
+The Fundamental Equation has two representations: the detailed friction composition and the simplified transaction cost curve:
 
 $$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
+
+$$y = ax^2 + c$$
 
 $$\text{subject to: } k > k_{threshold} \text{ and } F_{deployed} \sim k$$
 
@@ -257,12 +281,16 @@ The Surplus equation is the final integration of all three axioms:
 
 $$S = \left(V_{effective}(t) - V_{next\_best}\right) - F_{effective}$$
 
-A deal is viable iff $S > 0$ at the moment of decision *and* the conditions for Axiom III are sustained through the relationship's lifetime.
+Using the transaction cost curve representation, where $OC_{\text{switching}} = V_{effective}(t) - V_{next\_best}$ is the opportunity cost of staying with the status quo, and $y$ is the total perceived transaction cost:
+
+$$S = OC_{\text{switching}} - y$$
+
+A deal is viable iff $S > 0$ (which is equivalent to $y < OC_{\text{switching}}$) at the moment of decision *and* the conditions for Axiom III are sustained through the relationship's lifetime.
 
 The equation makes the three axioms' interaction explicit:
 
 - **Axiom I** sets the boundary (when the equation applies at all).
-- **Axiom II** computes the cost ($F_{effective}$).
+- **Axiom II** computes the cost ($F_{effective}$ or $y$).
 - **Axiom III** determines whether $S > 0$ persists over time or decays toward failure.
 
 The full statement with all dynamics and constraints appears in Part III.
@@ -298,13 +326,17 @@ The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" b
 
 The complete integration of all three axioms, with dynamics and constraints made explicit:
 
-$$S = \left(V_{effective}(t) - V_{next\_best}\right) - F_{effective}$$
+$$S = \left(V_{effective}(t) - V_{next\_best}\right) - F_{effective} = OC_{\text{switching}} - y$$
 
 Where:
 
 $$V_{effective}(t) = V_{solution} \cdot e^{-\delta t} \quad \text{(Axiom I dynamics)}$$
 
+$$OC_{\text{switching}} = V_{effective}(t) - V_{next\_best} \quad \text{(opportunity cost of staying with status quo)}$$
+
 $$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A(t)) \quad \text{(Axiom II)}$$
+
+$$y = ax^2 + c \quad \text{(Axiom II transaction cost curve representation)}$$
 
 $$\Delta_A(t) = \Delta_A(0) + \gamma t \quad \text{(Axiom II, absent maintenance)}$$
 
@@ -313,6 +345,7 @@ Subject to:
 - $k > k_{threshold}$ and $F_{deployed} \sim k$ (Axiom I boundary)
 - $\delta_{discount} > (T - R) / (T - P)$ for every party in the system (Axiom III recursive cooperation)
 - Continuous reputation refresh at every level (Axiom III depreciation)
+- $y < OC_{\text{switching}}$ (deal viability boundary condition)
 
 A deal closes when $S > 0$ at the moment of decision, and persists when all Axiom III conditions are sustained over time.
 
@@ -323,9 +356,10 @@ The equation is not a forecasting tool. It is a diagnostic. When a deal stalls, 
 1. **Is the deal within the boundary?** If not, no other prescription applies. Re-classify the deal or disqualify.
 2. **Is $V_{effective}(t)$ collapsing faster than $\Delta_A$ is shrinking?** If yes, urgency is decaying faster than the seller can close the asymmetry. Either intervene to refresh urgency (find a new triggering event) or close faster.
 3. **Is $\Delta_A$ rebuilding faster than maintenance reduces it?** If yes, information is going stale faster than discovery refreshes it. Increase the cadence of discovery touches.
-4. **Is $F_{effective}$ dominated by a single component?** If yes, target that component specifically. Generic intervention is wasted effort.
-5. **Has any party's $\delta_{discount}$ dropped below the cooperation threshold?** If yes, the relationship will decay regardless of single-deal economics.
-6. **Has reputation refresh stopped at any level?** If yes, the channel or governance structure is drifting toward extraction.
+4. **Is $F_{effective}$ dominated by a single component?** If yes, target that component specifically — generic intervention is wasted effort.
+5. **Is the total perceived transaction cost $y$ higher than the opportunity cost of switching $OC_{\text{switching}}$?** If yes, identify whether you can lower risk aversion $a$ (negotiate hostages like resource guarantees/restart fees in the MIP) or reduce uncertainty $x$ (run a Red Team workshop/discovery). Avoid the low-leverage margin-reduction lever ($c$) unless absolutely necessary.
+6. **Has any party's $\delta_{discount}$ dropped below the cooperation threshold?** If yes, the relationship will decay regardless of single-deal economics.
+7. **Has reputation refresh stopped at any level?** If yes, the channel or governance structure is drifting toward extraction.
 
 ### Failure Modes Summary
 

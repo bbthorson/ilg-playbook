@@ -9,24 +9,44 @@
 
 By the end of this module, you will be able to:
 
-1. **Understand the bilateral asymmetry gap ($\Delta_A$)** and how it amplifies effective friction ($F_{effective} = F_{base} \times (1 + \Delta_A)$)
+1. **Understand the bilateral asymmetry gap ($\Delta_A$) and the transaction cost equation** ($y = ax^2 + c$)
 2. **Diagnose fear-based objections** vs. genuine price/value concerns
 3. **Identify the rationality of inaction** and why "no decision" is a calculated choice
-4. **Prescribe targeted interventions** to reduce whichever side of the asymmetry gap is wider (seller ignorance vs. buyer uncertainty)
+4. **Prescribe targeted interventions using the three sales levers** (margin, hostages, and uncertainty reduction) to satisfy the deal-viability boundary ($y < OC_{\text{switching}}$)
 
 ---
 
 ## Key Concepts
 
-### The Bilateral Asymmetry Gap ($\Delta_A$) — The Fear Multiplier
+### The Bilateral Asymmetry Gap ($\Delta_A$) & Perceived Transaction Cost ($y = ax^2 + c$)
 
 **From the ILG Constitution (Axiom II — Law of Friction):**
 
+While effective friction can be analyzed in detail as:
+
 $$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \times (1 + \Delta_A)$$
 
-**What This Means:**
+We simplify this relationship at the deal level to model the buyer's **total perceived transaction cost** ($y$):
 
-The bilateral asymmetry gap acts as a **fear multiplier** on base friction. What each side doesn't know about the other inflates the perceived cost of change — sometimes doubling or tripling it.
+$$y = ax^2 + c$$
+
+Where:
+- $y$ is the **total perceived transaction cost** of switching.
+- $c$ is the **direct cost** of the solution (COGS + vendor margin).
+- $x$ is the **information asymmetry or uncertainty** ($\approx \Delta_A$). The impact of uncertainty is quadratic ($x^2$) because information gaps compound and ripple throughout the customer's organization. (Note that $x^2$ is a simplified representation of the sum of the three underlying friction/uncertainty curves).
+- $a$ is the **risk aversion coefficient** (anchored at $a = 2.25$, derived from prospect theory's loss aversion parameter).
+
+For a deal to close, the total perceived transaction cost $y$ must be less than the opportunity cost of switching:
+
+$$y < OC_{\text{switching}}$$
+
+Where $OC_{\text{switching}}$ is the value leak or inefficiency of staying with the status quo (the opportunity cost of not switching).
+
+### The Three Sales Levers
+To win a deal under the $y < OC_{\text{switching}}$ condition, a vendor has exactly three levers:
+1. **Lower direct cost (reduce $c$):** Lowering vendor margin. This is the traditional, low-leverage price discount. It is margin-destroying and should be a last resort.
+2. **Lower risk aversion (reduce $a$):** Giving hostages (credible commitments). Shift downside risk back to the vendor via Mutual Implementation Plan (MIP) clauses (e.g., performance guarantees, service level agreements with clawbacks, restart/holding fees).
+3. **Reduce uncertainty (reduce $x$):** Run discovery and costly signals. Close information asymmetry with rigorous tools (Contextual Blueprint, Red Team Workshop, validation protocols).
 
 $\Delta_A$ is composed of two distinct gaps:
 
@@ -41,9 +61,9 @@ A deal with $100k base friction ($F_{base}$) and $\Delta_A = 0.5$ has an **effec
 
 **The Insight:** "No Decision" is NOT indecision — it's a rational calculation where:
 
-$$F_{effective} > S \quad \text{(effective friction exceeds deal surplus)}$$
+$$y > OC_{\text{switching}} \quad \text{or} \quad F_{effective} > S$$
 
-When asymmetry gets so high that even costly signals cannot credibly close $\Delta_A$, the buyer exits the market — Akerlof's market for lemons playing out at the deal level.
+When asymmetry gets so high that even costly signals cannot credibly close $\Delta_A$ (or $x$), the buyer exits the market — Akerlof's market for lemons playing out at the deal level.
 
 **The JOLT Effect Research:**
 

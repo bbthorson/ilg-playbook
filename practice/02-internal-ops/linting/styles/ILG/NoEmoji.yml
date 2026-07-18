@@ -1,0 +1,11 @@
+extends: existence
+message: "No emojis allowed in ILG documents."
+level: error
+nonword: true
+tokens:
+  - '[\x{1F600}-\x{1F64F}]' # Emoticons
+  - '[\x{1F300}-\x{1F5FF}]' # Misc Symbols and Pictographs
+  - '[\x{1F680}-\x{1F6FF}]' # Transport and Map Symbols
+  - '[\x{1F1E6}-\x{1F1FF}]' # Flags
+  - '[\x{2600}-\x{27BF}]'   # Symbols & Dingbats
+  - '[\x{1F900}-\x{1F9FF}]' # Supplemental Symbols and Pictographs
