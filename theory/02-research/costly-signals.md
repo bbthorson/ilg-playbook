@@ -38,7 +38,7 @@
 
 ## Extension: Trust Proxies vs. Produced Signals (drafted June 2026, PENDING REVIEW)
 
-**Origin.** Derived from the behavioral health care-enablement analysis (`scratch/care-enablement-blog-draft.md`). Not yet canonical. Review before citing in field assets.
+**Origin.** Derived from the behavioral health care-enablement analysis ([care-enablement-blog-draft.md](file:///Users/bradthorson/Code/sales/ilg-knowledge-base/publishing/03-drafts/care-enablement/care-enablement-blog-draft.md)). Not yet canonical. Review before citing in field assets.
 
 **The distinction.** Markets carry two kinds of trust instruments, and the difference determines what happens when friction is removed.
 
