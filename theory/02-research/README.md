@@ -33,6 +33,12 @@ The papers build on each other:
 6. **[cfir.md](./cfir.md)** — Pre-sale diagnostic methodology. How to read the buyer's organization.
 7. **[re-aim-framework.md](./re-aim-framework.md)** — Post-sale measurement. How to define and track success.
 
+Plus three sources added in Constitution v13, which deepen existing axioms rather than introducing new ones:
+
+8. **[incomplete-contracts.md](./incomplete-contracts.md)** — Grossman-Hart / Hart-Moore. Residual control rights. The theoretical layer beneath Axiom III's skin-in-the-game prescription.
+9. **[buying-center-dynamics.md](./buying-center-dynamics.md)** — Cyert-March / Webster-Wind. What actually generates $F_{consensus}$ inside the buyer.
+10. **[real-options.md](./real-options.md)** — Dixit-Pindyck. Why a buyer rationally defers a positive-return decision, and why staging recovers the deal.
+
 ## Other documents in this directory
 
 - **[channel-collapse.md](./channel-collapse.md)** — Jevons' Paradox applied to outbound enablement. Governance solutions (Pigouvian taxes, Ostrom commons, demurrage-based trust).
