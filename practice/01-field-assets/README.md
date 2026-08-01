@@ -15,6 +15,18 @@ These artifacts apply across all motions, not just ILG:
 - **[Process Calculator](./process-calculator.md)** — Classifies a deal into SLG / PLG / ILG via a three-step rubric (Workflow Maturity → Market Stage → Transaction Cost).
 - **[Friction Allocation Diagnostic](./friction-allocation-diagnostic.md)** — Checks whether any signal mechanism (artifact, channel, validator) satisfies the four Friction Allocation Principles derived from Axiom II. Use when designing new artifacts, diagnosing failing signal mechanisms, or evaluating channels.
 
+## Quantitative Diagnostics
+
+Three instruments convert deal observations into comparable numbers. Each measures one term in the Surplus equation. All three rank deals against each other reliably and none of them predicts a close date. See [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) for calibration status.
+
+| Instrument | Measures | Run it when |
+|---|---|---|
+| **[Bilateral Asymmetry Scorecard](../02-internal-ops/04-incentives-asymmetry-scorecard.md)** | $\Delta_A = I_{seller} + I_{buyer}$ | Weekly forecast call, from first qualification onward |
+| **[Consensus Friction Calculator](./consensus-friction-calculator.md)** | $F_{consensus}$ | After the Blueprint maps the buying committee |
+| **[Milestone Valuation Model](./milestone-valuation-model.md)** | Staged uncertainty decay and gate payment structure | While drafting the MIP's timeline and commercial terms |
+
+The three map onto the Three Sales Levers from Axiom II. The scorecard tells you how much uncertainty ($x$) there is to remove. The friction calculator tells you where the base cost ($c$) is concentrated. The milestone model is how you lower risk aversion ($a$) by giving hostages.
+
 ---
 
 ## ILG Motion (Implementation-Led Growth)
