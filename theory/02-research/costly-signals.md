@@ -5,11 +5,22 @@
 - Spence, M. (1973). "Job Market Signaling." *Quarterly Journal of Economics*, 87(3), 355–374. [PDF](https://www.sfu.ca/~allen/Spence.pdf)
 - Crawford, V.P. & Sobel, J. (1982). "Strategic Information Transmission." *Econometrica*, 50(6), 1431–1451.
 - Zahavi, A. (1975). "Mate selection — a selection for a handicap." *Journal of Theoretical Biology*. (Handicap Principle, evolutionary biology origin of costly signaling.)
+- Jensen, M.C. & Meckling, W.H. (1976). "Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure." *Journal of Financial Economics*, 3(4), 305–360.
+- Eisenhardt, K.M. (1989). "Agency Theory: An Assessment and Review." *Academy of Management Review*, 14(1), 57–74.
 
 **Abstract.** Akerlof showed that information asymmetry about quality causes adverse selection: rational buyers discount price to average quality, driving high-quality sellers out, until the market collapses to lemons. Spence's signaling theory provided the mechanism for restoring quality separation: a signal carries information only when its cost is proportionally lower for the high-quality actor — the *Single Crossing Property*. Crawford-Sobel formalized the limit case: when production costs collapse to zero, communication degenerates into a babbling equilibrium where receivers ignore all messages. The trio together explains why costly, rigorous sales processes are not waste — they are the only mathematically valid mechanism for separating quality vendors from imitators.
 
+**Agency extension (Jensen-Meckling, Eisenhardt).** Akerlof and Spence describe asymmetry before the deal. Agency theory describes what happens after it. Jensen and Meckling showed that when one party acts on another's behalf and effort is unobservable, the acting party has a standing incentive to divert effort, and the cost of preventing that (monitoring, bonding, and the residual loss neither can eliminate) is a real cost of the transaction. Eisenhardt's review separates the two failures cleanly:
+
+- **Adverse selection (before signing).** The buyer cannot distinguish a capable vendor from an incapable one, so they discount price toward the average. This is the failure costly signals solve.
+- **Moral hazard (after signing).** Effort becomes unobservable once work begins, on both sides. The seller can under-resource delivery; the buyer can under-resource adoption. This is the failure governance solves, not signals.
+
+Agency friction also runs along two vectors at once, and ILG treats them differently. The **inter-organizational vector** is the buyer-seller gap that $\Delta_A$ measures. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the Blueprint and Red Team map stakeholder incentives rather than simply proving vendor capability.
+
 **Key claims:**
 - Information asymmetry without signals collapses markets to average (lemons) quality.
+- Adverse selection and moral hazard are distinct failures requiring distinct instruments. Signals address the first, governance the second.
+- Agency friction operates inside the buyer as well as across the buyer-seller boundary. A perfectly credible vendor still stalls in a misaligned committee.
 - A signal carries information only if it satisfies the Single Crossing Property — cheaper to produce for the high-quality actor.
 - Cheap talk has zero signal value; without cost, the receiver's rational response is to ignore.
 - Paid pilots, rigorous discovery, and resource-intensive POCs are credible signals because lemons cannot afford them.
@@ -22,6 +33,8 @@
 - **Single Crossing Property** (clarifying concept) — direct.
 - **Akerlof Exit Threshold** (clarifying concept) — direct.
 - **Jevons Vulnerability** (clarifying concept) — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
+- **Axiom III — Law of Governance** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the binding constraint, which is what the MIP's mutual resource commitments address.
+- **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [03-mathematical-models.md](../01-foundation/03-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
 
 **Notable quotes:**
 - "The difficulty of the sales process is not a barrier to the product; it is the product itself."

@@ -6,6 +6,45 @@ This document is the practical companion to the [Constitution](./00-ilg-constitu
 
 ---
 
+## What Kind of Thing ILG Is
+
+Go-to-market methodologies get compared as though they all answer the same question. They do not. Three distinct tiers exist, and confusing them produces arguments that cannot resolve.
+
+| Tier | What it decides | Examples |
+|---|---|---|
+| **Macro GTM motion** | The core driver of acquisition, retention, and expansion. Which artifacts get built, who staffs the deal, how the process is shaped. | PLG, SLG, **ILG** |
+| **Qualification framework** | Deal inspection, pipeline hygiene, forecasting. What must be true before a deal is called committed. | MEDDPICC, BANT |
+| **Conversational methodology** | Rep dialogue, discovery technique, how a perspective gets reframed in the room. | Challenger Sale, SPIN Selling |
+
+**ILG is a macro GTM motion.** It is therefore not an alternative to MEDDPICC or Challenger, and adopting ILG does not mean abandoning either.
+
+The tiers compose. A team running ILG still needs a qualification standard, and MEDDPICC works as well inside ILG as inside SLG. ILG changes what the qualification evidence *is*: the Economic Buyer is confirmed in the Blueprint, the Decision Criteria are the Red Team's surfaced failure modes, and the Champion is tested by whether they commit resources to the MIP. A rep still needs conversational technique, and Challenger's commercial teaching is well suited to the Blueprint interview.
+
+The distinction matters most when someone says their team "already does ILG because they run MEDDPICC on complex deals." Qualification tells you whether a deal is real. It does not reduce the buyer's implementation risk, which is the only thing that closes a Bridge.
+
+---
+
+## Buyer State and Dominant Cost
+
+Each motion answers a different buyer, in a different state of problem awareness, carrying a different dominant cost:
+
+| Motion | Buyer mindset | Dominant transaction cost | Core objective |
+|---|---|---|---|
+| **PLG** | *"I know my problem. Give me the tool to test it."* | Vendor evaluation | **Frictionless activation.** Collapse evaluation cost by letting the buyer verify utility without a seller. |
+| **SLG** | *"I'm comfortable in the status quo. Convince me I have a problem."* | Category search, plus budget consensus for a category with no line item | **Problem discovery and urgency.** Educate the buyer, quantify the cost of inaction, create the budget. |
+| **ILG** | *"I know my problem. Prove you won't break my business installing a fix."* | Consensus and implementation, amplified by $\Delta_A$ | **Risk elimination.** Supply pre-sale technical proof and structured risk-sharing governance. |
+
+### A note on splitting $F_{search}$
+
+The Constitution defines $F_{search}$ as "locating the category and viable vendors." Those are two activities, and they peak in different markets. Keeping them fused produces an apparent contradiction, because PLG and SLG both look like they own search.
+
+- **Category search** dominates nascent markets. The buyer cannot name what they need. SLG resolves this through education, and the cost is cognitive.
+- **Vendor evaluation** dominates mature, low-specificity markets. The category is legible and the buyer can name five vendors. PLG resolves this by letting them try one, and the cost is time.
+
+ILG deals carry little of either. The buyer knows the category and the field. What they cannot resolve is whether *this* vendor can install *this* system in *their* environment without breaking it, which is $F_{implementation}$ inflated by $\Delta_A$, and no amount of category education or free trial touches it.
+
+---
+
 ## Quick Reference
 
 | Dimension | **ILG** | **PLG** | **SLG** |
@@ -152,6 +191,20 @@ Markets evolve, and individual deals can shift across motion boundaries during t
 
 The Constitution's Boundary Condition (Axiom I) explains why these transitions are necessary: friction must match specificity. When the underlying specificity changes — through market evolution or in-deal discovery — the friction structure must adjust.
 
+### The lifecycle runs one way, and then resets
+
+Left alone, a category ages in a single direction. Standards solidify, integration patterns homogenize, implementation playbooks get published, and asset specificity falls. The motion that fits follows it down:
+
+```
+Emerging category      → high specificity, no playbooks    → ILG
+Consolidating category → standard integration patterns     → SLG
+Commoditized category  → turnkey interoperability          → PLG
+```
+
+The practical warning is that a motion which fit three years ago may over-serve the same category today. A team still running full ILG on a category that has commoditized is burning margin on Blueprints the buyer no longer needs.
+
+New technical paradigms reset the clock. Complex generative AI integration, healthcare interoperability, and any category where the integration surface is still being invented all create fresh high-specificity segments inside markets that had otherwise matured. The reset is why ILG does not have an expiration date as a discipline. It relocates rather than disappears.
+
 ---
 
 ## Common Failure Patterns
@@ -182,6 +235,7 @@ The motion is not about your preference. It is about the deal's physics — deri
 
 - [00-ilg-constitution.md](./00-ilg-constitution.md) — Theoretical framework. Axiom I is the foundation for motion choice.
 - [02-cfir-field-mapping.md](./02-cfir-field-mapping.md) — How ILG artifacts operationalize implementation science.
+- [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms behind $\Delta_A$, $F_{consensus}$, and the urgency decay rate.
 - [process-calculator.md](../../practice/01-field-assets/process-calculator.md) — Operational tool implementing the Decision Framework.
 - [ilg-motion/](../../practice/01-field-assets/ilg-motion/) — Bridge motion artifacts (Blueprint / Red Team / MIP).
 - [plg-motion/](../../practice/01-field-assets/plg-motion/) — Toaster motion artifacts.

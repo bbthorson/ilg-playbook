@@ -48,10 +48,11 @@ Each group has its own README explaining what's inside and the reading order.
 
 ### The Fundamental Equation
 
-$$S = \left(V_{solution} \times e^{-\delta t} - V_{next\_best}\right) - F_{base} \times (1 + \Delta_A)$$
+$$S = \left(V_{solution} \times e^{-\delta t} - V_{next\_best}\right) - F_{base} \times (1 + \Delta_A) = OC_{\text{switching}} - y$$
 
 - **S** = Deal Surplus (must be > 0 for a deal to close)
 - **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance + Buyer Uncertainty
+- **y** = Total Perceived Transaction Cost = $ax^2 + c$ (where $a = 2.25$ is risk aversion, $x \approx \Delta_A$ is uncertainty, and $c$ is direct cost)
 - **δ** = Decay Rate of urgency after the triggering event
 - Applies when **k > k_threshold** (high asset specificity) AND **n_viable ≤ n_max** (thin market)
 

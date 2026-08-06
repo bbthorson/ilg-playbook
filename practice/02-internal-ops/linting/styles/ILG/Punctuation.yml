@@ -1,0 +1,5 @@
+extends: occurrence
+message: "Limit em dashes and semicolons to 3 per document maximum."
+level: warning
+limit: 3
+token: '[;—]'

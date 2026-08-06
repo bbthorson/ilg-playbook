@@ -14,14 +14,14 @@
 - The Fundamental Transformation: ex-ante competition becomes ex-post bilateral monopoly once specific investments lock the parties.
 - Bounded rationality and opportunism make all complex contracts incomplete; governance handles what contracts cannot.
 - "Slow down to speed up" — ex-ante governance investment prevents catastrophic ex-post failures.
-- Hostages (credible commitments) mitigate hold-up risk in incomplete contracts.
+- Hostages (credible commitments) mitigate hold-up risk in incomplete contracts. By giving a hostage (such as performance guarantees, clawback clauses, or mutual resource commitments in the MIP), a vendor shifts downside risk back to themselves, which operationalizes as lowering the buyer's risk aversion coefficient ($a$) toward the transaction.
 
 **Supports in ILG:**
 - **Axiom I — Law of Economic Boundaries** — direct theoretical basis. Asset specificity is the boundary parameter.
 - **Boundary Condition** (primary derivation) — $k > k_{threshold}$ is Williamson's threshold for governance preference.
 - **Williamson Hold-Up** (clarifying concept) — direct.
 - **Three Transaction Costs** (clarifying concept) — direct mapping to $F_{search} + F_{consensus} + F_{implementation}$.
-- **Axiom III — Law of Governance** — bilateral hostages and relational contracts are the mechanism behind recursive cooperation.
+- **Axiom III — Law of Governance** — bilateral hostages and relational contracts are the mechanism behind recursive cooperation. In the transaction cost model $y = ax^2 + c$, hostages are the primary operational lever to reduce the risk aversion coefficient $a$, helping to satisfy the deal-winning condition $y < OC_{\text{switching}}$.
 
 **Notable quotes:**
 - "Speed is risk" when governance structures are immature.
