@@ -14,6 +14,8 @@ These artifacts apply across all motions, not just ILG:
 
 - **[Process Calculator](./process-calculator.md)** — Classifies a deal into SLG / PLG / ILG via a three-step rubric (Workflow Maturity → Market Stage → Transaction Cost).
 - **[Friction Allocation Diagnostic](./friction-allocation-diagnostic.md)** — Checks whether any signal mechanism (artifact, channel, validator) satisfies the four Friction Allocation Principles derived from Axiom II. Use when designing new artifacts, diagnosing failing signal mechanisms, or evaluating channels.
+- **[Costly Signal Discovery Scripts](./costly-signal-discovery-scripts.md)** — The escalating ladder of asks that converts stated interest into evidenced commitment, with the wording for each rung and how to read the response. Run during Blueprint discovery.
+- **[ILG Deal Calibration Checklist](./ilg-deal-calibration-checklist.md)** — Pre-close self-audit for the AE and SE, run before the order form goes in. Carries every mandatory-veto condition so the deal team meets it before the manager does.
 
 ## Quantitative Diagnostics
 
@@ -126,7 +128,7 @@ The ILG motion uses three sequential artifacts to drive the bilateral asymmetry 
 **Purpose:** Classify deals into SLG, PLG, or ILG by diagnosing market stage first, then asset specificity within mature markets.
 
 **Three-step diagnostic:**
-1. **Workflow Maturity Gate** — does a SOP exist? If not, Chaos Trap (Consulting first).
+1. **Workflow Maturity Gate** — Level 1 Undefined (Chaos Trap, consulting first), Level 2 Emergent (proceed, Blueprint reconstructs the workflow), Level 3 Codified (proceed).
 2. **Market Stage** — Nascent / Transitional / Mature, by category legibility.
 3. **Transaction Cost** (Mature markets only) — score Integration depth + Workflow change scope + Consensus complexity + Retention horizon (1–5 each, sum 4–20).
 

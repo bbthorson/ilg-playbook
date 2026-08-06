@@ -17,14 +17,20 @@ Goal: Classify a live deal opportunity into the appropriate sales motion — SLG
 
 ## Step 0: Workflow Maturity Gate (Pre-Qualification)
 
-**Before scoring anything, answer this binary question:**
+**Before scoring anything, classify the buyer's workflow.** You cannot digitize a process nobody has defined.
 
-### Does a documented standard operating procedure (SOP) exist for this problem today?
+Score the workflow for the specific problem being solved, not the buyer's operational sophistication generally. A hospital with excellent finance SOPs may have no documented process for the clinical workflow you are selling into.
 
-- [ ] **YES** — A documented workflow exists (written process, documented steps, known sequence of activities). → Proceed to Step 1.
-- [ ] **NO** — The workflow is undefined, ad-hoc, or varies by person/team. → **STOP.**
+| Level | Condition | Evidence required | Route |
+|---|---|---|---|
+| **1. Undefined** | No written process. Steps vary by person. Practitioners disagree on what the current process is. | Ask three people to describe the workflow and get three different answers. | **Stop. Chaos Trap.** Redirect to consulting or a paid workshop to define the SOP first. |
+| **2. Emergent** | A process exists and is partly written down, but business units have diverged, exceptions are undocumented, and nobody owns the variance. | A written SOP exists that people describe as out of date. | **Conditional.** Proceed to Step 1, but the Blueprint must reconstruct the workflow before the Red Team runs. Budget additional discovery. |
+| **3. Codified** | Documented, followed, and exception handling is quantified. Someone owns the process and can name its failure rates. | Current SOP, plus volumes for the exception paths. | **Proceed** to Step 1. |
 
-**If NO:** This is the **Chaos Trap** (high specificity + undefined workflow). You cannot digitize chaos. Redirect to Consulting / Paid Workshop to define the SOP first. The prospect must graduate from Consulting → ILG.
+**Level 2 is the level that gets misread.** A buyer at Level 2 can produce a document on request, which reads as Level 3 to a rep who does not check whether the document matches practice. The failure surfaces during implementation as unmapped exception paths, which is the single most common source of post-signature scope expansion. When in doubt, score down.
+
+> [!IMPORTANT]
+> **Workflow maturity is not market stage, and it is not asset specificity.** These are three independent axes, and collapsing them produces wrong routing. A Level 1 workflow in a mature market is a Chaos Trap, not an SLG deal — the category is perfectly legible and the buyer still has nothing to automate. A Level 3 workflow tells you the deal is *mappable*, not that it is a Bridge; that is what Step 2 measures. Score each axis on its own evidence.
 
 ---
 

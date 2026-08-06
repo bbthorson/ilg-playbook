@@ -18,6 +18,7 @@ How managers and VPs forecast Bridges based on friction completed, not hope.
 
 - **[01-governance-deal-calibration.md](./01-governance-deal-calibration.md)** — Manager tool to qualify a Bridge deal: classification check, friction audit, "no decision" risk, forecast verdict.
 - **[02-governance-review-checklist.md](./02-governance-review-checklist.md)** — Forensic checklist for the three friction phases (Blueprint → Red Team → MIP). Includes the [asymmetry scorecard](./04-incentives-asymmetry-scorecard.md) as an embedded check.
+- **[06-governance-implementation-veto.md](./06-governance-implementation-veto.md)** — Grants Solutions Engineering and Implementation a binding pre-signature halt on Bridge deals carrying unmitigated operational risk. Defines trigger conditions, the escalation path, and the exposure carried by the veto holder in both directions.
 
 ### Incentives (comp design)
 

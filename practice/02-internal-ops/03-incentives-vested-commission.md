@@ -41,6 +41,10 @@ Sales is an "Infinite Game." We do not pay for signatures; we pay for **successf
   * Key Sponsor fired/left (if "Political Map" was accurate at signing).  
   * Product Bug / Outage (Vendor failure).
 
+- **Safe Harbor Void on Override:** Where the deal proceeded over an [Implementation Veto](./06-governance-implementation-veto.md) by executive override, the Safe Harbor does not apply and the full clawback stands. The Safe Harbor covers risks nobody could see. An override is the moment a named risk was accepted knowingly.
+
+- **No Penalty for Honoring a Veto:** A deal lost after a sustained veto is a qualification outcome, not a performance event. It does not count against quota attainment relief. Without this term, the comp plan punishes compliance and the veto gets routed around.
+
 ### D. The NRR Bonus (The Upside)
 
 *If the Rep does the job perfectly, they participate in the renewal.*

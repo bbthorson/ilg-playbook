@@ -135,7 +135,13 @@ The motion is determined by two factors: the *market stage* (which determines wh
 
 ### Step 0: Workflow Maturity Gate
 
-Does a documented SOP exist for the problem? If NO → **Chaos Trap** → Redirect to Consulting/Paid Workshop. You cannot digitize undefined workflows.
+Classify the buyer's workflow for the specific problem being solved, on three levels:
+
+- **Level 1, Undefined.** No written process; steps vary by person. → **Chaos Trap.** Redirect to consulting. You cannot digitize an undefined workflow.
+- **Level 2, Emergent.** A process exists and is partly documented, but units have diverged and exceptions are unowned. → Proceed, with the Blueprint reconstructing the workflow before the Red Team runs.
+- **Level 3, Codified.** Documented, followed, exceptions quantified. → Proceed.
+
+Workflow maturity answers whether the buyer's process can be mapped. It is independent of market stage, which asks whether the category is legible, and of asset specificity, which asks how tightly the solution couples to the environment. A Level 1 workflow inside a mature market is a Chaos Trap rather than an SLG deal, because the category is legible and the buyer still has nothing to automate. Treating these three axes as one dial is the most common way to route a deal into the wrong motion.
 
 ### Step 1: Market Stage Diagnostic (Workflow Legibility)
 
@@ -220,6 +226,26 @@ The most common motion-selection mistakes:
 **Skipping Reciprocity in ILG.** Running ILG motion but not requiring the buyer to invest in the process — provide artifacts, attend workshops, commit resources. *Symptoms:* lopsided MIP, buyer disengagement post-signature, implementation stalls. *Root cause:* fear of losing the deal by asking for too much.
 
 **Happy-Ears Red Team.** Running the workshop but accepting "everything looks good" without surfacing real failure modes. *Symptoms:* implementation hits unexpected blockers, scope creep, late discovery of saboteurs. *Root cause:* facilitator not pushing hard enough for prospective hindsight.
+
+---
+
+## Boundary Conditions: Where ILG Fails
+
+Axiom I states that friction must match asset specificity, which means ILG is wrong wherever the surplus it unlocks is smaller than the friction it imposes. Six conditions put a deal outside the boundary. In each, the correct response is to decline the motion rather than to run a lighter version of it.
+
+**1. No operational baseline exists.** The Blueprint maps a workflow. When there is no workflow to map, the artifact produces a document the buyer and seller invented together, and the Red Team then stress-tests a fiction. This is the Chaos Trap, and it is the reason Step 0 gates the calculator. *Route:* consulting to establish the SOP, then re-qualify.
+
+**2. Deal value cannot carry the friction cost.** ILG consumes solutions-engineering hours before revenue. Below roughly the point where pre-sale cost exceeds the gross margin on the first year, the motion destroys surplus even when the deal closes. Transactional SMB business sits here structurally. *Route:* PLG, or decline.
+
+**3. The category has commoditized.** Integration patterns homogenized, playbooks are published, and switching cost fell. Specificity dropped out from under a motion that used to fit. Teams keep running Blueprints out of habit and lose on cycle time to lighter competitors. *Route:* re-score annually; migrate to PLG when the score drops below 10.
+
+**4. The specification is externally fixed.** A regulatory mandate or a procurement standard that dictates the implementation leaves no discovery surplus to capture. Both parties already know what gets built. Discovery cannot reduce $\Delta_A$ because the gap is already near zero on the dimension that matters. *Route:* compete on price and delivery credibility.
+
+**5. The buyer has no implementation capacity at any price.** The MIP allocates resources the buyer does not have and cannot obtain. This is not a governance failure that better structure repairs; it is a capacity constraint. A signed MIP against absent resources produces a launch failure with a contract attached. *Route:* defer until capacity exists, or sell a managed-service shape instead.
+
+**6. The seller cannot deliver what the motion promises.** ILG makes implementation credibility the product. An organization without the solutions-engineering depth to run a genuine Red Team will produce Happy-Ears workshops, which is worse than not running one, because the buyer now holds documented assurance that the risks were examined. *Route:* build the capability before selling on it.
+
+The first three are properties of the deal. The last three are properties of the environment or the seller, and they are the ones teams skip when auditing their own boundary.
 
 ---
 
