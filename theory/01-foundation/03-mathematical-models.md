@@ -256,3 +256,4 @@ Until then, treat every output as a structured comparison between deals rather t
 - [Consensus Friction Calculator](../../practice/01-field-assets/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
 - [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) — Applies staged uncertainty decay to MIP gate design.
 - [real-options.md](../02-research/real-options.md) — Source for the staging logic behind $\delta$ and milestone gating.
+- [Friction Efficiency Index](../../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) — Retrospective execution metrics (FAR, BCV, RMS, SVI). Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.

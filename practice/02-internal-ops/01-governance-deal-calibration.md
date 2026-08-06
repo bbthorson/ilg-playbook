@@ -44,7 +44,7 @@ Goal: To calibrate the "Commit" forecast based on Friction, not Hope.
 
 ## The Forecast Verdict
 
-- **Commit:** All Artifacts Green \+ Asymmetry Delta \< 3\.  
+- **Commit:** All Artifacts Green \+ $\Delta_A$ below 4.0 (sum of $I_{seller}$ and $I_{buyer}$ on the [Asymmetry Scorecard](./04-incentives-asymmetry-scorecard.md), range 2–10).  
 - **Best Case:** Artifacts in progress.  
 - **Pipeline:** Blueprint not signed.
 

@@ -264,48 +264,48 @@ Show realistic outcomes of rep's decisions:
 ### Module 0 → Module 1
 
 Learner must demonstrate:
-- ✅ Correct classification of 5 sample deals
-- ✅ Evidence-based reasoning for scores
-- ✅ Understanding of when override rule applies
+- Correct classification of 5 sample deals
+- Evidence-based reasoning for scores
+- Understanding of when override rule applies
 
 ### Module 1 → Module 2
 
 Learner must demonstrate:
-- ✅ Correct diagnosis of fear vs. price in 3 scenarios
-- ✅ Understanding of bilateral asymmetry gap ($\Delta_A$) and the Fear Multiplier
-- ✅ Ability to prescribe risk mitigation (not discounting)
+- Correct diagnosis of fear vs. price in 3 scenarios
+- Understanding of bilateral asymmetry gap ($\Delta_A$) and the Fear Multiplier
+- Ability to prescribe risk mitigation (not discounting)
 
 ### Module 2 → Module 3
 
 Learner must demonstrate:
-- ✅ Correct differentiation of skeptics vs. adversaries
-- ✅ Complete political capital map with strategies
-- ✅ Effective pre-mortem framing
+- Correct differentiation of skeptics vs. adversaries
+- Complete political capital map with strategies
+- Effective pre-mortem framing
 
 ### Module 3 → Completion
 
 Learner must demonstrate:
-- ✅ Correct clawback calculations
-- ✅ Realistic MIP design
-- ✅ Articulation of infinite game mindset
+- Correct clawback calculations
+- Realistic MIP design
+- Articulation of infinite game mindset
 
 ---
 
 ## Feedback Best Practices
 
 ### Do:
-- ✅ Ask probing questions before giving answers
-- ✅ Provide specific examples from their responses
-- ✅ Connect feedback to ILG axioms
-- ✅ Show consequences of decisions
-- ✅ Acknowledge what they did well
+- Ask probing questions before giving answers
+- Provide specific examples from their responses
+- Connect feedback to ILG axioms
+- Show consequences of decisions
+- Acknowledge what they did well
 
 ### Don't:
-- ❌ Give answers without making them think
-- ❌ Use vague feedback ("good job")
-- ❌ Cheerleading without rigor
-- ❌ Accept hand-waving or generalizations
-- ❌ Let them advance without demonstrating understanding
+- Give answers without making them think
+- Use vague feedback ("good job")
+- Cheerleading without rigor
+- Accept hand-waving or generalizations
+- Let them advance without demonstrating understanding
 
 ---
 

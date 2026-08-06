@@ -279,9 +279,9 @@ You're selling a revenue operations platform (Bridge deal, score 14). The prospe
 ### Progression Gate
 
 To advance to Module 2, you must:
-- ✅ Correctly diagnose all 3 objections as fear vs. price
-- ✅ Complete the deal autopsy with specific asymmetry scores
-- ✅ Design a strategy that targets the wider side of the asymmetry gap ($I_{seller}$ or $I_{buyer}$)
+- Correctly diagnose all 3 objections as fear vs. price
+- Complete the deal autopsy with specific asymmetry scores
+- Design a strategy that targets the wider side of the asymmetry gap ($I_{seller}$ or $I_{buyer}$)
 
 ---
 
@@ -319,6 +319,6 @@ When evaluating responses:
 ## Next Steps
 
 Once you've completed this module:
-- ✅ Move to [Module 2 - Science of Resistance](./module-2-science-of-resistance.md)
-- 🔄 Apply the Bilateral Asymmetry Scorecard to your current deals
-- 📊 Practice diagnosing fear vs. price in your pipeline
+- Move to [Module 2 - Science of Resistance](./module-2-science-of-resistance.md)
+- Apply the Bilateral Asymmetry Scorecard to your current deals
+- Practice diagnosing fear vs. price in your pipeline

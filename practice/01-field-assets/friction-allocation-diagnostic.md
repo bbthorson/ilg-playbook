@@ -47,11 +47,11 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 
 | Mechanism | Who bears cost |
 |---|---|
-| Seller spends a week on a Blueprint the buyer reviews | Claimant ✓ |
-| Seller sends 1,000 cold emails the buyer must filter | Receiver ✗ |
-| Seller pays for SOC2 / security audit before approaching the buyer | Claimant ✓ |
-| Platform sends notifications the buyer must triage | Receiver ✗ |
-| Vendor commissions third-party validation prior to introducing themselves | Claimant ✓ |
+| Seller spends a week on a Blueprint the buyer reviews | Claimant |
+| Seller sends 1,000 cold emails the buyer must filter | Receiver |
+| Seller pays for SOC2 / security audit before approaching the buyer | Claimant |
+| Platform sends notifications the buyer must triage | Receiver |
+| Vendor commissions third-party validation prior to introducing themselves | Claimant |
 
 **Common violations.** Cold outreach at scale. RFPs where the seller submits boilerplate and the buyer must read everyone's. "Reach out and we'll connect you with a specialist" lead-capture flows. Channels where the platform monetizes sends rather than signal quality.
 
@@ -67,11 +67,11 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 
 | Stake | Signal cost | Verdict |
 |---|---|---|
-| $50K SaaS deal | 30-min discovery call | Proportional ✓ |
-| $5M ERP deal | 30-min discovery call | Wildly under-frictioned ✗ |
-| $50K SaaS deal | Three-month paid pilot | Over-frictioned ✗ |
-| $5M ERP deal | Three-month paid pilot | Proportional ✓ |
-| Buyer asks for pilot/POC at any stake | Anything less than ILG motion | Under-frictioned ✗ (override applies — see [Process Calculator](./process-calculator.md)) |
+| $50K SaaS deal | 30-min discovery call | Proportional |
+| $5M ERP deal | 30-min discovery call | Wildly under-frictioned |
+| $50K SaaS deal | Three-month paid pilot | Over-frictioned |
+| $5M ERP deal | Three-month paid pilot | Proportional |
+| Buyer asks for pilot/POC at any stake | Anything less than ILG motion | Under-frictioned (override applies — see [Process Calculator](./process-calculator.md)) |
 
 **Common violations.** A Bridge sold with PLG-grade signals (under-frictioned). A Toaster sold with ILG-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
 
@@ -87,12 +87,12 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 
 | Adjudicator type | Skin in the game? |
 |---|---|
-| Sales platform paid per email sent, regardless of reply rate | None ✗ |
-| Ratings agency paid by vendors being rated | None ✗ (conflict of interest) |
+| Sales platform paid per email sent, regardless of reply rate | None |
+| Ratings agency paid by vendors being rated | None (conflict of interest) |
 | KLAS / Gartner / Forrester after rating a vendor that underperforms | Mild reputational loss; no direct cost — drift risk |
-| Peer who personally recommended you, when the recommendation goes badly | Relationship cost — real ✓ |
-| Platform that takes a percentage of post-sale value (success-fee) | Direct loss ✓ |
-| Incumbent vendor whose channel access is revoked for bad delivery | Direct loss ✓ |
+| Peer who personally recommended you, when the recommendation goes badly | Relationship cost — real |
+| Platform that takes a percentage of post-sale value (success-fee) | Direct loss |
+| Incumbent vendor whose channel access is revoked for bad delivery | Direct loss |
 
 **Common violations.** Pay-per-send platforms. Volume-based ad networks. Ratings agencies funded by the rated. Reputation systems that don't depreciate (the KLAS "coast on residual brand" pattern). Internal review processes where reviewers face no consequences for approving bad deals.
 

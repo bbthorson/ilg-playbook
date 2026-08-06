@@ -26,9 +26,15 @@ How to align rep behavior with long-term customer outcomes, not just signature.
 - **[03-incentives-vested-commission.md](./03-incentives-vested-commission.md)** — Comp plan addendum: front-load, clawback, NRR bonus, safe harbor. Operationalizes Axiom III (Governance) at the rep/management level — the cooperation condition's $\delta_{discount}$ requires comp tied to long-term outcomes, not signature.
 - **[04-incentives-asymmetry-scorecard.md](./04-incentives-asymmetry-scorecard.md)** — Weekly diagnostic measuring Bilateral Asymmetry Gap (Δ_A) across seller ignorance and buyer uncertainty.
 
+### Diagnostics (retrospective, cohort-level)
+
+How leadership checks whether the motion is actually being run, after deals close.
+
+- **[05-diagnostics-friction-efficiency-index.md](./05-diagnostics-friction-efficiency-index.md)** — Quarterly retrospective across a cohort of closed Bridge deals. Measures whether implementation effort landed before or after signature (FAR), how fast the buyer mobilized (BCV), what share of discovered risk was closed pre-signature (RMS), and scope stability (SVI), combined into a single index. All parameters are uncalibrated; read the provenance table before quoting any figure.
+
 ## Naming convention
 
-Files use `NN-category-slug.md` where `NN` controls reading order and `category` is either `setup`, `governance`, or `incentives`.
+Files use `NN-category-slug.md` where `NN` controls reading order and `category` is either `setup`, `governance`, `incentives`, or `diagnostics`.
 
 ## What goes here vs. elsewhere
 

@@ -261,9 +261,9 @@ Create a table with:
 ### Progression Gate
 
 To advance to Module 3, you must:
-- ✅ Correctly diagnose all 3 scenarios (skeptic vs. adversary)
-- ✅ Design a pre-mortem script with appropriate framing
-- ✅ Build a complete political capital map with strategies
+- Correctly diagnose all 3 scenarios (skeptic vs. adversary)
+- Design a pre-mortem script with appropriate framing
+- Build a complete political capital map with strategies
 
 ---
 
@@ -302,6 +302,6 @@ When evaluating responses:
 ## Next Steps
 
 Once you've completed this module:
-- ✅ Move to [Module 3 - Infinite Game](./module-3-infinite-game.md)
-- 🔄 Build political capital maps for your current Bridge deals
-- 📊 Practice pre-mortems in discovery calls
+- Move to [Module 3 - Infinite Game](./module-3-infinite-game.md)
+- Build political capital maps for your current Bridge deals
+- Practice pre-mortems in discovery calls

@@ -9,3 +9,6 @@ tokens:
   - '[\x{1F1E6}-\x{1F1FF}]' # Flags
   - '[\x{2600}-\x{27BF}]'   # Symbols & Dingbats
   - '[\x{1F900}-\x{1F9FF}]' # Supplemental Symbols and Pictographs
+  - '[\x{1F7E0}-\x{1F7EB}]' # Colored circles and squares
+  - '[\x{2B00}-\x{2BFF}]'   # Misc symbols and arrows (solid shapes)
+  - '[\x{FE0F}]'            # Variation Selector-16 (emoji presentation)

@@ -13,7 +13,7 @@ Goal: To convert "Rational Fear" into "Confidence" and identify the Saboteur.
 | **Owner** | AE + Solutions Engineer (with workshop facilitator). |
 | **Reduces** | Buyer Uncertainty (I_buyer) via costly signals. |
 
-## ⚠️ Rep Compliance: The Ratio Check
+## Rep Compliance: The Ratio Check
 
 *Before the workshop, verify your content density:*
 
@@ -179,9 +179,9 @@ Share your screen. Categorize the risks raised into the Traffic Light Protocol.
 
 | Risk Status | Definition | Action Required |
 | :---- | :---- | :---- |
-| 🟢 **Solvable** | Standard friction. We have a playbook for this. | **Add to Mutual Implementation Plan (MIP).** |
-| 🟡 **Constraint** | A real barrier, but we can work around it. | **Assign Owner (Buyer/Seller) to fix by \[Date\].** |
-| 🔴 **Showstopper** | A fundamental incompatibility (Technical or Cultural). | **PAUSE THE DEAL.** |
+| **Solvable** | Standard friction. We have a playbook for this. | **Add to Mutual Implementation Plan (MIP).** |
+| **Constraint** | A real barrier, but we can work around it. | **Assign Owner (Buyer/Seller) to fix by \[Date\].** |
+| **Showstopper** | A fundamental incompatibility (Technical or Cultural). | **PAUSE THE DEAL.** |
 
 **The "Costly Signal" Script (If a Red Risk is found):**
 

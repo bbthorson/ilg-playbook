@@ -88,9 +88,9 @@ When asset specificity is high (Bridge), transaction costs explode due to:
 - Consensus costs (political complexity)
 
 Misclassifying a Bridge as a Toaster leads to:
-- ❌ Stalled deals ("no decision")
-- ❌ Failed implementations
-- ❌ Early churn
+- Stalled deals ("no decision")
+- Failed implementations
+- Early churn
 
 ---
 
@@ -236,9 +236,9 @@ Misclassifying a Bridge as a Toaster leads to:
 ### Progression Gate
 
 To advance to Module 1, you must:
-- ✅ Score all 5 sample deals with reasoning aligned to ILG principles
-- ✅ Complete the autopsy exercise with specific, evidence-based insights
-- ✅ Demonstrate understanding of when to apply the override rule
+- Score all 5 sample deals with reasoning aligned to ILG principles
+- Complete the autopsy exercise with specific, evidence-based insights
+- Demonstrate understanding of when to apply the override rule
 
 ---
 
@@ -267,6 +267,6 @@ When a rep submits their deal scores:
 ## Next Steps
 
 Once you've completed this module:
-- ✅ Move to [Module 1 - Economics of Fear](./module-1-economics-of-fear.md)
-- 🔄 Apply triage protocol to your current pipeline
-- 📊 Use the [Deal Triage Calculator](../../01-field-assets/process-calculator.md) as a quick reference tool
+- Move to [Module 1 - Economics of Fear](./module-1-economics-of-fear.md)
+- Apply triage protocol to your current pipeline
+- Use the [Deal Triage Calculator](../../01-field-assets/process-calculator.md) as a quick reference tool

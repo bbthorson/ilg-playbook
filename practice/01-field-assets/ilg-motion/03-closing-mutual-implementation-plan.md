@@ -13,7 +13,7 @@ Goal: To contractualize the outcome and lock in the "Infinite Game."
 | **Owner** | AE + Customer PM + Procurement + Legal. |
 | **Reduces** | Defection risk via mutual skin in the game (Axiom III — Governance). |
 
-## ⚠️ Rep Compliance: The Ratio Check
+## Rep Compliance: The Ratio Check
 
 *Before the close, verify your content density:*
 

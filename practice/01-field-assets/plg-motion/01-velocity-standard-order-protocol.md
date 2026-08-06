@@ -5,7 +5,7 @@ Phase: Lane 1 (Toaster / PLG)
 Audience: Account Executives / Sales Ops / CS Lead  
 Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" handoffs.
 
-## ⚠️ The Triage Check
+## The Triage Check
 
 *Before using this protocol, verify the Deal Score:*
 

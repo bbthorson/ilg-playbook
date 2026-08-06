@@ -308,9 +308,9 @@ You say:
 ### Progression Gate
 
 To complete the curriculum, you must:
-- ✅ Correctly calculate clawback scenarios
-- ✅ Design a realistic MIP with resources and metrics
-- ✅ Articulate the infinite game mindset shift
+- Correctly calculate clawback scenarios
+- Design a realistic MIP with resources and metrics
+- Articulate the infinite game mindset shift
 
 ---
 
@@ -350,7 +350,7 @@ When evaluating responses:
 You've completed the ILG Learning Curriculum. 
 
 **Next Steps:**
-- 🎯 Practice with [Simulations](../simulations.md)
-- 🔄 Apply ILG methodology to your current pipeline
-- 📊 Use the [Field Assets](../../01-field-assets) in real deals
-- 🧠 Continue learning with the [Research Papers](../../../theory/02-research)
+- Practice with [Simulations](../simulations.md)
+- Apply ILG methodology to your current pipeline
+- Use the [Field Assets](../../01-field-assets) in real deals
+- Continue learning with the [Research Papers](../../../theory/02-research)

@@ -68,8 +68,8 @@
 
 ### Reciprocity Gate
 - [ ] **"Did they provide the artifacts?"**
-  - Current state diagram? ✓ / ✗
-  - Data sample? ✓ / ✗
+  - Current state diagram? yes / no
+  - Data sample? yes / no
   
 - [ ] **"Did they agree to the Technical Hook?"**
   - What specific data access or integration did they commit to?
@@ -161,31 +161,42 @@
 
 Run the full scorecard from **[04-incentives-asymmetry-scorecard.md](./04-incentives-asymmetry-scorecard.md)** as a sub-check inside this review.
 
-In short: rate Seller Asymmetry (Economic Event / Political Casualty / Saboteur) and Buyer Asymmetry (Lemon Check / The Work / Price of Failure) on 0–5 each. Calculate Delta = |Seller − Buyer|.
+In short: score Seller Ignorance ($I_{seller}$) across four dimensions (technical architecture, operational workflow, the economic event, the political map) and Buyer Uncertainty ($I_{buyer}$) across four more (vendor capability, adoption burden, cost predictability, price of failure). Each dimension scores 1 to 5, where **5 means high asymmetry**. Average each half, then add them.
 
-- **Delta < 3** ✅ Symmetric → Forecastable
-- **Delta > 5** ⚠️ Asymmetric → High risk
-  - Seller low → flying blind, go back to [Blueprint](../01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md)
-  - Buyer low → hallucinating, go back to [Red Team](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md)
+$$\Delta_A = I_{seller} + I_{buyer} \qquad \Delta_A \in [2, 10]$$
+
+The gap is a **sum**, not a difference. Two equally blind parties do not cancel out; they compound.
+
+| $\Delta_A$ | Classification | Forecast treatment |
+|---|---|---|
+| **2.0 to 4.0** | Low | Forecastable. Lightweight MIP is sufficient. |
+| **4.0 to 7.0** | Moderate | Hold final pricing until S2 and B3 are each at 2 or below. |
+| **7.0 to 10.0** | High | Commercial hold. No contract terms until the audit clears. |
+
+**Routing — which half is wider.** The sum sets the risk; the balance sets the next action.
+
+- **$I_{seller}$ wider by 1.0 or more** → we are flying blind, go back to the [Blueprint](../01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md). Do not run a Red Team on an environment we have not mapped.
+- **$I_{buyer}$ wider by 1.0 or more** → they are working from an imagined product, go back to the [Red Team](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md).
+- **Within 1.0 and both high** → the most dangerous state on the card. Run Blueprint and Red Team in sequence before forecasting.
 
 ---
 
 ## Forecast Verdict
 
-### Commit Criteria (All must be true)
-- ✅ All artifacts Green (Blueprint signed, Red Team completed, MIP agreed)
-- ✅ Asymmetry Delta < 3
-- ✅ Resources committed in writing
-- ✅ Saboteur identified and contained
+### Commit (all must be true)
+- All artifacts green (Blueprint signed, Red Team completed, MIP agreed)
+- $\Delta_A$ below 4.0
+- Resources committed in writing
+- Saboteur identified and contained
 
 ### Best Case
-- 🟡 Artifacts in progress
-- 🟡 Some asymmetry remaining but addressable
+- Artifacts in progress
+- $\Delta_A$ between 4.0 and 7.0, with a named plan to close the wider half
 
 ### Pipeline
-- 🔴 Blueprint not signed
-- 🔴 Reciprocity gate not passed
-- 🔴 High asymmetry delta (>5)
+- Blueprint not signed
+- Reciprocity gate not passed
+- $\Delta_A$ above 7.0
 
 ---
 

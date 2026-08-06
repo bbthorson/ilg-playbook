@@ -18,7 +18,7 @@
 
 ---
 
-## ⚠️ Rep Compliance: The Ratio Check
+## Rep Compliance: The Ratio Check
 
 *Before presenting, verify your content density:*
 
@@ -30,7 +30,7 @@
 
 **Status:** Draft | **Owner:** \[Rep Name\] | **Date:** \[Date\]
 
-### 🚨 The "Why" (Read Aloud to Customer)
+### The "Why" (Read Aloud to Customer)
 
 "Research consistently shows that two-thirds of enterprise IT projects fail to deliver their promised ROI (Standish Group CHAOS Report, 2020; BCG, 2020). This failure rarely happens because the software is broken; it happens because the *implementation plan* conflicts with the customer's unique environment.
 
