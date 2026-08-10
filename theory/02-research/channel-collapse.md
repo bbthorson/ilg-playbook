@@ -23,7 +23,7 @@
 - Mechanism design solutions require: hostages (credible commitments), deep quality measurement, and demurrage on reputation.
 
 **Supports in ILG:**
-- **Axiom II — Law of Friction** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
+- **Axiom II — Law of Uncertainty Inflation** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
 - **Friction Allocation Principles** (primary derivation) — Principle 1 (non-automatable) is the diagnostic for Jevons vulnerability.
 - **Jevons Vulnerability** (clarifying concept) — direct.
 - **Axiom III — Law of Governance** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.

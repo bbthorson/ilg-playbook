@@ -104,7 +104,7 @@ Each motion fits a specific *market structure* and *deal profile*. The Constitut
 
 **Examples:** Selling AI agents to clinical teams in 2023. Selling SaaS in 1998. Selling fractional CFOs to mid-market in 2010. Often the rep is creating the market through the act of selling.
 
-**Key activities:** Heavy buyer education, vision-casting, reference architectures, "what does good look like" sessions. Often Challenger-style commercial teaching. Buyer-seller co-design of the solution shape.
+**Key activities:** Heavy buyer education, vision-casting, reference architectures, "what does good look like" sessions. Often Challenger-style commercial teaching. Buyer-seller co-design of the solution shape. Field asset: [01-education-led-motion.md](../../practice/01-field-assets/slg-motion/01-education-led-motion.md), which carries the misclassification tripwires and the triggers for pivoting to ILG.
 
 **Success criteria.** Visionary early adopters commit. The seller builds case studies that establish the category for the next wave of buyers — which is when the market transitions toward PLG or ILG.
 

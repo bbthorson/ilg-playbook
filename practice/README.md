@@ -7,9 +7,10 @@
 ### [01-field-assets/](01-field-assets/)
 
 Tools reps fill in on a live deal. Includes:
-- The [process calculator](01-field-assets/process-calculator.md) (Bridge vs. Toaster triage)
+- The [process calculator](01-field-assets/process-calculator.md) (SLG / PLG / ILG triage)
 - The four ILG motion artifacts (Blueprint → Red Team → MIP → [Sustaining Adoption Review](01-field-assets/ilg-motion/04-sustaining-adoption-review.md)) for Bridges
 - The PLG velocity protocol + order form for Toasters
+- The [SLG education-led motion](01-field-assets/slg-motion/01-education-led-motion.md) for nascent markets, written mainly as a counter-example to ILG
 
 ### [02-internal-ops/](02-internal-ops/)
 

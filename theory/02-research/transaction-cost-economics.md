@@ -17,7 +17,7 @@
 - Hostages (credible commitments) mitigate hold-up risk in incomplete contracts. By giving a hostage (such as performance guarantees, clawback clauses, or mutual resource commitments in the MIP), a vendor shifts downside risk back to themselves, which operationalizes as lowering the buyer's risk aversion coefficient ($a$) toward the transaction.
 
 **Supports in ILG:**
-- **Axiom I — Law of Economic Boundaries** — direct theoretical basis. Asset specificity is the boundary parameter.
+- **Axiom I — Law of Transaction Cost Composition** — direct theoretical basis. Asset specificity is the boundary parameter.
 - **Boundary Condition** (primary derivation) — $k > k_{threshold}$ is Williamson's threshold for governance preference.
 - **Williamson Hold-Up** (clarifying concept) — direct.
 - **Three Transaction Costs** (clarifying concept) — direct mapping to $F_{search} + F_{consensus} + F_{implementation}$.

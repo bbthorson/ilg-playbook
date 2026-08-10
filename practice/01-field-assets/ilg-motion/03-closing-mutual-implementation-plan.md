@@ -111,5 +111,5 @@ Signature Block:
 - **Theory:** [ILG Constitution, Axiom III (Governance)](../../../theory/01-foundation/00-ilg-constitution.md) — The MIP operationalizes the deal-level case of recursive cooperation; bilateral skin in the game between buyer and seller.
 - **Academic backing:** [game-theory-and-nrr.md](../../../theory/02-research/game-theory-and-nrr.md) — Shadow of the Future; why mutual skin in the game shifts the Nash equilibrium.
 - **CFIR mapping:** [02-cfir-field-mapping.md](../../../theory/01-foundation/02-cfir-field-mapping.md) — Implementation Process constructs (Planning, Executing, Reflecting & Evaluating).
-- **Comp alignment:** [04-internal-ops/03-incentives-vested-commission.md](../../02-internal-ops/03-incentives-vested-commission.md) — How rep comp must follow MIP outcomes, not signature.
-- **Manager audit:** [04-internal-ops/02-governance-review-checklist.md](../../02-internal-ops/02-governance-review-checklist.md) (Phase 3).
+- **Comp alignment:** [02-internal-ops/03-incentives-vested-commission.md](../../02-internal-ops/03-incentives-vested-commission.md) — How rep comp must follow MIP outcomes, not signature.
+- **Manager audit:** [02-internal-ops/02-governance-review-checklist.md](../../02-internal-ops/02-governance-review-checklist.md) (Phase 3).

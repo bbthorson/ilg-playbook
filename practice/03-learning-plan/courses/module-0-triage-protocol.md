@@ -76,7 +76,7 @@ Score each deal on four dimensions (1-5 scale):
 
 ## Why This Matters
 
-**From the ILG Constitution (Axiom I — Law of Economic Boundaries):**
+**From the ILG Constitution (Axiom I — Law of Transaction Cost Composition):**
 
 > "Sales is the management of transaction costs. Never apply a Bridge motion to a Toaster, and never sell a Bridge without a Blueprint."
 
@@ -96,7 +96,7 @@ Misclassifying a Bridge as a Toaster leads to:
 
 ## Knowledge Base References
 
-- [ILG Constitution — Axiom I (Law of Economic Boundaries) and the Boundary Condition derivation](../../../theory/01-foundation/00-ilg-constitution.md)
+- [ILG Constitution — Axiom I (Law of Transaction Cost Composition) and the Boundary Condition derivation](../../../theory/01-foundation/00-ilg-constitution.md)
 - [Deal Triage Calculator](../../01-field-assets/process-calculator.md) (Practical scoring tool)
 - [Transaction Cost Economics](../../../theory/02-research/transaction-cost-economics.md) (Academic foundation)
 

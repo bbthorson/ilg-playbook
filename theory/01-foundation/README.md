@@ -8,11 +8,12 @@ Parent: [theory/](../) · Sibling: [02-research/](../02-research/)
 
 1. **[01-sales-motion-comparison.md](./01-sales-motion-comparison.md)** — *(start here if you're new)* Quick decision framework: when ILG, when PLG, when SLG. Gives you the lay of the land before you dive into theory.
 2. **[00-ilg-constitution.md](./00-ilg-constitution.md)** — The full economic and behavioral framework, structured as a deductive system. Four parts:
-   - **Part I:** The Three Axioms — Law of Economic Boundaries, Law of Friction, Law of Governance
+   - **Part I:** The Three Axioms — Law of Transaction Cost Composition, Law of Uncertainty Inflation, Law of Governance
    - **Part II:** Derived Concepts — primary derivations from each axiom (Boundary Condition, Friction Allocation Principles, Recursive Cooperation, Reputation Depreciation), bridge concepts (Decay Clock, Fundamental Equation, Surplus), and clarifying concepts
    - **Part III:** Synthesis — the full integrated Surplus equation, three-panel diagram, and failure-modes summary
    - **Part IV:** Organizational Corollary — variable-to-department mapping principle (procedures live in [`practice/02-internal-ops/`](../../practice/02-internal-ops/))
 3. **[02-cfir-field-mapping.md](./02-cfir-field-mapping.md)** — How the academic [CFIR](../02-research/cfir.md) framework maps to the ILG artifacts. Read this if you're designing or modifying field assets.
+4. **[04-glossary-and-notation.md](./04-glossary-and-notation.md)** — *(reference, read as needed)* Every symbol and term in one place, with a pointer to where each is canonically defined. The notation index is itself canonical, since symbols had no home before it. Includes a disambiguation section for the five symbol pairs that look alike and mean different things.
 
 ## What goes here vs. elsewhere
 

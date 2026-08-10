@@ -4,7 +4,7 @@
 **Audience:** Sales reps, sales leadership, marketing, anyone designing or evaluating a signal mechanism.
 **Goal:** Check whether a signal mechanism — a sales artifact, an outreach channel, a marketing asset, a third-party validator — actually reduces buyer-side uncertainty, or whether it is cheap talk dressed up as effort.
 
-**Canonical Reference:** [ILG Constitution, Axiom II — Law of Friction](../../theory/01-foundation/00-ilg-constitution.md). The four principles are primary derivations of Axiom II.
+**Canonical Reference:** [ILG Constitution, Axiom II — Law of Uncertainty Inflation](../../theory/01-foundation/00-ilg-constitution.md). The four principles are primary derivations of Axiom II.
 
 | | |
 |---|---|
@@ -154,7 +154,7 @@ If all four hold, $\Delta_A$ shrinks. If any one fails, it doesn't — regardles
 
 ## Related
 
-- **Theory:** [ILG Constitution — Axiom II (Law of Friction) and the Friction Allocation Principles](../../theory/01-foundation/00-ilg-constitution.md).
+- **Theory:** [ILG Constitution — Axiom II (Law of Uncertainty Inflation) and the Friction Allocation Principles](../../theory/01-foundation/00-ilg-constitution.md).
 - **Channel evaluation:** [Constitution clarifying concept — Jevons Vulnerability](../../theory/01-foundation/00-ilg-constitution.md) describes when production cost is the binding constraint, making the channel vulnerable to Principle 1 failure.
 - **Adjudicator design:** [Constitution Axiom III — Reputation Depreciation](../../theory/01-foundation/00-ilg-constitution.md) describes how to design demurrage into adjudicator structures.
 - **Deal-level scoring:** [Process Calculator](./process-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.

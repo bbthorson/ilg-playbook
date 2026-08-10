@@ -1,0 +1,23 @@
+extends: substitution
+message: "'%s' is retired. Use '%s'."
+level: error
+ignorecase: false
+# Retired axiom names (Constitution v11 and v12). The canonical names live in
+# theory/01-foundation/00-ilg-constitution.md Part I. Add a row here whenever an
+# axiom is renamed, in the same commit as the Constitution version bump.
+#
+# Retired directory numbering. These paths never resolve; they appear in link
+# text while the href alongside them is correct, so the link checker cannot see
+# them. Add a row here whenever a directory is renumbered.
+swap:
+  Law of Economic Boundaries: Law of Transaction Cost Composition
+  Law of Friction: Law of Uncertainty Inflation
+  Law of Asymmetry Convergence: Law of Uncertainty Inflation
+  Law of Bilateral Governance: Law of Governance
+  n_viable: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
+  n_max: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
+  03-field-assets: 01-field-assets
+  04-internal-ops: 02-internal-ops
+  05-learning-plan: 03-learning-plan
+  06-tools: 02-tools
+  02-cases: 01-cases

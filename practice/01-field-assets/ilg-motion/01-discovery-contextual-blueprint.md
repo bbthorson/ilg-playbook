@@ -132,4 +132,4 @@ We use this Blueprint to map your specific environment—your politics, your dat
 - **CFIR mapping:** [02-cfir-field-mapping.md](../../../theory/01-foundation/02-cfir-field-mapping.md) — Inner Setting / Individuals constructs mapped to Blueprint sections.
 - **Prerequisite:** Deal must score 10+ on [process-calculator.md](../process-calculator.md).
 - **Next step:** [02-validation-red-team-protocol.md](./02-validation-red-team-protocol.md) — Stress-tests the implementation plan surfaced here.
-- **Manager audit:** [04-internal-ops/02-governance-review-checklist.md](../../02-internal-ops/02-governance-review-checklist.md) (Phase 1).
+- **Manager audit:** [02-internal-ops/02-governance-review-checklist.md](../../02-internal-ops/02-governance-review-checklist.md) (Phase 1).
