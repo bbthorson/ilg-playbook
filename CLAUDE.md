@@ -43,6 +43,25 @@ When writing or editing any document in this repo, apply the voice rules from `p
 - **No emojis.**
 - The Constitution is **axioms-first** (v11+): if a claim cannot be traced to one of the three axioms, it does not belong in `theory/01-foundation/00-ilg-constitution.md`. Operational content belongs in `practice/`.
 
+### Checking your work
+
+Most of the rules above are machine-checked. Run both before finishing an edit, and see `practice/02-internal-ops/linting/README.md` for what each covers:
+
+```bash
+python3 practice/02-internal-ops/linting/check_playbook.py && vale .
+```
+
+`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
+
+### Renaming anything canonical
+
+The dependency chain runs `theory/` → `practice/` → `publishing/`, and nothing enforces it automatically. When you rename an axiom, retire an equation variable, or renumber a directory:
+
+1. Grep the whole repo for the old term before assuming the rename is local. Stale names hide inside links whose hrefs are still correct, so the link checker will not catch them.
+2. Add the old term to `swap:` in `practice/02-internal-ops/linting/styles/ILG/RetiredTerms.yml` in the same commit. That is what stops the rename from drifting back.
+3. Bump the version in `theory/01-foundation/00-ilg-constitution.md` and the matching version footer in the root `README.md` together.
+4. Check the *descriptions*, not just the names. A paragraph can use every current term and still describe a superseded version of an axiom.
+
 ## How documents relate to the Fundamental Equation
 
 All framework claims trace to:

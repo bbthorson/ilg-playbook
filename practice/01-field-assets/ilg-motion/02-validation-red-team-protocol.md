@@ -218,4 +218,4 @@ Ready to draft Asset \#3: The Mutual Implementation Plan (MIP)?
 - **Academic backing:** [costly-signals.md](../../../theory/02-research/costly-signals.md), [re-aim-framework.md](../../../theory/02-research/re-aim-framework.md) (inverted RE-AIM is the workshop's structure).
 - **Prerequisite:** [01-discovery-contextual-blueprint.md](./01-discovery-contextual-blueprint.md) — You stress-test what discovery surfaced.
 - **Next step:** [03-closing-mutual-implementation-plan.md](./03-closing-mutual-implementation-plan.md) — Contractualize the mitigations.
-- **Manager audit:** [04-internal-ops/02-governance-review-checklist.md](../../02-internal-ops/02-governance-review-checklist.md) (Phase 2).
+- **Manager audit:** [02-internal-ops/02-governance-review-checklist.md](../../02-internal-ops/02-governance-review-checklist.md) (Phase 2).

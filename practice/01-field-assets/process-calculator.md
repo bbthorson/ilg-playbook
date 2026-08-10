@@ -4,7 +4,7 @@ Version: 4.0
 Audience: Internal Rep / Pre-Sales
 Goal: Classify a live deal opportunity into the appropriate sales motion — SLG, PLG, or ILG — by diagnosing market stage first, then asset specificity within mature markets.
 
-**Canonical Reference:** [ILG Constitution — Axiom I (Law of Economic Boundaries)](../../theory/01-foundation/00-ilg-constitution.md). The reasoning behind each step is in [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md).
+**Canonical Reference:** [ILG Constitution — Axiom I (Law of Transaction Cost Composition)](../../theory/01-foundation/00-ilg-constitution.md). The reasoning behind each step is in [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md).
 
 | | |
 |---|---|
@@ -135,7 +135,7 @@ One-shot transaction or long-term dependency?
 
 ## Related
 
-- **Theory:** [ILG Constitution — Axiom I (Law of Economic Boundaries) and the Boundary Condition primary derivation](../../theory/01-foundation/00-ilg-constitution.md).
+- **Theory:** [ILG Constitution — Axiom I (Law of Transaction Cost Composition) and the Boundary Condition primary derivation](../../theory/01-foundation/00-ilg-constitution.md).
 - **Decision framework explanation:** [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) — why each step exists, with examples of common mistakes.
 - **Forecasting:** Managers re-score and audit Bridges via [01-governance-deal-calibration.md](../02-internal-ops/01-governance-deal-calibration.md).
 - **Manager review:** Phase 1 of [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) validates the calculator score on every Bridge deal.

@@ -18,7 +18,7 @@
 - Re-anchoring the reference point via Cost of Inaction converts the "Safe No" into a loss frame.
 
 **Supports in ILG:**
-- **Axiom II — Law of Friction** — explains *why* $\Delta_A$ multiplies friction rather than reducing value. Asymmetry inflates the perceived downside via loss aversion. This is represented by the transaction cost equation $y = ax^2 + c$, where the risk aversion coefficient $a$ is anchored to the loss aversion coefficient ($\lambda \approx 2.25$).
+- **Axiom II — Law of Uncertainty Inflation** — explains *why* $\Delta_A$ multiplies friction rather than reducing value. Asymmetry inflates the perceived downside via loss aversion. This is represented by the transaction cost equation $y = ax^2 + c$, where the risk aversion coefficient $a$ is anchored to the loss aversion coefficient ($\lambda \approx 2.25$).
 - **Friction Allocation Principles** (primary derivation) — risk-mitigation tactics (fixed-price scope, paid pilots) are how friction is structured to address loss aversion.
 - **Decay Clock** (bridge concept) — value decay over time corresponds to the buyer's reference point shifting back toward status quo as urgency fades.
 - **Akerlof Exit Threshold** (clarifying concept) — loss aversion + status quo bias explain why buyers tolerate suboptimal incumbents rather than switching.

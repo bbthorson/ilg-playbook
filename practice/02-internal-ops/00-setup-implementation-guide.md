@@ -9,7 +9,7 @@ Goal: To calibrate the ILG framework to your specific product, market, and tech 
 | **Outputs** | Calibrated triage thresholds, CRM lane fields, comp plan terms, manager review rituals — all tuned to your business. |
 | **Cadence** | One-time setup; revisit annually. |
 | **Owner** | RevOps + VP Sales (jointly). |
-| **Prerequisite for** | Everything else in [04-internal-ops/](.) and the field assets in [03-field-assets/](../01-field-assets). |
+| **Prerequisite for** | Everything else in [02-internal-ops/](.) and the field assets in [01-field-assets/](../01-field-assets). |
 
 ## Phase 1: The Calibration Workshop
 

@@ -463,7 +463,7 @@ This corollary states the principle. Detailed procedures (CRM field configuratio
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms behind the variables named here, and the derivation reconciling the two cost representations.
 
 **Academic backing** (per axiom):
-- Axiom I (Transaction Cost Composition) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md)
+- Axiom I (Transaction Cost Composition) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md), [fear-of-failure.md](../02-research/fear-of-failure.md) (empirical scale of $F_{implementation}$ and the under-frictioned Bridge failure mode)
 - Axiom II (Uncertainty Inflation) → [costly-signals.md](../02-research/costly-signals.md), [prospect-theory.md](../02-research/prospect-theory.md), [fear-of-failure.md](../02-research/fear-of-failure.md), [cfir.md](../02-research/cfir.md), [buying-center-dynamics.md](../02-research/buying-center-dynamics.md)
 - Axiom III (Governance) → [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md), [re-aim-framework.md](../02-research/re-aim-framework.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md)
 - Staged Commitment (Axioms II + III) → [real-options.md](../02-research/real-options.md)

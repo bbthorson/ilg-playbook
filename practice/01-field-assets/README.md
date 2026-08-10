@@ -142,14 +142,14 @@ The ILG motion uses three sequential artifacts to drive the bilateral asymmetry 
 
 ### From the ILG Constitution
 
-**Axiom I (Law of Economic Boundaries):**
+**Axiom I (Law of Transaction Cost Composition):**
 > "Never apply a Bridge motion to a Toaster, and never sell a Bridge without a Blueprint."
 
 **The Strategy:**
 - **Toasters:** Optimize for speed (velocity)
 - **Bridges:** Optimize for certainty (safety)
 
-**The Economic Logic (Axiom II — Law of Friction):**
+**The Economic Logic (Axiom II — Law of Uncertainty Inflation):**
 
 $$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
 
