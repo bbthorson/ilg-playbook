@@ -68,7 +68,7 @@ WHAT DIDN'T WORK:
 
 WHAT TO TRY:
 - [Alternative approach]
-- "Apply Axiom I (Law of Economic Boundaries): Never apply a Bridge motion to a Toaster, and never sell a Bridge without a Blueprint."
+- "Apply Axiom I (Law of Transaction Cost Composition): Never apply a Bridge motion to a Toaster, and never sell a Bridge without a Blueprint."
 ```
 
 ---

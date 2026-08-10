@@ -48,19 +48,23 @@ Each group has its own README explaining what's inside and the reading order.
 
 ### The Fundamental Equation
 
-$$S = \left(V_{solution} \times e^{-\delta t} - V_{next\_best}\right) - F_{base} \times (1 + \Delta_A) = OC_{\text{switching}} - y$$
+$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A) = OC_{\text{switching}} - y$$
 
 - **S** = Deal Surplus (must be > 0 for a deal to close)
 - **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance + Buyer Uncertainty
 - **y** = Total Perceived Transaction Cost = $ax^2 + c$ (where $a = 2.25$ is risk aversion, $x \approx \Delta_A$ is uncertainty, and $c$ is direct cost)
 - **δ** = Decay Rate of urgency after the triggering event
-- Applies when **k > k_threshold** (high asset specificity) AND **n_viable ≤ n_max** (thin market)
+- Applies when **k > k_threshold** (the deal is a Bridge, not a Toaster) AND **F_deployed ~ k** (the friction deployed matches the specificity)
 
 ### The Three Axioms
 
-1. **Law of Economic Boundaries** — Asset specificity determines whether ILG applies (Bridge vs. Toaster).
-2. **Law of Asymmetry Convergence** — Drive Δ_A → 0 by closing the wider gap first.
-3. **Law of Bilateral Governance** — Long-term alignment requires mutual skin in the game.
+Names, scope, and taglines below are canonical. If this table and the [Constitution](theory/01-foundation/00-ilg-constitution.md) ever disagree, the Constitution wins.
+
+| Axiom | Governs | Tagline | What it says |
+|---|---|---|---|
+| **I. Law of Transaction Cost Composition** | Whether a deal can happen | *"Costs determine the deal"* | Search, consensus, and implementation costs arise independently. Their combined level determines which motion is viable, and Bridge/Toaster classification follows from measuring them. |
+| **II. Law of Uncertainty Inflation** | What the deal costs when it happens | *"Fear > Value"* | Base friction is amplified by the bilateral asymmetry gap between buyer and seller. Reducing risk moves more surplus than increasing ROI. |
+| **III. Law of Governance** | Whether the deal persists | *"Structure determines behavior"* | Every party whose decisions affect outcomes needs skin in the game tied to those outcomes, including the channels and adjudicators between them. |
 
 ### Bridge vs. Toaster
 
@@ -81,5 +85,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 12.0
-**Last updated:** 2026-05-28
+**Version:** 13.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
+**Last updated:** 2026-08-10

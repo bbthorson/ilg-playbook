@@ -18,7 +18,7 @@
 - "Resistance as a Resource" — vocal detractors expose real implementation constraints; objections are co-design opportunities.
 
 **Supports in ILG:**
-- **Axiom II — Law of Friction** — CFIR's Inner Setting and Characteristics of Individuals are the structural sources of $F_{consensus}$ and $F_{implementation}$.
+- **Axiom II — Law of Uncertainty Inflation** — CFIR's Inner Setting and Characteristics of Individuals are the structural sources of $F_{consensus}$ and $F_{implementation}$.
 - **Friction Allocation Principles** (primary derivation) — the Blueprint and Red Team operationalize CFIR diagnostic in the seller's hands.
 - **Three Transaction Costs** (clarifying concept) — CFIR's process domain maps directly to consensus and implementation costs.
 - See [`theory/01-foundation/02-cfir-field-mapping.md`](../01-foundation/02-cfir-field-mapping.md) for the construct-by-construct mapping into ILG artifacts.

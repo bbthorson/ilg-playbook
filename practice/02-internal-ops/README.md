@@ -33,6 +33,10 @@ How leadership checks whether the motion is actually being run, after deals clos
 
 - **[05-diagnostics-friction-efficiency-index.md](./05-diagnostics-friction-efficiency-index.md)** — Quarterly retrospective across a cohort of closed Bridge deals. Measures whether implementation effort landed before or after signature (FAR), how fast the buyer mobilized (BCV), what share of discovered risk was closed pre-signature (RMS), and scope stability (SVI), combined into a single index. All parameters are uncalibrated; read the provenance table before quoting any figure.
 
+### Tooling
+
+- **[linting/](./linting/)** — Automated enforcement of the repo's content conventions. A dependency-free link and LaTeX validator, plus a Vale style covering banned vocabulary, emojis, punctuation density, and retired terms. Run both before opening a PR. Read its [README](./linting/README.md) first.
+
 ## Naming convention
 
 Files use `NN-category-slug.md` where `NN` controls reading order and `category` is either `setup`, `governance`, `incentives`, or `diagnostics`.

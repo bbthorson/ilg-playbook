@@ -114,9 +114,9 @@ Three levels of understanding:
 
 - [00-foundation/00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) — Core theory (what the modules teach).
 - [01-research/](../../theory/02-research) — Academic evidence (the papers behind each axiom).
-- [03-field-assets/](../01-field-assets) — Practical tools reps deploy after training.
-- [04-internal-ops/](../02-internal-ops) — Governance and comp design the curriculum prepares reps to operate within.
-- [06-tools/ai-persona.md](../../publishing/02-tools/ai-persona.md) — Note: a *different* LLM persona, used for deal analysis rather than teaching.
+- [01-field-assets/](../01-field-assets) — Practical tools reps deploy after training.
+- [02-internal-ops/](../02-internal-ops) — Governance and comp design the curriculum prepares reps to operate within.
+- [02-tools/ai-persona.md](../../publishing/02-tools/ai-persona.md) — Note: a *different* LLM persona, used for deal analysis rather than teaching.
 
 ---
 

@@ -15,7 +15,7 @@ This is *not* where reps run deals (see [`../../practice/01-field-assets/`](../.
 ### Voice & persona
 
 - **[voice-guide.md](./voice-guide.md)** — The "Conversational Intellectual" voice. Four linguistic rules + constraint checklist.
-- **[ai-persona.md](./ai-persona.md)** — Persona config for an LLM acting as a CSO-level deal analyst. Note: this is *not* the same as [`05-learning-plan/llm-tutor-instructions.md`](../../practice/03-learning-plan/llm-tutor-instructions.md), which configures an LLM as a *teacher*.
+- **[ai-persona.md](./ai-persona.md)** — Persona config for an LLM acting as a CSO-level deal analyst. Note: this is *not* the same as [`03-learning-plan/llm-tutor-instructions.md`](../../practice/03-learning-plan/llm-tutor-instructions.md), which configures an LLM as a *teacher*.
 
 ### Generators (multi-phase content workflows)
 
@@ -25,7 +25,7 @@ This is *not* where reps run deals (see [`../../practice/01-field-assets/`](../.
 ### Protocols (diagnostic frameworks)
 
 - **[context-request-protocol.md](./context-request-protocol.md)** — Pre-flight checklist before drafting (hot take? audience? evidence? tone?).
-- **[trenches-analysis-protocol.md](./trenches-analysis-protocol.md)** — Four-step deconstruction of an event through the TCE + Offensive Strategy lens. The format used in [`02-cases/`](../01-cases).
+- **[trenches-analysis-protocol.md](./trenches-analysis-protocol.md)** — Four-step deconstruction of an event through the TCE + Offensive Strategy lens. The format used in [`01-cases/`](../01-cases).
 
 ### Style references
 
@@ -48,4 +48,4 @@ context-request-protocol.md   (pre-flight)
 style-references/             (sanity-check against published examples)
 ```
 
-For trenches/case analyses specifically, the output drops into [`../02-cases/`](../01-cases).
+For trenches/case analyses specifically, the output drops into [`../01-cases/`](../01-cases).

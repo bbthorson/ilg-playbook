@@ -28,7 +28,7 @@ Agency friction also runs along two vectors at once, and ILG treats them differe
 - When all signals become production-cheap, the channel reaches a babbling equilibrium (Crawford-Sobel).
 
 **Supports in ILG:**
-- **Axiom II — Law of Friction** — direct theoretical basis. Friction is the signal, asymmetry is the noise.
+- **Axiom II — Law of Uncertainty Inflation** — direct theoretical basis. Friction is the signal, asymmetry is the noise.
 - **Friction Allocation Principles** (primary derivation) — all four principles derive from the Single Crossing Property.
 - **Single Crossing Property** (clarifying concept) — direct.
 - **Akerlof Exit Threshold** (clarifying concept) — direct.
@@ -51,7 +51,7 @@ Agency friction also runs along two vectors at once, and ILG treats them differe
 
 ## Extension: Trust Proxies vs. Produced Signals (drafted June 2026, PENDING REVIEW)
 
-**Origin.** Derived from the behavioral health care-enablement analysis ([care-enablement-blog-draft.md](file:///Users/bradthorson/Code/sales/ilg-knowledge-base/publishing/03-drafts/care-enablement/care-enablement-blog-draft.md)). Not yet canonical. Review before citing in field assets.
+**Origin.** Derived from the behavioral health care-enablement analysis ([care-enablement-blog-draft.md](../../publishing/03-drafts/care-enablement/care-enablement-blog-draft.md)). Not yet canonical. Review before citing in field assets.
 
 **The distinction.** Markets carry two kinds of trust instruments, and the difference determines what happens when friction is removed.
 
@@ -69,6 +69,6 @@ Removing a proxy without substituting a produced signal does not reduce friction
 4. **Risk transfer:** seller holds the financial downside of the buyer's outcome. Self-enforcing, unfakeable.
 
 **Supports in ILG (proposed):**
-- **Axiom II — Law of Friction**: extends the friction-as-signal claim with a quality ordering of signals. Friction removal is safe only when the deleted proxy is replaced at tier 3 or 4.
+- **Axiom II — Law of Uncertainty Inflation**: extends the friction-as-signal claim with a quality ordering of signals. Friction removal is safe only when the deleted proxy is replaced at tier 3 or 4.
 - **Friction Allocation Principles**: candidate fifth principle, or a refinement of existing ones. When allocating friction, prefer friction that forces tier-3/tier-4 signal production over friction that merely gates access.
 - **Δ_A in the Fundamental Equation**: tier-4 signals collapse Buyer Uncertainty ($I_{buyer}$) faster than any other mechanism, because the buyer no longer needs to resolve uncertainty before contracting. The seller has priced it.

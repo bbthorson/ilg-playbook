@@ -97,7 +97,7 @@ Unaddressed resistance leads to:
 
 ## Knowledge Base References
 
-- [ILG Constitution — Axiom II (Law of Friction) and the Friction Allocation Principles](../../../theory/01-foundation/00-ilg-constitution.md)
+- [ILG Constitution — Axiom II (Law of Uncertainty Inflation) and the Friction Allocation Principles](../../../theory/01-foundation/00-ilg-constitution.md)
 - [CFIR Research](../../../theory/02-research/cfir.md) (Implementation science framework)
 - [CFIR Field Mapping](../../../theory/01-foundation/02-cfir-field-mapping.md) (How CFIR maps to ILG tools)
 - [Red Team Protocol](../../01-field-assets/ilg-motion/02-validation-red-team-protocol.md) (Practical tool)
