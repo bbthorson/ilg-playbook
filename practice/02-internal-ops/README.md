@@ -31,7 +31,7 @@ How to align rep behavior with long-term customer outcomes, not just signature.
 
 How leadership checks whether the motion is actually being run, after deals close.
 
-- **[05-diagnostics-friction-efficiency-index.md](./05-diagnostics-friction-efficiency-index.md)** — Quarterly retrospective across a cohort of closed Bridge deals. Measures whether implementation effort landed before or after signature (FAR), how fast the buyer mobilized (BCV), what share of discovered risk was closed pre-signature (RMS), and scope stability (SVI), combined into a single index. All parameters are uncalibrated; read the provenance table before quoting any figure.
+- **[05-diagnostics-friction-efficiency-index.md](./05-diagnostics-friction-efficiency-index.md)** — Quarterly retrospective across a cohort of closed Bridge deals. Measures whether implementation effort landed before or after signature (FAR), how fast the buyer mobilized (BCV), what share of discovered risk was closed pre-signature (RMS, the Risk Mitigation Score), and scope stability (SVI), combined into a single index. All parameters are uncalibrated; read the provenance table before quoting any figure.
 
 ## Naming convention
 

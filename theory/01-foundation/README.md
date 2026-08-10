@@ -13,6 +13,7 @@ Parent: [theory/](../) · Sibling: [02-research/](../02-research/)
    - **Part III:** Synthesis — the full integrated Surplus equation, three-panel diagram, and failure-modes summary
    - **Part IV:** Organizational Corollary — variable-to-department mapping principle (procedures live in [`practice/02-internal-ops/`](../../practice/02-internal-ops/))
 3. **[02-cfir-field-mapping.md](./02-cfir-field-mapping.md)** — How the academic [CFIR](../02-research/cfir.md) framework maps to the ILG artifacts. Read this if you're designing or modifying field assets.
+4. **[04-glossary-and-notation.md](./04-glossary-and-notation.md)** — *(reference, read as needed)* Every symbol and term in one place, with a pointer to where each is canonically defined. The notation index is itself canonical, since symbols had no home before it. Includes a disambiguation section for the five symbol pairs that look alike and mean different things.
 
 ## What goes here vs. elsewhere
 
