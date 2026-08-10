@@ -8,7 +8,7 @@
 
 Tools reps fill in on a live deal. Includes:
 - The [process calculator](01-field-assets/process-calculator.md) (Bridge vs. Toaster triage)
-- The three ILG motion artifacts (Blueprint → Red Team → MIP) for Bridges
+- The four ILG motion artifacts (Blueprint → Red Team → MIP → [Sustaining Adoption Review](01-field-assets/ilg-motion/04-sustaining-adoption-review.md)) for Bridges
 - The PLG velocity protocol + order form for Toasters
 
 ### [02-internal-ops/](02-internal-ops/)

@@ -85,6 +85,22 @@ The ILG motion uses three sequential artifacts to drive the bilateral asymmetry 
 
 ---
 
+### [04. Sustaining Adoption Review](./ilg-motion/04-sustaining-adoption-review.md)
+
+**Purpose:** Keeps $\Delta_A$ closed after signature and re-earns the right to renew (Axiom III)
+
+**Function:** The post-signature artifact, in four parts:
+- **Handoff packet** — operationalizes the Constitution's Handoff Rule. Names every Blueprint, Red Team, and MIP field that must transfer to CS, with a receipt and a three-question transfer test
+- **RE-AIM review** — the instrument the MIP promises and never supplies. Five dimensions, plus how to read which one failed first
+- **QBR protocol** — defines the review that both the MIP and the comp plan already require. Attendance, cadence, agenda, and what it is empowered to decide
+- **Renewal and reputation refresh** — the evidence pack and five tripwires signalling credibility is depreciating faster than delivery refreshes it
+
+**Mechanism:** Reputation depreciation. Trust that closed the deal has been spending down since T-0, so renewal prices delivered evidence rather than pre-signature promises
+
+**Outcome:** Renewal on evidence, expansion from a green account, or an honest lapse that keeps the reference
+
+---
+
 ## The ILG Workflow
 
 ```
@@ -97,8 +113,11 @@ The ILG motion uses three sequential artifacts to drive the bilateral asymmetry 
    ↓ [Identify skeptics vs. adversaries]
    ↓
 4. Mutual Implementation Plan (Governance + Close)
+   ↓ [Handoff Packet: Blueprint context transfers to CS]
    ↓
-5. Successful Implementation → Renewal
+5. Sustaining Adoption Review (RE-AIM + QBR cadence)
+   ↓
+6. Renewal on delivered evidence → Expansion
 ```
 
 ---
