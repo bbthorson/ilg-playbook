@@ -9,7 +9,7 @@ Goal: To contractualize the outcome and lock in the "Infinite Game."
 |---|---|
 | **Inputs** | [Blueprint](./01-discovery-contextual-blueprint.md) + [Red Team](./02-validation-red-team-protocol.md) outputs. Identified risks, mitigations, and bilateral resource commitments. |
 | **Outputs** | Signed MIP with North Star metric, Governance Structure, Go/No-Go Protocol. Resource plan attached to contract. |
-| **Next step** | Implementation kickoff; vested commission terms ([incentives doc](../../02-internal-ops/03-incentives-vested-commission.md)) activate. |
+| **Next step** | [Sustaining Adoption Review](./04-sustaining-adoption-review.md) (handoff packet, then RE-AIM reviews); vested commission terms ([incentives doc](../../02-internal-ops/03-incentives-vested-commission.md)) activate. |
 | **Owner** | AE + Customer PM + Procurement + Legal. |
 | **Reduces** | Defection risk via mutual skin in the game (Axiom III — Governance). |
 
