@@ -11,6 +11,7 @@ The canonical ILG framework. The Constitution, the motion-comparison decision to
 - [00-ilg-constitution.md](01-foundation/00-ilg-constitution.md) — Fundamental Equation, Three Axioms, Triage Protocol, the Artifacts.
 - [01-sales-motion-comparison.md](01-foundation/01-sales-motion-comparison.md) — ILG vs. PLG vs. SLG decision framework.
 - [02-cfir-field-mapping.md](01-foundation/02-cfir-field-mapping.md) — How implementation-science constructs map to ILG artifacts.
+- [04-glossary-and-notation.md](01-foundation/04-glossary-and-notation.md) — Look up any symbol or term, and find where it is canonically defined.
 
 ### [02-research/](02-research/)
 
