@@ -118,7 +118,7 @@ One-shot transaction or long-term dependency?
 
 | Motion | Next artifact / action |
 |---|---|
-| **SLG** | Educational selling motion. *Note: no canonical SLG artifact in this repo yet — see open work in task #19. In practice today: Challenger-style commercial teaching, vision-casting sessions, co-developed reference architectures, willingness to be wrong publicly about where the category is heading.* |
+| **SLG** | [01-education-led-motion.md](./slg-motion/01-education-led-motion.md). Deliberately thin, since education-led selling is well documented elsewhere. Covers what ILG machinery to leave switched off, the tripwires for misreading a mature market as nascent, and the triggers that end the motion. |
 | **PLG** | [01-velocity-standard-order-protocol.md](./plg-motion/01-velocity-standard-order-protocol.md), then [prospect-evaluation.md](./plg-motion/prospect-evaluation.md), then [order-form.md](./plg-motion/order-form.md). |
 | **ILG** | [01-discovery-contextual-blueprint.md](./ilg-motion/01-discovery-contextual-blueprint.md) → [02-validation-red-team-protocol.md](./ilg-motion/02-validation-red-team-protocol.md) → [03-closing-mutual-implementation-plan.md](./ilg-motion/03-closing-mutual-implementation-plan.md). |
 

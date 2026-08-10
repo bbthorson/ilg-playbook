@@ -1,6 +1,6 @@
 # Field Assets
 
-**Customer-facing tools and playbooks for executing ILG and PLG sales motions.**
+**Customer-facing tools and playbooks for executing the ILG, PLG, and SLG sales motions.**
 
 ---
 
@@ -100,6 +100,24 @@ The ILG motion uses three sequential artifacts to drive the bilateral asymmetry 
    ↓
 5. Successful Implementation → Renewal
 ```
+
+---
+
+## SLG Motion (Sales-Led Growth)
+
+**When to Use:** Nascent markets (0-1 Yes on Step 1 of the calculator). The category is not yet legible and the buyer does not know the problem can be solved.
+
+### [01. Education-Led Motion](./slg-motion/01-education-led-motion.md)
+
+**Purpose:** Reduces category search cost, the cognitive half of $F_{search}$
+
+**Function:** Deliberately thin, because education-led selling is the best documented motion in B2B and this repo does not restate it. Covers only the ILG intersection:
+
+- Which ILG artifacts to leave switched off, and what deploying each one costs in a nascent market
+- Tripwires for the most common routing error, reading a mature market as nascent
+- The pivot triggers that end the motion and hand the deal to the Blueprint
+
+**Rule:** In SLG you are selling the problem. Every ILG artifact assumes the problem is already sold.
 
 ---
 
