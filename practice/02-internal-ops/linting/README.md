@@ -74,6 +74,16 @@ swap:
 
 Keys are regexes and the match is case-sensitive. The `message` template fills `%s` with the retired term and then the replacement, so the fix is in the error output and nobody has to go looking for it.
 
+### Building the list from history, not from the working tree
+
+A rule built by scanning the current repo only catches drift that happens to still be visible. Names purged before the rule existed leave no trace in the tree, and they come back the moment someone reopens an old branch. Mine the history instead:
+
+```bash
+git log -p --all --format="" -- '*.md' | grep -oE 'Law of [A-Z][a-zA-Z]*( [A-Z][a-zA-Z]*)*' | sort | uniq -c | sort -rn
+```
+
+Adapt the pattern to whatever is being renamed. Read every hit before adding it, because the pattern will also catch legitimate prose. "Law of Conservation" appears in a published style reference as Tesler's Law and is not a retired axiom, so it stays out of the rule.
+
 ### Naming a retired term on purpose
 
 Version-history notes sometimes need to name the old term. Fence the passage:
