@@ -156,7 +156,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
 | **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Bridge Concepts](./00-ilg-constitution.md) |
 | **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
-| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [Constitution, Part IV](./00-ilg-constitution.md) |
+| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [Constitution, Part IV](./00-ilg-constitution.md), operationalized in [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) |
 
 ### Artifact vocabulary
 
@@ -165,6 +165,8 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
 | **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [02-validation-red-team-protocol.md](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md) |
 | **Mutual Implementation Plan (MIP)** | The governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) |
+| **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) |
+| **Education-Led Motion** | The SLG field asset. Written mainly as a counter-example showing which ILG machinery to leave switched off. | [01-education-led-motion.md](../../practice/01-field-assets/slg-motion/01-education-led-motion.md) |
 | **Reciprocity Gate** | The artifacts a buyer must supply before discovery advances. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
 | **Sacred Cow** | A politically protected workflow, tool, or team. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
 | **The Casualty** | The stakeholder who loses power, budget, or status if the initiative succeeds. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
