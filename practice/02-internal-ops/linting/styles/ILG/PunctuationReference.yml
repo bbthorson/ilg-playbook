@@ -1,0 +1,19 @@
+extends: occurrence
+message: "Limit em dashes and semicolons to 30 per reference document."
+level: warning
+limit: 30
+token: '[;—]'
+# The companion to Punctuation.yml, for reference material rather than prose.
+#
+# Why two rules. Vale's occurrence rule counts absolute instances and cannot be
+# parameterized per directory, so a 480-line Constitution was being held to the
+# same budget as a 20-line LinkedIn post. The limit of 3 was calibrated for
+# short-form posts, where it still works: those files sit at a median of 3.
+#
+# Scope is set in .vale.ini. This rule applies to theory/ and practice/, and
+# Punctuation.yml is disabled there. Everything else keeps the limit of 3.
+#
+# Why 30 rather than a number that passes everything. At 30 the whole of
+# theory/ passes (the Constitution is the ceiling at 29) while the genuine
+# outlier in practice/ still reports. A limit chosen so that nothing ever
+# fires is not a relaxed rule, it is a deleted one.

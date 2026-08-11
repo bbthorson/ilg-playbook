@@ -41,7 +41,8 @@ Configuration lives in [`.vale.ini`](../../../.vale.ini) at the repo root, which
 <!-- vale ILG.AntiHype = NO -->
 | [`AntiHype.yml`](./styles/ILG/AntiHype.yml) | error | The banned-word list (*synergy*, *revolutionize*, *disruptive*, *cutting-edge*, *seamlessly*, *unlock potential*). Case-insensitive. |
 | [`NoEmoji.yml`](./styles/ILG/NoEmoji.yml) | error | No emoji anywhere, across nine Unicode ranges including the variation selector. |
-| [`Punctuation.yml`](./styles/ILG/Punctuation.yml) | warning | At most 3 em dashes plus semicolons combined, per document. |
+| [`Punctuation.yml`](./styles/ILG/Punctuation.yml) | warning | At most 3 em dashes plus semicolons combined. Applies to prose written for publication. |
+| [`PunctuationReference.yml`](./styles/ILG/PunctuationReference.yml) | warning | At most 30, for reference and operational material. The repo-wide default. |
 | [`RetiredTerms.yml`](./styles/ILG/RetiredTerms.yml) | error | Vocabulary the framework has replaced. Reports the current term to use. |
 <!-- vale ILG.AntiHype = YES -->
 
@@ -107,9 +108,20 @@ As of 2026-08-10, `check_playbook.py` passes on all 81 files. The Vale rules do 
 | `RetiredTerms` | Clean. Zero hits repo-wide. |
 | `NoEmoji` | Clean. |
 | `AntiHype` | Fires in [`CLAUDE.md`](../../../CLAUDE.md), [`voice-guide.md`](../../../publishing/02-tools/voice-guide.md), and two published style references. The first two are self-referential, since documenting a banned-word list requires printing it. Fence those, and treat the style-reference hits as real. |
-| `Punctuation` | Fires broadly, in roughly 70 files. The Constitution alone carries 28 em dashes and semicolons against a limit of 3. Fixing this is a content pass, not a config change. |
+| `Punctuation` / `PunctuationReference` | 11 files, down from 59 when a single flat limit applied everywhere. |
 
-Do not raise the `Punctuation` limit to make the warnings stop. The limit encodes a house style decision. The backlog is the signal that the style predates the check.
+### Why there are two punctuation rules
+
+Vale's `occurrence` rule counts absolute instances and cannot be parameterized per directory, so a 480-line Constitution was held to the same budget as a 20-line LinkedIn post. Measuring the repo showed the limit of 3 was calibrated for short-form posts, where it still works: those files sit at a median of 3. It had simply been applied to everything.
+
+Reference and operational material now carries a budget of 30 and is the repo-wide default. Prose written for publication opts back into 3, in `.vale.ini`:
+
+- `publishing/02-tools/style-references/`
+- `publishing/03-drafts/`
+
+The limit of 30 was chosen so that all of `theory/` passes (the Constitution is the ceiling at 29) while genuine outliers still report. A limit set so nothing ever fires is not a relaxed rule, it is a deleted one.
+
+**Do not raise either limit further to silence a warning.** Both encode house style. If a document legitimately needs more, that is a conversation about the document.
 
 ## Known limitations
 
