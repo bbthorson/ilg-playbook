@@ -18,11 +18,11 @@
 
 The three axioms govern three aspects of any B2B transaction.
 
-| Axiom | Governs | Scale | Tagline |
-|---|---|---|---|
-| **I. Law of Transaction Cost Composition** | Whether a deal can happen | Market | *"Costs determine the deal"* |
-| **II. Law of Uncertainty Inflation** | What the deal costs when it happens | Deal | *"Fear > Value"* |
-| **III. Law of Governance** | Whether the deal persists | Relationship over time | *"Structure determines behavior"* |
+| Axiom | Governs | Scale | Tagline | Plain English |
+|---|---|---|---|---|
+| **I. Law of Transaction Cost Composition** | Whether a deal can happen | Market | *"Costs determine the deal"* | Buying costs more than money. |
+| **II. Law of Uncertainty Inflation** | What the deal costs when it happens | Deal | *"Fear > Value"* | Uncertainty makes change expensive. |
+| **III. Law of Governance** | Whether the deal persists | Relationship over time | *"Structure determines behavior"* | Sales is governance design. |
 
 Together they describe the *existence, economics, and dynamics* of any transaction in a high-friction market. Each axiom generates its own mathematical content. The equations integrate into the Surplus equation in Part III.
 
@@ -47,6 +47,10 @@ The three axioms are progressively visualized through a potential-well diagram t
 > **Transaction costs in B2B deals decompose into three independently-arising components (search, consensus, and implementation), each driven by distinct structural conditions. Their combined level is the primary indicator of whether a deal is viable under a standard velocity motion. When combined costs are low, PLG or SLG is appropriate. When they are high, structured intervention is required. Asset specificity is the principal driver of high combined costs, and Bridge/Toaster classification follows from measuring them.**
 
 > *Tagline: **"Costs determine the deal."** The combined level of search, consensus, and implementation costs determines which motion is viable, and what the sales process must do.*
+>
+> *Plain English: Buying costs more than money. Finding it, agreeing on it, and installing it are three separate bills, and their total decides which motion can work. Sometimes the total runs higher than building it yourself, and neither side can tell until they are in it.*
+>
+> *Origin: Coase (1937). Using the price mechanism is itself costly.*
 
 **Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs. Williamson operationalized this through *asset specificity*, the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the ILG artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Toaster does not need a Blueprint.
 
@@ -76,6 +80,10 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 > **Effective transaction cost equals base friction (search + consensus + implementation) amplified by the bilateral information asymmetry between buyer and seller. The amplifier shrinks when the claimant invests in demonstrations that low-quality competitors cannot affordably replicate. The Single Crossing Property is the test for what counts.**
 
 > *Tagline: **"Fear > Value."** Reducing risk is ~2× more powerful than increasing ROI. The Safe No beats the Logical Yes.*
+>
+> *Plain English: Uncertainty makes change expensive. What a buyer cannot verify, they price as risk, and that multiplies every other cost rather than reducing the value.*
+>
+> *Origin: Spence (1973). A signal separates quality only when it costs something to send.*
 
 **Mechanism (Coase + Spence + Kahneman/Tversky).** Coase identified three transaction costs (search, bargaining, and enforcement) that determine when markets fail. We operationalize these for B2B SaaS as $F_{search}$ (finding the category and a viable vendor), $F_{consensus}$ (internal alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Spence's signaling theory provides the mechanism for reducing them: a signal separates quality from noise only when its cost is proportionally lower for the high-quality actor (the Single Crossing Property). Loss aversion ($\lambda \approx 2.25$ as conceptual anchor, likely higher in organizational contexts) explains why asymmetry multiplies friction rather than reducing value. Uncertainty inflates the perceived downside.
 
@@ -135,6 +143,10 @@ The four **Friction Allocation Principles**, the operational content of this axi
 > **Long-term alignment requires that every party whose decisions affect outcomes has skin in the game tied to those outcomes. This applies not only to buyer and seller but to the channels, platforms, and governance structures that adjudicate signal quality between them. When an adjudicator has no stake in the outcome it adjudicates, the structure drifts from adjudication toward extraction.**
 
 > *Tagline: **"Structure determines behavior."** Incentive design (comp, process, governance) predicts outcomes more reliably than talent or intent.*
+>
+> *Plain English: Sales is governance design. Anyone who judges an outcome needs something at stake in it, including the channels and platforms standing between the two parties.*
+>
+> *Origin: Axelrod (1984). Cooperation becomes rational when the future matters enough.*
 
 **Mechanism (Williamson hold-up + Axelrod repeated games + recursive extension).** Once asset-specific investments are made, the transaction is no longer a market exchange but a bilateral monopoly. Both parties can hold each other up. Axelrod's iterated prisoner's dilemma shows that cooperation becomes the dominant strategy when each party's discount factor (the weight placed on future payoffs) exceeds the threshold determined by the payoff structure. Vested commission, mutual commitments, and bilateral hostages all raise the discount factor.
 
