@@ -6,6 +6,8 @@
 
 **Canonical Reference:** [CFIR Research Paper](../02-research/cfir.md)
 
+**Scope:** CFIR is the spine of this document. Two companion frameworks appear where the artifacts actually use them: RE-AIM supplies the Red Team's five failure dimensions, and Frame Alignment Processes supply the cross-asset consensus tactics. Both are documented in [cfir.md](../02-research/cfir.md) and [re-aim-framework.md](../02-research/re-aim-framework.md). Where a section maps something other than a CFIR construct, it names the source.
+
 ---
 
 ## How to Read This Document
@@ -31,7 +33,9 @@ The Blueprint's primary job is to diagnose the buyer's Inner Setting. Here's how
 
 ## Inner Setting + Characteristics of Individuals → Red Team Protocol
 
-The Red Team's job is to stress-test the Blueprint findings using Prospective Hindsight (Inverted RE-AIM). Each failure round maps to a CFIR risk:
+The Red Team's job is to stress-test the Blueprint findings using Prospective Hindsight (Inverted RE-AIM), which means imagining the project has already failed and working backward to the cause. The workshop itself operationalizes one Process construct directly: putting the buyer's skeptic in the room and asking them to attack the plan is CFIR's Engaging construct. The rounds inside the workshop then diagnose Inner Setting and Individuals risks.
+
+Each failure round maps to a CFIR risk:
 
 | Red Team Round | RE-AIM Dimension | CFIR Construct at Risk | What Failure Looks Like |
 |---|---|---|---|
@@ -56,22 +60,23 @@ The Red Team also classifies resistance using CFIR constructs. This is the mappi
 
 ---
 
-## Axiom III (Governance) → Mutual Implementation Plan (MIP)
+## Implementation Process → Mutual Implementation Plan (MIP)
 
-The MIP operationalizes the deal-level case of Axiom III's recursive cooperation principle — bilateral skin in the game between buyer and seller. Its CFIR connections are narrower but critical:
+The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evaluating) becomes contractual. It also carries the Readiness constructs past signature, because the Inner Setting conditions the Blueprint diagnosed do not hold themselves in place. At the framework level this is the deal-level case of Axiom III's recursive cooperation principle, meaning bilateral skin in the game between buyer and seller.
 
 | MIP Section | CFIR Construct | What It Ensures |
 |---|---|---|
-| **North Star Metric** | Tension for Change (sustained) | The "why" doesn't evaporate post-signature |
-| **Resource Commitments** | Available Resources | Both parties have skin in the game |
-| **Resource Expiry Clause** | Relative Priority (forcing function) | Buyer can't stall indefinitely — creates urgency |
+| **Timeline** | Planning | Both parties agree the sequence before work starts, not after |
+| **North Star Metric** | Reflecting & Evaluating, Tension for Change (sustained) | The "why" doesn't evaporate post-signature, and one agreed number says whether it held |
+| **Resource Commitments** | Executing, Available Resources | Both parties have skin in the game |
+| **Resource Expiry Clause** | Relative Priority (forcing function) | Buyer can't stall indefinitely, which creates urgency |
 | **Go/No-Go Protocol** | Implementation Climate (Readiness) | We don't launch until the Inner Setting can absorb the change |
 
 ---
 
-## Consensus Theory → Cross-Asset Application
+## Frame Alignment Processes → Cross-Asset Application
 
-The Frame Alignment Processes (Snow et al., 1986) are tactical tools used across all three assets:
+Frame Alignment Processes are the four ways to connect an initiative to what a stakeholder already believes. They come from Snow et al. (1986) rather than from CFIR. They sit in this document because CFIR names what is blocking a stakeholder and these are the moves that shift the stakeholder once named, and because all three assets use them:
 
 | Frame Process | When to Use | ILG Asset | Example |
 |---|---|---|---|
@@ -103,8 +108,9 @@ The following CFIR constructs are **not yet operationalized** in any field asset
   - [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md)
   - [02-validation-red-team-protocol.md](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md)
   - [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md)
+  - [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
 
 ---
 
-**Version:** 1.0
-**Last Updated:** 2026-03-10
+**Version:** 1.1
+**Last Updated:** 2026-08-13

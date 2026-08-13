@@ -48,6 +48,7 @@ Never drop a technical term or academic theory without immediately explaining wh
 
 The following words are **strictly prohibited** unless quoting a client or competitor directly:
 
+<!-- vale ILG.AntiHype = NO -->
 | Banned | Use instead |
 |---|---|
 | Synergy, synergistic | Just say what's happening |
@@ -55,6 +56,7 @@ The following words are **strictly prohibited** unless quoting a client or compe
 | Cutting-edge, next-generation | Modern, standardized, scalable |
 | Seamlessly | Robust, reliable, resilient |
 | Unlock potential | Just say what gets unlocked |
+<!-- vale ILG.AntiHype = YES -->
 
 The Anti-Hype rule isn't preference — it's defensive. Buyers who have lived through failed implementations read these words as a signal you don't understand their world.
 

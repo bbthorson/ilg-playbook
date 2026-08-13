@@ -127,7 +127,7 @@ In a **repeated game** (SaaS with renewals), unresolved asymmetry leads to:
 
 ## Knowledge Base References
 
-- [ILG Constitution — Axiom II (Law of Uncertainty Inflation) and the Fundamental Equation bridge concept](../../../theory/01-foundation/00-ilg-constitution.md)
+- [ILG Constitution — Axiom II (Law of Uncertainty Inflation) and the Effective Cost bridge concept](../../../theory/01-foundation/00-ilg-constitution.md)
 - [Fear of Failure Research](../../../theory/02-research/fear-of-failure.md) (JOLT Effect)
 - [Game Theory and NRR](../../../theory/02-research/game-theory-and-nrr.md) (Repeated game dynamics)
 - [Bilateral Asymmetry Scorecard](../../02-internal-ops/04-incentives-asymmetry-scorecard.md) (Diagnostic tool)

@@ -101,14 +101,22 @@ Prefer this over deleting the row. An unenforced rule catches nothing.
 
 ## Current state of the repo
 
-As of 2026-08-10, `check_playbook.py` passes on all 81 files. The Vale rules do not all pass yet, so treat a clean Vale run as a goal rather than a description:
+As of 2026-08-13, both checkers pass on all 89 files. A clean run is now the baseline, so any new hit is a real one:
 
 | Rule | State |
 |---|---|
 | `RetiredTerms` | Clean. Zero hits repo-wide. |
 | `NoEmoji` | Clean. |
-| `AntiHype` | Fires in [`CLAUDE.md`](../../../CLAUDE.md), [`voice-guide.md`](../../../publishing/02-tools/voice-guide.md), and two published style references. The first two are self-referential, since documenting a banned-word list requires printing it. Fence those, and treat the style-reference hits as real. |
-| `Punctuation` / `PunctuationReference` | 11 files, down from 59 when a single flat limit applied everywhere. |
+| `AntiHype` | Clean, with three documented suppressions. See below. |
+| `Punctuation` / `PunctuationReference` | Clean. The Constitution is the ceiling at 29 of 30. |
+
+### The three AntiHype suppressions
+
+Two are self-referential: [`CLAUDE.md`](../../../CLAUDE.md) and [`voice-guide.md`](../../../publishing/02-tools/voice-guide.md) have to print the banned-word list in order to document it, so both are fenced. This README's own rule table is fenced for the same reason.
+
+The third is a scope exclusion in `.vale.ini` for `publishing/02-tools/style-references/`. Those files are published posts kept verbatim as a record of what went out, and two of them predate the anti-hype list. Editing published text to satisfy a later rule would make this repo disagree with what readers can actually see. The rule still applies in `publishing/03-drafts/`, which is the last point where a banned word can be removed before it ships.
+
+The cost of that exclusion is real: a future post moved into `style-references/` carries its hype language in unchecked. The check that matters happens while the piece is still a draft.
 
 ### Why there are two punctuation rules
 

@@ -36,7 +36,9 @@ Start with `theory/02-research/00-reading-guide.md` before modifying any researc
 When writing or editing any document in this repo, apply the voice rules from `publishing/02-tools/voice-guide.md`:
 
 - **Translate every technical term** immediately after first use — never drop "Asset Specificity" or "Single Crossing Property" without a plain-English follow-up.
+<!-- vale ILG.AntiHype = NO -->
 - **Anti-hype vocabulary**: banned words include *synergy*, *revolutionize*, *disruptive*, *cutting-edge*, *seamlessly*, *unlock potential*. See voice guide for replacements.
+<!-- vale ILG.AntiHype = YES -->
 - **Em dashes and semicolons**: 2–3 per document maximum. Restructure into periods when uncertain.
 - **Anti-antithesis filter**: avoid "It's not X, it's Y" constructions.
 - **Active voice**: name actors. "HTD will map the workflow" over "the workflow will be mapped."
