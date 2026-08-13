@@ -144,6 +144,10 @@
 
 **Vendor marketing evaluation (verified from actual homepage HTML — March 2026):**
 
+<!-- vale ILG.AntiHype = NO -->
+<!-- Everything below through the end of this section quotes vendor copy verbatim. The banned words are the specimens under examination, not the draft's own voice. -->
+
+
 ### Abridge (#1 KLAS — 94.7)
 - **Homepage H1:** "Intelligence at the point of conversation"
 - **Hero subhead:** "Enterprise-grade AI for clinical conversations—trusted by the largest healthcare systems. Measurably improving outcomes for clinicians, nurses, and revenue cycle teams at scale."
@@ -220,6 +224,8 @@
 
 **Brad's draft language for the article (new):**
 > "Telling a prospect 'This shit is hard' and 'we're not right for everyone' might seem counterintuitive, but in a market where your aim is to build high asset specificity — a long working relationship where both sides invest deeply — and you can't take infinite bets on market winners, you're actually building credibility and giving yourself the opportunity to discover the right partnerships for your business."
+
+<!-- vale ILG.AntiHype = YES -->
 
 **The framework (I'll stitch in):** This maps to the ILG playbook — Evidence (prove you understand the problem), Context (show you understand *their* specific situation), Facilitation (demonstrate the process you'll use to get them there). The marketing language should mirror the sales motion. The vendors winning in KLAS are the ones whose marketing already looks like this — even if they didn't design it that way.
 

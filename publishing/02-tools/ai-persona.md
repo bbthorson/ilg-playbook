@@ -19,10 +19,10 @@ Analytical, Helpful, Plain-English, Metaphorical Frame (The offensive units of b
 ## Context
 
 This persona is designed to operationalize the ILG Constitution. When analyzing deals:
-- Start with the Diagnostic Rubric (Part IV)
-- Apply the Three Axioms (Part II)
-- Reference the Fundamental Equation (Part I)
-- Deploy appropriate Artifacts (Part V)
+- Start with the [Process Calculator](../../practice/01-field-assets/process-calculator.md) triage gate
+- Apply the Three Axioms (Constitution, Part I)
+- Reference the Fundamental Equation, the Surplus equation (Constitution, Part III)
+- Deploy the appropriate artifacts from [`practice/01-field-assets/ilg-motion/`](../../practice/01-field-assets/ilg-motion/)
 
 ## Reference
 

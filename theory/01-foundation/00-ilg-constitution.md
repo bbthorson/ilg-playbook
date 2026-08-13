@@ -1,16 +1,9 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 13.0
+**Version:** 13.1
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
-> [!IMPORTANT]
-> **What's new in v13.** No axiom was renamed or restructured. Three additions deepen the existing three.
->
-> 1. **The two cost representations are reconciled rather than asserted.** v12 introduced $y = ax^2 + c$ alongside $F_{effective} = F_{base} \cdot (1 + \Delta_A)$ and called them two representations without showing why. The derivation now lives in [03-mathematical-models.md](./03-mathematical-models.md), with the operating rule for which form to use when.
-> 2. **Axiom III gains its missing theoretical layer.** Skin in the game is the prescription. Residual control rights (Grossman-Hart, Hart-Moore) are the mechanism it allocates, and incomplete contract theory explains why no amount of drafting substitutes for governance.
-> 3. **Staged Commitment enters as a bridge concept** (Axioms II + III), grounded in real options theory. It supplies the formal account of why a buyer rationally waits even when the business case is positive.
->
-> **Retained from v12.** The three axioms map to three well-studied bodies of economics: Axiom I to Transaction Cost Economics (Coase, Williamson), Axiom II to Signaling Theory and Behavioral Economics (Spence, Kahneman/Tversky), and Axiom III to Game Theory and Institutional Governance (Axelrod, Williamson). Axiom I does not lead with asset specificity as the classification gate. It establishes the cost structure first (search, consensus, and implementation as independently-arising components) and treats Bridge/Toaster classification as downstream of measuring those costs.
+Version history is at the end of this document.
 
 ---
 
@@ -93,6 +86,8 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 
 $$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
 
+The bracketed sum is written $F_{base}$ where the components do not need to be named individually. It is the three costs before amplification.
+
 To model transaction cost economics more directly at the deal level, we also express the buyer's perceived transaction cost ($y$) as a function of uncertainty ($x$) and risk aversion ($a$):
 
 $$y = ax^2 + c$$
@@ -114,7 +109,7 @@ Where $OC_{\text{switching}}$ is the buyer's opportunity cost of staying with th
 #### The Three Sales Levers
 From this formulation, a seller has exactly three levers to satisfy $y < OC_{\text{switching}}$ and win a deal:
 1. **Lower direct cost (reduce $c$):** The seller can lower their margin. This is the traditional, low-leverage price-discounting motion that destroys vendor profitability.
-2. **Lower risk aversion (reduce $a$):** The seller can implement structures that shift risk back to themselves—the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
+2. **Lower risk aversion (reduce $a$):** The seller can implement structures that shift risk back to themselves, the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
 3. **Reduce uncertainty (reduce $x$):** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop).
 
 The multiplier $\Delta_A$ does not amplify all three components equally. A confused buyer searches a bit harder (modest impact), but the same buyer drives scope creep, missed requirements, and political backlash through consensus and implementation (large impact). The teaching equation uses a global multiplier; operating diagnosis must identify *which* component is being amplified to choose the right intervention.
@@ -148,11 +143,11 @@ The four **Friction Allocation Principles**, the operational content of this axi
 >
 > *Origin: Axelrod (1984). Cooperation becomes rational when the future matters enough.*
 
-**Mechanism (Williamson hold-up + Axelrod repeated games + recursive extension).** Once asset-specific investments are made, the transaction is no longer a market exchange but a bilateral monopoly. Both parties can hold each other up. Axelrod's iterated prisoner's dilemma shows that cooperation becomes the dominant strategy when each party's discount factor (the weight placed on future payoffs) exceeds the threshold determined by the payoff structure. Vested commission, mutual commitments, and bilateral hostages all raise the discount factor.
+**Mechanism (Williamson hold-up + Axelrod repeated games + recursive extension).** Once asset-specific investments are made, the transaction becomes a bilateral monopoly. Both parties can hold each other up. Axelrod's iterated prisoner's dilemma shows that cooperation becomes the dominant strategy when each party's discount factor (the weight placed on future payoffs) exceeds the threshold determined by the payoff structure. Vested commission, mutual commitments, and bilateral hostages all raise the discount factor.
 
 **What governance actually allocates (Grossman-Hart-Moore).** Skin in the game is the prescription. Residual control rights are what it distributes. Grossman and Hart established that contracts covering complex transactions are incomplete as a structural matter rather than a drafting failure: states arise that no party specified and no court can verify. What governs the relationship in those states is not the contract but the pre-agreed allocation of the right to decide. Hart and Moore showed that misallocating those rights suppresses relationship-specific investment before it happens, because a party who expects to be held up declines to sink the investment that creates the exposure.
 
-This is why more legal review does not fix a stalled Bridge deal. The gap is not in the drafting. Two interventions work, and ILG deploys both: the Blueprint shrinks the set of unspecified states by mapping the environment before commercial execution, and the MIP distributes decision authority inside whatever set remains, so neither party can impose an outcome unilaterally when an unmapped constraint appears.
+This is why more legal review does not fix a stalled Bridge deal. The gap sits in the allocation of decision authority. Two interventions work, and ILG deploys both: the Blueprint shrinks the set of unspecified states by mapping the environment before commercial execution, and the MIP distributes decision authority inside whatever set remains, so neither party can impose an outcome unilaterally when an unmapped constraint appears.
 
 The recursive extension is the new content of this axiom: any party that adjudicates signal quality (channels, platforms, ratings agencies, governance bodies) must themselves satisfy the cooperation condition, or they drift from adjudication into extraction. The principle that works at the deal level (skin in the game) applies at every level of the system.
 
@@ -197,7 +192,7 @@ Below the threshold, ILG over-engineers what should be a PLG or SLG motion. Abov
 
 The operational tool that implements the Boundary Condition is the [Process Calculator](../../practice/01-field-assets/process-calculator.md). The Boundary Condition is *what* the calculator measures. The calculator is *how* it gets measured.
 
-The Boundary Condition is the entry point to ILG. Without it, no other prescription in the framework applies. It is the gate that determines whether the rest of the framework is even relevant.
+The Boundary Condition is the entry point to ILG. Until a deal passes it, no other prescription in the framework applies.
 
 ---
 
@@ -263,8 +258,6 @@ Like recursive cooperation, depreciation is itself recursive. The actor's indivi
 
 ### Bridge Concepts
 
-Bridge concepts integrate across two or more axioms. They are where the axioms talk to each other.
-
 #### Decay Clock (Axioms I + II)
 
 The Decay Clock captures the pre-close time pressure on deal viability. Two time dynamics operate in parallel:
@@ -285,9 +278,9 @@ The operational prescription is the same in both cases (fight time with active m
 
 ---
 
-#### Fundamental Equation (Axioms I + II)
+#### Effective Cost (Axioms I + II)
 
-The Fundamental Equation has two representations: the detailed friction composition and the simplified transaction cost curve:
+The effective cost equation has two representations: the detailed friction composition and the simplified transaction cost curve:
 
 $$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
 
@@ -305,9 +298,9 @@ The derivation connecting the two representations, and the operating rule for wh
 
 Staged Commitment explains a buyer behavior the other concepts predict but do not account for: the buyer who agrees the business case is positive and still declines to proceed.
 
-Axiom II says uncertainty inflates cost. Real options theory (Dixit and Pindyck) adds that uncertainty simultaneously raises the value of *not deciding*. When an investment is irreversible and the environment is uncertain, the ability to wait carries genuine economic value, and committing capital destroys it. A buyer who defers is not always stalling. They may be pricing the option to wait correctly.
+Axiom II says uncertainty inflates cost. Real options theory (Dixit and Pindyck) adds that uncertainty simultaneously raises the value of *not deciding*. When an investment is irreversible and the environment is uncertain, the ability to wait carries genuine economic value, and committing capital destroys it. A buyer who defers may be pricing that option correctly.
 
-This reframes the status quo. The status quo is not inertia to be overcome by persuasion. It is an asset the buyer currently holds, and the seller is asking them to surrender it.
+This reframes the status quo. It is an asset the buyer currently holds, and the seller is asking them to surrender it. Persuasion does not move a buyer who has priced that asset correctly.
 
 Two consequences follow, one for each parent axiom:
 
@@ -320,9 +313,9 @@ The operational tool is the [Milestone Valuation Model](../../practice/01-field-
 
 ---
 
-#### Surplus (All three axioms)
+#### Surplus, the Fundamental Equation (All three axioms)
 
-The Surplus equation is the final integration of all three axioms:
+The Surplus equation is the final integration of all three axioms. It is the equation the rest of the repo means by "the Fundamental Equation":
 
 $$S = \left(V_{effective}(t) - V_{next\_best}\right) - F_{effective}$$
 
@@ -330,7 +323,7 @@ Using the transaction cost curve representation, where $OC_{\text{switching}} = 
 
 $$S = OC_{\text{switching}} - y$$
 
-A deal is viable iff $S > 0$ (which is equivalent to $y < OC_{\text{switching}}$) at the moment of decision *and* the conditions for Axiom III are sustained through the relationship's lifetime.
+A deal is viable if and only if $S > 0$ (which is equivalent to $y < OC_{\text{switching}}$) at the moment of decision *and* the conditions for Axiom III are sustained through the relationship's lifetime.
 
 The equation makes the three axioms' interaction explicit:
 
@@ -344,8 +337,6 @@ The full statement with all dynamics and constraints appears in Part III.
 
 ### Clarifying Concepts
 
-Tight definitions of supporting concepts used in the primary derivations and bridges.
-
 **Market States.** Three stages a market passes through, each with characteristic friction profile:
 - *Nascent*: search dominates, so SLG fits.
 - *Efficient*: all costs moderate, so PLG fits.
@@ -353,7 +344,7 @@ Tight definitions of supporting concepts used in the primary derivations and bri
 
 The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" because they are observationally similar from outside (the category is legible, the vendor field is known). The rubric separates them by transaction cost score. *Transitional* refers to the boundary state between Nascent and Mature, when the category is forming but not yet fully legible. Elaborates the Boundary Condition by specifying which motion fits which state.
 
-**Three Transaction Costs.** Coase's decomposition of $F_{base}$ into $F_{search}$ (locating the category and viable vendors), $F_{consensus}$ (internal buyer alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Elaborates Axiom II's cost equation by separating what is summed.
+**Three Transaction Costs.** Coase named three costs of using the price mechanism: search, bargaining, and enforcement. ILG operationalizes them for B2B software as the three components of $F_{base}$: $F_{search}$ (locating the category and viable vendors), $F_{consensus}$ (internal buyer alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Elaborates Axiom II's cost equation by separating what is summed.
 
 $F_{search}$ subdivides once more, and motion selection depends on the split. *Category search* (the buyer cannot name what they need) dominates nascent markets and is resolved by education. *Vendor evaluation* (the category is legible and the field is known) dominates mature low-specificity markets and is resolved by trial. Fusing the two makes SLG and PLG appear to compete for the same cost component when they address different halves of it. See [01-sales-motion-comparison.md](./01-sales-motion-comparison.md).
 
@@ -404,7 +395,7 @@ A deal closes when $S > 0$ at the moment of decision, and persists when all Axio
 
 ### How to Use the Equation
 
-The equation is not a forecasting tool. It is a diagnostic. When a deal stalls, walk through the equation to identify which term failed:
+The equation is a diagnostic, not a forecast. When a deal stalls, walk through it to identify which term failed:
 
 1. **Is the deal within the boundary?** If not, no other prescription applies. Re-classify the deal or disqualify.
 2. **Is $V_{effective}(t)$ collapsing faster than $\Delta_A$ is shrinking?** If yes, urgency is decaying faster than the seller can close the asymmetry. Either intervene to refresh urgency (find a new triggering event) or close faster.
@@ -430,11 +421,11 @@ The equation is not a forecasting tool. It is a diagnostic. When a deal stalls, 
 | III | Reputation hoarding | Past signals not refreshed → incumbents coast on stale credibility |
 | II + III | Option value dominates | Buyer agrees the case is positive and still defers → full commitment demanded before uncertainty resolves |
 
-Every observed deal failure traces to at least one of these modes. When a deal stalls, the diagnostic walks through this table to identify which axiom is being violated and where to intervene.
+Each mode names one axiom violation and one place to intervene. A stall matching none of them means the table is incomplete, which is itself worth recording.
 
 ---
 
-## Part IV: Organizational Corollary (Principle)
+## Part IV: Organizational Corollary
 
 The variables in the Surplus equation each have a department owner. This corollary states the *principle* (the axioms map to organizational responsibility) and points to where the operational procedures live.
 
@@ -464,6 +455,20 @@ The Blueprint travels with the customer through the funnel. The asymmetry assess
 ### Where Procedures Live
 
 This corollary states the principle. Detailed procedures (CRM field configuration, RACI tables, manager rituals, comp plan mechanics) live in [`practice/02-internal-ops/`](../../practice/02-internal-ops/). The Constitution is the *why*; the procedures are the *how*.
+
+---
+
+## Version History
+
+**v13.1.** Editorial pass, no change to any axiom or equation. "Fundamental Equation" now names the Surplus equation only, matching how the root README, CLAUDE.md, and the publishing generators already used it. The Part II bridge concept that previously carried the name is now **Effective Cost**. Coase's three costs are attributed consistently (his are search, bargaining, and enforcement; the ILG trio is an operationalization). Version history moved here from the top of the document.
+
+**v13.** No axiom was renamed or restructured. Three additions deepen the existing three.
+
+1. **The two cost representations are reconciled instead of asserted.** v12 introduced $y = ax^2 + c$ alongside $F_{effective} = F_{base} \cdot (1 + \Delta_A)$ and called them two representations without showing why. The derivation now lives in [03-mathematical-models.md](./03-mathematical-models.md), with the operating rule for which form to use when.
+2. **Axiom III gains its missing theoretical layer.** Skin in the game is the prescription. Residual control rights (Grossman-Hart, Hart-Moore) are the mechanism it allocates, and incomplete contract theory explains why no amount of drafting substitutes for governance.
+3. **Staged Commitment enters as a bridge concept** (Axioms II + III), grounded in real options theory. It supplies the formal account of why a buyer rationally waits even when the business case is positive.
+
+**Retained from v12.** The three axioms map to three well-studied bodies of economics: Axiom I to Transaction Cost Economics (Coase, Williamson), Axiom II to Signaling Theory and Behavioral Economics (Spence, Kahneman/Tversky), and Axiom III to Game Theory and Institutional Governance (Axelrod, Williamson). Axiom I does not lead with asset specificity as the classification gate. It establishes the cost structure first (search, consensus, and implementation as independently-arising components) and treats Bridge/Toaster classification as downstream of measuring those costs.
 
 ---
 
