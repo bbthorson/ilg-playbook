@@ -215,7 +215,7 @@ New technical paradigms reset the clock. Complex generative AI integration, heal
 
 ## Common Failure Patterns
 
-The most common motion-selection mistakes:
+The most common motion-selection mistakes. The first two are Axiom I's failure modes seen from the field, with the symptoms a rep observes and the root cause behind them:
 
 **Treating a Bridge like a Toaster.** PLG or SLG applied to a deal that actually needs ILG. *Symptoms:* deal stalls with no clear blocker, eventually "no decision" or churn shortly after signature. *Root cause:* Process Calculator score not honored; reps optimizing for cycle time instead of close quality.
 

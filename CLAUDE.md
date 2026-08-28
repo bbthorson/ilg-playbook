@@ -44,6 +44,7 @@ When writing or editing any document in this repo, apply the voice rules from `p
 - **Active voice**: name actors. "HTD will map the workflow" over "the workflow will be mapped."
 - **No emojis.**
 - The Constitution is **axioms-first** (v11+): if a claim cannot be traced to one of the three axioms, it does not belong in `theory/01-foundation/00-ilg-constitution.md`. Operational content belongs in `practice/`.
+- **New headline statistics need a provenance row.** Any quantitative claim added to `theory/` gets a row in `theory/02-research/audits/citation-provenance-audit.md` in the same commit, with an honest verification status. When two files disagree on a number, record the discrepancy there first, then fix both against the primary source. This is what stops stat drift, the way `RetiredTerms.yml` stops rename drift.
 
 ### Checking your work
 
