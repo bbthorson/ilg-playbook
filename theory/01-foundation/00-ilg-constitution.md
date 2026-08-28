@@ -1,6 +1,6 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 13.2
+**Version:** 13.3
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
@@ -37,7 +37,7 @@ The three axioms are progressively visualized through a potential-well diagram t
 
 ### Axiom I — The Law of Transaction Cost Composition
 
-> **Transaction costs in B2B deals decompose into three independently-arising components (search, consensus, and implementation), each driven by distinct structural conditions. Their combined level is the primary indicator of whether a deal is viable under a standard velocity motion. When combined costs are low, PLG or SLG is appropriate. When they are high, structured intervention is required. Asset specificity is the principal driver of high combined costs, and Bridge/Toaster classification follows from measuring them.**
+> **Transaction costs in B2B deals decompose into three independently-arising components: search, consensus, and implementation. Their combined level, driven principally by asset specificity, determines which motion is viable. Low combined costs fit PLG or SLG, high combined costs require structured intervention, and Bridge/Toaster classification follows from measuring them.**
 
 > *Tagline: **"Costs determine the deal."** The combined level of search, consensus, and implementation costs determines which motion is viable, and what the sales process must do.*
 >
@@ -106,11 +106,7 @@ $$y < OC_{\text{switching}}$$
 
 Where $OC_{\text{switching}}$ is the buyer's opportunity cost of staying with the status quo (the value leakage or inefficiency of not adopting the solution).
 
-#### The Three Sales Levers
-From this formulation, a seller has exactly three levers to satisfy $y < OC_{\text{switching}}$ and win a deal:
-1. **Lower direct cost (reduce $c$):** The seller can lower their margin. This is the traditional, low-leverage price-discounting motion that destroys vendor profitability.
-2. **Lower risk aversion (reduce $a$):** The seller can implement structures that shift risk back to themselves, the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
-3. **Reduce uncertainty (reduce $x$):** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop).
+From this formulation the seller has exactly three levers to satisfy the inequality. Part II derives them as the Three Sales Levers.
 
 The multiplier $\Delta_A$ does not amplify all three components equally. A confused buyer searches a bit harder (modest impact), but the same buyer drives scope creep, missed requirements, and political backlash through consensus and implementation (large impact). The teaching equation uses a global multiplier; operating diagnosis must identify *which* component is being amplified to choose the right intervention.
 
@@ -208,6 +204,18 @@ Parties that validate or filter signals (channels, platforms, ratings agencies, 
 The principles function as a diagnostic: if a signal mechanism fails to produce $\Delta_A$ reduction, at least one principle has been violated. They also work as a design tool. When constructing a new signal mechanism, the four principles are the test it must pass.
 
 The operational artifact that implements this check is the [Friction Allocation Diagnostic](../../practice/01-field-assets/friction-allocation-diagnostic.md).
+
+---
+
+#### From Axiom II — The Three Sales Levers
+
+The transaction cost curve $y = ax^2 + c$ gives the seller exactly three levers to satisfy $y < OC_{\text{switching}}$ and win a deal:
+
+1. **Lower direct cost (reduce $c$).** The seller can lower their margin. This is the traditional, low-leverage price-discounting motion that destroys vendor profitability.
+2. **Lower risk aversion (reduce $a$).** The seller can implement structures that shift risk back to themselves, the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
+3. **Reduce uncertainty (reduce $x$).** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop).
+
+Lever 1 is the weakest because the cost curve is convex: cost grows quadratically in uncertainty, so cutting the constant term cannot offset a large gap. That argument, and the derivation behind it, live in [03-mathematical-models.md](./03-mathematical-models.md).
 
 ---
 
@@ -435,11 +443,13 @@ The Blueprint travels with the customer through the funnel. The asymmetry assess
 
 ### Where Procedures Live
 
-This corollary states the principle. Detailed procedures (CRM field configuration, RACI tables, manager rituals, comp plan mechanics) live in [`practice/02-internal-ops/`](../../practice/02-internal-ops/). The Constitution is the *why*; the procedures are the *how*.
+This corollary states the principle. Detailed procedures (CRM field configuration, RACI tables, manager rituals, comp plan mechanics) live in [`practice/02-internal-ops/`](../../practice/02-internal-ops/).
 
 ---
 
 ## Version History
+
+**v13.3.** Editorial pass, no change to any axiom or equation. Axiom I's statement is tightened to three sentences. The Three Sales Levers move from Axiom II's statement in Part I to Part II as a primary derivation, which is where operational consequences live. Signposting sentences that restated a document relationship in reverse ("the why / the how") are removed here and in the glossary and reading guide.
 
 **v13.2.** Editorial pass, no change to any axiom or equation. Part II now states only what each derivation adds beyond its parent axiom: the Boundary Condition, Friction Allocation failure modes, Recursive Cooperation, Decay Clock, and Effective Cost sections reference Part I's equations and examples instead of restating them. Part I remains the canonical statement of every equation, and Part III remains the one full assembly. The Safe No and the Logical Yes are now defined at first use in Axiom II's tagline.
 

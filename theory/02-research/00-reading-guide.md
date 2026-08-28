@@ -93,5 +93,3 @@ This is a citation index, not a theoretical synthesis. The synthesis lives elsew
 - **Three axioms and their derivations:** [Constitution](../01-foundation/00-ilg-constitution.md), Parts I and II.
 - **Surplus equation, potential-well diagram, failure modes table:** Constitution Part III.
 - **Operational tools** (rubric, artifacts): [`practice/`](../../practice/).
-
-This guide tells you which papers back which axiom. The Constitution tells you what the axioms *are*.
