@@ -43,6 +43,6 @@
 - 45% budget overrun and 7% schedule overrun on the average large project (McKinsey/Oxford).
 - 60% renewal regret rate (Gartner, 2023).
 - 30% GenAI project abandonment post-POC (Gartner).
-- 106–275 SaaS applications per enterprise; 47% utilization rate.
+- Roughly 300 SaaS applications per enterprise (Zylo, 2026 index: average 305, median 240), with about half of licenses unused (Zylo, 2024: 49% utilization).
 
 > **Citation Provenance.** Every statistic above traces to a primary source documented in [audits/citation-provenance-audit.md](./audits/citation-provenance-audit.md).

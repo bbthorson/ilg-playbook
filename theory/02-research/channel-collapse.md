@@ -16,7 +16,7 @@
 
 **Key claims:**
 - Sales enablement tools reduce marginal outreach cost to near-zero, triggering Jevons' Paradox.
-- Email volume grew from 293B/day (2019) to 376B/day (2025); reply rates collapsed from 8.5% to 3.4%.
+- Email volume grew from 293B/day (2019) to 376B/day (2025) while reply rates collapsed from 8.5% toward the low single digits.
 - Channels are Jevons-vulnerable when production cost is the binding constraint; Jevons-resistant when something else (time, relationships, expertise) binds first.
 - Market maturity stage interacts with vulnerability: Stage 2 (Efficient/Evaluation) is highest-risk; Stage 1 and Stage 3 are more resistant.
 - Cold email applied to Stage 3 (Saturated) buyers combines channel collapse with structural irrelevance.
@@ -35,7 +35,7 @@
 - "A channel mismatch — using a Jevons-vulnerable, Stage 2 channel for a Stage 3 buyer — means the seller is fighting both channel-level congestion and structural irrelevance."
 
 **Notable statistics:**
-- Email volume: 293B/day (2019) → 376B/day (2025), +28%.
-- Reply rate: 8.5% (2019) → 3.4% (2026), -60%.
+- Email volume: 293B/day (2019) → 376B/day (2025), +28% (Radicati Group Email Statistics Reports).
+- Reply rates: 8.5% in 2019 (Backlinko/Pitchbox study of 12M outreach emails, link-building and PR) → 3.4% in 2026 (Instantly cold-email platform benchmarks). The endpoints come from different populations, so treat the decline as directional rather than a measured drop.
 - No-decision rate: 40–60% in enterprise sales (partly channel-level phenomenon).
 - Wörgl scrip historical example: depreciated 1% per month, incentivizing circulation — demurrage in practice.

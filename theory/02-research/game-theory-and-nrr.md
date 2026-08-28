@@ -13,7 +13,7 @@
 - The Shadow of the Future is artificially suppressed when reps are paid on signature only.
 - Tit-for-Tat customers retaliate via churn when the Promise Gap surfaces post-implementation.
 - Clawbacks and deferred commissions raise rep $\delta_{discount}$ above the cooperation threshold.
-- Sales-CS alignment correlates with higher retention (36%) and higher win rates (38%).
+- Functional alignment pays: Aberdeen Group found 36% higher retention and 38% higher win rates in organizations with tightly aligned sales and marketing. The same repeated-game logic extends to Sales-CS alignment.
 - NRR is the lagging indicator of whether the repeated game is being played well.
 
 **Supports in ILG:**
@@ -24,13 +24,11 @@
 
 **Notable quotes:**
 - "One might as well defect in all cases" (Axelrod, on ALL D strategy when the future is negligible).
-- "60% of B2B buyers feel regret within the first year."
+- 60% of technology buyers involved in renewal decisions "regret nearly every purchase they make" (Gartner, 2023).
 - The Shadow of the Future is "artificially suppressed for sales agents via compensation plans."
 
 **Notable statistics:**
-- 60% buyer regret rate in year one (Gartner).
-- Involuntary churn ~0.8%; voluntary churn ~2.6% on average B2B.
-- 15% churn reduction observed via clawback implementation.
-- 36% retention improvement from Sales-CS alignment.
-- 38% win rate improvement from same alignment.
-- Companies with NRR < 100% trade at up to 46% valuation discount vs. NRR > 100% peers.
+- 60% of technology buyers involved in renewal decisions regret nearly every purchase (Gartner, 2023).
+- Involuntary churn ~0.8%; voluntary churn ~2.6% on average B2B (Recurly churn benchmarks).
+- 36% higher customer retention and 38% higher win rates in tightly aligned organizations (Aberdeen Group, sales-marketing alignment research).
+- NRR above 120% roughly doubles the revenue multiple relative to 100–110% NRR in published valuation analyses (FE International).
