@@ -140,6 +140,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Single Crossing Property** | A signal informs only when it costs the high-quality actor proportionally less. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Costly Signal** | A demonstration a low-quality competitor could not afford to replicate. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| **Safe No / Logical Yes** | The buyer's refusal to change, which risks nothing for the decider, versus the positive business case it defeats. | [Constitution, Axiom II](./00-ilg-constitution.md) |
 | **Akerlof Exit Threshold** | The asymmetry level beyond which the buyer stops participating in the market. | [Constitution, Clarifying Concepts](./00-ilg-constitution.md) |
 | **Jevons Vulnerability** | A channel whose binding constraint is production cost, and which therefore collapses when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
 | **Buying Center** | The set of people in a purchase decision, each judging it against a different objective. | [buying-center-dynamics.md](../02-research/buying-center-dynamics.md) |

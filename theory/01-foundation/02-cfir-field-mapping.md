@@ -101,7 +101,7 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 
 ## Related
 
-- [00-ilg-constitution.md](./00-ilg-constitution.md) — The artifacts (Blueprint, Red Team, MIP) this document maps to are defined in Part V.
+- [00-ilg-constitution.md](./00-ilg-constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
 - [cfir.md](../02-research/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
 - [re-aim-framework.md](../02-research/re-aim-framework.md) — Companion framework for post-sale measurement.
 - Field artifacts being mapped:
@@ -113,4 +113,4 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 ---
 
 **Version:** 1.1
-**Last Updated:** 2026-08-13
+**Last Updated:** 2026-08-28

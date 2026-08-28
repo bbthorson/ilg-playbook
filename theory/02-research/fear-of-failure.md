@@ -7,11 +7,12 @@
 - CISQ (Consortium for Information & Software Quality). *Cost of Poor Software Quality in the U.S.: A 2022 Report.* [Link](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/)
 - Dixon, M. & McKenna, T. (2022). *The JOLT Effect: How High Performers Overcome Customer Indecision.* Portfolio. [Site](https://www.jolteffect.com/)
 
-**Abstract.** This is the empirical evidence behind the Fear Economy thesis: documented failure rates, regret data, and "No Decision" statistics that explain why buyers default to inaction. Project success rates have regressed to 1994 baselines (~16% in U.S. commercial); 56% of buyers regret recent purchases (Gartner); 40–60% of qualified pipelines die in "No Decision" — and 56% of that is *FOMU* (Fear of Messing Up), not status quo preference. The Standish/McKinsey/JOLT corpus together provides the quantitative case that buyer risk-aversion is rational, not pathological, and explains why generic FOMO sales tactics backfire 84% of the time on indecisive buyers.
+**Abstract.** This is the empirical evidence behind the Fear Economy thesis: documented failure rates, regret data, and "No Decision" statistics that explain why buyers default to inaction. Project success rates have stayed low for three decades (69% of projects were challenged or failed in the 2020 CHAOS data, against 83.8% in the 1994 baseline); 56% of buyers regret recent purchases (Gartner); 40–60% of qualified pipelines die in "No Decision" — and 56% of that is *FOMU* (Fear of Messing Up), not status quo preference. The Standish/McKinsey/JOLT corpus together provides the quantitative case that buyer risk-aversion is rational, not pathological, and explains why generic FOMO sales tactics backfire 84% of the time on indecisive buyers.
 
 **Key claims:**
-- Project success rates have stagnated for 30 years despite methodology evolution — ~16% commercial, ~13% government.
-- 50–53% of projects become "zombies": operational but 189% over budget and delivering 56% less value.
+- Project success rates have never cleared 40% in three decades of CHAOS tracking: 16.2% in 1994, 37% in 2012, 31% in 2020 (Standish).
+- Roughly half of projects become "zombies": operational but over budget and under-delivering. Standish counted 52.7% challenged in 1994 (with 189% average cost overruns) and 50% in 2020.
+- The average large IT project runs 45% over budget while delivering 56% less value than predicted (McKinsey/Oxford).
 - 56% of B2B buyers regret their most recent purchase (Gartner).
 - 56% of "No Decision" is fear-driven (FOMU), not preference-for-status-quo.
 - FOMO sales tactics *increase* loss likelihood by 84% on indecisive buyers (Dixon/McKenna).
@@ -22,7 +23,7 @@
 - **Axiom I — Law of Transaction Cost Composition** — empirical scale of $F_{implementation}$. Documented failure rates are why implementation is the dominant cost component in high-specificity deals, and the 17% existential-threat rate is why a buyer facing hold-up risk prefers the "make" alternative (Williamson). This is the under-frictioned Bridge failure mode measured.
 - **Axiom II — Law of Uncertainty Inflation** — empirical grounding for why $\Delta_A$ multiplies friction rather than reducing value. Also the limit case: buyers leave the market entirely (Akerlof saturation) when failure rates exceed risk tolerance, because no costly signal can credibly reduce a gap that wide.
 - **Akerlof Exit Threshold** (clarifying concept, elaborating Axiom II) — the 40–60% No Decision rate is the threshold being crossed.
-- **Decay Clock** (bridge concept) — 17% existential threat rate and technical debt servicing (69% of dev time) describe how time pressure compounds.
+- **Decay Clock** (bridge concept) — 17% existential threat rate and technical debt servicing (roughly a third of developer time, CISQ 2022) describe how time pressure compounds.
 - **Reputation Depreciation** — 60% renewal regret rate (Gartner 2023) is the failure-mode signal.
 
 **Notable quotes:**
@@ -31,14 +32,14 @@
 - "Organizations are so consumed by servicing the debt of previous failures that they lack the bandwidth to innovate."
 
 **Notable statistics:**
-- 84% project failure/challenged rate (Standish, 2020 U.S. commercial).
+- 69% project failure/challenged rate (Standish, 2020: 31% success, 50% challenged, 19% failed). The 1994 baseline was 83.8%.
 - 56% purchase regret (Gartner, 2022).
 - 40–60% "No Decision" pipeline loss (Dixon/McKenna JOLT Effect).
-- 189% budget overruns on large projects (McKinsey).
+- 189% average cost overrun on challenged projects (Standish, 1994).
 - 100× cost multiplier for post-deployment fixes vs. design phase (IBM/CISQ).
 - $2.41 trillion CPSQ (Cost of Poor Software Quality, CISQ 2022).
 - 17% existential threat rate on large initiatives (McKinsey).
-- 45% timeline slippage on large projects.
+- 45% budget overrun and 7% schedule overrun on the average large project (McKinsey/Oxford).
 - 60% renewal regret rate (Gartner, 2023).
 - 30% GenAI project abandonment post-POC (Gartner).
 - 106–275 SaaS applications per enterprise; 47% utilization rate.
