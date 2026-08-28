@@ -28,5 +28,5 @@
 - Committee size sets the floor on consensus cost. Goal conflict sets the ceiling.
 
 **Notable statistics:**
-- Typical enterprise buying groups involve 6 to 10 decision makers (Gartner). *Provenance not yet verified in [audits/citation-provenance-audit.md](./audits/citation-provenance-audit.md). Confirm the primary source before citing externally.*
+- The typical buying group for a complex B2B purchase involves 6 to 10 decision makers (Gartner, [The B2B Buying Journey](https://www.gartner.com/en/sales/insights/b2b-buying-journey)).
 - 40–60% of B2B deals end in "No Decision" (Dixon/McKenna). See [fear-of-failure.md](./fear-of-failure.md) for the verified chain.
