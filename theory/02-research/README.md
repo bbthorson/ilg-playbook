@@ -4,6 +4,10 @@
 
 Parent: [theory/](../) · Sibling: [01-foundation/](../01-foundation/)
 
+## Where to start
+
+**[00-reading-guide.md](./00-reading-guide.md)** owns the reading order. It covers every research file in this directory: the dependency diagram, the order to read the papers in, and what to read or skip by audience. This README does not repeat that list.
+
 ## Format
 
 Each research entry follows a standard shape:
@@ -15,35 +19,10 @@ Each research entry follows a standard shape:
 - **Notable quotes** — Passages worth citing in blog posts or talks.
 - **Notable statistics** — Specific numbers worth referencing.
 
-When you need the deeper theoretical synthesis of these papers, that work now lives in the [Constitution](../01-foundation/00-ilg-constitution.md) — Parts I (axioms), II (derived concepts), and III (synthesis).
+## Quality control
 
-## Where to start
-
-If you only read one file, read **[00-reading-guide.md](./00-reading-guide.md)** — explains how the papers depend on each other and which to read for which audience.
-
-## Reading order (theoretical dependency)
-
-The papers build on each other:
-
-1. **[transaction-cost-economics.md](./transaction-cost-economics.md)** — Coase / Williamson. Establishes *why* friction exists and why it's necessary. The foundation.
-2. **[costly-signals.md](./costly-signals.md)** — Akerlof / Spence / Crawford-Sobel. Builds on TCE: friction is the screening mechanism that resolves information asymmetry.
-3. **[prospect-theory.md](./prospect-theory.md)** — Kahneman / Tversky. Explains *why* buyers fear change at the neurobiological level (λ ≈ 2.25).
-4. **[game-theory-and-nrr.md](./game-theory-and-nrr.md)** — Axelrod. Shows how incentives must be structured to sustain cooperation across the repeated game.
-5. **[fear-of-failure.md](./fear-of-failure.md)** — Empirical evidence: Standish CHAOS, Gartner regret data, the JOLT Effect.
-6. **[cfir.md](./cfir.md)** — Pre-sale diagnostic methodology. How to read the buyer's organization.
-7. **[re-aim-framework.md](./re-aim-framework.md)** — Post-sale measurement. How to define and track success.
-
-Plus three sources added in Constitution v13, which deepen existing axioms rather than introducing new ones:
-
-8. **[incomplete-contracts.md](./incomplete-contracts.md)** — Grossman-Hart / Hart-Moore. Residual control rights. The theoretical layer beneath Axiom III's skin-in-the-game prescription.
-9. **[buying-center-dynamics.md](./buying-center-dynamics.md)** — Cyert-March / Webster-Wind. What actually generates $F_{consensus}$ inside the buyer.
-10. **[real-options.md](./real-options.md)** — Dixit-Pindyck. Why a buyer rationally defers a positive-return decision, and why staging recovers the deal.
-
-## Other documents in this directory
-
-- **[channel-collapse.md](./channel-collapse.md)** — Jevons' Paradox applied to outbound enablement. Governance solutions (Pigouvian taxes, Ostrom commons, demurrage-based trust).
-- **[audits/](./audits)** — Quality control. Currently:
-  - [citation-provenance-audit.md](./audits/citation-provenance-audit.md) — Primary-source provenance chain for every headline statistic.
+- **[audits/](./audits)** — currently one audit:
+  - [citation-provenance-audit.md](./audits/citation-provenance-audit.md) — the provenance table for every headline statistic: claim, primary source, verification status. Check a statistic's status there before quoting it outside this repository.
 
 ## What goes here vs. elsewhere
 

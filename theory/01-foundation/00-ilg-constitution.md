@@ -1,6 +1,6 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 13.1
+**Version:** 13.2
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
@@ -72,7 +72,7 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 
 > **Effective transaction cost equals base friction (search + consensus + implementation) amplified by the bilateral information asymmetry between buyer and seller. The amplifier shrinks when the claimant invests in demonstrations that low-quality competitors cannot affordably replicate. The Single Crossing Property is the test for what counts.**
 
-> *Tagline: **"Fear > Value."** Reducing risk is ~2× more powerful than increasing ROI. The Safe No beats the Logical Yes.*
+> *Tagline: **"Fear > Value."** Reducing risk is ~2× more powerful than increasing ROI. The Safe No (declining to change, which risks nothing for the decider) beats the Logical Yes (accepting a positive business case).*
 >
 > *Plain English: Uncertainty makes change expensive. What a buyer cannot verify, they price as risk, and that multiplies every other cost rather than reducing the value.*
 >
@@ -181,18 +181,9 @@ Part II organizes the operational consequences of the axioms. Concepts come in t
 
 #### From Axiom I — The Boundary Condition
 
-The Boundary Condition operationalizes Axiom I's central claim: friction must match asset specificity. It is the test every deal must pass before any ILG investment is justified.
+The Boundary Condition operationalizes Axiom I's central claim: friction must match asset specificity. It is the test every deal must pass before any ILG investment is justified. A deal is within the ILG boundary when both of Axiom I's conditions hold: the specificity score exceeds the threshold ($k > k_{threshold}$, so the deal is a Bridge rather than a Toaster), and the friction deployed matches the specificity ($F_{deployed} \sim k$). Axiom I's failure modes describe what happens on either side of the boundary, and the [Process Calculator](../../practice/01-field-assets/process-calculator.md) measures it.
 
-A deal is within the ILG boundary when both conditions hold:
-
-- The asset specificity score exceeds the threshold ($k > k_{threshold}$), meaning the deal is a Bridge, not a Toaster.
-- The friction structure deployed matches the specificity ($F_{deployed} \sim k$), meaning the motion is appropriately scaled.
-
-Below the threshold, ILG over-engineers what should be a PLG or SLG motion. Above the threshold with under-deployed friction, the buyer perceives hold-up risk and builds internally.
-
-The operational tool that implements the Boundary Condition is the [Process Calculator](../../practice/01-field-assets/process-calculator.md). The Boundary Condition is *what* the calculator measures. The calculator is *how* it gets measured.
-
-The Boundary Condition is the entry point to ILG. Until a deal passes it, no other prescription in the framework applies.
+What the derivation adds is sequence: the Boundary Condition is the entry point to ILG. Until a deal passes it, no other prescription in the framework applies.
 
 ---
 
@@ -203,16 +194,16 @@ The friction allocation principles operationalize Axiom II: they specify the con
 Four principles, each testable by the failure mode it predicts:
 
 **1. Friction must be non-automatable.**
-A signal carries information only when its cost cannot be removed by efficiency tools. Production-cost friction is debaseable. Expertise, relationship investment, and demonstrated work are not. This is the Single Crossing Property in plain language. *Failure mode:* cheap talk (vanity metrics, "best AI" banners), and at the channel level, Jevons collapse.
+A signal carries information only when its cost cannot be removed by efficiency tools. Production-cost friction is debaseable. Expertise, relationship investment, and demonstrated work are not. This is the Single Crossing Property in plain language. *Failure mode:* cheap talk, and at the channel level, Jevons collapse.
 
 **2. Friction borne by the claimant.**
-The party producing the signal pays the cost. When the receiver bears the cost (filtering, evaluating, deciphering), the signal mechanism is broken regardless of how good any individual signal is. *Failure mode:* misallocated friction, the babbling equilibrium (current state of cold email).
+The party producing the signal pays the cost. When the receiver bears the cost (filtering, evaluating, deciphering), the signal mechanism is broken regardless of how good any individual signal is. *Failure mode:* misallocated friction and the babbling equilibrium.
 
 **3. Friction scales with stakes.**
 The signal cost should match the size of the claim. A small claim requires modest signal, and a large claim requires substantial signal. Mismatch fails in both directions. Over-frictioned small claims feel disproportionate, and under-frictioned large claims feel reckless. *Failure mode:* a Bridge sold with PLG-grade signals (under-frictioned) or a Toaster sold with ILG-grade signals (over-frictioned).
 
 **4. Adjudicators bear consequences of their validation.**
-Parties that validate or filter signals (channels, platforms, ratings agencies, governance bodies) must lose something when they let bad signals through. Without this, the adjudicator drifts from gatekeeper to extractor. *Failure mode:* GPO drift, KLAS coasting on residual brand, sales platforms paid for sends rather than signal quality.
+Parties that validate or filter signals (channels, platforms, ratings agencies, governance bodies) must lose something when they let bad signals through. Without this, the adjudicator drifts from gatekeeper to extractor. *Failure mode:* governance-level drift, whose examples are listed under Axiom III.
 
 The principles function as a diagnostic: if a signal mechanism fails to produce $\Delta_A$ reduction, at least one principle has been violated. They also work as a design tool. When constructing a new signal mechanism, the four principles are the test it must pass.
 
@@ -234,9 +225,7 @@ The cooperation condition must hold for:
 - **Vendors and the platform** that adjudicates their access: the gatekeeper case (relevant to KLAS, GPOs, app stores).
 - **Vendors and governance bodies** that certify them: the regulatory adjudication case.
 
-Recursion means: violating the cooperation condition at any one of these levels causes the structure at that level to drift toward extraction, which destabilizes the levels below it.
-
-*Failure mode example:* when sales platforms are paid for sends rather than signal quality, the platform itself fails the cooperation condition (no $\delta_{discount}$ tied to outcomes). The platform becomes an extractor. Vendors who operate through it inherit the consequences. Their signal quality degrades regardless of individual effort.
+Recursion means: violating the cooperation condition at any one of these levels causes the structure at that level to drift toward extraction, and the levels below inherit the consequences. A vendor operating through a platform that fails the condition (Axiom III's governance-level drift) sees their signal quality degrade regardless of individual effort.
 
 ---
 
@@ -260,10 +249,10 @@ Like recursive cooperation, depreciation is itself recursive. The actor's indivi
 
 #### Decay Clock (Axioms I + II)
 
-The Decay Clock captures the pre-close time pressure on deal viability. Two time dynamics operate in parallel:
+The Decay Clock captures the pre-close time pressure on deal viability. Two time dynamics, each stated under its parent axiom, operate in parallel:
 
-- From Axiom I: $V_{effective}(t) = V_{solution} \cdot e^{-\delta t}$. Urgency fades from the triggering event, making the buyer's "make" alternative relatively more attractive.
-- From Axiom II: $\Delta_A(t) = \Delta_A(0) + \gamma t$. Information goes stale, raising the asymmetry multiplier on friction.
+- From Axiom I: urgency fades from the triggering event ($V_{effective}(t)$), making the buyer's "make" alternative relatively more attractive.
+- From Axiom II: information goes stale ($\Delta_A(t)$), raising the asymmetry multiplier on friction.
 
 Together, these push the deal's viability ($S > 0$) toward failure. Even a deal that was clearly viable at $t_0$ may not be by $t_1$ if too much time passes without active intervention.
 
@@ -280,15 +269,7 @@ The operational prescription is the same in both cases (fight time with active m
 
 #### Effective Cost (Axioms I + II)
 
-The effective cost equation has two representations: the detailed friction composition and the simplified transaction cost curve:
-
-$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
-
-$$y = ax^2 + c$$
-
-$$\text{subject to: } k > k_{threshold} \text{ and } F_{deployed} \sim k$$
-
-This equation captures the cost mechanics at any given moment within the boundary. It does not include the time dynamics (which come from the Decay Clock) or the durability conditions (which come from Axiom III). It is the *static* snapshot of deal economics.
+Effective Cost is the *static* snapshot of deal economics: Axiom II's cost equation, in either representation, evaluated inside Axiom I's boundary. It captures the cost mechanics at a given moment. It does not include the time dynamics (which come from the Decay Clock) or the durability conditions (which come from Axiom III).
 
 The derivation connecting the two representations, and the operating rule for which to use when, live in [03-mathematical-models.md](./03-mathematical-models.md).
 
@@ -459,6 +440,8 @@ This corollary states the principle. Detailed procedures (CRM field configuratio
 ---
 
 ## Version History
+
+**v13.2.** Editorial pass, no change to any axiom or equation. Part II now states only what each derivation adds beyond its parent axiom: the Boundary Condition, Friction Allocation failure modes, Recursive Cooperation, Decay Clock, and Effective Cost sections reference Part I's equations and examples instead of restating them. Part I remains the canonical statement of every equation, and Part III remains the one full assembly. The Safe No and the Logical Yes are now defined at first use in Axiom II's tagline.
 
 **v13.1.** Editorial pass, no change to any axiom or equation. "Fundamental Equation" now names the Surplus equation only, matching how the root README, CLAUDE.md, and the publishing generators already used it. The Part II bridge concept that previously carried the name is now **Effective Cost**. Coase's three costs are attributed consistently (his are search, bargaining, and enforcement; the ILG trio is an operationalization). Version history moved here from the top of the document.
 

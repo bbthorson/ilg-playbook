@@ -44,7 +44,7 @@ Agency friction also runs along two vectors at once, and ILG treats them differe
 **Notable statistics:**
 - 40–60% of B2B deals end in "No Decision" (Dixon/McKenna JOLT data).
 - 84% of implementations end in "Challenged/Failed" (Standish Group).
-- 60% of no-decision losses attributed to "Fear of Messing Up" (Dixon/McKenna).
+- 56% of no-decision losses attributed to "Fear of Messing Up" (Dixon/McKenna).
 - Loss aversion coefficient λ ≈ 2.25 (Kahneman & Tversky); psychological pain ~2x heavier than equivalent pleasure.
 
 ---
