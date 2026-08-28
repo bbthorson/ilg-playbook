@@ -34,4 +34,4 @@
 - 6.4% of features drive 80% of clicks.
 - Healthy B2B DAU/MAU ratio: 40%; average SaaS: 13%; <10% signals adoption failure.
 - Best-in-class NRR > 120%; companies > 100% NRR trade at 5.7× revenue vs. 3.1× (~46% discount) for < 100%.
-- Technical debt: developers ~44.1 hours/week on debt servicing; 20–40% of IT budgets.
+- Technical debt: developers spend roughly a third of their time on debt servicing, 13.5 hours of a 41-hour week (CISQ 2022); 20–40% of IT budgets.

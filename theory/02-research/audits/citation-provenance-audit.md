@@ -18,11 +18,10 @@
 | Statistic | Cited in | Primary source | Status |
 |---|---|---|---|
 | 16.2% success, 52.7% challenged, 31.1% canceled (n = 3,682) | [fear-of-failure.md](../fear-of-failure.md) | Standish Group, *CHAOS Report* (1994) | **Primary linked.** Rehosted copy: [utdallas.edu PDF](https://www.utdallas.edu/~chung/SYSM6309/chaos_report.pdf). |
-| 189% average cost overrun on challenged projects | [fear-of-failure.md](../fear-of-failure.md) | Standish Group, *CHAOS Report* (1994) | **Primary linked** (same PDF). A 1994 Standish figure. See discrepancy 3. |
+| 189% average cost overrun on challenged projects | [fear-of-failure.md](../fear-of-failure.md) | Standish Group, *CHAOS Report* (1994) | **Primary linked** (same PDF). A 1994 Standish figure, previously misattributed to McKinsey. See discrepancy 3. |
 | 42% of proposed features delivered (large organizations) | this audit | Standish Group, *CHAOS Report* (1994) | **Primary linked** (same PDF). |
-| Later-year rates: 37/42/21 (2012), 31/50/19 (2020) | this audit | Standish Group, CHAOS research (2012, 2020) | **Primary named.** Repo links only summaries ([OpenCommons](https://opencommons.org/CHAOS_Report_on_IT_Project_Outcomes)). The recent reports are paywalled. |
+| Later-year rates: 37/42/21 (2012), 31/50/19 (2020) | [fear-of-failure.md](../fear-of-failure.md), this audit | Standish Group, CHAOS research (2012, 2020) | **Primary named.** Repo links only summaries ([OpenCommons](https://opencommons.org/CHAOS_Report_on_IT_Project_Outcomes)). The recent reports are paywalled. |
 | Success by company size: 9% large, 16.2% medium, 28% small | this audit | Standish Group, *CHAOS Report* (1994) | **Primary linked.** Rehosted copy: [ResearchGate](https://www.researchgate.net/publication/263849222_The_Chaos_Report). |
-| 84% failure/challenged rate, attributed to 2020 | [fear-of-failure.md](../fear-of-failure.md) | see discrepancy 2 | **Unverified as stated.** 83.8% is the 1994 figure. The 2020 figures above sum to 69%. |
 
 ## Large-scale IT projects (McKinsey and University of Oxford)
 
@@ -39,7 +38,7 @@
 | $2.41T total cost of poor software quality in the US (2022) | [fear-of-failure.md](../fear-of-failure.md) | CISQ, *The Cost of Poor Software Quality in the US: A 2022 Report* | **Primary linked** ([report page](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/), [PDF](https://www.it-cisq.org/wp-content/uploads/sites/6/2022/11/CPSQ-Report-Nov-22-2.pdf)). |
 | $1.52T accumulated technical debt (2022) | this audit | same report | **Primary linked.** |
 | 650% increase in open-source supply-chain failures (2020 to 2021) | this audit | same report | **Primary linked.** |
-| Roughly 33% of developer time spent on technical debt (13.5 hours of a 41-hour week) | this audit | same report | **Primary linked.** Conflicting figures elsewhere in the repo. See discrepancy 4. |
+| Roughly 33% of developer time spent on technical debt (13.5 hours of a 41-hour week) | [fear-of-failure.md](../fear-of-failure.md), [re-aim-framework.md](../re-aim-framework.md), this audit | same report | **Primary linked.** Repo figures reconciled to this number on 2026-08-28. See discrepancy 4. |
 | 100× cost multiplier for post-deployment fixes vs. design-phase fixes | [fear-of-failure.md](../fear-of-failure.md), attributed to IBM/CISQ | attributed to IBM Systems Sciences Institute | **Unverified.** The original IBM study has never surfaced publicly and the figure circulates without provenance. Treat as illustrative, and do not cite externally. |
 
 ## Behavioral economics (loss aversion and personal value)
@@ -75,13 +74,13 @@
 
 ## Discrepancies found
 
-The point of a provenance audit is to catch drift between files. Open items, most severe first:
+The point of a provenance audit is to catch drift between files. Most severe first. A resolved item keeps its entry as the record of the correction:
 
 1. **FOMU share of No Decision: resolved.** [costly-signals.md](../costly-signals.md) said 60% and [fear-of-failure.md](../fear-of-failure.md) said 56%. The JOLT figure is 56%. costly-signals.md was corrected on 2026-08-28.
-2. **"84% failure/challenged (Standish, 2020)" is a year/figure mismatch.** 83.8% is the 1994 figure. The 2020 figures put challenged plus failed at 69%. Correct the year or the number in [fear-of-failure.md](../fear-of-failure.md).
-3. **"189% budget overruns on large projects (McKinsey)" is misattributed.** 189% is the Standish 1994 average overrun on challenged projects. The McKinsey large-project average is 45%. The statistics list in [fear-of-failure.md](../fear-of-failure.md) carries the misattribution, and its "zombie projects" claim (50 to 53% of projects, 189% over budget, 56% less value) welds the Standish overrun to the McKinsey value shortfall under one label. Rewrite against the primaries.
-4. **Developer time on technical debt appears as three different values.** [fear-of-failure.md](../fear-of-failure.md) says 69% of dev time. [re-aim-framework.md](../re-aim-framework.md) says 44.1 hours per week, which exceeds the work week it implies. The CISQ 2022 primary supports roughly 33% (13.5 hours of a 41-hour week). Reconcile both files to the CISQ figure or cite a different primary.
-5. **"45% timeline slippage" conflates two McKinsey numbers.** The primary reports 45% budget overrun and 7% schedule overrun. Fix in [fear-of-failure.md](../fear-of-failure.md).
+2. **"84% failure/challenged (Standish, 2020)": resolved.** 83.8% is the 1994 figure. The 2020 figures put challenged plus failed at 69%. [fear-of-failure.md](../fear-of-failure.md) now states the 2020 figures alongside the 1994 baseline, in both the abstract and the statistics list. Corrected on 2026-08-28.
+3. **"189% budget overruns on large projects (McKinsey)": resolved.** 189% is the Standish 1994 average overrun on challenged projects. The McKinsey large-project average is 45%. The statistics list in [fear-of-failure.md](../fear-of-failure.md) now attributes 189% to Standish 1994, and the "zombie projects" claim was rewritten to keep the Standish overrun and the McKinsey value shortfall separate. Corrected on 2026-08-28.
+4. **Developer time on technical debt: resolved.** The repo carried 69% of dev time ([fear-of-failure.md](../fear-of-failure.md)) and 44.1 hours per week ([re-aim-framework.md](../re-aim-framework.md)). Both files now carry the CISQ 2022 figure: roughly 33%, or 13.5 hours of a 41-hour week. Corrected on 2026-08-28.
+5. **"45% timeline slippage": resolved.** The McKinsey primary reports 45% budget overrun and 7% schedule overrun. [fear-of-failure.md](../fear-of-failure.md) now states both figures. Corrected on 2026-08-28.
 6. **Buying group size (6 to 10 decision makers, Gartner)** is flagged unverified inline in [buying-center-dynamics.md](../buying-center-dynamics.md). Still open.
 
 ## Not yet traced
