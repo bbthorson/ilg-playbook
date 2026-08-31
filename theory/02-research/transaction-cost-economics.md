@@ -29,5 +29,5 @@
 - Friction is an efficiency mechanism in high-specificity transactions, not waste.
 
 **Notable statistics:**
-- Hershey ERP failure (1999): $100M missed sales, 19% stock drop from compressed implementation timeline.
+- Hershey ERP failure (1999): roughly $100M in unfulfilled orders from a compressed implementation timeline; quarterly profit fell 19% and the stock fell 8%.
 - Nike i2 failure (2000): $100M sales loss, 20% stock decline from algorithm mismatch.

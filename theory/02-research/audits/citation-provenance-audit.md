@@ -62,6 +62,8 @@
 | 61 to 75% of buyers prefer a rep-free experience | this audit | Gartner sales surveys. The 75% figure is Gartner's 2019 finding for low-complexity purchases | **Primary linked.** 61%: [press release, 2025-06-25](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-sales-survey-finds-61-percent-of-b2b-buyers-prefer-a-rep-free-buying-experience). The newest figure is 67% ([press release, 2026-03-09](https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience)). The unrelated Experian link is retired. |
 | Median buying group of six to 10 decision makers | [buying-center-dynamics.md](../buying-center-dynamics.md) | Gartner, The B2B Buying Journey research | **Primary linked** ([Gartner research page](https://www.gartner.com/en/sales/insights/b2b-buying-journey)). The page blocks automated access. The figure is confirmed by multiple outlets quoting it verbatim. |
 | Personalization effects: 3.2× regret risk (passive), 2.3× decision confidence (active), 1.8× premium likelihood | this audit | Gartner survey of 1,464 B2B and B2C buyers (2025) | **Primary linked** ([press release](https://www.gartner.com/en/newsroom/press-releases/2025-06-03-gartner-survey-reveals-personalization-can-triple-the-likelihood-of-customer-regret-at-key-journey-points)). |
+| 61% of potential B2B deals fall through with No Decision | [prospect-theory.md](../prospect-theory.md) | Genius Drive, B2B sales research article | **Primary linked** ([Genius Drive article](https://geniusdrive.com/b2b-sales-research-the-proven-impact-of-value-selling/)). The article does not document its research base. Prefer the JOLT 40 to 60% figure for external use. |
+| 60% of technology buyers involved in renewal decisions regret nearly every purchase | [fear-of-failure.md](../fear-of-failure.md), [game-theory-and-nrr.md](../game-theory-and-nrr.md) | Gartner survey of 1,503 respondents at organizations with $50M+ revenue, fielded February to March 2023 | **Primary linked** ([press release, 2023-06-14](https://www.gartner.com/en/newsroom/press-releases/2023-06-14-gartner-survey-reveals-60-percent-of-technology-buyers-involved-in-renewal-decisions-regret-nearly-every-purchase-they-make)). game-theory-and-nrr.md previously paraphrased this as regret "within the first year". Corrected on 2026-08-28. |
 
 ## AI implementation gap
 
@@ -70,6 +72,39 @@
 | Roughly 80% of AI projects fail, twice the rate of traditional IT projects | this audit | RAND Corporation, "The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed" (RRA2680-1, August 2024), 65 practitioner interviews | **Primary linked** ([report page](https://www.rand.org/pubs/research_reports/RRA2680-1.html), [PDF](https://www.rand.org/content/dam/rand/pubs/research_reports/RRA2600/RRA2680-1/RAND_RRA2680-1.pdf)). |
 | 30% of GenAI projects abandoned after proof of concept by end of 2025 | [fear-of-failure.md](../fear-of-failure.md), this audit | Gartner press release (July 2024) | **Primary linked** ([press release, 2024-07-29](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025)). |
 | 10/20/70 effort split (algorithms / infrastructure / people and process) | this audit | unclear | **Unverified.** Circulates in consulting commentary. The repo's chain (a Medium post attributing it to RAND and McKinsey) does not establish it. |
+
+## Retention, alignment, and valuation
+
+| Statistic | Cited in | Primary source | Status |
+|---|---|---|---|
+| Involuntary churn ~0.8% and voluntary churn ~2.6%, average B2B SaaS | [game-theory-and-nrr.md](../game-theory-and-nrr.md) | Recurly churn rate benchmarks | **Primary linked** ([Recurly research](https://recurly.com/research/churn-rate-benchmarks/)). |
+| 36% higher retention and 38% higher win rates from tight functional alignment | [game-theory-and-nrr.md](../game-theory-and-nrr.md) | Aberdeen Group (with MathMarketing), sales-marketing alignment research | **Primary named.** The original report is no longer distributed and circulates through quotation. Previously misattributed to Sales-CS alignment. Corrected on 2026-08-28. |
+| 15% churn reduction from clawback implementation | previously [game-theory-and-nrr.md](../game-theory-and-nrr.md) | none found | **Unverified.** Circulates in compensation-vendor blogs attributed to an unnamed "Harvard Business Review study." Removed from the research entry on 2026-08-28. |
+| NRR above 120% roughly doubles the revenue multiple relative to 100 to 110% NRR | [game-theory-and-nrr.md](../game-theory-and-nrr.md), [re-aim-framework.md](../re-aim-framework.md) | FE International, NRR valuation analysis | **Primary named** ([FE International guide](https://www.feinternational.com/blog/net-revenue-retention-saas-valuation)). Replaces the untraceable "5.7× vs. 3.1× (46% discount)" pair on 2026-08-28. |
+
+## Product adoption and SaaS utilization
+
+| Statistic | Cited in | Primary source | Status |
+|---|---|---|---|
+| 80% of features rarely or never used, ~$29.5B invested in them, and 12% of features generating 80% of daily usage volume | [re-aim-framework.md](../re-aim-framework.md) | Pendo, *The 2019 Feature Adoption Report* (615 subscriptions, three months of usage data) | **Primary linked** ([report PDF](https://go.pendo.io/rs/185-LQW-370/images/2019%20Feature%20Adoption%20Report%20Digital.pdf)), verified against the report text. The repo previously said 6.4% of features drive 80% of clicks. The report says 12%. Corrected on 2026-08-28. |
+| 57% of weekly active users never touch features driving 70% of expansion revenue | previously [re-aim-framework.md](../re-aim-framework.md) | none found | **Unverified.** No source located. Removed from the research entry on 2026-08-28. |
+| $18M average annual license waste and 49% license utilization | [re-aim-framework.md](../re-aim-framework.md), [fear-of-failure.md](../fear-of-failure.md) | Zylo, *2024 SaaS Management Index* | **Primary linked** ([announcement](https://zylo.com/news/2024-saas-management-index/)). The repo previously cited the 2025 index for these 2024 figures. |
+| Roughly 300 SaaS applications per enterprise (average 305, median 240) | [fear-of-failure.md](../fear-of-failure.md) | Zylo, *2026 SaaS Management Index* | **Primary linked** ([announcement](https://zylo.com/news/2026-saas-management-index)). Replaces the unsourced "106 to 275" range on 2026-08-28. |
+| Average SaaS DAU/MAU ratio of 13% | [re-aim-framework.md](../re-aim-framework.md) | Mixpanel, product benchmarks report | **Primary named.** The former claim that 40% is the healthy B2B threshold is not supported. Published guidance puts healthy B2B at 10 to 20%, with 40%+ marking habitual-use products. Corrected on 2026-08-28. |
+
+## Channel volume and response
+
+| Statistic | Cited in | Primary source | Status |
+|---|---|---|---|
+| Email volume of 293B/day (2019) growing to 376B/day (2025) | [channel-collapse.md](../channel-collapse.md) | Radicati Group, *Email Statistics Reports* | **Primary linked** ([2019-2023 executive summary](https://www.radicati.com/wp/wp-content/uploads/2018/12/Email-Statistics-Report-2019-2023-Executive-Summary.pdf), [2021-2025 executive summary](https://www.radicati.com/wp/wp-content/uploads/2021/Email_Statistics_Report,_2021-2025_Executive_Summary.pdf)). |
+| Reply rates of 8.5% (2019) vs. 3.4% (2026) | [channel-collapse.md](../channel-collapse.md) | Backlinko/Pitchbox 2019 study of 12M outreach emails; Instantly cold-email platform benchmarks | **Primary named** ([Instantly benchmarks](https://instantly.ai/blog/cold-email-reply-rate-benchmarks/)). The 2019 figure measures link-building and PR outreach and the 2026 figure measures cold sales email, so the decline is directional rather than a measured drop. Annotated in the research entry on 2026-08-28. |
+
+## Case figures
+
+| Statistic | Cited in | Primary source | Status |
+|---|---|---|---|
+| Hershey (1999): roughly $100M in unfulfilled orders, quarterly profit down 19%, stock down 8% | [transaction-cost-economics.md](../transaction-cost-economics.md) | Contemporaneous business press, chronicled in CIO's "Hershey's Bittersweet Lesson" | **Primary named** ([CIO article](https://www.cio.com/article/2440386/supply-chain---hershey-s-bittersweet-lesson.html)). The repo previously called the 19% figure a stock drop. It was the profit drop, and the stock fell 8%. Corrected on 2026-08-28. |
+| Nike i2 (2000): roughly $100M in lost sales and a ~20% stock decline | [transaction-cost-economics.md](../transaction-cost-economics.md) | Nike's February 2001 earnings warning, chronicled in CIO's "Nike Rebounds" (Koch, 2004) | **Primary named.** Figures match contemporaneous coverage. |
 
 ---
 
@@ -86,15 +121,10 @@ The point of a provenance audit is to catch drift between files. Most severe fir
 
 ## Not yet traced
 
-Statistics quoted in research entries with no provenance row yet. Add a row when each is verified:
+Statistics quoted in research entries with no provenance row yet. Add a row when each is verified. The sourcing pass of 2026-08-28 cleared the original list into the tables above; two items remain:
 
-- 61% of deals lost to No Decision (Genius Drive), in [prospect-theory.md](../prospect-theory.md).
-- 60% renewal regret (Gartner, 2023), in [fear-of-failure.md](../fear-of-failure.md) and [game-theory-and-nrr.md](../game-theory-and-nrr.md).
-- Churn, clawback, and Sales-CS alignment figures in [game-theory-and-nrr.md](../game-theory-and-nrr.md): 15% churn reduction, 36% retention improvement, 38% win-rate improvement, 46% valuation discount.
-- SaaS utilization figures in [re-aim-framework.md](../re-aim-framework.md): license waste, DAU/MAU ratios, feature-use concentration. Zylo's 2025 index is linked there as primary, but the figures have not been checked against it line by line.
-- 106 to 275 SaaS applications per enterprise and 47% utilization, in [fear-of-failure.md](../fear-of-failure.md).
-- Email volume growth (293B to 376B per day) and reply-rate decline (8.5% to 3.4%), in [channel-collapse.md](../channel-collapse.md).
-- Hershey (1999) and Nike i2 (2000) failure figures, in [transaction-cost-economics.md](../transaction-cost-economics.md).
+- Gartner's $299B 2025 SaaS spending forecast (19.2% growth), in [re-aim-framework.md](../re-aim-framework.md).
+- Technical debt consuming 20 to 40% of IT budgets, in [re-aim-framework.md](../re-aim-framework.md).
 
 ## Maintaining this file
 
