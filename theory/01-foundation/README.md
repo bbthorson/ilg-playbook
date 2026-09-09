@@ -15,6 +15,7 @@ Parent: [theory/](../) · Sibling: [02-research/](../02-research/)
 3. **[02-cfir-field-mapping.md](./02-cfir-field-mapping.md)** — How the academic [CFIR](../02-research/cfir.md) framework maps to the ILG artifacts. Read this if you're designing or modifying field assets.
 4. **[03-mathematical-models.md](./03-mathematical-models.md)** — *(reference)* Functional forms, parameter specifications, and the derivation connecting the structural and reduced forms of transaction cost.
 5. **[04-glossary-and-notation.md](./04-glossary-and-notation.md)** — *(reference, read as needed)* Every symbol and term in one place, with a pointer to where each is canonically defined. The notation index is itself canonical, since symbols had no home before it. Includes a disambiguation section for the five symbol pairs that look alike and mean different things.
+6. **[05-seller-surplus-model.md](./05-seller-surplus-model.md)** — The seller's side of the transaction. The Constitution models what the buyer gains and pays; this specifies what the seller spends before signature, what portion of it is exposed, and when the spend is worth making. Read it before designing a forward-deployed or implementation-heavy engagement.
 
 ## What goes here vs. elsewhere
 

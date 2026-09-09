@@ -24,6 +24,20 @@ Two rules govern what is written here, and they differ by section.
 | $y$ | Total perceived transaction cost, reduced form. Equals $ax^2 + c$. | [Constitution, Axiom II](./00-ilg-constitution.md) |
 | $D(t)$ | A deal's trajectory through time, $TC(t) - OC(t)$. Stays below the ceiling only while Axiom III holds. | [Constitution, Axiom III](./00-ilg-constitution.md) |
 
+### Seller-side terms
+
+| Symbol | Meaning | Defined in |
+|---|---|---|
+| $S_{seller}$ | Seller surplus. Must exceed 0 for the deal to be worth pursuing, independently of $S$. | [05-seller-surplus-model.md §2](./05-seller-surplus-model.md) |
+| $C_{invest}$ | Pre-signature, deal-specific engineering. Sunk whether or not the deal closes. | [05-seller-surplus-model.md §2](./05-seller-surplus-model.md) |
+| $C_{deliver}$ | Post-signature cost to deliver what was sold. Contingent on revenue. | [05-seller-surplus-model.md §2](./05-seller-surplus-model.md) |
+| $V_{contract}$ | Contract value the seller receives. **Seller revenue, not buyer cost.** | [05-seller-surplus-model.md §2](./05-seller-surplus-model.md) |
+| $p_{close}$ | Probability the deal closes given the investment made. Not the same as $p_m$. | [05-seller-surplus-model.md §2](./05-seller-surplus-model.md) |
+| $Q$ | Appropriable quasi-rent. The seller's unprotected exposure, $C_{invest} - R_{redeploy}$. | [05-seller-surplus-model.md §3](./05-seller-surplus-model.md) |
+| $R_{redeploy}$ | Value of pre-signature work redeployed to other deals. **Not $R$, the reward payoff.** | [05-seller-surplus-model.md §3](./05-seller-surplus-model.md) |
+| $p_m$ | Probability of achieving milestone stage $m$. | [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) |
+| $S_m$ | Expected surplus at milestone stage $m$. A buyer-side quantity. | [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) |
+
 ### Value terms (Axiom I)
 
 | Symbol | Meaning | Defined in |
@@ -104,7 +118,7 @@ Two rules govern what is written here, and they differ by section.
 
 ## Symbol disambiguation
 
-Five pairs look alike and mean different things. Each has produced a documented error or required an inline correction somewhere in this repo.
+Seven pairs look alike and mean different things. Each has produced a documented error, required an inline correction somewhere in this repo, or was caught during drafting before it could.
 
 **1. $\gamma$ carries three unrelated meanings.** In the Constitution, $\gamma$ is the rate at which the asymmetry gap rebuilds over time. In the mathematical models it appears twice more, as $\gamma_r$ (responsiveness to an external catalyst) and $\gamma_{TO}$ (the technical overlap weight). The subscripts are load-bearing. A bare $\gamma$ always means asymmetry drift.
 
@@ -115,6 +129,10 @@ Five pairs look alike and mean different things. Each has produced a documented 
 **4. $a$, $b$, and $\lambda$ are three different quantities that all sit near 2.25.** $\lambda$ is measured (prospect theory), $b$ is the rate at which base friction grows per unit of asymmetry, and the derivation identifies $a$ with $b$, borrowing $\lambda$'s magnitude as justification rather than measurement. Do not cite $a$ as though prospect theory established it. The full account is [03-mathematical-models.md §1.6](./03-mathematical-models.md).
 
 **5. $F_{base}$ and $F_{effective}$ differ by the multiplier.** $F_{base}$ is the three components summed. $F_{effective}$ is that sum after amplification by $(1 + \Delta_A)$. A third form appears inside the derivation, where base friction is written as a function of the gap, $F_{base}(\Delta_A) = c + b\Delta_A$. Quoting a friction figure without saying which form it is makes the number unusable.
+
+**6. $c$ is a buyer cost and the $C$ terms are seller costs.** Lowercase $c$ is the direct cost the buyer pays, which is the seller's revenue. $C_{invest}$ and $C_{deliver}$ are what the seller spends. They sit on opposite sides of the transaction and a figure quoted without its case is unreadable. $V_{contract}$ has the same hazard: it is seller revenue, not a value the buyer receives.
+
+**7. Three surpluses and two probabilities share letters.** Bare $S$ is the buyer's Deal Surplus from Part III. $S_{seller}$ is the seller's, and the two are independent conditions that must both hold. $S_m$ is neither: it is the buyer's expected surplus at one milestone stage. Likewise $p_{close}$ is the probability a deal closes and $p_m$ is the probability a stage completes. This pair was caught while drafting [05-seller-surplus-model.md](./05-seller-surplus-model.md) rather than in use.
 
 ---
 

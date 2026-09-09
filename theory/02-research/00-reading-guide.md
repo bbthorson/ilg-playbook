@@ -76,6 +76,10 @@ Plus the implementation layer:
 
 12. **[Process Misfit](./process-misfit.md)** — Read after Transaction Cost Economics and before CFIR. Williamson establishes that asset specificity raises governance cost. The misfit literature says what that specificity is made of in a software deal, and names the six domains a seller can inspect before signature. Supplies the structure of $F_{implementation}$, the way Buying Center Dynamics supplies the structure of $F_{consensus}$.
 
+Plus the seller-side layer:
+
+13. **[Appropriable Quasi-Rents and Supplier-Side Hold-Up](./klein-crawford-alchian.md)** — Read after Transaction Cost Economics and alongside Incomplete Contracts. Williamson says specificity creates exposure. Klein, Crawford and Alchian name the quantity at stake and establish that it belongs to whichever party sank the investment, which in a forward-deployed motion is the seller. Backs [05-seller-surplus-model.md](../01-foundation/05-seller-surplus-model.md).
+
 ---
 
 ## Reading guide by audience
