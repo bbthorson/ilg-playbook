@@ -87,6 +87,21 @@ Frame Alignment Processes are the four ways to connect an initiative to what a s
 
 ---
 
+## Intervention Characteristics → Process Calculator
+
+Two CFIR constructs govern deal triage rather than any single artifact. Both live in the [Process Calculator](../../practice/01-field-assets/process-calculator.md), which routes the deal before an artifact is chosen.
+
+| Calculator Section | CFIR Construct | What It Captures | Rep Sees It As |
+|---|---|---|---|
+| **Step 0: Workflow Maturity Gate** | Compatibility (maturity sense) | Has the buyer defined this process at all? | "Is there an SOP?" |
+| **Step 2b Gate A** | Compatibility (workflow sense) | Is there an encoded workflow for the product to fit, or does the product create the practice? | "Are we replacing something or starting something?" |
+| **Step 2b Gate B** | Trialability | Can the buyer verify fit themselves, cheaply, and walk away? | "Can they just try it?" |
+| **Step 2b divergence score** | Compatibility (workflow sense) | How far the buyer's encoded workflow sits from the one the product assumes | "How weird is their setup?" |
+
+Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves does not need the seller to prove it, which removes the condition the ILG artifacts exist to satisfy. Research backing sits in [process-misfit.md](../02-research/process-misfit.md).
+
+---
+
 ## Coverage Gaps
 
 The following CFIR constructs are **not yet operationalized** in any field asset:
@@ -95,7 +110,6 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 |---|---|---|---|
 | **Cosmopolitanism** | Outer Setting | How networked is the org with external peers? Insular orgs resist outside ideas. | Add to Blueprint: "How does your org evaluate new technology? Internal review only, or do you benchmark against peers?" |
 | **Learning-Centeredness** | Culture | Is there psychological safety to fail? Critical for adoption but not directly asked. | Add to Blueprint Sacred Cow Scan or Red Team Round 2 probes |
-| **Trialability** | Intervention Characteristics | Can the buyer try before committing? Currently implicit in Paid Diagnostic gate but not formalized. | Formalize in the triage protocol as a factor in Turnkey vs. Structural deal classification |
 
 ---
 
