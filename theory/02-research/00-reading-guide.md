@@ -72,6 +72,10 @@ Plus three sources added in Constitution v13. Each deepens an axiom that already
 10. **[Buying Center Dynamics](./buying-center-dynamics.md)** — Read before CFIR. Establishes that the buyer is a coalition rather than an agent, which is the premise CFIR's Inner Setting analysis depends on. Supplies the structure of $F_{consensus}$.
 11. **[Real Options](./real-options.md)** — Read after Prospect Theory. Loss aversion explains why the buyer fears the downside. Real options explains why waiting is a rationally priced alternative rather than mere inertia, and why staged commitment is the counter.
 
+Plus the implementation layer:
+
+12. **[Process Misfit](./process-misfit.md)** — Read after Transaction Cost Economics and before CFIR. Williamson establishes that asset specificity raises governance cost. The misfit literature says what that specificity is made of in a software deal, and names the six domains a seller can inspect before signature. Supplies the structure of $F_{implementation}$, the way Buying Center Dynamics supplies the structure of $F_{consensus}$.
+
 ---
 
 ## Reading guide by audience
