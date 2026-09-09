@@ -1,6 +1,6 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 13.3
+**Version:** 14.0
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
@@ -37,7 +37,7 @@ The three axioms are progressively visualized through a potential-well diagram t
 
 ### Axiom I — The Law of Transaction Cost Composition
 
-> **Transaction costs in B2B deals decompose into three independently-arising components: search, consensus, and implementation. Their combined level, driven principally by asset specificity, determines which motion is viable. Low combined costs fit PLG or SLG, high combined costs require structured intervention, and Bridge/Toaster classification follows from measuring them.**
+> **Transaction costs in B2B deals decompose into three independently-arising components: search, consensus, and implementation. Their combined level, driven principally by asset specificity, determines which motion is viable. Low combined costs fit PLG or SLG, high combined costs require structured intervention, and Turnkey vs. Structural deal classification follows from measuring them.**
 
 > *Tagline: **"Costs determine the deal."** The combined level of search, consensus, and implementation costs determines which motion is viable, and what the sales process must do.*
 >
@@ -45,13 +45,13 @@ The three axioms are progressively visualized through a potential-well diagram t
 >
 > *Origin: Coase (1937). Using the price mechanism is itself costly.*
 
-**Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs. Williamson operationalized this through *asset specificity*, the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the ILG artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Toaster does not need a Blueprint.
+**Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs. Williamson operationalized this through *asset specificity*, the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the ILG artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Turnkey deal does not need a Blueprint.
 
 **Mathematical content.** The boundary condition for ILG applicability:
 
 $$k > k_{threshold} \quad \text{and} \quad F_{deployed} \sim k$$
 
-Where $k$ is the asset specificity of the deal and $F_{deployed}$ is the friction structure used to manage it. The first condition is necessary (Bridge vs. Toaster classification). The second is the scaling requirement (friction must match specificity).
+Where $k$ is the asset specificity of the deal and $F_{deployed}$ is the friction structure used to manage it. The first condition is necessary (Turnkey vs. Structural deal classification). The second is the scaling requirement (friction must match specificity).
 
 The boundary also has time dynamics. Value erodes from the triggering event:
 
@@ -61,8 +61,8 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 
 **Failure modes.**
 
-- **Under-frictioned (PLG on a Bridge).** Asset specificity too high for the friction deployed. The buyer faces hold-up risk and chooses to build internally rather than transact. Manifests as "we decided to handle this in-house" (Stanford ChatEHR, Apple's vertical silicon, any "we built it ourselves" story).
-- **Over-frictioned (ILG on a Toaster).** Asset specificity too low for the friction deployed. The cost of Blueprints, Red Teams, and MIPs exceeds the surplus they unlock. The buyer experiences over-engineering and chooses a competitor with lighter motion.
+- **Under-frictioned (Velocity motion on a Structural deal).** Asset specificity too high for the friction deployed. The buyer faces hold-up risk and chooses to build internally rather than transact. Manifests as "we decided to handle this in-house" (Stanford ChatEHR, Apple's vertical silicon, any "we built it ourselves" story).
+- **Over-frictioned (ILG on a Turnkey deal).** Asset specificity too low for the friction deployed. The cost of Blueprints, Red Teams, and MIPs exceeds the surplus they unlock. The buyer experiences over-engineering and chooses a competitor with lighter motion.
 
 **Operating instruction.** Before deploying any sales motion, classify the deal against this boundary. The operational tool is the [Process Calculator](../../practice/01-field-assets/process-calculator.md).
 
@@ -143,7 +143,7 @@ The four **Friction Allocation Principles**, the operational content of this axi
 
 **What governance actually allocates (Grossman-Hart-Moore).** Skin in the game is the prescription. Residual control rights are what it distributes. Grossman and Hart established that contracts covering complex transactions are incomplete as a structural matter rather than a drafting failure: states arise that no party specified and no court can verify. What governs the relationship in those states is not the contract but the pre-agreed allocation of the right to decide. Hart and Moore showed that misallocating those rights suppresses relationship-specific investment before it happens, because a party who expects to be held up declines to sink the investment that creates the exposure.
 
-This is why more legal review does not fix a stalled Bridge deal. The gap sits in the allocation of decision authority. Two interventions work, and ILG deploys both: the Blueprint shrinks the set of unspecified states by mapping the environment before commercial execution, and the MIP distributes decision authority inside whatever set remains, so neither party can impose an outcome unilaterally when an unmapped constraint appears.
+This is why more legal review does not fix a stalled Structural deal. The gap sits in the allocation of decision authority. Two interventions work, and ILG deploys both: the Blueprint shrinks the set of unspecified states by mapping the environment before commercial execution, and the MIP distributes decision authority inside whatever set remains, so neither party can impose an outcome unilaterally when an unmapped constraint appears.
 
 The recursive extension is the new content of this axiom: any party that adjudicates signal quality (channels, platforms, ratings agencies, governance bodies) must themselves satisfy the cooperation condition, or they drift from adjudication into extraction. The principle that works at the deal level (skin in the game) applies at every level of the system.
 
@@ -177,7 +177,7 @@ Part II organizes the operational consequences of the axioms. Concepts come in t
 
 #### From Axiom I — The Boundary Condition
 
-The Boundary Condition operationalizes Axiom I's central claim: friction must match asset specificity. It is the test every deal must pass before any ILG investment is justified. A deal is within the ILG boundary when both of Axiom I's conditions hold: the specificity score exceeds the threshold ($k > k_{threshold}$, so the deal is a Bridge rather than a Toaster), and the friction deployed matches the specificity ($F_{deployed} \sim k$). Axiom I's failure modes describe what happens on either side of the boundary, and the [Process Calculator](../../practice/01-field-assets/process-calculator.md) measures it.
+The Boundary Condition operationalizes Axiom I's central claim: friction must match asset specificity. It is the test every deal must pass before any ILG investment is justified. A deal is within the ILG boundary when both of Axiom I's conditions hold: the specificity score exceeds the threshold ($k > k_{threshold}$, so the deal is Structural rather than Turnkey), and the friction deployed matches the specificity ($F_{deployed} \sim k$). Axiom I's failure modes describe what happens on either side of the boundary, and the [Process Calculator](../../practice/01-field-assets/process-calculator.md) measures it.
 
 What the derivation adds is sequence: the Boundary Condition is the entry point to ILG. Until a deal passes it, no other prescription in the framework applies.
 
@@ -196,7 +196,7 @@ A signal carries information only when its cost cannot be removed by efficiency 
 The party producing the signal pays the cost. When the receiver bears the cost (filtering, evaluating, deciphering), the signal mechanism is broken regardless of how good any individual signal is. *Failure mode:* misallocated friction and the babbling equilibrium.
 
 **3. Friction scales with stakes.**
-The signal cost should match the size of the claim. A small claim requires modest signal, and a large claim requires substantial signal. Mismatch fails in both directions. Over-frictioned small claims feel disproportionate, and under-frictioned large claims feel reckless. *Failure mode:* a Bridge sold with PLG-grade signals (under-frictioned) or a Toaster sold with ILG-grade signals (over-frictioned).
+The signal cost should match the size of the claim. A small claim requires modest signal, and a large claim requires substantial signal. Mismatch fails in both directions. Over-frictioned small claims feel disproportionate, and under-frictioned large claims feel reckless. *Failure mode:* a Structural deal sold with low-friction velocity signals (under-frictioned) or a Turnkey deal sold with heavy ILG signals (over-frictioned).
 
 **4. Adjudicators bear consequences of their validation.**
 Parties that validate or filter signals (channels, platforms, ratings agencies, governance bodies) must lose something when they let bad signals through. Without this, the adjudicator drifts from gatekeeper to extractor. *Failure mode:* governance-level drift, whose examples are listed under Axiom III.
@@ -399,8 +399,8 @@ The equation is a diagnostic, not a forecast. When a deal stalls, walk through i
 
 | Axiom | Failure mode | Diagnostic signal |
 |---|---|---|
-| I | Under-frictioned Bridge | Score 10+, treated with PLG motion → buyer builds internally |
-| I | Over-frictioned Toaster | Score 4–9, treated with ILG motion → buyer chooses competitor |
+| I | Under-frictioned Structural deal | Score 10+, treated with velocity motion → buyer builds internally |
+| I | Over-frictioned Turnkey deal | Score 4–9, treated with ILG motion → buyer chooses competitor |
 | II | Cheap talk | Signal violates Single Crossing → no $\Delta_A$ reduction |
 | II | Misallocated friction | Receiver bears cost → babbling equilibrium |
 | II | Akerlof saturation | $\Delta_A > \Delta_A^*$ → buyer exits market |
@@ -449,6 +449,8 @@ This corollary states the principle. Detailed procedures (CRM field configuratio
 
 ## Version History
 
+**v14.0.** Retired the "Bridge" and "Toaster" deal analogies in favor of the 2x2 Deal Archetype Matrix. Deals are now canonically classified as **Turnkey Deals** ($k \le 9$, low friction/specificity, velocity motion) vs. **Structural Deals** ($k \ge 10$, high friction/specificity, ILG motion) across category legibility. Core axioms, mathematical content, and derivations unchanged.
+
 **v13.3.** Editorial pass, no change to any axiom or equation. Axiom I's statement is tightened to three sentences. The Three Sales Levers move from Axiom II's statement in Part I to Part II as a primary derivation, which is where operational consequences live. Signposting sentences that restated a document relationship in reverse ("the why / the how") are removed here and in the glossary and reading guide.
 
 **v13.2.** Editorial pass, no change to any axiom or equation. Part II now states only what each derivation adds beyond its parent axiom: the Boundary Condition, Friction Allocation failure modes, Recursive Cooperation, Decay Clock, and Effective Cost sections reference Part I's equations and examples instead of restating them. Part I remains the canonical statement of every equation, and Part III remains the one full assembly. The Safe No and the Logical Yes are now defined at first use in Axiom II's tagline.
@@ -461,7 +463,7 @@ This corollary states the principle. Detailed procedures (CRM field configuratio
 2. **Axiom III gains its missing theoretical layer.** Skin in the game is the prescription. Residual control rights (Grossman-Hart, Hart-Moore) are the mechanism it allocates, and incomplete contract theory explains why no amount of drafting substitutes for governance.
 3. **Staged Commitment enters as a bridge concept** (Axioms II + III), grounded in real options theory. It supplies the formal account of why a buyer rationally waits even when the business case is positive.
 
-**Retained from v12.** The three axioms map to three well-studied bodies of economics: Axiom I to Transaction Cost Economics (Coase, Williamson), Axiom II to Signaling Theory and Behavioral Economics (Spence, Kahneman/Tversky), and Axiom III to Game Theory and Institutional Governance (Axelrod, Williamson). Axiom I does not lead with asset specificity as the classification gate. It establishes the cost structure first (search, consensus, and implementation as independently-arising components) and treats Bridge/Toaster classification as downstream of measuring those costs.
+**Retained from v12.** The three axioms map to three well-studied bodies of economics: Axiom I to Transaction Cost Economics (Coase, Williamson), Axiom II to Signaling Theory and Behavioral Economics (Spence, Kahneman/Tversky), and Axiom III to Game Theory and Institutional Governance (Axelrod, Williamson). Axiom I does not lead with asset specificity as the classification gate. It establishes the cost structure first (search, consensus, and implementation as independently-arising components) and treats Turnkey vs. Structural classification as downstream of measuring those costs.
 
 ---
 
@@ -474,7 +476,7 @@ This corollary states the principle. Detailed procedures (CRM field configuratio
 - [04-glossary-and-notation.md](./04-glossary-and-notation.md) — Canonical index of every symbol used here, plus disambiguation of the pairs that collide ($\delta$ vs $\delta_{discount}$, $\gamma$ vs $\gamma_r$, $\Delta_A$ vs $\hat{\Delta}_A$).
 
 **Academic backing** (per axiom):
-- Axiom I (Transaction Cost Composition) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md), [fear-of-failure.md](../02-research/fear-of-failure.md) (empirical scale of $F_{implementation}$ and the under-frictioned Bridge failure mode)
+- Axiom I (Transaction Cost Composition) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md), [fear-of-failure.md](../02-research/fear-of-failure.md) (empirical scale of $F_{implementation}$ and the under-frictioned Structural failure mode)
 - Axiom II (Uncertainty Inflation) → [costly-signals.md](../02-research/costly-signals.md), [prospect-theory.md](../02-research/prospect-theory.md), [fear-of-failure.md](../02-research/fear-of-failure.md), [cfir.md](../02-research/cfir.md), [buying-center-dynamics.md](../02-research/buying-center-dynamics.md)
 - Axiom III (Governance) → [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md), [re-aim-framework.md](../02-research/re-aim-framework.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md)
 - Staged Commitment (Axioms II + III) → [real-options.md](../02-research/real-options.md)

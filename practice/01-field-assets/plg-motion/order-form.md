@@ -2,7 +2,7 @@
 
 > **Status:** DRAFT — inferred from [01-velocity-standard-order-protocol.md](./01-velocity-standard-order-protocol.md) Step 3. Review with legal/finance and ratify before deploying.
 
-**Purpose:** Zero-friction external contract for Toaster deals. One signature, click-through MSA, no redlines.
+**Purpose:** Zero-friction external contract for Turnkey deals. One signature, click-through MSA, no redlines.
 
 **When to use:** After the [Prospect Evaluation Form](./prospect-evaluation.md) returns GREEN.
 

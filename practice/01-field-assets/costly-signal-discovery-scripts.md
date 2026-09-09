@@ -2,7 +2,7 @@
 
 **Purpose:** To supply the specific asks that convert a buyer's stated interest into evidenced commitment, and to read what the response tells you about the deal.
 
-**Use when:** Running Blueprint discovery on a Bridge deal, or at any point where a buyer's enthusiasm is outrunning their investment.
+**Use when:** Running Blueprint discovery on a Structural deal, or at any point where a buyer's enthusiasm is outrunning their investment.
 
 **Operationalizes:** Axiom II. The Single Crossing Property says a signal separates quality only when it costs more to fake than to produce honestly. These scripts produce that cost on the buyer's side.
 
@@ -10,7 +10,7 @@
 
 ## The premise
 
-Discovery is usually treated as information gathering. On a Bridge, the request itself is the instrument.
+Discovery is usually treated as information gathering. On a Structural deal, the request itself is the instrument.
 
 A buyer who is genuinely committed can produce a data sample, convene three departments, and name a project manager, because those things are cheap for them relative to the value they expect. A buyer who is gathering options to satisfy a procurement requirement finds the same requests expensive, because the value they expect is close to zero. The ask separates them, and it does so before the seller has spent months on a deal that was never real.
 
@@ -33,7 +33,7 @@ Asks escalate in cost. Run them in order, because a buyer who fails an early run
 | **5** | A named project manager with committed hours | Budgeted headcount | Named delivery resources and an escalation path |
 | **6** | Paid diagnostic or pilot | Real money, internal approval | Fixed scope, fixed price, defined exit |
 
-Rungs 1 through 3 belong in Blueprint discovery. Rungs 4 and 5 gate the Red Team and the MIP. Rung 6 applies when the buyer requests a pilot, which under the Process Calculator override already classifies the deal as a Bridge.
+Rungs 1 through 3 belong in Blueprint discovery. Rungs 4 and 5 gate the Red Team and the MIP. Rung 6 applies when the buyer requests a pilot, which under the Process Calculator override already classifies the deal as Structural.
 
 ---
 

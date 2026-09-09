@@ -20,7 +20,7 @@ Go-to-market methodologies get compared as though they all answer the same quest
 
 The tiers compose. A team running ILG still needs a qualification standard, and MEDDPICC works as well inside ILG as inside SLG. ILG changes what the qualification evidence *is*: the Economic Buyer is confirmed in the Blueprint, the Decision Criteria are the Red Team's surfaced failure modes, and the Champion is tested by whether they commit resources to the MIP. A rep still needs conversational technique, and Challenger's commercial teaching is well suited to the Blueprint interview.
 
-The distinction matters most when someone says their team "already does ILG because they run MEDDPICC on complex deals." Qualification tells you whether a deal is real. It does not reduce the buyer's implementation risk, which is the only thing that closes a Bridge.
+The distinction matters most when someone says their team "already does ILG because they run MEDDPICC on complex deals." Qualification tells you whether a deal is real. It does not reduce the buyer's implementation risk, which is the only thing that closes a Structural deal.
 
 ---
 
@@ -50,7 +50,7 @@ ILG deals carry little of either. The buyer knows the category and the field. Wh
 | Dimension | **ILG** | **PLG** | **SLG** |
 |---|---|---|---|
 | **Market Stage** | Saturated | Mature / Efficient | Nascent |
-| **Deal Archetype** | The Bridge | The Toaster | The Pitch |
+| **Deal Archetype** | The Structural Deal | The Turnkey Deal | The Evangelism Deal |
 | **Friction Type** | Structural (implementation) | Minimal | Educational (market-creation) |
 | **Cost Score** | 10–20 (Mature) | 4–9 (Mature) | n/a (market not legible) |
 | **Optimization** | Safety & certainty | Velocity & volume | Education & vision-casting |
@@ -63,6 +63,15 @@ ILG deals carry little of either. The buyer knows the category and the field. Wh
 | **Comp Structure** | [Vested commission](../../practice/02-internal-ops/03-incentives-vested-commission.md) | CS-led expansion bonuses | Traditional ACV commission |
 
 ---
+
+### The 2x2 Deal Archetype Matrix
+
+Deals sit on two independent economic axes: **Transaction Friction / Asset Specificity** (measured by the Process Calculator score 4–20) and **Category Legibility / Competition** (Nascent vs. Mature):
+
+| | Low Specificity ($k \le 9$) | High Specificity ($k \ge 10$) |
+|---|---|---|
+| **Mature / High Competition** | **Turnkey Deals (PLG Motion)**<br>Modular tools, standard APIs, low switching cost. Optimize for velocity and frictionless self-service. | **Structural Deals (ILG Motion)**<br>Deep ERP/EHR integration, multi-stakeholder consensus. Optimize for implementation certainty and safety. |
+| **Nascent / Low Competition** | **Evangelism Deals (SLG Motion)**<br>Problem awareness low, category unformed. Educate the market, create the line item. | **Strategic Co-Development / Chaos Trap**<br>High custom build. If process is uncodified $\to$ Chaos Trap (route to consulting). If codified $\to$ Strategic Alpha/Partner. |
 
 ## The Three Motions in Context
 
@@ -217,9 +226,9 @@ New technical paradigms reset the clock. Complex generative AI integration, heal
 
 The most common motion-selection mistakes. The first two are Axiom I's failure modes seen from the field, with the symptoms a rep observes and the root cause behind them:
 
-**Treating a Bridge like a Toaster.** PLG or SLG applied to a deal that actually needs ILG. *Symptoms:* deal stalls with no clear blocker, eventually "no decision" or churn shortly after signature. *Root cause:* Process Calculator score not honored; reps optimizing for cycle time instead of close quality.
+**Treating a Structural deal like a Turnkey deal.** PLG or SLG applied to a deal that actually needs ILG. *Symptoms:* deal stalls with no clear blocker, eventually "no decision" or churn shortly after signature. *Root cause:* Process Calculator score not honored; reps optimizing for cycle time instead of close quality.
 
-**Treating a Toaster like a Bridge.** ILG applied to a low-specificity deal. *Symptoms:* buyer experiences over-engineering, chooses a faster competitor or self-serves. *Root cause:* reps trained on ILG playbook applying it indiscriminately.
+**Treating a Turnkey deal like a Structural deal.** ILG applied to a low-specificity deal. *Symptoms:* buyer experiences over-engineering, chooses a faster competitor or self-serves. *Root cause:* reps trained on ILG playbook applying it indiscriminately.
 
 **Treating a Nascent Market like Mature.** PLG or ILG tactics in a market where the buyer cannot yet articulate the problem. *Symptoms:* low engagement, "interesting but not now" responses. *Root cause:* mistaking absence of competition for product-market fit.
 
@@ -251,7 +260,7 @@ The first three are properties of the deal. The last three are properties of the
 
 ## Key Principle
 
-> "Never apply a Bridge motion to a Toaster, and never sell a Bridge without a Blueprint."
+> "Never apply a Turnkey motion to a Structural deal, and never sell a Structural deal without a Blueprint."
 
 The motion is not about your preference. It is about the deal's physics — derived from the market stage you are operating in and the asset specificity of the deal itself.
 
@@ -263,6 +272,6 @@ The motion is not about your preference. It is about the deal's physics — deri
 - [02-cfir-field-mapping.md](./02-cfir-field-mapping.md) — How ILG artifacts operationalize implementation science.
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms behind $\Delta_A$, $F_{consensus}$, and the urgency decay rate.
 - [process-calculator.md](../../practice/01-field-assets/process-calculator.md) — Operational tool implementing the Decision Framework.
-- [ilg-motion/](../../practice/01-field-assets/ilg-motion/) — Bridge motion artifacts (Blueprint / Red Team / MIP).
-- [plg-motion/](../../practice/01-field-assets/plg-motion/) — Toaster motion artifacts.
+- [ilg-motion/](../../practice/01-field-assets/ilg-motion/) — Structural deal motion artifacts (Blueprint / Red Team / MIP).
+- [plg-motion/](../../practice/01-field-assets/plg-motion/) — Turnkey deal motion artifacts.
 - [03-incentives-vested-commission.md](../../practice/02-internal-ops/03-incentives-vested-commission.md) — Comp structure for ILG sellers.

@@ -2,7 +2,7 @@
 
 > **Status:** DRAFT — inferred from [01-velocity-standard-order-protocol.md](./01-velocity-standard-order-protocol.md) Step 2. Review and ratify before deploying.
 
-**Purpose:** A 2-minute "Fit Check" the rep completes *before* sending the [Standard Order Form](./order-form.md). Catches Bridges-in-disguise so they don't slip through the velocity motion.
+**Purpose:** A 2-minute "Fit Check" the rep completes *before* sending the [Standard Order Form](./order-form.md). Catches Structural-deals-in-disguise so they don't slip through the velocity motion.
 
 **When to use:** After triage scores < 10 on the [process calculator](../process-calculator.md), and the prospect has not asked for a Pilot, POC, or Custom Security Review.
 
@@ -26,7 +26,7 @@
 - [ ] No requirement for SSO, SCIM, or custom IAM beyond what's in the standard tier
 - [ ] No PHI / regulated-data path that triggers BAA or HIPAA review
 
-**If any box unchecked:** Technical Fit = NO. **Abort velocity motion.** Re-classify as Bridge.
+**If any box unchecked:** Technical Fit = NO. **Abort velocity motion.** Re-classify as Structural deal.
 
 ---
 
@@ -46,7 +46,7 @@ Prospect has reasonable expectations for support:
 - [ ] OK with self-serve onboarding (no implementation consultant)
 - [ ] No request for dedicated phone line, named TAM, or executive sponsor
 
-> **Red flag:** If the prospect asked for a dedicated phone number, named CSM, or quarterly business review, this is **not a Toaster**. DQ from velocity motion or **upsell to Enterprise tier**.
+> **Red flag:** If the prospect asked for a dedicated phone number, named CSM, or quarterly business review, this is **not a Turnkey deal**. DQ from velocity motion or **upsell to Enterprise tier**.
 
 ---
 
@@ -54,7 +54,7 @@ Prospect has reasonable expectations for support:
 
 - [ ] **GREEN** — All three sections pass. Proceed to [Standard Order Form](./order-form.md).
 - [ ] **YELLOW** — User Proficiency soft (will need extra hand-holding). Proceed but flag CS.
-- [ ] **RED** — Technical Fit or Karen Check failed. **Abort.** Either disqualify or escalate to Bridge motion ([Contextual Blueprint](../ilg-motion/01-discovery-contextual-blueprint.md)).
+- [ ] **RED** — Technical Fit or Karen Check failed. **Abort.** Either disqualify or escalate to Structural deal motion ([Contextual Blueprint](../ilg-motion/01-discovery-contextual-blueprint.md)).
 
 **Rep signature / date:** _____________________
 

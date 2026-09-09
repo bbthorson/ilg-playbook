@@ -32,7 +32,7 @@ Two rules govern what is written here, and they differ by section.
 | $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, Axiom I](./00-ilg-constitution.md) |
 | $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. | [Constitution, Axiom I](./00-ilg-constitution.md) |
 | $k$ | Asset specificity of the deal. | [Constitution, Axiom I](./00-ilg-constitution.md) |
-| $k_{threshold}$ | The Bridge / Toaster boundary. Above it, ILG applies. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
+| $k_{threshold}$ | The Structural / Turnkey boundary ($k = 10$). Above it, ILG applies. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
 | $F_{deployed}$ | The friction structure the seller actually deploys. Must scale with $k$. | [Constitution, Axiom I](./00-ilg-constitution.md) |
 
 ### Friction terms (Axiom II)
@@ -126,8 +126,8 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Bridge** | A deal whose specificity requires the ILG motion. Scores 10 to 20. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
-| **Toaster** | A low-specificity deal that a velocity motion serves better. Scores 4 to 9. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
+| **Structural Deal** | A deal whose specificity requires the ILG motion. Scores 10 to 20. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
+| **Turnkey Deal** | A low-specificity deal that a velocity motion serves better. Scores 4 to 9. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
 | **Chaos Trap** | A buyer with no documented workflow, in any market. Route to consulting, not to a motion. | [Process Calculator, Step 0](../../practice/01-field-assets/process-calculator.md) |
 | **Market States** | Nascent, Transitional, Mature. Each carries a characteristic friction profile. | [Constitution, Clarifying Concepts](./00-ilg-constitution.md) |
 | **Boundary Condition** | The test every deal passes before ILG investment is justified. | [Constitution, Part II](./00-ilg-constitution.md) |

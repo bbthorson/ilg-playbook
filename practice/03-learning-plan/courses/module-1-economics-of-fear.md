@@ -232,7 +232,7 @@ In a **repeated game** (SaaS with renewals), unresolved asymmetry leads to:
 
 **Scenario:** 
 
-You're selling a revenue operations platform (Bridge deal, score 14). The prospect is excited but keeps delaying the decision. You suspect high information asymmetry.
+You're selling a revenue operations platform (Structural deal, score 14). The prospect is excited but keeps delaying the decision. You suspect high information asymmetry.
 
 **Current State:**
 - Champion loves the product (saw a demo)

@@ -99,24 +99,35 @@ The same form works for any rule in the table, for example `<!-- vale ILG.AntiHy
 
 Prefer this over deleting the row. An unenforced rule catches nothing.
 
+## Pre-commit hook
+
+A ready-to-use pre-commit hook is provided in [`.githooks/pre-commit`](../../../.githooks/pre-commit). It runs `check_playbook.py` and `vale .` automatically before every commit.
+
+To activate it for your local clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
 ## Current state of the repo
 
-As of 2026-08-13, both checkers pass on all 89 files. A clean run is now the baseline, so any new hit is a real one:
+As of v14.0 (2026-09), both checkers pass cleanly across all files in the repository:
 
 | Rule | State |
 |---|---|
-| `RetiredTerms` | Clean. Zero hits repo-wide. |
+| `check_playbook.py` | Clean. Zero broken links or LaTeX errors across 78 scanned markdown files. |
+| `RetiredTerms` | Clean. Zero hits repo-wide. Covers retired axioms, old directory numbers, and retired deal analogies ("Bridge" / "Toaster" -> Structural / Turnkey). |
 | `NoEmoji` | Clean. |
-| `AntiHype` | Clean, with three documented suppressions. See below. |
-| `Punctuation` / `PunctuationReference` | Clean. The Constitution is the ceiling at 29 of 30. |
+| `AntiHype` | Clean, with documented suppressions in style-references and self-documenting files. |
+| `Punctuation` / `PunctuationReference` | Clean. |
 
 ### The three AntiHype suppressions
 
 Two are self-referential: [`CLAUDE.md`](../../../CLAUDE.md) and [`voice-guide.md`](../../../publishing/02-tools/voice-guide.md) have to print the banned-word list in order to document it, so both are fenced. This README's own rule table is fenced for the same reason.
 
-The third is a scope exclusion in `.vale.ini` for `publishing/02-tools/style-references/`. Those files are published posts kept verbatim as a record of what went out, and two of them predate the anti-hype list. Editing published text to satisfy a later rule would make this repo disagree with what readers can actually see. The rule still applies in `publishing/03-drafts/`, which is the last point where a banned word can be removed before it ships.
+The third is a scope exclusion in `.vale.ini` for `publishing/02-tools/style-references/`. Those files are published posts kept verbatim as a record of what went out, and two of them predate the anti-hype list. Editing published text to satisfy a later rule would make this repo disagree with what readers can actually see.
 
-The cost of that exclusion is real: a future post moved into `style-references/` carries its hype language in unchecked. The check that matters happens while the piece is still a draft.
+The cost of that exclusion is real: a future post moved into `style-references/` carries its hype language in unchecked. The check that matters happens while authoring the piece.
 
 ### Why there are two punctuation rules
 
@@ -125,7 +136,6 @@ Vale's `occurrence` rule counts absolute instances and cannot be parameterized p
 Reference and operational material now carries a budget of 30 and is the repo-wide default. Prose written for publication opts back into 3, in `.vale.ini`:
 
 - `publishing/02-tools/style-references/`
-- `publishing/03-drafts/`
 
 The limit of 30 was chosen so that all of `theory/` passes (the Constitution is the ceiling at 29) while genuine outliers still report. A limit set so nothing ever fires is not a relaxed rule, it is a deleted one.
 
@@ -133,7 +143,6 @@ The limit of 30 was chosen so that all of `theory/` passes (the Constitution is 
 
 ## Known limitations
 
-- **`check_playbook.py` carries two hardcoded absolute paths**, a `file:///Users/brad-htd/Code/ilg-playbook` prefix strip and a `/Users/brad-htd/.gemini/antigravity` allowance. Links using either form will behave differently on another machine. Prefer relative links, which are portable and which the checker resolves correctly everywhere.
-- **Neither checker is enforced in CI.** Both run locally on demand. Nothing blocks a merge today. `check_playbook.py` exits non-zero on failure, so it is ready to wire into a pre-commit hook or an action whenever you want that.
-- **`Punctuation.yml` counts per file, not per section.** A long document at the limit will flag on the next legitimate em dash. Restructure into periods rather than raising the limit.
 - **Neither checker validates claims against the Constitution.** They catch stale vocabulary, not stale reasoning. A description can use every current term and still describe a superseded version of an axiom, which is what happened to the root README's axiom list. That still needs a human reading both files side by side.
+- **`Punctuation.yml` counts per file, not per section.** A long document at the limit will flag on the next legitimate em dash. Restructure into periods rather than raising the limit.
+

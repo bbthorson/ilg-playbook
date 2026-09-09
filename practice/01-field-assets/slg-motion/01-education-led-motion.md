@@ -87,7 +87,7 @@ Any one of these means the deal is no longer SLG. Stop, re-run the [Process Calc
 | Trigger | What it signals | Action |
 |---|---|---|
 | Buyer names 3+ credible vendors | The category went legible, possibly during your own sales cycle | Re-score Step 1. Likely Mature. |
-| Buyer asks for a pilot or POC | The buyer perceives Bridge-level implementation risk | **Auto-classify ILG.** Calculator override rule, no judgment required. |
+| Buyer asks for a pilot or POC | The buyer perceives Structural-level implementation risk | **Auto-classify ILG.** Calculator override rule, no judgment required. |
 | Procurement, security review, or legal engages | Consensus cost just arrived | Re-score Step 2. Deploy Blueprint. |
 | Stakeholder count passes 3 | You now have a buying committee and a probable saboteur | Deploy Blueprint. Map the committee. |
 | Integration scope reaches core systems | Asset specificity ($k$) rose above the threshold | Deploy Blueprint, then Red Team. |
@@ -96,11 +96,11 @@ Any one of these means the deal is no longer SLG. Stop, re-run the [Process Calc
 [01-sales-motion-comparison.md](../../../theory/01-foundation/01-sales-motion-comparison.md) describes the two routes here. A **maturing category** moves the whole market and every deal in it. **Complexity discovery** moves one deal that turned out deeper than scoped. The response is the same in both cases, and the second one is the one reps miss, because nothing external changes to prompt a re-score.
 
 > [!WARNING]
-> Missing a pivot trigger produces the under-frictioned Bridge from Axiom I. You keep educating a buyer who has moved on to evaluating implementation risk, they read the absence of rigor as a reason to build internally, and the deal ends as "we decided to handle this in-house."
+> Missing a pivot trigger produces the under-frictioned Structural deal failure mode from Axiom I. You keep educating a buyer who has moved on to evaluating implementation risk, they read the absence of rigor as a reason to build internally, and the deal ends as "we decided to handle this in-house."
 
 ## Related
 
 - **Theory:** [01-sales-motion-comparison.md](../../../theory/01-foundation/01-sales-motion-comparison.md) covers SLG vs. ILG in depth, including why educational friction and structural friction call for opposite behavior.
 - **Triage:** [process-calculator.md](../process-calculator.md). Step 1 routes here. Step 3 routes out.
 - **Constitution:** [Axiom I and the Boundary Condition](../../../theory/01-foundation/00-ilg-constitution.md). Over-frictioning a nascent deal and under-frictioning a matured one are the two failure modes this document exists to prevent.
-- **Sibling motions:** [ilg-motion/](../ilg-motion/) for Bridges, [plg-motion/](../plg-motion/) for Toasters.
+- **Sibling motions:** [ilg-motion/](../ilg-motion/) for Structural deals, [plg-motion/](../plg-motion/) for Turnkey deals.

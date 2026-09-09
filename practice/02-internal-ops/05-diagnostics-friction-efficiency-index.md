@@ -1,8 +1,8 @@
 # Friction Efficiency Index
 
-**Purpose:** To measure whether an organization is spending its implementation effort before signature or after it, and to benchmark that allocation across a book of Bridge deals.
+**Purpose:** To measure whether an organization is spending its implementation effort before signature or after it, and to benchmark that allocation across a book of Structural deals.
 
-**Use when:** Reviewing a closed cohort of Bridge deals quarterly. This is a retrospective management instrument, not a per-deal gate.
+**Use when:** Reviewing a closed cohort of Structural deals quarterly. This is a retrospective management instrument, not a per-deal gate.
 
 **Operationalizes:** Axiom I's scaling requirement ($F_{deployed} \sim k$) and Friction Allocation Principle 3 (friction scales with stakes). It measures execution of the motion rather than a term in the Surplus equation.
 
@@ -22,7 +22,7 @@ $$\text{FAR} = \frac{H_{pre}}{H_{pre} + H_{post}}$$
 
 Where $H_{pre}$ is solutions-engineering and implementation hours logged before contract signature, and $H_{post}$ is the same functions' hours from signature through go-live.
 
-**Reference band: 0.60 to 0.75.** Below 0.60, the organization is discovering the buyer's environment after it has committed to a delivery date, which is the under-frictioned Bridge failure mode. Above 0.75, either the deal was a Toaster that received ILG treatment, or pre-sale work is being performed that the buyer never asked for.
+**Reference band: 0.60 to 0.75.** Below 0.60, the organization is discovering the buyer's environment after it has committed to a delivery date, which is the under-frictioned Structural failure mode. Above 0.75, either the deal was a Turnkey deal that received ILG treatment, or pre-sale work is being performed that the buyer never asked for.
 
 **FAR is blind to scale.** An engagement spending 10 pre-sale and 5 post-sale hours scores identically to one spending 1,000 and 500. Always report FAR alongside $H_{pre} + H_{post}$, because the ratio only becomes meaningful once total effort is proportional to the deal's asset specificity. A high FAR on a trivial hour count means the deal was small, not that the motion was well run.
 
@@ -54,7 +54,7 @@ $$\text{RMS} = 1 - \frac{N_{unresolved}}{N_{identified}}$$
 
 **RMS rewards shallow discovery, and must never be read alone.** A Red Team that surfaces two edge cases and closes both scores 1.00. One that surfaces forty and closes thirty-five scores 0.875. The lazier workshop wins. This is precisely the Happy-Ears Red Team failure mode named in [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md), and a metric that rewards it will produce it.
 
-Report $N_{identified}$ next to RMS every time, and treat a low count as the finding. Below roughly eight identified edge cases on a genuine Bridge, the workshop did not do its job, and the RMS figure carries no information regardless of how high it is.
+Report $N_{identified}$ next to RMS every time, and treat a low count as the finding. Below roughly eight identified edge cases on a genuine Structural deal, the workshop did not do its job, and the RMS figure carries no information regardless of how high it is.
 
 ---
 
@@ -78,7 +78,7 @@ The weights sum to 1.00, so FEI is bounded on $[0, 100]$ once both normalization
 
 $$\widehat{\text{BCV}} = \min\left(\frac{\text{BCV}}{\text{BCV}_{ref}}, 1\right) \qquad \widehat{\text{SVI}} = \min(\text{SVI}, 1)$$
 
-$\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed Bridge deals. Until twenty deals exist, set $\text{BCV}_{ref} = 0.5$ and mark every reported figure as provisional. SVI caps at 1 because a 100 percent schedule overrun is already a total scoping failure, and allowing the term to run higher would let one catastrophic project dominate a cohort average.
+$\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed Structural deals. Until twenty deals exist, set $\text{BCV}_{ref} = 0.5$ and mark every reported figure as provisional. SVI caps at 1 because a 100 percent schedule overrun is already a total scoping failure, and allowing the term to run higher would let one catastrophic project dominate a cohort average.
 
 | FEI | Reading | Action |
 |---|---|---|

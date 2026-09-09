@@ -13,7 +13,7 @@
     - **Implementation Costs:** Prohibitive. Integrating agents one-by-one into an EHR is a "9-month crawl."
 
 ## Step 3: Defensive Alignment (Structural Barriers)
-- **Asset Specificity:** "Agentic AI" is a Bridge. These agents are deeply integrated into FHIR data and EHR workflows.
+- **Asset Specificity:** "Agentic AI" is a Structural deal. These agents are deeply integrated into FHIR data and EHR workflows.
 - **The Lock-in:** By using "Greenway's Factory" on AWS, the provider is increasing asset specificity to both the EHR and the cloud provider.
 
 ## Step 4: The Huddle (Strategic Synthesis)

@@ -1,7 +1,7 @@
 # The Standard Order Protocol (The Accelerator)
 
 Version: 1.0  
-Phase: Lane 1 (Toaster / PLG)  
+Phase: Lane 1 (Turnkey / PLG)  
 Audience: Account Executives / Sales Ops / CS Lead  
 Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" handoffs.
 
@@ -17,7 +17,7 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 
 ## Step 1: The "No-Touch" Configuration
 
-*We do not "sell" Toasters; we facilitate their purchase.*
+*We do not "sell" Turnkey deals; we facilitate their purchase.*
 
 1. **The Demo:** Standard, pre-recorded, or group demo only. No custom slides.  
 2. **The Discovery:** Limited to BANT (Budget, Authority, Need, Timing). Do not map political stakeholders.  
@@ -39,7 +39,7 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
    * \[ \] Prospect has reasonable expectations for support (i.e., Chat/Email, not dedicated CSM).  
    * \[ \] *Red Flag:* If they asked for a dedicated phone number, **DQ or Upsell to Enterprise.**
 
-**Logic:** If Technical Fit is NO or Karen Check is RED, this is not a Toaster. It is a Bridge in disguise. **Abort Velocity Motion.**
+**Logic:** If Technical Fit is NO or Karen Check is RED, this is not a Turnkey deal. It is a Structural deal in disguise. **Abort Velocity Motion.**
 
 ## Step 3: The Standard Order Form (External)
 
@@ -50,7 +50,7 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 - **Term:** 12 Months Auto-Renew.  
 - **Payment:** Credit Card or ACH (Net 15).  
 - **Legal:** Click-through MSA (Master Services Agreement). **No redlines accepted.**  
-  * *Script:* "To keep our pricing this competitive, we use a standard, non-negotiable MSA for this tier. If legal review is required, we can move you to our Enterprise tier (3x cost)."
+   * *Script:* "To keep our pricing this competitive, we use a standard, non-negotiable MSA for this tier. If legal review is required, we can move you to our Enterprise tier (3x cost)."
 
 **The Delivery Mechanism:**
 
@@ -66,9 +66,9 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 3. **Rep Duty:** Send one personal "Thank You" video (30 seconds).  
 4. **Post-Sale Support:** Direct customer to Knowledge Base and Support Ticket portal.
 
-## Summary of Differences (Bridge vs. Toaster)
+## Summary of Differences (Structural vs. Turnkey Deals)
 
-| Feature | Bridge (Lane 2\) | Toaster (Lane 1\) |
+| Feature | Structural (Lane 2\) | Turnkey (Lane 1\) |
 | :---- | :---- | :---- |
 | **Discovery** | Political Mapping | BANT Only |
 | **Validation** | Red Team Workshop | Free Trial / Demo |

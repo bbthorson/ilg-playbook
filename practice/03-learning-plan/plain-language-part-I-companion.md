@@ -42,7 +42,7 @@ A deal with massive value and massive friction has zero surplus. It doesn't clos
 
 Here's the counterintuitive part: in complex deals, you create more surplus by reducing friction than by increasing value. Every enterprise buyer has heard the value pitch. They've seen the ROI calculator. They know the product is good. What they don't know is whether it'll actually *work* in their specific environment without blowing up. That uncertainty is the friction, and it's the thing standing between you and the deal.
 
-Also — and this is important — the buyer isn't comparing you to another vendor. In most Bridge deals, the real alternative is building in-house, extending a workaround, reallocating the budget to a different problem, or just staying out of the market entirely. After a failed implementation, buyers don't go find vendor #2 — they retreat from the category. If you don't know what the buyer's real alternatives are, you're flying blind.
+Also — and this is important — the buyer isn't comparing you to another vendor. In most Structural deals, the real alternative is building in-house, extending a workaround, reallocating the budget to a different problem, or just staying out of the market entirely. After a failed implementation, buyers don't go find vendor #2 — they retreat from the category. If you don't know what the buyer's real alternatives are, you're flying blind.
 
 ### 2. The Fear Multiplier ($y = ax^2 + c$)
 
@@ -100,7 +100,7 @@ ILG is expensive. Blueprints, Red Teams, and MIPs require real investment from b
 
 **The market is thin enough.** If there are 50 vendors who all do the same thing, your Blueprint becomes table stakes — everyone can do one. ILG differentiates when there are only a handful of vendors who can credibly serve the buyer's specific need. That's when your investment in understanding their world is hard to replicate.
 
-**Watch for boundary drift.** Both complexity and market thickness change over time. Standards mature, APIs open, and SaaS vendors enter to universalize workflows that previously required custom builds. A Bridge deal today can become a Toaster next year. Before investing in ILG, ask not just "is this complex enough now?" but "will it stay complex through the contract term?"
+**Watch for boundary drift.** Both complexity and market thickness change over time. Standards mature, APIs open, and SaaS vendors enter to universalize workflows that previously required custom builds. A Structural deal today can become a Turnkey deal next year. Before investing in ILG, ask not just "is this complex enough now?" but "will it stay complex through the contract term?"
 
 Simple test before investing in ILG for any deal: "Is this specific enough that a generic pitch will fail? And are there few enough competitors that our discovery work actually sets us apart?"
 

@@ -55,7 +55,7 @@ $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{searc
 - **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance + Buyer Uncertainty
 - **y** = Total Perceived Transaction Cost = $ax^2 + c$ (where $a = 2.25$ is risk aversion, $x \approx \Delta_A$ is uncertainty, and $c$ is direct cost)
 - **δ** = Decay Rate of urgency after the triggering event
-- Applies when **k > k_threshold** (the deal is a Bridge, not a Toaster) AND **F_deployed ~ k** (the friction deployed matches the specificity)
+- Applies when **k > k_threshold** (the deal is Structural, not Turnkey) AND **F_deployed ~ k** (the friction deployed matches the specificity)
 
 ### The Three Axioms
 
@@ -63,17 +63,17 @@ Names, scope, and taglines below are canonical. If this table and the [Constitut
 
 | Axiom | Governs | Tagline | What it says |
 |---|---|---|---|
-| **I. Law of Transaction Cost Composition** | Whether a deal can happen | *"Costs determine the deal"* | Search, consensus, and implementation costs arise independently. Their combined level determines which motion is viable, and Bridge/Toaster classification follows from measuring them. |
+| **I. Law of Transaction Cost Composition** | Whether a deal can happen | *"Costs determine the deal"* | Search, consensus, and implementation costs arise independently. Their combined level determines which motion is viable, and Turnkey vs. Structural deal classification follows from measuring them. |
 | **II. Law of Uncertainty Inflation** | What the deal costs when it happens | *"Fear > Value"* | Base friction is amplified by the bilateral asymmetry gap between buyer and seller. Reducing risk moves more surplus than increasing ROI. |
 | **III. Law of Governance** | Whether the deal persists | *"Structure determines behavior"* | Every party whose decisions affect outcomes needs skin in the game tied to those outcomes, including the channels and adjudicators between them. |
 
-### Bridge vs. Toaster
+### Turnkey vs. Structural Deals
 
-| | **Toaster** | **Bridge** |
+| | **Turnkey Deal** | **Structural Deal** |
 |---|---|---|
 | Score | 4–9 on the [Diagnostic Rubric](practice/01-field-assets/process-calculator.md) | 10–20 |
 | Strategy | PLG / SLG — optimize for velocity | ILG — optimize for safety and certainty |
-| Example | Standalone SaaS tools | Enterprise platforms, deep workflow change |
+| Example | Standalone SaaS tools, modular utilities | Enterprise platforms, deep workflow rewiring |
 
 ---
 
@@ -86,5 +86,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 13.3 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
-**Last updated:** 2026-08-13
+**Version:** 14.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
+**Last updated:** 2026-09-08

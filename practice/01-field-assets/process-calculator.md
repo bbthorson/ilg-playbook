@@ -30,7 +30,7 @@ Score the workflow for the specific problem being solved, not the buyer's operat
 **Level 2 is the level that gets misread.** A buyer at Level 2 can produce a document on request, which reads as Level 3 to a rep who does not check whether the document matches practice. The failure surfaces during implementation as unmapped exception paths, which is the single most common source of post-signature scope expansion. When in doubt, score down.
 
 > [!IMPORTANT]
-> **Workflow maturity is not market stage, and it is not asset specificity.** These are three independent axes, and collapsing them produces wrong routing. A Level 1 workflow in a mature market is a Chaos Trap, not an SLG deal — the category is perfectly legible and the buyer still has nothing to automate. A Level 3 workflow tells you the deal is *mappable*, not that it is a Bridge; that is what Step 2 measures. Score each axis on its own evidence.
+> **Workflow maturity is not market stage, and it is not asset specificity.** These are three independent axes, and collapsing them produces wrong routing. A Level 1 workflow in a mature market is a Chaos Trap, not an SLG deal — the category is perfectly legible and the buyer still has nothing to automate. A Level 3 workflow tells you the deal is *mappable*, not that it is Structural; that is what Step 2 measures. Score each axis on its own evidence.
 
 ---
 
@@ -129,7 +129,7 @@ One-shot transaction or long-term dependency?
 - **Skipping Step 0 (Workflow Maturity Gate).** Reps see a high cost score and jump straight to ILG without checking whether a SOP exists. Result: ILG motion on a Chaos Trap; the seller and buyer co-design something that has no operational foundation.
 - **Conflating cost score with market stage.** A high cost score (10–20) in a nascent market does *not* mean ILG. The cost score is only meaningful once the market is legible enough for the buyer to compare and evaluate. In nascent markets, educational friction dominates and SLG is the right motion regardless of cost score.
 - **Treating "no competitors visible" as a mature market.** Absence of competition often signals nascent, not mature — the buyer can't name 3+ vendors because the category itself doesn't exist yet. This is the most common SLG/PLG misclassification.
-- **Ignoring the pilot/POC override.** A buyer who asks for a pilot is signaling they perceive Bridge-level risk regardless of how the seller scored the deal. Honor the override.
+- **Ignoring the pilot/POC override.** A buyer who asks for a pilot is signaling they perceive Structural-level risk regardless of how the seller scored the deal. Honor the override.
 
 ---
 
@@ -137,5 +137,5 @@ One-shot transaction or long-term dependency?
 
 - **Theory:** [ILG Constitution — Axiom I (Law of Transaction Cost Composition) and the Boundary Condition primary derivation](../../theory/01-foundation/00-ilg-constitution.md).
 - **Decision framework explanation:** [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) — why each step exists, with examples of common mistakes.
-- **Forecasting:** Managers re-score and audit Bridges via [01-governance-deal-calibration.md](../02-internal-ops/01-governance-deal-calibration.md).
-- **Manager review:** Phase 1 of [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) validates the calculator score on every Bridge deal.
+- **Forecasting:** Managers re-score and audit Structural deals via [01-governance-deal-calibration.md](../02-internal-ops/01-governance-deal-calibration.md).
+- **Manager review:** Phase 1 of [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) validates the calculator score on every Structural deal.

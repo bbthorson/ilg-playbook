@@ -73,7 +73,7 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 | $5M ERP deal | Three-month paid pilot | Proportional |
 | Buyer asks for pilot/POC at any stake | Anything less than ILG motion | Under-frictioned (override applies — see [Process Calculator](./process-calculator.md)) |
 
-**Common violations.** A Bridge sold with PLG-grade signals (under-frictioned). A Toaster sold with ILG-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
+**Common violations.** A Structural deal sold with PLG-grade signals (under-frictioned). A Turnkey deal sold with ILG-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
 
 **Fix.** Match signal weight to stakes. The [Process Calculator](./process-calculator.md) classifies deals by stage and cost score; the signal mechanism should scale to whatever the calculator returns.
 

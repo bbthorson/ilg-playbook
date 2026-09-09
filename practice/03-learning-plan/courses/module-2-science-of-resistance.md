@@ -303,5 +303,5 @@ When evaluating responses:
 
 Once you've completed this module:
 - Move to [Module 3 - Infinite Game](./module-3-infinite-game.md)
-- Build political capital maps for your current Bridge deals
+- Build political capital maps for your current Structural deals
 - Practice pre-mortems in discovery calls

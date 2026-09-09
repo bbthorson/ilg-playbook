@@ -170,7 +170,7 @@ The LLM should:
 
 **Scenario:**
 
-A Bridge deal (score 13) has stalled for 6 weeks. The champion says "we're still interested but need more time." You suspect high information asymmetry.
+A Structural deal (score 13) has stalled for 6 weeks. The champion says "we're still interested but need more time." You suspect high information asymmetry.
 
 **Context (LLM will reveal through diagnosis):**
 - Bilateral Asymmetry Delta: 7 (very high)

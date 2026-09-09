@@ -22,13 +22,13 @@
 
 ## Learning path
 
-### [Module 0: Triage Protocol](./courses/module-0-triage-protocol.md) — 2 hours
+### [Module 0: Triage Protocol](./courses/module-0-triage-protocol.md) — 1 hour
 
-**Goal:** Classify deals as Bridge or Toaster using the diagnostic rubric.
+**Goal:** Classify deals as Structural or Turnkey using the diagnostic rubric.
 
 **Prerequisites:** None (start here).
 
-**Key concepts:** Bridge vs. Toaster framework; market stage diagnostic (Nascent / Transitional / Mature) before cost scoring; the four-factor transaction cost rubric (integration depth, workflow change scope, consensus complexity, retention horizon); motion mapping and pilot/POC override.
+**Key concepts:** The 2x2 Deal Archetype Matrix (Turnkey vs. Structural); market stage diagnostic (Nascent / Transitional / Mature) before cost scoring; the four-factor transaction cost rubric (integration depth, workflow change scope, consensus complexity, retention horizon); motion mapping and pilot/POC override.
 
 **Exercises:** Score 5 sample deals; deal autopsy on a closed-lost opportunity.
 
@@ -112,13 +112,13 @@ Three levels of understanding:
 
 ## Related
 
-- [00-foundation/00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) — Core theory (what the modules teach).
-- [01-research/](../../theory/02-research) — Academic evidence (the papers behind each axiom).
+- [01-foundation/00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) — Core theory (what the modules teach).
+- [02-research/](../../theory/02-research) — Academic evidence (the papers behind each axiom).
 - [01-field-assets/](../01-field-assets) — Practical tools reps deploy after training.
 - [02-internal-ops/](../02-internal-ops) — Governance and comp design the curriculum prepares reps to operate within.
 - [02-tools/ai-persona.md](../../publishing/02-tools/ai-persona.md) — Note: a *different* LLM persona, used for deal analysis rather than teaching.
 
 ---
 
-**Version:** 2.0
-**Last updated:** 2026-05-28
+**Version:** 2.1
+**Last updated:** 2026-09-08
