@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+
+echo "Running pre-commit playbook checks..."
+
+# 1. Check link & LaTeX integrity
+python3 practice/02-internal-ops/linting/check_playbook.py
+
+# 2. Check Vale style rules if vale is installed
+if command -v vale &> /dev/null; then
+    vale .
+else
+    echo "Warning: vale not found on PATH. Skipping Vale linting."
+fi
+
+echo "✅ All pre-commit checks passed."

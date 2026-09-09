@@ -74,8 +74,8 @@ $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{searc
 - **S** = Deal Surplus (must be > 0 to close)
 - **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance ($I_{seller}$) + Buyer Uncertainty ($I_{buyer}$)
 - **y** = Total Perceived Transaction Cost = $ax^2 + c$ (where $a = 2.25$ is risk aversion, $x \approx \Delta_A$ is uncertainty, and $c$ is direct cost)
-- **Bridge** = deal scoring 10–20 on Process Calculator → deploy ILG motion
-- **Toaster** = deal scoring 4–9 → deploy PLG/SLG motion
+- **Structural Deal** = deal scoring 10–20 on Process Calculator → deploy ILG motion
+- **Turnkey Deal** = deal scoring 4–9 → deploy PLG/SLG motion
 
 When diagnosing a stall or editing a prescription, identify which term in the equation it addresses.
 

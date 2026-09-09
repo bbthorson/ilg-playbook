@@ -1,8 +1,8 @@
 # Implementation Veto Authority
 
-**Purpose:** To grant Solutions Engineering and Implementation formal authority to halt a Bridge deal before signature when pre-sale validation surfaces unmitigated operational risk, and to attach consequences to that authority so it cannot drift.
+**Purpose:** To grant Solutions Engineering and Implementation formal authority to halt a Structural deal before signature when pre-sale validation surfaces unmitigated operational risk, and to attach consequences to that authority so it cannot drift.
 
-**Use when:** A Bridge deal is moving toward order form submission. The veto is exercised before commercial execution, never after.
+**Use when:** A Structural deal is moving toward order form submission. The veto is exercised before commercial execution, never after.
 
 **Operationalizes:** Axiom III. Residual control rights (Grossman-Hart-Moore) are what governance allocates, and this document allocates one specific right: who decides when the contract is silent on whether the environment is ready.
 
@@ -22,7 +22,7 @@ The correction is not simply to make the veto binding. An unaccountable hard sto
 
 ## Who holds it
 
-The named Solutions Engineering or Implementation lead assigned to the deal. Not the function in general, and not a committee. A single named person per deal, recorded in the CRM at the point the deal is classified as a Bridge.
+The named Solutions Engineering or Implementation lead assigned to the deal. Not the function in general, and not a committee. A single named person per deal, recorded in the CRM at the point the deal is classified as Structural.
 
 The veto covers one question: **can this environment absorb this implementation on the terms being proposed?** It does not extend to pricing, competitive strategy, contract language, or account selection. A veto exercised on any of those grounds is void, and Sales should escalate it as such.
 
@@ -38,7 +38,7 @@ The veto is available at any time before order form submission. It becomes **man
 | Bilateral asymmetry unresolved | [Asymmetry Scorecard](./04-incentives-asymmetry-scorecard.md) | $\Delta_A$ at or above 7.0 |
 | Showstopper unmitigated | [Red Team Protocol](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md) | Any finding classified Showstopper without a written mitigation and a named owner |
 | Buyer resources absent | [MIP](../01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) | No named customer project manager, or committed hours below the floor set during calibration |
-| Red Team not run | Deal record | Bridge deal reaching order form without a completed workshop |
+| Red Team not run | Deal record | Structural deal reaching order form without a completed workshop |
 
 Discretionary vetoes outside these conditions are permitted and follow the same procedure. The mandatory list exists so that silence on a known condition is itself a recorded decision.
 

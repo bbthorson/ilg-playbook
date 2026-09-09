@@ -5,7 +5,7 @@ Goal: To calibrate the ILG framework to your specific product, market, and tech 
 
 | | |
 |---|---|
-| **Inputs** | The generic [00-foundation/](../../theory/01-foundation) framework, plus your product's actual implementation reality. |
+| **Inputs** | The generic [01-foundation/](../../theory/01-foundation) framework, plus your product's actual implementation reality. |
 | **Outputs** | Calibrated triage thresholds, CRM lane fields, comp plan terms, manager review rituals — all tuned to your business. |
 | **Cadence** | One-time setup; revisit annually. |
 | **Owner** | RevOps + VP Sales (jointly). |
@@ -18,11 +18,11 @@ Goal: To calibrate the ILG framework to your specific product, market, and tech 
 Attendees: VP Sales, VP Customer Success, Lead Solutions Engineer, Product Marketing.  
 Time: 90 Minutes.
 
-### Step 1: Define the "Toaster" vs. "Bridge" Threshold
+### Step 1: Define the "Turnkey" vs. "Structural" Threshold
 
 *Goal: Agree on the objective criteria that force a deal into the High-Friction lane.*
 
-| Factor | Score 1 (Toaster / PLG) | Score 3 (Standard / SLG) | Score 5 (Bridge / ILG) |
+| Factor | Score 1 (Turnkey / PLG) | Score 3 (Standard / SLG) | Score 5 (Structural / ILG) |
 | :---- | :---- | :---- | :---- |
 | **Tech Specificity** | *Example: No code, browser-based only.* | *Example: Standard API (Salesforce, Slack).* | *Example: Requires on-prem agent, custom SQL, or ERP write-access.* |
 | **Org Specificity** | *Example: Single user or single team.* | *Example: Departmental (Sales Only).* | *Example: Cross-functional (Sales \+ Finance \+ Legal).* |

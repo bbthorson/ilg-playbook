@@ -15,7 +15,7 @@
     - **Implementation Costs:** What is the actual "work" required to move the ball?
 
 ## Step 3: Defensive Alignment (Structural Barriers)
-- **Asset Specificity:** Is this a "Bridge" (complex, custom, high-risk) or a "Toaster" (simple, commodity, low-risk)?
+- **Asset Specificity:** Is this a "Structural deal" (complex, custom, high-risk) or a "Turnkey deal" (simple, commodity, low-risk)?
 - **The Lock-in:** Once the play starts, can they audible? Or are they committed to the "Fundamental Transformation"?
 
 ## Step 4: The Huddle (Strategic Synthesis)

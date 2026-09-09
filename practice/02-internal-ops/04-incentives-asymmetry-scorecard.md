@@ -65,9 +65,9 @@ $$\Delta_A = I_{seller} + I_{buyer} \qquad \Delta_A \in [2, 10]$$
 
 | $\Delta_A$ | Classification | What it means | Required action |
 |---|---|---|---|
-| **2.0 to 4.0** | Low | Low technical and political risk. Standard procurement path is viable. Often a Toaster profile. | Proceed. Lightweight MIP is sufficient. Confirm against the [Process Calculator](../01-field-assets/process-calculator.md) that ILG is warranted at all. |
+| **2.0 to 4.0** | Low | Low technical and political risk. Standard procurement path is viable. Often a Turnkey profile. | Proceed. Lightweight MIP is sufficient. Confirm against the [Process Calculator](../01-field-assets/process-calculator.md) that ILG is warranted at all. |
 | **4.0 to 7.0** | Moderate | Real gaps exist that will surface during deployment rather than before it. | Run an explicit Blueprint alignment phase. Hold final pricing until S2 and B3 are each at 2 or below. |
-| **7.0 to 10.0** | High | Bridge profile with severe stall and post-signature failure risk. | Commercial hold. Red Team architectural audit and workflow discovery before any contract terms are issued. |
+| **7.0 to 10.0** | High | Structural profile with severe stall and post-signature failure risk. | Commercial hold. Red Team architectural audit and workflow discovery before any contract terms are issued. |
 
 ### Routing: which half is wider
 

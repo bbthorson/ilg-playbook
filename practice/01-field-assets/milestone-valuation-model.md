@@ -75,7 +75,7 @@ Each $\mu_m$ applies to what remains rather than to the original gap, which is w
 
 **Check that payment never leads proof.** Walk the table left to right. At every row, committed payment to date should sit below value realized to date. If a row breaks that rule, the buyer is financing the seller's delivery risk, and they will find it during legal review.
 
-**Do not stage a Toaster.** Gate design carries real administrative cost on both sides. Below the ILG boundary the structure destroys more surplus than the option value it preserves. Confirm with the [Process Calculator](./process-calculator.md) first.
+**Do not stage a Turnkey deal.** Gate design carries real administrative cost on both sides. Below the ILG boundary the structure destroys more surplus than the option value it preserves. Confirm with the [Process Calculator](./process-calculator.md) first.
 
 ---
 

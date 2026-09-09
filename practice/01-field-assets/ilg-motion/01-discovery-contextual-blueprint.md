@@ -6,11 +6,11 @@
 
 **Audience:** Economic Buyer / Champion 
 
-**Goal:** To disqualify "Toaster" deals and validate the "Bridge."
+**Goal:** To disqualify Turnkey deals and validate the Structural deal.
 
 | | |
 |---|---|
-| **Inputs** | Bridge classification (score ≥ 10) from [Process Calculator](../process-calculator.md); initial qualification call complete. |
+| **Inputs** | Structural classification (score ≥ 10) from [Process Calculator](../process-calculator.md); initial qualification call complete. |
 | **Outputs** | Filled Blueprint covering Catalyst, Complexity, Stakeholder DNA, Reciprocity Gate, Negative Capability. A green/yellow/red verdict. |
 | **Next step** | Green → [Red Team Protocol](./02-validation-red-team-protocol.md). Yellow → assign homework to champion. Red → disqualify. |
 | **Owner** | AE (with sales manager validation). |

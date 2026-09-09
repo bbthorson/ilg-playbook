@@ -1,10 +1,10 @@
 # Deal Review Checklist for Managers
 
-**Purpose:** Forensic questions for forecast calls to calibrate Bridge deals based on friction, not hope.
+**Purpose:** Forensic questions for forecast calls to calibrate Structural deals based on friction, not hope.
 
 | | |
 |---|---|
-| **Inputs** | A Bridge deal entering or already in commit forecast. Rep's filled artifacts (Blueprint / Red Team / MIP). |
+| **Inputs** | A Structural deal entering or already in commit forecast. Rep's filled artifacts (Blueprint / Red Team / MIP). |
 | **Outputs** | Phase-by-phase pass/fail on the three friction phases; forecast verdict (Commit / Best Case / Pipeline). |
 | **Cadence** | Per deal at each phase gate; aggregated weekly on forecast call. |
 | **Owner** | Sales manager (with VP spot-checks). |
@@ -16,7 +16,7 @@
 
 **Before diving into the deal, validate the lane:**
 
-- [ ] **"Why is this a Bridge?"** 
+- [ ] **"Why is this a Structural deal?"** 
   - Show me the [Process Calculator](../01-field-assets/process-calculator.md) score (Mature market + cost score 10–20, or Transitional 15–20, or pilot/POC override)
   - What's the integration depth? Workflow change scope? Consensus complexity? Retention horizon?
   
@@ -26,7 +26,7 @@
 - [ ] **"Do the artifacts being used satisfy the Friction Allocation Principles?"**
   - Spot-check the rep's signal mechanisms against the four principles via the [Friction Allocation Diagnostic](../01-field-assets/friction-allocation-diagnostic.md). Especially relevant when reviewing how the rep is qualifying the deal and what costly signals are being deployed.
 
-**Red Flag:** Rep can't articulate why it's a Bridge → Likely misclassified
+**Red Flag:** Rep can't articulate why it's a Structural deal → Likely misclassified
 
 ---
 
@@ -202,13 +202,13 @@ The gap is a **sum**, not a difference. Two equally blind parties do not cancel 
 
 ## Manager's Oath
 
-**"I will not commit a Bridge deal that has not survived a Red Team Workshop."**
+**"I will not commit a Structural deal that has not survived a Red Team Workshop."**
 
 ---
 
 ## Common Rep Mistakes to Watch For
 
-1. **Misclassification:** Treating a Bridge like a Toaster (velocity motion on high-friction deal)
+1. **Misclassification:** Treating a Structural deal like a Turnkey deal (velocity motion on high-friction deal)
 2. **Skipping gates:** Moving to Red Team without Blueprint artifacts
 3. **Happy ears:** Red Team was "all positive" (not real validation)
 4. **Convincing adversaries:** Trying to overcome political resistance with more demos

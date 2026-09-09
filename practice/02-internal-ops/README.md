@@ -14,11 +14,11 @@ If [`../01-field-assets/`](../01-field-assets/) is *how reps run deals*, this di
 
 ### Governance (deal-level, recurring)
 
-How managers and VPs forecast Bridges based on friction completed, not hope.
+How managers and VPs forecast Structural deals based on friction completed, not hope.
 
-- **[01-governance-deal-calibration.md](./01-governance-deal-calibration.md)** — Manager tool to qualify a Bridge deal: classification check, friction audit, "no decision" risk, forecast verdict.
+- **[01-governance-deal-calibration.md](./01-governance-deal-calibration.md)** — Manager tool to qualify a Structural deal: classification check, friction audit, "no decision" risk, forecast verdict.
 - **[02-governance-review-checklist.md](./02-governance-review-checklist.md)** — Forensic checklist for the three friction phases (Blueprint → Red Team → MIP). Includes the [asymmetry scorecard](./04-incentives-asymmetry-scorecard.md) as an embedded check.
-- **[06-governance-implementation-veto.md](./06-governance-implementation-veto.md)** — Grants Solutions Engineering and Implementation a binding pre-signature halt on Bridge deals carrying unmitigated operational risk. Defines trigger conditions, the escalation path, and the exposure carried by the veto holder in both directions.
+- **[06-governance-implementation-veto.md](./06-governance-implementation-veto.md)** — Grants Solutions Engineering and Implementation a binding pre-signature halt on Structural deals carrying unmitigated operational risk. Defines trigger conditions, the escalation path, and the exposure carried by the veto holder in both directions.
 
 ### Incentives (comp design)
 
@@ -31,7 +31,7 @@ How to align rep behavior with long-term customer outcomes, not just signature.
 
 How leadership checks whether the motion is actually being run, after deals close.
 
-- **[05-diagnostics-friction-efficiency-index.md](./05-diagnostics-friction-efficiency-index.md)** — Quarterly retrospective across a cohort of closed Bridge deals. Measures whether implementation effort landed before or after signature (FAR), how fast the buyer mobilized (BCV), what share of discovered risk was closed pre-signature (RMS, the Risk Mitigation Score), and scope stability (SVI), combined into a single index. All parameters are uncalibrated; read the provenance table before quoting any figure.
+- **[05-diagnostics-friction-efficiency-index.md](./05-diagnostics-friction-efficiency-index.md)** — Quarterly retrospective across a cohort of closed Structural deals. Measures whether implementation effort landed before or after signature (FAR), how fast the buyer mobilized (BCV), what share of discovered risk was closed pre-signature (RMS, the Risk Mitigation Score), and scope stability (SVI), combined into a single index. All parameters are uncalibrated; read the provenance table before quoting any figure.
 
 ### Tooling
 

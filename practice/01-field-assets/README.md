@@ -33,7 +33,7 @@ The three map onto the Three Sales Levers from Axiom II. The scorecard tells you
 
 ## ILG Motion (Implementation-Led Growth)
 
-**When to Use:** Bridge deals (score 10-20 on diagnostic rubric)
+**When to Use:** Structural deals (score 10-20 on diagnostic rubric)
 
 The ILG motion uses three sequential artifacts to drive the bilateral asymmetry gap ($\Delta_A$) to zero before signature — reducing seller ignorance ($I_{seller}$) through discovery and buyer uncertainty ($I_{buyer}$) through costly signals:
 
@@ -142,7 +142,7 @@ The ILG motion uses three sequential artifacts to drive the bilateral asymmetry 
 
 ## PLG Motion (Product-Led Growth)
 
-**When to Use:** Toaster deals (score 4-9 on diagnostic rubric)
+**When to Use:** Turnkey deals (score 4-9 on diagnostic rubric)
 
 ### [PLG](./plg-motion)
 
@@ -154,7 +154,7 @@ The ILG motion uses three sequential artifacts to drive the bilateral asymmetry 
 - Standard demo and pricing
 - Fast close, low friction
 
-**Rule:** Never apply a Bridge motion to a Toaster (wastes time on unnecessary complexity)
+**Rule:** Never apply an ILG motion to a Turnkey deal (wastes time on unnecessary complexity)
 
 ---
 
@@ -180,11 +180,11 @@ The ILG motion uses three sequential artifacts to drive the bilateral asymmetry 
 ### From the ILG Constitution
 
 **Axiom I (Law of Transaction Cost Composition):**
-> "Never apply a Bridge motion to a Toaster, and never sell a Bridge without a Blueprint."
+> "Never apply a Turnkey motion to a Structural deal, and never sell a Structural deal without a Blueprint."
 
 **The Strategy:**
-- **Toasters:** Optimize for speed (velocity)
-- **Bridges:** Optimize for certainty (safety)
+- **Turnkey deals:** Optimize for speed (velocity)
+- **Structural deals:** Optimize for certainty (safety)
 
 **The Economic Logic (Axiom II — Law of Uncertainty Inflation):**
 
@@ -202,8 +202,8 @@ ILG artifacts systematically reduce friction by driving $\Delta_A \to 0$ before 
 ### For Sales Reps
 
 1. **Start with triage** - Use Process Calculator to classify the deal
-2. **If Toaster** - Use PLG motion, focus on speed
-3. **If Bridge** - Deploy ILG artifacts sequentially:
+2. **If Turnkey** - Use PLG motion, focus on speed
+3. **If Structural** - Deploy ILG artifacts sequentially:
    - Blueprint first (discovery + qualification)
    - Red Team second (validation + resistance)
    - MIP third (governance + close)
@@ -213,12 +213,12 @@ ILG artifacts systematically reduce friction by driving $\Delta_A \to 0$ before 
 ### For Sales Managers
 
 **Deal Calibration Questions:**
-- "Why is this a Bridge? Show me the calculator score."
+- "Why is this a Structural deal? Show me the calculator score."
 - "Did they agree to the Technical Hook in the Blueprint?"
 - "Did the Red Team find a failure mode, or was it 'happy ears'?"
 - "Is the resource plan attached to the contract?"
 
-**Forecast Rule:** "I will not commit a Bridge deal that has not survived a Red Team Workshop."
+**Forecast Rule:** "I will not commit a Structural deal that has not survived a Red Team Workshop."
 
 ---
 

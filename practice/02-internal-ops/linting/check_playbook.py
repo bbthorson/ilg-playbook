@@ -93,8 +93,8 @@ def check_file_integrity(file_path):
         clean_dest = link_dest
         
         # Handle absolute path prefixes
-        if clean_dest.startswith('file:///Users/brad-htd/Code/ilg-playbook'):
-            clean_dest = clean_dest.replace('file:///Users/brad-htd/Code/ilg-playbook', '')
+        if clean_dest.startswith(f'file://{WORKSPACE_DIR}'):
+            clean_dest = clean_dest.replace(f'file://{WORKSPACE_DIR}', '')
         elif clean_dest.startswith('file://'):
             # Allow validation of other local files (like artifacts)
             clean_dest = clean_dest.replace('file://', '')
@@ -112,8 +112,7 @@ def check_file_integrity(file_path):
 
         # Resolve path
         if os.path.isabs(clean_dest) or clean_dest.startswith('/'):
-            # If absolute, it should be relative to workspace root (unless it is in app data directory)
-            if clean_dest.startswith('/Users/brad-htd/.gemini/antigravity'):
+            if os.path.exists(clean_dest):
                 resolved_path = clean_dest
             else:
                 resolved_path = os.path.join(WORKSPACE_DIR, clean_dest.lstrip('/'))

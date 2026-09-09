@@ -95,7 +95,7 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 |---|---|---|---|
 | **Cosmopolitanism** | Outer Setting | How networked is the org with external peers? Insular orgs resist outside ideas. | Add to Blueprint: "How does your org evaluate new technology? Internal review only, or do you benchmark against peers?" |
 | **Learning-Centeredness** | Culture | Is there psychological safety to fail? Critical for adoption but not directly asked. | Add to Blueprint Sacred Cow Scan or Red Team Round 2 probes |
-| **Trialability** | Intervention Characteristics | Can the buyer try before committing? Currently implicit in Paid Diagnostic gate but not formalized. | Formalize in the triage protocol as a factor in Bridge vs. Toaster |
+| **Trialability** | Intervention Characteristics | Can the buyer try before committing? Currently implicit in Paid Diagnostic gate but not formalized. | Formalize in the triage protocol as a factor in Turnkey vs. Structural deal classification |
 
 ---
 

@@ -6,7 +6,7 @@ Goal: To calibrate the "Commit" forecast based on Friction, not Hope.
 
 | | |
 |---|---|
-| **Inputs** | Rep's pipeline of Bridge deals; artifact status (Blueprint / Red Team / MIP). |
+| **Inputs** | Rep's pipeline of Structural deals; artifact status (Blueprint / Red Team / MIP). |
 | **Outputs** | Forecast verdict (Commit / Best Case / Pipeline) per deal, grounded in friction completed. |
 | **Cadence** | Weekly forecast call. |
 | **Owner** | Sales manager / VP Sales. |
@@ -17,10 +17,10 @@ Goal: To calibrate the "Commit" forecast based on Friction, not Hope.
 *First, validate the Lane.*
 
 - **Deal Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
-- **Lane:** \[ \] Lane 1 (Toaster) / \[ \] Lane 2 (Bridge)  
-- **Manager Challenge:** "Why is this a Bridge? Show me the Risk Calculator score." (Score: \_\_\_\_)
+- **Lane:** \[ \] Lane 1 (Turnkey) / \[ \] Lane 2 (Structural)  
+- **Manager Challenge:** "Why is this a Structural deal? Show me the Risk Calculator score." (Score: \_\_\_\_)
 
-## The Friction Audit (For Bridge Deals Only)
+## The Friction Audit (For Structural Deals Only)
 
 *Do not ask 'When will it close?' Ask 'Have we done the work?'*
 
@@ -48,4 +48,4 @@ Goal: To calibrate the "Commit" forecast based on Friction, not Hope.
 - **Best Case:** Artifacts in progress.  
 - **Pipeline:** Blueprint not signed.
 
-**Manager's Oath:** "I will not commit a Bridge deal that has not survived a Red Team Workshop."
+**Manager's Oath:** "I will not commit a Structural deal that has not survived a Red Team Workshop."

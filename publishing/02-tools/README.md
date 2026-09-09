@@ -32,7 +32,7 @@ This is *not* where reps run deals (see [`../../practice/01-field-assets/`](../.
 Published examples. Use them to calibrate voice and structure, not to copy.
 
 - **[style-references/blog-posts/](./style-references/blog-posts)** — Three long-form pieces (TCE+Sales, ACCESS Model, Competing on Value).
-- **[style-references/short-form-posts/](./style-references/short-form-posts)** — Seven short-form pieces (Bridge vs. Toaster, Cheap Signals, etc.).
+- **[style-references/short-form-posts/](./style-references/short-form-posts)** — Seven short-form pieces (archived `bridge-v-toaster`, Cheap Signals, etc.).
 
 ## Workflow
 

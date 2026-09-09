@@ -1,5 +1,5 @@
 extends: substitution
-message: "'%s' is retired. Use '%s'."
+message: "Use '%s' instead of '%s'."
 level: error
 ignorecase: false
 # Retired axiom names. The canonical names live in
@@ -16,6 +16,9 @@ ignorecase: false
 # Retired directory numbering. These paths never resolve; they appear in link
 # text while the href alongside them is correct, so the link checker cannot see
 # them. Add a row here whenever a directory is renumbered.
+#
+# Retired deal analogies (v14.0). Replaced by Structural Deal ($k \ge 10$) and
+# Turnkey Deal ($k \le 9$) per the 2x2 Deal Archetype Matrix.
 swap:
   Law of Economic Boundaries: Law of Transaction Cost Composition
   Law of Friction: Law of Uncertainty Inflation
@@ -32,3 +35,20 @@ swap:
   05-learning-plan: 03-learning-plan
   06-tools: 02-tools
   02-cases: 01-cases
+  00-foundation: 01-foundation
+  01-research: 02-research
+  Toaster deal: Turnkey deal
+  Toaster deals: Turnkey deals
+  toaster deal: turnkey deal
+  toaster deals: turnkey deals
+  Bridge deal: Structural deal
+  Bridge deals: Structural deals
+  bridge deal: structural deal
+  bridge deals: structural deals
+  Bridge motion: ILG motion (Structural deal)
+  bridge motion: ILG motion (structural deal)
+  Bridge vs. Toaster: Structural vs. Turnkey
+  bridge vs. toaster: structural vs. turnkey
+  Bridge and Toaster: Structural and Turnkey
+  bridge and toaster: structural and turnkey
+

@@ -1,6 +1,6 @@
 # ILG Deal Calibration Checklist
 
-**Purpose:** A pre-close self-audit for the AE and Solutions Engineer, run before an order form is submitted on a Bridge deal.
+**Purpose:** A pre-close self-audit for the AE and Solutions Engineer, run before an order form is submitted on a Structural deal.
 
 **Use when:** The deal is about to move to commercial execution. Run it together, in one sitting, before the manager review rather than after.
 
@@ -31,7 +31,7 @@ Answer every item with evidence rather than recollection. If you cannot point to
 ## Part 3: The Red Team (Stop items)
 
 - [ ] **The workshop ran, with the likely saboteur in the room.** Date: ______ Attendees: ______
-- [ ] **Edge cases identified:** ______ *Below eight on a genuine Bridge, the workshop was shallow. Re-run it.*
+- [ ] **Edge cases identified:** ______ *Below eight on a genuine Structural deal, the workshop was shallow. Re-run it.*
 - [ ] **Every Showstopper has a written mitigation and a named owner.** *An open Showstopper is a mandatory veto.*
 - [ ] **The buyer signed off on the gap analysis.** They have acknowledged in writing what the product will not do.
 
@@ -60,7 +60,7 @@ Answer every item with evidence rather than recollection. If you cannot point to
 
 Ask these last, out loud, to each other.
 
-**"What do we still not know about their environment?"** A deal team that answers "nothing" has stopped looking rather than finished looking. Every Bridge has unmapped surface at signature. The question is whether you can name it and have bounded it in the MIP.
+**"What do we still not know about their environment?"** A deal team that answers "nothing" has stopped looking rather than finished looking. Every Structural deal has unmapped surface at signature. The question is whether you can name it and have bounded it in the MIP.
 
 **"If this fails to launch, what will the post-mortem say we ignored?"** The answer is almost always already known to someone on the call. Prospective hindsight works here for the same reason it works in the Red Team, and it costs ninety seconds.
 
