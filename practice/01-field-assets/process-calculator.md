@@ -1,6 +1,6 @@
 # The Deal Triage Calculator
 
-Version: 4.0
+Version: 4.1
 Audience: Internal Rep / Pre-Sales
 Goal: Classify a live deal opportunity into the appropriate sales motion — SLG, PLG, or ILG — by diagnosing market stage first, then asset specificity within mature markets.
 
@@ -99,6 +99,31 @@ One-shot transaction or long-term dependency?
 
 ---
 
+## Step 2b: Workflow Divergence (Mature and Transitional markets)
+
+The four factors above measure how *large* the installation is. None of them measures how far the buyer's existing workflow sits from the one the product was built around. Those are different quantities, and the second one is what decides whether the installation succeeds.
+
+Packaged software carries an assumed workflow. When the buyer's actual workflow differs, the buyer picks one of four responses: change the organization to match the product, accept the shortfall, build a workaround, or pay to customize. All four cost money and only the first two are visible before signature. Research calls this gap *misfit*; see [process-misfit.md](../../theory/02-research/process-misfit.md). It operationalizes the CFIR **Compatibility** construct in its workflow sense, where [Step 0](#step-0-workflow-maturity-gate-pre-qualification) operationalizes the same construct in its maturity sense.
+
+Score divergence for the specific workflow you are selling into, on the same discipline Step 0 requires. Do not score the buyer's general sophistication.
+
+| Score | Condition | Evidence required |
+|---|---|---|
+| **1–2. Standard** | An external authority codified this workflow. A regulator, a statute, or an industry protocol defines the steps, and vendors build against that definition. | Name the standard. If the buyer cannot name it, this is not a 1. |
+| **3. Common pattern** | The buyer follows the category's usual shape and can enumerate their local exceptions. | The exception list, in writing, with volumes attached. |
+| **4–5. Bespoke** | The buyer encoded the workflow themselves. Exceptions are numerous, undocumented, or both, and no vendor built against this shape. | Ask which upstream systems feed the workflow and who maintains the rules. A shrug is a 5. |
+
+**Divergence Score:** _____
+
+> [!IMPORTANT]
+> **Do not add this to the Step 2 total.** The cost score measures magnitude and the divergence score measures fit. Summing them would let a large aligned deal and a small misaligned deal produce the same number, which is the specific confusion this step exists to prevent. Divergence modifies the routing in Step 3 instead.
+
+**What a demonstration can and cannot show.** Misfit runs across six domains: functionality, data, usability, role, control, and organizational culture. A product demonstration reaches the first two. The remaining four surface during implementation unless discovery goes looking for them, which is what the [Contextual Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md) is for.
+
+**Who codified it is the question that predicts the score.** A workflow codified by a regulator converges across buyers, which is how mature Turnkey categories form. A workflow codified by the buyer diverges from every other buyer, and it diverges more the longer it has been in place. Both are well-defined workflows. They route to opposite motions.
+
+---
+
 ## Step 3: Motion Selection
 
 | Market Stage | Cost Score | Motion |
@@ -106,11 +131,16 @@ One-shot transaction or long-term dependency?
 | Nascent | (n/a — skipped Step 2) | **SLG** |
 | Transitional | 4–14 | **SLG with ILG elements creeping in** |
 | Transitional | 15–20 | **ILG** (deal stakes high enough to force ILG even before category maturity) |
-| Mature | 4–9 | **PLG** |
+| Mature | 4–9, divergence 1–3 | **PLG** |
+| Mature | 4–9, divergence 4–5 | **ILG** (Hidden Structural — see below) |
 | Mature | 10–20 | **ILG** |
 | Any | Override: pilot/POC requested | **ILG** (auto-score 20) |
 
 **Override Rule.** If the prospect asks for a "Pilot" or "Proof of Concept," immediately upgrade to ILG regardless of cost score. Pilots are strictly governed by the [Red Team Protocol](./ilg-motion/02-validation-red-team-protocol.md), not by lightweight motions.
+
+**Hidden Structural Deal.** A deal scoring 4–9 with divergence of 4 or 5 is a Structural deal wearing Turnkey clothes. The installation is small, so every magnitude factor scores low, and the workflow underneath it matches nothing the product assumes. Route it to ILG. This is the under-frictioned failure mode from Axiom I, and it is the one the cost score alone cannot see: the seller ships a light motion, misfit surfaces after signature, and the buyer concludes they should have built it themselves.
+
+**Possible Over-Frictioning.** A deal scoring 10–20 with divergence of 1 or 2 is large but aligned. Run ILG, and flag the deal at [manager review](../02-internal-ops/02-governance-review-checklist.md) to confirm the full artifact chain earns its cost. Deep integration against a standard the vendor already builds to is expensive work, not uncertain work, and the ILG machinery exists to resolve uncertainty.
 
 ---
 
@@ -129,6 +159,7 @@ One-shot transaction or long-term dependency?
 - **Skipping Step 0 (Workflow Maturity Gate).** Reps see a high cost score and jump straight to ILG without checking whether a SOP exists. Result: ILG motion on a Chaos Trap; the seller and buyer co-design something that has no operational foundation.
 - **Conflating cost score with market stage.** A high cost score (10–20) in a nascent market does *not* mean ILG. The cost score is only meaningful once the market is legible enough for the buyer to compare and evaluate. In nascent markets, educational friction dominates and SLG is the right motion regardless of cost score.
 - **Treating "no competitors visible" as a mature market.** Absence of competition often signals nascent, not mature — the buyer can't name 3+ vendors because the category itself doesn't exist yet. This is the most common SLG/PLG misclassification.
+- **Scoring size when the question is fit.** A rep totals four magnitude factors, lands at 7, and routes to PLG without asking whether the buyer's workflow resembles the one the product assumes. Step 2b exists because those two questions have different answers, and the second one is the one that surfaces after signature.
 - **Ignoring the pilot/POC override.** A buyer who asks for a pilot is signaling they perceive Structural-level risk regardless of how the seller scored the deal. Honor the override.
 
 ---
