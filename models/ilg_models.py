@@ -848,9 +848,10 @@ def residual_uncertainty(x0, mus):
         x_m = x_0 * product over k=1..m of (1 - mu_k)
 
     Each mu_k applies to what remains rather than to the original gap, which is
-    why the residual column of the reference table compounds downward rather
-    than stepping linearly. x_0 is the normalized gap from the Asymmetry
-    Scorecard.
+    why the reference table's residual compounds downward rather than stepping
+    linearly. x_0 is the normalized IMPLEMENTATION gap from the Asymmetry
+    Scorecard, not the deal-level weighted mean: the gates resolve
+    implementation uncertainty specifically.
 
     A gate written so loosely that no outcome fails it resolves no uncertainty,
     so its mu is effectively zero regardless of what the plan claims.
@@ -894,6 +895,14 @@ def stage_surplus(p_m, v_gross_m, x_m, c_m, a=A_RISK_AVERSION):
     stage, x_m is residual uncertainty entering it, and c_m is the payment
     allocated to it. The bracket is the reduced-form cost of section 1.2 with
     the stage's own payment as the constant term.
+
+    UNITS. v_gross_m, c_m and a are all fractions of annual contract value, per
+    03-mathematical-models.md section 1.7. Passing a payment as 25 rather than
+    0.25 does not scale the answer, it reverses it. The uncertainty term drops
+    to five percent of the first gate's payment where it should be five times
+    that payment, and the model then recommends demanding everything at
+    signature. Nothing here can detect the error, because both readings are
+    arithmetically valid.
 
     `a` is anchored at 2.25 by analogy and is not fitted.
     """

@@ -640,10 +640,42 @@ class TestMilestoneValuation(unittest.TestCase):
         self.assertAlmostEqual(m.residual_uncertainty(x0, (0.0, 0.0, 0.0)), 1.0)
 
     def test_stage_surplus_uses_the_reduced_form_cost(self):
+        # Every term in annual contract values, per section 1.7. The payment
+        # is 0.25 of ACV, not 25 of anything.
         x_m = m.NormalizedGap(0.375)
-        surplus = m.stage_surplus(p_m=0.8, v_gross_m=100.0, x_m=x_m, c_m=25.0)
-        expected = 0.8 * (100.0 - (2.25 * 0.375 ** 2 + 25.0))
+        surplus = m.stage_surplus(p_m=0.8, v_gross_m=1.5, x_m=x_m, c_m=0.25)
+        expected = 0.8 * (1.5 - (2.25 * 0.375 ** 2 + 0.25))
         self.assertAlmostEqual(surplus, expected)
+
+    def test_the_uncertainty_profile_across_the_reference_gates(self):
+        """The table the milestone model calls the argument.
+
+        Entering uncertainty is worth roughly five times the first gate's
+        payment and three percent of the last one's. That profile is why the
+        refundable component belongs early, and it only reads that way when
+        payments are fractions of annual contract value.
+        """
+        x0 = m.normalize_gap(10.0)
+        entering = m.residual_schedule(x0, self.MUS)[1:]
+        payments = (0.25, 0.35, 0.40)
+        ratios = [m.reduced_cost(x) / c for x, c in zip(entering, payments)]
+        self.assertAlmostEqual(ratios[0], 5.06, places=2)
+        self.assertAlmostEqual(ratios[1], 0.90, places=2)
+        self.assertAlmostEqual(ratios[2], 0.03, places=2)
+        # Strictly decreasing: the option to stop is worth most when least is
+        # known, which is the whole staging argument.
+        self.assertGreater(ratios[0], ratios[1])
+        self.assertGreater(ratios[1], ratios[2])
+
+    def test_reading_the_payments_as_percent_inverts_the_argument(self):
+        """Section 1.7 calls this a unit error rather than a second reading."""
+        x0 = m.normalize_gap(10.0)
+        entering = m.residual_schedule(x0, self.MUS)[1:]
+        as_percent = [m.reduced_cost(x) / c
+                      for x, c in zip(entering, (25.0, 35.0, 40.0))]
+        # Under this reading uncertainty never reaches even a tenth of any
+        # payment, so risk never outweighs return and Axiom II is false.
+        self.assertLess(max(as_percent), 0.1)
 
     def test_staging_raises_surplus_by_shrinking_residual_uncertainty(self):
         """The point of the whole model: staging does not reduce the work, it
