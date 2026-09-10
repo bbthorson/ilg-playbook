@@ -41,9 +41,3 @@ How leadership checks whether the motion is actually being run, after deals clos
 
 Files use `NN-category-slug.md` where `NN` controls reading order and `category` is either `setup`, `governance`, `incentives`, or `diagnostics`.
 
-## What goes here vs. elsewhere
-
-| Type of content | Where it lives |
-|---|---|
-| Templates reps fill out on a deal | [`../01-field-assets/`](../01-field-assets/) |
-| Manager / VP / RevOps tools | **`practice/02-internal-ops/`** (this directory) |

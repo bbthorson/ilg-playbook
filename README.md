@@ -26,21 +26,34 @@ The repo serves **three functions**, each in its own top-level directory.
 | **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` | Help sellers and managers actually run ILG. Templates and governance. |
 | **[publishing/](publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
 
-Each group has its own README explaining what's inside and the reading order.
+Each group has its own README listing what is inside it.
 
 ---
 
-## Quick start by intent
+## Start here: which state are you in
+
+The framework indexes on **state**, not on document. Name where the deal is, and the state names what governs it. The three states are defined in [Constitution Part I](theory/01-foundation/00-ilg-constitution.md).
+
+| State | The question | Governed by | Go here |
+|---|---|---|---|
+| **Market** | Which motion is viable at all? | Axiom I | [Process Calculator](practice/01-field-assets/process-calculator.md), then [01-sales-motion-comparison.md](theory/01-foundation/01-sales-motion-comparison.md) |
+| **Deal** (T0) | What must the seller supply before signature? | Axiom II | [practice/01-field-assets/](practice/01-field-assets/) — Blueprint, Red Team, MIP in order |
+| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) §7 |
+
+Each axiom has a home state and none is confined to it. Part I explains where the mapping holds and where it does not.
+
+## Looking for something specific
 
 | If you want to... | Go here |
 |---|---|
 | Understand the theory cold | [theory/01-foundation/](theory/01-foundation/) |
-| Look up a symbol or term | [theory/01-foundation/04-glossary-and-notation.md](theory/01-foundation/04-glossary-and-notation.md) |
-| See the academic evidence behind a claim | [theory/02-research/](theory/02-research/), starting with the [reading guide](theory/02-research/00-reading-guide.md) |
-| Run an actual deal | [practice/01-field-assets/](practice/01-field-assets/) |
+| Look up a symbol or term | [04-glossary-and-notation.md](theory/01-foundation/04-glossary-and-notation.md) |
+| See the evidence behind a claim | [theory/02-research/00-reading-guide.md](theory/02-research/00-reading-guide.md) |
+| Decide whether to invest engineering in a deal | [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) |
 | Set up your org for ILG | [practice/02-internal-ops/](practice/02-internal-ops/) |
-| See ILG applied to a real deal | [publishing/01-cases/](publishing/01-cases/) |
 | Write about ILG publicly | [publishing/02-tools/](publishing/02-tools/) |
+
+**Orientation lives in two places only:** this file, and [the research reading guide](theory/02-research/00-reading-guide.md). Every other README is a local index of its own directory.
 
 ---
 

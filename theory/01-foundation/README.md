@@ -4,15 +4,7 @@
 
 Parent: [theory/](../) · Sibling: [02-research/](../02-research/)
 
-## The three states
-
-The framework indexes on state, not on document. Name where you are, then read what governs it.
-
-| State | Governed by | Read |
-|---|---|---|
-| **Market** — which motion is viable | Axiom I | [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
-| **Deal** (T0) — what closes this transaction | Axiom II | [00-ilg-constitution.md](./00-ilg-constitution.md) Part I, then [05-seller-surplus-model.md](./05-seller-surplus-model.md) §2–5 |
-| **Relationship** (T1+) — whether surplus persists | Axiom III | [00-ilg-constitution.md](./00-ilg-constitution.md) Part I, then [05-seller-surplus-model.md](./05-seller-surplus-model.md) §7 |
+The three states (Market, Deal at T0, Relationship at T1+) are the framework's primary index. They are defined in [00-ilg-constitution.md](./00-ilg-constitution.md) Part I and used as the front door in the [root README](../../README.md).
 
 ## Reading order
 
