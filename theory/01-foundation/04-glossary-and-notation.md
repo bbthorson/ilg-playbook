@@ -37,6 +37,9 @@ Two rules govern what is written here, and they differ by section.
 | $R_{redeploy}$ | Value of pre-signature work redeployed to other deals. **Not $R$, the reward payoff.** | [05-seller-surplus-model.md §3](./05-seller-surplus-model.md) |
 | $p_m$ | Probability of achieving milestone stage $m$. | [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) |
 | $S_m$ | Expected surplus at milestone stage $m$. A buyer-side quantity. | [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) |
+| $r_t$ | Probability the relationship is live in period $t$. $r_1$ equals $p_{close}$. | [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
+| $C_{sustain}$ | Ongoing relationship investment per period. Holds $\gamma$ down; distinct from $C_{deliver}$. | [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
+| $\rho$ | Discount rate on future periods. **A policy choice, not $\delta_{discount}$.** | [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
 
 ### Value terms (Axiom I)
 
@@ -118,11 +121,11 @@ Two rules govern what is written here, and they differ by section.
 
 ## Symbol disambiguation
 
-Seven pairs look alike and mean different things. Each has produced a documented error, required an inline correction somewhere in this repo, or was caught during drafting before it could.
+Seven groups look alike and mean different things. Each has produced a documented error, required an inline correction somewhere in this repo, or was caught during drafting before it could.
 
 **1. $\gamma$ carries three unrelated meanings.** In the Constitution, $\gamma$ is the rate at which the asymmetry gap rebuilds over time. In the mathematical models it appears twice more, as $\gamma_r$ (responsiveness to an external catalyst) and $\gamma_{TO}$ (the technical overlap weight). The subscripts are load-bearing. A bare $\gamma$ always means asymmetry drift.
 
-**2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to Axiom I's half of the Decay Clock. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to Axiom III's cooperation condition. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it.
+**2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to Axiom I's half of the Decay Clock. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to Axiom III's cooperation condition. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it. A third rate joins them in [05-seller-surplus-model.md §7](./05-seller-surplus-model.md): $\rho$ discounts the seller's future cash flows and is set by finance policy, where $\delta_{discount}$ describes how much a party actually weighs its future and is a behavioural fact about them.
 
 **3. $\Delta_A$ and $\hat{\Delta}_A$ differ by an order of magnitude.** The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) produces a raw score on $[2, 10]$ that must be normalized before either cost equation accepts it. Raw scores drive the scorecard's field triage bands, and normalized values go into equations. The normalization and its rationale live in [03-mathematical-models.md §1.5](./03-mathematical-models.md).
 

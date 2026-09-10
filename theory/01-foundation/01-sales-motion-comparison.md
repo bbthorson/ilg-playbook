@@ -246,6 +246,8 @@ Axiom I states that friction must match asset specificity, which means ILG is wr
 
 **2. Deal value cannot carry the friction cost.** ILG consumes solutions-engineering hours before revenue. Below roughly the point where pre-sale cost exceeds the gross margin on the first year, the motion destroys surplus even when the deal closes. Transactional SMB business sits here structurally. *Route:* PLG, or decline.
 
+    *Under review.* First-year gross margin is a single-shot test. [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) shows the pre-sale investment amortizes across the renewal stream, so this rule is correct where retention is weak and too strict where it holds. Use it as written until the replacement is agreed.
+
 **3. The category has commoditized.** Integration patterns homogenized, playbooks are published, and switching cost fell. Specificity dropped out from under a motion that used to fit. Teams keep running Blueprints out of habit and lose on cycle time to lighter competitors. *Route:* re-score annually; migrate to PLG when the score drops below 10.
 
 **4. The specification is externally fixed.** A regulatory mandate or a procurement standard that dictates the implementation leaves no discovery surplus to capture. Both parties already know what gets built. Discovery cannot reduce $\Delta_A$ because the gap is already near zero on the dimension that matters. *Route:* compete on price and delivery credibility.

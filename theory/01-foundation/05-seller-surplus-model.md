@@ -1,6 +1,6 @@
 # Seller Surplus and the Implementation Investment
 
-**Version:** 1.0
+**Version:** 1.1
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
 The [Constitution](./00-ilg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
@@ -87,6 +87,64 @@ Rule 3 of the milestone model already requires symmetric consequence when a stag
 
 The practical consequence: a manager can use section 4 to ask "what would have to be true about $\partial p_{close} / \partial C_{invest}$ for this spend to make sense," and can compare that answer against experience. That is a real use. Producing a number and calling it a probability is not.
 
+The same caution governs section 7, where $r_t$ is no better observed than $p_{close}$ and the discount rate is a policy choice rather than a measurement.
+
+---
+
+## 7. The repeated game
+
+Sections 2 through 4 describe a single transaction. Subscription businesses do not have those. The contract renews, the seller keeps spending on the relationship, and Net Revenue Retention is the outcome of a sequence rather than of a close.
+
+$$S_{seller} = \sum_{t=1}^{T} \frac{r_t \left(V_t - C_{deliver,t} - C_{sustain,t}\right)}{(1+\rho)^t} - C_{invest}$$
+
+| Term | Meaning |
+|---|---|
+| $r_t$ | Probability the relationship is live in period $t$. $r_1$ is $p_{close}$ |
+| $C_{sustain,t}$ | Ongoing relationship investment in period $t$. Distinct from delivery |
+| $\rho$ | Discount rate applied to future periods |
+
+The single-shot form in section 2 is this expression with $T = 1$ and $C_{sustain} = 0$. Two consequences follow immediately, and the first is a correction.
+
+**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) carries the same assumption in its disqualification list, where a motion is ruled out when pre-sale cost exceeds first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify.
+
+**$C_{sustain}$ is not overhead.** It is the spend that holds $r_t$ up, and section 7.2 says what it actually buys.
+
+### 7.1 Two mechanisms with opposite signs
+
+A forward-deployed engagement is often defended on the grounds that it raises the buyer's switching cost. That defence has a problem inside this framework.
+
+Switching cost is a **lock-in** mechanism, and lock-in raises the seller's temptation payoff $T$ in the cooperation condition $\delta_{discount} > (T - R)/(T - P)$. A buyer who cannot leave can be repriced and under-served. Raising $T$ raises the threshold the seller's own discount factor must clear, so the arrangement becomes harder to sustain exactly as the seller's position strengthens. This is the extraction drift Axiom III describes for channels and adjudicators, arriving at the deal level.
+
+The buyer prices this at signature. A buyer who anticipates lock-in is losing the option to exit, and [real-options.md](../02-research/real-options.md) says that option carries real value. So switching cost raises $\Delta_A$ and $y$ before the seller has delivered anything.
+
+**Switching cost is a liability at signature and an asset at renewal.** Any account of it that carries only one sign is describing half the mechanism.
+
+### 7.2 What actually defends the position
+
+The durable asset is not lock-in. It is **asymmetric $\Delta_A$**.
+
+After a forward-deployed engagement the incumbent's $I_{seller}$ approaches zero, because the environment has been mapped. Every challenger begins at close to maximum. The buyer's renewal decision compares $y$ with the incumbent against $y$ with a challenger, and the challenger's figure carries a full $F_{implementation}$ amplified by an asymmetry gap nobody has closed yet.
+
+That is an information asset rather than a hostage. The buyer is not trapped, the alternative is genuinely more expensive, and the buyer can verify the comparison themselves. It also produces the renewal behaviour the lock-in story predicts, without raising $T$.
+
+**It decays at a rate the Constitution already names.** $\Delta_A(t) = \Delta_A(0) + \gamma t$ absent maintenance, and $\gamma$ runs on staff turnover, workflow change, and systems the seller never saw installed. $C_{sustain}$ is the spend that holds $\gamma$ down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature.
+
+The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom III. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
+
+### 7.3 Why $Q$ appears twice
+
+Section 3 defines $Q = C_{invest} - R_{redeploy}$ as the seller's exposure: work that cannot be redeployed is what a buyer can appropriate by threatening to walk.
+
+In the repeated game the same quantity does the opposite job. Work that cannot be redeployed means the seller loses badly if the relationship ends, which is a credible bond rather than a liability. Mutual specific investment is the joint-ownership remedy in [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md): neither party defects when both have sunk something they cannot recover.
+
+So a forward-deployed motion raises the seller's temptation $T$ and the seller's bond $Q$ at the same time. **The relationship is healthy while $Q$ grows at least as fast as $T$.** That is the condition to watch, and it is why the defensible account of the motion is not that the buyer is locked in but that both parties now have more to lose.
+
+### 7.4 The leading indicator
+
+[game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) states that Net Revenue Retention is a lagging indicator, and it lags by a full renewal cycle. Section 7.2 supplies a leading one: the incumbent's asymmetry gap, which erodes continuously and is measurable at any point.
+
+The instrument already exists. The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
+
 ---
 
 ## Open questions
@@ -94,6 +152,8 @@ The practical consequence: a manager can use section 4 to ask "what would have t
 - **Axiom I attributes specificity to the deal without naming the party who bears it.** Section 3 shows the bearer determines who needs governance. Revising the axiom is a breaking change to Part I and waits until this document has been reviewed.
 - **Axiom I selects the motion on the combined level of the three costs.** Composition selects the motion; the sum sets the Turnkey and Structural boundary. The two claims are currently fused in one sentence.
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
+- **The first-year margin disqualifier assumes a single-shot game.** Section 7 shows the test is too strict when $r_t$ holds up. Correcting it means editing a disqualification rule reps rely on, so it waits for review.
+- **$C_{sustain}$ has no budget owner.** Part IV of the Constitution maps each variable to a department. This one is unmapped, and unmapped variables drift by that corollary's own argument.
 - **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one, and nothing in the repository measures it yet.
 
 ---
