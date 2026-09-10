@@ -155,7 +155,7 @@ If all four hold, $\Delta_A$ shrinks. If any one fails, it doesn't — regardles
 ## Related
 
 - **Theory:** [ILG Constitution — Axiom II (Law of Uncertainty Inflation) and the Friction Allocation Principles](../../theory/01-foundation/00-ilg-constitution.md).
-- **Channel evaluation:** [Constitution clarifying concept — Jevons Vulnerability](../../theory/01-foundation/00-ilg-constitution.md) describes when production cost is the binding constraint, making the channel vulnerable to Principle 1 failure.
+- **Channel evaluation:** [channel-collapse.md](../../theory/02-research/channel-collapse.md) describes when production cost is the binding constraint, making the channel vulnerable to Principle 1 failure.
 - **Adjudicator design:** [Constitution Axiom III — Reputation Depreciation](../../theory/01-foundation/00-ilg-constitution.md) describes how to design demurrage into adjudicator structures.
 - **Deal-level scoring:** [Process Calculator](./process-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.
 - **Manager review:** [Governance Review Checklist](../02-internal-ops/02-governance-review-checklist.md) — should incorporate the four principles when reviewing artifacts for deal commit.

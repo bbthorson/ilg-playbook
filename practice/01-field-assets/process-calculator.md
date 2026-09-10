@@ -57,7 +57,7 @@ Score the workflow for the specific problem being solved, not the buyer's operat
 
 ## Step 2: Transaction Cost Diagnostic (Mature and Transitional markets)
 
-Score each factor 1–5, then sum. Annotations show which transaction cost component each factor targets — see [Constitution, Part II: Three Transaction Costs](../../theory/01-foundation/00-ilg-constitution.md).
+Score each factor 1–5, then sum. Annotations show which transaction cost component each factor targets — see [Constitution, Axiom II](../../theory/01-foundation/00-ilg-constitution.md).
 
 ### 1. Integration Depth — targets $F_{implementation}$
 

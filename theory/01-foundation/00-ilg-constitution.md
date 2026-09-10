@@ -1,6 +1,6 @@
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 14.0
+**Version:** 15.0
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
@@ -171,7 +171,8 @@ Part II organizes the operational consequences of the axioms. Concepts come in t
 
 - **Primary derivations**: one axiom → one concept. The operational content of each axiom.
 - **Bridge concepts**: two or more axioms integrated. The places where the axioms talk to each other.
-- **Clarifying concepts**: definitions and elaborations. Reference material for the primary derivations.
+
+Concepts that only elaborate a source rather than derive from an axiom are not listed here. Each has a research file that defines it and a row in [04-glossary-and-notation.md](./04-glossary-and-notation.md) that points there.
 
 ### Primary Derivations
 
@@ -324,35 +325,6 @@ The full statement with all dynamics and constraints appears in Part III.
 
 ---
 
-### Clarifying Concepts
-
-**Market States.** Three stages a market passes through, each with characteristic friction profile:
-- *Nascent*: search dominates, so SLG fits.
-- *Efficient*: all costs moderate, so PLG fits.
-- *Saturated*: consensus and implementation dominate, so ILG fits.
-
-The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" because they are observationally similar from outside (the category is legible, the vendor field is known). The rubric separates them by transaction cost score. *Transitional* refers to the boundary state between Nascent and Mature, when the category is forming but not yet fully legible. Elaborates the Boundary Condition by specifying which motion fits which state.
-
-**Three Transaction Costs.** Coase named three costs of using the price mechanism: search, bargaining, and enforcement. ILG operationalizes them for B2B software as the three components of $F_{base}$: $F_{search}$ (locating the category and viable vendors), $F_{consensus}$ (internal buyer alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Elaborates Axiom II's cost equation by separating what is summed.
-
-$F_{search}$ subdivides once more, and motion selection depends on the split. *Category search* (the buyer cannot name what they need) dominates nascent markets and is resolved by education. *Vendor evaluation* (the category is legible and the field is known) dominates mature low-specificity markets and is resolved by trial. Fusing the two makes SLG and PLG appear to compete for the same cost component when they address different halves of it. See [01-sales-motion-comparison.md](./01-sales-motion-comparison.md).
-
-**Akerlof Exit Threshold.** The point at which $\Delta_A$ exceeds the buyer's tolerance for market participation, causing market withdrawal. Mathematically expressed as $\Delta_A^*$. Beyond the threshold, no individual signal mechanism can restore market function. The buyer has exited. Elaborates Axiom II's saturation failure mode.
-
-**Single Crossing Property.** Spence's condition: a signal separates quality from noise only when the cost of producing it is proportionally lower for the high-quality actor. The technical underpinning of Friction Allocation Principle 1 (non-automatable friction).
-
-**Williamson Hold-Up.** The economic problem solved by the MIP. Once a buyer makes asset-specific investments, the seller can demand more than the original price (or vice versa). The MIP, by contractualizing bilateral commitments, makes hold-up costly for either side. Elaborates Axiom I's "build vs buy" decision and Axiom III's deal-level cooperation case.
-
-**Incomplete Contracts and Residual Control Rights.** Grossman-Hart-Moore's result that contracts covering complex transactions cannot specify every future state, so what governs the unspecified states is the pre-agreed allocation of decision authority. Residual control rights are that authority. Elaborates Axiom III's mechanism and explains why the Blueprint (which shrinks the unspecified set) and the MIP (which allocates authority within it) are complementary rather than redundant.
-
-**Buying Center.** Webster and Wind's term for the set of people participating in a purchase decision, each evaluating the same proposal against a different objective. Cyert and March established the underlying claim: a firm is a coalition with conflicting goals, not a single agent with one utility function. Elaborates $F_{consensus}$ by explaining what generates it, and explains why a saboteur is structurally normal rather than exceptional. A stakeholder whose measured objectives worsen under the initiative is behaving rationally by blocking it.
-
-**Real Option.** The economic value of the ability to defer, stage, or abandon an irreversible investment under uncertainty. Standard net present value analysis omits it, which is why a buyer can correctly decline a project with positive expected value. The technical underpinning of Staged Commitment.
-
-**Jevons Vulnerability.** A channel is Jevons-vulnerable when the binding constraint on volume is production cost. When production cost falls due to efficiency tools, volume rises and channel signal quality collapses. Channels whose binding constraint is something else (relationships, expertise, time, demonstrated work) are Jevons-resistant. Elaborates the channel-level failure mode of Friction Allocation Principle 1.
-
----
-
 ## Part III: Synthesis
 
 ### The Full Surplus Equation
@@ -414,40 +386,9 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 
 ---
 
-## Part IV: Organizational Corollary
-
-The variables in the Surplus equation each have a department owner. This corollary states the *principle* (the axioms map to organizational responsibility) and points to where the operational procedures live.
-
-### The Principle
-
-Each variable in the model is owned by a specific function. If a variable has no owner, it drifts; if it has multiple owners without coordination, it fragments.
-
-| Variable | Axiom | Primary owner | Supporting |
-|---|---|---|---|
-| $V_{solution}$ | I | Product | Product Marketing |
-| $V_{next\_best}$ | I | Sales | Product Marketing |
-| $V_{effective}(t)$ — urgency monitoring | I | Sales | RevOps |
-| $k$ (asset specificity) | I | Sales Leadership | Product |
-| $F_{search}$ | II | Marketing | Sales (via referrals) |
-| $F_{consensus}$ | II | Sales | Solutions Engineering |
-| $F_{implementation}$ | II | CS / Implementation | Sales (in the Blueprint) |
-| $\Delta_A$ — Seller side ($I_{seller}$) | II | Sales + SE | Product Marketing |
-| $\Delta_A$ — Buyer side ($I_{buyer}$) | II | Marketing (category) + Sales (deal) | CS (post-sale) |
-| $\delta_{discount}$ — Rep level | III | Finance (vested comp) | Sales Leadership |
-| $\delta_{discount}$ — Org level | III | Executive Leadership | All |
-| Reputation refresh | III | Marketing + CS | All |
-
-### The Handoff Rule
-
-The Blueprint travels with the customer through the funnel. The asymmetry assessment that the seller produced must transfer intact to CS at handoff, or $\Delta_A$ resets to near-maximum on the receiving side. The Blueprint is the institutional memory that prevents the Fumbled Handoff failure mode.
-
-### Where Procedures Live
-
-This corollary states the principle. Detailed procedures (CRM field configuration, RACI tables, manager rituals, comp plan mechanics) live in [`practice/02-internal-ops/`](../../practice/02-internal-ops/).
-
----
-
 ## Version History
+
+**v15.0.** Structural pass, no change to any axiom, equation, or derivation. Part II's Clarifying Concepts tier is removed: seven of its nine entries restated a concept that already had a dedicated research file and a glossary row pointing at it, making the Constitution a third home for the same definition. Three Transaction Costs restated Axiom II's own mechanism paragraph, and the $F_{search}$ split is stated in [01-sales-motion-comparison.md](./01-sales-motion-comparison.md). Market States moves to that same document, where motion-to-market mapping belongs. Part IV's Organizational Corollary moves to [practice/02-internal-ops/07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), since a variable-to-department mapping is operational content by the Constitution's own rule. Nothing was deleted without a surviving canonical home.
 
 **v14.0.** Retired the "Bridge" and "Toaster" deal analogies in favor of the 2x2 Deal Archetype Matrix. Deals are now canonically classified as **Turnkey Deals** ($k \le 9$, low friction/specificity, velocity motion) vs. **Structural Deals** ($k \ge 10$, high friction/specificity, ILG motion) across category legibility. Core axioms, mathematical content, and derivations unchanged.
 

@@ -23,7 +23,17 @@ ignorecase: false
 # below is a common slip and has never appeared in the working tree, so this row
 # is preventive rather than corrective, in the same spirit as the entries mined
 # from git history above. Canonical definition: 04-glossary-and-notation.md.
+# Retired Constitution sections (v15.0). Clarifying Concepts was deleted as a
+# third home for definitions that already had a research file and a glossary
+# row. Part IV moved to practice/02-internal-ops/07-variable-ownership.md. Both
+# names survive only inside link text, where hrefs stay valid and the link
+# checker cannot see the staleness. Keys are scoped to the link-text shape on
+# purpose, the way the v14.0 analogies avoid bare "Bridge" and "Toaster", so the
+# Constitution's own version history can still name what it retired.
 swap:
+  Constitution, Clarifying Concepts: the concept's research file, indexed in 04-glossary-and-notation.md
+  Constitution clarifying concept: the concept's research file, indexed in 04-glossary-and-notation.md
+  Constitution, Part IV: practice/02-internal-ops/07-variable-ownership.md
   net recurring revenue: Net Revenue Retention
   Net Recurring Revenue: Net Revenue Retention
   net retained revenue: Net Revenue Retention

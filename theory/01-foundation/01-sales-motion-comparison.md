@@ -45,6 +45,18 @@ ILG deals carry little of either. The buyer knows the category and the field. Wh
 
 ---
 
+### Market States
+
+Three stages a market passes through, each with a characteristic friction profile:
+
+- *Nascent*: search dominates, so SLG fits.
+- *Efficient*: all costs moderate, so PLG fits.
+- *Saturated*: consensus and implementation dominate, so ILG fits.
+
+The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" because they are observationally similar from outside: the category is legible and the vendor field is known. The rubric separates them by transaction cost score. *Transitional* names the boundary state between Nascent and Mature, when the category is forming but not yet fully legible.
+
+---
+
 ## Quick Reference
 
 | Dimension | **ILG** | **PLG** | **SLG** |

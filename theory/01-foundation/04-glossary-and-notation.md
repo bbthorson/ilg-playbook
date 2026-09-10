@@ -68,7 +68,7 @@ Two rules govern what is written here, and they differ by section.
 |---|---|---|
 | $\Delta_A$ | Bilateral Asymmetry Gap. A **sum**, not a difference: $I_{seller} + I_{buyer}$. | [03-mathematical-models.md §2.1](./03-mathematical-models.md) |
 | $\hat{\Delta}_A$ | The gap normalized to $[0, 1]$. **Required before substituting into either cost equation.** | [03-mathematical-models.md §1.5](./03-mathematical-models.md) |
-| $\Delta_A^*$ | Akerlof Exit Threshold. Above it the buyer leaves the market entirely. | [Constitution, Clarifying Concepts](./00-ilg-constitution.md) |
+| $\Delta_A^*$ | Akerlof Exit Threshold. Above it the buyer leaves the market entirely. | [costly-signals.md](../02-research/costly-signals.md) |
 | $I_{seller}$ | Seller Ignorance. What the seller has not mapped about the buyer's environment. | [03-mathematical-models.md §2.2](./03-mathematical-models.md) |
 | $I_{buyer}$ | Buyer Uncertainty. Doubt about return variance and vendor capability. | [03-mathematical-models.md §2.3](./03-mathematical-models.md) |
 | $x$ | Uncertainty in the reduced form. Approximately $\Delta_A$, but see the disambiguation below. | [Constitution, Axiom II](./00-ilg-constitution.md) |
@@ -150,7 +150,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Structural Deal** | A deal whose specificity requires the ILG motion. Scores 10 to 20. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
 | **Turnkey Deal** | A low-specificity deal that a velocity motion serves better. Scores 4 to 9. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
 | **Chaos Trap** | A buyer with no documented workflow, in any market. Route to consulting, not to a motion. | [Process Calculator, Step 0](../../practice/01-field-assets/process-calculator.md) |
-| **Market States** | Nascent, Transitional, Mature. Each carries a characteristic friction profile. | [Constitution, Clarifying Concepts](./00-ilg-constitution.md) |
+| **Market States** | Nascent, Transitional, Mature. Each carries a characteristic friction profile. | [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
 | **Boundary Condition** | The test every deal passes before ILG investment is justified. | [Constitution, Part II](./00-ilg-constitution.md) |
 
 ### Axiom II concepts
@@ -162,7 +162,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Costly Signal** | A demonstration a low-quality competitor could not afford to replicate. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom II](./00-ilg-constitution.md) |
 | **Safe No / Logical Yes** | The buyer's refusal to change, which risks nothing for the decider, versus the positive business case it defeats. | [Constitution, Axiom II](./00-ilg-constitution.md) |
-| **Akerlof Exit Threshold** | The asymmetry level beyond which the buyer stops participating in the market. | [Constitution, Clarifying Concepts](./00-ilg-constitution.md) |
+| **Akerlof Exit Threshold** | The asymmetry level beyond which the buyer stops participating in the market. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Jevons Vulnerability** | A channel whose binding constraint is production cost, and which therefore collapses when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
 | **Buying Center** | The set of people in a purchase decision, each judging it against a different objective. | [buying-center-dynamics.md](../02-research/buying-center-dynamics.md) |
 | **Decay Clock** | The two time dynamics that erode deal viability before close. | [Constitution, Bridge Concepts](./00-ilg-constitution.md) |
@@ -178,7 +178,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
 | **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Bridge Concepts](./00-ilg-constitution.md) |
 | **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
-| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [Constitution, Part IV](./00-ilg-constitution.md), operationalized in [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) |
+| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), operationalized in [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) |
 
 ### Artifact vocabulary
 

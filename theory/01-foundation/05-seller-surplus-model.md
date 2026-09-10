@@ -153,7 +153,7 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/02-inter
 - **Axiom I selects the motion on the combined level of the three costs.** Composition selects the motion; the sum sets the Turnkey and Structural boundary. The two claims are currently fused in one sentence.
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
 - **The first-year margin disqualifier assumes a single-shot game.** Section 7 shows the test is too strict when $r_t$ holds up. Correcting it means editing a disqualification rule reps rely on, so it waits for review.
-- **$C_{sustain}$ has no budget owner.** Part IV of the Constitution maps each variable to a department. This one is unmapped, and unmapped variables drift by that corollary's own argument.
+- **$C_{sustain}$ has no budget owner.** [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md) maps each variable to a department. This one is unmapped, and unmapped variables drift by that corollary's own argument.
 - **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one, and nothing in the repository measures it yet.
 
 ---

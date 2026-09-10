@@ -86,5 +86,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 14.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
+**Version:** 15.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
 **Last updated:** 2026-09-08
