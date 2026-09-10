@@ -45,6 +45,7 @@ ignorecase: false
 # nobody added the rows at the time of the rename.
 swap:
   Risk Calculator: Process Calculator
+  Deal Triage Calculator: "Process Calculator (one name, chosen because 45 references used it against 3)"
   Lane 1: "Turnkey deal (the archetype names replaced the lane numbering in v14.0)"
   Lane 2: "Structural deal (the archetype names replaced the lane numbering in v14.0)"
   independently-arising components: "components arising from distinct conditions (they are not statistically independent)"

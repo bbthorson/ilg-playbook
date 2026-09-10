@@ -32,13 +32,15 @@ The **research files** in `theory/02-research/` back specific axioms:
 
 Start with `theory/02-research/00-reading-guide.md` before modifying any research file.
 
+**One document is a proposal and does not govern.** `theory/01-foundation/06-friction-vector.md` carries `status: under-review`. It argues that motion selection follows from the direction and magnitude of the three-component cost vector, and its section 10 lists what adopting it would rewrite and retire. Until its status changes, `01-sales-motion-comparison.md` and the Process Calculator are still the answer to which motion to run. Treat anything in it as under argument rather than as a rule.
+
 ## Frontmatter
 
 Every document in `theory/` and `practice/` opens with YAML frontmatter. `publishing/` is out of scope, because the style references are verbatim records of published text and `.vale.ini` already exempts them for that reason.
 
 ```yaml
 ---
-title: "The Deal Triage Calculator"   # must match the H1
+title: "The Process Calculator"       # must match the H1
 layer: practice                        # theory | practice, must match the directory
 status: active                         # active | under-review | superseded
 version: 4.2                           # only where the document tracks one
@@ -61,7 +63,7 @@ When writing or editing any document in this repo, apply the voice rules from `p
 <!-- vale ILG.AntiHype = NO -->
 - **Anti-hype vocabulary**: banned words include *synergy*, *revolutionize*, *disruptive*, *cutting-edge*, *seamlessly*, *unlock potential*. See voice guide for replacements.
 <!-- vale ILG.AntiHype = YES -->
-- **Em dashes and semicolons**: 2–3 per document maximum. Restructure into periods when uncertain.
+- **Em dashes and semicolons**: at most 30 per file for reference and operational material, which is the repo-wide default, and at most 3 for prose written for publication. `.vale.ini` sets which rule applies where. Restructure into periods rather than raising either limit.
 - **Anti-antithesis filter**: avoid "It's not X, it's Y" constructions.
 - **Active voice**: name actors. "HTD will map the workflow" over "the workflow will be mapped."
 - **No emojis.**
@@ -70,7 +72,7 @@ When writing or editing any document in this repo, apply the voice rules from `p
 
 ### Checking your work
 
-Most of the rules above are machine-checked. Run both before finishing an edit, and see `practice/02-internal-ops/linting/README.md` for what each covers:
+Most of the rules above are machine-checked. Run all five before finishing an edit. `practice/02-internal-ops/linting/README.md` covers the two linters and `models/README.md` covers the two model checks:
 
 ```bash
 python3 practice/02-internal-ops/linting/check_playbook.py && \
@@ -96,13 +98,13 @@ The dependency chain runs `theory/` → `practice/` → `publishing/`, and nothi
 
 All framework claims trace to:
 
-$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A) = OC_{\text{switching}} - y$$
+$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \hat{\Delta}_A) = OC_{\text{switching}} - y$$
 
-- **S** = Deal Surplus (must be > 0 to close)
-- **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance ($I_{seller}$) + Buyer Uncertainty ($I_{buyer}$)
-- **y** = Total Perceived Transaction Cost = $ax^2 + c$ (where $a = 2.25$ is risk aversion, $x \approx \Delta_A$ is uncertainty, and $c$ is direct cost)
-- **Structural Deal** = deal scoring 10–20 on Process Calculator → deploy ILG motion
-- **Turnkey Deal** = deal scoring 4–9 → deploy PLG/SLG motion
+- **S** = Deal Surplus, which must exceed 0 for the deal to close
+- **$\hat{\Delta}_A$** = Bilateral Asymmetry Gap, normalized to $[0, 1]$. The Asymmetry Scorecard emits a raw score on $[2, 10]$ and **neither cost equation accepts it**. Normalize first, per `03-mathematical-models.md` section 1.5. `models/ilg_models.py` refuses a raw value at the type level.
+- **y** = Total Perceived Transaction Cost = $a\hat{\Delta}_A^2 + c$, where $a = 2.25$ is anchored by analogy to loss aversion and $c$ is direct cost
+- **Level** = the summed Process Calculator score. 10–20 is a Structural deal, 4–9 is a Turnkey deal. It sets how much apparatus the deal can carry.
+- **Composition** selects the motion, and the summed score does not settle it. Axiom I is explicit: do not read the total as a motion selector.
 
 When diagnosing a stall or editing a prescription, identify which term in the equation it addresses.
 
