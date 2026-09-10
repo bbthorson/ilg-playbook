@@ -37,7 +37,17 @@ ignorecase: false
 # Superseded Axiom I description (v16.0). The axiom name did not change, so
 # nothing here catches a paragraph that uses every current term while describing
 # the pre-v16 version. These two phrases are the load-bearing ones.
+# Retired instrument and archetype names (2026-09). "Risk Calculator" was an
+# early name for the Process Calculator and survived in three operational files
+# after every link to it had been corrected. "Lane 1" and "Lane 2" predate the
+# Turnkey and Structural archetypes of v14.0 and survived the same way. Both are
+# the exact failure this rule exists to catch, and both went uncaught because
+# nobody added the rows at the time of the rename.
 swap:
+  Risk Calculator: Process Calculator
+  Deal Triage Calculator: "Process Calculator (one name, chosen because 45 references used it against 3)"
+  Lane 1: "Turnkey deal (the archetype names replaced the lane numbering in v14.0)"
+  Lane 2: "Structural deal (the archetype names replaced the lane numbering in v14.0)"
   independently-arising components: "components arising from distinct conditions (they are not statistically independent)"
   Their combined level determines which motion: "composition selects the motion, and combined level sets the Turnkey and Structural boundary"
   03-learning-plan: "no replacement; the curriculum was removed in v15.0"

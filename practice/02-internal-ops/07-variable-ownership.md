@@ -43,6 +43,6 @@ The Blueprint travels with the customer through the funnel. The asymmetry assess
 
 ## Where procedures live
 
-This document states the principle. The detailed procedures live alongside it in this directory: CRM field configuration and manager rituals in [00-setup-implementation-guide.md](./00-setup-implementation-guide.md), comp plan mechanics in [03-incentives-vested-commission.md](./03-incentives-vested-commission.md), and calibration in [01-governance-deal-calibration.md](./01-governance-deal-calibration.md).
+This document states the principle. The detailed procedures live alongside it in this directory: CRM field configuration and manager rituals in [00-setup-implementation-guide.md](./00-setup-implementation-guide.md), and comp plan mechanics in [03-incentives-vested-commission.md](./03-incentives-vested-commission.md). Calibration is in [02-governance-review-checklist.md](./02-governance-review-checklist.md).
 
 ---

@@ -10,7 +10,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 # The Standard Order Protocol (The Accelerator)
 
 Version: 1.0  
-Phase: Lane 1 (Turnkey / PLG)  
+Phase: Turnkey deal (PLG)  
 Audience: Account Executives / Sales Ops / CS Lead  
 Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" handoffs.
 
@@ -18,11 +18,11 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 
 *Before using this protocol, verify the Deal Score:*
 
-- **Risk Calculator Score:** Must be **\< 10**.  
+- **Process Calculator Score:** Must be **\< 10**.  
 - **Override Check:** Customer has **NOT** asked for a Pilot, POC, or Custom Security Review.  
 - **Asset Specificity:** No deep integration required.
 
-**The Rule:** If the score is \> 10, STOP. You are in the wrong lane. Deploy the *Contextual Blueprint* (Lane 2).
+**The Rule:** If the score is \> 10, STOP. You are running the wrong motion. Deploy the *Contextual Blueprint*.
 
 ## Step 1: The "No-Touch" Configuration
 
@@ -68,7 +68,7 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 
 ## Step 4: The "Silent" Handoff
 
-*There is no "Handoff Call" for Lane 1\. The product is the onboarding.*
+*There is no "Handoff Call" for a Turnkey deal\. The product is the onboarding.*
 
 1. **CRM Update:** Mark Stage as Closed Won \- Transactional.  
 2. **CS Notification:** Automated alert to CS "Low Touch" queue.  
@@ -77,7 +77,7 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 
 ## Summary of Differences (Structural vs. Turnkey Deals)
 
-| Feature | Structural (Lane 2\) | Turnkey (Lane 1\) |
+| Feature | Structural | Turnkey |
 | :---- | :---- | :---- |
 | **Discovery** | Political Mapping | BANT Only |
 | **Validation** | Red Team Workshop | Free Trial / Demo |

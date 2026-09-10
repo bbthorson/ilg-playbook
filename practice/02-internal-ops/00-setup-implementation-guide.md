@@ -19,7 +19,7 @@ Goal: To calibrate the ILG framework to your specific product, market, and tech 
 
 ## Phase 1: The Calibration Workshop
 
-*You cannot use the "Risk Calculator" out of the box. A generic score of "5" means nothing. You must define what "High Friction" looks like for YOUR product.*
+*You cannot use the Process Calculator out of the box. A generic score of "5" means nothing. You must define what "High Friction" looks like for YOUR product.*
 
 Attendees: VP Sales, VP Customer Success, Lead Solutions Engineer, Product Marketing.  
 Time: 90 Minutes.
@@ -58,8 +58,8 @@ Time: 90 Minutes.
 - **Field Name:** Deal\_Lane\_\_c  
 - **Type:** Picklist  
 - **Values:**  
-  * Lane 1: Transactional (Auto-assign if Score \< 10\)  
-  * Lane 2: Consultative (Auto-assign if Score \> 10\)
+  * Turnkey: Transactional (Auto-assign if Score \< 10\)  
+  * Structural: Consultative (Auto-assign if Score \> 10\)
 
 ### 2\. The "Scorecard" Object
 
@@ -68,7 +68,7 @@ Time: 90 Minutes.
 - **Field:** Seller\_Clarity\_Score\_\_c (Number 0-15)  
 - **Field:** Buyer\_Clarity\_Score\_\_c (Number 0-15)  
 - **Field:** Asymmetry\_Delta\_\_c (Formula: ABS(Seller \- Buyer))  
-- **Validation Rule:** "Cannot move Stage to 'Negotiation' if Deal\_Lane\_\_c \= 'Lane 2' AND Asymmetry\_Delta\_\_c \> 3."
+- **Validation Rule:** "Cannot move Stage to 'Negotiation' if Deal\_Archetype\_\_c \= 'Structural' AND Asymmetry\_Delta\_\_c \> 3."
 
 ### 3\. The "Artifacts" Checkbox Group
 
@@ -76,7 +76,7 @@ Time: 90 Minutes.
   * Blueprint Signed  
   * Red Team Completed  
   * MIP Drafted  
-- **Validation Rule:** "Cannot move Stage to 'Closed Won' if Deal\_Lane\_\_c \= 'Lane 2' AND MIP Drafted is NOT selected."
+- **Validation Rule:** "Cannot move Stage to 'Closed Won' if Deal\_Archetype\_\_c \= 'Structural' AND MIP Drafted is NOT selected."
 
 ## Phase 3: Legal & Finance Alignment
 
@@ -112,5 +112,5 @@ Time: 90 Minutes.
 Scenario: A strategic logo (Fortune 500\) wants to buy now (End of Quarter) but refuses the Red Team.  
 The Protocol:
 
-1. **CEO Approval Required.** Only the CEO can waive the Red Team for a Lane 2 deal.  
+1. **CEO Approval Required.** Only the CEO can waive the Red Team for a Structural deal.  
 2. **The "Risk Letter":** The CEO writes a side-letter to the Customer Sponsor: *"We are skipping our standard validation process at your request to meet your timeline. This increases implementation risk. We require a dedicated Executive Sponsor meeting in Week 2 to mitigate this."*

@@ -1,0 +1,987 @@
+#!/usr/bin/env python3
+"""Assert that every worked example in the playbook reproduces from ilg_models.
+
+The documents are the specification. Each test names the file and section it
+checks, so a failure says which prose to read rather than which line to edit.
+Where a document and the module disagree, fix the module.
+
+Standard library only:
+
+    python3 models/test_ilg_models.py
+"""
+
+import math
+import os
+import sys
+import unittest
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+import ilg_models as m
+
+
+# ==========================================================================
+# 03-mathematical-models.md section 1.5, the normalization guard.
+# ==========================================================================
+
+class TestGapNormalization(unittest.TestCase):
+    """Section 1.5 makes normalization mandatory before either cost equation.
+
+    Confusing the raw and normalized scales is a documented past bug that
+    produces cost estimates off by an order of magnitude.
+    """
+
+    def test_endpoints_of_the_scorecard_range_map_to_zero_and_one(self):
+        self.assertEqual(m.normalize_gap(2.0), 0.0)
+        self.assertEqual(m.normalize_gap(10.0), 1.0)
+        self.assertEqual(m.normalize_gap(6.0), 0.5)
+
+    def test_scorecard_midband_matches_the_documented_formula(self):
+        # (raw - 2) / 8, spelled out rather than reusing the implementation.
+        for raw in (2.0, 3.5, 4.0, 7.0, 9.25, 10.0):
+            self.assertAlmostEqual(m.normalize_gap(raw), (raw - 2.0) / 8.0)
+
+    def test_a_raw_score_outside_the_scorecard_range_is_rejected(self):
+        for raw in (0.0, 1.9, 10.1, 14.55):
+            with self.assertRaises(ValueError):
+                m.normalize_gap(raw)
+
+    def test_structural_multiplier_stays_within_one_and_two(self):
+        # Section 1.5: normalizing "keeps the structural multiplier in [1, 2]".
+        for raw in (2.0, 5.0, 7.5, 10.0):
+            gap = m.normalize_gap(raw)
+            self.assertTrue(1.0 <= 1.0 + gap <= 2.0)
+
+    def test_effective_cost_refuses_a_bare_float(self):
+        with self.assertRaises(TypeError):
+            m.effective_cost(10.0, 10.0, 10.0, 0.5)
+
+    def test_reduced_cost_refuses_a_bare_float(self):
+        with self.assertRaises(TypeError):
+            m.reduced_cost(0.5)
+
+    def test_the_documented_past_bug_cannot_be_reproduced(self):
+        """A raw 10 would inflate base friction elevenfold. Section 1.5 says no
+        observed deal supports that, so the type system has to stop it."""
+        with self.assertRaises(TypeError):
+            m.effective_cost(1.0, 1.0, 1.0, 10.0)
+
+    def test_a_normalized_gap_may_exceed_one_under_drift(self):
+        """Section 1.5: the gap may exceed 1 when asymmetry rebuilds past the
+        instrument's ceiling. The scorecard measures a point in time."""
+        drifted = m.asymmetry_drift(m.normalize_gap(9.0), gamma=0.1, t=6.0)
+        self.assertGreater(drifted, 1.0)
+        self.assertIsInstance(drifted, m.NormalizedGap)
+        # And it is still accepted by the cost equations.
+        self.assertGreater(m.reduced_cost(drifted), m.A_RISK_AVERSION)
+
+    def test_a_negative_normalized_gap_is_rejected(self):
+        with self.assertRaises(ValueError):
+            m.NormalizedGap(-0.01)
+
+
+# ==========================================================================
+# 03-mathematical-models.md section 1, the two cost representations.
+# ==========================================================================
+
+class TestTransactionCost(unittest.TestCase):
+
+    def test_effective_cost_matches_the_structural_form(self):
+        gap = m.normalize_gap(6.0)  # 0.5
+        self.assertAlmostEqual(m.effective_cost(10.0, 20.0, 30.0, gap), 90.0)
+
+    def test_reduced_form_uses_the_anchored_coefficient(self):
+        self.assertEqual(m.A_RISK_AVERSION, 2.25)
+        gap = m.normalize_gap(10.0)  # 1.0
+        self.assertAlmostEqual(m.reduced_cost(gap, c=5.0), 2.25 + 5.0)
+
+    def test_reduced_form_is_convex(self):
+        """Convexity is the property section 1.4 says the reduced form exists
+        to preserve, and the Three Sales Levers argument depends on it."""
+        gaps = [m.NormalizedGap(x / 10.0) for x in range(11)]
+        costs = [m.reduced_cost(g) for g in gaps]
+        second_differences = [
+            costs[i + 1] - 2 * costs[i] + costs[i - 1]
+            for i in range(1, len(costs) - 1)
+        ]
+        for d in second_differences:
+            self.assertGreater(d, 0.0)
+
+    def test_discounting_cannot_offset_a_large_gap(self):
+        """Section 1.2's argument, stated as a test. Cutting c to zero from a
+        starting price does less than closing the gap."""
+        wide = m.normalize_gap(10.0)
+        narrow = m.normalize_gap(3.0)
+        priced = m.reduced_cost(wide, c=1.0)
+        discounted_to_free = m.reduced_cost(wide, c=0.0)
+        gap_closed = m.reduced_cost(narrow, c=1.0)
+        self.assertLess(gap_closed, discounted_to_free)
+        self.assertLess(discounted_to_free, priced)
+
+    def test_expanded_form_equals_the_quadratic_it_derives(self):
+        """Section 1.3: (c + b*gap)(1 + gap) = b*gap^2 + (b + c)*gap + c."""
+        b, c = 2.25, 4.0
+        for x in (0.0, 0.25, 0.5, 0.75, 1.0):
+            gap = m.NormalizedGap(x)
+            expanded = m.effective_cost_expanded(gap, b, c)
+            polynomial = b * x ** 2 + (b + c) * x + c
+            self.assertAlmostEqual(expanded, polynomial)
+
+    def test_the_dropped_linear_term_is_not_negligible(self):
+        """Section 1.4 states the linear term is comparable to the quadratic
+        term over the operating range and sometimes larger. That is a claim
+        about the models, so it is checkable."""
+        b, c = 2.25, 4.0
+        larger_at = []
+        for x in (0.1, 0.25, 0.5, 0.75, 1.0):
+            quadratic = b * x ** 2
+            linear = (b + c) * x
+            if linear > quadratic:
+                larger_at.append(x)
+        self.assertTrue(larger_at, "the linear term should dominate somewhere")
+
+    def test_the_gap_is_a_sum_not_a_difference(self):
+        """Section 2.1. The Asymmetry Scorecard records that an earlier version
+        computed a difference and scored the most dangerous deal on the board
+        as symmetric and therefore forecastable."""
+        both_blind = m.asymmetry_gap(5.0, 5.0)
+        one_sided = m.asymmetry_gap(5.0, 1.0)
+        self.assertEqual(both_blind, 10.0)
+        self.assertGreater(both_blind, one_sided)
+
+
+# ==========================================================================
+# 03-mathematical-models.md section 2, the two halves of the gap.
+# ==========================================================================
+
+class TestAsymmetryHalves(unittest.TestCase):
+
+    def test_seller_ignorance_is_increasing_and_convex_in_both_inputs(self):
+        rising = [m.seller_ignorance(u, 5.0) for u in (0, 2, 4, 6, 8, 10)]
+        self.assertEqual(rising, sorted(rising))
+        steps = [rising[i + 1] - rising[i] for i in range(len(rising) - 1)]
+        self.assertEqual(steps, sorted(steps))  # accelerating, not proportional
+
+    def test_seller_ignorance_weights_must_sum_to_one(self):
+        with self.assertRaises(ValueError):
+            m.seller_ignorance(5.0, 5.0, w_tech=0.7, w_process=0.7)
+
+    def test_buyer_uncertainty_falls_with_proof_and_approaches_a_floor(self):
+        """Section 2.3's most useful field implication: no quantity of costly
+        signaling drives buyer uncertainty to zero while the return itself
+        remains volatile."""
+        cv = 0.4
+        doubts = [m.buyer_uncertainty(cv, k) for k in (0, 2, 4, 8, 10)]
+        self.assertEqual(doubts, sorted(doubts, reverse=True))
+        floor = m.buyer_uncertainty_floor(cv)
+        self.assertAlmostEqual(floor, 0.4)
+        # Proof never reaches the floor, it only approaches it.
+        self.assertGreater(doubts[-1], floor)
+        self.assertAlmostEqual(m.buyer_uncertainty(cv, 10.0),
+                               floor + 2.0 * math.exp(-0.5 * 10.0))
+        self.assertLess(doubts[-1] - floor, 0.02)
+
+    def test_proof_shows_diminishing_returns(self):
+        gains = []
+        prev = m.buyer_uncertainty(0.4, 0.0)
+        for k in (2, 4, 6, 8, 10):
+            here = m.buyer_uncertainty(0.4, k)
+            gains.append(prev - here)
+            prev = here
+        self.assertEqual(gains, sorted(gains, reverse=True))
+
+
+# ==========================================================================
+# consensus-friction-calculator.md line 84, the worked example.
+# ==========================================================================
+
+class TestConsensusFriction(unittest.TestCase):
+    """The calculator's worked example:
+
+        F = 1.0 * 5^1.35 * 1.25 * 1.6 = 8.78 * 1.25 * 1.6 = 17.6
+
+    with alpha = 1.0, N = 5, beta = 1.35, Var = 0.25, TO = 3, gamma_TO = 0.20.
+    """
+
+    def test_the_committee_term_matches_the_documented_intermediate(self):
+        self.assertAlmostEqual(5 ** m.BETA_COMMITTEE, 8.78, places=2)
+
+    def test_the_worked_example_reproduces(self):
+        result = m.consensus_friction_field(
+            n=5, var_i=0.25, technical_overlap=3)
+        self.assertAlmostEqual(result, 17.6, places=1)
+
+    def test_the_worked_example_reproduces_factor_by_factor(self):
+        result = m.consensus_friction_field(
+            n=5, var_i=0.25, technical_overlap=3)
+        self.assertAlmostEqual(
+            result, 1.0 * 5 ** 1.35 * 1.25 * 1.6, places=10)
+
+    def test_the_worked_example_lands_in_the_medium_band(self):
+        """The document reads the result as medium, which calls for a
+        stakeholder alignment matrix and shared evaluation criteria."""
+        result = m.consensus_friction_field(5, 0.25, 3)
+        self.assertEqual(m.consensus_band(result), "medium")
+
+    def test_band_edges_match_the_risk_table(self):
+        self.assertEqual(m.consensus_band(9.99), "low")
+        self.assertEqual(m.consensus_band(10.0), "medium")
+        self.assertEqual(m.consensus_band(25.0), "medium")
+        self.assertEqual(m.consensus_band(25.01), "high")
+
+    def test_defaults_match_the_documented_calibration(self):
+        self.assertEqual(m.ALPHA_COORDINATION, 1.0)
+        self.assertEqual(m.BETA_COMMITTEE, 1.35)
+        self.assertEqual(m.GAMMA_TECHNICAL_OVERLAP, 0.20)
+
+    def test_the_core_form_is_the_field_form_without_overlap(self):
+        """Section 3.4: the two-term form is what the axioms require, and the
+        third term is a field refinement."""
+        core = m.consensus_friction(5, 0.25)
+        field = m.consensus_friction_field(5, 0.25, technical_overlap=3)
+        self.assertAlmostEqual(field, core * (1.0 + 0.20 * 3))
+
+    def test_perfect_agreement_still_costs_something(self):
+        """Section 3.1: size alone imposes cost even under perfect
+        agreement, and friction reduces to the structural floor."""
+        self.assertAlmostEqual(m.consensus_friction(5, 0.0), 5 ** 1.35)
+
+    def test_the_sixth_stakeholder_costs_more_than_the_second(self):
+        """Section 3.1's stated consequence of beta > 1."""
+        second = m.consensus_friction(2, 0.0) - m.consensus_friction(1, 0.0)
+        sixth = m.consensus_friction(6, 0.0) - m.consensus_friction(5, 0.0)
+        self.assertGreater(sixth, second)
+
+    def test_sensitivity_to_variance_scales_with_committee_size(self):
+        """Section 3.3: d F / d Var = alpha * N^beta, checked numerically."""
+        for n in (3, 5, 10):
+            h = 1e-7
+            numeric = (m.consensus_friction(n, 0.5 + h)
+                       - m.consensus_friction(n, 0.5 - h)) / (2 * h)
+            self.assertAlmostEqual(
+                numeric, m.consensus_sensitivity_to_variance(n), places=5)
+
+    def test_aligning_a_committee_of_ten_beats_aligning_three(self):
+        """Section 3.3's field claim, and the calculator's case for running the
+        Red Team on large committees specifically."""
+        self.assertGreater(m.consensus_sensitivity_to_variance(10),
+                           m.consensus_sensitivity_to_variance(3))
+
+    def test_incentive_variance_is_bounded_above_by_one(self):
+        """Section 3.2: bounded because I_i is bounded on [-1, 1]. A computed
+        value above 1 indicates an arithmetic error."""
+        worst = m.incentive_variance([-1.0, 1.0, -1.0, 1.0])
+        self.assertAlmostEqual(worst, 1.0)
+        self.assertLessEqual(worst, 1.0)
+
+    def test_identical_alignment_gives_zero_variance(self):
+        self.assertAlmostEqual(m.incentive_variance([0.5] * 6), 0.0)
+
+    def test_a_score_outside_the_stakeholder_range_is_rejected(self):
+        with self.assertRaises(ValueError):
+            m.incentive_variance([0.0, 1.5])
+
+    def test_variance_uses_the_population_form(self):
+        """Section 3.2 divides by N, not by N - 1."""
+        scores = [1.0, -1.0, 0.0]
+        mean = 0.0
+        expected = sum((s - mean) ** 2 for s in scores) / 3
+        self.assertAlmostEqual(m.incentive_variance(scores), expected)
+
+
+# ==========================================================================
+# 03-mathematical-models.md section 4, urgency decay.
+# ==========================================================================
+
+class TestUrgencyDecay(unittest.TestCase):
+
+    def test_with_no_catalyst_decay_runs_at_full_inertia(self):
+        """Section 4.3's first boundary."""
+        self.assertAlmostEqual(m.decay_rate(0.8, e_external=0.0), 0.8)
+
+    def test_a_strong_catalyst_pushes_decay_toward_zero(self):
+        """Section 4.3's second boundary."""
+        weak = m.decay_rate(0.8, e_external=0.0)
+        strong = m.decay_rate(0.8, e_external=10.0)
+        self.assertLess(strong, weak)
+        self.assertAlmostEqual(strong, 0.8 / 6.0)
+
+    def test_decay_falls_in_the_catalyst_and_rises_in_inertia(self):
+        """The two signed partials of section 4.3."""
+        rates = [m.decay_rate(0.8, e) for e in (0, 2, 4, 6, 8, 10)]
+        self.assertEqual(rates, sorted(rates, reverse=True))
+        by_inertia = [m.decay_rate(x, 4.0) for x in (0.2, 0.5, 1.0, 2.0)]
+        self.assertEqual(by_inertia, sorted(by_inertia))
+
+    def test_value_decays_exponentially_from_the_triggering_event(self):
+        self.assertAlmostEqual(m.value_decay(100.0, 0.0, 12.0), 100.0)
+        self.assertAlmostEqual(m.value_decay(100.0, 0.1, 0.0), 100.0)
+        self.assertAlmostEqual(m.value_decay(100.0, math.log(2), 1.0), 50.0)
+
+    def test_a_catalyst_is_the_only_term_a_seller_can_move(self):
+        """Section 4.3's field implication, as a comparison at twelve months."""
+        v_no_catalyst = m.value_decay(100.0, m.decay_rate(1.0, 0.0), 12.0)
+        v_catalyst = m.value_decay(100.0, m.decay_rate(1.0, 8.0), 12.0)
+        self.assertGreater(v_catalyst, v_no_catalyst)
+
+    def test_asymmetry_drift_is_linear_in_time(self):
+        start = m.normalize_gap(4.0)
+        self.assertAlmostEqual(m.asymmetry_drift(start, 0.05, 0.0), start)
+        self.assertAlmostEqual(m.asymmetry_drift(start, 0.05, 10.0),
+                               float(start) + 0.5)
+
+    def test_maintenance_holds_the_drift_rate_down(self):
+        """05-seller-surplus-model.md section 7.2: C_sustain is the spend that
+        holds gamma down, and Net Revenue Retention is this equation run past
+        signature."""
+        start = m.normalize_gap(2.0)
+        unmaintained = m.asymmetry_drift(start, gamma=0.08, t=24.0)
+        maintained = m.asymmetry_drift(start, gamma=0.02, t=24.0)
+        self.assertLess(maintained, unmaintained)
+
+
+# ==========================================================================
+# 05-diagnostics-friction-efficiency-index.md
+# ==========================================================================
+
+class TestFrictionEfficiencyIndex(unittest.TestCase):
+
+    def test_the_composite_weights_sum_to_one(self):
+        """Section 5 states the weights sum to 1.00, which is what bounds the
+        index on [0, 100]. The parameter reference records that the split has
+        no empirical basis."""
+        self.assertAlmostEqual(sum(m.FEI_WEIGHTS), 1.00)
+
+    def test_the_weights_are_the_documented_split(self):
+        self.assertEqual(m.FEI_WEIGHTS, (0.35, 0.25, 0.25, 0.15))
+
+    def test_rms_regression_ten_identified_none_resolved_returns_zero(self):
+        """Section 3's recorded arithmetic error. The canvas form
+        N_edge / (N_edge + N_unresolved) scored 10/20 = 0.50, reporting half
+        the risk mitigated when in fact none was."""
+        self.assertEqual(m.risk_mitigation_score(10, 10), 0.0)
+
+    def test_rms_does_not_reproduce_the_double_counted_value(self):
+        buggy = 10 / (10 + 10)
+        self.assertNotAlmostEqual(m.risk_mitigation_score(10, 10), buggy)
+        self.assertAlmostEqual(buggy, 0.50)
+
+    def test_rms_matches_the_documented_shallow_workshop_examples(self):
+        """Section 3: two surfaced and both closed scores 1.00; forty surfaced
+        and thirty-five closed scores 0.875. The lazier workshop wins, which is
+        why the count must be reported alongside."""
+        self.assertAlmostEqual(m.risk_mitigation_score(2, 0), 1.00)
+        self.assertAlmostEqual(m.risk_mitigation_score(40, 5), 0.875)
+        self.assertFalse(m.rms_is_credible(2))
+        self.assertTrue(m.rms_is_credible(40))
+
+    def test_rms_rejects_more_unresolved_than_identified(self):
+        with self.assertRaises(ValueError):
+            m.risk_mitigation_score(10, 11)
+
+    def test_rms_is_undefined_when_nothing_was_identified(self):
+        with self.assertRaises(ValueError):
+            m.risk_mitigation_score(0, 0)
+
+    def test_far_is_blind_to_scale(self):
+        """Section 1's stated property, which is why the total must be
+        reported alongside the ratio."""
+        small = m.friction_allocation_ratio(10, 5)
+        large = m.friction_allocation_ratio(1000, 500)
+        self.assertAlmostEqual(small, large)
+        self.assertAlmostEqual(small, 2 / 3)
+
+    def test_far_reference_band_edges(self):
+        self.assertFalse(m.far_in_band(0.59))
+        self.assertTrue(m.far_in_band(0.60))
+        self.assertTrue(m.far_in_band(0.75))
+        self.assertFalse(m.far_in_band(0.76))
+
+    def test_bcv_penalizes_committee_size(self):
+        """Section 2: the N^0.5 denominator is a correction, not decoration.
+        The canvas form rewarded dragging more people into rooms, which the
+        Consensus Friction Calculator correctly scores as worse."""
+        four_depts_small_committee = m.buyer_commitment_velocity(4, 3, 4)
+        four_depts_large_committee = m.buyer_commitment_velocity(4, 3, 16)
+        self.assertGreater(four_depts_small_committee,
+                           four_depts_large_committee)
+
+    def test_bcv_guard_prevents_division_by_zero_on_same_day_response(self):
+        self.assertAlmostEqual(m.buyer_commitment_velocity(4, 0, 4), 2.0)
+
+    def test_svi_penalizes_early_delivery_as_heavily_as_late(self):
+        """Section 4: deliberate. A wrong estimate on the optimistic side
+        produces the same credibility loss as one on the pessimistic side."""
+        early = m.scope_variance_index(t_actual=50, t_scoped=100, c_orders=0)
+        late = m.scope_variance_index(t_actual=150, t_scoped=100, c_orders=0)
+        self.assertAlmostEqual(early, late)
+        self.assertAlmostEqual(early, 0.5)
+
+    def test_svi_change_order_coefficient(self):
+        """One change order is worth about as much scope instability as a
+        25 percent schedule miss."""
+        one_order = m.scope_variance_index(100, 100, 1)
+        quarter_miss = m.scope_variance_index(125, 100, 0)
+        self.assertAlmostEqual(one_order, quarter_miss)
+
+    def test_svi_caps_at_one(self):
+        """Section 5: allowing the term to run higher would let one
+        catastrophic project dominate a cohort average."""
+        self.assertAlmostEqual(m.normalize_svi(3.5), 1.0)
+
+    def test_bcv_normalization_caps_at_one(self):
+        self.assertAlmostEqual(m.normalize_bcv(2.0, bcv_ref=0.5), 1.0)
+        self.assertAlmostEqual(m.normalize_bcv(0.25, bcv_ref=0.5), 0.5)
+
+    def test_the_index_is_bounded_on_zero_to_one_hundred(self):
+        best = m.friction_efficiency_index(far=1.0, bcv=10.0, rms=1.0, svi=0.0)
+        worst = m.friction_efficiency_index(far=0.0, bcv=0.0, rms=0.0, svi=5.0)
+        self.assertAlmostEqual(best, 100.0)
+        self.assertAlmostEqual(worst, 0.0)
+
+    def test_the_index_matches_the_weighted_sum_written_out(self):
+        far, bcv, rms, svi = 0.70, 0.40, 0.80, 0.30
+        expected = 100.0 * (0.35 * far
+                            + 0.25 * min(bcv / 0.5, 1.0)
+                            + 0.25 * rms
+                            + 0.15 * (1.0 - min(svi, 1.0)))
+        self.assertAlmostEqual(
+            m.friction_efficiency_index(far, bcv, rms, svi), expected)
+
+    def test_a_high_far_can_hide_a_low_rms(self):
+        """Section 5's stated failure of the composite: an expensive, shallow
+        process still produces a respectable score."""
+        shallow = m.friction_efficiency_index(far=0.75, bcv=0.5, rms=0.10,
+                                              svi=0.10)
+        self.assertGreater(shallow, 50.0)
+        self.assertLess(m.risk_mitigation_score(40, 36), 0.15)
+
+    def test_band_edges_match_the_composite_table(self):
+        self.assertEqual(m.fei_band(75.1), "front-loaded")
+        self.assertEqual(m.fei_band(75.0), "mixed")
+        self.assertEqual(m.fei_band(50.0), "mixed")
+        self.assertEqual(m.fei_band(49.9), "late")
+
+
+# ==========================================================================
+# milestone-valuation-model.md
+# ==========================================================================
+
+class TestMilestoneValuation(unittest.TestCase):
+    """The reference stage structure table, with mu of 25, 50 and 80 percent
+    and residuals of 0.75, 0.375 and 0.075 times x_0."""
+
+    MUS = (0.25, 0.50, 0.80)
+
+    def test_the_reference_residual_chain_reproduces(self):
+        x0 = m.normalize_gap(10.0)  # x_0 = 1.0, so residuals read directly
+        schedule = m.residual_schedule(x0, self.MUS)
+        self.assertAlmostEqual(schedule[0], 1.000)
+        self.assertAlmostEqual(schedule[1], 0.750)
+        self.assertAlmostEqual(schedule[2], 0.375)
+        self.assertAlmostEqual(schedule[3], 0.075)
+
+    def test_the_chain_scales_with_the_scorecard_gap(self):
+        x0 = m.normalize_gap(6.0)  # 0.5
+        schedule = m.residual_schedule(x0, self.MUS)
+        self.assertAlmostEqual(schedule[1], 0.750 * 0.5)
+        self.assertAlmostEqual(schedule[2], 0.375 * 0.5)
+        self.assertAlmostEqual(schedule[3], 0.075 * 0.5)
+
+    def test_residual_compounds_downward_rather_than_stepping_linearly(self):
+        """Each mu applies to what remains rather than to the original gap.
+
+        The reference table's three fractions sum to 1.55, so reading them as
+        shares of the original gap would drive the residual negative by stage
+        3. Compounding keeps it positive and approaching zero, which is what
+        the table's own residual column shows.
+        """
+        x0 = m.normalize_gap(10.0)
+        schedule = m.residual_schedule(x0, self.MUS)
+        self.assertGreater(sum(self.MUS), 1.0)
+        linear_reading = float(x0) * (1.0 - sum(self.MUS))
+        self.assertLess(linear_reading, 0.0)
+        self.assertGreater(schedule[-1], 0.0)
+        # Every stage removes a share of what remains, never of the original.
+        for before, after, mu in zip(schedule, schedule[1:], self.MUS):
+            self.assertAlmostEqual(before - after, mu * before)
+
+    def test_residual_matches_the_product_form(self):
+        x0 = m.normalize_gap(8.0)
+        expected = float(x0)
+        for mu in self.MUS:
+            expected *= (1 - mu)
+        self.assertAlmostEqual(m.residual_uncertainty(x0, self.MUS), expected)
+
+    def test_a_gate_that_cannot_fail_resolves_nothing(self):
+        """The vanity criteria failure mode: acceptance conditions written so
+        loosely that no outcome fails them make mu effectively zero."""
+        x0 = m.normalize_gap(10.0)
+        self.assertAlmostEqual(m.residual_uncertainty(x0, (0.0, 0.0, 0.0)), 1.0)
+
+    def test_stage_surplus_uses_the_reduced_form_cost(self):
+        x_m = m.NormalizedGap(0.375)
+        surplus = m.stage_surplus(p_m=0.8, v_gross_m=100.0, x_m=x_m, c_m=25.0)
+        expected = 0.8 * (100.0 - (2.25 * 0.375 ** 2 + 25.0))
+        self.assertAlmostEqual(surplus, expected)
+
+    def test_staging_raises_surplus_by_shrinking_residual_uncertainty(self):
+        """The point of the whole model: staging does not reduce the work, it
+        reduces how much must be committed before the buyer knows."""
+        unstaged = m.stage_surplus(0.8, 100.0, m.NormalizedGap(1.0), 25.0)
+        staged = m.stage_surplus(0.8, 100.0, m.NormalizedGap(0.075), 25.0)
+        self.assertGreater(staged, unstaged)
+
+    def test_stage_surplus_requires_a_normalized_residual(self):
+        with self.assertRaises(TypeError):
+            m.stage_surplus(0.8, 100.0, 0.375, 25.0)
+
+    def test_a_mu_outside_zero_to_one_is_rejected(self):
+        x0 = m.normalize_gap(10.0)
+        with self.assertRaises(ValueError):
+            m.residual_uncertainty(x0, (1.5,))
+
+
+# ==========================================================================
+# 05-seller-surplus-model.md
+# ==========================================================================
+
+class TestSellerSurplus(unittest.TestCase):
+
+    def test_section_two_form(self):
+        self.assertAlmostEqual(
+            m.seller_surplus(p_close=0.5, v_contract=1000.0,
+                             c_deliver=400.0, c_invest=200.0),
+            0.5 * 600.0 - 200.0)
+
+    def test_invest_is_sunk_whether_or_not_the_deal_closes(self):
+        """Section 2's stated asymmetry: C_deliver is contingent and C_invest
+        is not."""
+        lost = m.seller_surplus(0.0, 1000.0, 400.0, 200.0)
+        self.assertAlmostEqual(lost, -200.0)
+
+    def test_a_buyer_viable_deal_can_be_seller_negative(self):
+        """Section 2: a deal inside the buyer's potential well can sit outside
+        the seller's, and closing it is accretive for the customer and dilutive
+        for the seller's own firm."""
+        buyer_side = m.deal_surplus(v_effective=900.0, v_next_best=300.0,
+                                    f_effective=200.0)
+        seller_side = m.seller_surplus(0.3, 1000.0, 400.0, 400.0)
+        self.assertGreater(buyer_side, 0.0)
+        self.assertLess(seller_side, 0.0)
+
+    def test_quasi_rent_is_the_exposure_not_the_total_spend(self):
+        """Section 3: two engagements consuming identical hours carry different
+        exposure when one produces a reusable connector."""
+        reusable = m.quasi_rent(c_invest=200.0, r_redeploy=150.0)
+        one_off = m.quasi_rent(c_invest=200.0, r_redeploy=0.0)
+        self.assertAlmostEqual(reusable, 50.0)
+        self.assertAlmostEqual(one_off, 200.0)
+        self.assertLess(reusable, one_off)
+
+    def test_redeployable_value_cannot_exceed_the_investment(self):
+        with self.assertRaises(ValueError):
+            m.quasi_rent(c_invest=100.0, r_redeploy=150.0)
+
+    def test_the_marginal_rule_threshold_is_the_reciprocal_of_margin(self):
+        """Section 4 inverted into section 6's endorsed question: what would
+        have to be true about the derivative for this spend to make sense."""
+        threshold = m.required_marginal_close_gain(v_contract=1000.0,
+                                                   c_deliver=400.0)
+        self.assertAlmostEqual(threshold, 1.0 / 600.0)
+
+    def test_the_threshold_and_the_rule_agree_at_the_boundary(self):
+        v, c = 1000.0, 400.0
+        threshold = m.required_marginal_close_gain(v, c)
+        self.assertFalse(m.marginal_investment_rule(threshold, v, c))
+        self.assertTrue(m.marginal_investment_rule(threshold * 1.01, v, c))
+        self.assertFalse(m.marginal_investment_rule(threshold * 0.99, v, c))
+
+    def test_no_investment_can_justify_a_non_positive_margin(self):
+        with self.assertRaises(ValueError):
+            m.required_marginal_close_gain(v_contract=400.0, c_deliver=400.0)
+
+    def test_thin_margin_demands_a_larger_probability_gain(self):
+        thin = m.required_marginal_close_gain(1000.0, 900.0)
+        fat = m.required_marginal_close_gain(1000.0, 100.0)
+        self.assertGreater(thin, fat)
+
+    def test_repeated_form_reduces_to_the_single_shot_at_t_equals_one(self):
+        """Section 7 states the single-shot form of section 2 is this
+        expression with T = 1 and C_sustain = 0. That identity is the join
+        between the two models, so it is asserted rather than assumed."""
+        p_close, v, c_deliver, c_invest = 0.6, 1000.0, 400.0, 200.0
+        repeated = m.repeated_seller_surplus(
+            r=[p_close], v=[v], c_deliver=[c_deliver], c_sustain=[0.0],
+            rho=0.0, c_invest=c_invest)
+        single = m.seller_surplus(p_close, v, c_deliver, c_invest)
+        self.assertAlmostEqual(repeated, single)
+
+    def test_a_durable_relationship_can_justify_a_single_shot_negative_deal(self):
+        """Section 7's correction: C_invest amortizes across the stream, not
+        against the first contract, so a first-year margin test disqualifies
+        deals a durable relationship would justify."""
+        single = m.seller_surplus(0.6, 500.0, 300.0, 200.0)
+        self.assertLess(single, 0.0)
+        repeated = m.repeated_seller_surplus(
+            r=[0.6, 0.55, 0.5], v=[500.0] * 3, c_deliver=[300.0] * 3,
+            c_sustain=[20.0] * 3, rho=0.10, c_invest=200.0)
+        self.assertGreater(repeated, 0.0)
+
+    def test_discounting_reduces_the_value_of_later_periods(self):
+        args = dict(r=[0.9] * 5, v=[100.0] * 5, c_deliver=[40.0] * 5,
+                    c_sustain=[5.0] * 5, c_invest=50.0)
+        self.assertGreater(m.repeated_seller_surplus(rho=0.0, **args),
+                           m.repeated_seller_surplus(rho=0.15, **args))
+
+    def test_mismatched_period_lengths_are_rejected(self):
+        with self.assertRaises(ValueError):
+            m.repeated_seller_surplus(r=[0.9, 0.9], v=[100.0],
+                                      c_deliver=[40.0], c_sustain=[0.0],
+                                      rho=0.0, c_invest=0.0)
+
+    def test_lock_in_raises_the_cooperation_threshold(self):
+        """Section 7.1: raising the seller's temptation payoff raises the
+        threshold the seller's own discount factor must clear, so the
+        arrangement becomes harder to sustain exactly as the seller's position
+        strengthens."""
+        base = m.cooperation_threshold(temptation=5.0, reward=3.0,
+                                       punishment=1.0)
+        locked_in = m.cooperation_threshold(temptation=9.0, reward=3.0,
+                                            punishment=1.0)
+        self.assertGreater(locked_in, base)
+
+    def test_cooperation_requires_a_prisoners_dilemma_payoff_order(self):
+        with self.assertRaises(ValueError):
+            m.cooperation_threshold(temptation=1.0, reward=3.0, punishment=5.0)
+
+
+# ==========================================================================
+# process-calculator.md v4.2. One case per row of the step 3 table, plus the
+# gates that run before it.
+# ==========================================================================
+
+class TestProcessCalculator(unittest.TestCase):
+
+    BASE = dict(workflow_maturity=3, market_yes_count=3,
+                integration_depth=1, workflow_change_scope=1,
+                consensus_complexity=3, retention_horizon=2)
+
+    def test_step_two_sums_four_factors_to_the_documented_range(self):
+        self.assertEqual(m.cost_score(1, 1, 1, 1), 4)
+        self.assertEqual(m.cost_score(5, 5, 5, 5), 20)
+        self.assertEqual(m.cost_score(3, 3, 5, 1), 12)
+
+    def test_step_two_rejects_a_factor_outside_one_to_five(self):
+        with self.assertRaises(ValueError):
+            m.cost_score(6, 1, 1, 1)
+
+    def test_deal_class_band_edges(self):
+        self.assertEqual(m.deal_class(4), "Turnkey")
+        self.assertEqual(m.deal_class(9), "Turnkey")
+        self.assertEqual(m.deal_class(10), "Structural")
+        self.assertEqual(m.deal_class(20), "Structural")
+
+    def test_market_stage_thresholds(self):
+        self.assertEqual(m.market_stage(0), m.NASCENT)
+        self.assertEqual(m.market_stage(1), m.NASCENT)
+        self.assertEqual(m.market_stage(2), m.TRANSITIONAL)
+        self.assertEqual(m.market_stage(3), m.MATURE)
+
+    # --- Step 0 -------------------------------------------------------
+
+    def test_undefined_workflow_is_a_chaos_trap_when_the_product_automates(self):
+        args = dict(self.BASE)
+        args.update(workflow_maturity=1, product_automates_process=True)
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.CHAOS_TRAP)
+        self.assertIsNone(result.cost_score)
+        self.assertIn("chaos-trap", result.flags)
+
+    def test_undefined_workflow_is_not_a_trap_when_the_product_is_a_medium(self):
+        """Step 0's route column: if the product supplies a medium rather than
+        automating a process, an undefined workflow is not a trap."""
+        args = dict(self.BASE)
+        args.update(workflow_maturity=1, product_automates_process=False,
+                    gate_a=m.GATE_A_GREENFIELD)
+        result = m.triage(**args)
+        self.assertNotEqual(result.motion, m.CHAOS_TRAP)
+        self.assertEqual(result.motion, m.PLG)
+
+    def test_emergent_workflow_proceeds_but_is_flagged(self):
+        args = dict(self.BASE)
+        args.update(workflow_maturity=2, gate_a=m.GATE_A_ENCODED,
+                    gate_b_trialable=False, divergence=2)
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.PLG)
+        self.assertIn("emergent-workflow-blueprint-must-reconstruct",
+                      result.flags)
+
+    def test_workflow_maturity_is_not_market_stage(self):
+        """The document's stated warning: three independent axes, and
+        collapsing them produces wrong routing. A level 3 workflow tells you
+        the deal is mappable, not that it is Structural."""
+        args = dict(self.BASE)
+        args.update(gate_a=m.GATE_A_ENCODED, gate_b_trialable=False,
+                    divergence=2)
+        codified_small = m.triage(**args)
+        self.assertEqual(codified_small.deal_class, "Turnkey")
+
+    # --- Step 3 override ----------------------------------------------
+
+    def test_pilot_override_forces_ilg_at_any_market_stage(self):
+        for yes_count in (0, 1, 2, 3):
+            args = dict(self.BASE)
+            args.update(market_yes_count=yes_count, pilot_requested=True)
+            result = m.triage(**args)
+            self.assertEqual(result.motion, m.ILG)
+            self.assertEqual(result.cost_score, 20)
+            self.assertIn("pilot-override", result.flags)
+
+    def test_the_chaos_trap_still_precedes_the_pilot_override(self):
+        """Step 0 runs before scoring anything, and its route is to stop."""
+        args = dict(self.BASE)
+        args.update(workflow_maturity=1, product_automates_process=True,
+                    pilot_requested=True)
+        self.assertEqual(m.triage(**args).motion, m.CHAOS_TRAP)
+
+    # --- Step 1 and step 3 rows ---------------------------------------
+
+    def test_nascent_market_routes_to_slg_and_skips_step_two(self):
+        args = dict(self.BASE)
+        args.update(market_yes_count=1, integration_depth=5,
+                    workflow_change_scope=5, consensus_complexity=5,
+                    retention_horizon=5)
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.SLG)
+        self.assertIsNone(result.cost_score)
+
+    def test_a_high_cost_score_in_a_nascent_market_is_not_ilg(self):
+        """The document names this as a common diagnostic mistake."""
+        args = dict(self.BASE)
+        args.update(market_yes_count=0, integration_depth=5,
+                    workflow_change_scope=5, consensus_complexity=5,
+                    retention_horizon=5)
+        self.assertEqual(m.triage(**args).motion, m.SLG)
+
+    def test_transitional_market_below_fifteen(self):
+        args = dict(self.BASE)
+        args.update(market_yes_count=2, integration_depth=3,
+                    workflow_change_scope=3, consensus_complexity=3,
+                    retention_horizon=3)  # 12
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.SLG_WITH_ILG_ELEMENTS)
+        self.assertEqual(result.cost_score, 12)
+
+    def test_transitional_market_at_fifteen_and_above(self):
+        args = dict(self.BASE)
+        args.update(market_yes_count=2, integration_depth=5,
+                    workflow_change_scope=4, consensus_complexity=3,
+                    retention_horizon=3)  # 15
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.ILG)
+        self.assertEqual(result.cost_score, 15)
+
+    def test_mature_low_score_with_gate_a_greenfield_routes_to_plg(self):
+        args = dict(self.BASE)
+        args.update(gate_a=m.GATE_A_GREENFIELD)
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.PLG)
+        self.assertFalse(result.divergence_scored)
+
+    def test_mature_low_score_with_gate_a_product_absorbs_routes_to_plg(self):
+        args = dict(self.BASE)
+        args.update(gate_a=m.GATE_A_PRODUCT_ABSORBS)
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.PLG)
+        self.assertFalse(result.divergence_scored)
+
+    def test_mature_low_score_with_gate_b_trialable_routes_to_plg(self):
+        args = dict(self.BASE)
+        args.update(gate_a=m.GATE_A_ENCODED, gate_b_trialable=True)
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.PLG)
+        self.assertFalse(result.divergence_scored)
+
+    def test_mature_low_score_gates_failed_low_divergence_routes_to_plg(self):
+        for divergence in (1, 2, 3):
+            args = dict(self.BASE)
+            args.update(gate_a=m.GATE_A_ENCODED, gate_b_trialable=False,
+                        divergence=divergence)
+            result = m.triage(**args)
+            self.assertEqual(result.motion, m.PLG)
+            self.assertTrue(result.divergence_scored)
+
+    def test_mature_low_score_gates_failed_high_divergence_is_hidden_structural(self):
+        for divergence in (4, 5):
+            args = dict(self.BASE)
+            args.update(gate_a=m.GATE_A_ENCODED, gate_b_trialable=False,
+                        divergence=divergence)
+            result = m.triage(**args)
+            self.assertEqual(result.motion, m.ILG)
+            self.assertEqual(result.deal_class, "Turnkey")
+            self.assertIn("hidden-structural", result.flags)
+
+    def test_mature_high_score_routes_to_ilg(self):
+        args = dict(self.BASE)
+        args.update(integration_depth=5, workflow_change_scope=3,
+                    consensus_complexity=3, retention_horizon=3,  # 14
+                    gate_a=m.GATE_A_GREENFIELD)
+        result = m.triage(**args)
+        self.assertEqual(result.motion, m.ILG)
+        self.assertEqual(result.deal_class, "Structural")
+
+    def test_large_but_aligned_deals_are_flagged_for_over_frictioning(self):
+        for divergence in (1, 2):
+            args = dict(self.BASE)
+            args.update(integration_depth=5, workflow_change_scope=4,
+                        consensus_complexity=3, retention_horizon=2,  # 14
+                        gate_a=m.GATE_A_ENCODED, gate_b_trialable=False,
+                        divergence=divergence)
+            result = m.triage(**args)
+            self.assertEqual(result.motion, m.ILG)
+            self.assertIn("possible-over-frictioning", result.flags)
+
+    def test_a_large_misaligned_deal_is_not_flagged(self):
+        args = dict(self.BASE)
+        args.update(integration_depth=5, workflow_change_scope=4,
+                    consensus_complexity=3, retention_horizon=2,
+                    gate_a=m.GATE_A_ENCODED, gate_b_trialable=False,
+                    divergence=5)
+        self.assertNotIn("possible-over-frictioning", m.triage(**args).flags)
+
+    # --- The step 2b separation ---------------------------------------
+
+    def test_divergence_is_never_added_to_the_step_two_total(self):
+        """The document's stated reason: summing magnitude and fit would let a
+        large aligned deal and a small misaligned deal produce the same
+        number, which is the confusion step 2b exists to prevent."""
+        scores = set()
+        for divergence in (1, 2, 3, 4, 5):
+            args = dict(self.BASE)
+            args.update(gate_a=m.GATE_A_ENCODED, gate_b_trialable=False,
+                        divergence=divergence)
+            scores.add(m.triage(**args).cost_score)
+        self.assertEqual(scores, {7})
+
+    def test_a_small_misaligned_deal_and_a_large_aligned_one_differ(self):
+        small_misaligned = m.triage(
+            workflow_maturity=3, market_yes_count=3, integration_depth=1,
+            workflow_change_scope=1, consensus_complexity=3,
+            retention_horizon=2, gate_a=m.GATE_A_ENCODED,
+            gate_b_trialable=False, divergence=5)
+        large_aligned = m.triage(
+            workflow_maturity=3, market_yes_count=3, integration_depth=5,
+            workflow_change_scope=4, consensus_complexity=3,
+            retention_horizon=2, gate_a=m.GATE_A_ENCODED,
+            gate_b_trialable=False, divergence=1)
+        self.assertNotEqual(small_misaligned.cost_score,
+                            large_aligned.cost_score)
+        self.assertEqual(small_misaligned.motion, m.ILG)
+        self.assertEqual(large_aligned.motion, m.ILG)
+        self.assertEqual(small_misaligned.deal_class, "Turnkey")
+        self.assertEqual(large_aligned.deal_class, "Structural")
+
+    def test_divergence_must_be_scored_when_both_gates_fail(self):
+        args = dict(self.BASE)
+        args.update(gate_a=m.GATE_A_ENCODED, gate_b_trialable=False,
+                    divergence=None)
+        with self.assertRaises(ValueError):
+            m.triage(**args)
+
+    def test_gate_b_must_be_answered_when_gate_a_says_encoded(self):
+        args = dict(self.BASE)
+        args.update(gate_a=m.GATE_A_ENCODED, gate_b_trialable=None,
+                    divergence=3)
+        with self.assertRaises(ValueError):
+            m.triage(**args)
+
+    def test_the_summed_score_is_not_a_motion_selector(self):
+        """Axiom I as restated in Constitution v16.0: composition selects the
+        motion and level sets the boundary. Identical totals route
+        differently."""
+        common = dict(workflow_maturity=3, integration_depth=3,
+                      workflow_change_scope=3, consensus_complexity=3,
+                      retention_horizon=3, gate_a=m.GATE_A_GREENFIELD)
+        mature = m.triage(market_yes_count=3, **common)
+        transitional = m.triage(market_yes_count=2, **common)
+        self.assertEqual(mature.cost_score, transitional.cost_score)
+        self.assertNotEqual(mature.motion, transitional.motion)
+
+
+# ==========================================================================
+# Cross-cutting: the calibration discipline itself.
+# ==========================================================================
+
+class TestCalibrationDiscipline(unittest.TestCase):
+    """Constraint 1 of this work: the parameters are unfitted and must stay
+    labelled as such. These tests fail if a docstring stops saying so."""
+
+    UNFITTED_MARKERS = ("not fitted", "unfitted", "chosen", "anchored",
+                        "convention", "no empirical basis")
+
+    def test_the_module_docstring_states_the_calibration_status(self):
+        doc = m.__doc__.lower()
+        self.assertIn("nothing in this module is fitted", doc)
+        self.assertIn("specified, not fitted", doc)
+        self.assertIn("do not quote", doc)
+
+    def test_the_anchored_coefficient_is_not_presented_as_a_measurement(self):
+        doc = m.__doc__.lower()
+        self.assertIn("anchored by analogy", doc)
+        self.assertIn("is not a measurement", doc)
+
+    def test_every_public_function_carries_a_docstring(self):
+        for name in dir(m):
+            if name.startswith("_"):
+                continue
+            obj = getattr(m, name)
+            if callable(obj) and getattr(obj, "__module__", None) == "ilg_models":
+                self.assertTrue(
+                    obj.__doc__,
+                    "{} needs a docstring naming its canonical home".format(name))
+
+    def test_the_parameter_defaults_match_the_documents(self):
+        """A single table of every default this module ships, checked against
+        the parameter reference tables. Retuning a coefficient without editing
+        the document it came from fails here."""
+        self.assertEqual(m.A_RISK_AVERSION, 2.25)
+        self.assertEqual(m.ALPHA_COORDINATION, 1.0)
+        self.assertEqual(m.BETA_COMMITTEE, 1.35)
+        self.assertEqual(m.GAMMA_TECHNICAL_OVERLAP, 0.20)
+        self.assertEqual((m.W_TECH, m.W_PROCESS), (0.6, 0.4))
+        self.assertEqual((m.PHI_TECH, m.PHI_PROCESS), (1.2, 1.1))
+        self.assertEqual(m.MU_RETURN_UNCERTAINTY, 1.0)
+        self.assertEqual(m.NU_VENDOR_DOUBT, 2.0)
+        self.assertEqual(m.KAPPA_PROOF_DECAY, 0.5)
+        self.assertEqual(m.GAMMA_RESPONSIVENESS, 0.5)
+        self.assertEqual(m.FEI_WEIGHTS, (0.35, 0.25, 0.25, 0.15))
+        self.assertEqual(m.BCV_REF_DEFAULT, 0.5)
+        self.assertEqual(m.MIN_CREDIBLE_EDGE_CASES, 8)
+        self.assertEqual((m.RAW_GAP_MIN, m.RAW_GAP_MAX), (2.0, 10.0))
+        self.assertEqual((m.COST_SCORE_MIN, m.COST_SCORE_MAX), (4, 20))
+        self.assertEqual((m.TURNKEY_MAX, m.STRUCTURAL_MIN), (9, 10))
+
+    def test_beta_stays_inside_its_documented_range(self):
+        with self.assertRaises(ValueError):
+            m.consensus_friction(5, 0.25, beta=2.5)
+        with self.assertRaises(ValueError):
+            m.consensus_friction(5, 0.25, beta=1.0)
+
+    def test_the_module_has_no_third_party_imports(self):
+        """It must stay dependency-free like the two existing checkers."""
+        source = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                   "ilg_models.py"), encoding="utf-8").read()
+        imported = set()
+        for line in source.splitlines():
+            line = line.strip()
+            if line.startswith("import "):
+                imported.add(line[len("import "):].split()[0].split(".")[0])
+            elif line.startswith("from "):
+                imported.add(line[len("from "):].split()[0].split(".")[0])
+        self.assertTrue(imported <= {"math", "collections"},
+                        "unexpected imports: {}".format(imported))
+
+
+if __name__ == "__main__":
+    unittest.main()

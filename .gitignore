@@ -1,3 +1,7 @@
 # macOS Finder metadata
 .DS_Store
 **/.DS_Store
+
+# Python bytecode from models/
+__pycache__/
+*.pyc
