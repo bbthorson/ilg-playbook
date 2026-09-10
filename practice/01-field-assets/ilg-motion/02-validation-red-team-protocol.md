@@ -1,3 +1,12 @@
+---
+title: "The Red Team Protocol (The Validator)"
+layer: practice
+status: active
+version: 2.0
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # The Red Team Protocol (The Validator)
 
 Version: 2.0  

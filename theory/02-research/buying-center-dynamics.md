@@ -1,3 +1,11 @@
+---
+title: "Buying Center Dynamics"
+layer: theory
+status: active
+operationalizes: [axiom-2, axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Buying Center Dynamics
 
 **Sources:**

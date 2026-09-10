@@ -1,3 +1,12 @@
+---
+title: "Project \[Customer Name\]: Contextual Blueprint"
+layer: practice
+status: active
+version: 2.0
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Project \[Customer Name\]: Contextual Blueprint
 
 **Version:** 2.0 

@@ -4,6 +4,23 @@
 
 Parent: [02-internal-ops/](../) · Rules they enforce: [voice-guide.md](../../../publishing/02-tools/voice-guide.md) and [CLAUDE.md](../../../CLAUDE.md)
 
+## check_frontmatter.py
+
+Validates the YAML frontmatter block on every document in `theory/` and `practice/`. No dependencies. `publishing/` is out of scope on purpose: the style references are verbatim records of what was published, which is the same reason `.vale.ini` exempts them.
+
+It checks six things:
+
+| Check | Why it exists |
+|---|---|
+| `title` matches the H1 | So a generated index cannot drift from the page it indexes. The old field-asset README drifted exactly this way. |
+| `layer` matches the directory | Catches a file moved between groups without its metadata following. |
+| `status` is one of active, under-review, superseded | `under-review` is real: it marks a rule still in force whose replacement is being argued. |
+| `operationalizes` names real axioms | Makes the theory-to-practice trace machine-readable. Revising an axiom can now list every document claiming to derive from it. |
+| `canonical_source` resolves | A dead pointer to a canonical home is worse than none. |
+| Constitution version equals the root README footer | CLAUDE.md has required these to move together since v13. Nothing enforced it until now, and it was done by hand. |
+
+The YAML parser is deliberately small. It handles the flat key/value and inline-list shapes this repo uses and rejects anything else rather than guessing, so a malformed block fails loudly instead of parsing into something surprising.
+
 ## The two checkers
 
 | Checker | Catches | Needs installing |

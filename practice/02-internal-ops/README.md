@@ -1,3 +1,9 @@
+---
+title: "Internal Ops: Governance & Incentives"
+layer: practice
+status: active
+---
+
 # Internal Ops: Governance & Incentives
 
 **The systems that keep ILG honest at the org level.** These are tools for leadership, RevOps, and finance — not the rep in the field.

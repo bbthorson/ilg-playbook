@@ -1,3 +1,12 @@
+---
+title: "The Mutual Implementation Plan (The Execution)"
+layer: practice
+status: active
+version: 2.0
+operationalizes: [axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # The Mutual Implementation Plan (The Execution)
 
 Version: 2.0  

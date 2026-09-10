@@ -1,3 +1,12 @@
+---
+title: "CFIR-to-Field Asset Mapping"
+layer: theory
+status: active
+version: 1.1
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # CFIR-to-Field Asset Mapping
 
 **Purpose:** This document maps the Consolidated Framework for Implementation Research (CFIR) constructs to the ILG field assets. CFIR is the "engineering spec" behind the tools reps use — the academic rigor lives here so the templates stay simple.

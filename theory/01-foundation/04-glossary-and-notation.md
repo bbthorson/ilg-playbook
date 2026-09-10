@@ -1,3 +1,10 @@
+---
+title: "Glossary and Notation"
+layer: theory
+status: active
+version: 1.0
+---
+
 # Glossary and Notation
 
 **Version:** 1.0

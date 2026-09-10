@@ -1,3 +1,9 @@
+---
+title: "Field Assets"
+layer: practice
+status: active
+---
+
 # Field Assets
 
 **The tools you deploy with a customer, indexed by the state the deal is in.**

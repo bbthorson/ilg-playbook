@@ -1,3 +1,11 @@
+---
+title: "Consensus Friction Calculator"
+layer: practice
+status: active
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Consensus Friction Calculator
 
 **Purpose:** To estimate how much organizational friction a buying committee will generate, and to decide whether the deal needs a stakeholder map, a joint steering committee, or executive sponsorship.

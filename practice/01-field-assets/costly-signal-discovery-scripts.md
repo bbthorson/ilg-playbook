@@ -1,3 +1,11 @@
+---
+title: "Costly Signal Discovery Scripts"
+layer: practice
+status: active
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Costly Signal Discovery Scripts
 
 **Purpose:** To supply the specific asks that convert a buyer's stated interest into evidenced commitment, and to read what the response tells you about the deal.

@@ -1,3 +1,11 @@
+---
+title: "Variable Ownership"
+layer: practice
+status: active
+operationalizes: [axiom-1, axiom-2, axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Variable Ownership
 
 **Purpose:** To name the department that owns each variable in the model, so that no variable drifts for want of an owner and none fragments across two.

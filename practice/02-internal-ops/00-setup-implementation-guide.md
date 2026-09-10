@@ -1,3 +1,9 @@
+---
+title: 'ILG Implementation Guide: The "Installation Wizard"'
+layer: practice
+status: active
+---
+
 # ILG Implementation Guide: The "Installation Wizard"
 
 Target Audience: Revenue Operations, Sales Enablement, VP Sales  

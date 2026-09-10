@@ -1,3 +1,9 @@
+---
+title: "Theory"
+layer: theory
+status: active
+---
+
 # Theory
 
 **Function:** develop and pressure-test the ILG framework. This is where the ideas live before they get operationalized in [`practice/`](../practice/) or published in [`publishing/`](../publishing/).

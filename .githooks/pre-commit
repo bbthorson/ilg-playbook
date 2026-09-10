@@ -6,7 +6,10 @@ echo "Running pre-commit playbook checks..."
 # 1. Check link & LaTeX integrity
 python3 practice/02-internal-ops/linting/check_playbook.py
 
-# 2. Check Vale style rules if vale is installed
+# 2. Check frontmatter schema and Constitution/README version parity
+python3 practice/02-internal-ops/linting/check_frontmatter.py
+
+# 3. Check Vale style rules if vale is installed
 if command -v vale &> /dev/null; then
     vale .
 else

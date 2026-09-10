@@ -1,3 +1,12 @@
+---
+title: "Seller Surplus and the Implementation Investment"
+layer: theory
+status: active
+version: 1.1
+operationalizes: [axiom-1, axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Seller Surplus and the Implementation Investment
 
 **Version:** 1.1

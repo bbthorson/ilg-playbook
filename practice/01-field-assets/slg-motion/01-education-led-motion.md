@@ -1,3 +1,12 @@
+---
+title: "The Education-Led Motion (SLG)"
+layer: practice
+status: active
+version: 1.0
+operationalizes: [axiom-1]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # The Education-Led Motion (SLG)
 
 Version: 1.0

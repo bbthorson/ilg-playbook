@@ -1,3 +1,9 @@
+---
+title: "Practice"
+layer: practice
+status: active
+---
+
 # Practice
 
 **Function:** help sellers and managers actually run ILG. This is where the [theory](../theory/) becomes a workflow — templates, governance, comp design, training.

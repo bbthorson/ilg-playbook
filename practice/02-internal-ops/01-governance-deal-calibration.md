@@ -1,3 +1,11 @@
+---
+title: "Deal Calibration Sheet (The Manager's View)"
+layer: practice
+status: active
+operationalizes: [axiom-1]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Deal Calibration Sheet (The Manager's View)
 
 Type: Internal Ops / Forecast  

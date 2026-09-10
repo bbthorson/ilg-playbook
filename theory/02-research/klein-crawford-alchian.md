@@ -1,3 +1,11 @@
+---
+title: "Appropriable Quasi-Rents and Supplier-Side Hold-Up"
+layer: theory
+status: active
+operationalizes: [axiom-1]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Appropriable Quasi-Rents and Supplier-Side Hold-Up
 
 **Sources:**

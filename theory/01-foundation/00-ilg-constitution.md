@@ -1,3 +1,10 @@
+---
+title: "The Constitution of Implementation-Led Growth (ILG)"
+layer: theory
+status: active
+version: 16.0
+---
+
 # The Constitution of Implementation-Led Growth (ILG)
 
 **Version:** 16.0

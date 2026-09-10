@@ -1,3 +1,11 @@
+---
+title: "Sales Motion Comparison: ILG vs. PLG vs. SLG"
+layer: theory
+status: active
+operationalizes: [axiom-1]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Sales Motion Comparison: ILG vs. PLG vs. SLG
 
 **A decision framework for choosing the right sales motion.**

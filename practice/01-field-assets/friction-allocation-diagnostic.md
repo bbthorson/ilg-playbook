@@ -1,3 +1,12 @@
+---
+title: "Friction Allocation Diagnostic"
+layer: practice
+status: active
+version: 1.0
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Friction Allocation Diagnostic
 
 **Version:** 1.0

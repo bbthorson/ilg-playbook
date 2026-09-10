@@ -1,3 +1,9 @@
+---
+title: "Research"
+layer: theory
+status: active
+---
+
 # Research
 
 **The academic evidence backing each ILG axiom.** This directory is a canonical citation index — links and abstracts, not deep-dive synthesis. The synthesis lives in the [Constitution](../01-foundation/00-ilg-constitution.md); this directory tells you *where the claims come from* and *which axiom each source supports*.

@@ -1,3 +1,11 @@
+---
+title: "Process Misfit"
+layer: theory
+status: active
+operationalizes: [axiom-1, axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Process Misfit
 
 **Sources:**

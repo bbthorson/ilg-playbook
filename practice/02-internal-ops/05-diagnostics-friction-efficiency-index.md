@@ -1,3 +1,11 @@
+---
+title: "Friction Efficiency Index"
+layer: practice
+status: active
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Friction Efficiency Index
 
 **Purpose:** To measure whether an organization is spending its implementation effort before signature or after it, and to benchmark that allocation across a book of Structural deals.

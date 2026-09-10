@@ -1,3 +1,9 @@
+---
+title: "Reading Guide"
+layer: theory
+status: active
+---
+
 # Reading Guide
 
 **How to navigate the research, in what order, for which audience.** This guide tells you where to start, what to read in what sequence, and what's safe to skip — given who you are and what you need.

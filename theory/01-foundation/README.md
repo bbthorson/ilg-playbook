@@ -1,3 +1,9 @@
+---
+title: "Foundation"
+layer: theory
+status: active
+---
+
 # Foundation
 
 **Start here.** These documents form the canonical theoretical basis for everything else in the repo. Read in numerical order.

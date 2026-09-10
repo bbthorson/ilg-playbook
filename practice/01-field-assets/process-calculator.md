@@ -1,3 +1,12 @@
+---
+title: "The Deal Triage Calculator"
+layer: practice
+status: active
+version: 4.2
+operationalizes: [axiom-1]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # The Deal Triage Calculator
 
 Version: 4.2

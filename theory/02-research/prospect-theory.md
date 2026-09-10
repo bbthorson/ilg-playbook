@@ -1,3 +1,11 @@
+---
+title: "Prospect Theory"
+layer: theory
+status: active
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Prospect Theory
 
 **Sources:**

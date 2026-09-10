@@ -1,3 +1,11 @@
+---
+title: "Incomplete Contracts and Residual Control Rights"
+layer: theory
+status: active
+operationalizes: [axiom-1, axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Incomplete Contracts and Residual Control Rights
 
 **Sources:**

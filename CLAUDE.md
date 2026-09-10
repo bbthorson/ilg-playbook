@@ -31,6 +31,27 @@ The **research files** in `theory/02-research/` back specific axioms:
 
 Start with `theory/02-research/00-reading-guide.md` before modifying any research file.
 
+## Frontmatter
+
+Every document in `theory/` and `practice/` opens with YAML frontmatter. `publishing/` is out of scope, because the style references are verbatim records of published text and `.vale.ini` already exempts them for that reason.
+
+```yaml
+---
+title: "The Deal Triage Calculator"   # must match the H1
+layer: practice                        # theory | practice, must match the directory
+status: active                         # active | under-review | superseded
+version: 4.2                           # only where the document tracks one
+operationalizes: [axiom-1]             # which axioms it derives from
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+```
+
+`operationalizes` is the field that earns the schema. It makes the theory-to-practice trace machine-readable, so revising an axiom can list every document claiming to derive from it:
+
+```bash
+grep -rl "axiom-1" --include=*.md theory/ practice/
+```
+
 ## Content conventions
 
 When writing or editing any document in this repo, apply the voice rules from `publishing/02-tools/voice-guide.md`:
@@ -51,10 +72,11 @@ When writing or editing any document in this repo, apply the voice rules from `p
 Most of the rules above are machine-checked. Run both before finishing an edit, and see `practice/02-internal-ops/linting/README.md` for what each covers:
 
 ```bash
-python3 practice/02-internal-ops/linting/check_playbook.py && vale .
+python3 practice/02-internal-ops/linting/check_playbook.py && \
+python3 practice/02-internal-ops/linting/check_frontmatter.py && vale .
 ```
 
-`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
+`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. `check_frontmatter.py` needs none either and validates the frontmatter schema across `theory/` and `practice/`, including that every `operationalizes` entry names a real axiom and that the Constitution version matches the root README footer. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
 
 ### Renaming anything canonical
 
@@ -62,7 +84,7 @@ The dependency chain runs `theory/` → `practice/` → `publishing/`, and nothi
 
 1. Grep the whole repo for the old term before assuming the rename is local. Stale names hide inside links whose hrefs are still correct, so the link checker will not catch them.
 2. Add the old term to `swap:` in `practice/02-internal-ops/linting/styles/ILG/RetiredTerms.yml` in the same commit. That is what stops the rename from drifting back.
-3. Bump the version in `theory/01-foundation/00-ilg-constitution.md` and the matching version footer in the root `README.md` together.
+3. Bump the version in `theory/01-foundation/00-ilg-constitution.md` (both the frontmatter and the body) and the matching version footer in the root `README.md` together. `check_frontmatter.py` enforces that they agree.
 4. Check the *descriptions*, not just the names. A paragraph can use every current term and still describe a superseded version of an axiom.
 
 ## How documents relate to the Fundamental Equation

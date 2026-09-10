@@ -1,3 +1,12 @@
+---
+title: "Mathematical Models"
+layer: theory
+status: active
+version: 1.0
+operationalizes: [axiom-1, axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Mathematical Models
 
 **Version:** 1.0
