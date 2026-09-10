@@ -4,13 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A knowledge base for **Implementation-Led Growth (ILG)** — a B2B sales methodology for high-friction, high-specificity software deals. No code; all content is Markdown. The repo is organized into three functional groups, each with its own README:
+A knowledge base for **Implementation-Led Growth (ILG)** — a B2B sales methodology for high-friction, high-specificity software deals. Almost all content is Markdown. The repo is organized into four groups, each with its own README:
 
 | Directory | Function |
 |---|---|
 | `theory/` | Develop and pressure-test the ILG framework. Axioms, equations, academic backing. |
 | `practice/` | Operationalize theory for sellers and managers. Templates and governance. |
 | `publishing/` | Turn the framework into public writing. Voice guide, content generators, case analyses. |
+| `models/` | Executable forms of the equations, the tests that check the worked examples, and the figure generator. Python, no dependencies. |
 
 ## Conceptual architecture
 
@@ -73,10 +74,14 @@ Most of the rules above are machine-checked. Run both before finishing an edit, 
 
 ```bash
 python3 practice/02-internal-ops/linting/check_playbook.py && \
-python3 practice/02-internal-ops/linting/check_frontmatter.py && vale .
+python3 practice/02-internal-ops/linting/check_frontmatter.py && \
+python3 models/test_ilg_models.py && \
+python3 models/make_figures.py --check && vale .
 ```
 
-`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. `check_frontmatter.py` needs none either and validates the frontmatter schema across `theory/` and `practice/`, including that every `operationalizes` entry names a real axiom and that the Constitution version matches the root README footer. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
+`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. `check_frontmatter.py` needs none either and validates the frontmatter schema across `theory/` and `practice/`, including that every `operationalizes` entry names a real axiom and that the Constitution version matches the root README footer. `test_ilg_models.py` checks that every worked example in `theory/` and `practice/` still reproduces from [`models/ilg_models.py`](models/ilg_models.py). `make_figures.py --check` regenerates the Constitution's axiom figures and fails if any has drifted from the equation that generates it. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
+
+All four Python checks run in `.githooks/pre-commit` alongside Vale.
 
 ### Renaming anything canonical
 
@@ -100,6 +105,19 @@ $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{searc
 - **Turnkey Deal** = deal scoring 4–9 → deploy PLG/SLG motion
 
 When diagnosing a stall or editing a prescription, identify which term in the equation it addresses.
+
+### Changing an equation or a coefficient
+
+Every live formula has an implementation in [`models/ilg_models.py`](models/ilg_models.py), and every worked example in `theory/` and `practice/` is asserted against it. **The document is the specification: where the two disagree, the code is the bug.** So the order is fixed.
+
+1. Edit the document first. The test then fails against the old code, which is the point of having it.
+2. Update `ilg_models.py` and rerun `python3 models/test_ilg_models.py`.
+3. Rerun `python3 models/make_figures.py` if the change touches a curve the Constitution plots. The Constitution's three axiom figures are sampled from the module, so a retuned coefficient moves the picture instead of leaving it quietly asserting the old value.
+4. Update the worked example itself if the change moves its result. A worked example that no longer follows from its own formula is the failure this catches.
+
+This is what stops formula drift, the way `RetiredTerms.yml` stops rename drift and the provenance audit stops stat drift.
+
+**Parameters in this repo are unfitted, and every new one must say so.** `03-mathematical-models.md` states the forms are specified rather than fitted. Any new coefficient needs a row in that file's parameter reference with an honest provenance status, and anything that reads as an empirical estimate is wrong. Do not fit these to synthetic data: it produces parameters that look measured and are not. `models/README.md` records why.
 
 ## Publishing workflow
 

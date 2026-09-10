@@ -105,5 +105,5 @@ Plus the seller-side layer:
 This is a citation index, not a theoretical synthesis. The synthesis lives elsewhere:
 
 - **Three axioms and their derivations:** [Constitution](../01-foundation/00-ilg-constitution.md), Parts I and II.
-- **Surplus equation, potential-well diagram, failure modes table:** Constitution Part III.
+- **Surplus equation and failure modes table:** Constitution Part III. The per-axiom figures are in Part I, generated from [`models/`](../../models/).
 - **Operational tools** (rubric, artifacts): [`practice/`](../../practice/).

@@ -18,13 +18,14 @@ ILG addresses this through **discovery artifacts** (Blueprints) that reduce sell
 
 ## How this repo is organized
 
-The repo serves **three functions**, each in its own top-level directory.
+The repo serves **three functions**, each in its own top-level directory, plus a fourth directory holding the equations in code.
 
 | Function | Where | What it is |
 |---|---|---|
 | **[theory/](theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the ILG framework. Academic papers, axioms, definitions. |
 | **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` | Help sellers and managers actually run ILG. Templates and governance. |
 | **[publishing/](publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
+| **[models/](models/)** | `models/` | Executable forms of the equations, so a worked example cannot drift from its formula. Python, no dependencies. |
 
 Each group has its own README listing what is inside it.
 
@@ -51,6 +52,7 @@ Each axiom has a home state and none is confined to it. Part I explains where th
 | See the evidence behind a claim | [theory/02-research/00-reading-guide.md](theory/02-research/00-reading-guide.md) |
 | Decide whether to invest engineering in a deal | [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) |
 | Set up your org for ILG | [practice/02-internal-ops/](practice/02-internal-ops/) |
+| Compute a formula, or check one still holds | [models/](models/) |
 | Write about ILG publicly | [publishing/02-tools/](publishing/02-tools/) |
 
 **Orientation lives in two places only:** this file, and [the research reading guide](theory/02-research/00-reading-guide.md). Every other README is a local index of its own directory.
@@ -98,5 +100,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 16.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
+**Version:** 16.1 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
 **Last updated:** 2026-09-08
