@@ -21,7 +21,10 @@ themselves: 03-mathematical-models.md states the functional forms are
 
 - a = 2.25 is anchored by analogy to prospect theory's loss aversion
   coefficient. It is not a measurement, and 03-mathematical-models.md section
-  1.6 is explicit that a is not the same quantity as lambda.
+  1.6 is explicit that a is not the same quantity as lambda. Section 1.7 fixes
+  its units: a, c and y are all fractions of annual contract value, so a = 2.25
+  means the uncertainty term is worth 2.25 annual contract values at a fully
+  open gap. Stating the units does not make the number an estimate.
 - beta = 1.35 is chosen inside a motivated range. Only the fact that beta > 1
   carries literature support; the value does not.
 - The Friction Efficiency Index weights have no empirical basis at all.
@@ -35,6 +38,7 @@ No dependencies, standard library only, matching the two checkers in
 practice/02-internal-ops/linting/.
 """
 
+import collections
 import math
 
 # --------------------------------------------------------------------------
@@ -46,7 +50,8 @@ import math
 # Read those columns before quoting any value outside this repository.
 # --------------------------------------------------------------------------
 
-A_RISK_AVERSION = 2.25       # anchored by analogy, not fitted
+A_RISK_AVERSION = 2.25       # anchored by analogy, not fitted; ACV units
+DOMINANCE_THRESHOLD = 0.50   # chosen; share at which one component dominates
 ALPHA_COORDINATION = 1.0     # normalizing convention
 BETA_COMMITTEE = 1.35        # chosen within [1.2, 2.0]
 GAMMA_TECHNICAL_OVERLAP = 0.20   # chosen field refinement
@@ -172,6 +177,131 @@ def effective_cost(f_search, f_consensus, f_implementation, gap):
     return base * (1.0 + gap)
 
 
+COMPONENTS = ("search", "consensus", "implementation")
+
+FrictionVector = collections.namedtuple(
+    "FrictionVector", "base effective direction magnitude gap dominant")
+
+
+def _check_components(f_search, f_consensus, f_implementation):
+    values = (f_search, f_consensus, f_implementation)
+    for name, value in zip(COMPONENTS, values):
+        if value < 0:
+            raise ValueError("f_{} cannot be negative".format(name))
+    return values
+
+
+def effective_cost_per_component(f_search, f_consensus, f_implementation,
+                                 gap_search, gap_consensus,
+                                 gap_implementation):
+    """Structural form since Constitution v17.0, section 1.1.
+
+        F_effective = sum_k F_k * (1 + gap_k)
+
+    Each component is amplified by the asymmetry inside its own pair of
+    parties, and the three pairs differ: search is the buyer against the
+    market, consensus is the buyer's stakeholders against each other, and only
+    implementation is buyer against seller. Section 2.4 gives the instruments.
+
+    Every gap must be a NormalizedGap. effective_cost() below is the same
+    quantity written with the single multiplier the three factor into.
+    """
+    values = _check_components(f_search, f_consensus, f_implementation)
+    gaps = (_require_normalized(gap_search, "effective_cost_per_component"),
+            _require_normalized(gap_consensus, "effective_cost_per_component"),
+            _require_normalized(gap_implementation,
+                                "effective_cost_per_component"))
+    return sum(f * (1.0 + g) for f, g in zip(values, gaps))
+
+
+def weighted_mean_gap(f_search, f_consensus, f_implementation,
+                      gap_search, gap_consensus, gap_implementation):
+    """The scalar the three component gaps factor into, section 1.1.
+
+        gap_A = sum_k F_k gap_k / sum_k F_k
+
+    The identity effective_cost_per_component(...) == effective_cost(..., this)
+    is exact, not an approximation. The scalar the framework carried before
+    v17.0 is the friction-weighted mean of the three, which is why no result
+    that consumed it broke when the split happened.
+
+    Undefined when base friction is zero: a deal with no cost has no
+    composition, and returning 0 there would assert symmetry that was never
+    measured.
+    """
+    values = _check_components(f_search, f_consensus, f_implementation)
+    gaps = (_require_normalized(gap_search, "weighted_mean_gap"),
+            _require_normalized(gap_consensus, "weighted_mean_gap"),
+            _require_normalized(gap_implementation, "weighted_mean_gap"))
+    base = sum(values)
+    if base == 0:
+        raise ValueError(
+            "base friction is zero, so the friction-weighted mean gap is "
+            "undefined; a deal with no cost has no composition")
+    return NormalizedGap(sum(f * g for f, g in zip(values, gaps)) / base)
+
+
+def component_gap(n_items, n_evidenced):
+    """A one-sided component gap, section 2.4.
+
+        gap_k = 1 - evidenced / in_scope
+
+    Used for the search and consensus components, whose pairs have no seller
+    side and whose instruments emit counts rather than ratings. The result
+    lands on [0, 1] with a true zero, so it needs no rescaling.
+
+    An instrument that put no items in scope leaves the gap undefined rather
+    than zero. Nothing evidenced out of nothing counted is not symmetry.
+    """
+    n_items, n_evidenced = int(n_items), int(n_evidenced)
+    if n_items < 0 or n_evidenced < 0:
+        raise ValueError("counts cannot be negative")
+    if n_evidenced > n_items:
+        raise ValueError(
+            "{} items carry evidence but only {} are in scope".format(
+                n_evidenced, n_items))
+    if n_items == 0:
+        raise ValueError(
+            "no items in scope, so this component's gap is undefined; "
+            "section 2.4 refuses to read that as symmetry")
+    return NormalizedGap(1.0 - float(n_evidenced) / n_items)
+
+
+def friction_vector(f_search, f_consensus, f_implementation,
+                    gap_search, gap_consensus, gap_implementation):
+    """Both of Axiom I's quantities, computed together. 06-friction-vector.md.
+
+    Level is the L1 norm of BASE friction. It is the asset specificity Axiom I
+    bounds, a property of the deal rather than of what anyone currently knows
+    about it, so discovery does not move it.
+
+    Direction is the share of EFFECTIVE cost each component carries. It moves
+    with the work, which is the whole point of amplifying per component: under
+    one multiplier the proportions were fixed and no amount of discovery could
+    change which motion a deal needed.
+
+    `dominant` names the component holding at least DOMINANCE_THRESHOLD of
+    effective cost, or "mixed" when none does. The threshold is chosen.
+    """
+    values = _check_components(f_search, f_consensus, f_implementation)
+    gaps = (gap_search, gap_consensus, gap_implementation)
+    base = sum(values)
+    if base == 0:
+        raise ValueError(
+            "base friction is zero, so the vector has no direction")
+    effective = effective_cost_per_component(*(values + gaps))
+    direction = tuple(f * (1.0 + _require_normalized(g, "friction_vector"))
+                      / effective for f, g in zip(values, gaps))
+    dominant = "mixed"
+    for name, share in zip(COMPONENTS, direction):
+        if share >= DOMINANCE_THRESHOLD:
+            dominant = name
+    return FrictionVector(
+        base=values, effective=effective, direction=direction,
+        magnitude=base, gap=weighted_mean_gap(*(values + gaps)),
+        dominant=dominant)
+
+
 def reduced_cost(gap, a=A_RISK_AVERSION, c=0.0):
     """Reduced form, section 1.2.
 
@@ -184,6 +314,10 @@ def reduced_cost(gap, a=A_RISK_AVERSION, c=0.0):
     intervention.
 
     `a` is anchored by analogy to prospect theory's lambda and is not fitted.
+    Section 1.7 fixes the units: y, c and a are fractions of annual contract
+    value. The default c=0 therefore means a deal with no direct cost, not a
+    deal whose cost is unstated.
+
     `gap` must be a NormalizedGap.
     """
     gap = _require_normalized(gap, "reduced_cost")
@@ -940,8 +1074,6 @@ def cooperation_threshold(temptation, reward, punishment):
 # fit would let a large aligned deal and a small misaligned deal produce the
 # same number, which is the specific confusion step 2b exists to prevent.
 # ==========================================================================
-
-import collections
 
 SLG = "SLG"
 PLG = "PLG"

@@ -43,7 +43,14 @@ ignorecase: false
 # Turnkey and Structural archetypes of v14.0 and survived the same way. Both are
 # the exact failure this rule exists to catch, and both went uncaught because
 # nobody added the rows at the time of the rename.
+# Superseded Axiom II description (v17.0). The axiom name did not change, so
+# nothing here catches a paragraph that uses every current term while describing
+# the single-multiplier version. These are the load-bearing phrases from the
+# form that per-component amplification replaced.
 swap:
+  amplified by the bilateral information asymmetry: "amplified per component by the asymmetry inside that component's own pair of parties (Constitution v17.0)"
+  The teaching equation uses a global multiplier: "each component is amplified by its own gap; the single multiplier is the factored special case"
+  global multiplier: "per-component amplification, which factors into a single friction-weighted multiplier"
   Risk Calculator: Process Calculator
   Deal Triage Calculator: "Process Calculator (one name, chosen because 45 references used it against 3)"
   Lane 1: "Turnkey deal (the archetype names replaced the lane numbering in v14.0)"

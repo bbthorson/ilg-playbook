@@ -2,12 +2,12 @@
 title: "The Constitution of Implementation-Led Growth (ILG)"
 layer: theory
 status: active
-version: 16.1
+version: 17.0
 ---
 
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 16.1
+**Version:** 17.0
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
@@ -76,7 +76,15 @@ $$k > k_{threshold} \quad \text{and} \quad F_{deployed} \sim k$$
 
 Where $k$ is the asset specificity of the deal and $F_{deployed}$ is the friction structure used to manage it. The first condition is necessary (Turnkey vs. Structural deal classification). The second is the scaling requirement (friction must match specificity).
 
-**The two claims have different uses, and the boundary condition covers only one of them.** Level answers how much apparatus a deal can carry, and $k > k_{threshold}$ is that test. Composition answers which motion to run, and no equation here settles it: a deal whose cost sits almost entirely in $F_{search}$ takes a different motion from one of identical total sitting in $F_{implementation}$. The composition rule is operationalized rather than formalized, in [Process Calculator](../../practice/01-field-assets/process-calculator.md) Step 1 (market stage) and Step 2b (workflow divergence and the trialability gates). Do not read the summed score as a motion selector.
+**The two claims have different uses, and the boundary condition covers only one of them.** Level answers how much apparatus a deal can carry, and $k > k_{threshold}$ is that test. Composition answers which motion to run, and a deal whose cost sits almost entirely in $F_{search}$ takes a different motion from one of identical total sitting in $F_{implementation}$. Do not read the summed score as a motion selector.
+
+Since v17.0 composition has an equation of its own. Treat the three components as one object and both claims become properties of it:
+
+$$\mathbf{F} = (F_{search},\; F_{consensus},\; F_{implementation})$$
+
+$$\text{Level} = \lVert \mathbf{F} \rVert_1 = F_{search} + F_{consensus} + F_{implementation}, \qquad \text{Composition} = \hat{\mathbf{F}} = \frac{\mathbf{F}}{\lVert \mathbf{F} \rVert_1}$$
+
+Level is a length and composition is a direction, and the two are independent. A short vector pointed at implementation is a small technical purchase. A long vector pointed at implementation is a Structural deal. Same direction, different apparatus. The $L^1$ norm is used because the field instrument produces a sum rather than a Euclidean length, and nothing downstream depends on the choice. Axiom II amplifies each component by its own gap before composition is read, which is what lets discovery rotate the vector. [06-friction-vector.md](./06-friction-vector.md) derives the consequences and the [Process Calculator](../../practice/01-field-assets/process-calculator.md) measures both quantities.
 
 The boundary also has time dynamics. Value erodes from the triggering event:
 
@@ -86,7 +94,9 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 
 **Failure modes.**
 
-- **Under-frictioned (Velocity motion on a Structural deal).** Asset specificity too high for the friction deployed. The buyer faces hold-up risk and chooses to build internally rather than transact. Manifests as "we decided to handle this in-house" (Stanford ChatEHR, Apple's vertical silicon, any "we built it ourselves" story).
+- **Under-frictioned (Velocity motion on a Structural deal).** Asset specificity too high for the friction deployed. Two symptoms, one cause, and only the first is visible before signature.
+  - *Pre-signature.* The buyer faces hold-up risk and chooses to build internally rather than transact. Manifests as "we decided to handle this in-house" (Stanford ChatEHR, Apple's vertical silicon, any "we built it ourselves" story).
+  - *Post-signature.* A buyer whose implementation uncertainty was never resolved can still transact when the commercial path is easy enough. They buy, they fail to deploy, and they leave. The failure lands in retention rather than in win rate, which is why it is usually diagnosed as a product problem or an onboarding problem. It is neither.
 - **Over-frictioned (ILG on a Turnkey deal).** Asset specificity too low for the friction deployed. The cost of Blueprints, Red Teams, and MIPs exceeds the surplus they unlock. The buyer experiences over-engineering and chooses a competitor with lighter motion.
 - **Mis-composed (right level, wrong motion).** Total friction read correctly, dominant component read wrongly, so the motion attacks a cost that is not binding. Education aimed at a buyer who already knows the category, or implementation proof supplied to a buyer who cannot yet name the problem. The score justifies the effort and the effort lands nowhere.
 
@@ -96,23 +106,43 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 
 ### Axiom II — The Law of Uncertainty Inflation
 
-> **Effective transaction cost equals base friction (search + consensus + implementation) amplified by the bilateral information asymmetry between buyer and seller. The amplifier shrinks when the claimant invests in demonstrations that low-quality competitors cannot affordably replicate. The Single Crossing Property is the test for what counts.**
+> **Effective transaction cost equals each friction component amplified by the information asymmetry inside that component's own pair of parties. Only the implementation component's pair is buyer against seller. An amplifier shrinks when the claimant invests in demonstrations that low-quality competitors cannot affordably replicate. The Single Crossing Property is the test for what counts.**
 
 > *Tagline: **"Fear > Value."** Reducing risk is ~2× more powerful than increasing ROI. The Safe No (declining to change, which risks nothing for the decider) beats the Logical Yes (accepting a positive business case).*
 >
-> *Plain English: Uncertainty makes change expensive. What a buyer cannot verify, they price as risk, and that multiplies every other cost rather than reducing the value.*
+> *Plain English: Uncertainty makes change expensive. What nobody in the room can verify, they price as risk, and that multiplies the bill it attaches to rather than reducing the value. Three bills, three separate things nobody can verify.*
 >
 > *Origin: Spence (1973). A signal separates quality only when it costs something to send.*
 
 **Mechanism (Coase + Spence + Kahneman/Tversky).** Coase identified three transaction costs (search, bargaining, and enforcement) that determine when markets fail. We operationalize these for B2B SaaS as $F_{search}$ (finding the category and a viable vendor), $F_{consensus}$ (internal alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Spence's signaling theory provides the mechanism for reducing them: a signal separates quality from noise only when its cost is proportionally lower for the high-quality actor (the Single Crossing Property). Loss aversion ($\lambda \approx 2.25$ as conceptual anchor, likely higher in organizational contexts) explains why asymmetry multiplies friction rather than reducing value. Uncertainty inflates the perceived downside.
 
-*Intuitively:* buyer uncertainty acts as noise in the channel between seller and buyer. Base friction is the signal; asymmetry is the noise multiplier. Demonstrations that low-quality competitors cannot replicate reduce the noise without touching the underlying signal cost.
+*Intuitively:* uncertainty acts as noise on a channel. Base friction is the signal and asymmetry is the noise multiplier. Demonstrations that low-quality competitors cannot replicate reduce the noise without touching the underlying signal cost. There are three channels rather than one, because the three costs run between different parties.
 
-**Mathematical content.** The effective transaction cost equation:
+**Mathematical content.** The effective transaction cost equation amplifies each component separately:
 
-$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
+$$F_{effective} = \sum_{k} F_k \cdot (1 + \hat{\Delta}_k), \qquad k \in \{search,\; consensus,\; implementation\}$$
 
-The bracketed sum is written $F_{base}$ where the components do not need to be named individually. It is the three costs before amplification.
+The three components are written $\mathbf{F} = (F_{search},\, F_{consensus},\, F_{implementation})$ where they are treated as one object, and their sum is written $F_{base}$ where they do not need to be named individually. Each $\hat{\Delta}_k$ is normalized to $[0, 1]$ before substitution.
+
+**The three gaps are between three different pairs of parties.** This is the content of the change, and it is why one multiplier cannot carry the work.
+
+| Component | Whose ignorance, about what | Instrument that closes it |
+|---|---|---|
+| $F_{search}$ | The buyer, about the market | Education, reference architectures, category definition, channel |
+| $F_{consensus}$ | The buyer's stakeholders, about each other's measured objectives | Stakeholder mapping in the Blueprint, then the Red Team workshop |
+| $F_{implementation}$ | Bilateral. The seller, about the buyer's environment, and the buyer, about the seller's capability | Blueprint, Red Team, MIP |
+
+Only the third pair is buyer against seller, and the [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures that third pair. Applying its output to the whole deal treats one pair's gap as though it governed all three.
+
+**The single-multiplier form is a special case rather than a rival.** Factor the sum:
+
+$$\sum_{k} F_k (1 + \hat{\Delta}_k) = F_{base} \cdot \left(1 + \hat{\Delta}_A\right), \qquad \hat{\Delta}_A \equiv \frac{\sum_{k} F_k \hat{\Delta}_k}{\sum_{k} F_k}$$
+
+The identity is exact, not an approximation. The scalar gap the framework carried before v17.0 is the friction-weighted mean of the three component gaps, and every result that consumed it still holds unchanged.
+
+**What the scalar cannot do is move composition.** Scaling all three components by the same factor changes the length of $\mathbf{F}$ and leaves its proportions untouched. Under a single multiplier, therefore, no quantity of asymmetry and no quantity of work reducing it can change which component dominates, so composition would be invariant to the one quantity a seller spends the whole cycle moving. Per-component amplification is what lets discovery change the shape of a deal rather than only its size. A deal that opens implementation-dominant rotates toward consensus as the Blueprint closes $\hat{\Delta}_{implementation}$, which is what a Blueprint is for and what the framework previously had no way to state.
+
+**Composition is read from the amplified components, level from the base ones.** Direction is $\hat{F}_k = F_k(1 + \hat{\Delta}_k) / F_{effective}$, the share of effective cost each component carries. Level is $\lVert \mathbf{F} \rVert_1 = F_{base}$, which is the asset specificity Axiom I bounds and is a property of the deal rather than of what anyone currently knows about it. Discovery moves direction and leaves level alone, which is why a Blueprint changes the instrument without reclassifying the deal.
 
 To model transaction cost economics more directly at the deal level, we also express the buyer's perceived transaction cost ($y$) as a function of uncertainty ($x$) and risk aversion ($a$):
 
@@ -124,6 +154,8 @@ Where:
 - $x$ is the **information asymmetry or uncertainty** ($\approx \Delta_A$). The impact of uncertainty is modeled as quadratic ($x^2$) because information gaps have a compounding, non-linear effect on consensus and implementation friction (a small gap cascades into major project delays and misalignment). Note that $x^2$ serves as a clean simplification of the three underlying friction curves.
 - $a$ is the **risk aversion coefficient** (anchored at $a = 2.25$, derived from prospect theory's loss aversion parameter $\lambda \approx 2.25$).
 
+**Scale.** $y$, $c$, and $a$ are fractions of annual contract value. The equation adds a term carrying $a$ to a term carrying a price, so $a$ must share $c$'s units, and stating the scale is what makes $a = 2.25$ mean anything. Read this way, at a fully open gap the uncertainty term is 2.25 annual contract values, which is the framework's own claim that risk outweighs return, expressed as a number. Read as percentage points instead, the same term rounds to nothing against a stage payment and the claim inverts. [03-mathematical-models.md](./03-mathematical-models.md) section 1.7 carries the arithmetic, and the [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) is where both terms meet on the common scale.
+
 The two representations are not alternatives to choose between. The reduced form follows from the structural form once base friction is allowed to depend on the asymmetry gap, because an uncertain buyer does not merely pay a surcharge on fixed work. The uncertainty changes how much work exists. [03-mathematical-models.md](./03-mathematical-models.md) carries the derivation, the rule for which form to use when (structural to diagnose, reduced to explain), and the normalization a raw scorecard score requires before either equation accepts it.
 
 For a deal to close, the total perceived transaction cost $y$ must be less than the opportunity cost of switching:
@@ -134,13 +166,23 @@ Where $OC_{\text{switching}}$ is the buyer's opportunity cost of staying with th
 
 From this formulation the seller has exactly three levers to satisfy the inequality. Part II derives them as the Three Sales Levers.
 
-The multiplier $\Delta_A$ does not amplify all three components equally. A confused buyer searches a bit harder (modest impact), but the same buyer drives scope creep, missed requirements, and political backlash through consensus and implementation (large impact). The teaching equation uses a global multiplier; operating diagnosis must identify *which* component is being amplified to choose the right intervention.
+The three gaps are rarely equal, and the differences are systematic rather than noise. A buyer confused about the market searches a bit harder. The same buyer, working with stakeholders who cannot see each other's measured objectives, drives scope creep, missed requirements, and political backlash. Before v17.0 the framework noted this in prose and then averaged it away in the equation. The per-component form is that note made arithmetic.
 
-Asymmetry also has time dynamics. Without active maintenance, $\Delta_A$ rebuilds as information goes stale:
+Asymmetry also has time dynamics, and each gap rebuilds for its own reasons at its own rate. Without active maintenance:
 
-$$\Delta_A(t) = \Delta_A(0) + \gamma t \quad \text{absent maintenance}$$
+$$\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t \quad \text{absent maintenance}$$
 
-This is the second component of the Decay Clock. Information staleness pushes the multiplier upward over the sales cycle. Together with $V_{effective}(t)$ from Axiom I, the Decay Clock describes how time threatens deal viability on both sides.
+| Rate | What drives it |
+|---|---|
+| $\gamma_{search}$ | New entrants, category redefinition |
+| $\gamma_{consensus}$ | Stakeholder turnover, reorganization |
+| $\gamma_{implementation}$ | Staff turnover, workflow change, systems installed unseen |
+
+**Seller investment and drift are one mechanism with opposite signs.** Discovery lowers a gap and rotates the vector away from that component. Absent maintenance the gap rebuilds at $\gamma_k$ and the vector rotates back. A deal is therefore a path through the composition space rather than a point in it, and so is an account after signature.
+
+The field consequence sits in the consensus row. A champion leaving is $\gamma_{consensus}$ arriving all at once. The alignment that stakeholder held is gone, the deal rotates back toward consensus-dominant, and it can leave the viable zone with no change in the product, the price, or the technical work.
+
+This is the second component of the Decay Clock. Information staleness pushes the multipliers upward over the sales cycle. Together with $V_{effective}(t)$ from Axiom I, the Decay Clock describes how time threatens deal viability on both sides. The scalar rate $\gamma$ used before v17.0 is the friction-weighted mean of the three, on the same identity that reconciles the multipliers, and holds as an average while the component weights hold.
 
 The four **Friction Allocation Principles**, the operational content of this axiom, are derived in Part II as conditions any cost-reducing mechanism must satisfy.
 
@@ -151,7 +193,7 @@ The four **Friction Allocation Principles**, the operational content of this axi
 - **Akerlof saturation.** When $\Delta_A$ grows so high that even costly signals cannot credibly reduce it, the buyer leaves the market entirely. This is Akerlof's market for lemons, the limit case of this axiom, where signal mechanisms have lost the ability to separate quality from noise.
 - **Jevons collapse (channel-level).** When a channel's friction was production cost and production cost falls to zero, the Single Crossing Property fails at the channel level. Every sender produces an indistinguishable signal regardless of underlying quality. (Email post-Clay/Apollo.)
 
-**Operating instruction.** Diagnose which cost component is binding ($F_{search}$ → channel and marketing problem, $F_{consensus}$ → Blueprint, $F_{implementation}$ → Red Team and MIP). Diagnose which side of $\Delta_A$ is wider ($I_{seller}$ → invest in discovery, $I_{buyer}$ → invest in costly signals). Closing the wrong gap or reducing the wrong cost component is wasted effort.
+**Operating instruction.** Read direction from the amplified components and spend on the one that dominates ($F_{search}$ → channel and marketing problem, $F_{consensus}$ → stakeholder mapping and the Red Team workshop, $F_{implementation}$ → Blueprint, Red Team and MIP). Inside the implementation component, diagnose which side is wider ($I_{seller}$ → invest in discovery, $I_{buyer}$ → invest in costly signals). Closing the wrong gap or reducing the wrong cost component is wasted effort, and a gap closed in one component does not shrink another.
 
 ---
 
@@ -180,6 +222,8 @@ $$\delta_{discount} > \frac{T - R}{T - P}$$
 Where $T$, $R$, $P$ are the temptation, reward, and punishment payoffs and $\delta_{discount}$ is the party's discount factor. The recursive requirement: this condition must hold *for every party in the system*, including any administrator.
 
 The deal's trajectory $D(t) = TC(t) - OC(t)$ stays bounded below zero (deal viable) only when the cooperation condition is sustained throughout the cycle. When it fails (for buyer, seller, or any administrator in the channel), the trajectory drifts upward through the OC ceiling.
+
+$D(t)$ is written as a scalar because it compares two scalars. Its transaction cost term is the friction vector under Axiom II's per-component drift, so the trajectory has a direction as well as a distance, and the direction names which instrument would arrest it. A deal drifting upward through $\gamma_{consensus}$ is not helped by more technical proof.
 
 **Failure modes.**
 
@@ -240,7 +284,7 @@ The transaction cost curve $y = ax^2 + c$ gives the seller exactly three levers 
 
 1. **Lower direct cost (reduce $c$).** The seller can lower their margin. This is the traditional, low-leverage price-discounting motion that destroys vendor profitability.
 2. **Lower risk aversion (reduce $a$).** The seller can implement structures that shift risk back to themselves, the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
-3. **Reduce uncertainty (reduce $x$).** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop).
+3. **Reduce uncertainty (reduce $x$).** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop). Since v17.0 there are three gaps rather than one, so this lever has three settings and pulling the wrong one leaves the binding gap untouched. Which one to pull is a reading of direction, not of the total.
 
 Lever 1 is the weakest because the cost curve is convex: cost grows quadratically in uncertainty, so cutting the constant term cannot offset a large gap. That argument, and the derivation behind it, live in [03-mathematical-models.md](./03-mathematical-models.md).
 
@@ -287,7 +331,7 @@ Like recursive cooperation, depreciation is itself recursive. The actor's indivi
 The Decay Clock captures the pre-close time pressure on deal viability. Two time dynamics, each stated under its parent axiom, operate in parallel:
 
 - From Axiom I: urgency fades from the triggering event ($V_{effective}(t)$), making the buyer's "make" alternative relatively more attractive.
-- From Axiom II: information goes stale ($\Delta_A(t)$), raising the asymmetry multiplier on friction.
+- From Axiom II: information goes stale ($\hat{\Delta}_k(t)$), raising the asymmetry multiplier on each component at its own rate $\gamma_k$. Staleness therefore rotates the vector as well as lengthening it.
 
 Together, these push the deal's viability ($S > 0$) toward failure. Even a deal that was clearly viable at $t_0$ may not be by $t_1$ if too much time passes without active intervention.
 
@@ -304,7 +348,9 @@ The operational prescription is the same in both cases (fight time with active m
 
 #### Effective Cost (Axioms I + II)
 
-Effective Cost is the *static* snapshot of deal economics: Axiom II's cost equation, in either representation, evaluated inside Axiom I's boundary. It captures the cost mechanics at a given moment. It does not include the time dynamics (which come from the Decay Clock) or the durability conditions (which come from Axiom III).
+Effective Cost is the *static* snapshot of deal economics: Axiom II's cost equation, in any of its three representations, evaluated inside Axiom I's boundary. It captures the cost mechanics at a given moment. It does not include the time dynamics (which come from the Decay Clock) or the durability conditions (which come from Axiom III).
+
+The three representations are the per-component form, the single-multiplier form it factors into, and the reduced form $y = a\hat{\Delta}_A^2 + c$. The first two are the same quantity written two ways. The third discards the decomposition, and with it the direction that selects the instrument, which is why it explains rather than diagnoses.
 
 The derivation connecting the two representations, and the operating rule for which to use when, live in [03-mathematical-models.md](./03-mathematical-models.md).
 
@@ -365,15 +411,16 @@ $$V_{effective}(t) = V_{solution} \cdot e^{-\delta t} \quad \text{(Axiom I dynam
 
 $$OC_{\text{switching}} = V_{effective}(t) - V_{next\_best} \quad \text{(opportunity cost of staying with status quo)}$$
 
-$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A(t)) \quad \text{(Axiom II)}$$
+$$F_{effective} = \sum_{k} F_k \cdot (1 + \hat{\Delta}_k(t)) \quad \text{(Axiom II)}$$
 
-$$y = ax^2 + c \quad \text{(Axiom II transaction cost curve representation)}$$
+$$y = a\hat{\Delta}_A^2 + c \quad \text{(Axiom II reduced form, in annual contract values)}$$
 
-$$\Delta_A(t) = \Delta_A(0) + \gamma t \quad \text{(Axiom II, absent maintenance)}$$
+$$\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t \quad \text{(Axiom II, absent maintenance)}$$
 
 Subject to:
 
-- $k > k_{threshold}$ and $F_{deployed} \sim k$ (Axiom I boundary)
+- $k > k_{threshold}$ and $F_{deployed} \sim k$, with $k = \lVert \mathbf{F} \rVert_1$ (Axiom I boundary, a claim about level)
+- $F_{deployed}$ composed to match $\hat{\mathbf{F}}$ (Axiom I composition, a separate claim about direction)
 - $\delta_{discount} > (T - R) / (T - P)$ for every party in the system (Axiom III recursive cooperation)
 - Continuous reputation refresh at every level (Axiom III depreciation)
 - $y < OC_{\text{switching}}$ (deal viability boundary condition)
@@ -386,8 +433,8 @@ The equation is a diagnostic, not a forecast. When a deal stalls, walk through i
 
 1. **Is the deal within the boundary?** If not, no other prescription applies. Re-classify the deal or disqualify.
 2. **Is $V_{effective}(t)$ collapsing faster than $\Delta_A$ is shrinking?** If yes, urgency is decaying faster than the seller can close the asymmetry. Either intervene to refresh urgency (find a new triggering event) or close faster.
-3. **Is $\Delta_A$ rebuilding faster than maintenance reduces it?** If yes, information is going stale faster than discovery refreshes it. Increase the cadence of discovery touches.
-4. **Is $F_{effective}$ dominated by a single component?** If yes, target that component specifically — generic intervention is wasted effort.
+3. **Is any $\hat{\Delta}_k$ rebuilding faster than maintenance reduces it?** If yes, information is going stale faster than discovery refreshes it. Increase the cadence of discovery touches on that component. A departed champion is the common case and it lands entirely in $\hat{\Delta}_{consensus}$.
+4. **Which component dominates $F_{effective}$ after amplification?** Target that one. Generic intervention is wasted effort, and a component that dominated at open may not dominate now, because discovery rotates the vector.
 5. **Is the total perceived transaction cost $y$ higher than the opportunity cost of switching $OC_{\text{switching}}$?** If yes, identify whether you can lower risk aversion $a$ (negotiate hostages like resource guarantees/restart fees in the MIP) or reduce uncertainty $x$ (run a Red Team workshop/discovery). Avoid the low-leverage margin-reduction lever ($c$) unless absolutely necessary.
 6. **Does the buyer accept the business case and still decline to proceed?** If yes, option value is dominating. The commercial structure is asking them to surrender the right to wait all at once. Restructure into gates with defined acceptance criteria and a priced right to stop, rather than re-arguing the return.
 7. **Has any party's $\delta_{discount}$ dropped below the cooperation threshold?** If yes, the relationship will decay regardless of single-deal economics.
@@ -397,11 +444,14 @@ The equation is a diagnostic, not a forecast. When a deal stalls, walk through i
 
 | Axiom | Failure mode | Diagnostic signal |
 |---|---|---|
-| I | Under-frictioned Structural deal | Score 10+, treated with velocity motion → buyer builds internally |
-| I | Over-frictioned Turnkey deal | Score 4–9, treated with ILG motion → buyer chooses competitor |
+| I | Under-frictioned Structural deal, pre-signature | Level above threshold, treated with velocity motion → buyer builds internally |
+| I | Under-frictioned Structural deal, post-signature | Same cause, easy commercial path → buyer signs, fails to deploy, and churns |
+| I | Mis-composed deal | Level read correctly, direction misread → the motion attacks a cost that is not binding |
+| I | Over-frictioned Turnkey deal | Level below threshold, treated with ILG motion → buyer chooses competitor |
 | II | Cheap talk | Signal violates Single Crossing → no $\Delta_A$ reduction |
 | II | Misallocated friction | Receiver bears cost → babbling equilibrium |
 | II | Akerlof saturation | $\Delta_A > \Delta_A^*$ → buyer exits market |
+| II | Wrong gap closed | Effort spent on a component whose $\hat{\Delta}_k$ was already low → no rotation, no progress |
 | II | Jevons collapse | Channel friction was production cost → signal quality collapses |
 | III | Deal-level defection | Buyer or seller's $\delta_{discount}$ too low → hold-up |
 | III | Governance drift | Adjudicator has no $\delta_{discount}$ tied to outcomes → extraction |
@@ -413,6 +463,8 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 ---
 
 ## Version History
+
+**v17.0.** Axiom II's mathematical content changes. The single amplifier becomes three, one per friction component, because the three components do not run between the same pair of parties: search asymmetry is the buyer against the market, consensus asymmetry is the buyer's stakeholders against each other, and only implementation asymmetry is buyer against seller. The old form is recovered exactly by factoring, with the scalar gap identified as the friction-weighted mean of the three, so no downstream result breaks. What the change buys is the one thing a single multiplier cannot do: scaling all three components by the same factor leaves their proportions fixed, so under the old form composition was invariant to asymmetry and no amount of discovery could change which motion a deal needed. Drift splits the same way, into $\gamma_{search}$, $\gamma_{consensus}$ and $\gamma_{implementation}$, which gives the framework its first term for a departed champion. Axiom I gains the equation for composition it has been missing since v16.0 separated the two claims, in the form of the friction vector's direction and $L^1$ length, and a second symptom of under-frictioning that lands after signature rather than before it. Axiom III's trajectory is noted as carrying a direction. The reduced form gains a stated scale: $y$, $c$ and $a$ are fractions of annual contract value, which is what makes $a = 2.25$ a quantity rather than a number. Adopted from [06-friction-vector.md](./06-friction-vector.md), which carried all of this as a proposal under review.
 
 **v16.1.** Editorial pass, no change to any axiom, equation, or derivation. Part I's three figures are replaced. The retired panels developed a potential-well diagram one panel at a time, plotting a U-shaped transaction cost curve against workflow legibility. No equation in this repository produces that curve, which is the reason they were replaced. Each axiom now carries one figure plotting the equation stated under it: value decay for Axiom I, the reduced cost form for Axiom II, and asymmetry drift for Axiom III. All three are generated from [`models/`](../../models/) and checked against it, so a figure can no longer assert a coefficient the equation has stopped carrying. They are also SVGs with a dark-mode palette, where the retired panels were PNGs that glared.
 

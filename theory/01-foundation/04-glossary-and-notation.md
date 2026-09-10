@@ -28,8 +28,8 @@ Two rules govern what is written here, and they differ by section.
 |---|---|---|
 | $S$ | Deal Surplus. Must exceed 0 for a deal to close. | [Constitution, Part III](./00-ilg-constitution.md) |
 | $OC_{switching}$ | Opportunity cost of staying with the status quo. Equals $V_{effective}(t) - V_{next\_best}$. | [Constitution, Part III](./00-ilg-constitution.md) |
-| $y$ | Total perceived transaction cost, reduced form. Equals $ax^2 + c$. | [Constitution, Axiom II](./00-ilg-constitution.md) |
-| $D(t)$ | A deal's trajectory through time, $TC(t) - OC(t)$. Stays below the ceiling only while Axiom III holds. | [Constitution, Axiom III](./00-ilg-constitution.md) |
+| $y$ | Total perceived transaction cost, reduced form. Equals $a\hat{\Delta}_A^2 + c$, in annual contract values. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $D(t)$ | A deal's trajectory through time, $TC(t) - OC(t)$. Stays below the ceiling only while Axiom III holds. Carries a direction, since its cost term is the friction vector. | [Constitution, Axiom III](./00-ilg-constitution.md) |
 
 ### Seller-side terms
 
@@ -63,8 +63,11 @@ Two rules govern what is written here, and they differ by section.
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
+| $\mathbf{F}$ | The friction vector. The three components treated as one object. | [06-friction-vector.md §1](./06-friction-vector.md) |
+| $\hat{\mathbf{F}}$ | Direction. Each component's share of effective cost, summing to 1. Selects the motion. | [06-friction-vector.md §1](./06-friction-vector.md) |
+| $\lVert \mathbf{F} \rVert_1$ | Level. Base friction summed. Sets the Turnkey and Structural boundary. Equals $F_{base}$. | [06-friction-vector.md §1](./06-friction-vector.md) |
 | $F_{base}$ | The three cost components summed, before amplification. | [Constitution, Axiom II](./00-ilg-constitution.md) |
-| $F_{effective}$ | Base friction after amplification. Equals $F_{base} \cdot (1 + \Delta_A)$. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $F_{effective}$ | Friction after amplification. Equals $\sum_k F_k (1 + \hat{\Delta}_k)$, which factors into $F_{base}(1 + \hat{\Delta}_A)$. | [Constitution, Axiom II](./00-ilg-constitution.md) |
 | $F_{search}$ | Cost of locating the category and viable vendors. Splits into category search and vendor evaluation. | [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
 | $F_{consensus}$ | Internal buyer alignment plus external bargaining. | [03-mathematical-models.md](./03-mathematical-models.md) |
 | $F_{implementation}$ | Deployment plus sustained change. | [Constitution, Axiom II](./00-ilg-constitution.md) |
@@ -74,7 +77,8 @@ Two rules govern what is written here, and they differ by section.
 | Symbol | Meaning | Defined in |
 |---|---|---|
 | $\Delta_A$ | Bilateral Asymmetry Gap. A **sum**, not a difference: $I_{seller} + I_{buyer}$. | [03-mathematical-models.md §2.1](./03-mathematical-models.md) |
-| $\hat{\Delta}_A$ | The gap normalized to $[0, 1]$. **Required before substituting into either cost equation.** | [03-mathematical-models.md §1.5](./03-mathematical-models.md) |
+| $\hat{\Delta}_A$ | The deal-level gap on $[0, 1]$. The friction-weighted mean of the three component gaps. **Required before substituting into either cost equation.** | [03-mathematical-models.md §1.1](./03-mathematical-models.md) |
+| $\hat{\Delta}_k$ | A component's own gap on $[0, 1]$, for $k$ in search, consensus, implementation. Three different pairs of parties. | [03-mathematical-models.md §2.4](./03-mathematical-models.md) |
 | $\Delta_A^*$ | Akerlof Exit Threshold. Above it the buyer leaves the market entirely. | [costly-signals.md](../02-research/costly-signals.md) |
 | $I_{seller}$ | Seller Ignorance. What the seller has not mapped about the buyer's environment. | [03-mathematical-models.md §2.2](./03-mathematical-models.md) |
 | $I_{buyer}$ | Buyer Uncertainty. Doubt about return variance and vendor capability. | [03-mathematical-models.md §2.3](./03-mathematical-models.md) |
@@ -109,7 +113,8 @@ Two rules govern what is written here, and they differ by section.
 |---|---|---|
 | $\delta$ | Decay rate of urgency after the triggering event. | [03-mathematical-models.md §4](./03-mathematical-models.md) |
 | $\delta_{discount}$ | A party's discount factor. The weight it places on future payoffs. | [Constitution, Axiom III](./00-ilg-constitution.md) |
-| $\gamma$ | Rate at which the asymmetry gap rebuilds per unit time, absent maintenance. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $\gamma_k$ | Rate at which component $k$'s gap rebuilds per unit time, absent maintenance. Three rates with different drivers. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $\gamma$ | The deal-level drift rate. The friction-weighted mean of the three $\gamma_k$, and an average rather than a mechanism. | [Constitution, Axiom II](./00-ilg-constitution.md) |
 | $\gamma_r$ | Responsiveness converting external pressure into internal action. | [03-mathematical-models.md §4.2](./03-mathematical-models.md) |
 | $\gamma_{TO}$ | Weight on the technical overlap term. | 0.20, [03-mathematical-models.md §3.4](./03-mathematical-models.md) |
 | $T$, $R$, $P$ | Temptation, reward, and punishment payoffs in the cooperation condition. | [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) |
@@ -130,15 +135,15 @@ Two rules govern what is written here, and they differ by section.
 
 Seven groups look alike and mean different things. Each has produced a documented error, required an inline correction somewhere in this repo, or was caught during drafting before it could.
 
-**1. $\gamma$ carries three unrelated meanings.** In the Constitution, $\gamma$ is the rate at which the asymmetry gap rebuilds over time. In the mathematical models it appears twice more, as $\gamma_r$ (responsiveness to an external catalyst) and $\gamma_{TO}$ (the technical overlap weight). The subscripts are load-bearing. A bare $\gamma$ always means asymmetry drift.
+**1. $\gamma$ carries three unrelated meanings, and one of them now has three subscripts of its own.** In the Constitution, $\gamma$ is the rate at which an asymmetry gap rebuilds over time, and since v17.0 there is one rate per component: $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$. In the mathematical models the letter appears twice more, as $\gamma_r$ (responsiveness to an external catalyst) and $\gamma_{TO}$ (the technical overlap weight). The subscripts are load-bearing, and the two families are told apart by what the subscript names: a component, or a mechanism. A bare $\gamma$ always means deal-level asymmetry drift.
 
 **2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to Axiom I's half of the Decay Clock. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to Axiom III's cooperation condition. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it. A third rate joins them in [05-seller-surplus-model.md §7](./05-seller-surplus-model.md): $\rho$ discounts the seller's future cash flows and is set by finance policy, where $\delta_{discount}$ describes how much a party actually weighs its future and is a behavioural fact about them.
 
-**3. $\Delta_A$ and $\hat{\Delta}_A$ differ by an order of magnitude.** The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) produces a raw score on $[2, 10]$ that must be normalized before either cost equation accepts it. Raw scores drive the scorecard's field triage bands, and normalized values go into equations. The normalization and its rationale live in [03-mathematical-models.md §1.5](./03-mathematical-models.md).
+**3. $\Delta_A$ and $\hat{\Delta}_A$ differ by an order of magnitude, and $\hat{\Delta}_A$ and $\hat{\Delta}_{implementation}$ differ by scope.** The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) produces a raw score on $[2, 10]$ that must be normalized before either cost equation accepts it. Raw scores drive the scorecard's field triage bands, and normalized values go into equations. The normalization and its rationale live in [03-mathematical-models.md §1.5](./03-mathematical-models.md). Separately, what the scorecard measures is the implementation component's gap alone, because that is the only component whose pair is buyer against seller. $\hat{\Delta}_A$ is the friction-weighted mean across all three. Substituting the scorecard's output for $\hat{\Delta}_A$ treats one pair's gap as though it governed the deal.
 
-**4. $a$, $b$, and $\lambda$ are three different quantities that all sit near 2.25.** $\lambda$ is measured (prospect theory), $b$ is the rate at which base friction grows per unit of asymmetry, and the derivation identifies $a$ with $b$, borrowing $\lambda$'s magnitude as justification rather than measurement. Do not cite $a$ as though prospect theory established it. The full account is [03-mathematical-models.md §1.6](./03-mathematical-models.md).
+**4. $a$, $b$, and $\lambda$ are three different quantities that all sit near 2.25, and only two of them carry units.** $\lambda$ is measured (prospect theory) and dimensionless, $b$ is the rate at which base friction grows per unit of asymmetry, and the derivation identifies $a$ with $b$, borrowing $\lambda$'s magnitude as justification rather than measurement. $a$ and $b$ are in annual contract values, per [03-mathematical-models.md §1.7](./03-mathematical-models.md). Do not cite $a$ as though prospect theory established it, and do not add it to a figure quoted in percentage points. The full account is [§1.6](./03-mathematical-models.md).
 
-**5. $F_{base}$ and $F_{effective}$ differ by the multiplier.** $F_{base}$ is the three components summed. $F_{effective}$ is that sum after amplification by $(1 + \Delta_A)$. A third form appears inside the derivation, where base friction is written as a function of the gap, $F_{base}(\Delta_A) = c + b\Delta_A$. Quoting a friction figure without saying which form it is makes the number unusable.
+**5. $F_{base}$ and $F_{effective}$ differ by the multiplier, and level and direction are read off different ones.** $F_{base}$ is the three components summed. $F_{effective}$ is $\sum_k F_k (1 + \hat{\Delta}_k)$, which factors exactly into $F_{base}(1 + \hat{\Delta}_A)$. A third form appears inside the derivation, where base friction is written as a function of the gap, $F_{base}(\hat{\Delta}_A) = c + b\hat{\Delta}_A$. Level is the $L^1$ norm of base friction and direction is the share of effective cost, which is why discovery rotates a deal without reclassifying it. Quoting a friction figure without saying which form it is makes the number unusable.
 
 **6. $c$ is a buyer cost and the $C$ terms are seller costs.** Lowercase $c$ is the direct cost the buyer pays, which is the seller's revenue. $C_{invest}$ and $C_{deliver}$ are what the seller spends. They sit on opposite sides of the transaction and a figure quoted without its case is unreadable. $V_{contract}$ has the same hazard: it is seller revenue, not a value the buyer receives.
 

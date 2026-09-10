@@ -2,14 +2,14 @@
 title: "Mathematical Models"
 layer: theory
 status: active
-version: 1.0
+version: 2.0
 operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-ilg-constitution.md
 ---
 
 # Mathematical Models
 
-**Version:** 1.0
+**Version:** 2.0
 **Purpose:** To specify the functional forms behind the variables the [Constitution](./00-ilg-constitution.md) names but does not compute.
 
 The Constitution is axioms-first. It states that effective transaction cost rises with the bilateral asymmetry gap, that consensus friction rises with committee size, and that urgency decays from a triggering event. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
@@ -27,13 +27,19 @@ Axiom II carries two equations for the same quantity. The Constitution presents 
 
 ### 1.1 The structural form
 
-$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
+$$F_{effective} = \sum_{k} F_k \cdot (1 + \hat{\Delta}_k), \qquad k \in \{search,\; consensus,\; implementation\}$$
 
-This form decomposes cost into three components that arise from distinct conditions and respond to distinct interventions. Its value is diagnostic. When a deal stalls, this form tells you which component is binding and therefore which artifact to deploy.
+This form decomposes cost into three components that arise from distinct conditions and respond to distinct interventions, and amplifies each by the asymmetry inside its own pair of parties. Its value is diagnostic. When a deal stalls, this form tells you which component is binding and therefore which artifact to deploy.
+
+**The single-multiplier form is what this factors into.** Collecting the sum:
+
+$$\sum_{k} F_k (1 + \hat{\Delta}_k) = F_{base} \cdot (1 + \hat{\Delta}_A), \qquad \hat{\Delta}_A \equiv \frac{\sum_{k} F_k \hat{\Delta}_k}{\sum_{k} F_k}$$
+
+The identity is exact. The scalar $\hat{\Delta}_A$ that the framework carried before Constitution v17.0 is the friction-weighted mean of the three component gaps, so results that consumed the scalar hold unchanged and the reduced form below still follows. Section 2 gives the three gaps and their instruments. What the scalar cannot represent is stated in section 1.4.
 
 ### 1.2 The reduced form
 
-$$y = a \Delta_A^2 + c$$
+$$y = a \hat{\Delta}_A^2 + c$$
 
 This form collapses the decomposition into a single convex curve. Its value is argumentative. It shows why the traditional levers fail: because cost grows faster than linearly in uncertainty, cutting the constant term $c$ through discounting cannot offset a large $\Delta_A$.
 
@@ -45,23 +51,23 @@ An uncertain buyer does not simply pay a surcharge on a fixed quantity of work. 
 
 Write base friction as a function of the gap:
 
-$$F_{base}(\Delta_A) = c + b \Delta_A$$
+$$F_{base}(\hat{\Delta}_A) = c + b \hat{\Delta}_A$$
 
 Where $c$ is the irreducible floor (license fees, direct outlays, the deployment work that happens even under perfect information) and $b$ is the rate at which base friction grows per unit of asymmetry.
 
 Substituting into the structural form:
 
-$$F_{effective} = (c + b\Delta_A)(1 + \Delta_A) = b\Delta_A^2 + (b + c)\Delta_A + c$$
+$$F_{effective} = (c + b\hat{\Delta}_A)(1 + \hat{\Delta}_A) = b\hat{\Delta}_A^2 + (b + c)\hat{\Delta}_A + c$$
 
-The reduced form is this expression with the middle term dropped and $a$ identified with $b$. The two representations describe the same cost. The reduced form is the structural form after you let base friction depend on asymmetry and then discard the linear term.
+The reduced form is this expression with the middle term dropped and $a$ identified with $b$. The derivation runs on the factored scalar, so it is untouched by the split into three gaps. The two representations describe the same cost. The reduced form is the structural form after you let base friction depend on asymmetry and then discard the linear term.
 
 ### 1.4 What the reduced form gives up
 
 Two things, and both matter in the field.
 
-**The linear term.** Dropping $(b + c)\Delta_A$ is not justified by that term being small. Over the normalized operating range defined in Section 1.5, the linear term is comparable to the quadratic term and sometimes larger. The reduced form is a two-parameter approximation of a three-parameter expression. When $a$ and $c$ are fitted to observed deals rather than assumed, they absorb the discarded term across the operating range. What the reduced form preserves, and the reason it earns its place in the framework, is convexity. Convexity is the property the Three Sales Levers argument depends on.
+**The linear term.** Dropping $(b + c)\hat{\Delta}_A$ is not justified by that term being small. Over the normalized operating range defined in Section 1.5, the linear term is comparable to the quadratic term and sometimes larger. The reduced form is a two-parameter approximation of a three-parameter expression. When $a$ and $c$ are fitted to observed deals rather than assumed, they absorb the discarded term across the operating range. What the reduced form preserves, and the reason it earns its place in the framework, is convexity. Convexity is the property the Three Sales Levers argument depends on.
 
-**The component decomposition.** The reduced form cannot tell you whether search, consensus, or implementation is binding. It produces a number, not a diagnosis.
+**The component decomposition, and with it the direction.** The reduced form cannot tell you whether search, consensus, or implementation is binding. It produces a number, not a diagnosis. Under Constitution v17.0 this concession is heavier than it was, because direction is the quantity that selects the motion and collapsing to $\hat{\Delta}_A$ destroys it. What survives is convexity, which is the property the Three Sales Levers argument needs and the only job the reduced form is asked to do.
 
 **Operating rule.** Use the structural form to diagnose a specific deal. Use the reduced form to explain why discounting fails and to frame the three levers. Do not use the reduced form to choose an intervention.
 
@@ -75,6 +81,8 @@ $$\hat{\Delta}_A = \frac{\Delta_A^{raw} - 2}{8}, \qquad \hat{\Delta}_A \in [0, 1
 
 This keeps the structural multiplier in $[1, 2]$ and keeps the reduced form's quadratic term bounded by $a$. Use the raw score for the field triage bands in the scorecard. Use the normalized value in either equation. Confusing the two produces cost estimates off by an order of magnitude.
 
+**Each component gap normalizes on its own instrument's range.** The scorecard's $[2, 10]$ is the implementation pair's range, because that is the pair it measures. The search and consensus gaps are emitted directly on $[0, 1]$ by the [Process Calculator](../../practice/01-field-assets/process-calculator.md) as evidenced fractions, so they need no rescaling. Section 2.4 gives all three.
+
 The normalized gap may exceed 1 when asymmetry rebuilds past the instrument's ceiling under the Decay Clock dynamics ($\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$). The scorecard measures a point in time and cannot observe drift beyond its own range.
 
 ### 1.6 A note on the coefficient $a$
@@ -82,6 +90,24 @@ The normalized gap may exceed 1 when asymmetry rebuilds past the instrument's ce
 The derivation identifies $a$ with $b$, the rate at which base friction grows per unit of asymmetry. It does not identify $a$ with the loss aversion coefficient $\lambda$.
 
 The anchor $a \approx 2.25$ borrows $\lambda$'s magnitude as a behavioral justification for why $b$ is large. Buyers add review cycles and contingency scope because they weight potential losses roughly twice as heavily as equivalent gains, so the work a buyer generates per unit of unresolved uncertainty is substantial. That reasoning supports the order of magnitude. It is not a measurement. The Constitution's hedge on $\lambda$ (conceptual anchor, likely higher in organizational contexts) applies with equal force to $a$.
+
+### 1.7 The scale of $y$, $c$ and $a$
+
+The reduced form adds $a\hat{\Delta}_A^2$ to $c$. Addition requires common units, so $a$ carries whatever units $c$ carries, and until Constitution v17.0 the framework never said what those were. The anchor $a = 2.25$ was borrowed from a dimensionless behavioral coefficient and then added to a price.
+
+**All three are fractions of annual contract value.** A deal transacting at list price with no internal cost has $c = 1$. The [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) is the one place where $a$, $c$ and the payment schedule meet on a common scale, and its reference table settles the reading.
+
+| Stage | Payment $c_m$ | Residual entering, $x_m$ | $a x_m^2$ | Ratio to that stage's payment |
+|---|---|---|---|---|
+| 1. Core integration | 0.25 | 0.750 | 1.266 | 5.06 |
+| 2. Pilot | 0.35 | 0.375 | 0.316 | 0.90 |
+| 3. Full rollout | 0.40 | 0.075 | 0.0127 | 0.032 |
+
+Computed at $x_0 = 1$, the fully open gap. Entering a deal, the uncertainty a buyer is asked to swallow is worth five times the first payment. By the last gate it is worth three percent of it. That profile is the staging argument exactly: the option to stop is worth most when least is known, and gate design should return most of it early.
+
+**The alternative reading fails.** Take the same table as percentage points, so $c_1 = 25$. Then $a x_1^2 = 1.266$ against a payment of 25, or five percent, falling to three hundredths of a percent by the last gate. Under that reading uncertainty is a rounding error at every stage, which contradicts the framework's central claim that risk outweighs return, and it would make the Three Sales Levers argument false rather than merely approximate. The percentage reading is not a second option. It is a unit error.
+
+**What this does not settle.** $a = 2.25$ remains anchored by analogy rather than measured, and stating its units does not make it an estimate. What the units buy is that the number can now be wrong in a checkable way: a fitted $a$ would be recovered in annual contract values per unit of squared normalized gap, and section 6 says what data that needs.
 
 ---
 
@@ -94,6 +120,8 @@ $$\Delta_A = I_{seller} + I_{buyer}$$
 The gap is a **sum**, not a difference. Total informational misalignment across the buyer-seller boundary is the seller's ignorance of the buyer's environment plus the buyer's uncertainty about the seller's capability. A deal where both sides are equally blind is not symmetric in any useful sense. It is maximally uninformed on both sides, and $\Delta_A$ must reflect that.
 
 $\Delta_A = 0$ represents complete informational symmetry.
+
+**This is the implementation component's gap, not the deal's.** Sections 2.2 and 2.3 model its two halves. Section 2.4 gives the other two components' gaps, which have different parties and different instruments, and section 1.1 gives the weighted mean that recovers the deal-level scalar from all three.
 
 ### 2.2 Seller Ignorance
 
@@ -137,6 +165,30 @@ As proof accumulates, buyer uncertainty approaches a floor set by return varianc
 $$\lim_{K_{vendor} \to \infty} I_{buyer} = \mu \cdot \frac{\sigma_{ROI}}{\bar{R}}$$
 
 This floor is the model's most useful field implication. No quantity of costly signaling drives buyer uncertainty to zero while the return itself remains volatile. Past a point, the seller stops investing in proof and starts working on the variance of the projected return. The Red Team targets $K_{vendor}$. The MIP targets $\sigma_{ROI}$ by bounding downside through staged gates.
+
+### 2.4 The three component gaps
+
+Constitution v17.0 amplifies each friction component by the asymmetry inside its own pair of parties. The three pairs are different, so the three gaps have different instruments and cannot be read off one score.
+
+| Gap | Pair | What is unknown | Instrument | Closed by |
+|---|---|---|---|---|
+| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, whether the fit holds, how to reach a seller at all | [Process Calculator](../../practice/01-field-assets/process-calculator.md), search block | Education, reference architectures, category definition, channel |
+| $\hat{\Delta}_{consensus}$ | The buyer's stakeholders against each other | What each of the others is measured on | [Process Calculator](../../practice/01-field-assets/process-calculator.md), consensus block | Stakeholder mapping in the Blueprint, then the Red Team workshop |
+| $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) | Blueprint, Red Team, MIP |
+
+**Only the implementation gap is bilateral.** Sections 2.2 and 2.3 model its two halves, $I_{seller}$ and $I_{buyer}$, and section 2.1's sum applies to that pair alone:
+
+$$\hat{\Delta}_{implementation} = \frac{I_{seller} + I_{buyer} - 2}{8}$$
+
+The other two gaps have no seller-side term. A buyer who cannot name the category is not ignorant *of the seller*, and two stakeholders who cannot see each other's objectives are not separated by anything the seller knows and withholds. Each is measured as the fraction of its own instrument's items that remain unevidenced, which lands on $[0, 1]$ with a true zero and needs no rescaling:
+
+$$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{n_{search}}, \qquad \hat{\Delta}_{consensus} = 1 - \frac{e_{consensus}}{n_{consensus}}$$
+
+Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. An instrument emitting no items at all leaves its gap undefined rather than zero, and a component with no cost carries no weight in the mean either way.
+
+**Consensus asymmetry is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the stakeholders' interests actually sit. $\hat{\Delta}_{consensus}$ measures how much of that the room can see. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late. The two terms enter $F_{effective}$ at different places: variance raises the base cost $F_{consensus}$, and the gap amplifies it.
+
+**A note on $\beta$.** Section 3.1's $\beta$ is the organizational complexity exponent and belongs to the consensus base cost. Nothing in this framework weights one side's ignorance against the other's inside a gap. $I_{seller}$ and $I_{buyer}$ are summed unweighted by section 2.1, and any future weighting parameter would be a parameter of the implementation pair specifically, since it is the only pair with two distinguishable sides.
 
 ---
 
@@ -244,7 +296,10 @@ $$\frac{\partial \delta}{\partial E_{external}} = \frac{-\gamma_r \lambda_{inert
 | Technical overlap weight | $\gamma_{TO}$ | 0.20 | **Chosen.** Field refinement, not core theory. See Section 3.4. |
 | Coordination overhead | $\alpha$ | 1.0 | **Chosen.** Normalizing convention. |
 | Responsiveness factor | $\gamma_r$ | 0.5 | **Chosen.** Staging logic motivated by Dixit & Pindyck (1994). The value is not. |
+| Component drift rates | $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$ | unmeasured | **Named, not valued.** Constitution v17.0 splits the scalar $\gamma$ into three. No default is offered, because offering one would read as an estimate. $\gamma_{consensus}$ is the only one with a discrete field event attached to it, namely a departed stakeholder. |
+| Dominance threshold | — | 0.50 | **Chosen.** The share of effective cost at which one component is read as dominant rather than the vector as mixed. See [06-friction-vector.md](./06-friction-vector.md). |
 
+**Units.** $a$ and $c$ are in annual contract values per section 1.7. Every other parameter above is dimensionless or carries the units of its own input.
 Read the third column before quoting any number outside this repository. Two parameters carry literature support for their *shape*. None carries literature support for its *value*.
 
 ---
@@ -256,6 +311,7 @@ The models become predictive rather than organizing when three things happen:
 1. **Scorecard scores are logged at deal open and deal close** across enough deals to fit $a$ and $c$ against realized cycle length and outcome.
 2. **Committee size and stakeholder alignment are recorded in the CRM** as structured fields rather than narrative notes, which makes $\beta$ estimable.
 3. **Triggering events are dated**, which makes $\delta$ observable as the decay in buyer-reported urgency between the event and close.
+4. **The three component gaps are logged separately** at open and at each artifact boundary. This is what makes $\gamma_k$ estimable and what would test the claim v17.0 rests on, that discovery rotates the vector rather than only shortening it. A book of deals whose composition at close matches its composition at open would falsify it.
 
 Until then, treat every output as a structured comparison between deals rather than a quantity. A deal scoring 7.2 is meaningfully worse than one scoring 4.1. Neither number predicts a close date.
 

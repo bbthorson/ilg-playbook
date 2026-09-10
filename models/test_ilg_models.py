@@ -151,6 +151,126 @@ class TestTransactionCost(unittest.TestCase):
 
 
 # ==========================================================================
+# 03-mathematical-models.md sections 1.1 and 2.4, and 06-friction-vector.md.
+# Per-component amplification, adopted in Constitution v17.0.
+# ==========================================================================
+
+class TestPerComponentAmplification(unittest.TestCase):
+    """Section 1.1 asserts the two forms are the same quantity, exactly.
+
+    The claim is load-bearing. If the identity only held approximately, every
+    downstream result that consumed the scalar gap would have inherited an
+    unquantified error when v17.0 split it into three.
+    """
+
+    def setUp(self):
+        self.f = (2.0, 5.0, 3.0)
+        self.g = (m.NormalizedGap(0.2), m.NormalizedGap(0.8),
+                  m.NormalizedGap(0.4))
+
+    def test_the_two_forms_agree_exactly(self):
+        per_component = m.effective_cost_per_component(*(self.f + self.g))
+        mean = m.weighted_mean_gap(*(self.f + self.g))
+        self.assertAlmostEqual(per_component,
+                               m.effective_cost(*(self.f + (mean,))), places=12)
+
+    def test_equal_gaps_reproduce_the_single_multiplier_form(self):
+        gap = m.NormalizedGap(0.6)
+        self.assertAlmostEqual(
+            m.effective_cost_per_component(*(self.f + (gap, gap, gap))),
+            m.effective_cost(*(self.f + (gap,))))
+
+    def test_the_mean_is_friction_weighted_not_arithmetic(self):
+        # Section 1.1 spells the weighting out; an arithmetic mean would be 0.4667.
+        mean = m.weighted_mean_gap(*(self.f + self.g))
+        expected = (2.0 * 0.2 + 5.0 * 0.8 + 3.0 * 0.4) / 10.0
+        self.assertAlmostEqual(mean, expected)
+        self.assertNotAlmostEqual(mean, (0.2 + 0.8 + 0.4) / 3.0)
+
+    def test_the_mean_is_a_normalized_gap_the_cost_equations_accept(self):
+        mean = m.weighted_mean_gap(*(self.f + self.g))
+        self.assertIsInstance(mean, m.NormalizedGap)
+        m.reduced_cost(mean)  # would raise TypeError on a bare float
+
+    def test_zero_base_friction_has_no_composition(self):
+        with self.assertRaises(ValueError):
+            m.weighted_mean_gap(0, 0, 0, *self.g)
+
+    def test_raw_gaps_are_refused_per_component_too(self):
+        with self.assertRaises(TypeError):
+            m.effective_cost_per_component(2.0, 5.0, 3.0, 0.2, 0.8, 0.4)
+
+
+class TestFrictionVector(unittest.TestCase):
+    """06-friction-vector.md sections 1 to 3, and Axiom I's composition claim.
+
+    Level is the L1 norm of base friction and direction is the share of
+    effective cost. Keeping them on different quantities is what makes
+    discovery rotate the vector without reclassifying the deal.
+    """
+
+    def test_direction_shares_sum_to_one(self):
+        v = m.friction_vector(2.0, 5.0, 3.0, m.NormalizedGap(0.2),
+                              m.NormalizedGap(0.8), m.NormalizedGap(0.4))
+        self.assertAlmostEqual(sum(v.direction), 1.0)
+
+    def test_level_is_base_friction_and_ignores_the_gaps(self):
+        wide = m.friction_vector(2.0, 5.0, 3.0, m.NormalizedGap(0.9),
+                                 m.NormalizedGap(0.9), m.NormalizedGap(0.9))
+        closed = m.friction_vector(2.0, 5.0, 3.0, m.NormalizedGap(0.0),
+                                   m.NormalizedGap(0.0), m.NormalizedGap(0.0))
+        self.assertEqual(wide.magnitude, closed.magnitude)
+        self.assertEqual(wide.magnitude, 10.0)
+
+    def test_closing_one_gap_rotates_the_vector_away_from_it(self):
+        """The claim v17.0 exists to make representable.
+
+        A deal opens implementation-dominant. The Blueprint closes the
+        implementation gap and nothing else changes. Under the single
+        multiplier this rotation is impossible by construction.
+        """
+        opened = m.friction_vector(1.0, 4.0, 4.0, m.NormalizedGap(0.1),
+                                   m.NormalizedGap(0.5), m.NormalizedGap(0.9))
+        self.assertEqual(opened.dominant, "implementation")
+        after = m.friction_vector(1.0, 4.0, 4.0, m.NormalizedGap(0.1),
+                                  m.NormalizedGap(0.5), m.NormalizedGap(0.0))
+        self.assertEqual(after.dominant, "consensus")
+        self.assertEqual(opened.magnitude, after.magnitude)
+
+    def test_one_multiplier_cannot_rotate_the_vector(self):
+        """The negative result stated in Axiom II's mathematical content."""
+        base = (1.0, 4.0, 4.0)
+        shares = []
+        for level in (0.0, 0.3, 0.9):
+            gap = m.NormalizedGap(level)
+            v = m.friction_vector(*(base + (gap, gap, gap)))
+            shares.append(v.direction)
+        for other in shares[1:]:
+            for a, b in zip(shares[0], other):
+                self.assertAlmostEqual(a, b)
+
+    def test_a_vector_with_no_component_at_half_reads_as_mixed(self):
+        v = m.friction_vector(3.0, 3.0, 3.0, m.NormalizedGap(0.0),
+                              m.NormalizedGap(0.0), m.NormalizedGap(0.0))
+        self.assertEqual(v.dominant, "mixed")
+
+    def test_component_gap_counts_what_is_unevidenced(self):
+        # Section 2.4: four stakeholders in scope, one with a documented
+        # measured objective.
+        self.assertAlmostEqual(m.component_gap(4, 1), 0.75)
+        self.assertAlmostEqual(m.component_gap(4, 4), 0.0)
+        self.assertAlmostEqual(m.component_gap(4, 0), 1.0)
+
+    def test_nothing_counted_is_not_symmetry(self):
+        with self.assertRaises(ValueError):
+            m.component_gap(0, 0)
+
+    def test_more_evidence_than_items_is_an_arithmetic_error(self):
+        with self.assertRaises(ValueError):
+            m.component_gap(3, 4)
+
+
+# ==========================================================================
 # 03-mathematical-models.md section 2, the two halves of the gap.
 # ==========================================================================
 
