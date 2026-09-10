@@ -19,7 +19,15 @@ ignorecase: false
 #
 # Retired deal analogies (v14.0). Replaced by Structural Deal ($k \ge 10$) and
 # Turnkey Deal ($k \le 9$) per the 2x2 Deal Archetype Matrix.
+# Metric name. NRR is Net Revenue Retention, confirmed 2026-09. The expansion
+# below is a common slip and has never appeared in the working tree, so this row
+# is preventive rather than corrective, in the same spirit as the entries mined
+# from git history above. Canonical definition: 04-glossary-and-notation.md.
 swap:
+  net recurring revenue: Net Revenue Retention
+  Net Recurring Revenue: Net Revenue Retention
+  net retained revenue: Net Revenue Retention
+  Net Retained Revenue: Net Revenue Retention
   Law of Economic Boundaries: Law of Transaction Cost Composition
   Law of Friction: Law of Uncertainty Inflation
   Law of Asymmetry Convergence: Law of Uncertainty Inflation
