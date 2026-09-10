@@ -18,7 +18,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 > **Why this lives in `practice/` and not `theory/`.** Every model in [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) supplies a functional form for a variable the Constitution already names, and that file states it introduces no new claims. The measures below do something different: they score how well an organization ran the motion. They are observations about execution, not derivations from the axioms, and placing them in the foundation would break the axioms-first rule.
 
 > [!WARNING]
-> **Calibration status: none.** Every threshold, weight, and coefficient on this page is a reasoned starting value. None is fitted to booked deal data. Use these numbers to compare deals within your own book. Do not quote them externally as benchmarks, and do not report the composite index to a board as a performance figure until Section 6 conditions are met.
+> **Calibration status: none.** Every threshold, weight, and coefficient on this page is a reasoned starting value. None is fitted to booked deal data. Use these numbers to compare deals within your own book. Do not quote them externally as benchmarks, and do not report the composite index to a board as a performance figure until Section 7 conditions are met. Section 6 records three defects in the composite that are known and unfixed.
 
 ---
 
@@ -98,7 +98,19 @@ $\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed Str
 
 ---
 
-## 6. What would make this empirical
+## 6. Three defects in the composite, recorded
+
+Each was found by evaluating the formulas in [`models/ilg_models.py`](../../models/ilg_models.py) rather than by reading them. None is fixed here, because each fix requires choosing a shape or a weight rather than correcting arithmetic, and that is a decision rather than a repair.
+
+**The composite is monotonic in FAR, and section 1 says it should not be.** Section 1 states that above 0.75 the organization is either treating a Turnkey deal as Structural or performing pre-sale work nobody asked for. Section 5 then weights FAR at 0.35 with no band. Holding the other three components fixed, a FAR of 0.70 scores 81.50 and a FAR of 1.00 scores 92.00. The composite rewards the state section 1 names as a failure. A fix means giving FAR a band-shaped contribution, which requires choosing how steeply to penalize each side of the band.
+
+**Red Team credibility is ungated in the composite.** Section 3 states that below roughly eight identified edge cases the score carries no information however high it is. Section 5 consumes RMS anyway. A workshop finding two cases and closing both scores 1.000 and reaches a composite of 86.50. One finding forty and closing thirty-five scores 0.875 and reaches 83.38. The shallower workshop wins by three points, which is the failure section 3 predicts and section 5 builds.
+
+**Half of any book caps out on Buyer Commitment Velocity.** $\text{BCV}_{ref}$ is the trailing median across the last twenty closed Structural deals, and $\widehat{\text{BCV}} = \min(\text{BCV}/\text{BCV}_{ref}, 1)$. A median splits its own population in half by definition, so half of all deals sit at exactly 1.000 on a component weighted 0.25. The component discriminates across one half of the book and not at all across the other.
+
+---
+
+## 7. What would make this empirical
 
 The same three conditions that govern [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) Section 6 apply, plus one specific to this instrument:
 
@@ -115,7 +127,7 @@ Until then, treat every output as a structured comparison between deals in your 
 
 | Parameter | Symbol | Default | Provenance |
 |---|---|---|---|
-| FAR target band | — | 0.60–0.75 | **Chosen.** No source. Test per Section 6.4. |
+| FAR target band | — | 0.60–0.75 | **Chosen.** No source. Test per Section 7.4. |
 | Committee-size correction | $N^{0.5}$ | 0.5 exponent | **Structurally motivated.** Direction follows from $F_{consensus}$ rising in $N$. The exponent is chosen. |
 | Provisioning guard | $D_{prov} + 1$ | 1 | **Convention.** Prevents division by zero. |
 | Change-order weight | — | 0.25 | **Chosen.** No source. |
