@@ -1,6 +1,13 @@
+---
+title: "The Constitution of Implementation-Led Growth (ILG)"
+layer: theory
+status: active
+version: 16.0
+---
+
 # The Constitution of Implementation-Led Growth (ILG)
 
-**Version:** 14.0
+**Version:** 16.0
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
@@ -11,11 +18,23 @@ Version history is at the end of this document.
 
 The three axioms govern three aspects of any B2B transaction.
 
-| Axiom | Governs | Scale | Tagline | Plain English |
+| Axiom | Governs | State | Tagline | Plain English |
 |---|---|---|---|---|
-| **I. Law of Transaction Cost Composition** | Whether a deal can happen | Market | *"Costs determine the deal"* | Buying costs more than money. |
-| **II. Law of Uncertainty Inflation** | What the deal costs when it happens | Deal | *"Fear > Value"* | Uncertainty makes change expensive. |
-| **III. Law of Governance** | Whether the deal persists | Relationship over time | *"Structure determines behavior"* | Sales is governance design. |
+| **I. Law of Transaction Cost Composition** | Whether a deal can happen | **Market** | *"Costs determine the deal"* | Buying costs more than money. |
+| **II. Law of Uncertainty Inflation** | What the deal costs when it happens | **Deal** (T0) | *"Fear > Value"* | Uncertainty makes change expensive. |
+| **III. Law of Governance** | Whether the deal persists | **Relationship** (T1+) | *"Structure determines behavior"* | Sales is governance design. |
+
+### The three states
+
+The State column is the framework's primary index. A practitioner arrives holding a situation rather than an axiom, and the situation names the state:
+
+| State | The question it answers | Where the answer lives |
+|---|---|---|
+| **Market** | Which motion is viable here at all? | [Process Calculator](../../practice/01-field-assets/process-calculator.md), [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
+| **Deal** (T0) | What must be true, and what must the seller supply, before signature? | [Contextual Blueprint](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) → [Red Team](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md) → [MIP](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) |
+| **Relationship** (T1+) | Does the surplus survive, and can a competitor take it? | [Sustaining Adoption Review](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
+
+**Each axiom has a home state, and none is confined to it.** Axiom II runs past signature, where $\Delta_A(t) = \Delta_A(0) + \gamma t$ governs how fast an incumbent's advantage erodes. Axiom III runs at T0, because the MIP is signed at close. Axiom I recurs whenever a category commoditizes and the motion must be re-scored. Treat the mapping as where each axiom does most of its work, not as a partition.
 
 Together they describe the *existence, economics, and dynamics* of any transaction in a high-friction market. Each axiom generates its own mathematical content. The equations integrate into the Surplus equation in Part III.
 
@@ -37,21 +56,27 @@ The three axioms are progressively visualized through a potential-well diagram t
 
 ### Axiom I — The Law of Transaction Cost Composition
 
-> **Transaction costs in B2B deals decompose into three independently-arising components: search, consensus, and implementation. Their combined level, driven principally by asset specificity, determines which motion is viable. Low combined costs fit PLG or SLG, high combined costs require structured intervention, and Turnkey vs. Structural deal classification follows from measuring them.**
+> **Transaction costs in B2B deals decompose into three components: search, consensus, and implementation. Their composition selects the motion. Their combined level sets the boundary between Turnkey and Structural deals. Asset specificity drives that level, and the exposure it creates belongs to whichever party sinks the specific investment.**
 
-> *Tagline: **"Costs determine the deal."** The combined level of search, consensus, and implementation costs determines which motion is viable, and what the sales process must do.*
+> *Tagline: **"Costs determine the deal."** Which cost dominates decides how you sell. How much cost there is decides whether the deal is Turnkey or Structural.*
 >
-> *Plain English: Buying costs more than money. Finding it, agreeing on it, and installing it are three separate bills, and their total decides which motion can work. Sometimes the total runs higher than building it yourself, and neither side can tell until they are in it.*
+> *Plain English: Buying costs more than money. Finding it, agreeing on it, and installing it are three separate bills. The largest bill tells you how to sell. The total tells you how much apparatus the deal can carry. And whoever pays for work that fits only this one deal is the one left holding it if the deal dies.*
 >
 > *Origin: Coase (1937). Using the price mechanism is itself costly.*
 
 **Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs. Williamson operationalized this through *asset specificity*, the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the ILG artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Turnkey deal does not need a Blueprint.
+
+**Who bears the specificity (Klein, Crawford and Alchian).** Exposure follows the investment rather than the invoice. Whoever sinks capital that cannot be redeployed is the exposed party, whichever side of the transaction they sit on. Williamson's account is usually read from the buyer's side because the buyer is usually the one making the specific investment. That reading fails for a forward-deployed motion, where the seller commits engineering into the buyer's environment before signature and therefore holds the exposure first. The measure of what is at stake is the appropriable quasi-rent, not the hours worked, and the seller-side model is [05-seller-surplus-model.md](./05-seller-surplus-model.md). Research is in [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md).
+
+**The three components are not statistically independent.** They arise from distinct conditions and respond to distinct interventions, which is what makes the decomposition diagnostically useful. They still move together. A workflow the product must fit but does not raises $F_{implementation}$ and generates $F_{consensus}$ at the same time, because an imposition creates a stakeholder whose objectives worsen. Treat the three as separately addressable, not as separately caused.
 
 **Mathematical content.** The boundary condition for ILG applicability:
 
 $$k > k_{threshold} \quad \text{and} \quad F_{deployed} \sim k$$
 
 Where $k$ is the asset specificity of the deal and $F_{deployed}$ is the friction structure used to manage it. The first condition is necessary (Turnkey vs. Structural deal classification). The second is the scaling requirement (friction must match specificity).
+
+**The two claims have different uses, and the boundary condition covers only one of them.** Level answers how much apparatus a deal can carry, and $k > k_{threshold}$ is that test. Composition answers which motion to run, and no equation here settles it: a deal whose cost sits almost entirely in $F_{search}$ takes a different motion from one of identical total sitting in $F_{implementation}$. The composition rule is operationalized rather than formalized, in [Process Calculator](../../practice/01-field-assets/process-calculator.md) Step 1 (market stage) and Step 2b (workflow divergence and the trialability gates). Do not read the summed score as a motion selector.
 
 The boundary also has time dynamics. Value erodes from the triggering event:
 
@@ -63,6 +88,7 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
 
 - **Under-frictioned (Velocity motion on a Structural deal).** Asset specificity too high for the friction deployed. The buyer faces hold-up risk and chooses to build internally rather than transact. Manifests as "we decided to handle this in-house" (Stanford ChatEHR, Apple's vertical silicon, any "we built it ourselves" story).
 - **Over-frictioned (ILG on a Turnkey deal).** Asset specificity too low for the friction deployed. The cost of Blueprints, Red Teams, and MIPs exceeds the surplus they unlock. The buyer experiences over-engineering and chooses a competitor with lighter motion.
+- **Mis-composed (right level, wrong motion).** Total friction read correctly, dominant component read wrongly, so the motion attacks a cost that is not binding. Education aimed at a buyer who already knows the category, or implementation proof supplied to a buyer who cannot yet name the problem. The score justifies the effort and the effort lands nowhere.
 
 **Operating instruction.** Before deploying any sales motion, classify the deal against this boundary. The operational tool is the [Process Calculator](../../practice/01-field-assets/process-calculator.md).
 
@@ -171,7 +197,8 @@ Part II organizes the operational consequences of the axioms. Concepts come in t
 
 - **Primary derivations**: one axiom → one concept. The operational content of each axiom.
 - **Bridge concepts**: two or more axioms integrated. The places where the axioms talk to each other.
-- **Clarifying concepts**: definitions and elaborations. Reference material for the primary derivations.
+
+Concepts that only elaborate a source rather than derive from an axiom are not listed here. Each has a research file that defines it and a row in [04-glossary-and-notation.md](./04-glossary-and-notation.md) that points there.
 
 ### Primary Derivations
 
@@ -324,35 +351,6 @@ The full statement with all dynamics and constraints appears in Part III.
 
 ---
 
-### Clarifying Concepts
-
-**Market States.** Three stages a market passes through, each with characteristic friction profile:
-- *Nascent*: search dominates, so SLG fits.
-- *Efficient*: all costs moderate, so PLG fits.
-- *Saturated*: consensus and implementation dominate, so ILG fits.
-
-The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" because they are observationally similar from outside (the category is legible, the vendor field is known). The rubric separates them by transaction cost score. *Transitional* refers to the boundary state between Nascent and Mature, when the category is forming but not yet fully legible. Elaborates the Boundary Condition by specifying which motion fits which state.
-
-**Three Transaction Costs.** Coase named three costs of using the price mechanism: search, bargaining, and enforcement. ILG operationalizes them for B2B software as the three components of $F_{base}$: $F_{search}$ (locating the category and viable vendors), $F_{consensus}$ (internal buyer alignment plus external bargaining), and $F_{implementation}$ (deployment plus sustained change). Elaborates Axiom II's cost equation by separating what is summed.
-
-$F_{search}$ subdivides once more, and motion selection depends on the split. *Category search* (the buyer cannot name what they need) dominates nascent markets and is resolved by education. *Vendor evaluation* (the category is legible and the field is known) dominates mature low-specificity markets and is resolved by trial. Fusing the two makes SLG and PLG appear to compete for the same cost component when they address different halves of it. See [01-sales-motion-comparison.md](./01-sales-motion-comparison.md).
-
-**Akerlof Exit Threshold.** The point at which $\Delta_A$ exceeds the buyer's tolerance for market participation, causing market withdrawal. Mathematically expressed as $\Delta_A^*$. Beyond the threshold, no individual signal mechanism can restore market function. The buyer has exited. Elaborates Axiom II's saturation failure mode.
-
-**Single Crossing Property.** Spence's condition: a signal separates quality from noise only when the cost of producing it is proportionally lower for the high-quality actor. The technical underpinning of Friction Allocation Principle 1 (non-automatable friction).
-
-**Williamson Hold-Up.** The economic problem solved by the MIP. Once a buyer makes asset-specific investments, the seller can demand more than the original price (or vice versa). The MIP, by contractualizing bilateral commitments, makes hold-up costly for either side. Elaborates Axiom I's "build vs buy" decision and Axiom III's deal-level cooperation case.
-
-**Incomplete Contracts and Residual Control Rights.** Grossman-Hart-Moore's result that contracts covering complex transactions cannot specify every future state, so what governs the unspecified states is the pre-agreed allocation of decision authority. Residual control rights are that authority. Elaborates Axiom III's mechanism and explains why the Blueprint (which shrinks the unspecified set) and the MIP (which allocates authority within it) are complementary rather than redundant.
-
-**Buying Center.** Webster and Wind's term for the set of people participating in a purchase decision, each evaluating the same proposal against a different objective. Cyert and March established the underlying claim: a firm is a coalition with conflicting goals, not a single agent with one utility function. Elaborates $F_{consensus}$ by explaining what generates it, and explains why a saboteur is structurally normal rather than exceptional. A stakeholder whose measured objectives worsen under the initiative is behaving rationally by blocking it.
-
-**Real Option.** The economic value of the ability to defer, stage, or abandon an irreversible investment under uncertainty. Standard net present value analysis omits it, which is why a buyer can correctly decline a project with positive expected value. The technical underpinning of Staged Commitment.
-
-**Jevons Vulnerability.** A channel is Jevons-vulnerable when the binding constraint on volume is production cost. When production cost falls due to efficiency tools, volume rises and channel signal quality collapses. Channels whose binding constraint is something else (relationships, expertise, time, demonstrated work) are Jevons-resistant. Elaborates the channel-level failure mode of Friction Allocation Principle 1.
-
----
-
 ## Part III: Synthesis
 
 ### The Full Surplus Equation
@@ -414,40 +412,11 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 
 ---
 
-## Part IV: Organizational Corollary
-
-The variables in the Surplus equation each have a department owner. This corollary states the *principle* (the axioms map to organizational responsibility) and points to where the operational procedures live.
-
-### The Principle
-
-Each variable in the model is owned by a specific function. If a variable has no owner, it drifts; if it has multiple owners without coordination, it fragments.
-
-| Variable | Axiom | Primary owner | Supporting |
-|---|---|---|---|
-| $V_{solution}$ | I | Product | Product Marketing |
-| $V_{next\_best}$ | I | Sales | Product Marketing |
-| $V_{effective}(t)$ — urgency monitoring | I | Sales | RevOps |
-| $k$ (asset specificity) | I | Sales Leadership | Product |
-| $F_{search}$ | II | Marketing | Sales (via referrals) |
-| $F_{consensus}$ | II | Sales | Solutions Engineering |
-| $F_{implementation}$ | II | CS / Implementation | Sales (in the Blueprint) |
-| $\Delta_A$ — Seller side ($I_{seller}$) | II | Sales + SE | Product Marketing |
-| $\Delta_A$ — Buyer side ($I_{buyer}$) | II | Marketing (category) + Sales (deal) | CS (post-sale) |
-| $\delta_{discount}$ — Rep level | III | Finance (vested comp) | Sales Leadership |
-| $\delta_{discount}$ — Org level | III | Executive Leadership | All |
-| Reputation refresh | III | Marketing + CS | All |
-
-### The Handoff Rule
-
-The Blueprint travels with the customer through the funnel. The asymmetry assessment that the seller produced must transfer intact to CS at handoff, or $\Delta_A$ resets to near-maximum on the receiving side. The Blueprint is the institutional memory that prevents the Fumbled Handoff failure mode.
-
-### Where Procedures Live
-
-This corollary states the principle. Detailed procedures (CRM field configuration, RACI tables, manager rituals, comp plan mechanics) live in [`practice/02-internal-ops/`](../../practice/02-internal-ops/).
-
----
-
 ## Version History
+
+**v16.0.** Axiom I is restated. Two claims were fused in one sentence: that the sum of the three costs picks the motion, and that it sets the Turnkey and Structural boundary. Only the second holds. A deal weighted toward search takes a different motion from one of identical total weighted toward implementation, which is why the Process Calculator has always needed market stage as a separate axis the axiom did not mention. Composition now selects the motion and level now sets the boundary, stated as two sentences that can be cited separately. The axiom also now names which party bears the asset specificity, since exposure follows whoever sinks the non-redeployable investment, and in a forward-deployed motion that is the seller before signature. The claim that the three components arise independently is withdrawn: they arise from distinct conditions, which is what makes the decomposition useful, but they are not statistically independent. A third failure mode, Mis-composed, covers a correctly measured level with a misread dominant component. No equation changed.
+
+**v15.0.** Structural pass, no change to any axiom, equation, or derivation. Part I's Scale column is renamed **State** and promoted from a table cell to the framework's primary index, with the three states (Market, Deal at T0, Relationship at T1+) each mapped to the question it answers and the artifacts that answer it. The mapping is stated as a primary assignment rather than a partition, since Axiom II runs past signature and Axiom III runs at close. Part II's Clarifying Concepts tier is removed: seven of its nine entries restated a concept that already had a dedicated research file and a glossary row pointing at it, making the Constitution a third home for the same definition. Three Transaction Costs restated Axiom II's own mechanism paragraph, and the $F_{search}$ split is stated in [01-sales-motion-comparison.md](./01-sales-motion-comparison.md). Market States moves to that same document, where motion-to-market mapping belongs. Part IV's Organizational Corollary moves to [practice/02-internal-ops/07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), since a variable-to-department mapping is operational content by the Constitution's own rule. Nothing was deleted without a surviving canonical home.
 
 **v14.0.** Retired the "Bridge" and "Toaster" deal analogies in favor of the 2x2 Deal Archetype Matrix. Deals are now canonically classified as **Turnkey Deals** ($k \le 9$, low friction/specificity, velocity motion) vs. **Structural Deals** ($k \ge 10$, high friction/specificity, ILG motion) across category legibility. Core axioms, mathematical content, and derivations unchanged.
 
@@ -463,7 +432,7 @@ This corollary states the principle. Detailed procedures (CRM field configuratio
 2. **Axiom III gains its missing theoretical layer.** Skin in the game is the prescription. Residual control rights (Grossman-Hart, Hart-Moore) are the mechanism it allocates, and incomplete contract theory explains why no amount of drafting substitutes for governance.
 3. **Staged Commitment enters as a bridge concept** (Axioms II + III), grounded in real options theory. It supplies the formal account of why a buyer rationally waits even when the business case is positive.
 
-**Retained from v12.** The three axioms map to three well-studied bodies of economics: Axiom I to Transaction Cost Economics (Coase, Williamson), Axiom II to Signaling Theory and Behavioral Economics (Spence, Kahneman/Tversky), and Axiom III to Game Theory and Institutional Governance (Axelrod, Williamson). Axiom I does not lead with asset specificity as the classification gate. It establishes the cost structure first (search, consensus, and implementation as independently-arising components) and treats Turnkey vs. Structural classification as downstream of measuring those costs.
+**Retained from v12.** The three axioms map to three well-studied bodies of economics: Axiom I to Transaction Cost Economics (Coase, Williamson), Axiom II to Signaling Theory and Behavioral Economics (Spence, Kahneman/Tversky), and Axiom III to Game Theory and Institutional Governance (Axelrod, Williamson). Axiom I does not lead with asset specificity as the classification gate. It establishes the cost structure first and treats Turnkey vs. Structural classification as downstream of measuring those costs. The v12 wording described the three components as independently-arising, which v16.0 withdrew.
 
 ---
 

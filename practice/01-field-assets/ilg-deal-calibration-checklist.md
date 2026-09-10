@@ -1,3 +1,11 @@
+---
+title: "ILG Deal Calibration Checklist"
+layer: practice
+status: active
+operationalizes: [axiom-1, axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # ILG Deal Calibration Checklist
 
 **Purpose:** A pre-close self-audit for the AE and Solutions Engineer, run before an order form is submitted on a Structural deal.

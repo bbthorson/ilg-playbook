@@ -15,7 +15,7 @@ This is *not* where reps run deals (see [`../../practice/01-field-assets/`](../.
 ### Voice & persona
 
 - **[voice-guide.md](./voice-guide.md)** — The "Conversational Intellectual" voice. Four linguistic rules + constraint checklist.
-- **[ai-persona.md](./ai-persona.md)** — Persona config for an LLM acting as a CSO-level deal analyst. Note: this is *not* the same as [`03-learning-plan/llm-tutor-instructions.md`](../../practice/03-learning-plan/llm-tutor-instructions.md), which configures an LLM as a *teacher*.
+- **[ai-persona.md](./ai-persona.md)** — Persona config for an LLM acting as a CSO-level deal analyst.
 
 ### Generators (multi-phase content workflows)
 

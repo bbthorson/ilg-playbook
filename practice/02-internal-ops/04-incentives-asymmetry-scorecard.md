@@ -1,3 +1,11 @@
+---
+title: "The Bilateral Asymmetry Scorecard"
+layer: practice
+status: active
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # The Bilateral Asymmetry Scorecard
 
 Type: Internal Ops / Deal Desk

@@ -1,3 +1,11 @@
+---
+title: "Vested Commission Agreement (The Incentive)"
+layer: practice
+status: active
+operationalizes: [axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Vested Commission Agreement (The Incentive)
 
 Type: Comp Plan Addendum  

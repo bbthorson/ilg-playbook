@@ -1,3 +1,11 @@
+---
+title: "Deal Review Checklist for Managers"
+layer: practice
+status: active
+operationalizes: [axiom-1, axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Deal Review Checklist for Managers
 
 **Purpose:** Forensic questions for forecast calls to calibrate Structural deals based on friction, not hope.

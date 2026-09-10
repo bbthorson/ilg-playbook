@@ -1,3 +1,11 @@
+---
+title: "Game Theory and Net Revenue Retention"
+layer: theory
+status: active
+operationalizes: [axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Game Theory and Net Revenue Retention
 
 **Sources:**

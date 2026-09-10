@@ -1,3 +1,11 @@
+---
+title: "Sales Motion Comparison: ILG vs. PLG vs. SLG"
+layer: theory
+status: active
+operationalizes: [axiom-1]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Sales Motion Comparison: ILG vs. PLG vs. SLG
 
 **A decision framework for choosing the right sales motion.**
@@ -42,6 +50,18 @@ The Constitution defines $F_{search}$ as "locating the category and viable vendo
 - **Vendor evaluation** dominates mature, low-specificity markets. The category is legible and the buyer can name five vendors. PLG resolves this by letting them try one, and the cost is time.
 
 ILG deals carry little of either. The buyer knows the category and the field. What they cannot resolve is whether *this* vendor can install *this* system in *their* environment without breaking it, which is $F_{implementation}$ inflated by $\Delta_A$, and no amount of category education or free trial touches it.
+
+---
+
+### Market States
+
+Three stages a market passes through, each with a characteristic friction profile:
+
+- *Nascent*: search dominates, so SLG fits.
+- *Efficient*: all costs moderate, so PLG fits.
+- *Saturated*: consensus and implementation dominate, so ILG fits.
+
+The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" because they are observationally similar from outside: the category is legible and the vendor field is known. The rubric separates them by transaction cost score. *Transitional* names the boundary state between Nascent and Mature, when the category is forming but not yet fully legible.
 
 ---
 
@@ -245,6 +265,8 @@ Axiom I states that friction must match asset specificity, which means ILG is wr
 **1. No operational baseline exists.** The Blueprint maps a workflow. When there is no workflow to map, the artifact produces a document the buyer and seller invented together, and the Red Team then stress-tests a fiction. This is the Chaos Trap, and it is the reason Step 0 gates the calculator. *Route:* consulting to establish the SOP, then re-qualify.
 
 **2. Deal value cannot carry the friction cost.** ILG consumes solutions-engineering hours before revenue. Below roughly the point where pre-sale cost exceeds the gross margin on the first year, the motion destroys surplus even when the deal closes. Transactional SMB business sits here structurally. *Route:* PLG, or decline.
+
+    *Under review.* First-year gross margin is a single-shot test. [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) shows the pre-sale investment amortizes across the renewal stream, so this rule is correct where retention is weak and too strict where it holds. Use it as written until the replacement is agreed.
 
 **3. The category has commoditized.** Integration patterns homogenized, playbooks are published, and switching cost fell. Specificity dropped out from under a motion that used to fit. Teams keep running Blueprints out of habit and lose on cycle time to lighter competitors. *Route:* re-score annually; migrate to PLG when the score drops below 10.
 

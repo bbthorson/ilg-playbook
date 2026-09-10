@@ -23,25 +23,37 @@ The repo serves **three functions**, each in its own top-level directory.
 | Function | Where | What it is |
 |---|---|---|
 | **[theory/](theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the ILG framework. Academic papers, axioms, definitions. |
-| **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` + `practice/03-learning-plan/` | Help sellers and managers actually run ILG. Templates, governance, training. |
+| **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` | Help sellers and managers actually run ILG. Templates and governance. |
 | **[publishing/](publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
 
-Each group has its own README explaining what's inside and the reading order.
+Each group has its own README listing what is inside it.
 
 ---
 
-## Quick start by intent
+## Start here: which state are you in
+
+The framework indexes on **state**, not on document. Name where the deal is, and the state names what governs it. The three states are defined in [Constitution Part I](theory/01-foundation/00-ilg-constitution.md).
+
+| State | The question | Governed by | Go here |
+|---|---|---|---|
+| **Market** | Which motion is viable at all? | Axiom I | [Process Calculator](practice/01-field-assets/process-calculator.md), then [01-sales-motion-comparison.md](theory/01-foundation/01-sales-motion-comparison.md) |
+| **Deal** (T0) | What must the seller supply before signature? | Axiom II | [practice/01-field-assets/](practice/01-field-assets/) — Blueprint, Red Team, MIP in order |
+| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) §7 |
+
+Each axiom has a home state and none is confined to it. Part I explains where the mapping holds and where it does not.
+
+## Looking for something specific
 
 | If you want to... | Go here |
 |---|---|
 | Understand the theory cold | [theory/01-foundation/](theory/01-foundation/) |
-| Look up a symbol or term | [theory/01-foundation/04-glossary-and-notation.md](theory/01-foundation/04-glossary-and-notation.md) |
-| See the academic evidence behind a claim | [theory/02-research/](theory/02-research/), starting with the [reading guide](theory/02-research/00-reading-guide.md) |
-| Run an actual deal | [practice/01-field-assets/](practice/01-field-assets/) |
+| Look up a symbol or term | [04-glossary-and-notation.md](theory/01-foundation/04-glossary-and-notation.md) |
+| See the evidence behind a claim | [theory/02-research/00-reading-guide.md](theory/02-research/00-reading-guide.md) |
+| Decide whether to invest engineering in a deal | [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) |
 | Set up your org for ILG | [practice/02-internal-ops/](practice/02-internal-ops/) |
-| Train reps | [practice/03-learning-plan/](practice/03-learning-plan/) |
-| See ILG applied to a real deal | [publishing/01-cases/](publishing/01-cases/) |
 | Write about ILG publicly | [publishing/02-tools/](publishing/02-tools/) |
+
+**Orientation lives in two places only:** this file, and [the research reading guide](theory/02-research/00-reading-guide.md). Every other README is a local index of its own directory.
 
 ---
 
@@ -63,7 +75,7 @@ Names, scope, and taglines below are canonical. If this table and the [Constitut
 
 | Axiom | Governs | Tagline | What it says |
 |---|---|---|---|
-| **I. Law of Transaction Cost Composition** | Whether a deal can happen | *"Costs determine the deal"* | Search, consensus, and implementation costs arise independently. Their combined level determines which motion is viable, and Turnkey vs. Structural deal classification follows from measuring them. |
+| **I. Law of Transaction Cost Composition** | Whether a deal can happen | *"Costs determine the deal"* | Search, consensus, and implementation costs decompose. Their composition selects the motion and their combined level sets the Turnkey and Structural boundary. Exposure to asset specificity belongs to whichever party sinks the specific investment. |
 | **II. Law of Uncertainty Inflation** | What the deal costs when it happens | *"Fear > Value"* | Base friction is amplified by the bilateral asymmetry gap between buyer and seller. Reducing risk moves more surplus than increasing ROI. |
 | **III. Law of Governance** | Whether the deal persists | *"Structure determines behavior"* | Every party whose decisions affect outcomes needs skin in the game tied to those outcomes, including the channels and adjudicators between them. |
 
@@ -86,5 +98,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 14.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
+**Version:** 16.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
 **Last updated:** 2026-09-08

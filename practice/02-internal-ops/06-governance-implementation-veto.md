@@ -1,3 +1,11 @@
+---
+title: "Implementation Veto Authority"
+layer: practice
+status: active
+operationalizes: [axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Implementation Veto Authority
 
 **Purpose:** To grant Solutions Engineering and Implementation formal authority to halt a Structural deal before signature when pre-sale validation surfaces unmitigated operational risk, and to attach consequences to that authority so it cannot drift.

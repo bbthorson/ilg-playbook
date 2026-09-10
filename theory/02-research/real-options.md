@@ -1,3 +1,11 @@
+---
+title: "Real Options Under Irreversibility"
+layer: theory
+status: active
+operationalizes: [axiom-2, axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Real Options Under Irreversibility
 
 **Sources:**

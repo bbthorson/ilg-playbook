@@ -1,3 +1,11 @@
+---
+title: "Consensus Friction Calculator"
+layer: practice
+status: active
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Consensus Friction Calculator
 
 **Purpose:** To estimate how much organizational friction a buying committee will generate, and to decide whether the deal needs a stakeholder map, a joint steering committee, or executive sponsorship.
@@ -32,6 +40,11 @@ Score each stakeholder $i$ from $-1$ to $+1$ on how the initiative affects the o
 - **+1** — advances their measured objectives directly
 - **0** — no material effect
 - **−1** — conflicts with their objectives or removes operational control
+
+> [!IMPORTANT]
+> **Score what they are measured on, never what they said in the room.** A stakeholder's stated position is shaped by who else is present. Stated positions converge under social pressure and measured objectives do not, so scoring from the meeting produces a variance that is too low, and it is worst in exactly the polarized committees this term exists to catch. Find the scorecard before you score the person: what number is on their review, and does this initiative move it up or down.
+>
+> A committee where every stakeholder reports alignment is not evidence of low variance. It is equally consistent with variance nobody has said aloud yet, which is the normal state before a late-stage veto. When you cannot find a single stakeholder who loses something, assume you have not yet met them and score 0.25 rather than 0.
 
 Then compute the variance across the committee:
 

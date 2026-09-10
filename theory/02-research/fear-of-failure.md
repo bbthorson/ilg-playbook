@@ -1,3 +1,11 @@
+---
+title: "Fear of Failure: The Empirical Evidence"
+layer: theory
+status: active
+operationalizes: [axiom-1, axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Fear of Failure: The Empirical Evidence
 
 **Sources:**

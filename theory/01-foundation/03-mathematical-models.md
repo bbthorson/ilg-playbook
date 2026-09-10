@@ -1,3 +1,12 @@
+---
+title: "Mathematical Models"
+layer: theory
+status: active
+version: 1.0
+operationalizes: [axiom-1, axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Mathematical Models
 
 **Version:** 1.0
@@ -155,6 +164,10 @@ Let $I_i \in [-1, 1]$ denote stakeholder $i$'s utility from the initiative, wher
 $$\bar{I} = \frac{1}{N}\sum_{i=1}^{N} I_i \qquad \text{Var}(I_i) = \frac{1}{N}\sum_{i=1}^{N}(I_i - \bar{I})^2$$
 
 When every stakeholder holds identical alignment, variance is zero and friction reduces to the structural floor $\alpha N^{\beta}$. Size alone imposes cost even under perfect agreement.
+
+**$I_i$ is not directly observable, and the observable proxy is biased downward.** The definition above is the stakeholder's utility from the initiative, meaning the effect on the objectives they are measured on. What a seller can actually watch is the position each stakeholder states in a room containing the others. Stated positions converge under social pressure while measured objectives do not, so variance computed from stated positions understates $\text{Var}(I_i)$, and it understates it most in the polarized committees where the term matters most.
+
+Two consequences. Score $I_i$ from what a stakeholder is measured on, never from what they said in the meeting. And read unanimous stated alignment as weak evidence, since a committee where nobody voices dissent is as consistent with suppressed variance as with genuine agreement. This is the quasi-resolution Cyert and March describe, and it is why a saboteur surfaces late rather than early. See [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
 
 ### 3.3 Sensitivity
 

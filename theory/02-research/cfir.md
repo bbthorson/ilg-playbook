@@ -1,3 +1,11 @@
+---
+title: "Consolidated Framework for Implementation Research (CFIR)"
+layer: theory
+status: active
+operationalizes: [axiom-2]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Consolidated Framework for Implementation Research (CFIR)
 
 **Sources:**

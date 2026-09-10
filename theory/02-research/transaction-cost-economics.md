@@ -1,3 +1,11 @@
+---
+title: "Transaction Cost Economics"
+layer: theory
+status: active
+operationalizes: [axiom-1]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Transaction Cost Economics
 
 **Sources:**

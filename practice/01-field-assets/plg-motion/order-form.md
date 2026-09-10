@@ -1,3 +1,9 @@
+---
+title: "Standard Order Form"
+layer: practice
+status: active
+---
+
 # Standard Order Form
 
 > **Status:** DRAFT — inferred from [01-velocity-standard-order-protocol.md](./01-velocity-standard-order-protocol.md) Step 3. Review with legal/finance and ratify before deploying.

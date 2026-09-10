@@ -1,3 +1,11 @@
+---
+title: "Milestone Valuation Model"
+layer: practice
+status: active
+operationalizes: [axiom-2, axiom-3]
+canonical_source: theory/01-foundation/00-ilg-constitution.md
+---
+
 # Milestone Valuation Model
 
 **Purpose:** To design MIP phase gates so that each one resolves a defined tranche of uncertainty, and to structure payments so the buyer never carries more committed cost than the stage has de-risked.
