@@ -4,6 +4,16 @@
 
 Parent: [theory/](../) · Sibling: [02-research/](../02-research/)
 
+## The three states
+
+The framework indexes on state, not on document. Name where you are, then read what governs it.
+
+| State | Governed by | Read |
+|---|---|---|
+| **Market** — which motion is viable | Axiom I | [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
+| **Deal** (T0) — what closes this transaction | Axiom II | [00-ilg-constitution.md](./00-ilg-constitution.md) Part I, then [05-seller-surplus-model.md](./05-seller-surplus-model.md) §2–5 |
+| **Relationship** (T1+) — whether surplus persists | Axiom III | [00-ilg-constitution.md](./00-ilg-constitution.md) Part I, then [05-seller-surplus-model.md](./05-seller-surplus-model.md) §7 |
+
 ## Reading order
 
 1. **[01-sales-motion-comparison.md](./01-sales-motion-comparison.md)** — *(start here if you're new)* Quick decision framework: when ILG, when PLG, when SLG. Gives you the lay of the land before you dive into theory.

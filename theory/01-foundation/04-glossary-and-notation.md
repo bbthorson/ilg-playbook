@@ -143,6 +143,14 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 One line each, then the canonical source. The line identifies the term. The source defines it.
 
+### The three states
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Market State** | Which motion is viable, given the cost composition the market imposes. Axiom I's home. | [Constitution, Part I](./00-ilg-constitution.md) |
+| **Deal State** | The single transaction up to signature. What the seller must supply to close. Axiom II's home. | [Constitution, Part I](./00-ilg-constitution.md) |
+| **Relationship State** | Everything after T0. Whether surplus persists and who can displace it. Axiom III's home. | [Constitution, Part I](./00-ilg-constitution.md) |
+
 ### Deal classification
 
 | Term | Identifier | Canonical source |

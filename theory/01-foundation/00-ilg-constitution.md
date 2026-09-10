@@ -11,11 +11,23 @@ Version history is at the end of this document.
 
 The three axioms govern three aspects of any B2B transaction.
 
-| Axiom | Governs | Scale | Tagline | Plain English |
+| Axiom | Governs | State | Tagline | Plain English |
 |---|---|---|---|---|
-| **I. Law of Transaction Cost Composition** | Whether a deal can happen | Market | *"Costs determine the deal"* | Buying costs more than money. |
-| **II. Law of Uncertainty Inflation** | What the deal costs when it happens | Deal | *"Fear > Value"* | Uncertainty makes change expensive. |
-| **III. Law of Governance** | Whether the deal persists | Relationship over time | *"Structure determines behavior"* | Sales is governance design. |
+| **I. Law of Transaction Cost Composition** | Whether a deal can happen | **Market** | *"Costs determine the deal"* | Buying costs more than money. |
+| **II. Law of Uncertainty Inflation** | What the deal costs when it happens | **Deal** (T0) | *"Fear > Value"* | Uncertainty makes change expensive. |
+| **III. Law of Governance** | Whether the deal persists | **Relationship** (T1+) | *"Structure determines behavior"* | Sales is governance design. |
+
+### The three states
+
+The State column is the framework's primary index. A practitioner arrives holding a situation rather than an axiom, and the situation names the state:
+
+| State | The question it answers | Where the answer lives |
+|---|---|---|
+| **Market** | Which motion is viable here at all? | [Process Calculator](../../practice/01-field-assets/process-calculator.md), [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
+| **Deal** (T0) | What must be true, and what must the seller supply, before signature? | [Contextual Blueprint](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) → [Red Team](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md) → [MIP](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) |
+| **Relationship** (T1+) | Does the surplus survive, and can a competitor take it? | [Sustaining Adoption Review](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
+
+**Each axiom has a home state, and none is confined to it.** Axiom II runs past signature, where $\Delta_A(t) = \Delta_A(0) + \gamma t$ governs how fast an incumbent's advantage erodes. Axiom III runs at T0, because the MIP is signed at close. Axiom I recurs whenever a category commoditizes and the motion must be re-scored. Treat the mapping as where each axiom does most of its work, not as a partition.
 
 Together they describe the *existence, economics, and dynamics* of any transaction in a high-friction market. Each axiom generates its own mathematical content. The equations integrate into the Surplus equation in Part III.
 
@@ -388,7 +400,7 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 
 ## Version History
 
-**v15.0.** Structural pass, no change to any axiom, equation, or derivation. Part II's Clarifying Concepts tier is removed: seven of its nine entries restated a concept that already had a dedicated research file and a glossary row pointing at it, making the Constitution a third home for the same definition. Three Transaction Costs restated Axiom II's own mechanism paragraph, and the $F_{search}$ split is stated in [01-sales-motion-comparison.md](./01-sales-motion-comparison.md). Market States moves to that same document, where motion-to-market mapping belongs. Part IV's Organizational Corollary moves to [practice/02-internal-ops/07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), since a variable-to-department mapping is operational content by the Constitution's own rule. Nothing was deleted without a surviving canonical home.
+**v15.0.** Structural pass, no change to any axiom, equation, or derivation. Part I's Scale column is renamed **State** and promoted from a table cell to the framework's primary index, with the three states (Market, Deal at T0, Relationship at T1+) each mapped to the question it answers and the artifacts that answer it. The mapping is stated as a primary assignment rather than a partition, since Axiom II runs past signature and Axiom III runs at close. Part II's Clarifying Concepts tier is removed: seven of its nine entries restated a concept that already had a dedicated research file and a glossary row pointing at it, making the Constitution a third home for the same definition. Three Transaction Costs restated Axiom II's own mechanism paragraph, and the $F_{search}$ split is stated in [01-sales-motion-comparison.md](./01-sales-motion-comparison.md). Market States moves to that same document, where motion-to-market mapping belongs. Part IV's Organizational Corollary moves to [practice/02-internal-ops/07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), since a variable-to-department mapping is operational content by the Constitution's own rule. Nothing was deleted without a surviving canonical home.
 
 **v14.0.** Retired the "Bridge" and "Toaster" deal analogies in favor of the 2x2 Deal Archetype Matrix. Deals are now canonically classified as **Turnkey Deals** ($k \le 9$, low friction/specificity, velocity motion) vs. **Structural Deals** ($k \ge 10$, high friction/specificity, ILG motion) across category legibility. Core axioms, mathematical content, and derivations unchanged.
 

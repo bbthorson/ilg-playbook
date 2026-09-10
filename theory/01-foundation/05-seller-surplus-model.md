@@ -25,6 +25,8 @@ A seller reading this equation learns whether the deal *can* close. It cannot te
 
 ## 2. The seller's surplus
 
+*Deal State (T0). Sections 2 through 5 govern the single transaction up to signature.*
+
 $$S_{seller} = p_{close} \cdot \left(V_{contract} - C_{deliver}\right) - C_{invest}$$
 
 | Term | Meaning |
@@ -92,6 +94,8 @@ The same caution governs section 7, where $r_t$ is no better observed than $p_{c
 ---
 
 ## 7. The repeated game
+
+*Relationship State (T1+).*
 
 Sections 2 through 4 describe a single transaction. Subscription businesses do not have those. The contract renews, the seller keeps spending on the relationship, and Net Revenue Retention is the outcome of a sequence rather than of a close.
 

@@ -8,6 +8,20 @@
 
 This directory contains the practical artifacts you deploy with customers during the sales process. These tools operationalize the ILG Constitution's theoretical framework into actionable customer engagements.
 
+## The spine: which state are you in
+
+Every asset here answers a question belonging to one of the three states defined in [Constitution Part I](../../theory/01-foundation/00-ilg-constitution.md). Start by naming the state, not the artifact.
+
+| State | Your question | Asset |
+|---|---|---|
+| **Market** | Which motion does this deal take? | [Process Calculator](./process-calculator.md) |
+| **Deal** (T0) | What do I not yet know about their environment? | [01. Contextual Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md) |
+| **Deal** (T0) | How does this implementation fail? | [02. Red Team Protocol](./ilg-motion/02-validation-red-team-protocol.md) |
+| **Deal** (T0) | Who commits what, and what happens when a stage fails? | [03. Mutual Implementation Plan](./ilg-motion/03-closing-mutual-implementation-plan.md) |
+| **Relationship** (T1+) | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./ilg-motion/04-sustaining-adoption-review.md) |
+
+The diagnostics below serve whichever state you are in rather than sitting at one point in the sequence.
+
 ## Cross-Motion Diagnostics
 
 These artifacts apply across all motions, not just ILG:
