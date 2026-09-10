@@ -7,7 +7,7 @@ The [Constitution](./00-ilg-constitution.md) models one party. Its Surplus equat
 
 That omission is invisible while the motion is advisory. It becomes binding the moment the seller deploys engineers into a buyer's environment before signature, because the seller is then sinking capital that no term of the buyer's equation accounts for.
 
-This document adds the second equation. It does not revise Axiom I, which will need revising once this side is settled. See [Open questions](#open-questions).
+This document adds the second equation. Axiom I was revised in Constitution v16.0 to name which party bears the asset specificity, which is the claim section 3 depends on.
 
 ---
 
@@ -153,8 +153,7 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/02-inter
 
 ## Open questions
 
-- **Axiom I attributes specificity to the deal without naming the party who bears it.** Section 3 shows the bearer determines who needs governance. Revising the axiom is a breaking change to Part I and waits until this document has been reviewed.
-- **Axiom I selects the motion on the combined level of the three costs.** Composition selects the motion; the sum sets the Turnkey and Structural boundary. The two claims are currently fused in one sentence.
+- **Resolved in Constitution v16.0.** Axiom I now names the party bearing the specificity, and separates composition (which selects the motion) from level (which sets the Turnkey and Structural boundary). Both were open questions raised by this document.
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
 - **The first-year margin disqualifier assumes a single-shot game.** Section 7 shows the test is too strict when $r_t$ holds up. Correcting it means editing a disqualification rule reps rely on, so it waits for review.
 - **$C_{sustain}$ has no budget owner.** [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md) maps each variable to a department. This one is unmapped, and unmapped variables drift by that corollary's own argument.

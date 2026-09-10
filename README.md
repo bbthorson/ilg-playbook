@@ -75,7 +75,7 @@ Names, scope, and taglines below are canonical. If this table and the [Constitut
 
 | Axiom | Governs | Tagline | What it says |
 |---|---|---|---|
-| **I. Law of Transaction Cost Composition** | Whether a deal can happen | *"Costs determine the deal"* | Search, consensus, and implementation costs arise independently. Their combined level determines which motion is viable, and Turnkey vs. Structural deal classification follows from measuring them. |
+| **I. Law of Transaction Cost Composition** | Whether a deal can happen | *"Costs determine the deal"* | Search, consensus, and implementation costs decompose. Their composition selects the motion and their combined level sets the Turnkey and Structural boundary. Exposure to asset specificity belongs to whichever party sinks the specific investment. |
 | **II. Law of Uncertainty Inflation** | What the deal costs when it happens | *"Fear > Value"* | Base friction is amplified by the bilateral asymmetry gap between buyer and seller. Reducing risk moves more surplus than increasing ROI. |
 | **III. Law of Governance** | Whether the deal persists | *"Structure determines behavior"* | Every party whose decisions affect outcomes needs skin in the game tied to those outcomes, including the channels and adjudicators between them. |
 
@@ -98,5 +98,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 15.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
+**Version:** 16.0 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
 **Last updated:** 2026-09-08
