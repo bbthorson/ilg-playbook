@@ -2,7 +2,7 @@
 
 **The systems that keep ILG honest at the org level.** These are tools for leadership, RevOps, and finance — not the rep in the field.
 
-Parent: [practice/](../) · Siblings: [01-field-assets/](../01-field-assets/), [03-learning-plan/](../03-learning-plan/)
+Parent: [practice/](../) · Sibling: [01-field-assets/](../01-field-assets/)
 
 If [`../01-field-assets/`](../01-field-assets/) is *how reps run deals*, this directory is *how leadership runs reps*.
 
@@ -47,4 +47,3 @@ Files use `NN-category-slug.md` where `NN` controls reading order and `category`
 |---|---|
 | Templates reps fill out on a deal | [`../01-field-assets/`](../01-field-assets/) |
 | Manager / VP / RevOps tools | **`practice/02-internal-ops/`** (this directory) |
-| Training and curriculum | [`../03-learning-plan/`](../03-learning-plan/) |

@@ -23,7 +23,7 @@ The repo serves **three functions**, each in its own top-level directory.
 | Function | Where | What it is |
 |---|---|---|
 | **[theory/](theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the ILG framework. Academic papers, axioms, definitions. |
-| **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` + `practice/03-learning-plan/` | Help sellers and managers actually run ILG. Templates, governance, training. |
+| **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` | Help sellers and managers actually run ILG. Templates and governance. |
 | **[publishing/](publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
 
 Each group has its own README explaining what's inside and the reading order.
@@ -39,7 +39,6 @@ Each group has its own README explaining what's inside and the reading order.
 | See the academic evidence behind a claim | [theory/02-research/](theory/02-research/), starting with the [reading guide](theory/02-research/00-reading-guide.md) |
 | Run an actual deal | [practice/01-field-assets/](practice/01-field-assets/) |
 | Set up your org for ILG | [practice/02-internal-ops/](practice/02-internal-ops/) |
-| Train reps | [practice/03-learning-plan/](practice/03-learning-plan/) |
 | See ILG applied to a real deal | [publishing/01-cases/](publishing/01-cases/) |
 | Write about ILG publicly | [publishing/02-tools/](publishing/02-tools/) |
 

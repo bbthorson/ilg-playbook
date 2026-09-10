@@ -30,7 +30,14 @@ ignorecase: false
 # checker cannot see the staleness. Keys are scoped to the link-text shape on
 # purpose, the way the v14.0 analogies avoid bare "Bridge" and "Toaster", so the
 # Constitution's own version history can still name what it retired.
+# Retired directory (v15.0). practice/03-learning-plan/ was removed: an
+# LLM-facilitated curriculum restating theory/ in parallel, with nothing linking
+# a module to the axiom it taught, so an axiom revision could not reach it. The
+# 2x2 matrix in module-0 had already drifted from 01-sales-motion-comparison.md.
 swap:
+  03-learning-plan: "no replacement; the curriculum was removed in v15.0"
+  llm-tutor-instructions: "no replacement; the curriculum was removed in v15.0"
+  plain-language-part-I-companion: 00-ilg-constitution.md Part I
   Constitution, Clarifying Concepts: the concept's research file, indexed in 04-glossary-and-notation.md
   Constitution clarifying concept: the concept's research file, indexed in 04-glossary-and-notation.md
   Constitution, Part IV: practice/02-internal-ops/07-variable-ownership.md

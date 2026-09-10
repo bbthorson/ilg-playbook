@@ -227,7 +227,6 @@ ILG artifacts systematically reduce friction by driving $\Delta_A \to 0$ before 
 - [ILG Constitution](../../theory/01-foundation/00-ilg-constitution.md) - Theoretical framework
 - [Bilateral Asymmetry Scorecard](../02-internal-ops/04-incentives-asymmetry-scorecard.md) - Measure deal symmetry
 - [Deal Calibration](../02-internal-ops/01-governance-deal-calibration.md) - Manager's forecast tool
-- [Learning Plan](../03-learning-plan) - Training curriculum
 
 ---
 

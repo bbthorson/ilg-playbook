@@ -9,7 +9,7 @@ A knowledge base for **Implementation-Led Growth (ILG)** — a B2B sales methodo
 | Directory | Function |
 |---|---|
 | `theory/` | Develop and pressure-test the ILG framework. Axioms, equations, academic backing. |
-| `practice/` | Operationalize theory for sellers and managers. Templates, governance, training. |
+| `practice/` | Operationalize theory for sellers and managers. Templates and governance. |
 | `publishing/` | Turn the framework into public writing. Voice guide, content generators, case analyses. |
 
 ## Conceptual architecture
