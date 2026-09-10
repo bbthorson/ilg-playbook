@@ -20,7 +20,7 @@ A knowledge base for **Implementation-Led Growth (ILG)** — a B2B sales methodo
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory should propagate downstream. Changes to practice or publishing never modify theory.
 
 Key cross-file dependencies to know:
-- The **Process Calculator** (`practice/01-field-assets/process-calculator.md`) operationalizes the Boundary Condition from Axiom I. It is referenced by nearly every field asset.
+- The **Deal Triage Calculator** (`practice/01-field-assets/deal-triage-calculator.md`) operationalizes both of Axiom I's quantities: it emits a level and a direction, not a motion label. It is referenced by nearly every field asset.
 - The **CFIR field mapping** (`theory/01-foundation/02-cfir-field-mapping.md`) explains which research construct each artifact section operationalizes — read it before modifying any `practice/01-field-assets/` document.
 - The **Friction Allocation Diagnostic** (`practice/01-field-assets/friction-allocation-diagnostic.md`) operationalizes the four Friction Allocation Principles from Axiom II.
 - The **three ILG artifacts** (Blueprint → Red Team → MIP) in `practice/01-field-assets/ilg-motion/` run sequentially; each artifact gates the next.
@@ -32,7 +32,7 @@ The **research files** in `theory/02-research/` back specific axioms:
 
 Start with `theory/02-research/00-reading-guide.md` before modifying any research file.
 
-**One document is a proposal and does not govern.** `theory/01-foundation/06-friction-vector.md` carries `status: under-review`. It argues that motion selection follows from the direction and magnitude of the three-component cost vector, and its section 10 lists what adopting it would rewrite and retire. Until its status changes, `01-sales-motion-comparison.md` and the Process Calculator are still the answer to which motion to run. Treat anything in it as under argument rather than as a rule.
+**A motion is a region, not a list entry.** `theory/01-foundation/06-friction-vector.md` was adopted in Constitution v17.0 and now carries the derivation: motion selection follows from the direction and length of the three-component cost vector, and its section 10 records what adoption rewrote and retired. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom II description, not the market states, because those were never load-bearing outside the two files that carried them.
 
 ## Frontmatter
 
@@ -40,7 +40,7 @@ Every document in `theory/` and `practice/` opens with YAML frontmatter. `publis
 
 ```yaml
 ---
-title: "The Process Calculator"       # must match the H1
+title: "The Deal Triage Calculator"   # must match the H1
 layer: practice                        # theory | practice, must match the directory
 status: active                         # active | under-review | superseded
 version: 4.2                           # only where the document tracks one
@@ -98,13 +98,14 @@ The dependency chain runs `theory/` → `practice/` → `publishing/`, and nothi
 
 All framework claims trace to:
 
-$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \hat{\Delta}_A) = OC_{\text{switching}} - y$$
+$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - \sum_{k} F_k \cdot (1 + \hat{\Delta}_k) = OC_{\text{switching}} - y$$
 
 - **S** = Deal Surplus, which must exceed 0 for the deal to close
-- **$\hat{\Delta}_A$** = Bilateral Asymmetry Gap, normalized to $[0, 1]$. The Asymmetry Scorecard emits a raw score on $[2, 10]$ and **neither cost equation accepts it**. Normalize first, per `03-mathematical-models.md` section 1.5. `models/ilg_models.py` refuses a raw value at the type level.
-- **y** = Total Perceived Transaction Cost = $a\hat{\Delta}_A^2 + c$, where $a = 2.25$ is anchored by analogy to loss aversion and $c$ is direct cost
-- **Level** = the summed Process Calculator score. 10–20 is a Structural deal, 4–9 is a Turnkey deal. It sets how much apparatus the deal can carry.
-- **Composition** selects the motion, and the summed score does not settle it. Axiom I is explicit: do not read the total as a motion selector.
+- **$\hat{\Delta}_k$** = the gap inside component $k$'s own pair of parties, normalized to $[0, 1]$. Three components, three different pairs, and only the implementation pair is buyer against seller. Per `03-mathematical-models.md` section 2.4.
+- **$\hat{\Delta}_A$** = the deal-level gap, which is the friction-weighted mean of the three. The sum above factors into $F_{base}(1 + \hat{\Delta}_A)$ exactly, so both forms are the same quantity. The Asymmetry Scorecard emits a raw score on $[2, 10]$, it measures the implementation pair alone, and **neither cost equation accepts a raw value**. Normalize first, per section 1.5. `models/ilg_models.py` refuses a raw value at the type level.
+- **y** = Total Perceived Transaction Cost = $a\hat{\Delta}_A^2 + c$, where $a = 2.25$ is anchored by analogy to loss aversion and $c$ is direct cost. **All three are fractions of annual contract value**, per section 1.7. Reading them as percentage points inverts the argument the equation exists to make.
+- **Level** = the Deal Triage Calculator's summed component scores, on base friction, range 0–30. 15 and above is a Structural deal. It sets how much apparatus the deal can carry and discovery does not move it.
+- **Direction** = each component's share of *effective* cost, $F_k(1 + \hat{\Delta}_k)$ over the total. It selects the instruments, it moves every time an artifact closes a gap, and the level does not settle it. Axiom I is explicit: do not read the total as a motion selector.
 
 When diagnosing a stall or editing a prescription, identify which term in the equation it addresses.
 

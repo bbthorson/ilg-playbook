@@ -66,12 +66,6 @@ GAMMA_RESPONSIVENESS = 0.5   # chosen
 # practice/02-internal-ops/04-incentives-asymmetry-scorecard.md part 3.
 RAW_GAP_MIN, RAW_GAP_MAX = 2.0, 10.0
 
-# Process Calculator step 2 band edges, from
-# practice/01-field-assets/process-calculator.md.
-COST_SCORE_MIN, COST_SCORE_MAX = 4, 20
-TURNKEY_MAX = 9        # 4 to 9 inclusive
-STRUCTURAL_MIN = 10    # 10 to 20 inclusive
-
 # Friction Efficiency Index composite weights, in FAR / BCV / RMS / SVI order.
 FEI_WEIGHTS = (0.35, 0.25, 0.25, 0.15)
 BCV_REF_DEFAULT = 0.5  # convention until twenty closed Structural deals exist
@@ -356,6 +350,23 @@ def effective_cost_expanded(gap, b, c):
 # theory/01-foundation/03-mathematical-models.md section 2
 # The Bilateral Asymmetry Gap.
 # ==========================================================================
+
+def dimension_score(items_in_scope, items_evidenced):
+    """One scorecard dimension, from a pair of counts. Scorecard v3.0.
+
+        f = 1 - evidenced / in_scope,  score = 1 + 4f
+
+    The unevidenced fraction mapped onto the 1-to-5 scale the card has always
+    presented, so the bands and the normalization are unchanged while the
+    underlying measurement becomes a count. Fully evidenced scores 1 and fully
+    unevidenced scores 5, which is what the retired rubric's endpoints meant.
+
+    A dimension with nothing in scope raises rather than returning 1. Nothing
+    evidenced out of nothing counted is not the same finding as everything
+    evidenced, and the card says to leave it blank.
+    """
+    return 1.0 + 4.0 * float(component_gap(items_in_scope, items_evidenced))
+
 
 def asymmetry_gap(i_seller, i_buyer):
     """Section 2.1.
@@ -1074,116 +1085,197 @@ def cooperation_threshold(temptation, reward, punishment):
 
 
 # ==========================================================================
-# practice/01-field-assets/process-calculator.md (v4.2)
+# practice/01-field-assets/deal-triage-calculator.md (v5.0)
 #
-# Routing is modelled as the document writes it, which is not a threshold on
-# the summed score. Two gates run before divergence and can short-circuit to
-# PLG; market stage is an independent axis; and the divergence score is
-# deliberately never added to the step 2 total, because summing magnitude and
-# fit would let a large aligned deal and a small misaligned deal produce the
-# same number, which is the specific confusion step 2b exists to prevent.
+# The instrument counts named things and converts the counts to component
+# scores through chosen bands. It emits a level and a direction rather than a
+# motion label, which is Axiom I's two claims kept apart.
+#
+# Two properties of the v4.2 model survive because the document still requires
+# them. The gates run before divergence and can skip it entirely, and the
+# divergence result is never added to the level: it multiplies the
+# implementation component instead, because summing size and fit would let a
+# large aligned deal and a small misaligned deal produce the same number.
+#
+# What does not survive is the market stage axis. Its three signals are now
+# three of the four search evidence items, so the information is kept and the
+# taxonomy is retired.
 # ==========================================================================
 
-SLG = "SLG"
-PLG = "PLG"
-ILG = "ILG"
-SLG_WITH_ILG_ELEMENTS = "SLG with ILG elements creeping in"
 CHAOS_TRAP = "Chaos Trap"
 
-NASCENT, TRANSITIONAL, MATURE = "nascent", "transitional", "mature"
+TURNKEY, STRUCTURAL = "Turnkey", "Structural"
+LEVEL_MIN, LEVEL_MAX = 0, 30
+STRUCTURAL_MIN = 15          # 15 to 30 inclusive; half the range, as before
+TURNKEY_MAX = STRUCTURAL_MIN - 1
 
-# Gate A answers: must the product fit a workflow the buyer has already
-# encoded? Two of the three answers skip the divergence score entirely.
-GATE_A_GREENFIELD = "greenfield"          # no encoded workflow exists
-GATE_A_PRODUCT_ABSORBS = "product-absorbs"  # buyer encodes it inside the product
-GATE_A_ENCODED = "encoded"                # continue to gate B
+# Count-to-score bands, from step 1 of the document. Each entry is an upper
+# bound on the count and the score it yields. The edges are chosen, not fitted.
+SEARCH_BANDS = ((2, 1), (4, 3), (7, 6), (None, 9))
+CONSENSUS_BANDS = ((1, 1), (3, 3), (6, 6), (None, 9))
+IMPLEMENTATION_BANDS = ((2, 1), (5, 3), (10, 6), (None, 9))
+COMPONENT_SCORE_MAX = 10
+
+# Divergence modifier on the implementation component, step 2.
+DIVERGENCE_BANDS = ((0, 1.0), (2, 1.2), (5, 1.5), (None, 2.0))
+
+# Gate A: must the product fit a workflow the buyer has already encoded?
+GATE_A_GREENFIELD = "greenfield"
+GATE_A_PRODUCT_ABSORBS = "product-absorbs"
+GATE_A_ENCODED = "encoded"
+
+SEARCH_EVIDENCE_ITEMS = 4
 
 TriageResult = collections.namedtuple(
     "TriageResult",
-    "motion cost_score deal_class market_stage divergence_scored flags reason")
+    "route level deal_class direction dominant vector flags reason")
 
 
-def market_stage(yes_count):
-    """Step 1. Score the market, not the deal.
+def _band(count, bands, what):
+    if count < 0:
+        raise ValueError("{} cannot be negative".format(what))
+    for upper, value in bands:
+        if upper is None or count <= upper:
+            return value
+    raise AssertionError("bands must end with an open upper bound")
 
-    Three yes/no signals: a recognized category name, the buyer naming three or
-    more vendors, and published playbooks or analyst coverage.
 
-    Absence of competition often signals nascent rather than mature, because
-    the buyer cannot name three vendors when the category itself does not exist
-    yet. The document calls that the most common misclassification.
+def search_score(n_alternatives, category_named=True, channel_exists=True):
+    """F_search from a count of alternatives. Step 1a.
+
+    n_alternatives counts every named vendor plus "build it internally" plus
+    "do nothing", so the floor is 2 rather than 0.
+
+    A buyer who cannot name the category scores the maximum rather than the
+    minimum. The alternative set is unbounded, not small, and reading it as a
+    short list is the misreading the document warns about twice: it is the same
+    error the retired market-stage step called reading absence of competition
+    as maturity.
+
+    No channel to the buyer adds 2. A buyer who knows the category, can name
+    five vendors, and sits behind a consortium you have no agreement with is
+    unreachable, and neither education nor a trial touches that cost.
     """
-    if yes_count not in (0, 1, 2, 3):
-        raise ValueError("the market stage diagnostic has three yes/no signals")
-    if yes_count <= 1:
-        return NASCENT
-    if yes_count == 2:
-        return TRANSITIONAL
-    return MATURE
+    if n_alternatives < 2:
+        raise ValueError(
+            "the alternative count includes 'build it internally' and 'do "
+            "nothing', so it cannot fall below 2")
+    score = 9 if not category_named else _band(
+        n_alternatives, SEARCH_BANDS, "the alternative count")
+    if not channel_exists:
+        score += 2
+    return min(score, COMPONENT_SCORE_MAX)
 
 
-def cost_score(integration_depth, workflow_change_scope,
-               consensus_complexity, retention_horizon):
-    """Step 2. Four factors scored 1 to 5, summed to 4 to 20.
+def search_gap(items_evidenced):
+    """The search component's gap, from the four evidence items. Step 1a."""
+    return component_gap(SEARCH_EVIDENCE_ITEMS, items_evidenced)
 
-    Integration depth and workflow change scope target F_implementation,
-    consensus complexity targets F_consensus, and retention horizon targets
-    sustained F_implementation.
 
-    These four measure how large the installation is. None of them measures how
-    far the buyer's existing workflow sits from the one the product was built
-    around, which is what step 2b scores separately.
+def consensus_score(n_vetoes, formal_body_required=False):
+    """F_consensus from a count of people who can say no. Step 1b.
+
+    People who attend are not people who can say no. A formal procurement
+    process, security review or board adds 1: a body is not a person and does
+    not belong in the headcount, but it holds a veto and it costs time.
     """
-    factors = {
-        "integration_depth": integration_depth,
-        "workflow_change_scope": workflow_change_scope,
-        "consensus_complexity": consensus_complexity,
-        "retention_horizon": retention_horizon,
-    }
-    for name, value in factors.items():
-        if value not in (1, 2, 3, 4, 5):
-            raise ValueError("{} is scored 1 to 5, not {!r}".format(name, value))
-    return sum(factors.values())
+    if n_vetoes < 1:
+        raise ValueError(
+            "a purchase with nobody able to say no is not a purchase; the "
+            "veto count starts at 1")
+    score = _band(n_vetoes, CONSENSUS_BANDS, "the veto count")
+    if formal_body_required:
+        score += 1
+    return min(score, COMPONENT_SCORE_MAX)
 
 
-def deal_class(score):
-    """Turnkey or Structural, from the step 2 total.
+def consensus_gap(n_vetoes, n_with_documented_objective):
+    """The consensus gap. Step 1b.
 
-    4 to 9 is a Turnkey deal; 10 to 20 is a Structural deal. The glossary fixes
-    k_threshold at 10.
+    The denominator is the veto count, so the question is what share of the
+    people who can stop this purchase have a written statement of what they are
+    measured on. A position stated in a room containing the others is not
+    evidence: stated positions converge under social pressure and measured
+    objectives do not.
+    """
+    return component_gap(n_vetoes, n_with_documented_objective)
+
+
+def implementation_count(integration_points, changed_workflows,
+                         undocumented_exceptions):
+    """n_impl, the three implementation counts summed. Step 1c."""
+    parts = {"integration points": integration_points,
+             "changed workflows": changed_workflows,
+             "undocumented exception paths": undocumented_exceptions}
+    for name, value in parts.items():
+        if value < 0:
+            raise ValueError("{} cannot be negative".format(name))
+    return sum(parts.values())
+
+
+def divergence_modifier(divergent_steps):
+    """The step 2 modifier on the implementation component.
+
+    It multiplies one component and is never added to the level, because size
+    and fit are different quantities. Multiplying is also what makes a small
+    misaligned deal read as implementation-dominant, which is the routing the
+    document calls the Hidden Structural case.
+    """
+    return _band(divergent_steps, DIVERGENCE_BANDS, "the divergent step count")
+
+
+def implementation_score(n_impl, divergent_steps=0):
+    """F_implementation, after the divergence modifier and the cap. Step 1c."""
+    base = _band(n_impl, IMPLEMENTATION_BANDS, "the implementation count")
+    return min(base * divergence_modifier(divergent_steps),
+               float(COMPONENT_SCORE_MAX))
+
+
+def deal_class(level):
+    """Turnkey or Structural, from the level. Step 3.
+
+    0 to 14 is Turnkey and 15 to 30 is Structural. The threshold sits at half
+    the range, which is where the retired 4-to-20 scale put it, so an archived
+    score multiplied by 1.5 is comparable. It carries no more empirical support
+    here than it did there.
 
     This is the Axiom I level claim and it answers how much apparatus the deal
-    can carry. It does not select the motion: composition does that, and no
-    equation settles it. Do not read the summed score as a motion selector.
+    can carry. It does not select the motion. Direction does that.
     """
-    if not COST_SCORE_MIN <= score <= COST_SCORE_MAX:
+    if not LEVEL_MIN <= level <= LEVEL_MAX:
         raise ValueError(
-            "the step 2 total runs {} to {}".format(COST_SCORE_MIN,
-                                                    COST_SCORE_MAX))
-    return "Turnkey" if score <= TURNKEY_MAX else "Structural"
+            "the level runs {} to {}".format(LEVEL_MIN, LEVEL_MAX))
+    return TURNKEY if level <= TURNKEY_MAX else STRUCTURAL
 
 
-def triage(workflow_maturity, market_yes_count,
-           integration_depth, workflow_change_scope, consensus_complexity,
-           retention_horizon, gate_a=GATE_A_ENCODED, gate_b_trialable=None,
-           divergence=None, pilot_requested=False,
-           product_automates_process=True):
-    """Run the whole calculator and return a TriageResult.
+def triage(workflow_maturity,
+           n_alternatives, search_evidence,
+           n_vetoes, n_with_documented_objective,
+           integration_points, changed_workflows, undocumented_exceptions,
+           items_with_artifact,
+           category_named=True, channel_exists=True,
+           formal_body_required=False,
+           gate_a=GATE_A_ENCODED, gate_b_trialable=None, divergent_steps=None,
+           pilot_requested=False, product_automates_process=True):
+    """Run the whole instrument and return a TriageResult.
 
     Order of operations, which the document fixes and which matters:
 
-    0. The workflow maturity gate runs "before scoring anything." A level 1
+    0. The workflow maturity gate runs before anything is counted. A level 1
        undefined workflow is a Chaos Trap when the product automates the
-       process, and the route is to stop rather than to score.
-    1. The pilot override then applies at any market stage: a buyer who asks
-       for a pilot is signalling they perceive Structural-level risk regardless
-       of how the seller scored the deal.
-    2. Market stage. Nascent skips step 2 entirely, because the cost diagnostic
-       does not apply until the buyer's problem is framed.
-    3. The step 2 total, then the two gates, then divergence.
+       process, and the route is to stop rather than to score. A count of
+       exception paths means nothing when no path is written down.
+    1. The pilot override then applies at any level: a buyer who asks for a
+       pilot is reporting Structural-level perceived risk regardless of what
+       the counts say. It is the one place the instrument overrides the level
+       rather than only the routing, because the buyer's own read of the risk
+       is evidence the counts missed.
+    2. The three counts, then the two gates, then the divergence modifier.
+    3. Level from base friction, direction from amplified friction.
 
-    Divergence is scored only when gate A answers "encoded" and gate B answers
-    no. It is never added to the step 2 total.
+    Divergence is counted only when gate A answers "encoded" and gate B answers
+    no. Where a gate passes, the modifier is skipped and the vector routes as
+    counted.
     """
     flags = []
 
@@ -1193,117 +1285,105 @@ def triage(workflow_maturity, market_yes_count,
     if workflow_maturity == 1:
         if product_automates_process:
             return TriageResult(
-                motion=CHAOS_TRAP, cost_score=None, deal_class=None,
-                market_stage=None, divergence_scored=False,
-                flags=("chaos-trap",),
+                route=CHAOS_TRAP, level=None, deal_class=None, direction=None,
+                dominant=None, vector=None, flags=("chaos-trap",),
                 reason="Step 0: no written process exists and the product "
                        "automates the process. Redirect to consulting or a "
-                       "paid workshop to define the SOP first.")
+                       "paid workshop to define the process first.")
         flags.append("undefined-workflow-product-supplies-medium")
     elif workflow_maturity == 2:
         flags.append("emergent-workflow-blueprint-must-reconstruct")
 
-    # --- Step 3 override: pilot or proof of concept ---------------------
-    if pilot_requested:
-        return TriageResult(
-            motion=ILG, cost_score=COST_SCORE_MAX,
-            deal_class=deal_class(COST_SCORE_MAX),
-            market_stage=market_stage(market_yes_count),
-            divergence_scored=False,
-            flags=tuple(flags + ["pilot-override"]),
-            reason="Override rule: the prospect asked for a pilot or proof of "
-                   "concept, which auto-scores 20 at any market stage. Pilots "
-                   "are governed by the Red Team Protocol.")
+    # --- Step 1: the three counts --------------------------------------
+    f_search = search_score(n_alternatives, category_named, channel_exists)
+    f_consensus = consensus_score(n_vetoes, formal_body_required)
+    n_impl = implementation_count(integration_points, changed_workflows,
+                                  undocumented_exceptions)
 
-    stage = market_stage(market_yes_count)
-
-    # --- Step 1: nascent markets skip step 2 ----------------------------
-    if stage == NASCENT:
-        return TriageResult(
-            motion=SLG, cost_score=None, deal_class=None, market_stage=stage,
-            divergence_scored=False, flags=tuple(flags),
-            reason="Step 1: the category is not yet legible, so the cost "
-                   "diagnostic does not apply. A high cost score in a nascent "
-                   "market does not mean ILG; educational friction dominates.")
-
-    # --- Step 2: the cost diagnostic ------------------------------------
-    score = cost_score(integration_depth, workflow_change_scope,
-                       consensus_complexity, retention_horizon)
-    klass = deal_class(score)
-
-    if stage == TRANSITIONAL:
-        if score >= 15:
-            motion, reason = ILG, (
-                "Step 3: transitional market at 15 to 20. Deal stakes are high "
-                "enough to force ILG even before category maturity.")
-        else:
-            motion, reason = SLG_WITH_ILG_ELEMENTS, (
-                "Step 3: transitional market at 4 to 14. The market is "
-                "maturing in your favour, so weight the result toward ILG.")
-        return TriageResult(
-            motion=motion, cost_score=score, deal_class=klass,
-            market_stage=stage, divergence_scored=False, flags=tuple(flags),
-            reason=reason)
-
-    # --- Mature markets: gates, then divergence -------------------------
+    # --- Step 2: the gates, then the divergence modifier ----------------
     if gate_a not in (GATE_A_GREENFIELD, GATE_A_PRODUCT_ABSORBS,
                       GATE_A_ENCODED):
         raise ValueError("gate A answers greenfield, product-absorbs or encoded")
-
     gate_a_passed = gate_a in (GATE_A_GREENFIELD, GATE_A_PRODUCT_ABSORBS)
+    if not gate_a_passed and gate_b_trialable is None:
+        raise ValueError(
+            "gate A answered 'encoded', so gate B must be answered before the "
+            "divergence modifier can be applied")
     gate_b_passed = bool(gate_b_trialable) and not gate_a_passed
-    gates_passed = gate_a_passed or gate_b_passed
-    divergence_governs = not gates_passed
+    modifier_governs = not (gate_a_passed or gate_b_passed)
 
-    if divergence_governs:
-        if gate_b_trialable is None:
+    if modifier_governs:
+        if divergent_steps is None:
             raise ValueError(
-                "gate A answered 'encoded', so gate B must be answered before "
-                "divergence can be scored")
-        if divergence not in (1, 2, 3, 4, 5):
-            raise ValueError(
-                "both gates failed, so divergence governs and must be scored "
-                "1 to 5")
+                "both gates failed, so divergence governs and the divergent "
+                "step count is required")
+        steps = divergent_steps
+    else:
+        steps = 0
+        flags.append("divergence-skipped-gate-a" if gate_a_passed
+                     else "divergence-skipped-gate-b")
 
-    if score >= STRUCTURAL_MIN:
-        if divergence_governs and divergence <= 2:
-            flags.append("possible-over-frictioning")
-        return TriageResult(
-            motion=ILG, cost_score=score, deal_class=klass, market_stage=stage,
-            divergence_scored=divergence_governs, flags=tuple(flags),
-            reason="Step 3: mature market at 10 to 20." + (
-                " Large but aligned: flag at manager review to confirm the "
-                "full artifact chain earns its cost."
-                if "possible-over-frictioning" in flags else ""))
+    f_implementation = implementation_score(n_impl, steps)
 
-    # Score 4 to 9 in a mature market.
-    if gate_a_passed:
+    # --- Step 3: level and direction ------------------------------------
+    gaps = (search_gap(search_evidence),
+            consensus_gap(n_vetoes, n_with_documented_objective),
+            component_gap(n_impl, items_with_artifact))
+    vector = friction_vector(f_search, f_consensus, f_implementation, *gaps)
+    level = vector.magnitude
+    klass = deal_class(level)
+
+    # --- Step 4: overrides, then the vector -----------------------------
+    if pilot_requested:
         return TriageResult(
-            motion=PLG, cost_score=score, deal_class=klass, market_stage=stage,
-            divergence_scored=False, flags=tuple(flags),
-            reason="Step 2b gate A: there is no encoded workflow to misfit "
-                   "against, so divergence has no reference point. Route on "
-                   "magnitude and market stage alone.")
-    if gate_b_passed:
+            route="implementation", level=level, deal_class=STRUCTURAL,
+            direction=vector.direction, dominant=vector.dominant,
+            vector=vector, flags=tuple(flags + ["pilot-override"]),
+            reason="Override: the buyer asked for a pilot or proof of "
+                   "concept, which reports Structural-level perceived risk "
+                   "whatever the counts say. Pilots are governed by the Red "
+                   "Team Protocol.")
+
+    if klass == TURNKEY:
+        if vector.dominant == "implementation" and divergence_modifier(steps) >= 1.5:
+            return TriageResult(
+                route="implementation", level=level, deal_class=klass,
+                direction=vector.direction, dominant=vector.dominant,
+                vector=vector, flags=tuple(flags + ["hidden-structural"]),
+                reason="Hidden Structural deal: the level stays Turnkey and "
+                       "the routing does not. The installation is small, so "
+                       "every count is low, and the workflow underneath it "
+                       "matches nothing the product assumes. Level and "
+                       "direction disagree, which is the under-frictioned "
+                       "failure mode the level alone cannot see.")
         return TriageResult(
-            motion=PLG, cost_score=score, deal_class=klass, market_stage=stage,
-            divergence_scored=False, flags=tuple(flags),
-            reason="Step 2b gate B: the buyer can measure the gap themselves "
-                   "and reverse the decision, so they will find the misfit "
-                   "faster than the seller can prove its absence. Track churn "
-                   "rather than implementation risk.")
-    if divergence >= 4:
-        return TriageResult(
-            motion=ILG, cost_score=score, deal_class=klass, market_stage=stage,
-            divergence_scored=True,
-            flags=tuple(flags + ["hidden-structural"]),
-            reason="Hidden Structural deal: the installation is small, so "
-                   "every magnitude factor scores low, and the workflow "
-                   "underneath it matches nothing the product assumes. This is "
-                   "the under-frictioned failure mode the cost score alone "
-                   "cannot see.")
+            route="velocity", level=level, deal_class=klass,
+            direction=vector.direction, dominant=vector.dominant,
+            vector=vector, flags=tuple(flags),
+            reason="Turnkey level: the deal cannot carry heavy apparatus, so "
+                   "the gate structure would cost more than it unlocks.")
+
+    if vector.dominant == "implementation" and steps == 0 and modifier_governs:
+        flags.append("possible-over-frictioning")
+    if vector.dominant == "consensus":
+        flags.append("consensus-instrument-set-is-thin")
+
+    reasons = {
+        "search": "Structural and search-dominant: the binding cost is the "
+                  "buyer's inability to find and compare, which education, "
+                  "reference architectures and channel work address.",
+        "consensus": "Structural and consensus-dominant: the binding cost is "
+                     "the buyer's stakeholders being unable to see each "
+                     "other's measured objectives. Note that this is the "
+                     "thinnest instrument set in the repository.",
+        "implementation": "Structural and implementation-dominant: run the "
+                          "Blueprint, Red Team, MIP and Adoption Review in "
+                          "sequence.",
+        "mixed": "Structural with no component at half of effective cost. Run "
+                 "the top two in proportion, heaviest first, rather than "
+                 "picking one and calling it the motion.",
+    }
     return TriageResult(
-        motion=PLG, cost_score=score, deal_class=klass, market_stage=stage,
-        divergence_scored=True, flags=tuple(flags),
-        reason="Step 3: mature market at 4 to 9, gates failed, divergence 1 "
-               "to 3. The buyer follows the category's usual shape.")
+        route=vector.dominant, level=level, deal_class=klass,
+        direction=vector.direction, dominant=vector.dominant, vector=vector,
+        flags=tuple(flags), reason=reasons[vector.dominant])

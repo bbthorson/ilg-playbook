@@ -20,13 +20,13 @@ The three states are defined in [Constitution Part I](../../theory/01-foundation
 
 | State | Your question | Asset |
 |---|---|---|
-| **Market** | Which motion does this deal take? | [Process Calculator](./process-calculator.md) |
+| **Market** | Which motion does this deal take? | [Deal Triage Calculator](./deal-triage-calculator.md) |
 | **Deal** (T0) | What do I not yet know about their environment? | [01. Contextual Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md) |
 | **Deal** (T0) | How does this implementation fail? | [02. Red Team Protocol](./ilg-motion/02-validation-red-team-protocol.md) |
 | **Deal** (T0) | Who commits what, and what happens when a stage fails? | [03. Mutual Implementation Plan](./ilg-motion/03-closing-mutual-implementation-plan.md) |
 | **Relationship** (T1+) | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./ilg-motion/04-sustaining-adoption-review.md) |
 
-The four ILG artifacts run in order and each gates the next. The Process Calculator decides whether you run them at all.
+The four ILG artifacts run in order and each gates the next. The Deal Triage Calculator decides whether you run them at all.
 
 ---
 

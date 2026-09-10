@@ -37,7 +37,7 @@ The framework indexes on **state**, not on document. Name where the deal is, and
 
 | State | The question | Governed by | Go here |
 |---|---|---|---|
-| **Market** | Which motion is viable at all? | Axiom I | [Process Calculator](practice/01-field-assets/process-calculator.md), then [01-sales-motion-comparison.md](theory/01-foundation/01-sales-motion-comparison.md) |
+| **Market** | Which motion is viable at all? | Axiom I | [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md), then [01-sales-motion-comparison.md](theory/01-foundation/01-sales-motion-comparison.md) |
 | **Deal** (T0) | What must the seller supply before signature? | Axiom II | [practice/01-field-assets/](practice/01-field-assets/) — Blueprint, Red Team, MIP in order |
 | **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) §7 |
 
@@ -85,7 +85,7 @@ Names, scope, and taglines below are canonical. If this table and the [Constitut
 
 | | **Turnkey Deal** | **Structural Deal** |
 |---|---|---|
-| Score | 4–9 on the [Diagnostic Rubric](practice/01-field-assets/process-calculator.md) | 10–20 |
+| Level | Below 15 on the [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md) | 15 to 30 |
 | Strategy | PLG / SLG — optimize for velocity | ILG — optimize for safety and certainty |
 | Example | Standalone SaaS tools, modular utilities | Enterprise platforms, deep workflow rewiring |
 

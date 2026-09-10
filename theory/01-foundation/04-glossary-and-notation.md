@@ -56,7 +56,7 @@ Two rules govern what is written here, and they differ by section.
 | $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, Axiom I](./00-ilg-constitution.md) |
 | $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. | [Constitution, Axiom I](./00-ilg-constitution.md) |
 | $k$ | Asset specificity of the deal. | [Constitution, Axiom I](./00-ilg-constitution.md) |
-| $k_{threshold}$ | The Structural / Turnkey boundary ($k = 10$). Above it, ILG applies. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
+| $k_{threshold}$ | The Structural / Turnkey boundary ($k = 10$). Above it, ILG applies. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
 | $F_{deployed}$ | The friction structure the seller actually deploys. Must scale with $k$. | [Constitution, Axiom I](./00-ilg-constitution.md) |
 
 ### Friction terms (Axiom II)
@@ -167,10 +167,12 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Structural Deal** | A deal whose specificity requires the ILG motion. Scores 10 to 20. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
-| **Turnkey Deal** | A low-specificity deal that a velocity motion serves better. Scores 4 to 9. | [Process Calculator](../../practice/01-field-assets/process-calculator.md) |
-| **Chaos Trap** | A buyer with no documented workflow, in any market. Route to consulting, not to a motion. | [Process Calculator, Step 0](../../practice/01-field-assets/process-calculator.md) |
-| **Market States** | Nascent, Transitional, Mature. Each carries a characteristic friction profile. | [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
+| **Structural Deal** | A deal whose level reaches the boundary. Level 15 to 30. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
+| **Turnkey Deal** | A low-specificity deal that a velocity motion serves better. Level below 15. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
+| **Chaos Trap** | A buyer with no documented workflow, in any market. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/01-field-assets/deal-triage-calculator.md) |
+| **Level** | The friction vector's $L^1$ length, on base friction. Sets the Turnkey and Structural boundary. | [06-friction-vector.md](./06-friction-vector.md) |
+| **Direction** | Each component's share of effective cost. Selects the instruments. Dominant at 0.50. | [06-friction-vector.md](./06-friction-vector.md) |
+| **Count Variance** | Scored count against actual count, taken at the Adoption Review. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
 | **Boundary Condition** | The test every deal passes before ILG investment is justified. | [Constitution, Part II](./00-ilg-constitution.md) |
 
 ### Axiom II concepts

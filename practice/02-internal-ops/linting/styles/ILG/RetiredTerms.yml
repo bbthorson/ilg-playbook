@@ -37,12 +37,23 @@ ignorecase: false
 # Superseded Axiom I description (v16.0). The axiom name did not change, so
 # nothing here catches a paragraph that uses every current term while describing
 # the pre-v16 version. These two phrases are the load-bearing ones.
-# Retired instrument and archetype names (2026-09). "Risk Calculator" was an
-# early name for the Process Calculator and survived in three operational files
-# after every link to it had been corrected. "Lane 1" and "Lane 2" predate the
-# Turnkey and Structural archetypes of v14.0 and survived the same way. Both are
-# the exact failure this rule exists to catch, and both went uncaught because
-# nobody added the rows at the time of the rename.
+# Retired instrument names (2026-09). "Risk Calculator" was an early name for
+# this instrument and survived in three operational files after every link to it
+# had been corrected. "Process Calculator" was the name that won a count of
+# references in 2026-09 and lost the argument in v17.0: the instrument stopped
+# emitting a motion label and started emitting a level and a direction, which is
+# a triage output and not a process one. The keys below are scoped to the link
+# and path shapes on purpose, the way the v15.0 entries are, so version history
+# can still name what it retired. Bare "Process Calculator" in prose is
+# therefore uncaught, which is the same trade the v15.0 rows make. Note that
+# swap keys are regular expressions: the dot in the path is escaped, and a key
+# opening with a bracket would never match, because the rule anchors on word
+# boundaries.
+#
+# Retired archetype names (v14.0, row added 2026-09). "Lane 1" and "Lane 2"
+# predate the Turnkey and Structural archetypes and survived the same way. Both
+# are the exact failure this rule exists to catch, and both went uncaught
+# because nobody added the rows at the time of the rename.
 # Superseded Axiom II description (v17.0). The axiom name did not change, so
 # nothing here catches a paragraph that uses every current term while describing
 # the single-multiplier version. These are the load-bearing phrases from the
@@ -51,8 +62,10 @@ swap:
   amplified by the bilateral information asymmetry: "amplified per component by the asymmetry inside that component's own pair of parties (Constitution v17.0)"
   The teaching equation uses a global multiplier: "each component is amplified by its own gap; the single multiplier is the factored special case"
   global multiplier: "per-component amplification, which factors into a single friction-weighted multiplier"
-  Risk Calculator: Process Calculator
-  Deal Triage Calculator: "Process Calculator (one name, chosen because 45 references used it against 3)"
+  Risk Calculator: Deal Triage Calculator
+  process-calculator\.md: deal-triage-calculator.md
+  Process Calculator Score: "Deal Triage Calculator level (0 to 30, Structural at 15)"
+  Process Calculator, Step: "Deal Triage Calculator, Step"
   Lane 1: "Turnkey deal (the archetype names replaced the lane numbering in v14.0)"
   Lane 2: "Structural deal (the archetype names replaced the lane numbering in v14.0)"
   independently-arising components: "components arising from distinct conditions (they are not statistically independent)"

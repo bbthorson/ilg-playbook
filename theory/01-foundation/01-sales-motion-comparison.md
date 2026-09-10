@@ -2,15 +2,19 @@
 title: "Sales Motion Comparison: ILG vs. PLG vs. SLG"
 layer: theory
 status: active
-operationalizes: [axiom-1]
+version: 2.0
+operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-ilg-constitution.md
 ---
 
 # Sales Motion Comparison: ILG vs. PLG vs. SLG
 
-**A decision framework for choosing the right sales motion.**
+**What the three named motions are, once a motion is a region rather than a list entry.**
 
-This document is the practical companion to the [Constitution](./00-ilg-constitution.md). The Constitution explains *why* motion choice matters (Axiom I: friction must match asset specificity). This doc explains *how* to choose.
+This document is the practical companion to the [Constitution](./00-ilg-constitution.md). The Constitution explains why motion choice matters. [06-friction-vector.md](./06-friction-vector.md) derives what a motion is. This file says what each named region contains, where the names mislead, and where the boundary of the ILG region sits.
+
+> [!IMPORTANT]
+> **Version 2.0 replaced the spine.** Version 1 organized around a three-item list of motions and a Nascent, Efficient and Saturated market-state taxonomy, and carried its own copy of the diagnostic steps. Constitution v17.0 retired all three. A motion is now a region of the friction vector's space, named by which component dominates and how long the vector is, and the diagnostic lives in one place, the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md). What survives here is everything the calculator does not carry: what each region contains, why search-dominant and implementation-dominant deals get confused, and the six conditions that put a deal outside the ILG region entirely.
 
 ---
 
@@ -34,13 +38,16 @@ The distinction matters most when someone says their team "already does ILG beca
 
 ## Buyer State and Dominant Cost
 
-Each motion answers a different buyer, in a different state of problem awareness, carrying a different dominant cost:
+Each name answers a different buyer, carrying a different dominant cost. The mindset column is what the direction sounds like in a room:
 
-| Motion | Buyer mindset | Dominant transaction cost | Core objective |
+| Region | Buyer mindset | Direction | Core objective |
 |---|---|---|---|
-| **PLG** | *"I know my problem. Give me the tool to test it."* | Vendor evaluation | **Frictionless activation.** Collapse evaluation cost by letting the buyer verify utility without a seller. |
-| **SLG** | *"I'm comfortable in the status quo. Convince me I have a problem."* | Category search, plus budget consensus for a category with no line item | **Problem discovery and urgency.** Educate the buyer, quantify the cost of inaction, create the budget. |
-| **ILG** | *"I know my problem. Prove you won't break my business installing a fix."* | Consensus and implementation, amplified by $\Delta_A$ | **Risk elimination.** Supply pre-sale technical proof and structured risk-sharing governance. |
+| **PLG** | *"I know my problem. Give me the tool to test it."* | Any, at a level below 15 | **Frictionless activation.** Collapse evaluation cost by letting the buyer verify utility without a seller. |
+| **SLG** | *"I'm comfortable in the status quo. Convince me I have a problem."* | Search-dominant | **Problem discovery and urgency.** Educate the buyer, quantify the cost of inaction, create the budget. |
+| **ILG** | *"I know my problem. Prove you won't break my business installing a fix."* | Implementation-dominant | **Risk elimination.** Supply pre-sale technical proof and structured risk-sharing governance. |
+| *(unnamed)* | *"We cannot get our own people to agree."* | Consensus-dominant | **Alignment.** The instrument set for this region is the thinnest in the repository, and the region is deliberately unnamed until it exists. |
+
+**The names are three points in a space that has four regions and a mixed case.** A deal is not assigned to one of them. It has a direction, and the direction may sit between two named regions or move from one to another as discovery lands.
 
 ### A note on splitting $F_{search}$
 
@@ -53,15 +60,15 @@ ILG deals carry little of either. The buyer knows the category and the field. Wh
 
 ---
 
-### Market States
+### What replaced the Market States
 
-Three stages a market passes through, each with a characteristic friction profile:
+Version 1 carried three stages a market passes through, Nascent, Efficient and Saturated, each with a characteristic friction profile, plus a Transitional and Mature shorthand the field rubric used because Efficient and Saturated look alike from outside. All five names are retired.
 
-- *Nascent*: search dominates, so SLG fits.
-- *Efficient*: all costs moderate, so PLG fits.
-- *Saturated*: consensus and implementation dominate, so ILG fits.
+The taxonomy was a proxy for direction. It said what the friction profile *usually* is for a market at a given age, in place of measuring the profile of the deal in front of you. Once the instrument measures direction, the proxy adds nothing and can disagree with the measurement, which is what a proxy does when it is kept past its usefulness.
 
-The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" because they are observationally similar from outside: the category is legible and the vendor field is known. The rubric separates them by transaction cost score. *Transitional* names the boundary state between Nascent and Mature, when the category is forming but not yet fully legible.
+The information is not lost. The three legibility signals the stage diagnostic asked for, a recognized category name, three or more nameable vendors, and published third-party coverage, are now three of the four search evidence items in the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md). They score the search gap directly instead of routing through a stage label.
+
+**What the retirement gives up.** A market that is about to mature may behave differently from a mature one of identical present composition, and a present-tense vector cannot see that. Under the current model the difference belongs in $\gamma_{search}$, the rate at which the search gap rebuilds, and nothing tests it. This is recorded in [06-friction-vector.md](./06-friction-vector.md) section 9 rather than solved.
 
 ---
 
@@ -69,10 +76,10 @@ The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" b
 
 | Dimension | **ILG** | **PLG** | **SLG** |
 |---|---|---|---|
-| **Market Stage** | Saturated | Mature / Efficient | Nascent |
+| **Direction** | Implementation-dominant | Any | Search-dominant |
+| **Level** | 15 to 30 | Below 15 | 15 to 30 |
 | **Deal Archetype** | The Structural Deal | The Turnkey Deal | The Evangelism Deal |
 | **Friction Type** | Structural (implementation) | Minimal | Educational (market-creation) |
-| **Cost Score** | 10–20 (Mature) | 4–9 (Mature) | n/a (market not legible) |
 | **Optimization** | Safety & certainty | Velocity & volume | Education & vision-casting |
 | **Primary Metric** | NRR, adoption | User growth, activation | Win rate, category awareness |
 | **Sales Cycle** | 3–9 months | Self-service (days) | 6–12 months (often) |
@@ -84,14 +91,18 @@ The diagnostic rubric uses the shorthand *Mature* for "Efficient or Saturated" b
 
 ---
 
-### The 2x2 Deal Archetype Matrix
+### The regions, on the two axes Axiom I names
 
-Deals sit on two independent economic axes: **Transaction Friction / Asset Specificity** (measured by the Process Calculator score 4–20) and **Category Legibility / Competition** (Nascent vs. Mature):
+The 2x2 that stood here crossed specificity against category legibility. Legibility is not an axis. It is one of the search component's evidence items, and putting it on an axis of its own is what let a deal be scored twice on the same information. The axes are the two quantities Axiom I names.
 
-| | Low Specificity ($k \le 9$) | High Specificity ($k \ge 10$) |
+| | Turnkey (level below 15) | Structural (level 15 to 30) |
 |---|---|---|
-| **Mature / High Competition** | **Turnkey Deals (PLG Motion)**<br>Modular tools, standard APIs, low switching cost. Optimize for velocity and frictionless self-service. | **Structural Deals (ILG Motion)**<br>Deep ERP/EHR integration, multi-stakeholder consensus. Optimize for implementation certainty and safety. |
-| **Nascent / Low Competition** | **Evangelism Deals (SLG Motion)**<br>Problem awareness low, category unformed. Educate the market, create the line item. | **Strategic Co-Development / Chaos Trap**<br>High custom build. If process is uncodified $\to$ Chaos Trap (route to consulting). If codified $\to$ Strategic Alpha/Partner. |
+| **Search-dominant** | Light education, then a self-serve path. The buyer needs to know the category exists and little else. | **Evangelism deal, SLG.** Problem awareness low, category unformed. Educate the market, create the line item. |
+| **Consensus-dominant** | A committee attached to a small purchase. Usually a procurement artifact rather than a real alignment problem. | **Unnamed region.** The buyer cannot get their own people to agree. Instrument set absent. |
+| **Implementation-dominant** | **Hidden Structural.** Small installation, workflow that matches nothing. The level cannot see it and the divergence modifier can. | **Structural deal, ILG.** Deep integration, multi-stakeholder consensus. Optimize for implementation certainty. |
+| **Mixed** | **Turnkey deal, PLG.** Modular tools, standard APIs, low switching cost. Optimize for velocity. | Run the top two components in proportion. |
+
+The **Chaos Trap** is not on this grid, because it is not a region of the space. An undefined workflow is a precondition failure, caught by Step 0 before anything is counted, and it can occur at any level and any direction.
 
 ## The Three Motions in Context
 
@@ -154,63 +165,21 @@ The practical consequences:
 - **Applying ILG tactics to an SLG deal over-engineers it.** You are producing rigor for a buyer who has not yet decided they have the problem.
 - **Applying SLG tactics to an ILG deal under-prepares the buyer.** You are educating someone who needs implementation governance.
 
-This distinction is why market stage matters as much as asset specificity in motion choice — and why the [Decision Framework](#decision-framework) below leads with market stage before scoring asset specificity.
+This is the same distinction as search-dominant against implementation-dominant, stated in the vocabulary reps already use. It is also the reason direction is read from the amplified components rather than the base ones. Two deals can carry identical educational and installation work, and the one whose buyer already understands the category is not a search deal, because its search gap is closed and there is nothing left there to spend on.
 
 ---
 
-## Decision Framework
+## Where the diagnostic lives
 
-The motion is determined by two factors: the *market stage* (which determines whether SLG, PLG, or ILG is even the right shape) and the *asset specificity within that market* (which refines within the ILG/PLG range).
+The diagnostic is not restated here. It is in the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), and version 1 of this file carried a second copy that drifted from it. What the calculator emits is a level, a direction, and three component gaps. What this file adds is what to do once you have them, which is the rest of this document.
 
-### Step 0: Workflow Maturity Gate
+Three points about the diagnostic that are theory rather than procedure, and so belong here:
 
-Classify the buyer's workflow for the specific problem being solved, on three levels:
+**The workflow maturity gate is not a friction component.** It asks whether the buyer's process can be mapped at all. A Level 1 workflow with a legible category and a single decision maker is a Chaos Trap, and no reading of the vector says so, because the vector measures cost and this is a precondition. It runs before anything is counted for that reason.
 
-- **Level 1, Undefined.** No written process; steps vary by person. → **Chaos Trap.** Redirect to consulting. You cannot digitize an undefined workflow.
-- **Level 2, Emergent.** A process exists and is partly documented, but units have diverged and exceptions are unowned. → Proceed, with the Blueprint reconstructing the workflow before the Red Team runs.
-- **Level 3, Codified.** Documented, followed, exceptions quantified. → Proceed.
+**Level and direction answer different questions and are read off different quantities.** Level is the $L^1$ norm of base friction, which is asset specificity, a property of the deal. Direction is the share of effective cost each component carries after amplification, which is where the unresolved work sits today. Discovery moves the second and not the first, which is why a Blueprint changes the instrument without reclassifying the deal.
 
-Workflow maturity answers whether the buyer's process can be mapped. It is independent of market stage, which asks whether the category is legible, and of asset specificity, which asks how tightly the solution couples to the environment. A Level 1 workflow inside a mature market is a Chaos Trap rather than an SLG deal, because the category is legible and the buyer still has nothing to automate. Treating these three axes as one dial is the most common way to route a deal into the wrong motion.
-
-### Step 1: Market Stage Diagnostic (Workflow Legibility)
-
-Score the *market*, not the deal:
-
-| Signal | Y/N |
-|---|---|
-| Is there a recognized category name? | |
-| Can the buyer name 3+ vendors that solve this problem? | |
-| Are there published implementation playbooks, G2 reviews, or analyst coverage? | |
-
-- **0–1 Yes → Nascent.** Search dominates. Motion: **SLG** (educational, market-making). Skip Step 2.
-- **2 Yes → Transitional.** Judgment call; usually SLG transitioning toward ILG as the category matures. Score Step 2 and weight ILG higher.
-- **3 Yes → Mature.** Category is legible. Continue to Step 2 to determine PLG vs. ILG within the mature market.
-
-### Step 2: Transaction Cost Diagnostic (Mature markets only)
-
-Score 1–5 each, then sum:
-
-| Factor | Targets | Score 1 | Score 5 |
-|---|---|---|---|
-| **Integration depth** | $F_{implementation}$ | Standalone tool, no integration | Core ERP/EHR replacement, custom code |
-| **Workflow change scope** | $F_{implementation}$ | Single team, no process change | Cross-functional, total workflow overhaul |
-| **Consensus complexity** | $F_{consensus}$ | Single decision maker | Board / Procurement / Security audit |
-| **Retention horizon** | $F_{implementation}$ (sustained) | One-time project | Multi-year platform, deep dependency |
-
-Sum range: 4–20.
-
-### Step 3: Motion Selection
-
-| Market Stage | Cost Score | Motion |
-|---|---|---|
-| Nascent | (n/a) | **SLG** |
-| Transitional | 4–14 | **SLG** with ILG elements creeping in |
-| Transitional | 15–20 | **ILG** (deal stakes high enough to force ILG even before category maturity) |
-| Mature | 4–9 | **PLG** |
-| Mature | 10–20 | **ILG** |
-| Any | Override: pilot/POC requested | **ILG** (auto-score 20) |
-
-The operational tool that runs this diagnostic is the [Process Calculator](../../practice/01-field-assets/process-calculator.md).
+**The instrument counts rather than rates.** Version 4.2 asked for ratings of 1 to 5 and the models raised them to powers, which is not a defensible operation on an ordinal scale. The counts are auditable in a way ratings are not, since a count is a list and a list can be wrong in public. That does not make the instrument honest by itself, and the calculator says what else is needed.
 
 ---
 
@@ -228,15 +197,15 @@ The Constitution's Boundary Condition (Axiom I) explains why these transitions a
 
 ### The lifecycle runs one way, and then resets
 
-Left alone, a category ages in a single direction. Standards solidify, integration patterns homogenize, implementation playbooks get published, and asset specificity falls. The motion that fits follows it down:
+Left alone, a category ages in a single direction. Standards solidify, integration patterns homogenize, implementation playbooks get published, and asset specificity falls. Both quantities move, and they move differently:
 
 ```
-Emerging category      → high specificity, no playbooks    → ILG
-Consolidating category → standard integration patterns     → SLG
-Commoditized category  → turnkey interoperability          → PLG
+Emerging category      → level high, no playbooks        → search and implementation both wide
+Consolidating category → level high, patterns forming    → search closes, implementation stays
+Commoditized category  → level falls below the boundary  → both close, apparatus stops earning
 ```
 
-The practical warning is that a motion which fit three years ago may over-serve the same category today. A team still running full ILG on a category that has commoditized is burning margin on Blueprints the buyer no longer needs.
+The practical warning is that a motion which fit three years ago may over-serve the same category today. A team still running the full implementation chain on a commoditized category is burning margin on Blueprints the buyer no longer needs. Re-scoring catches it, and a category's level falling below 15 is the signal to migrate.
 
 New technical paradigms reset the clock. Complex generative AI integration, healthcare interoperability, and any category where the integration surface is still being invented all create fresh high-specificity segments inside markets that had otherwise matured. The reset is why ILG does not have an expiration date as a discipline. It relocates rather than disappears.
 
@@ -246,11 +215,13 @@ New technical paradigms reset the clock. Complex generative AI integration, heal
 
 The most common motion-selection mistakes. The first two are Axiom I's failure modes seen from the field, with the symptoms a rep observes and the root cause behind them:
 
-**Treating a Structural deal like a Turnkey deal.** PLG or SLG applied to a deal that actually needs ILG. *Symptoms:* deal stalls with no clear blocker, eventually "no decision" or churn shortly after signature. *Root cause:* Process Calculator score not honored; reps optimizing for cycle time instead of close quality.
+**Treating a Structural deal like a Turnkey deal.** Velocity instruments applied to a deal that needs the implementation chain. *Symptoms:* the deal stalls with no clear blocker, ending in no decision, or it closes and churns shortly after signature. Both symptoms, and Axiom I now names both. *Root cause:* the level was not honored, or the counts behind it were deflated, which is the failure the calculator's Count Variance measure exists to make visible.
 
 **Treating a Turnkey deal like a Structural deal.** ILG applied to a low-specificity deal. *Symptoms:* buyer experiences over-engineering, chooses a faster competitor or self-serves. *Root cause:* reps trained on ILG playbook applying it indiscriminately.
 
-**Treating a Nascent Market like Mature.** PLG or ILG tactics in a market where the buyer cannot yet articulate the problem. *Symptoms:* low engagement, "interesting but not now" responses. *Root cause:* mistaking absence of competition for product-market fit.
+**Reading an unnamed category as a short alternative list.** The buyer names no vendors, so the search count comes out low and the deal routes to velocity or implementation instruments. *Symptoms:* low engagement, "interesting but not now" responses. *Root cause:* mistaking absence of competition for a small choice set. An unnamed category is an unbounded alternative set and scores the maximum search cost, which the calculator states twice because this is the misreading that survives every rewrite.
+
+**Picking a named motion when the vector is mixed.** No component reaches half of effective cost, and the rep chooses the region they know best. *Symptoms:* one binding cost is worked hard and another is untouched, so the deal moves and then stops. *Root cause:* treating the three names as an exhaustive list. They are three points in a space, and a deal is entitled to sit between them.
 
 **Skipping Reciprocity in ILG.** Running ILG motion but not requiring the buyer to invest in the process — provide artifacts, attend workshops, commit resources. *Symptoms:* lopsided MIP, buyer disengagement post-signature, implementation stalls. *Root cause:* fear of losing the deal by asking for too much.
 
@@ -268,7 +239,7 @@ Axiom I states that friction must match asset specificity, which means ILG is wr
 
     *Under review.* First-year gross margin is a single-shot test. [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) shows the pre-sale investment amortizes across the renewal stream, so this rule is correct where retention is weak and too strict where it holds. Use it as written until the replacement is agreed.
 
-**3. The category has commoditized.** Integration patterns homogenized, playbooks are published, and switching cost fell. Specificity dropped out from under a motion that used to fit. Teams keep running Blueprints out of habit and lose on cycle time to lighter competitors. *Route:* re-score annually; migrate to PLG when the score drops below 10.
+**3. The category has commoditized.** Integration patterns homogenized, playbooks are published, and switching cost fell. Specificity dropped out from under a motion that used to fit. Teams keep running Blueprints out of habit and lose on cycle time to lighter competitors. *Route:* re-score annually and migrate to velocity instruments when the level drops below 15.
 
 **4. The specification is externally fixed.** A regulatory mandate or a procurement standard that dictates the implementation leaves no discovery surplus to capture. Both parties already know what gets built. Discovery cannot reduce $\Delta_A$ because the gap is already near zero on the dimension that matters. *Route:* compete on price and delivery credibility.
 
@@ -284,16 +255,17 @@ The first three are properties of the deal. The last three are properties of the
 
 > "Never apply a Turnkey motion to a Structural deal, and never sell a Structural deal without a Blueprint."
 
-The motion is not about your preference. It is about the deal's physics — derived from the market stage you are operating in and the asset specificity of the deal itself.
+The motion is not about your preference. It follows from two measurements: how long the friction vector is, and where it points.
 
 ---
 
 ## Related
 
-- [00-ilg-constitution.md](./00-ilg-constitution.md) — Theoretical framework. Axiom I is the foundation for motion choice.
+- [00-ilg-constitution.md](./00-ilg-constitution.md) — Axiom I supplies level and direction. Axiom II supplies the per-component amplification direction is read from.
+- [06-friction-vector.md](./06-friction-vector.md) — Why a motion is a region rather than a list entry, and what the change retired.
 - [02-cfir-field-mapping.md](./02-cfir-field-mapping.md) — How ILG artifacts operationalize implementation science.
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms behind $\Delta_A$, $F_{consensus}$, and the urgency decay rate.
-- [process-calculator.md](../../practice/01-field-assets/process-calculator.md) — Operational tool implementing the Decision Framework.
+- [deal-triage-calculator.md](../../practice/01-field-assets/deal-triage-calculator.md) — The one place the diagnostic lives.
 - [ilg-motion/](../../practice/01-field-assets/ilg-motion/) — Structural deal motion artifacts (Blueprint / Red Team / MIP).
 - [plg-motion/](../../practice/01-field-assets/plg-motion/) — Turnkey deal motion artifacts.
 - [03-incentives-vested-commission.md](../../practice/02-internal-ops/03-incentives-vested-commission.md) — Comp structure for ILG sellers.

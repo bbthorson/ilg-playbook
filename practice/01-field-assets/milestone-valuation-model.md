@@ -104,7 +104,7 @@ It also shows what a flat payment schedule does. Charging 0.33 at every gate wou
 
 **Check that payment never leads proof.** Walk the table left to right. At every row, committed payment to date should sit below value realized to date. If a row breaks that rule, the buyer is financing the seller's delivery risk, and they will find it during legal review.
 
-**Do not stage a Turnkey deal.** Gate design carries real administrative cost on both sides. Below the ILG boundary the structure destroys more surplus than the option value it preserves. Confirm with the [Process Calculator](./process-calculator.md) first.
+**Do not stage a Turnkey deal.** Gate design carries real administrative cost on both sides. Below the ILG boundary the structure destroys more surplus than the option value it preserves. Confirm with the [Deal Triage Calculator](./deal-triage-calculator.md) first.
 
 **Quote the payment schedule in one unit and say which.** A schedule written as "25 / 35 / 40" reads as percent to a buyer and as contract values to this model. Legal review will read it the first way and the model was computed the second way. Write fractions in the model and percentages in the contract, and never carry a number from one into the other without converting it.
 

@@ -18,7 +18,7 @@ Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" hando
 
 *Before using this protocol, verify the Deal Score:*
 
-- **Process Calculator Score:** Must be **\< 10**.  
+- **Deal Triage Calculator level:** Must be **\< 15** on the 0 to 30 scale, which is the Turnkey band.  
 - **Override Check:** Customer has **NOT** asked for a Pilot, POC, or Custom Security Review.  
 - **Asset Specificity:** No deep integration required.
 

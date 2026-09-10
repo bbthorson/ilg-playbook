@@ -10,7 +10,7 @@ status: active
 
 **Purpose:** A 2-minute "Fit Check" the rep completes *before* sending the [Standard Order Form](./order-form.md). Catches Structural-deals-in-disguise so they don't slip through the velocity motion.
 
-**When to use:** After triage scores < 10 on the [process calculator](../process-calculator.md), and the prospect has not asked for a Pilot, POC, or Custom Security Review.
+**When to use:** After triage scores < 10 on the [process calculator](../deal-triage-calculator.md), and the prospect has not asked for a Pilot, POC, or Custom Security Review.
 
 ---
 
@@ -19,7 +19,7 @@ status: active
 - **Prospect company:** _____________________
 - **Primary contact (name, title):** _____________________
 - **Deal value (ACV):** _____________________
-- **Process Calculator score:** _____  (must be < 10)
+- **Deal Triage Calculator score:** _____  (must be < 10)
 - **Date evaluated:** _____________________
 - **Rep:** _____________________
 
@@ -70,4 +70,4 @@ Prospect has reasonable expectations for support:
 
 - [01-velocity-standard-order-protocol.md](./01-velocity-standard-order-protocol.md) — Parent protocol; defines when this form is used.
 - [order-form.md](./order-form.md) — The external contract that follows a GREEN verdict.
-- [../process-calculator.md](../process-calculator.md) — Upstream triage gate.
+- [../deal-triage-calculator.md](../deal-triage-calculator.md) — Upstream triage gate.

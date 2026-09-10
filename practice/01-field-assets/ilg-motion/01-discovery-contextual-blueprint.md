@@ -19,7 +19,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 
 | | |
 |---|---|
-| **Inputs** | Structural classification (score ≥ 10) from [Process Calculator](../process-calculator.md); initial qualification call complete. |
+| **Inputs** | Structural classification (score ≥ 10) from [Deal Triage Calculator](../deal-triage-calculator.md); initial qualification call complete. |
 | **Outputs** | Filled Blueprint covering Catalyst, Complexity, Stakeholder DNA, Reciprocity Gate, Negative Capability. A green/yellow/red verdict. |
 | **Next step** | Green → [Red Team Protocol](./02-validation-red-team-protocol.md). Yellow → assign homework to champion. Red → disqualify. |
 | **Owner** | AE (with sales manager validation). |
@@ -139,6 +139,6 @@ We use this Blueprint to map your specific environment—your politics, your dat
 
 - **Theory:** [ILG Constitution, Axiom II](../../../theory/01-foundation/00-ilg-constitution.md) — The Blueprint primarily addresses $F_{consensus}$ and reduces Seller Ignorance ($I_{seller}$). It is one of the four mechanisms by which $\Delta_A$ shrinks.
 - **CFIR mapping:** [02-cfir-field-mapping.md](../../../theory/01-foundation/02-cfir-field-mapping.md) — Inner Setting / Individuals constructs mapped to Blueprint sections.
-- **Prerequisite:** Deal must score 10+ on [process-calculator.md](../process-calculator.md).
+- **Prerequisite:** Deal must score 10+ on [deal-triage-calculator.md](../deal-triage-calculator.md).
 - **Next step:** [02-validation-red-team-protocol.md](./02-validation-red-team-protocol.md) — Stress-tests the implementation plan surfaced here.
 - **Manager audit:** [02-internal-ops/02-governance-review-checklist.md](../../02-internal-ops/02-governance-review-checklist.md) (Phase 1).

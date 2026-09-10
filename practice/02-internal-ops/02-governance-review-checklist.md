@@ -24,7 +24,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 **Before diving into the deal, validate the lane:**
 
 - [ ] **"Why is this a Structural deal?"** 
-  - Show me the [Process Calculator](../01-field-assets/process-calculator.md) score (Mature market + cost score 10–20, or Transitional 15–20, or pilot/POC override)
+  - Show me the [Deal Triage Calculator](../01-field-assets/deal-triage-calculator.md) score (Mature market + cost score 10–20, or Transitional 15–20, or pilot/POC override)
   - What's the integration depth? Workflow change scope? Consensus complexity? Retention horizon?
   
 - [ ] **"Did the override rule apply?"**

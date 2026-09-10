@@ -42,7 +42,7 @@ The veto is available at any time before order form submission. It becomes **man
 
 | Condition | Instrument | Threshold |
 |---|---|---|
-| Workflow cannot be mapped | [Process Calculator](../01-field-assets/process-calculator.md) Step 0 | Level 1, Undefined |
+| Workflow cannot be mapped | [Deal Triage Calculator](../01-field-assets/deal-triage-calculator.md) Step 0 | Level 1, Undefined |
 | Bilateral asymmetry unresolved | [Asymmetry Scorecard](./04-incentives-asymmetry-scorecard.md) | $\Delta_A$ at or above 7.0 |
 | Showstopper unmitigated | [Red Team Protocol](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md) | Any finding classified Showstopper without a written mitigation and a named owner |
 | Buyer resources absent | [MIP](../01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) | No named customer project manager, or committed hours below the floor set during calibration |
@@ -78,7 +78,7 @@ The authority binds in both directions. Each party to the decision holds exposur
 
 ## What this does not fix
 
-The veto is a gate, not a diagnosis. It stops a deal that should not proceed, and it does nothing to make that deal viable. A team that finds itself exercising the authority frequently has a qualification problem upstream in the Process Calculator, and adding gate strength will not repair it.
+The veto is a gate, not a diagnosis. It stops a deal that should not proceed, and it does nothing to make that deal viable. A team that finds itself exercising the authority frequently has a qualification problem upstream in the Deal Triage Calculator, and adding gate strength will not repair it.
 
 The veto also cannot substitute for delivery capability. Boundary condition 6 in [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) applies here: an organization that lacks the depth to run a genuine Red Team will produce veto holders who clear everything, and the structure will be formally correct and practically empty.
 

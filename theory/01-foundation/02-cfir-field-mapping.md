@@ -96,9 +96,9 @@ Frame Alignment Processes are the four ways to connect an initiative to what a s
 
 ---
 
-## Intervention Characteristics → Process Calculator
+## Intervention Characteristics → Deal Triage Calculator
 
-Two CFIR constructs govern deal triage rather than any single artifact. Both live in the [Process Calculator](../../practice/01-field-assets/process-calculator.md), which routes the deal before an artifact is chosen.
+Two CFIR constructs govern deal triage rather than any single artifact. Both live in the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), which routes the deal before an artifact is chosen.
 
 | Calculator Section | CFIR Construct | What It Captures | Rep Sees It As |
 |---|---|---|---|

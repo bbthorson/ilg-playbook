@@ -41,7 +41,7 @@ Asks escalate in cost. Run them in order, because a buyer who fails an early run
 | **5** | A named project manager with committed hours | Budgeted headcount | Named delivery resources and an escalation path |
 | **6** | Paid diagnostic or pilot | Real money, internal approval | Fixed scope, fixed price, defined exit |
 
-Rungs 1 through 3 belong in Blueprint discovery. Rungs 4 and 5 gate the Red Team and the MIP. Rung 6 applies when the buyer requests a pilot, which under the Process Calculator override already classifies the deal as Structural.
+Rungs 1 through 3 belong in Blueprint discovery. Rungs 4 and 5 gate the Red Team and the MIP. Rung 6 applies when the buyer requests a pilot, which under the Deal Triage Calculator override already classifies the deal as Structural.
 
 ---
 
@@ -65,7 +65,7 @@ Rungs 1 through 3 belong in Blueprint discovery. Rungs 4 and 5 gate the Red Team
 
 > "Can I spend an hour with someone who actually does this work today? Not to sell them anything. I want to watch the workarounds, because the workarounds are the requirements nobody writes down."
 
-**What you are testing.** Whether the buyer's described process matches the practiced one, which is exactly the Level 2 workflow maturity trap in the [Process Calculator](./process-calculator.md).
+**What you are testing.** Whether the buyer's described process matches the practiced one, which is exactly the Level 2 workflow maturity trap in the [Deal Triage Calculator](./deal-triage-calculator.md).
 
 ### Rung 5: named resources
 
@@ -114,5 +114,5 @@ A buyer who declines every rung has not failed qualification. They have complete
 - [costly-signals.md](../../theory/02-research/costly-signals.md) — Spence, Akerlof, and the Single Crossing Property behind every ask here.
 - [friction-allocation-diagnostic.md](./friction-allocation-diagnostic.md) — Test any new ask against the four principles before adding it to the ladder.
 - [01-discovery-contextual-blueprint.md](./ilg-motion/01-discovery-contextual-blueprint.md) — Where rungs 1 through 3 run, and where the Reciprocity Gate is recorded.
-- [process-calculator.md](./process-calculator.md) — Step 0 workflow maturity, which rung 4 is designed to verify independently.
+- [deal-triage-calculator.md](./deal-triage-calculator.md) — Step 0 workflow maturity, which rung 4 is designed to verify independently.
 - [ilg-deal-calibration-checklist.md](./ilg-deal-calibration-checklist.md) — Pre-close audit confirming the ladder was actually run.

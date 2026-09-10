@@ -81,7 +81,7 @@ $$\hat{\Delta}_A = \frac{\Delta_A^{raw} - 2}{8}, \qquad \hat{\Delta}_A \in [0, 1
 
 This keeps the structural multiplier in $[1, 2]$ and keeps the reduced form's quadratic term bounded by $a$. Use the raw score for the field triage bands in the scorecard. Use the normalized value in either equation. Confusing the two produces cost estimates off by an order of magnitude.
 
-**Each component gap normalizes on its own instrument's range.** The scorecard's $[2, 10]$ is the implementation pair's range, because that is the pair it measures. The search and consensus gaps are emitted directly on $[0, 1]$ by the [Process Calculator](../../practice/01-field-assets/process-calculator.md) as evidenced fractions, so they need no rescaling. Section 2.4 gives all three.
+**Each component gap normalizes on its own instrument's range.** The scorecard's $[2, 10]$ is the implementation pair's range, because that is the pair it measures. The search and consensus gaps are emitted directly on $[0, 1]$ by the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) as evidenced fractions, so they need no rescaling. Section 2.4 gives all three.
 
 The normalized gap may exceed 1 when asymmetry rebuilds past the instrument's ceiling under the Decay Clock dynamics ($\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$). The scorecard measures a point in time and cannot observe drift beyond its own range.
 
@@ -172,8 +172,8 @@ Constitution v17.0 amplifies each friction component by the asymmetry inside its
 
 | Gap | Pair | What is unknown | Instrument | Closed by |
 |---|---|---|---|---|
-| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, whether the fit holds, how to reach a seller at all | [Process Calculator](../../practice/01-field-assets/process-calculator.md), search block | Education, reference architectures, category definition, channel |
-| $\hat{\Delta}_{consensus}$ | The buyer's stakeholders against each other | What each of the others is measured on | [Process Calculator](../../practice/01-field-assets/process-calculator.md), consensus block | Stakeholder mapping in the Blueprint, then the Red Team workshop |
+| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, whether the fit holds, how to reach a seller at all | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), search block | Education, reference architectures, category definition, channel |
+| $\hat{\Delta}_{consensus}$ | The buyer's stakeholders against each other | What each of the others is measured on | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), consensus block | Stakeholder mapping in the Blueprint, then the Red Team workshop |
 | $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) | Blueprint, Red Team, MIP |
 
 **Only the implementation gap is bilateral.** Sections 2.2 and 2.3 model its two halves, $I_{seller}$ and $I_{buyer}$, and section 2.1's sum applies to that pair alone:
@@ -320,7 +320,7 @@ Until then, treat every output as a structured comparison between deals rather t
 ## Related
 
 - [00-ilg-constitution.md](./00-ilg-constitution.md) — The axioms these models serve. Axiom II carries both cost representations reconciled in Section 1.
-- [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — Motion selection, which consumes the Process Calculator score rather than these models.
+- [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — Motion selection, which consumes the Deal Triage Calculator score rather than these models.
 - [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
 - [Consensus Friction Calculator](../../practice/01-field-assets/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
 - [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) — Applies staged uncertainty decay to MIP gate design.

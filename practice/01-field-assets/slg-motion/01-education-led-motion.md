@@ -18,7 +18,7 @@ Goal: To sell in a market that does not yet know it is a market, and to recogniz
 
 | | |
 |---|---|
-| **Inputs** | A deal scoring 0 to 1 Yes on Step 1 of the [Process Calculator](../process-calculator.md). Nascent market, category not legible. |
+| **Inputs** | A deal scoring 0 to 1 Yes on Step 1 of the [Deal Triage Calculator](../deal-triage-calculator.md). Nascent market, category not legible. |
 | **Outputs** | A visionary buyer who can name the problem, quantify the cost of inaction, and fund a line item that did not previously exist. |
 | **Next step** | Standard commercial terms. If any pivot trigger below fires, re-run the calculator and deploy the [Contextual Blueprint](../ilg-motion/01-discovery-contextual-blueprint.md). |
 | **Owner** | AE or founder. No solutions engineering required at this stage. |
@@ -32,7 +32,7 @@ Goal: To sell in a market that does not yet know it is a market, and to recogniz
 Before using this motion, confirm you belong in it.
 
 - **Step 1 market stage:** 0 or 1 Yes. Two or more means you are not here.
-- **Step 0 workflow gate:** passed. A Level 1 undefined workflow is a [Chaos Trap](../process-calculator.md), not an SLG deal, no matter how new the category looks.
+- **Step 0 workflow gate:** passed. A Level 1 undefined workflow is a [Chaos Trap](../deal-triage-calculator.md), not an SLG deal, no matter how new the category looks.
 - **Override check:** the buyer has NOT asked for a pilot, POC, or custom security review. Any of those auto-classifies the deal as ILG regardless of market stage.
 
 ## Where the real playbook lives
@@ -91,7 +91,7 @@ Note what Step 2 does. The moment a buyer can state evaluation criteria, they ca
 
 ## Pivot triggers: when to stop educating
 
-Any one of these means the deal is no longer SLG. Stop, re-run the [Process Calculator](../process-calculator.md), and if the score lands at 10 or above in a now-mature market, deploy the [Contextual Blueprint](../ilg-motion/01-discovery-contextual-blueprint.md).
+Any one of these means the deal is no longer SLG. Stop, re-run the [Deal Triage Calculator](../deal-triage-calculator.md), and if the score lands at 10 or above in a now-mature market, deploy the [Contextual Blueprint](../ilg-motion/01-discovery-contextual-blueprint.md).
 
 | Trigger | What it signals | Action |
 |---|---|---|
@@ -110,6 +110,6 @@ Any one of these means the deal is no longer SLG. Stop, re-run the [Process Calc
 ## Related
 
 - **Theory:** [01-sales-motion-comparison.md](../../../theory/01-foundation/01-sales-motion-comparison.md) covers SLG vs. ILG in depth, including why educational friction and structural friction call for opposite behavior.
-- **Triage:** [process-calculator.md](../process-calculator.md). Step 1 routes here. Step 3 routes out.
+- **Triage:** [deal-triage-calculator.md](../deal-triage-calculator.md). Step 1 routes here. Step 3 routes out.
 - **Constitution:** [Axiom I and the Boundary Condition](../../../theory/01-foundation/00-ilg-constitution.md). Over-frictioning a nascent deal and under-frictioning a matured one are the two failure modes this document exists to prevent.
 - **Sibling motions:** [ilg-motion/](../ilg-motion/) for Structural deals, [plg-motion/](../plg-motion/) for Turnkey deals.

@@ -80,11 +80,11 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 | $5M ERP deal | 30-min discovery call | Wildly under-frictioned |
 | $50K SaaS deal | Three-month paid pilot | Over-frictioned |
 | $5M ERP deal | Three-month paid pilot | Proportional |
-| Buyer asks for pilot/POC at any stake | Anything less than ILG motion | Under-frictioned (override applies — see [Process Calculator](./process-calculator.md)) |
+| Buyer asks for pilot/POC at any stake | Anything less than ILG motion | Under-frictioned (override applies — see [Deal Triage Calculator](./deal-triage-calculator.md)) |
 
 **Common violations.** A Structural deal sold with PLG-grade signals (under-frictioned). A Turnkey deal sold with ILG-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
 
-**Fix.** Match signal weight to stakes. The [Process Calculator](./process-calculator.md) classifies deals by stage and cost score; the signal mechanism should scale to whatever the calculator returns.
+**Fix.** Match signal weight to stakes. The [Deal Triage Calculator](./deal-triage-calculator.md) classifies deals by stage and cost score; the signal mechanism should scale to whatever the calculator returns.
 
 ---
 
@@ -166,5 +166,5 @@ If all four hold, $\Delta_A$ shrinks. If any one fails, it doesn't — regardles
 - **Theory:** [ILG Constitution — Axiom II (Law of Uncertainty Inflation) and the Friction Allocation Principles](../../theory/01-foundation/00-ilg-constitution.md).
 - **Channel evaluation:** [channel-collapse.md](../../theory/02-research/channel-collapse.md) describes when production cost is the binding constraint, making the channel vulnerable to Principle 1 failure.
 - **Adjudicator design:** [Constitution Axiom III — Reputation Depreciation](../../theory/01-foundation/00-ilg-constitution.md) describes how to design demurrage into adjudicator structures.
-- **Deal-level scoring:** [Process Calculator](./process-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.
+- **Deal-level scoring:** [Deal Triage Calculator](./deal-triage-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.
 - **Manager review:** [Governance Review Checklist](../02-internal-ops/02-governance-review-checklist.md) — should incorporate the four principles when reviewing artifacts for deal commit.

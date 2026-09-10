@@ -19,7 +19,7 @@ Goal: To calibrate the ILG framework to your specific product, market, and tech 
 
 ## Phase 1: The Calibration Workshop
 
-*You cannot use the Process Calculator out of the box. A generic score of "5" means nothing. You must define what "High Friction" looks like for YOUR product.*
+*You cannot use the Deal Triage Calculator out of the box. A generic score of "5" means nothing. You must define what "High Friction" looks like for YOUR product.*
 
 Attendees: VP Sales, VP Customer Success, Lead Solutions Engineer, Product Marketing.  
 Time: 90 Minutes.
@@ -36,7 +36,7 @@ Time: 90 Minutes.
 
 **Action Item:** Replace the generic examples above with your specific product features/integrations.
 
-- *Output:* A customized version of the Process Calculator asset.
+- *Output:* A customized version of the Deal Triage Calculator asset.
 
 ### Step 2: Define "The Hook" (The Reciprocity Gate)
 
@@ -103,7 +103,7 @@ Time: 90 Minutes.
 1. **Week 1: The Audit.** (Show the Standish Group data). "We are losing 40% of deals to 'No Decision.' That is money you already earned but didn't get paid on."  
 2. **Week 2: The Pilot.** Select 2 senior reps (Opinion Leaders). Have them use the Red Team Protocol on a stalled deal.  
 3. **Week 3: The Win.** Broadcast the result. "Sarah used the Red Team Protocol and unstalled the Acme Corp deal. It closed in 14 days."  
-4. **Week 4: The Standard.** Roll out the Process Calculator. Make it mandatory for deals \> $50k.
+4. **Week 4: The Standard.** Roll out the Deal Triage Calculator. Make it mandatory for deals \> $50k.
 
 ## Phase 5: The "Break Glass" Procedure
 
