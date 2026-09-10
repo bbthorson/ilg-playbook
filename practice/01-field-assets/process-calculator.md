@@ -206,5 +206,5 @@ Score divergence for the specific workflow you are selling into, on the same dis
 
 - **Theory:** [ILG Constitution — Axiom I (Law of Transaction Cost Composition) and the Boundary Condition primary derivation](../../theory/01-foundation/00-ilg-constitution.md).
 - **Decision framework explanation:** [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) — why each step exists, with examples of common mistakes.
-- **Forecasting:** Managers re-score and audit Structural deals via [01-governance-deal-calibration.md](../02-internal-ops/01-governance-deal-calibration.md).
+- **Forecasting:** Managers re-score and audit Structural deals via [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md).
 - **Manager review:** Phase 1 of [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) validates the calculator score on every Structural deal.

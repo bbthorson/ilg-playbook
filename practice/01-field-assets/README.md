@@ -69,5 +69,5 @@ The three map onto the Three Sales Levers from Axiom II. The scorecard says how 
 ## Related
 
 - **Theory:** [00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) for the axioms, [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) for why each motion fits where.
-- **Manager tools:** [01-governance-deal-calibration.md](../02-internal-ops/01-governance-deal-calibration.md) and [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) carry the forecast questions and the commit rule.
+- **Manager tools:** [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) carries the forecast questions and the commit rule.
 - **Before modifying any asset here:** [02-cfir-field-mapping.md](../../theory/01-foundation/02-cfir-field-mapping.md) says which research construct each section operationalizes.

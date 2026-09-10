@@ -13,7 +13,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 **Purpose:** To derive motion selection from the two quantities Axiom I already names, so that a motion becomes a region of one space rather than an item on a list.
 
 > [!IMPORTANT]
-> **This document does not govern.** It is a proposal under review. [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) and the [Process Calculator](../../practice/01-field-assets/process-calculator.md) remain in force and remain the answer to "which motion do I run." Nothing here has been adopted, no artifact has been retired, and section 9 lists what adoption would cost. The notation in section 1 stays local to this file rather than entering [04-glossary-and-notation.md](./04-glossary-and-notation.md), because that index is canonical and this document is not.
+> **This document does not govern.** It is a proposal under review. [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) and the [Process Calculator](../../practice/01-field-assets/process-calculator.md) remain in force and remain the answer to "which motion do I run." Nothing here has been adopted, no artifact has been retired, and section 10 lists what adoption would cost. The notation in section 1 stays local to this file rather than entering [04-glossary-and-notation.md](./04-glossary-and-notation.md), because that index is canonical and this document is not.
 
 ---
 
@@ -100,13 +100,69 @@ Named motions become regions of the space rather than members of a list.
 | Long, consensus-dominant | $F_{consensus}$ dominates | Unnamed | Absent |
 | Long, implementation-dominant | $F_{implementation}$ dominates | ILG | Present and developed |
 
-**The short-vector region is a magnitude claim, not a direction.** A light marketing funnel feeding a low-cost trial feeding buyer-run deployment is a light touch on all three components at once. Reading it as a competitor to the other three regions is the error this document is most concerned to correct, and section 5 says what that error costs.
+**The short-vector region is a magnitude claim, not a direction.** A light marketing funnel feeding a low-cost trial feeding buyer-run deployment is a light touch on all three components at once. Reading it as a competitor to the other three regions is the error this document is most concerned to correct, and sections 6 and 7 say what that error costs.
 
 Naming the consensus region is deliberately left open. Any name chosen here would enter the repository ahead of the argument that justifies it.
 
 ---
 
-## 5. Addressable market is a property of the motion
+## 5. Asymmetry rotates the vector, and drift rotates it back
+
+The Constitution's effective cost equation applies one amplifier to the whole sum:
+
+$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A)$$
+
+Scaling every component by the same factor changes the length of the vector and leaves its direction untouched. The consequence is exact rather than approximate: **under the equation as written, no amount of asymmetry and no amount of work reducing it can change which motion a deal needs.** Direction is invariant to $\Delta_A$.
+
+That contradicts ordinary experience. A seller who maps an environment has changed the shape of the deal, not only its size.
+
+### 5.1 Three pairs, three gaps
+
+The single gap $\Delta_A = I_{seller} + I_{buyer}$ describes two parties, and the three components do not share one pair of parties between them.
+
+| Component | Whose ignorance, about what |
+|---|---|
+| $F_{search}$ | The buyer, about the market |
+| $F_{consensus}$ | The buyer's stakeholders, about each other |
+| $F_{implementation}$ | The seller, about the buyer's environment |
+
+Only the third is seller against buyer. The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures that third pair and is currently applied as though it measured the deal.
+
+Amplify each component by its own pair's gap:
+
+$$F_{effective} = \sum_{k} F_k \, (1 + \Delta_k)$$
+
+Direction now moves with the work. A deal that opens implementation-dominant rotates toward consensus as discovery closes $\Delta_{implementation}$, which is what a Blueprint is for and what the framework has had no way to state.
+
+### 5.2 Drift is the same rotation running backwards
+
+Axiom II carries $\Delta_A(t) = \Delta_A(0) + \gamma t$ before signature. Section 7.2 of [05-seller-surplus-model.md](./05-seller-surplus-model.md) carries the same equation after it. Per component:
+
+$$\Delta_k(t) = \Delta_k(0) + \gamma_k t$$
+
+**Seller investment and drift are one mechanism with opposite signs.** Discovery lowers a component's gap and rotates the vector away from that component. Absent maintenance the gap rebuilds at $\gamma_k$ and the vector rotates back. A deal is therefore a path through the composition space rather than a point in it, and the same is true of an account after signature.
+
+Each component drifts for its own reasons and at its own rate.
+
+| Rate | What drives it | Where it is already named |
+|---|---|---|
+| $\gamma_{search}$ | New entrants, category redefinition | Nowhere |
+| $\gamma_{consensus}$ | Stakeholder turnover, reorganization | Nowhere |
+| $\gamma_{implementation}$ | Staff turnover, workflow change, systems installed unseen | [05-seller-surplus-model.md](./05-seller-surplus-model.md) section 7.2 |
+
+**The field consequence sits in the consensus row.** A champion leaving is $\gamma_{consensus}$ arriving all at once. The alignment that stakeholder held is gone, the deal rotates back toward consensus-dominant, and it can leave the viable zone without any change in the product, the price or the technical work. That event is the most common way an enterprise deal dies and the framework currently has no term for it.
+
+This also generalizes Axiom III's trajectory. $D(t)$ is written as a scalar, the distance between transaction cost and opportunity cost. Under per-component drift it is a path with a direction, and the direction says which instrument would arrest it.
+
+### 5.3 What this demotes
+
+The reduced form $y = a\hat{\Delta}_A^2 + c$ collapses the vector to a scalar, and [03-mathematical-models.md](./03-mathematical-models.md) section 1.4 already concedes that it "produces a number, not a diagnosis." Under this model the concession is heavier, because direction is the quantity that selects the motion and the reduced form destroys it. The form keeps its one job, which is showing why cutting price cannot offset a wide gap. It stops being a representation of transaction cost.
+
+The coefficient $\beta$, which weights one side's ignorance against the other's, is only meaningful inside a pair with two distinguishable sides. The consensus pair has the buyer on both sides. $\beta$ is therefore a parameter of the implementation component rather than a global one.
+
+---
+
+## 6. Addressable market is a property of the motion
 
 A seller who runs only short-vector tactics can transact only with short-vector buyers. Buyers whose deals carry a long vector are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the cost that was blocking them.
 
@@ -116,7 +172,7 @@ The practical consequence is that a market sizing exercise conducted without nam
 
 ---
 
-## 6. A second symptom of under-frictioning
+## 7. A second symptom of under-frictioning
 
 Axiom I names under-frictioning as the failure where asset specificity exceeds the friction deployed, and gives one symptom: the buyer declines to transact and builds internally.
 
@@ -126,7 +182,7 @@ Both symptoms belong to the same failure. The framework currently names only the
 
 ---
 
-## 7. Why sellers choose the wrong region
+## 8. Why sellers choose the wrong region
 
 The seller picks the motion, and the seller has a reason to pick the short-vector one that has nothing to do with the deal in front of them. Short-vector tactics carry lower cost of sale, and lower cost of sale reads well on an income statement.
 
@@ -136,7 +192,7 @@ The remedy already exists in [03-incentives-vested-commission.md](../../practice
 
 ---
 
-## 8. What this does not settle
+## 9. What this does not settle
 
 - **The consensus region has no name and no instrument file.** Both are open.
 - **Whether the three components are measurable in a form the equations can consume.** The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) emits ordinal ratings, and the models in [03-mathematical-models.md](./03-mathematical-models.md) square their inputs. Squaring an ordinal rating is not a defensible operation, and no component score is trustworthy until that is fixed.
@@ -146,7 +202,7 @@ The remedy already exists in [03-incentives-vested-commission.md](../../practice
 
 ---
 
-## 9. What adopting this would cost
+## 10. What adopting this would cost
 
 Recorded so that adoption is a decision rather than a drift.
 
@@ -167,7 +223,7 @@ Recorded so that adoption is a decision rather than a drift.
 - [00-ilg-constitution.md](./00-ilg-constitution.md) — Axiom I supplies both quantities. This document consumes the separation made in v16.0 and adds nothing to it.
 - [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — The motion framing currently in force, and the file this proposal would replace.
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms for the components, and the calibration status that governs every number here.
-- [05-seller-surplus-model.md](./05-seller-surplus-model.md) — The seller's side of the transaction, which section 7 depends on.
+- [05-seller-surplus-model.md](./05-seller-surplus-model.md) — The seller's side of the transaction, which section 8 depends on.
 - [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Coase and Williamson, the source of the decomposition.
 - [Process Calculator](../../practice/01-field-assets/process-calculator.md) — The instrument that would be rebuilt.
 - [models/README.md](../../models/README.md) — Executable forms of the equations referenced here.

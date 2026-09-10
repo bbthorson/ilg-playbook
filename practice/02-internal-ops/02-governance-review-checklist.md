@@ -16,7 +16,6 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 | **Outputs** | Phase-by-phase pass/fail on the three friction phases; forecast verdict (Commit / Best Case / Pipeline). |
 | **Cadence** | Per deal at each phase gate; aggregated weekly on forecast call. |
 | **Owner** | Sales manager (with VP spot-checks). |
-| **Lighter version** | [Deal Calibration Sheet](./01-governance-deal-calibration.md) for routine forecast calls. |
 
 ---
 

@@ -110,4 +110,4 @@ Use the raw score for the bands above. Use the normalized value in $F_{effective
 - [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) — Functional forms for $I_{seller}$ and $I_{buyer}$, and the normalization rule.
 - [Contextual Blueprint](../01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) — Reduces $I_{seller}$.
 - [Red Team Protocol](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md) — Reduces $I_{buyer}$.
-- [Deal Calibration](./01-governance-deal-calibration.md) — Where this score enters the forecast call.
+- [Deal Review Checklist](./02-governance-review-checklist.md) — Where this score enters the forecast call.
