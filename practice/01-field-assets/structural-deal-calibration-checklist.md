@@ -28,7 +28,7 @@ Answer every item with evidence rather than recollection. If you cannot point to
 
 - [ ] **Workflow maturity is Level 2 or Level 3.** Someone has seen the current process, and for Level 2 the Blueprint reconstructed it before the Red Team ran. *A Level 1 workflow is a mandatory veto.*
 - [ ] **The Deal Triage Calculator sheet is on file and still current.** Re-count if any of the three counts changed materially, and re-read the direction at every artifact boundary. A direction that has not moved since qualification means either nothing was learned or nobody re-scored.
-- [ ] **The deal is not sitting on a boundary condition.** Walk the six in [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) section 4. Name which one you checked and why it does not apply.
+- [ ] **The deal is not sitting on an exclusion criterion.** Walk the six in [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) section 4. Name which one you checked and why it does not apply.
 
 ## Part 2: Asymmetry (Stop items)
 
