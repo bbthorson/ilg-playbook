@@ -10,7 +10,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 # The Education Motion
 
 Version: 1.0
-Component: Search. Deals whose direction points at the buyer's inability to find and compare.
+Motion: **Search-led**. Structural level, search-dominant direction.
 Audience: Account Executives / Founders selling into an unformed category
 Goal: To sell in a market that does not yet know it is a market, and to recognize the moment that stops being true.
 

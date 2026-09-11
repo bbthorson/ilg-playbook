@@ -8,7 +8,7 @@ status: active
 
 > **Status:** DRAFT — inferred from [01-standard-order-protocol.md](./01-standard-order-protocol.md) Step 2. Review and ratify before deploying.
 
-**Purpose:** A 2-minute "Fit Check" the rep completes *before* sending the [Standard Order Form](./order-form.md). Catches Structural-deals-in-disguise so they don't slip through the velocity motion.
+**Purpose:** A 2-minute "Fit Check" the rep completes *before* sending the [Standard Order Form](./order-form.md). Catches Structural-deals-in-disguise so they don't slip through the Turnkey motion.
 
 **When to use:** After triage scores < 10 on the [process calculator](../deal-triage-calculator.md), and the prospect has not asked for a Pilot, POC, or Custom Security Review.
 

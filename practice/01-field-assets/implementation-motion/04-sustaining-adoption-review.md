@@ -11,7 +11,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Version:** 1.0
 
-**Phase:** 04_The_Proof (Sustained Value)
+**Motion:** **Implementation-led**. Fourth of four artifacts, after the MIP.
 
 **Audience:** Customer Success / Implementation Lead / AE / Customer Executive Sponsor
 

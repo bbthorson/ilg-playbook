@@ -2,14 +2,14 @@
 title: "Motion Vocabulary"
 layer: theory
 status: active
-version: 1.0
+version: 1.1
 operationalizes: [axiom-1]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Motion Vocabulary
 
-**Version:** 1.0
+**Version:** 1.1
 **Purpose:** To map this framework's motion names onto the vocabulary the industry already uses, and to say precisely where the older terms mislead. Everyone arriving here knows what Product-Led Growth means. Nobody should have to guess whether it means the same thing as Turnkey.
 
 > [!NOTE]
@@ -77,15 +77,9 @@ Keeping the level as a per-deal reading is what makes the transition visible whi
 
 This one is counterintuitive and it falls directly out of the decomposition.
 
-Search cost carries three distinct blockers. The buyer cannot name the category, cannot reach the seller, or cannot tell whether the fit holds. Each takes a different instrument:
+The search component's three blockers are specified in [01-motion-taxonomy.md](./01-motion-taxonomy.md) section 2, and the mapping onto the incumbent vocabulary is what matters here. *Category Unnamed* is what the industry calls Sales-Led or evangelical selling. *Fit Unverified* is what it calls Product-Led. *Vendor Unreachable* is usually called channel strategy and is rarely treated as a motion at all.
 
-| Blocker | Instrument | Usually called |
-|---|---|---|
-| Cannot name the category | Education, reference architectures, category definition | Sales-Led, evangelical selling |
-| Cannot reach the seller | Partnerships, channel, marketplace, group purchasing | Channel strategy, rarely a "motion" at all |
-| Cannot tell whether the fit holds | Trial, sandbox, self-serve evaluation | Product-Led |
-
-**The industry treats Product-Led and Sales-Led as opposites, and they are instruments for the same component.** One resolves a buyer who does not know the category exists. The other resolves a buyer who knows the category and cannot verify this particular fit. Both are spending against search, at different points inside it.
+**So the industry treats Product-Led and Sales-Led as opposites, and they are instruments for the same component.** One resolves a buyer who does not know the category exists. The other resolves a buyer who knows the category and cannot verify this particular fit. Both are spending against search, at different points inside it.
 
 What separates them in practice is level rather than kind. A trial cannot resolve a six-month integration question, so self-service works where the other two components are also small. Education can run at any level, which is why it survives upmarket and trials often do not.
 

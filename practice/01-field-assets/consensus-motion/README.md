@@ -9,6 +9,8 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 # The Consensus Motion
 
+Motion: **Consensus-led**. Structural level, consensus-dominant direction.
+
 **This directory is nearly empty, and that is the finding rather than an oversight.**
 
 Consensus-dominant is a routing destination. The [Deal Triage Calculator](../deal-triage-calculator.md) will send deals here, and when it does, the instruments waiting for them are one calculator and two sections borrowed from other motions. That is not a motion. This file exists so the gap is visible in the file tree instead of being discovered by a rep at a forecast call.

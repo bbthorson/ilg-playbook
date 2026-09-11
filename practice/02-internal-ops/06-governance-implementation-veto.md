@@ -80,7 +80,7 @@ The authority binds in both directions. Each party to the decision holds exposur
 
 The veto is a gate, not a diagnosis. It stops a deal that should not proceed, and it does nothing to make that deal viable. A team that finds itself exercising the authority frequently has a qualification problem upstream in the Deal Triage Calculator, and adding gate strength will not repair it.
 
-The veto also cannot substitute for delivery capability. Boundary condition 6 in [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) applies here: an organization that lacks the depth to run a genuine Red Team will produce veto holders who clear everything, and the structure will be formally correct and practically empty.
+The veto also cannot substitute for delivery capability. Disqualification condition 6 in [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) section 4 applies here: an organization that lacks the depth to run a genuine Red Team will produce veto holders who clear everything, and the structure will be formally correct and practically empty.
 
 ---
 

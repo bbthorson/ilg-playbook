@@ -103,7 +103,7 @@ Named motions become regions of the space rather than members of a list.
 | Long, search-dominant | $\hat{F}_{search} \ge 0.50$ | Search-led | Present and thin |
 | Long, consensus-dominant | $\hat{F}_{consensus} \ge 0.50$ | Unnamed | Absent |
 | Long, implementation-dominant | $\hat{F}_{implementation} \ge 0.50$ | Implementation-led | Present and developed |
-| Long, mixed | No component reaches 0.50 | Unnamed | Composed from the two above it |
+| Long, no component at 0.50 | None reaches 0.50 | Composed | The top two instrument sets in proportion |
 
 The dominance threshold of 0.50 is chosen, and a vector reaching no component's threshold is read as mixed rather than forced into the nearest label. The three motion names survive as names for regions. What does not survive is treating them as a list a deal is assigned to.
 

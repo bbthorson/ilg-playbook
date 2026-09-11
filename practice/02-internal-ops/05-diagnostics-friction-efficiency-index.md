@@ -60,7 +60,7 @@ $$\text{RMS} = 1 - \frac{N_{unresolved}}{N_{identified}}$$
 
 **This corrects an arithmetic error in the canvas form.** That version read $N_{edge} / (N_{edge} + N_{unresolved})$, which double-counts. Unresolved cases are a subset of identified cases, so they appear in both numerator and denominator. A Red Team that identified ten edge cases and resolved none scored 10/20 = 0.50, reporting half the risk mitigated when in fact none was. The corrected form returns 0.
 
-**RMS rewards shallow discovery, and must never be read alone.** A Red Team that surfaces two edge cases and closes both scores 1.00. One that surfaces forty and closes thirty-five scores 0.875. The lazier workshop wins. This is precisely the Happy-Ears Red Team failure mode named in [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md), and a metric that rewards it will produce it.
+**RMS rewards shallow discovery, and must never be read alone.** A Red Team that surfaces two edge cases and closes both scores 1.00. One that surfaces forty and closes thirty-five scores 0.875. The lazier workshop wins. This is precisely the shallow-workshop failure the [Red Team Protocol](../01-field-assets/implementation-motion/02-validation-red-team-protocol.md) is built to prevent, and a metric that rewards it will produce it.
 
 Report $N_{identified}$ next to RMS every time, and treat a low count as the finding. Below roughly eight identified edge cases on a genuine Structural deal, the workshop did not do its job, and the RMS figure carries no information regardless of how high it is.
 

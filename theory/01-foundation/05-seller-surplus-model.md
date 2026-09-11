@@ -118,7 +118,7 @@ $$S_{seller} = \sum_{t=1}^{T} \frac{r_t \left(V_t - C_{deliver,t} - C_{sustain,t
 
 The single-shot form in section 2 is this expression with $T = 1$ and $C_{sustain} = 0$. Two consequences follow immediately, and the first is a correction.
 
-**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. [01-motion-taxonomy.md](./01-motion-taxonomy.md) carries the same assumption in its disqualification list, where a motion is ruled out when pre-sale cost exceeds first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify.
+**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. [01-motion-taxonomy.md](./01-motion-taxonomy.md) section 4 carries the same assumption in its disqualification list, where a motion is ruled out when pre-sale cost exceeds first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify.
 
 **$C_{sustain}$ is not overhead.** It is the spend that holds $r_t$ up, and section 7.2 says what it actually buys.
 

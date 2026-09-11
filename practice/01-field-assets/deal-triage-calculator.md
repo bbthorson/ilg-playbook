@@ -208,7 +208,7 @@ $$\hat{F}_k = \frac{F_k (1 + \hat{\Delta}_k)}{\sum_j F_j (1 + \hat{\Delta}_j)}$$
 | **Search-dominant** | $\hat{F}_{search} \ge 0.50$ |
 | **Consensus-dominant** | $\hat{F}_{consensus} \ge 0.50$ |
 | **Implementation-dominant** | $\hat{F}_{implementation} \ge 0.50$ |
-| **Mixed** | No component reaches 0.50 |
+| **Composed** | No component reaches 0.50 |
 
 **Level uses base friction and direction uses amplified friction, and the difference is the point.** Level is asset specificity, a property of the deal that discovery does not change. Direction is where the unresolved cost currently sits, and it moves every time an artifact closes a gap. A deal that opens implementation-dominant rotates toward consensus as the Blueprint lands. Re-run this step at every artifact boundary, because the answer is supposed to change.
 
@@ -225,13 +225,15 @@ $$\hat{F}_k = \frac{F_k (1 + \hat{\Delta}_k)}{\sum_j F_j (1 + \hat{\Delta}_j)}$$
 
 **Then the vector.**
 
-| Level | Direction | Run |
-|---|---|---|
-| Turnkey | Any | Velocity instruments. [Standard order protocol](./turnkey-motion/01-standard-order-protocol.md), [prospect evaluation](./turnkey-motion/prospect-evaluation.md), [order form](./turnkey-motion/order-form.md). |
-| Structural | Search-dominant | Search instruments. [Education-led motion](./search-motion/01-education-motion.md), reference architectures, category definition, channel work. |
-| Structural | Consensus-dominant | Consensus instruments. Stakeholder mapping from the [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md), then the [Red Team](./implementation-motion/02-validation-red-team-protocol.md) workshop, scored by the [Consensus Friction Calculator](./consensus-friction-calculator.md). **This instrument set is the thinnest in the repository.** See the note below. |
-| Structural | Implementation-dominant | Implementation instruments in sequence. [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) → [Red Team](./implementation-motion/02-validation-red-team-protocol.md) → [MIP](./implementation-motion/03-closing-mutual-implementation-plan.md) → [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
-| Structural | Mixed | Run the top two components in proportion, heaviest first. Do not pick one and call it the motion. |
+| Level | Direction | Motion | Run |
+|---|---|---|---|
+| Turnkey | Not evaluated | **Turnkey** | [Standard order protocol](./turnkey-motion/01-standard-order-protocol.md), [prospect evaluation](./turnkey-motion/prospect-evaluation.md), [order form](./turnkey-motion/order-form.md). |
+| Structural | Search-dominant | **Search-led** | [Education motion](./search-motion/01-education-motion.md), reference architectures, category definition, channel work. |
+| Structural | Consensus-dominant | **Consensus-led** | Stakeholder mapping from the [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md), then the [Red Team](./implementation-motion/02-validation-red-team-protocol.md) workshop, sized by the [Consensus Friction Calculator](./consensus-friction-calculator.md). **The thinnest instrument set here.** See [consensus-motion/](./consensus-motion/) and the note below. |
+| Structural | Implementation-dominant | **Implementation-led** | In sequence: [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) → [Red Team](./implementation-motion/02-validation-red-team-protocol.md) → [MIP](./implementation-motion/03-closing-mutual-implementation-plan.md) → [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
+| Structural | No component at 0.50 | **Composed** | The top two instrument sets in proportion, heaviest first. Do not pick one and call it the motion. |
+
+The five names in the Motion column are the framework's field names and the values this instrument returns. [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) specifies each one.
 
 ### The governance form
 

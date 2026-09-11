@@ -10,9 +10,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 # The Standard Order Protocol (The Accelerator)
 
 Version: 1.0  
-Component: none dominant. Turnkey level, below the boundary.  
+Motion: **Turnkey**. Level below 15, direction not evaluated.  
 Audience: Account Executives / Sales Ops / CS Lead  
-Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" handoffs.
+Goal: To maximize speed on Turnkey deals while preventing "Lemon" handoffs.
 
 ## The Triage Check
 

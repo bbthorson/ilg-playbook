@@ -275,7 +275,7 @@ def friction_vector(f_search, f_consensus, f_implementation,
     change which motion a deal needed.
 
     `dominant` names the component holding at least DOMINANCE_THRESHOLD of
-    effective cost, or "mixed" when none does. The threshold is chosen.
+    effective cost, or "composed" when none does. The threshold is chosen.
     """
     values = _check_components(f_search, f_consensus, f_implementation)
     gaps = (gap_search, gap_consensus, gap_implementation)
@@ -286,7 +286,7 @@ def friction_vector(f_search, f_consensus, f_implementation,
     effective = effective_cost_per_component(*(values + gaps))
     direction = tuple(f * (1.0 + _require_normalized(g, "friction_vector"))
                       / effective for f, g in zip(values, gaps))
-    dominant = "mixed"
+    dominant = "composed"
     for name, share in zip(COMPONENTS, direction):
         if share >= DOMINANCE_THRESHOLD:
             dominant = name
@@ -1449,7 +1449,7 @@ def triage(workflow_maturity,
         "implementation": "Structural and implementation-dominant: run the "
                           "Blueprint, Red Team, MIP and Adoption Review in "
                           "sequence.",
-        "mixed": "Structural with no component at half of effective cost. Run "
+        "composed": "Structural with no component at half of effective cost. Run "
                  "the top two in proportion, heaviest first, rather than "
                  "picking one and calling it the motion.",
     }

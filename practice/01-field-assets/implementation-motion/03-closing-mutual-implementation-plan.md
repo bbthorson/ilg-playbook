@@ -10,7 +10,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 # The Mutual Implementation Plan (The Execution)
 
 Version: 2.0  
-Phase: 03\_The\_How (Technical Governance)  
+Motion: **Implementation-led**. Third of four artifacts, after the Red Team.  
 Audience: Project Managers / Procurement / Legal  
 Goal: To contractualize the outcome and lock in the "Infinite Game."
 

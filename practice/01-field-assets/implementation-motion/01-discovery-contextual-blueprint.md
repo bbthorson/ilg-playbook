@@ -11,7 +11,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Version:** 2.0 
 
-**Phase:** 01\_The\_Why (Business & Political Context) 
+**Motion:** **Implementation-led**. First of four artifacts. 
 
 **Audience:** Economic Buyer / Champion 
 

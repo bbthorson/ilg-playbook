@@ -92,11 +92,11 @@ Plus the seller-side layer:
 
 | Audience | Start with | Then read | Skip |
 |---|---|---|---|
-| **Executive / CRO** | This guide → [Constitution](../01-foundation/00-tcg-constitution.md) | [Sales Motion Comparison](../01-foundation/01-motion-taxonomy.md) | Deep theory papers unless interested |
+| **Executive / CRO** | This guide → [Constitution](../01-foundation/00-tcg-constitution.md) | [Motion Taxonomy](../01-foundation/01-motion-taxonomy.md) | Deep theory papers unless interested |
 | **Sales Practitioner** | This guide → [CFIR](./cfir.md) (Saboteur Matrix) | [Costly Signals](./costly-signals.md), [Prospect Theory](./prospect-theory.md) | Mathematical proofs |
-| **Sales Enablement / Ops** | [RE-AIM](./re-aim-framework.md) (KPI tables) → [Game Theory and NRR](./game-theory-and-nrr.md) (compensation) | Full [CFIR](./cfir.md), [Sales Motion Comparison](../01-foundation/01-motion-taxonomy.md) | Nothing — read everything |
+| **Sales Enablement / Ops** | [RE-AIM](./re-aim-framework.md) (KPI tables) → [Game Theory and NRR](./game-theory-and-nrr.md) (compensation) | Full [CFIR](./cfir.md), [Motion Taxonomy](../01-foundation/01-motion-taxonomy.md) | Nothing — read everything |
 | **Academic / Researcher** | [TCE](./transaction-cost-economics.md) → [Costly Signals](./costly-signals.md) → [Prospect Theory](./prospect-theory.md) | [Game Theory](./game-theory-and-nrr.md), [CFIR](./cfir.md), [RE-AIM](./re-aim-framework.md) | [Fear of Failure](./fear-of-failure.md) unless reviewing data |
-| **Marketing / Content** | This guide → [Sales Motion Comparison](../01-foundation/01-motion-taxonomy.md) | [Costly Signals](./costly-signals.md), [Channel Collapse](./channel-collapse.md) | Detailed implementation science |
+| **Marketing / Content** | This guide → [Motion Taxonomy](../01-foundation/01-motion-taxonomy.md) | [Costly Signals](./costly-signals.md), [Channel Collapse](./channel-collapse.md) | Detailed implementation science |
 
 ---
 

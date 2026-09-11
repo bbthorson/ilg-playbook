@@ -249,10 +249,10 @@ class TestFrictionVector(unittest.TestCase):
             for a, b in zip(shares[0], other):
                 self.assertAlmostEqual(a, b)
 
-    def test_a_vector_with_no_component_at_half_reads_as_mixed(self):
+    def test_a_vector_with_no_component_at_half_reads_as_composed(self):
         v = m.friction_vector(3.0, 3.0, 3.0, m.NormalizedGap(0.0),
                               m.NormalizedGap(0.0), m.NormalizedGap(0.0))
-        self.assertEqual(v.dominant, "mixed")
+        self.assertEqual(v.dominant, "composed")
 
     def test_component_gap_counts_what_is_unevidenced(self):
         # Section 2.4: four stakeholders in scope, one with a documented
@@ -1070,14 +1070,14 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertEqual(result.route, "consensus")
         self.assertIn("consensus-instrument-set-is-thin", result.flags)
 
-    def test_a_vector_with_no_dominant_component_routes_to_mixed(self):
+    def test_a_vector_with_no_dominant_component_routes_to_composed(self):
         even = dict(self.STRUCTURAL_DEAL, n_alternatives=8, search_evidence=0,
                     n_vetoes=7, n_with_documented_objective=0,
                     integration_points=6, changed_workflows=3,
                     undocumented_exceptions=2, items_with_artifact=0,
                     divergent_steps=0)
         result = m.triage(**even)
-        self.assertEqual(result.route, "mixed")
+        self.assertEqual(result.route, "composed")
         self.assertEqual(result.deal_class, m.STRUCTURAL)
 
     def test_a_large_aligned_deal_is_flagged_for_over_frictioning(self):
@@ -1152,7 +1152,7 @@ class TestDealTriageCalculator(unittest.TestCase):
                           items_with_artifact=1, divergent_steps=0)):
             routes.add(m.triage(**deal).route)
         self.assertTrue(routes <= set(m.COMPONENTS) | {"turnkey", m.CHAOS_TRAP,
-                                                       "mixed"})
+                                                       "composed"})
 
 
 # ==========================================================================

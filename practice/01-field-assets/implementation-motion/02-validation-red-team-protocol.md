@@ -10,7 +10,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 # The Red Team Protocol (The Validator)
 
 Version: 2.0  
-Phase: 02\_The\_What (Product Reality & Stress Test)  
+Motion: **Implementation-led**. Second of four artifacts, after the Blueprint.  
 Audience: Technical Evaluators / End Users / Skeptics  
 Goal: To convert "Rational Fear" into "Confidence" and identify the Saboteur.
 
