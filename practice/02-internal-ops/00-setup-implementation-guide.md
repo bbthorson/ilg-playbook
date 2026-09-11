@@ -19,7 +19,7 @@ Goal: To calibrate the ILG framework to your specific product, market, and tech 
 
 ## Phase 1: The Calibration Workshop
 
-*You cannot use the Deal Triage Calculator out of the box. A generic score of "5" means nothing. You must define what "High Friction" looks like for YOUR product.*
+*You cannot use the Deal Triage Calculator out of the box. The counts are of your integration points, your veto holders, and your exception paths, and the bands converting them to component scores are chosen rather than fitted. Define what each count means for YOUR product before anyone scores a deal with it.*
 
 Attendees: VP Sales, VP Customer Success, Lead Solutions Engineer, Product Marketing.  
 Time: 90 Minutes.

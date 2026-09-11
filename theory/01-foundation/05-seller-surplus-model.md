@@ -140,7 +140,7 @@ After a forward-deployed engagement the incumbent's $I_{seller}$ approaches zero
 
 That is an information asset rather than a hostage. The buyer is not trapped, the alternative is genuinely more expensive, and the buyer can verify the comparison themselves. It also produces the renewal behaviour the lock-in story predicts, without raising $T$.
 
-**It decays at a rate the Constitution already names.** $\Delta_A(t) = \Delta_A(0) + \gamma t$ absent maintenance, and $\gamma$ runs on staff turnover, workflow change, and systems the seller never saw installed. $C_{sustain}$ is the spend that holds $\gamma$ down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature.
+**It decays at a rate the Constitution already names.** $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ absent maintenance. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
 
 The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom III. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
 

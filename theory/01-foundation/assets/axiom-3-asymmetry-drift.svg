@@ -78,5 +78,5 @@
   <circle cx="78" cy="374.85" r="4.2" fill="var(--good)"/>
   <text class="note-muted" x="99.6" y="389.39" text-anchor="start">At go-live</text>
   <text class="axis-label" x="402" y="448" text-anchor="middle">Months after signature</text>
-  <text class="axis-label" x="0" y="0" text-anchor="middle" transform="translate(22 244) rotate(-90)">Incumbent asymmetry gap</text>
+  <text class="axis-label" x="0" y="0" text-anchor="middle" transform="translate(22 244) rotate(-90)">Incumbent implementation gap</text>
 </svg>

@@ -14,7 +14,7 @@ The three states (Market, Deal at T0, Relationship at T1+) are the framework's p
 
 ## Reading order
 
-1. **[01-sales-motion-comparison.md](./01-sales-motion-comparison.md)** — *(start here if you're new)* Quick decision framework: when ILG, when PLG, when SLG. Gives you the lay of the land before you dive into theory.
+1. **[01-sales-motion-comparison.md](./01-sales-motion-comparison.md)** — *(start here if you're new)* What each named motion contains, once a motion is a region of the friction vector's space rather than an item on a list. Gives you the lay of the land before you dive into theory.
 2. **[00-ilg-constitution.md](./00-ilg-constitution.md)** — The full economic and behavioral framework, structured as a deductive system. Four parts:
    - **Part I:** The Three Axioms — Law of Transaction Cost Composition, Law of Uncertainty Inflation, Law of Governance
    - **Part II:** Derived Concepts — primary derivations from each axiom (Boundary Condition, Friction Allocation Principles, Three Sales Levers, Recursive Cooperation, Reputation Depreciation), bridge concepts (Decay Clock, Effective Cost, Staged Commitment, Surplus)
@@ -24,9 +24,7 @@ The three states (Market, Deal at T0, Relationship at T1+) are the framework's p
 5. **[04-glossary-and-notation.md](./04-glossary-and-notation.md)** — *(reference, read as needed)* Every symbol and term in one place, with a pointer to where each is canonically defined. The notation index is itself canonical, since symbols had no home before it. Includes a disambiguation section for the five symbol pairs that look alike and mean different things.
 6. **[05-seller-surplus-model.md](./05-seller-surplus-model.md)** — The seller's side of the transaction. The Constitution models what the buyer gains and pays; this specifies what the seller spends before signature, what portion of it is exposed, and when the spend is worth making. Read it before designing a forward-deployed or implementation-heavy engagement.
 
-### Under review
-
-**[06-friction-vector.md](./06-friction-vector.md)** — *(proposal, does not govern)* Derives motion selection from the direction and magnitude of the three-component cost vector, so that a motion becomes a region of one space rather than an item on a list. Section 9 lists what adopting it would rewrite, rebuild and retire. Until it is adopted, item 1 above is still the answer to "which motion do I run."
+7. **[06-friction-vector.md](./06-friction-vector.md)** — Derives motion selection from the direction and length of the three-component cost vector. Adopted in Constitution v17.0, which took its per-component amplification into Axiom II and its vector notation into Axiom I. Section 9 records what adoption did not settle and section 10 records what it changed.
 
 ## What goes here vs. elsewhere
 

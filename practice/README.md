@@ -14,9 +14,9 @@ status: active
 
 Tools reps fill in on a live deal. Includes:
 - The [process calculator](01-field-assets/deal-triage-calculator.md) (SLG / PLG / ILG triage)
-- The four ILG motion artifacts (Blueprint → Red Team → MIP → [Sustaining Adoption Review](01-field-assets/ilg-motion/04-sustaining-adoption-review.md)) for Structural deals
+- The four implementation-component artifacts (Blueprint → Red Team → MIP → [Sustaining Adoption Review](01-field-assets/ilg-motion/04-sustaining-adoption-review.md)) for Structural deals whose direction points at implementation
 - The PLG velocity protocol + order form for Turnkey deals
-- The [SLG education-led motion](01-field-assets/slg-motion/01-education-led-motion.md) for nascent markets, written mainly as a counter-example to ILG
+- The [education-led motion](01-field-assets/slg-motion/01-education-led-motion.md) for search-dominant deals, written mainly as a counter-example to the implementation chain
 
 ### [02-internal-ops/](02-internal-ops/)
 

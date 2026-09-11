@@ -41,7 +41,7 @@ Asks escalate in cost. Run them in order, because a buyer who fails an early run
 | **5** | A named project manager with committed hours | Budgeted headcount | Named delivery resources and an escalation path |
 | **6** | Paid diagnostic or pilot | Real money, internal approval | Fixed scope, fixed price, defined exit |
 
-Rungs 1 through 3 belong in Blueprint discovery. Rungs 4 and 5 gate the Red Team and the MIP. Rung 6 applies when the buyer requests a pilot, which under the Deal Triage Calculator override already classifies the deal as Structural.
+Rungs 1 through 3 belong in Blueprint discovery. Rungs 4 and 5 gate the Red Team and the MIP. Rung 6 applies when the buyer requests a pilot, which under the Deal Triage Calculator override already routes the deal to the implementation instruments at Structural level.
 
 ---
 

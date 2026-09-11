@@ -84,7 +84,7 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 
 **Common violations.** A Structural deal sold with PLG-grade signals (under-frictioned). A Turnkey deal sold with ILG-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
 
-**Fix.** Match signal weight to stakes. The [Deal Triage Calculator](./deal-triage-calculator.md) classifies deals by stage and cost score; the signal mechanism should scale to whatever the calculator returns.
+**Fix.** Match signal weight to stakes. The [Deal Triage Calculator](./deal-triage-calculator.md) returns a level and a direction. The signal's weight should scale to the level, and the component it targets should match the direction.
 
 ---
 

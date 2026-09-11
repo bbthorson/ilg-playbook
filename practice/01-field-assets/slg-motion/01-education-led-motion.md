@@ -10,7 +10,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 # The Education-Led Motion (SLG)
 
 Version: 1.0
-Phase: Lane 0 (Nascent market / The Pitch)
+Component: Search. Deals whose direction points at the buyer's inability to find and compare.
 Audience: Account Executives / Founders selling into an unformed category
 Goal: To sell in a market that does not yet know it is a market, and to recognize the moment that stops being true.
 
@@ -18,7 +18,7 @@ Goal: To sell in a market that does not yet know it is a market, and to recogniz
 
 | | |
 |---|---|
-| **Inputs** | A deal scoring 0 to 1 Yes on Step 1 of the [Deal Triage Calculator](../deal-triage-calculator.md). Nascent market, category not legible. |
+| **Inputs** | A deal the [Deal Triage Calculator](../deal-triage-calculator.md) reads as search-dominant at a level of 15 or above. The category is not legible to this buyer. |
 | **Outputs** | A visionary buyer who can name the problem, quantify the cost of inaction, and fund a line item that did not previously exist. |
 | **Next step** | Standard commercial terms. If any pivot trigger below fires, re-run the calculator and deploy the [Contextual Blueprint](../ilg-motion/01-discovery-contextual-blueprint.md). |
 | **Owner** | AE or founder. No solutions engineering required at this stage. |
@@ -31,9 +31,9 @@ Goal: To sell in a market that does not yet know it is a market, and to recogniz
 
 Before using this motion, confirm you belong in it.
 
-- **Step 1 market stage:** 0 or 1 Yes. Two or more means you are not here.
+- **Direction:** search-dominant, meaning the search component holds at least half of effective cost. Any other reading means you are not here.
 - **Step 0 workflow gate:** passed. A Level 1 undefined workflow is a [Chaos Trap](../deal-triage-calculator.md), not an SLG deal, no matter how new the category looks.
-- **Override check:** the buyer has NOT asked for a pilot, POC, or custom security review. Any of those auto-classifies the deal as ILG regardless of market stage.
+- **Override check:** the buyer has NOT asked for a pilot, POC, or custom security review. Any of those routes to the implementation instruments whatever the counts say, because the buyer is reporting a perceived risk the counts missed.
 
 ## Where the real playbook lives
 
@@ -67,7 +67,7 @@ The rule in one line: **in SLG you are selling the problem, and ILG artifacts al
 
 The most common routing error in this repo's framework is reading a mature market as nascent. Absence of visible competition feels like a new category and usually is not. Run these before committing to SLG.
 
-**1. The three-vendor test.** Ask the buyer directly to name three vendors who solve this. If they can, the category is legible to them and you are in a mature market regardless of how new it feels to you. Re-run Step 2 of the calculator.
+**1. The three-vendor test.** Ask the buyer directly to name three vendors who solve this. If they can, the category is legible to them regardless of how new it feels to you, two of the four search evidence items are satisfied, and the search gap has largely closed. Re-count and read the direction again.
 
 **2. The line-item test.** Ask where the budget would come from. A genuinely nascent deal has no line item and the buyer must create one, usually by taking it from something else. If a budget line already exists with your category's name on it, the market formed without you noticing.
 
@@ -95,12 +95,12 @@ Any one of these means the deal is no longer SLG. Stop, re-run the [Deal Triage 
 
 | Trigger | What it signals | Action |
 |---|---|---|
-| Buyer names 3+ credible vendors | The category went legible, possibly during your own sales cycle | Re-score Step 1. Likely Mature. |
+| Buyer names 3+ credible vendors | The category went legible, possibly during your own sales cycle | Re-count. The search gap has closed and the vector has rotated. |
 | Buyer asks for a pilot or POC | The buyer perceives Structural-level implementation risk | **Auto-classify ILG.** Calculator override rule, no judgment required. |
-| Procurement, security review, or legal engages | Consensus cost just arrived | Re-score Step 2. Deploy Blueprint. |
+| Procurement, security review, or legal engages | Consensus cost just arrived | Re-count the veto holders. Deploy the Blueprint's stakeholder mapping. |
 | Stakeholder count passes 3 | You now have a buying committee and a probable saboteur | Deploy Blueprint. Map the committee. |
 | Integration scope reaches core systems | Asset specificity ($k$) rose above the threshold | Deploy Blueprint, then Red Team. |
-| Analyst coverage or a category name appears | The market matured underneath you | Re-score Step 1. |
+| Analyst coverage or a category name appears | The market matured underneath you | Re-count the search evidence items. |
 
 [01-sales-motion-comparison.md](../../../theory/01-foundation/01-sales-motion-comparison.md) describes the two routes here. A **maturing category** moves the whole market and every deal in it. **Complexity discovery** moves one deal that turned out deeper than scoped. The response is the same in both cases, and the second one is the one reps miss, because nothing external changes to prompt a re-score.
 
@@ -110,6 +110,6 @@ Any one of these means the deal is no longer SLG. Stop, re-run the [Deal Triage 
 ## Related
 
 - **Theory:** [01-sales-motion-comparison.md](../../../theory/01-foundation/01-sales-motion-comparison.md) covers SLG vs. ILG in depth, including why educational friction and structural friction call for opposite behavior.
-- **Triage:** [deal-triage-calculator.md](../deal-triage-calculator.md). Step 1 routes here. Step 3 routes out.
+- **Triage:** [deal-triage-calculator.md](../deal-triage-calculator.md). A search-dominant direction routes here, and any rotation away from search routes out.
 - **Constitution:** [Axiom I and the Boundary Condition](../../../theory/01-foundation/00-ilg-constitution.md). Over-frictioning a nascent deal and under-frictioning a matured one are the two failure modes this document exists to prevent.
 - **Sibling motions:** [ilg-motion/](../ilg-motion/) for Structural deals, [plg-motion/](../plg-motion/) for Turnkey deals.

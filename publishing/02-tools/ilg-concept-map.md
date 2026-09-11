@@ -29,6 +29,8 @@ Every dominant B2B sales methodology has been an evolutionary response to the sh
 ## Layer 2: The Market Evolution Model (The Potential Well Curve)
 
 ### The Three Market Phases
+
+> **These are eras, not a routing taxonomy.** Constitution v17.0 retired Nascent, Efficient and Saturated as a way of deciding which motion a deal takes, because they were a proxy for a friction profile that is now measured directly. The historical claim below is unaffected: these are the periods in which each cost came to dominate, which is why the ILG motion arrived when it did. Do not route a live deal off this table. Route off the direction the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) returns.
 | Phase | Era | Dominant Cost | Buyer's Question | GTM Motion |
 |-------|-----|---------------|-----------------|------------|
 | **Nascent** | 1950s-1980s | Search | "What solutions exist?" | Sales-Led Growth (SLG) |

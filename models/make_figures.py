@@ -299,7 +299,11 @@ def panel_2():
     gap. That argument is exactly a comparison of three curves, so the figure
     is the argument rather than a decoration on it.
     """
-    c_list, c_discounted = 3.0, 1.2
+    # In annual contract values, per 03-mathematical-models.md section 1.7.
+    # A deal at list price is 1 ACV of direct cost; the discounted line is the
+    # same deal at 40 percent of it, which is a steeper concession than any
+    # real desk would approve and still does not reach the quadratic term.
+    c_list, c_discounted = 1.0, 0.4
     samples = [x / 100.0 for x in range(0, 101)]
     gaps = [m.NormalizedGap(x) for x in samples]
 
@@ -310,7 +314,7 @@ def panel_2():
     top = m.reduced_cost(m.NormalizedGap(1.0), c=c_list)
     linear = [(x, c_list + (top - c_list) * x) for x in samples]
 
-    axes = Axes((0, 1), (0, 6.2))
+    axes = Axes((0, 1), (0, 3.6))
     body = [
         axes.path(linear, "good dashed thin"),
         axes.path(discounted, "primary dashed"),
@@ -333,14 +337,14 @@ def panel_2():
         'x2="{}" y2="{}" stroke="var(--muted)"/>'.format(
             _n(PAD_L), _n(axes.py(floor_y)),
             _n(axes.px(wide)), _n(axes.py(floor_y))),
-        axes.label(0.02, floor_y - 0.42, "Discounted price on its own",
+        axes.label(0.02, floor_y - 0.24, "Discounted price on its own",
                    "note-muted"),
         '  <line class="curve thin" stroke="var(--ink)" x1="{}" y1="{}" '
         'x2="{}" y2="{}"/>'.format(
             _n(axes.px(wide)), _n(axes.py(floor_y)),
             _n(axes.px(wide)), _n(axes.py(curve_y))),
         axes.dot(wide, curve_y),
-        axes.label(0.985, floor_y - 0.42,
+        axes.label(0.985, floor_y - 0.24,
                    "What uncertainty adds. No discount reaches it.",
                    "note", anchor="end"),
     ]
@@ -349,10 +353,10 @@ def panel_2():
         subtitle=UNFITTED,
         axes=axes,
         x_label="Normalized bilateral asymmetry gap",
-        y_label="Perceived transaction cost",
+        y_label="Perceived cost, in annual contract values",
         x_ticks=[(0, "0"), (0.25, "0.25"), (0.5, "0.5"), (0.75, "0.75"),
                  (1, "1.0")],
-        y_ticks=[(0, "0"), (2, "2"), (4, "4"), (6, "6")],
+        y_ticks=[(0, "0"), (1, "1"), (2, "2"), (3, "3")],
         body=body,
         desc="Perceived transaction cost plotted against the normalized "
              "bilateral asymmetry gap. The list-price curve is convex, rising "
@@ -371,13 +375,20 @@ def panel_2():
 # ==========================================================================
 
 def panel_3():
-    """gap_hat(t) = gap_hat(0) + gamma t, maintained against unmaintained.
+    """gap_hat_implementation(t) = gap_hat(0) + gamma_impl * t.
 
     Section 7.2 of 05-seller-surplus-model.md argues the durable asset is
     asymmetric information rather than lock-in: after a forward-deployed
-    engagement the incumbent's gap approaches zero while a challenger starts
-    near the ceiling. The incumbent's advantage is the vertical distance
-    between the two, and it erodes at gamma unless C_sustain holds gamma down.
+    engagement the incumbent's implementation gap approaches zero while a
+    challenger starts near the ceiling. The incumbent's advantage is the
+    vertical distance between the two, and it erodes at gamma_implementation
+    unless C_sustain holds that rate down.
+
+    The component matters. Constitution v17.0 splits drift into three rates,
+    and the drivers this curve runs on, staff turnover, workflow change and
+    systems installed unseen, are all implementation drivers. An incumbent
+    whose consensus gap reopens loses the account a different way, faster and
+    without a curve.
     """
     start = m.NormalizedGap(0.08)
     challenger = 1.0
@@ -409,7 +420,7 @@ def panel_3():
         subtitle=UNFITTED,
         axes=axes,
         x_label="Months after signature",
-        y_label="Incumbent asymmetry gap",
+        y_label="Incumbent implementation gap",
         x_ticks=[(0, "0"), (12, "12"), (24, "24"), (36, "36")],
         y_ticks=[(0, "0"), (0.5, "0.5"), (1.0, "1.0")],
         body=body,

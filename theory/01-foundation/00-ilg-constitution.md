@@ -30,11 +30,11 @@ The State column is the framework's primary index. A practitioner arrives holdin
 
 | State | The question it answers | Where the answer lives |
 |---|---|---|
-| **Market** | Which motion is viable here at all? | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
+| **Market** | How long is the friction vector, and where does it point? | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), [06-friction-vector.md](./06-friction-vector.md), [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
 | **Deal** (T0) | What must be true, and what must the seller supply, before signature? | [Contextual Blueprint](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) → [Red Team](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md) → [MIP](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) |
 | **Relationship** (T1+) | Does the surplus survive, and can a competitor take it? | [Sustaining Adoption Review](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
 
-**Each axiom has a home state, and none is confined to it.** Axiom II runs past signature, where $\Delta_A(t) = \Delta_A(0) + \gamma t$ governs how fast an incumbent's advantage erodes. Axiom III runs at T0, because the MIP is signed at close. Axiom I recurs whenever a category commoditizes and the motion must be re-scored. Treat the mapping as where each axiom does most of its work, not as a partition.
+**Each axiom has a home state, and none is confined to it.** Axiom II runs past signature, where $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ governs how fast an incumbent's advantage erodes, and which component it erodes in. Axiom III runs at T0, because the MIP is signed at close. Axiom I recurs whenever a category commoditizes and the motion must be re-scored. Treat the mapping as where each axiom does most of its work, not as a partition.
 
 Together they describe the *existence, economics, and dynamics* of any transaction in a high-friction market. Each axiom generates its own mathematical content. The equations integrate into the Surplus equation in Part III.
 
@@ -44,13 +44,13 @@ Each axiom carries one figure, plotting the equation stated under that axiom. Ev
 
 ![Two exponential decay curves falling toward a floor at the value of the next best alternative. Organizational inertia alone reaches the floor in the second month. A named external catalyst holds value above it until the eleventh.](./assets/axiom-1-urgency-decay.svg)
 
-**Axiom II.** Perceived transaction cost against the bilateral asymmetry gap, $y = a \hat{\Delta}_A^2 + c$, with a linear cost of uncertainty shown for contrast. A discount lowers $c$ and leaves the quadratic term untouched, which is why the bracketed distance at a wide gap is the share of perceived cost that no price concession reaches.
+**Axiom II.** Perceived transaction cost against the deal-level asymmetry gap, $y = a \hat{\Delta}_A^2 + c$, with a linear cost of uncertainty shown for contrast. Both axes are in annual contract values, so the list-price curve starts at 1. A discount lowers $c$ and leaves the quadratic term untouched, which is why the bracketed distance at a wide gap is the share of perceived cost that no price concession reaches. The figure plots the reduced form, which carries no direction, so it argues and does not diagnose.
 
 ![A convex cost curve rising steeply as the asymmetry gap widens, a discounted curve shifted down by a constant amount without changing shape, and a straight line showing what a linear cost of uncertainty would look like instead.](./assets/axiom-2-cost-convexity.svg)
 
-**Axiom III.** The incumbent's asymmetry gap after signature, $\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$, against the gap a challenger starts from. The vertical distance between them is the incumbent's advantage, and it erodes at $\gamma$ unless sustaining spend holds $\gamma$ down. The mechanism is in [05-seller-surplus-model.md](./05-seller-surplus-model.md) section 7.2.
+**Axiom III.** The incumbent's implementation gap after signature, $\hat{\Delta}_{implementation}(t) = \hat{\Delta}_{implementation}(0) + \gamma_{implementation} t$, against the gap a challenger starts from. The vertical distance between them is the incumbent's advantage, and it erodes unless sustaining spend holds the rate down. The component is named because the drivers are implementation drivers: staff turnover, workflow change, and systems installed unseen. An incumbent whose consensus gap reopens loses the account faster and without a curve. The mechanism is in [05-seller-surplus-model.md](./05-seller-surplus-model.md) section 7.2.
 
-![Two rising lines from a near-zero asymmetry gap at go-live, against a horizontal line marking where a challenger begins. The unmaintained line approaches the challenger within three years. The maintained line stays well below it.](./assets/axiom-3-asymmetry-drift.svg)
+![Two rising lines from a near-zero implementation gap at go-live, against a horizontal line marking where a challenger begins. The unmaintained line approaches the challenger within three years. The maintained line stays well below it.](./assets/axiom-3-asymmetry-drift.svg)
 
 ---
 
@@ -90,7 +90,7 @@ The boundary also has time dynamics. Value erodes from the triggering event:
 
 $$V_{effective}(t) = V_{solution} \cdot e^{-\delta t}$$
 
-As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best}$, including the "make" alternative. This is one component of the Decay Clock. The other component lives under Axiom II as $\Delta_A(t)$ dynamics.
+As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best}$, including the "make" alternative. This is one component of the Decay Clock. The other lives under Axiom II as $\hat{\Delta}_k(t)$ dynamics, one rate per friction component.
 
 **Failure modes.**
 

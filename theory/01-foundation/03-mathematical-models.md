@@ -263,7 +263,7 @@ $$\delta = \frac{\lambda_{inertia}}{1 + \gamma_r E_{external}}$$
 | $E_{external}$ | Magnitude of external catalyst (regulatory mandate, competitive threat, market shift) | $[0, 10]$ | measured |
 | $\gamma_r$ | Responsiveness converting external pressure into internal action | $[0.1, 1.0]$ | 0.5 |
 
-Note that $\gamma_r$ here is the responsiveness factor and is distinct from $\gamma$ in the Constitution's asymmetry drift equation $\Delta_A(t) = \Delta_A(0) + \gamma t$. The subscript keeps them separate.
+Note that $\gamma_r$ here is the responsiveness factor and is distinct from the $\gamma_k$ of the Constitution's asymmetry drift equation $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$. Both families carry subscripts, and they are told apart by what the subscript names: a friction component, or a mechanism.
 
 ### 4.3 Boundary behavior
 

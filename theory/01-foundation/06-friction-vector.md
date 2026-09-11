@@ -145,7 +145,7 @@ Direction now moves with the work. A deal that opens implementation-dominant rot
 
 ### 5.2 Drift is the same rotation running backwards
 
-Axiom II carries $\Delta_A(t) = \Delta_A(0) + \gamma t$ before signature. Section 7.2 of [05-seller-surplus-model.md](./05-seller-surplus-model.md) carries the same equation after it. Per component:
+Before v17.0, Axiom II carried $\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$ before signature, and section 7.2 of [05-seller-surplus-model.md](./05-seller-surplus-model.md) carried the same equation after it. Per component:
 
 $$\Delta_k(t) = \Delta_k(0) + \gamma_k t$$
 
@@ -232,7 +232,9 @@ Recorded so that the change is legible from here rather than only from a diff.
 
 **Retired.** The Nascent, Efficient and Saturated market states. The Transitional and Mature shorthand alongside them. The reading of the summed score as a motion selector. The 1-to-5 rating rubric in the triage instrument.
 
-**Untouched.** All research files, and [05-seller-surplus-model.md](./05-seller-surplus-model.md).
+**Touched for notation only.** [05-seller-surplus-model.md](./05-seller-surplus-model.md) section 7.2. Its post-signature drift equation was already about staff turnover, workflow change and systems installed unseen, which is $\gamma_{implementation}$ and not a deal-level average. The subscript makes that explicit and no claim in the file changed.
+
+**Untouched.** All research files.
 
 ---
 

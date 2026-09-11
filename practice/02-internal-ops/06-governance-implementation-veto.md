@@ -42,7 +42,7 @@ The veto is available at any time before order form submission. It becomes **man
 
 | Condition | Instrument | Threshold |
 |---|---|---|
-| Workflow cannot be mapped | [Deal Triage Calculator](../01-field-assets/deal-triage-calculator.md) Step 0 | Level 1, Undefined |
+| Workflow cannot be mapped | [Deal Triage Calculator](../01-field-assets/deal-triage-calculator.md) Step 0 | Workflow maturity 1, Undefined |
 | Bilateral asymmetry unresolved | [Asymmetry Scorecard](./04-incentives-asymmetry-scorecard.md) | $\Delta_A$ at or above 7.0 |
 | Showstopper unmitigated | [Red Team Protocol](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md) | Any finding classified Showstopper without a written mitigation and a named owner |
 | Buyer resources absent | [MIP](../01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) | No named customer project manager, or committed hours below the floor set during calibration |
