@@ -67,7 +67,7 @@ Three instruments convert deal observations into comparable numbers. Each measur
 | [Consensus Friction Calculator](./consensus-friction-calculator.md) | $F_{consensus}$ | After the Blueprint maps the buying committee |
 | [Milestone Valuation Model](./milestone-valuation-model.md) | Staged uncertainty decay and gate payment structure | While drafting the MIP timeline and commercial terms |
 
-The three map onto the Three Sales Levers from Axiom II. The scorecard says how much uncertainty ($x$) there is to remove. The friction calculator says where base cost ($c$) is concentrated. The milestone model lowers risk aversion ($a$) by giving hostages.
+The three map onto the Three Sales Levers from Axiom II. The scorecard says how much uncertainty ($\hat{\Delta}_{implementation}$) there is to remove, on the one component it measures. The friction calculator says where base cost ($c$) is concentrated. The milestone model lowers risk aversion ($a$) by giving hostages.
 
 ---
 

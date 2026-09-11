@@ -144,14 +144,14 @@ The identity is exact, not an approximation. The scalar gap the framework carrie
 
 **Composition is read from the amplified components, level from the base ones.** Direction is $\hat{F}_k = F_k(1 + \hat{\Delta}_k) / F_{effective}$, the share of effective cost each component carries. Level is $\lVert \mathbf{F} \rVert_1 = F_{base}$, which is the asset specificity Axiom I bounds and is a property of the deal rather than of what anyone currently knows about it. Discovery moves direction and leaves level alone, which is why a Blueprint changes the instrument without reclassifying the deal.
 
-To model transaction cost economics more directly at the deal level, we also express the buyer's perceived transaction cost ($y$) as a function of uncertainty ($x$) and risk aversion ($a$):
+To model transaction cost economics more directly at the deal level, we also express the buyer's perceived transaction cost ($y$) as a function of uncertainty and risk aversion ($a$):
 
-$$y = ax^2 + c$$
+$$y = a\hat{\Delta}_A^2 + c$$
 
 Where:
 - $y$ is the **total perceived transaction cost** to the buyer.
 - $c$ is the **direct cost** of the solution (COGS + vendor margin).
-- $x$ is the **information asymmetry or uncertainty** ($\approx \Delta_A$). The impact of uncertainty is modeled as quadratic ($x^2$) because information gaps have a compounding, non-linear effect on consensus and implementation friction (a small gap cascades into major project delays and misalignment). Note that $x^2$ serves as a clean simplification of the three underlying friction curves.
+- $\hat{\Delta}_A$ is the **deal-level asymmetry gap, normalized to $[0, 1]$**, which is the friction-weighted mean defined above. The impact of uncertainty is modeled as quadratic because information gaps have a compounding, non-linear effect on consensus and implementation friction: a small gap cascades into project delays and misalignment. The square serves as a simplification of the three underlying friction curves. **The normalized value is required here.** A raw scorecard score on $[2, 10]$ substituted into this equation produces a cost estimate off by an order of magnitude, which is why `models/ilg_models.py` refuses one at the type level.
 - $a$ is the **risk aversion coefficient** (anchored at $a = 2.25$, derived from prospect theory's loss aversion parameter $\lambda \approx 2.25$).
 
 **Scale.** $y$, $c$, and $a$ are fractions of annual contract value. The equation adds a term carrying $a$ to a term carrying a price, so $a$ must share $c$'s units, and stating the scale is what makes $a = 2.25$ mean anything. Read this way, at a fully open gap the uncertainty term is 2.25 annual contract values, which is the framework's own claim that risk outweighs return, expressed as a number. Read as percentage points instead, the same term rounds to nothing against a stage payment and the claim inverts. [03-mathematical-models.md](./03-mathematical-models.md) section 1.7 carries the arithmetic, and the [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) is where both terms meet on the common scale.
@@ -280,11 +280,11 @@ The operational artifact that implements this check is the [Friction Allocation 
 
 #### From Axiom II — The Three Sales Levers
 
-The transaction cost curve $y = ax^2 + c$ gives the seller exactly three levers to satisfy $y < OC_{\text{switching}}$ and win a deal:
+The transaction cost curve $y = a\hat{\Delta}_A^2 + c$ gives the seller exactly three levers to satisfy $y < OC_{\text{switching}}$ and win a deal:
 
 1. **Lower direct cost (reduce $c$).** The seller can lower their margin. This is the traditional, low-leverage price-discounting motion that destroys vendor profitability.
 2. **Lower risk aversion (reduce $a$).** The seller can implement structures that shift risk back to themselves, the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
-3. **Reduce uncertainty (reduce $x$).** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop). Since v17.0 there are three gaps rather than one, so this lever has three settings and pulling the wrong one leaves the binding gap untouched. Which one to pull is a reading of direction, not of the total.
+3. **Reduce uncertainty (reduce $\hat{\Delta}_A$).** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop). Since v17.0 there are three gaps rather than one, so this lever has three settings and pulling the wrong one leaves the binding gap untouched. Which one to pull is a reading of direction, not of the total.
 
 Lever 1 is the weakest because the cost curve is convex: cost grows quadratically in uncertainty, so cutting the constant term cannot offset a large gap. That argument, and the derivation behind it, live in [03-mathematical-models.md](./03-mathematical-models.md).
 
@@ -435,7 +435,7 @@ The equation is a diagnostic, not a forecast. When a deal stalls, walk through i
 2. **Is $V_{effective}(t)$ collapsing faster than $\Delta_A$ is shrinking?** If yes, urgency is decaying faster than the seller can close the asymmetry. Either intervene to refresh urgency (find a new triggering event) or close faster.
 3. **Is any $\hat{\Delta}_k$ rebuilding faster than maintenance reduces it?** If yes, information is going stale faster than discovery refreshes it. Increase the cadence of discovery touches on that component. A departed champion is the common case and it lands entirely in $\hat{\Delta}_{consensus}$.
 4. **Which component dominates $F_{effective}$ after amplification?** Target that one. Generic intervention is wasted effort, and a component that dominated at open may not dominate now, because discovery rotates the vector.
-5. **Is the total perceived transaction cost $y$ higher than the opportunity cost of switching $OC_{\text{switching}}$?** If yes, identify whether you can lower risk aversion $a$ (negotiate hostages like resource guarantees/restart fees in the MIP) or reduce uncertainty $x$ (run a Red Team workshop/discovery). Avoid the low-leverage margin-reduction lever ($c$) unless absolutely necessary.
+5. **Is the total perceived transaction cost $y$ higher than the opportunity cost of switching $OC_{\text{switching}}$?** If yes, identify whether you can lower risk aversion $a$ (negotiate hostages like resource guarantees/restart fees in the MIP) or reduce uncertainty $\hat{\Delta}_k$ in whichever component is binding (run a Red Team workshop or more discovery). Avoid the low-leverage margin-reduction lever ($c$) unless absolutely necessary.
 6. **Does the buyer accept the business case and still decline to proceed?** If yes, option value is dominating. The commercial structure is asking them to surrender the right to wait all at once. Restructure into gates with defined acceptance criteria and a priced right to stop, rather than re-arguing the return.
 7. **Has any party's $\delta_{discount}$ dropped below the cooperation threshold?** If yes, the relationship will decay regardless of single-deal economics.
 8. **Has reputation refresh stopped at any level?** If yes, the channel or governance structure is drifting toward extraction.

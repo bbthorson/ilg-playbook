@@ -29,7 +29,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - **Boundary Condition** (primary derivation) — $k > k_{threshold}$ is Williamson's threshold for governance preference.
 - **Williamson Hold-Up** (clarifying concept) — direct.
 - **Three Transaction Costs** (clarifying concept) — direct mapping to $F_{search} + F_{consensus} + F_{implementation}$.
-- **Axiom III — Law of Governance** — bilateral hostages and relational contracts are the mechanism behind recursive cooperation. In the transaction cost model $y = ax^2 + c$, hostages are the primary operational lever to reduce the risk aversion coefficient $a$, helping to satisfy the deal-winning condition $y < OC_{\text{switching}}$.
+- **Axiom III — Law of Governance** — bilateral hostages and relational contracts are the mechanism behind recursive cooperation. In the transaction cost model $y = a\hat{\Delta}_A^2 + c$, hostages are the primary operational lever to reduce the risk aversion coefficient $a$, helping to satisfy the deal-winning condition $y < OC_{\text{switching}}$.
 
 **Notable quotes:**
 - "Speed is risk" when governance structures are immature.

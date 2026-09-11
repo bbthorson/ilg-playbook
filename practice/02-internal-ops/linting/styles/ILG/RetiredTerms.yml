@@ -54,11 +54,20 @@ ignorecase: false
 # predate the Turnkey and Structural archetypes and survived the same way. Both
 # are the exact failure this rule exists to catch, and both went uncaught
 # because nobody added the rows at the time of the rename.
+# Retired notation (v17.0). The reduced form was written with a bare x defined
+# as "approximately Delta_A", which is the raw scorecard score. Section 1.5 has
+# required the normalised value since before that wording was written, and
+# ilg_models.py refuses a raw one at the type level, so the Constitution's own
+# statement of the equation carried the exact error the module exists to
+# prevent. The row catches the LaTeX shape rather than the letter x, which is
+# still legitimate as x_m in the milestone chain.
+#
 # Superseded Axiom II description (v17.0). The axiom name did not change, so
 # nothing here catches a paragraph that uses every current term while describing
 # the single-multiplier version. These are the load-bearing phrases from the
 # form that per-component amplification replaced.
 swap:
+  ax\^2: "a \\hat{\\Delta}_A^2 (the reduced form takes the NORMALISED gap; a raw score is off by an order of magnitude)"
   amplified by the bilateral information asymmetry: "amplified per component by the asymmetry inside that component's own pair of parties (Constitution v17.0)"
   The teaching equation uses a global multiplier: "each component is amplified by its own gap; the single multiplier is the factored special case"
   global multiplier: "per-component amplification, which factors into a single friction-weighted multiplier"

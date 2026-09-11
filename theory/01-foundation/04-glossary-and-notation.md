@@ -82,7 +82,7 @@ Two rules govern what is written here, and they differ by section.
 | $\Delta_A^*$ | Akerlof Exit Threshold. Above it the buyer leaves the market entirely. | [costly-signals.md](../02-research/costly-signals.md) |
 | $I_{seller}$ | Seller Ignorance. What the seller has not mapped about the buyer's environment. | [03-mathematical-models.md §2.2](./03-mathematical-models.md) |
 | $I_{buyer}$ | Buyer Uncertainty. Doubt about return variance and vendor capability. | [03-mathematical-models.md §2.3](./03-mathematical-models.md) |
-| $x$ | Uncertainty in the reduced form. Approximately $\Delta_A$, but see the disambiguation below. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $x_m$ | Residual uncertainty **entering** milestone stage $m$, already normalized. Not a separate quantity from $\hat{\Delta}_{implementation}$, which is where the chain starts. | [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) |
 
 ### Coefficients and parameters
 
