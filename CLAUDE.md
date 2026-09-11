@@ -120,7 +120,9 @@ Every live formula has an implementation in [`models/tcg_models.py`](models/tcg_
 
 This is what stops formula drift, the way `RetiredTerms.yml` stops rename drift and the provenance audit stops stat drift.
 
-**Parameters in this repo are unfitted, and every new one must say so.** `03-mathematical-models.md` states the forms are specified rather than fitted. Any new coefficient needs a row in that file's parameter reference with an honest provenance status, and anything that reads as an empirical estimate is wrong. Do not fit these to synthetic data: it produces parameters that look measured and are not. `models/README.md` records why.
+**Parameters in this repo are unfitted, and every new one must say so.** [`theory/01-foundation/08-calibration.md`](theory/01-foundation/08-calibration.md) is the single home for every coefficient, threshold and band edge in the framework. Any new one needs a row there with an honest provenance status, in the same commit, and anything that reads as an empirical estimate is wrong. `test_tcg_models.py` asserts that every numeric constant in the module is declared on that page, so adding a constant without declaring it fails the suite.
+
+The separation earns its keep: the theory states structure, the calibration layer states quantity, and a reader can reject any number without rejecting the claim it sits inside. Keep it that way. A coefficient quoted in `theory/` prose without a pointer to the calibration layer is how the two collapse back together. Do not fit these to synthetic data: it produces parameters that look measured and are not. `models/README.md` records why.
 
 ## Publishing workflow
 

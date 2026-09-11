@@ -13,7 +13,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Purpose:** To derive motion selection from the two quantities Axiom I already names, so that a motion is a region of one space rather than an item on a list.
 
 > [!IMPORTANT]
-> **Adopted in Constitution v17.0.** This document governed nothing at version 0.1 and governs the composition claim now. Axiom II carries the per-component amplification, Axiom I carries the vector notation, the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) emits both quantities, and [04-glossary-and-notation.md](./04-glossary-and-notation.md) carries the symbols. Section 10 records what adoption changed, and section 9 records what it did not settle.
+> **This file carries the derivation behind two of the framework's claims.** Axiom I's composition equation and Axiom II's per-component amplification are stated in the [Constitution](./00-tcg-constitution.md) and argued here. The [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) emits both quantities and [04-glossary-and-notation.md](./04-glossary-and-notation.md) carries the symbols. Section 9 records what the model does not settle.
 
 ---
 
@@ -33,7 +33,7 @@ $$\hat{\mathbf{F}} = \frac{\mathbf{F}}{\lVert \mathbf{F} \rVert}$$
 
 $$\lVert \mathbf{F} \rVert_1 = F_{search} + F_{consensus} + F_{implementation}$$
 
-Axiom I's own statement maps onto these directly. *Composition selects the motion* is a claim about direction. *Combined level sets the boundary between Turnkey and Structural deals* is a claim about magnitude. The two claims were separated in Constitution v16.0 and nothing downstream has yet consumed the separation.
+Axiom I's own statement maps onto these directly. *Composition selects the motion* is a claim about direction. *Combined level sets the boundary between Turnkey and Structural deals* is a claim about magnitude. They are two claims about one object and they answer different questions, which is why an instrument that emits only their sum answers neither.
 
 The $L^1$ norm is used because it is what the field already produces. Step 2 of the Deal Triage Calculator sums four scores, which is a sum rather than a Euclidean length. Nothing in what follows depends on the choice.
 
@@ -115,13 +115,13 @@ Naming the consensus region is still open. Any name chosen here would enter the 
 
 ## 5. Asymmetry rotates the vector, and drift rotates it back
 
-Before v17.0 the Constitution's effective cost equation applied one amplifier to the whole sum:
+The obvious way to write the effective cost equation applies one amplifier to the whole sum:
 
 $$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \hat{\Delta}_A)$$
 
-Scaling every component by the same factor changes the length of the vector and leaves its direction untouched. The consequence is exact rather than approximate: **under that equation, no amount of asymmetry and no amount of work reducing it can change which motion a deal needs.** Direction was invariant to $\hat{\Delta}_A$.
+Scaling every component by the same factor changes the length of the vector and leaves its direction untouched. The consequence is exact rather than approximate: **under that equation, no amount of asymmetry and no amount of work reducing it can change which motion a deal needs.** Direction would be invariant to $\hat{\Delta}_A$.
 
-That contradicts ordinary experience. A seller who maps an environment has changed the shape of the deal, not only its size. This section is the argument that produced Axiom II's current form, and it is kept here as the derivation rather than repeated in the Constitution.
+That contradicts ordinary experience. A seller who maps an environment has changed the shape of the deal, not only its size. This section is the argument that rules the single-multiplier form out.
 
 ### 5.1 Three pairs, three gaps
 
@@ -139,13 +139,13 @@ Amplify each component by its own pair's gap, which is what Axiom II now does:
 
 $$F_{effective} = \sum_{k} F_k \, (1 + \hat{\Delta}_k)$$
 
-Nothing downstream broke, because the sum factors exactly into $F_{base}(1 + \hat{\Delta}_A)$ when $\hat{\Delta}_A$ is read as the friction-weighted mean of the three. The scalar was that mean all along.
+The sum still factors exactly into $F_{base}(1 + \hat{\Delta}_A)$ when $\hat{\Delta}_A$ is read as the friction-weighted mean of the three, so nothing that needs only the total has to carry three numbers.
 
 Direction now moves with the work. A deal that opens implementation-dominant rotates toward consensus as discovery closes $\Delta_{implementation}$, which is what a Blueprint is for and what the framework has had no way to state.
 
 ### 5.2 Drift is the same rotation running backwards
 
-Before v17.0, Axiom II carried $\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$ before signature, and section 7.2 of [05-seller-surplus-model.md](./05-seller-surplus-model.md) carried the same equation after it. Per component:
+Written at the deal level, drift is $\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$ before signature, and section 7.2 of [05-seller-surplus-model.md](./05-seller-surplus-model.md) carries the same equation after it. Per component:
 
 $$\Delta_k(t) = \Delta_k(0) + \gamma_k t$$
 
@@ -167,17 +167,15 @@ This also generalizes Axiom III's trajectory. $D(t)$ is written as a scalar, the
 
 The reduced form $y = a\hat{\Delta}_A^2 + c$ collapses the vector to a scalar, and [03-mathematical-models.md](./03-mathematical-models.md) section 1.4 already concedes that it "produces a number, not a diagnosis." Under this model the concession is heavier, because direction is the quantity that selects the motion and the reduced form destroys it. The form keeps its one job, which is showing why cutting price cannot offset a wide gap. It stops being a representation of transaction cost.
 
-**A correction to version 0.1.** That version claimed a coefficient $\beta$ weights one side's ignorance against the other's inside the gap. No such coefficient exists. $\beta$ in this repository is the organizational complexity exponent in $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$, which belongs to the consensus base cost and has nothing to do with asymmetry. $I_{seller}$ and $I_{buyer}$ are summed unweighted. What survives of the claim is the part that was about the pairs rather than the parameter: any future weighting between two sides of a gap would be a parameter of the implementation component alone, because that is the only component whose pair has two distinguishable sides. Recorded rather than quietly deleted, since a wrong claim in an adopted document is worse than a wrong claim in a proposal.
+**Nothing weights one side of a gap against the other.** $I_{seller}$ and $I_{buyer}$ are summed unweighted, and $\beta$ elsewhere in this framework is the organizational complexity exponent in $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$, which belongs to the consensus base cost and has nothing to do with asymmetry. Any future weighting between two sides of a gap would be a parameter of the implementation component alone, because that is the only component whose pair has two distinguishable sides.
 
 ---
 
-## 6. Addressable market is a property of the motion
+## 6. What follows for the seller's market
 
 A seller who runs only short-vector tactics can transact only with short-vector buyers. Buyers whose deals carry a long vector are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the cost that was blocking them.
 
-**This inverts the usual reading.** Addressable market is normally treated as a property of the product, fixed by what the product does and who needs it. Under Axiom I it is a property of the motion, because the motion decides which regions of the friction space a seller can serve. Changing the motion changes the market.
-
-The practical consequence is that a market sizing exercise conducted without naming the motion is not measuring anything stable.
+Addressable market is therefore a property of the motion rather than of the product, and [07-governance-forms.md](./07-governance-forms.md) section 4 carries that argument and its three consequences.
 
 ---
 
@@ -187,7 +185,7 @@ Axiom I names under-frictioning as the failure where asset specificity exceeds t
 
 There is a second symptom, and it appears after signature rather than before. A buyer whose implementation uncertainty was never resolved can still transact when the commercial path is easy enough. They buy, they fail to deploy, and they leave. The cause is identical. The symptom lands in retention rather than in win rate, which is why it is usually diagnosed as a product problem or an onboarding problem.
 
-Both symptoms belong to the same failure. The framework currently names only the first.
+Both symptoms belong to the same failure, and Axiom I names both.
 
 ---
 
@@ -197,50 +195,23 @@ The seller picks the motion, and the seller has a reason to pick the short-vecto
 
 **This is an Axiom III failure inside the seller's own organization.** The party choosing the motion holds no stake in the outcome the choice produces. A representative compensated on new bookings, or a leader measured on sales efficiency, is an adjudicator of motion selection with no exposure to the churn that follows a misread vector. Axiom III predicts exactly this: an adjudicator without a stake drifts from adjudication toward extraction, and here the extraction runs against the seller's own future revenue.
 
-The remedy already exists in [03-incentives-vested-commission.md](../../practice/02-internal-ops/03-incentives-vested-commission.md), which ties compensation to outcomes that survive past signature. That artifact is currently justified as protection against poor Structural deal execution. Under this reading it also governs motion selection, which is a wider claim than the file currently makes.
+The remedy is [03-incentives-vested-commission.md](../../practice/02-internal-ops/03-incentives-vested-commission.md), which ties compensation to outcomes that survive past signature. It is usually read as protection against poor Structural deal execution. It is also the instrument that governs motion selection, and that is the wider of the two claims.
 
 ---
 
-## 9. What adoption did not settle
+## 9. What this does not settle
 
 - **The consensus region has no name and no instrument file.** Both are open, and the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) now says so out loud when a deal routes there. Naming it before building it would produce a label with nothing behind it.
 - **Whether direction is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different vectors, because the incumbent's implementation cost is already sunk. The instrument scores the deal rather than a seat, which is a decision rather than an oversight: a seat-scored instrument owes the reader an account of how each seat wins, and that account does not exist yet. Until it does, an incumbent scoring a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
-- **Where the boundary between short and long sits.** The magnitude threshold moved from 10 out of 20 to 15 out of 30 when the instrument's scale changed. That is the same proportion of the range and the same absence of evidence.
+- **Where the boundary between short and long sits.** The threshold sits at half the instrument's range and nothing but convention puts it there.
 - **Whether the count bands are the right shape.** The instrument counts named things, which fixes the ordinal problem, and then converts counts to component scores through bands that are chosen rather than fitted. The counts are observations. The bands are not.
 - **Whether the three drift rates behave as one mechanism.** $\gamma_{consensus}$ is the only one with a discrete field event attached, namely a departed stakeholder. The other two are asserted to be continuous and nothing tests that.
-- **Whether $a$ is anywhere near 2.25.** Constitution v17.0 gave the coefficient units, which makes it checkable rather than correct. Section 6 of [03-mathematical-models.md](./03-mathematical-models.md) says what data would settle it.
-
-### Settled since version 0.1
-
-- **Whether the components are measurable in a form the equations can consume.** They are, once the instrument counts rather than rates. The old rubric emitted ordinal ratings and the models raised them to powers, which is not a defensible operation on an ordinal scale. Counts have a true zero and equal intervals.
-- **Whether market stage carries information the vector misses.** Its three signals became three of the four search evidence items, so the information is kept and the taxonomy is retired. Whether a market about to mature behaves differently from a mature one of identical present composition is still untested, but it is now a question about drift rates rather than about a separate axis.
-- **The reduced form's scale.** $y$, $c$ and $a$ are fractions of annual contract value, per [03-mathematical-models.md](./03-mathematical-models.md) section 1.7. The percentage reading was a unit error and not a second option.
-
----
-
-## 10. What adoption changed
-
-Recorded so that the change is legible from here rather than only from a diff.
-
-**Rewritten.** [01-sales-motion-comparison.md](./01-sales-motion-comparison.md). Its organizing spine was the three-motion list and the Market States taxonomy. Both are replaced by direction and level, and the motion names survive as names for regions.
-
-**Rebuilt.** The [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), at version 5.0 and under a new name. Its market stage step is absorbed into the search evidence items, its four summed ratings become three counted component scores, and its routing table becomes a reading of direction and level. The workflow divergence step survives as a multiplier on the implementation component.
-
-**Amended, contrary to version 0.1.** Axiom II. Version 0.1 claimed adoption would leave all three axioms untouched, and that was wrong: per-component amplification is a change to Axiom II's mathematical content and to its statement, since the axiom named one pair of parties and there are three. Axiom I gained the vector notation for a composition claim it already made in prose. Axiom III gained a sentence noting that its trajectory carries a direction. The Constitution's version history carries all three.
-
-**Reassigned, with content intact.** The Blueprint, Red Team, Mutual Implementation Plan and Adoption Review are implementation-component instruments rather than the artifacts of a named motion. The velocity and education files are short-vector and search-component instruments. No artifact changed what it does.
-
-**Retired.** The Nascent, Efficient and Saturated market states. The Transitional and Mature shorthand alongside them. The reading of the summed score as a motion selector. The 1-to-5 rating rubric in the triage instrument.
-
-**Touched for notation only.** [05-seller-surplus-model.md](./05-seller-surplus-model.md) section 7.2. Its post-signature drift equation was already about staff turnover, workflow change and systems installed unseen, which is $\gamma_{implementation}$ and not a deal-level average. The subscript makes that explicit and no claim in the file changed.
-
-**Untouched.** All research files.
-
----
+- **Whether $a$ is anywhere near 2.25.** The coefficient has stated units, which makes it checkable rather than correct. Section 6 of [03-mathematical-models.md](./03-mathematical-models.md) says what data would settle it.
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies both quantities and Axiom II supplies the amplification this document argued for. v16.0 separated level from composition and v17.0 gave composition its equation.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies both quantities and Axiom II supplies the amplification derived here.
+- [07-governance-forms.md](./07-governance-forms.md) — The third quantity, frequency, and what the seller's market follows from.
 - [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — The named motions, mapped onto regions of this space.
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms for the components, and the calibration status that governs every number here.
 - [05-seller-surplus-model.md](./05-seller-surplus-model.md) — The seller's side of the transaction, which section 8 depends on.

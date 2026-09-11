@@ -1217,6 +1217,45 @@ class TestCalibrationDiscipline(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.consensus_friction(5, 0.25, beta=1.0)
 
+    def test_every_numeric_constant_is_listed_in_the_calibration_layer(self):
+        """08-calibration.md is the single home for every value in the model.
+
+        The point of quarantining the numbers is that a reader can accept the
+        structural claims without accepting any of them, and that only works
+        if the quarantine is complete. A constant that ships in the module and
+        appears nowhere in the calibration layer is a number the framework is
+        using and not declaring.
+        """
+        here = os.path.dirname(os.path.abspath(__file__))
+        page = open(os.path.join(here, "..", "theory", "01-foundation",
+                                 "08-calibration.md"), encoding="utf-8").read()
+        # Names, not values: a value can legitimately appear under a different
+        # label, but every knob has to be findable.
+        knobs = ("A_RISK_AVERSION", "DOMINANCE_THRESHOLD", "ALPHA_COORDINATION",
+                 "BETA_COMMITTEE", "GAMMA_TECHNICAL_OVERLAP", "W_TECH",
+                 "W_PROCESS", "PHI_TECH", "PHI_PROCESS", "NU_VENDOR_DOUBT",
+                 "KAPPA_PROOF_DECAY", "GAMMA_RESPONSIVENESS", "BCV_REF_DEFAULT",
+                 "MIN_CREDIBLE_EDGE_CASES", "STRUCTURAL_MIN",
+                 "COMPONENT_SCORE_MAX", "SEARCH_EVIDENCE_ITEMS", "LEVEL_MAX")
+        missing = []
+        for name in knobs:
+            value = getattr(m, name)
+            # The page may write 0.50 where repr gives 0.5, so accept either.
+            forms = {str(value), "{:g}".format(value)}
+            if isinstance(value, float):
+                forms.add("{:.2f}".format(value))
+            if not any(f in page for f in forms):
+                missing.append("{} = {}".format(name, value))
+        self.assertEqual(missing, [],
+                         "values in the module that 08-calibration.md does not "
+                         "declare: {}".format(missing))
+
+    def test_the_calibration_layer_claims_nothing_is_measured(self):
+        here = os.path.dirname(os.path.abspath(__file__))
+        page = open(os.path.join(here, "..", "theory", "01-foundation",
+                                 "08-calibration.md"), encoding="utf-8").read()
+        self.assertIn("No value on this page is a measurement", page)
+
     def test_the_module_has_no_third_party_imports(self):
         """It must stay dependency-free like the two existing checkers."""
         source = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),

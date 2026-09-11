@@ -16,7 +16,7 @@ The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equat
 
 That omission is invisible while the motion is advisory. It becomes binding the moment the seller deploys engineers into a buyer's environment before signature, because the seller is then sinking capital that no term of the buyer's equation accounts for.
 
-This document adds the second equation. Axiom I was revised in Constitution v16.0 to name which party bears the asset specificity, which is the claim section 3 depends on.
+This document adds the second equation. Axiom I names which party bears the asset specificity, which is the claim section 3 depends on.
 
 ---
 

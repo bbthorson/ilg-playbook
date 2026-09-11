@@ -14,7 +14,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 This document is the practical companion to the [Constitution](./00-tcg-constitution.md). The Constitution explains why motion choice matters. [06-friction-vector.md](./06-friction-vector.md) derives what a motion is. This file says what each named region contains, where the names mislead, and where the boundary of the ILG region sits.
 
 > [!IMPORTANT]
-> **Version 2.0 replaced the spine.** Version 1 organized around a three-item list of motions and a Nascent, Efficient and Saturated market-state taxonomy, and carried its own copy of the diagnostic steps. Constitution v17.0 retired all three. A motion is now a region of the friction vector's space, named by which component dominates and how long the vector is, and the diagnostic lives in one place, the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md). What survives here is everything the calculator does not carry: what each region contains, why search-dominant and implementation-dominant deals get confused, and the six conditions that put a deal outside the ILG region entirely.
+> **A motion is a region, not a list entry.** Which component dominates and how long the vector is together name a region of the friction space, and the named motions are points inside it rather than alternatives to each other. The diagnostic itself lives in one place, the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md). This file carries what the calculator does not: what each region contains, why search-dominant and implementation-dominant deals get confused, and the six conditions that put a deal outside the implementation region entirely.
 
 ---
 
@@ -60,15 +60,13 @@ ILG deals carry little of either. The buyer knows the category and the field. Wh
 
 ---
 
-### What replaced the Market States
+### Why there is no market-stage taxonomy here
 
-Version 1 carried three stages a market passes through, Nascent, Efficient and Saturated, each with a characteristic friction profile, plus a Transitional and Mature shorthand the field rubric used because Efficient and Saturated look alike from outside. All five names are retired.
+A framework organized around market maturity would carry stage names, and this one deliberately does not. Stage is a proxy for direction. It says what the friction profile *usually* is for a market at a given age, in place of measuring the profile of the deal in front of you, and a proxy that disagrees with a direct measurement is worse than no proxy at all.
 
-The taxonomy was a proxy for direction. It said what the friction profile *usually* is for a market at a given age, in place of measuring the profile of the deal in front of you. Once the instrument measures direction, the proxy adds nothing and can disagree with the measurement, which is what a proxy does when it is kept past its usefulness.
+The legibility signals a stage diagnostic would ask for are kept and measured directly. A recognized category name, three or more nameable vendors, and published third-party coverage are three of the four search evidence items in the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md). They score the search gap itself rather than routing through a label.
 
-The information is not lost. The three legibility signals the stage diagnostic asked for, a recognized category name, three or more nameable vendors, and published third-party coverage, are now three of the four search evidence items in the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md). They score the search gap directly instead of routing through a stage label.
-
-**What the retirement gives up.** A market that is about to mature may behave differently from a mature one of identical present composition, and a present-tense vector cannot see that. Under the current model the difference belongs in $\gamma_{search}$, the rate at which the search gap rebuilds, and nothing tests it. This is recorded in [06-friction-vector.md](./06-friction-vector.md) section 9 rather than solved.
+**What this gives up.** A market that is about to mature may behave differently from a mature one of identical present composition, and a present-tense vector cannot see that. The difference belongs in $\gamma_{search}$, the rate at which the search gap rebuilds, and nothing tests it. Recorded in [06-friction-vector.md](./06-friction-vector.md) section 9 rather than solved.
 
 ---
 
@@ -179,7 +177,7 @@ Three points about the diagnostic that are theory rather than procedure, and so 
 
 **Level and direction answer different questions and are read off different quantities.** Level is the $L^1$ norm of base friction, which is asset specificity, a property of the deal. Direction is the share of effective cost each component carries after amplification, which is where the unresolved work sits today. Discovery moves the second and not the first, which is why a Blueprint changes the instrument without reclassifying the deal.
 
-**The instrument counts rather than rates.** Version 4.2 asked for ratings of 1 to 5 and the models raised them to powers, which is not a defensible operation on an ordinal scale. The counts are auditable in a way ratings are not, since a count is a list and a list can be wrong in public. That does not make the instrument honest by itself, and the calculator says what else is needed.
+**The instrument counts rather than rates.** The models raise their inputs to powers, and exponentiating an ordinal rating is not a defensible operation, because nothing establishes that the distance from 2 to 3 equals the distance from 4 to 5. Counts also audit in a way ratings cannot, since a count is a list and a list can be wrong in public. That does not make the instrument honest by itself, and the calculator says what else is needed.
 
 ---
 

@@ -35,7 +35,7 @@ This form decomposes cost into three components that arise from distinct conditi
 
 $$\sum_{k} F_k (1 + \hat{\Delta}_k) = F_{base} \cdot (1 + \hat{\Delta}_A), \qquad \hat{\Delta}_A \equiv \frac{\sum_{k} F_k \hat{\Delta}_k}{\sum_{k} F_k}$$
 
-The identity is exact. The scalar $\hat{\Delta}_A$ that the framework carried before Constitution v17.0 is the friction-weighted mean of the three component gaps, so results that consumed the scalar hold unchanged and the reduced form below still follows. Section 2 gives the three gaps and their instruments. What the scalar cannot represent is stated in section 1.4.
+The identity is exact. The deal-level gap $\hat{\Delta}_A$ is the friction-weighted mean of the three component gaps, which is what lets the reduced form below run on a single scalar. Section 2 gives the three gaps and their instruments. What the scalar cannot represent is stated in section 1.4.
 
 ### 1.2 The reduced form
 
@@ -67,7 +67,7 @@ Two things, and both matter in the field.
 
 **The linear term.** Dropping $(b + c)\hat{\Delta}_A$ is not justified by that term being small. Over the normalized operating range defined in Section 1.5, the linear term is comparable to the quadratic term and sometimes larger. The reduced form is a two-parameter approximation of a three-parameter expression. When $a$ and $c$ are fitted to observed deals rather than assumed, they absorb the discarded term across the operating range. What the reduced form preserves, and the reason it earns its place in the framework, is convexity. Convexity is the property the Three Sales Levers argument depends on.
 
-**The component decomposition, and with it the direction.** The reduced form cannot tell you whether search, consensus, or implementation is binding. It produces a number, not a diagnosis. Under Constitution v17.0 this concession is heavier than it was, because direction is the quantity that selects the motion and collapsing to $\hat{\Delta}_A$ destroys it. What survives is convexity, which is the property the Three Sales Levers argument needs and the only job the reduced form is asked to do.
+**The component decomposition, and with it the direction.** The reduced form cannot tell you whether search, consensus, or implementation is binding. It produces a number, not a diagnosis. The concession is heavier than it first appears, because direction is the quantity that selects the motion and collapsing to $\hat{\Delta}_A$ destroys it. What survives is convexity, which is the property the Three Sales Levers argument needs and the only job the reduced form is asked to do.
 
 **Operating rule.** Use the structural form to diagnose a specific deal. Use the reduced form to explain why discounting fails and to frame the three levers. Do not use the reduced form to choose an intervention.
 
@@ -93,7 +93,7 @@ The anchor $a \approx 2.25$ borrows $\lambda$'s magnitude as a behavioral justif
 
 ### 1.7 The scale of $y$, $c$ and $a$
 
-The reduced form adds $a\hat{\Delta}_A^2$ to $c$. Addition requires common units, so $a$ carries whatever units $c$ carries, and until Constitution v17.0 the framework never said what those were. The anchor $a = 2.25$ was borrowed from a dimensionless behavioral coefficient and then added to a price.
+The reduced form adds $a\hat{\Delta}_A^2$ to $c$. Addition requires common units, so $a$ carries whatever units $c$ carries. This has to be stated rather than assumed, because the anchor for $a$ is borrowed from a dimensionless behavioral coefficient and the term it is added to is a price.
 
 **All three are fractions of annual contract value.** A deal transacting at list price with no internal cost has $c = 1$. The [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) is the one place where $a$, $c$ and the payment schedule meet on a common scale, and its reference table settles the reading.
 
@@ -168,7 +168,7 @@ This floor is the model's most useful field implication. No quantity of costly s
 
 ### 2.4 The three component gaps
 
-Constitution v17.0 amplifies each friction component by the asymmetry inside its own pair of parties. The three pairs are different, so the three gaps have different instruments and cannot be read off one score.
+Axiom II amplifies each friction component by the asymmetry inside its own pair of parties. The three pairs are different, so the three gaps have different instruments and cannot be read off one score.
 
 | Gap | Pair | What is unknown | Instrument | Closed by |
 |---|---|---|---|---|
@@ -283,35 +283,15 @@ $$\frac{\partial \delta}{\partial E_{external}} = \frac{-\gamma_r \lambda_{inert
 
 ## 5. Parameter Reference
 
-| Parameter | Symbol | Default | Provenance status |
-|---|---|---|---|
-| Friction-asymmetry coupling | $a$ | 2.25 | **Anchored by analogy.** Borrows $\lambda \approx 2.25$ (Kahneman & Tversky 1979) as an order-of-magnitude justification. Not fitted to deal data. |
-| Technical weight | $w_t$ | 0.6 | **Chosen.** No source. Placeholder pending calibration. |
-| Tech acceleration exponent | $\phi_t$ | 1.2 | **Chosen.** Convexity is motivated by Williamson's asset specificity argument. The specific value is not. |
-| Process acceleration exponent | $\phi_p$ | 1.1 | **Chosen.** No source. |
-| Return uncertainty sensitivity | $\mu$ | 1.0 | **Chosen.** Normalizing convention. |
-| Unvalidated vendor doubt | $\nu$ | 2.0 | **Chosen.** No source. |
-| Vendor proof decay | $\kappa$ | 0.5 | **Chosen.** Diminishing returns motivated by Spence (1973). The rate is not. |
-| Committee complexity exponent | $\beta$ | 1.35 | **Structurally motivated.** $\beta > 1$ follows from $N(N-1)/2$ channel growth (Cyert & March 1963; Webster & Wind 1972). The value within $[1.2, 2.0]$ is chosen. |
-| Technical overlap weight | $\gamma_{TO}$ | 0.20 | **Chosen.** Field refinement, not core theory. See Section 3.4. |
-| Coordination overhead | $\alpha$ | 1.0 | **Chosen.** Normalizing convention. |
-| Responsiveness factor | $\gamma_r$ | 0.5 | **Chosen.** Staging logic motivated by Dixit & Pindyck (1994). The value is not. |
-| Component drift rates | $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$ | unmeasured | **Named, not valued.** Constitution v17.0 splits the scalar $\gamma$ into three. No default is offered, because offering one would read as an estimate. $\gamma_{consensus}$ is the only one with a discrete field event attached to it, namely a departed stakeholder. |
-| Dominance threshold | — | 0.50 | **Chosen.** The share of effective cost at which one component is read as dominant rather than the vector as mixed. See [06-friction-vector.md](./06-friction-vector.md). |
+Every parameter in this file, and every threshold and band elsewhere in the framework, lives in [08-calibration.md](./08-calibration.md). It is the single home for them on purpose: two tables of the same values drift, and the separation is what lets the structural claims above be read without any of the numbers.
 
-**Units.** $a$ and $c$ are in annual contract values per section 1.7. Every other parameter above is dimensionless or carries the units of its own input.
-Read the third column before quoting any number outside this repository. Two parameters carry literature support for their *shape*. None carries literature support for its *value*.
+Nothing in that file is a measurement. Read the provenance column before quoting any value outside this repository.
 
 ---
 
 ## 6. What Would Make These Models Empirical
 
-The models become predictive rather than organizing when three things happen:
-
-1. **Scorecard scores are logged at deal open and deal close** across enough deals to fit $a$ and $c$ against realized cycle length and outcome.
-2. **Committee size and stakeholder alignment are recorded in the CRM** as structured fields rather than narrative notes, which makes $\beta$ estimable.
-3. **Triggering events are dated**, which makes $\delta$ observable as the decay in buyer-reported urgency between the event and close.
-4. **The three component gaps are logged separately** at open and at each artifact boundary. This is what makes $\gamma_k$ estimable and what would test the claim v17.0 rests on, that discovery rotates the vector rather than only shortening it. A book of deals whose composition at close matches its composition at open would falsify it.
+Five conditions, in [08-calibration.md](./08-calibration.md) section 4, in rough order of how much each one buys. The first is logging the three component gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable and what would test the framework's central dynamic claim.
 
 Until then, treat every output as a structured comparison between deals rather than a quantity. A deal scoring 7.2 is meaningfully worse than one scoring 4.1. Neither number predicts a close date.
 

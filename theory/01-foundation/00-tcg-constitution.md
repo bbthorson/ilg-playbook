@@ -2,15 +2,18 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 19.0
+version: 19.1
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 19.0
+**Version:** 19.1
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
+
+> [!IMPORTANT]
+> **This document states structure. It states no measured quantity.** Every claim below says what depends on what, and each is argued from a mechanism. The coefficients, thresholds and band edges that turn those claims into numbers live in [08-calibration.md](./08-calibration.md), none of them is fitted to booked deal data, and each carries an honest provenance status there. The separation is deliberate: a reader who doubts a coefficient should be able to doubt it without doubting the structural claim it sits inside, because the structural claim does not depend on it.
 
 ---
 
@@ -78,7 +81,7 @@ Where $k$ is the asset specificity of the deal and $F_{deployed}$ is the frictio
 
 **The two claims have different uses, and the boundary condition covers only one of them.** Level answers how much apparatus a deal can carry, and $k > k_{threshold}$ is that test. Composition answers which motion to run, and a deal whose cost sits almost entirely in $F_{search}$ takes a different motion from one of identical total sitting in $F_{implementation}$. Do not read the summed score as a motion selector.
 
-Since v17.0 composition has an equation of its own. Treat the three components as one object and both claims become properties of it:
+Composition has an equation of its own. Treat the three components as one object and both claims become properties of it:
 
 $$\mathbf{F} = (F_{search},\; F_{consensus},\; F_{implementation})$$
 
@@ -147,7 +150,7 @@ Only the third pair is buyer against seller, and the [Bilateral Asymmetry Scorec
 
 $$\sum_{k} F_k (1 + \hat{\Delta}_k) = F_{base} \cdot \left(1 + \hat{\Delta}_A\right), \qquad \hat{\Delta}_A \equiv \frac{\sum_{k} F_k \hat{\Delta}_k}{\sum_{k} F_k}$$
 
-The identity is exact, not an approximation. The scalar gap the framework carried before v17.0 is the friction-weighted mean of the three component gaps, and every result that consumed it still holds unchanged.
+The identity is exact, not an approximation. The deal-level gap is the friction-weighted mean of the three component gaps, which is what makes the single-multiplier form a legitimate shorthand wherever the decomposition is not needed.
 
 **What the scalar cannot do is move composition.** Scaling all three components by the same factor changes the length of $\mathbf{F}$ and leaves its proportions untouched. Under a single multiplier, therefore, no quantity of asymmetry and no quantity of work reducing it can change which component dominates, so composition would be invariant to the one quantity a seller spends the whole cycle moving. Per-component amplification is what lets discovery change the shape of a deal rather than only its size. A deal that opens implementation-dominant rotates toward consensus as the Blueprint closes $\hat{\Delta}_{implementation}$, which is what a Blueprint is for and what the framework previously had no way to state.
 
@@ -175,7 +178,7 @@ Where $OC_{\text{switching}}$ is the buyer's opportunity cost of staying with th
 
 From this formulation the seller has exactly three levers to satisfy the inequality. Part II derives them as the Three Sales Levers.
 
-The three gaps are rarely equal, and the differences are systematic rather than noise. A buyer confused about the market searches a bit harder. The same buyer, working with stakeholders who cannot see each other's measured objectives, drives scope creep, missed requirements, and political backlash. Before v17.0 the framework noted this in prose and then averaged it away in the equation. The per-component form is that note made arithmetic.
+The three gaps are rarely equal, and the differences are systematic rather than noise. A buyer confused about the market searches a bit harder. The same buyer, working with stakeholders who cannot see each other's measured objectives, drives scope creep, missed requirements, and political backlash. Averaging the three into one multiplier records the total and discards which of them is doing the work, which is the one thing the seller needs to know.
 
 Asymmetry also has time dynamics, and each gap rebuilds for its own reasons at its own rate. Without active maintenance:
 
@@ -191,7 +194,7 @@ $$\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t \quad \text{absent maintena
 
 The field consequence sits in the consensus row. A champion leaving is $\gamma_{consensus}$ arriving all at once. The alignment that stakeholder held is gone, the deal rotates back toward consensus-dominant, and it can leave the viable zone with no change in the product, the price, or the technical work.
 
-This is the second component of the Decay Clock. Information staleness pushes the multipliers upward over the sales cycle. Together with $V_{effective}(t)$ from Axiom I, the Decay Clock describes how time threatens deal viability on both sides. The scalar rate $\gamma$ used before v17.0 is the friction-weighted mean of the three, on the same identity that reconciles the multipliers, and holds as an average while the component weights hold.
+This is the second component of the Decay Clock. Information staleness pushes the multipliers upward over the sales cycle. Together with $V_{effective}(t)$ from Axiom I, the Decay Clock describes how time threatens deal viability on both sides. A deal-level rate $\gamma$ is the friction-weighted mean of the three, on the same identity that reconciles the multipliers, and holds as an average while the component weights hold.
 
 The four **Friction Allocation Principles**, the operational content of this axiom, are derived in Part II as conditions any cost-reducing mechanism must satisfy.
 
@@ -293,7 +296,7 @@ The transaction cost curve $y = a\hat{\Delta}_A^2 + c$ gives the seller exactly 
 
 1. **Lower direct cost (reduce $c$).** The seller can lower their margin. This is the traditional, low-leverage price-discounting motion that destroys vendor profitability.
 2. **Lower risk aversion (reduce $a$).** The seller can implement structures that shift risk back to themselves, the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
-3. **Reduce uncertainty (reduce $\hat{\Delta}_A$).** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop). Since v17.0 there are three gaps rather than one, so this lever has three settings and pulling the wrong one leaves the binding gap untouched. Which one to pull is a reading of direction, not of the total.
+3. **Reduce uncertainty (reduce $\hat{\Delta}_A$).** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop). There are three gaps rather than one, so this lever has three settings, and pulling the wrong one leaves the binding gap untouched. Which one to pull is a reading of direction, not of the total.
 
 Lever 1 is the weakest because the cost curve is convex: cost grows quadratically in uncertainty, so cutting the constant term cannot offset a large gap. That argument, and the derivation behind it, live in [03-mathematical-models.md](./03-mathematical-models.md).
 
@@ -484,6 +487,8 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 ---
 
 ## Version History
+
+**v19.1.** Editorial, no change to any axiom, equation or derivation. Two changes to how the framework presents itself. Every coefficient, threshold and band edge moves into [08-calibration.md](./08-calibration.md), so the structural claims can be read without any of them and a reader can reject a number without rejecting the claim it sits inside. `test_tcg_models.py` now fails if a numeric constant ships in the module and is not declared there. Separately, the theory documents stop narrating their own revision history in the body. An axiom that argues with its earlier self reads as provisional, and the record belongs in this section, which is the one place it is kept. Two claims that were previously framed as recent changes are now stated flatly: that the convexity exponent is the simplest available convex shape rather than a claim about curvature, and that nothing in the framework weights one side of an asymmetry gap against the other.
 
 **v19.0.** Axiom I gains frequency, the third property Williamson selects a governance form from and the one this framework had lost. It was present once as a scoring factor called Retention Horizon and was folded into the implementation count, as though a long relationship were a kind of installation cost. It is not a cost. It is the property that decides whether machinery to govern a relationship is worth building, because machinery amortizes over repetitions and a single transaction has nothing to amortize over. A new bridge concept, Governance Form (Axioms I + III), derives the four arrangements that follow, and [07-governance-forms.md](./07-governance-forms.md) carries the argument. Three things the framework already contained are named for the first time: the Mutual Implementation Plan is bilateral relational contracting rather than only hold-up protection, $V_{next\_best}$ in the Surplus equation is Coase's make-or-buy boundary, and a fourth governance form exists in which the buyer integrates and no contract the two parties can write will beat it. A fifth failure mode, Mis-governed, covers a deal whose instruments are right and whose arrangement is wrong.
 

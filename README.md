@@ -18,6 +18,8 @@ Three axioms carry the argument. Costs decompose and their composition selects t
 
 Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](models/), every worked example is tested against it, and every headline statistic carries a provenance row.
 
+**The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](theory/01-foundation/08-calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
+
 ---
 
 ## How this repo is organized
@@ -104,5 +106,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 19.0 (tracks the [Constitution](theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Version:** 19.1 (tracks the [Constitution](theory/01-foundation/00-tcg-constitution.md) version; bump both together)
 **Last updated:** 2026-09-10
