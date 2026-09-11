@@ -68,6 +68,8 @@ When you lack the detail to score each person, use the rubric:
 
 Architectural alignment among the technical evaluators, scored 1 to 5. This is tracked separately from incentive variance because technical philosophy conflicts persist even when incentives align. Two architects can both want the project to succeed and still deadlock on hosting model.
 
+This is the one ordinal rating left in the field instruments, and it survives on a technicality: it enters as $\gamma_{TO} \cdot TO$, which is linear, so nothing exponentiates it. Read it as a rank rather than a quantity, and do not carry it into any model that squares its inputs.
+
 | Score | Condition |
 |---|---|
 | **1** | Unified standards and shared infrastructure principles. |

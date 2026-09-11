@@ -25,10 +25,12 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 
 - [ ] **"Why is this a Structural deal?"** 
   - Show me the [Deal Triage Calculator](../01-field-assets/deal-triage-calculator.md) sheet: the level, the direction, and the lists behind the three counts. A level of 15 or above with an implementation-dominant direction, a Hidden Structural flag, or a pilot override
-  - What's the integration depth? Workflow change scope? Consensus complexity? Retention horizon?
-  
+  - How many integration points, how many workflows change, how many exception paths are undocumented? Ask for the lists, not the numbers.
+  - How many people can say no, and how many of them have a documented measured objective? The second number is the consensus gap.
+  - What was the direction at qualification, and what is it now? A direction that has not moved means either nothing was learned or nobody re-counted.
+
 - [ ] **"Did the override rule apply?"**
-  - Did they ask for a pilot/POC? (Auto-upgrade to ILG)
+  - Did they ask for a pilot or POC? That routes to the implementation instruments at Structural level whatever the counts say.
 
 - [ ] **"Do the artifacts being used satisfy the Friction Allocation Principles?"**
   - Spot-check the rep's signal mechanisms against the four principles via the [Friction Allocation Diagnostic](../01-field-assets/friction-allocation-diagnostic.md). Especially relevant when reviewing how the rep is qualifying the deal and what costly signals are being deployed.
@@ -168,7 +170,9 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 
 Run the full scorecard from **[04-incentives-asymmetry-scorecard.md](./04-incentives-asymmetry-scorecard.md)** as a sub-check inside this review.
 
-In short: score Seller Ignorance ($I_{seller}$) across four dimensions (technical architecture, operational workflow, the economic event, the political map) and Buyer Uncertainty ($I_{buyer}$) across four more (vendor capability, adoption burden, cost predictability, price of failure). Each dimension scores 1 to 5, where **5 means high asymmetry**. Average each half, then add them.
+In short: score Seller Ignorance ($I_{seller}$) across four dimensions (technical architecture, operational workflow, the economic event, the political map) and Buyer Uncertainty ($I_{buyer}$) across four more (vendor capability, adoption burden, cost predictability, price of failure). Each dimension is a pair of counts, items in scope against items with evidence, and the unevidenced fraction $f$ becomes a dimension score of $f \cdot 4 + 1$ on the familiar 1 to 5 scale, where **5 means high asymmetry**. Average each half, then add them. Ask for the counts at review, not the scores.
+
+This card measures the implementation component's gap, which is the one pair that runs seller against buyer. The search and consensus gaps come from the Deal Triage Calculator and are not interchangeable with it.
 
 $$\Delta_A = I_{seller} + I_{buyer} \qquad \Delta_A \in [2, 10]$$
 

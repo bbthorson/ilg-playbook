@@ -110,6 +110,25 @@ RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance) comes from 
 - **Implementation red.** Customization is accumulating into a branch nobody can maintain. Every additional deviation raises the cost of the next upgrade and quietly builds the case for replacement.
 - **Everything green, Maintenance red.** Value landed and the relationship still decayed. Go to Section 4, because this is reputation depreciation rather than a delivery failure.
 
+### 2.1 The count re-take
+
+*The [Deal Triage Calculator](../deal-triage-calculator.md) counted three things before the deal was scored. By the first review cycle, all three are known rather than estimated. Record what they turned out to be.*
+
+Run this once, at the first cycle where deployment is far enough along to know. It is not repeated at later cycles.
+
+| Counted at triage | Scored | Actual | Variance |
+|---|---|---|---|
+| Integration points | ______ | ______ | ______ |
+| Workflows that change | ______ | ______ | ______ |
+| Undocumented exception paths | ______ | ______ | ______ |
+| **Total** | ______ | ______ | ______ |
+
+**Who reads this, and what for.** Not this account. The variance is recorded here and read by the manager across a book, which is the only level at which it means anything. One deal scored at 3 against 11 actual is a hard deal. A rep whose variance runs one direction across five deals is a scoring problem, and the direction says which one: consistently under is a rep routing deals away from apparatus, and consistently over is a rep routing them toward it.
+
+**No band and no threshold.** A variance of 4 on a deal counting 30 items is not the same finding as a variance of 4 on a deal counting 5, and this document does not carry the formula that would tell them apart. Record the numbers. The comparison is the manager's.
+
+This is the only audit the counting instrument has on itself. Counts are checkable where ratings are not, and this is where the check happens.
+
 ---
 
 ## Section 3: The QBR Protocol
