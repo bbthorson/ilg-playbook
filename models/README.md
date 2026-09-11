@@ -3,7 +3,7 @@
 **Executable forms of the equations the playbook states in LaTeX, plus the figures generated from them.** No dependencies. Python 3, standard library only, matching the two checkers in [`practice/02-internal-ops/linting/`](../practice/02-internal-ops/linting/).
 
 ```bash
-python3 models/test_ilg_models.py      # every worked example in the docs
+python3 models/test_tcg_models.py      # every worked example in the docs
 python3 models/make_figures.py --check # figures still match the equations
 ```
 
@@ -11,7 +11,7 @@ python3 models/make_figures.py --check # figures still match the equations
 
 Roughly a dozen formulas lived only as prose. Nothing verified that a worked example still matched its formula, that weights still summed to 1, or that a figure still depicted the equation it illustrated. Retune a coefficient and the prose went on quietly asserting the old one.
 
-That is the drift problem [`RetiredTerms.yml`](../practice/02-internal-ops/linting/styles/ILG/RetiredTerms.yml) solves for renames and the [citation provenance audit](../theory/02-research/audits/citation-provenance-audit.md) solves for statistics. This directory is the equivalent for formulas.
+That is the drift problem [`RetiredTerms.yml`](../practice/02-internal-ops/linting/styles/TCG/RetiredTerms.yml) solves for renames and the [citation provenance audit](../theory/02-research/audits/citation-provenance-audit.md) solves for statistics. This directory is the equivalent for formulas.
 
 ## The documents are the specification
 
@@ -29,9 +29,9 @@ The dependency chain runs `theory/` to `practice/` to `publishing/`, one way. Th
 
 | File | What it does |
 |---|---|
-| `ilg_models.py` | Every live formula, one function each, with its canonical home named in the docstring. |
-| `test_ilg_models.py` | 118 assertions. Every worked example in the documents, plus the properties the documents claim (convexity, boundedness, monotonicity, the band edges). |
-| `make_figures.py` | Writes the three axiom figures in `theory/01-foundation/assets/` by sampling `ilg_models.py`. `--check` regenerates and fails on any diff. |
+| `tcg_models.py` | Every live formula, one function each, with its canonical home named in the docstring. |
+| `test_tcg_models.py` | 118 assertions. Every worked example in the documents, plus the properties the documents claim (convexity, boundedness, monotonicity, the band edges). |
+| `make_figures.py` | Writes the three axiom figures in `theory/01-foundation/assets/` by sampling `tcg_models.py`. `--check` regenerates and fails on any diff. |
 
 Formula coverage, by canonical home:
 
@@ -63,7 +63,7 @@ What would make the models empirical is already written down, in section 6 of `0
 
 `theory/01-foundation/assets/` holds three SVGs, one per axiom, replacing hand-made PNGs that depicted a potential-well curve no equation in the repository produced.
 
-Each is sampled from `ilg_models.py`, so a coefficient change moves the picture or fails the check. The SVG is written by hand rather than by a plotting library so the check runs anywhere Python does, the output is byte-for-byte reproducible, and the `prefers-color-scheme` block is authored directly rather than injected by post-processing. The old PNGs glared in dark mode.
+Each is sampled from `tcg_models.py`, so a coefficient change moves the picture or fails the check. The SVG is written by hand rather than by a plotting library so the check runs anywhere Python does, the output is byte-for-byte reproducible, and the `prefers-color-scheme` block is authored directly rather than injected by post-processing. The old PNGs glared in dark mode.
 
 **Vale does not read SVG.** Its scope is `*.md`, so label text inside a figure escapes the banned-word list, the emoji ban, and the retired-terms rule. `check_figure_text()` in `make_figures.py` closes that hole by reading the same `RetiredTerms.yml` and `AntiHype.yml` files Vale uses. It covers the figures this repository generates and nothing else, so an SVG added by hand is still unchecked.
 

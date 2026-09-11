@@ -4,7 +4,7 @@ layer: theory
 status: active
 version: 1.0
 operationalizes: [axiom-1, axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Friction Vector
@@ -240,7 +240,7 @@ Recorded so that the change is legible from here rather than only from a diff.
 
 ## Related
 
-- [00-ilg-constitution.md](./00-ilg-constitution.md) — Axiom I supplies both quantities and Axiom II supplies the amplification this document argued for. v16.0 separated level from composition and v17.0 gave composition its equation.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies both quantities and Axiom II supplies the amplification this document argued for. v16.0 separated level from composition and v17.0 gave composition its equation.
 - [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — The named motions, mapped onto regions of this space.
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms for the components, and the calibration status that governs every number here.
 - [05-seller-surplus-model.md](./05-seller-surplus-model.md) — The seller's side of the transaction, which section 8 depends on.

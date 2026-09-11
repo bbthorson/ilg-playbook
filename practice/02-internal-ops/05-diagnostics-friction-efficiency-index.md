@@ -3,7 +3,7 @@ title: "Friction Efficiency Index"
 layer: practice
 status: active
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Friction Efficiency Index
@@ -100,7 +100,7 @@ $\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed Str
 
 ## 6. Three defects in the composite, recorded
 
-Each was found by evaluating the formulas in [`models/ilg_models.py`](../../models/ilg_models.py) rather than by reading them. None is fixed here, because each fix requires choosing a shape or a weight rather than correcting arithmetic, and that is a decision rather than a repair.
+Each was found by evaluating the formulas in [`models/tcg_models.py`](../../models/tcg_models.py) rather than by reading them. None is fixed here, because each fix requires choosing a shape or a weight rather than correcting arithmetic, and that is a decision rather than a repair.
 
 **The composite is monotonic in FAR, and section 1 says it should not be.** Section 1 states that above 0.75 the organization is either treating a Turnkey deal as Structural or performing pre-sale work nobody asked for. Section 5 then weights FAR at 0.35 with no band. Holding the other three components fixed, a FAR of 0.70 scores 81.50 and a FAR of 1.00 scores 92.00. The composite rewards the state section 1 names as a failure. A fix means giving FAR a band-shaped contribution, which requires choosing how steeply to penalize each side of the band.
 

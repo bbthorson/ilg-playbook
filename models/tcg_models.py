@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Executable forms of the equations the ILG playbook states in LaTeX.
+"""Executable forms of the equations the TCG playbook states in LaTeX.
 
 The playbook keeps roughly a dozen formulas in prose. Nothing verified that a
 worked example still matched its formula, that weights still summed to 1, or
@@ -9,7 +9,7 @@ RetiredTerms.yml is the single record renames are checked against.
 
 **The documents are the specification.** Where a document and this module
 disagree, the document wins and the module is the bug. Every function names its
-canonical home in its docstring, and test_ilg_models.py asserts that each worked
+canonical home in its docstring, and test_tcg_models.py asserts that each worked
 example in those documents reproduces here.
 
 CALIBRATION STATUS
@@ -1042,7 +1042,7 @@ def repeated_seller_surplus(r, v, c_deliver, c_sustain, rho, c_invest):
     durable asset rather than lock-in.
 
     The single-shot form of section 2 is this expression with T = 1 and
-    C_sustain = 0. test_ilg_models.py asserts that identity.
+    C_sustain = 0. test_tcg_models.py asserts that identity.
 
     rho is a policy choice rather than a measurement, and r_t is no better
     observed than p_close.

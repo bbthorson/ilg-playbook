@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assert that every worked example in the playbook reproduces from ilg_models.
+"""Assert that every worked example in the playbook reproduces from tcg_models.
 
 The documents are the specification. Each test names the file and section it
 checks, so a failure says which prose to read rather than which line to edit.
@@ -7,7 +7,7 @@ Where a document and the module disagree, fix the module.
 
 Standard library only:
 
-    python3 models/test_ilg_models.py
+    python3 models/test_tcg_models.py
 """
 
 import math
@@ -17,7 +17,7 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-import ilg_models as m
+import tcg_models as m
 
 
 # ==========================================================================
@@ -1123,7 +1123,7 @@ class TestCalibrationDiscipline(unittest.TestCase):
             if name.startswith("_"):
                 continue
             obj = getattr(m, name)
-            if callable(obj) and getattr(obj, "__module__", None) == "ilg_models":
+            if callable(obj) and getattr(obj, "__module__", None) == "tcg_models":
                 self.assertTrue(
                     obj.__doc__,
                     "{} needs a docstring naming its canonical home".format(name))
@@ -1161,7 +1161,7 @@ class TestCalibrationDiscipline(unittest.TestCase):
     def test_the_module_has_no_third_party_imports(self):
         """It must stay dependency-free like the two existing checkers."""
         source = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                   "ilg_models.py"), encoding="utf-8").read()
+                                   "tcg_models.py"), encoding="utf-8").read()
         imported = set()
         for line in source.splitlines():
             line = line.strip()

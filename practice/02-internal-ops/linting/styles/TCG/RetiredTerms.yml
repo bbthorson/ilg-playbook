@@ -3,7 +3,7 @@ message: "Use '%s' instead of '%s'."
 level: error
 ignorecase: false
 # Retired axiom names. The canonical names live in
-# theory/01-foundation/00-ilg-constitution.md Part I. Add a row here whenever an
+# theory/01-foundation/00-tcg-constitution.md Part I. Add a row here whenever an
 # axiom is renamed, in the same commit as the Constitution version bump.
 #
 # The list below was completed by mining git history rather than by scanning the
@@ -11,7 +11,7 @@ ignorecase: false
 # trace to find. See the linting README for the command.
 #
 # Deliberately absent: "Law of Conservation". That is Tesler's Law quoted in
-# prose in a published style reference, not a retired ILG axiom.
+# prose in a published style reference, not a retired TCG axiom.
 #
 # Retired directory numbering. These paths never resolve; they appear in link
 # text while the href alongside them is correct, so the link checker cannot see
@@ -57,7 +57,7 @@ ignorecase: false
 # Retired notation (v17.0). The reduced form was written with a bare x defined
 # as "approximately Delta_A", which is the raw scorecard score. Section 1.5 has
 # required the normalised value since before that wording was written, and
-# ilg_models.py refuses a raw one at the type level, so the Constitution's own
+# tcg_models.py refuses a raw one at the type level, so the Constitution's own
 # statement of the equation carried the exact error the module exists to
 # prevent. The row catches the LaTeX shape rather than the letter x, which is
 # still legitimate as x_m in the milestone chain.
@@ -66,7 +66,28 @@ ignorecase: false
 # nothing here catches a paragraph that uses every current term while describing
 # the single-multiplier version. These are the load-bearing phrases from the
 # form that per-component amplification replaced.
+# Framework rename (v18.0). Implementation-Led Growth named the whole framework
+# and named one of the four motions inside it. v17.0 made a motion a region of
+# the friction vector's space, which left the framework named after one of its
+# own regions. The framework is Transaction Cost Growth; ILG keeps its name as
+# the implementation-dominant motion.
+#
+# This is why bare "ILG" and bare "Implementation-Led Growth" are NOT retired
+# here: both are still correct when they name the motion. The keys below are
+# scoped to the shapes that could only ever have meant the framework, which is
+# the same trade the v15.0 and v17.0 rows make. A reviewer still has to read
+# descriptions, not just names.
 swap:
+  ILG Constitution: TCG Constitution
+  Constitution of Implementation-Led Growth: Constitution of Transaction Cost Growth
+  ILG framework: TCG framework
+  ILG axiom: TCG axiom
+  Supports in ILG: Supports in TCG
+  Axioms of ILG: Axioms of TCG
+  00-ilg-constitution\.md: 00-tcg-constitution.md
+  ilg_models: tcg_models
+  styles/ILG: styles/TCG
+  vale ILG\.: "vale TCG."
   ax\^2: "a \\hat{\\Delta}_A^2 (the reduced form takes the NORMALISED gap; a raw score is off by an order of magnitude)"
   amplified by the bilateral information asymmetry: "amplified per component by the asymmetry inside that component's own pair of parties (Constitution v17.0)"
   The teaching equation uses a global multiplier: "each component is amplified by its own gap; the single multiplier is the factored special case"
@@ -81,7 +102,7 @@ swap:
   Their combined level determines which motion: "composition selects the motion, and combined level sets the Turnkey and Structural boundary"
   03-learning-plan: "no replacement; the curriculum was removed in v15.0"
   llm-tutor-instructions: "no replacement; the curriculum was removed in v15.0"
-  plain-language-part-I-companion: 00-ilg-constitution.md Part I
+  plain-language-part-I-companion: 00-tcg-constitution.md Part I
   Constitution, Clarifying Concepts: the concept's research file, indexed in 04-glossary-and-notation.md
   Constitution clarifying concept: the concept's research file, indexed in 04-glossary-and-notation.md
   Constitution, Part IV: practice/02-internal-ops/07-variable-ownership.md

@@ -6,7 +6,7 @@ status: active
 
 # Citation Provenance Audit
 
-**Purpose:** trace every headline statistic the ILG framework cites to its primary source, and record how far each trace currently goes. The research entries quote these numbers. This file is where their provenance lives. Check a statistic's status here before quoting it outside this repository.
+**Purpose:** trace every headline statistic the TCG framework cites to its primary source, and record how far each trace currently goes. The research entries quote these numbers. This file is where their provenance lives. Check a statistic's status here before quoting it outside this repository.
 
 **Status vocabulary:**
 

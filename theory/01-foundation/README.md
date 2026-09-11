@@ -10,12 +10,12 @@ status: active
 
 Parent: [theory/](../) · Sibling: [02-research/](../02-research/)
 
-The three states (Market, Deal at T0, Relationship at T1+) are the framework's primary index. They are defined in [00-ilg-constitution.md](./00-ilg-constitution.md) Part I and used as the front door in the [root README](../../README.md).
+The three states (Market, Deal at T0, Relationship at T1+) are the framework's primary index. They are defined in [00-tcg-constitution.md](./00-tcg-constitution.md) Part I and used as the front door in the [root README](../../README.md).
 
 ## Reading order
 
 1. **[01-sales-motion-comparison.md](./01-sales-motion-comparison.md)** — *(start here if you're new)* What each named motion contains, once a motion is a region of the friction vector's space rather than an item on a list. Gives you the lay of the land before you dive into theory.
-2. **[00-ilg-constitution.md](./00-ilg-constitution.md)** — The full economic and behavioral framework, structured as a deductive system. Four parts:
+2. **[00-tcg-constitution.md](./00-tcg-constitution.md)** — The full economic and behavioral framework, structured as a deductive system. Four parts:
    - **Part I:** The Three Axioms — Law of Transaction Cost Composition, Law of Uncertainty Inflation, Law of Governance
    - **Part II:** Derived Concepts — primary derivations from each axiom (Boundary Condition, Friction Allocation Principles, Three Sales Levers, Recursive Cooperation, Reputation Depreciation), bridge concepts (Decay Clock, Effective Cost, Staged Commitment, Surplus)
    - **Part III:** Synthesis — the full integrated Surplus equation and the failure-modes summary. Part I carries one figure per axiom, generated from [`models/`](../../models/README.md).

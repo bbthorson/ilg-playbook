@@ -6,15 +6,15 @@ status: active
 
 # Theory
 
-**Function:** develop and pressure-test the ILG framework. This is where the ideas live before they get operationalized in [`practice/`](../practice/) or published in [`publishing/`](../publishing/).
+**Function:** develop and pressure-test the TCG framework. This is where the ideas live before they get operationalized in [`practice/`](../practice/) or published in [`publishing/`](../publishing/).
 
 ## What's in here
 
 ### [01-foundation/](01-foundation/)
 
-The canonical ILG framework. The Constitution, the motion-comparison decision tool, and the CFIR mapping. Start here if you're new to ILG.
+The canonical TCG framework. The Constitution, the motion-comparison decision tool, and the CFIR mapping. Start here if you're new to TCG.
 
-- [00-ilg-constitution.md](01-foundation/00-ilg-constitution.md) — Three Axioms, the three states, derived concepts, and the Fundamental Equation.
+- [00-tcg-constitution.md](01-foundation/00-tcg-constitution.md) — Three Axioms, the three states, derived concepts, and the Fundamental Equation.
 - [01-sales-motion-comparison.md](01-foundation/01-sales-motion-comparison.md) — ILG vs. PLG vs. SLG decision framework.
 - [02-cfir-field-mapping.md](01-foundation/02-cfir-field-mapping.md) — How implementation-science constructs map to ILG artifacts.
 - [03-mathematical-models.md](01-foundation/03-mathematical-models.md) — Functional forms, parameters, and calibrations behind the variables in the Constitution.

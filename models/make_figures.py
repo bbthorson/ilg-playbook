@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Emit the Constitution's axiom figures as SVGs computed from ilg_models.
+"""Emit the Constitution's axiom figures as SVGs computed from tcg_models.
 
 The three figures this replaces were hand-made PNGs. Nothing connected them to
 the equations they claimed to illustrate, so retuning a coefficient left the
 picture quietly asserting the old one. Every curve here is sampled from a
-function in ilg_models.py, so the figures cannot drift from the math without
+function in tcg_models.py, so the figures cannot drift from the math without
 the diff check failing.
 
     python3 models/make_figures.py            # write the SVGs
     python3 models/make_figures.py --check    # regenerate and fail on diff
 
-Deliberately dependency-free, like ilg_models.py and the two checkers in
+Deliberately dependency-free, like tcg_models.py and the two checkers in
 practice/02-internal-ops/linting/. The SVG is written by hand rather than by a
 plotting library so that the diff check runs anywhere Python does, the output
 is byte-for-byte reproducible, and the prefers-color-scheme block is authored
@@ -33,12 +33,12 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-import ilg_models as m
+import tcg_models as m
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ASSETS = os.path.join(ROOT, "theory", "01-foundation", "assets")
 STYLES = os.path.join(ROOT, "practice", "02-internal-ops", "linting",
-                      "styles", "ILG")
+                      "styles", "TCG")
 
 W, H = 760, 470
 PAD_L, PAD_R, PAD_T, PAD_B = 78, 34, 92, 74

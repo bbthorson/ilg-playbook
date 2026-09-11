@@ -4,14 +4,14 @@ layer: theory
 status: active
 version: 2.0
 operationalizes: [axiom-1, axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Sales Motion Comparison: ILG vs. PLG vs. SLG
 
 **What the three named motions are, once a motion is a region rather than a list entry.**
 
-This document is the practical companion to the [Constitution](./00-ilg-constitution.md). The Constitution explains why motion choice matters. [06-friction-vector.md](./06-friction-vector.md) derives what a motion is. This file says what each named region contains, where the names mislead, and where the boundary of the ILG region sits.
+This document is the practical companion to the [Constitution](./00-tcg-constitution.md). The Constitution explains why motion choice matters. [06-friction-vector.md](./06-friction-vector.md) derives what a motion is. This file says what each named region contains, where the names mislead, and where the boundary of the ILG region sits.
 
 > [!IMPORTANT]
 > **Version 2.0 replaced the spine.** Version 1 organized around a three-item list of motions and a Nascent, Efficient and Saturated market-state taxonomy, and carried its own copy of the diagnostic steps. Constitution v17.0 retired all three. A motion is now a region of the friction vector's space, named by which component dominates and how long the vector is, and the diagnostic lives in one place, the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md). What survives here is everything the calculator does not carry: what each region contains, why search-dominant and implementation-dominant deals get confused, and the six conditions that put a deal outside the ILG region entirely.
@@ -217,7 +217,7 @@ The most common motion-selection mistakes. The first two are Axiom I's failure m
 
 **Treating a Structural deal like a Turnkey deal.** Velocity instruments applied to a deal that needs the implementation chain. *Symptoms:* the deal stalls with no clear blocker, ending in no decision, or it closes and churns shortly after signature. Both symptoms, and Axiom I now names both. *Root cause:* the level was not honored, or the counts behind it were deflated, which is the failure the calculator's Count Variance measure exists to make visible.
 
-**Treating a Turnkey deal like a Structural deal.** ILG applied to a low-specificity deal. *Symptoms:* buyer experiences over-engineering, chooses a faster competitor or self-serves. *Root cause:* reps trained on ILG playbook applying it indiscriminately.
+**Treating a Turnkey deal like a Structural deal.** ILG applied to a low-specificity deal. *Symptoms:* buyer experiences over-engineering, chooses a faster competitor or self-serves. *Root cause:* reps trained on the ILG playbook applying it indiscriminately.
 
 **Reading an unnamed category as a short alternative list.** The buyer names no vendors, so the search count comes out low and the deal routes to velocity or implementation instruments. *Symptoms:* low engagement, "interesting but not now" responses. *Root cause:* mistaking absence of competition for a small choice set. An unnamed category is an unbounded alternative set and scores the maximum search cost, which the calculator states twice because this is the misreading that survives every rewrite.
 
@@ -261,7 +261,7 @@ The motion is not about your preference. It follows from two measurements: how l
 
 ## Related
 
-- [00-ilg-constitution.md](./00-ilg-constitution.md) — Axiom I supplies level and direction. Axiom II supplies the per-component amplification direction is read from.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies level and direction. Axiom II supplies the per-component amplification direction is read from.
 - [06-friction-vector.md](./06-friction-vector.md) — Why a motion is a region rather than a list entry, and what the change retired.
 - [02-cfir-field-mapping.md](./02-cfir-field-mapping.md) — How ILG artifacts operationalize implementation science.
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms behind $\Delta_A$, $F_{consensus}$, and the urgency decay rate.

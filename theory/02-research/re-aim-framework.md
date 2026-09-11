@@ -3,7 +3,7 @@ title: "RE-AIM Framework"
 layer: theory
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # RE-AIM Framework
@@ -26,7 +26,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - Top-performing SaaS achieves NRR > 120%; NRR < 100% signals institutionalization failure.
 - Technical debt consumes 20–40% of IT budgets annually.
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom III — Law of Governance** — RE-AIM's Maintenance dimension is how recursive cooperation gets measured; NRR is the lagging signal.
 - **Reputation Depreciation** (primary derivation) — RE-AIM's Implementation and Maintenance dimensions are what depreciation looks like operationally.
 - **Surplus** (bridge concept) — RE-AIM measures whether surplus is preserved post-signature.

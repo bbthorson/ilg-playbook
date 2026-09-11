@@ -4,7 +4,7 @@ layer: theory
 status: active
 version: 1.1
 operationalizes: [axiom-1, axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Seller Surplus and the Implementation Investment
@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 **Version:** 1.1
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
-The [Constitution](./00-ilg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
+The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
 
 That omission is invisible while the motion is advisory. It becomes binding the moment the seller deploys engineers into a buyer's environment before signature, because the seller is then sinking capital that no term of the buyer's equation accounts for.
 
@@ -173,6 +173,6 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/02-inter
 ## Related
 
 - **Research:** [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) for quasi-rents and supplier exposure, [real-options.md](../02-research/real-options.md) for staging under irreversibility, [process-misfit.md](../02-research/process-misfit.md) for what drives $C_{deliver}$.
-- **Buyer-side model:** [00-ilg-constitution.md](./00-ilg-constitution.md) Part III.
+- **Buyer-side model:** [00-tcg-constitution.md](./00-tcg-constitution.md) Part III.
 - **Functional forms:** [03-mathematical-models.md](./03-mathematical-models.md).
 - **Staging in practice:** [milestone-valuation-model.md](../../practice/01-field-assets/milestone-valuation-model.md).

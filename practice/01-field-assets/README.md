@@ -16,7 +16,7 @@ Each document here carries its own header table stating its inputs, outputs, nex
 
 ## Start here: which state are you in
 
-The three states are defined in [Constitution Part I](../../theory/01-foundation/00-ilg-constitution.md). Name the state, then open the artifact.
+The three states are defined in [Constitution Part I](../../theory/01-foundation/00-tcg-constitution.md). Name the state, then open the artifact.
 
 | State | Your question | Asset |
 |---|---|---|
@@ -73,6 +73,6 @@ The three map onto the Three Sales Levers from Axiom II. The scorecard says how 
 
 ## Related
 
-- **Theory:** [00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) for the axioms, [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) for why each motion fits where.
+- **Theory:** [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) for the axioms, [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) for why each motion fits where.
 - **Manager tools:** [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) carries the forecast questions and the commit rule.
 - **Before modifying any asset here:** [02-cfir-field-mapping.md](../../theory/01-foundation/02-cfir-field-mapping.md) says which research construct each section operationalizes.

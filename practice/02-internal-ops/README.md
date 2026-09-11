@@ -6,7 +6,7 @@ status: active
 
 # Internal Ops: Governance & Incentives
 
-**The systems that keep ILG honest at the org level.** These are tools for leadership, RevOps, and finance — not the rep in the field.
+**The systems that keep TCG honest at the org level.** These are tools for leadership, RevOps, and finance — not the rep in the field.
 
 Parent: [practice/](../) · Sibling: [01-field-assets/](../01-field-assets/)
 
@@ -16,7 +16,7 @@ If [`../01-field-assets/`](../01-field-assets/) is *how reps run deals*, this di
 
 ### Setup (one-time)
 
-- **[00-setup-implementation-guide.md](./00-setup-implementation-guide.md)** — Calibration workshop to customize the ILG framework to your product, market, and tech stack. Run this before deploying any of the other artifacts here.
+- **[00-setup-implementation-guide.md](./00-setup-implementation-guide.md)** — Calibration workshop to customize the TCG framework to your product, market, and tech stack. Run this before deploying any of the other artifacts here.
 
 ### Governance (deal-level, recurring)
 

@@ -4,7 +4,7 @@ layer: practice
 status: active
 version: 2.0
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Red Team Protocol (The Validator)
@@ -222,7 +222,7 @@ Ready to draft Asset \#3: The Mutual Implementation Plan (MIP)?
 
 ## Related
 
-- **Theory:** [ILG Constitution, Axiom II](../../../theory/01-foundation/00-ilg-constitution.md) — The Red Team primarily addresses $F_{implementation}$ forecasting and reduces Buyer Uncertainty ($I_{buyer}$) through costly signals satisfying the Single Crossing Property.
+- **Theory:** [TCG Constitution, Axiom II](../../../theory/01-foundation/00-tcg-constitution.md) — The Red Team primarily addresses $F_{implementation}$ forecasting and reduces Buyer Uncertainty ($I_{buyer}$) through costly signals satisfying the Single Crossing Property.
 - **CFIR mapping:** [02-cfir-field-mapping.md](../../../theory/01-foundation/02-cfir-field-mapping.md) — Implementation Process / Engaging constructs.
 - **Academic backing:** [costly-signals.md](../../../theory/02-research/costly-signals.md), [re-aim-framework.md](../../../theory/02-research/re-aim-framework.md) (inverted RE-AIM is the workshop's structure).
 - **Prerequisite:** [01-discovery-contextual-blueprint.md](./01-discovery-contextual-blueprint.md) — You stress-test what discovery surfaced.

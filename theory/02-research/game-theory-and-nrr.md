@@ -3,7 +3,7 @@ title: "Game Theory and Net Revenue Retention"
 layer: theory
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Game Theory and Net Revenue Retention
@@ -24,7 +24,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - Functional alignment pays: Aberdeen Group found 36% higher retention and 38% higher win rates in organizations with tightly aligned sales and marketing. The same repeated-game logic extends to Sales-CS alignment.
 - NRR is the lagging indicator of whether the repeated game is being played well.
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom III — Law of Governance** — direct theoretical basis. The cooperation condition $\delta_{discount} > (T-R)/(T-P)$ comes from Axelrod.
 - **Recursive Cooperation** (primary derivation) — Shadow of the Future must hold for every party in the system, including adjudicators.
 - **Reputation Depreciation** (primary derivation) — the Promise Gap is what reputation depreciation looks like when not actively refreshed.

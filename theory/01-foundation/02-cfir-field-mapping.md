@@ -4,12 +4,12 @@ layer: theory
 status: active
 version: 1.1
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # CFIR-to-Field Asset Mapping
 
-**Purpose:** This document maps the Consolidated Framework for Implementation Research (CFIR) constructs to the ILG field assets. CFIR is the "engineering spec" behind the tools reps use — the academic rigor lives here so the templates stay simple.
+**Purpose:** This document maps the Consolidated Framework for Implementation Research (CFIR) constructs to the TCG field assets. CFIR is the "engineering spec" behind the tools reps use — the academic rigor lives here so the templates stay simple.
 
 **Audience:** Framework designers, sales enablement, anyone updating or creating field assets.
 
@@ -87,7 +87,7 @@ The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evalua
 
 Frame Alignment Processes are the four ways to connect an initiative to what a stakeholder already believes. They come from Snow et al. (1986) rather than from CFIR. They sit in this document because CFIR names what is blocking a stakeholder and these are the moves that shift the stakeholder once named, and because all three assets use them:
 
-| Frame Process | When to Use | ILG Asset | Example |
+| Frame Process | When to Use | Asset | Example |
 |---|---|---|---|
 | **Frame Bridging** | Stakeholder cares about a different outcome than you're selling | Blueprint (Political Capital Map) | "This innovation IS risk mitigation" — bridge your solution to Legal's concern |
 | **Frame Amplification** | Tension for Change is too low | Blueprint (Cost of Inaction) | "2 hrs/week × 50 reps = $250K/year in lost productivity" |
@@ -126,7 +126,7 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 
 ## Related
 
-- [00-ilg-constitution.md](./00-ilg-constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
 - [cfir.md](../02-research/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
 - [re-aim-framework.md](../02-research/re-aim-framework.md) — Companion framework for post-sale measurement.
 - Field artifacts being mapped:

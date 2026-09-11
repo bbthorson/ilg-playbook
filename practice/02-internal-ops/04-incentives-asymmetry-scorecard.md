@@ -4,7 +4,7 @@ layer: practice
 status: active
 version: 3.0
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Bilateral Asymmetry Scorecard
@@ -127,7 +127,7 @@ The whole 1-to-5 presentation cancels. A deal where the seller has evidence for 
 
 ## Related
 
-- [00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) — Axiom II defines the three component gaps. This card measures the implementation one.
+- [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) — Axiom II defines the three component gaps. This card measures the implementation one.
 - [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) — Functional forms for $I_{seller}$ and $I_{buyer}$, the normalization rule, and the three-gap table in section 2.4.
 - [Deal Triage Calculator](../01-field-assets/deal-triage-calculator.md) — Emits the search and consensus gaps, and a provisional implementation gap this card supersedes.
 - [Contextual Blueprint](../01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) — Reduces $I_{seller}$.

@@ -4,7 +4,7 @@ layer: practice
 status: active
 version: 1.0
 operationalizes: [axiom-1]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Education-Led Motion (SLG)
@@ -14,7 +14,7 @@ Component: Search. Deals whose direction points at the buyer's inability to find
 Audience: Account Executives / Founders selling into an unformed category
 Goal: To sell in a market that does not yet know it is a market, and to recognize the moment that stops being true.
 
-**Canonical Reference:** [ILG Constitution, Axiom I (Law of Transaction Cost Composition)](../../../theory/01-foundation/00-ilg-constitution.md). SLG is what the Boundary Condition prescribes when the category itself is illegible. The reasoning is in [01-sales-motion-comparison.md](../../../theory/01-foundation/01-sales-motion-comparison.md).
+**Canonical Reference:** [TCG Constitution, Axiom I (Law of Transaction Cost Composition)](../../../theory/01-foundation/00-tcg-constitution.md). SLG is what the Boundary Condition prescribes when the category itself is illegible. The reasoning is in [01-sales-motion-comparison.md](../../../theory/01-foundation/01-sales-motion-comparison.md).
 
 | | |
 |---|---|
@@ -111,5 +111,5 @@ Any one of these means the deal is no longer SLG. Stop, re-run the [Deal Triage 
 
 - **Theory:** [01-sales-motion-comparison.md](../../../theory/01-foundation/01-sales-motion-comparison.md) covers SLG vs. ILG in depth, including why educational friction and structural friction call for opposite behavior.
 - **Triage:** [deal-triage-calculator.md](../deal-triage-calculator.md). A search-dominant direction routes here, and any rotation away from search routes out.
-- **Constitution:** [Axiom I and the Boundary Condition](../../../theory/01-foundation/00-ilg-constitution.md). Over-frictioning a nascent deal and under-frictioning a matured one are the two failure modes this document exists to prevent.
+- **Constitution:** [Axiom I and the Boundary Condition](../../../theory/01-foundation/00-tcg-constitution.md). Over-frictioning a nascent deal and under-frictioning a matured one are the two failure modes this document exists to prevent.
 - **Sibling motions:** [ilg-motion/](../ilg-motion/) for Structural deals, [plg-motion/](../plg-motion/) for Turnkey deals.

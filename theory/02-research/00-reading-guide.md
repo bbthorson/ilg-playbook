@@ -8,7 +8,7 @@ status: active
 
 **How to navigate the research, in what order, for which audience.** This guide tells you where to start, what to read in what sequence, and what's safe to skip — given who you are and what you need.
 
-The theoretical synthesis of these papers lives in the [Constitution](../01-foundation/00-ilg-constitution.md). This guide tells you which papers back the Constitution's claims and how to read them efficiently.
+The theoretical synthesis of these papers lives in the [Constitution](../01-foundation/00-tcg-constitution.md). This guide tells you which papers back the Constitution's claims and how to read them efficiently.
 
 ---
 
@@ -16,7 +16,7 @@ The theoretical synthesis of these papers lives in the [Constitution](../01-foun
 
 The traditional B2B sales playbook — built on persuasion, relationship-building, and "growth at all costs" — is fundamentally broken. It fails to account for the economic and psychological realities of the modern enterprise buyer. Implementation-Led Growth synthesizes frameworks from Implementation Science (CFIR, RE-AIM), Behavioral Economics (Prospect Theory, Costly Signaling), and Institutional Economics (Transaction Cost Economics, Game Theory) into a single coherent framework. The shift is from "Persuader" to "Diagnostic Change Agent," and from "Closing" to "De-risking."
 
-For the formal axioms and derivations, read the [Constitution](../01-foundation/00-ilg-constitution.md). For the research that backs each axiom, use the reading order and audience guide below.
+For the formal axioms and derivations, read the [Constitution](../01-foundation/00-tcg-constitution.md). For the research that backs each axiom, use the reading order and audience guide below.
 
 ---
 
@@ -92,7 +92,7 @@ Plus the seller-side layer:
 
 | Audience | Start with | Then read | Skip |
 |---|---|---|---|
-| **Executive / CRO** | This guide → [Constitution](../01-foundation/00-ilg-constitution.md) | [Sales Motion Comparison](../01-foundation/01-sales-motion-comparison.md) | Deep theory papers unless interested |
+| **Executive / CRO** | This guide → [Constitution](../01-foundation/00-tcg-constitution.md) | [Sales Motion Comparison](../01-foundation/01-sales-motion-comparison.md) | Deep theory papers unless interested |
 | **Sales Practitioner** | This guide → [CFIR](./cfir.md) (Saboteur Matrix) | [Costly Signals](./costly-signals.md), [Prospect Theory](./prospect-theory.md) | Mathematical proofs |
 | **Sales Enablement / Ops** | [RE-AIM](./re-aim-framework.md) (KPI tables) → [Game Theory and NRR](./game-theory-and-nrr.md) (compensation) | Full [CFIR](./cfir.md), [Sales Motion Comparison](../01-foundation/01-sales-motion-comparison.md) | Nothing — read everything |
 | **Academic / Researcher** | [TCE](./transaction-cost-economics.md) → [Costly Signals](./costly-signals.md) → [Prospect Theory](./prospect-theory.md) | [Game Theory](./game-theory-and-nrr.md), [CFIR](./cfir.md), [RE-AIM](./re-aim-framework.md) | [Fear of Failure](./fear-of-failure.md) unless reviewing data |
@@ -104,6 +104,6 @@ Plus the seller-side layer:
 
 This is a citation index, not a theoretical synthesis. The synthesis lives elsewhere:
 
-- **Three axioms and their derivations:** [Constitution](../01-foundation/00-ilg-constitution.md), Parts I and II.
+- **Three axioms and their derivations:** [Constitution](../01-foundation/00-tcg-constitution.md), Parts I and II.
 - **Surplus equation and failure modes table:** Constitution Part III. The per-axiom figures are in Part I, generated from [`models/`](../../models/).
 - **Operational tools** (rubric, artifacts): [`practice/`](../../practice/).

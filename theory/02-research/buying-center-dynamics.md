@@ -3,7 +3,7 @@ title: "Buying Center Dynamics"
 layer: theory
 status: active
 operationalizes: [axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Buying Center Dynamics
@@ -23,7 +23,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - Goal heterogeneity, not size alone, drives paralysis. A large committee that agrees moves faster than a small one that does not.
 - Any member holding veto power is a decision maker regardless of title or seniority.
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom II — Law of Uncertainty Inflation** — supplies the internal structure of $F_{consensus}$. The Constitution names consensus cost. Cyert-March and Webster-Wind explain what generates it.
 - **Consensus Friction model** — direct theoretical basis for $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$ in [03-mathematical-models.md](../01-foundation/03-mathematical-models.md). The exponent $\beta > 1$ follows from channel growth, and the variance term follows from goal heterogeneity.
 - **The Red Team Protocol** — operationalizes variance reduction. Forcing stakeholders to state failure modes aloud converts quasi-resolution into explicit trade-off, which is the only mechanism that lowers $\text{Var}(I_i)$ before signature.

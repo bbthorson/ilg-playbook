@@ -1,13 +1,13 @@
 ---
-title: 'ILG Implementation Guide: The "Installation Wizard"'
+title: 'TCG Implementation Guide: The "Installation Wizard"'
 layer: practice
 status: active
 ---
 
-# ILG Implementation Guide: The "Installation Wizard"
+# TCG Implementation Guide: The "Installation Wizard"
 
 Target Audience: Revenue Operations, Sales Enablement, VP Sales  
-Goal: To calibrate the ILG framework to your specific product, market, and tech stack.
+Goal: To calibrate the TCG framework to your specific product, market, and tech stack.
 
 | | |
 |---|---|
@@ -28,13 +28,18 @@ Time: 90 Minutes.
 
 *Goal: Agree on the objective criteria that force a deal into the High-Friction lane.*
 
-| Factor | Score 1 (Turnkey / PLG) | Score 3 (Standard / SLG) | Score 5 (Structural / ILG) |
-| :---- | :---- | :---- | :---- |
-| **Tech Specificity** | *Example: No code, browser-based only.* | *Example: Standard API (Salesforce, Slack).* | *Example: Requires on-prem agent, custom SQL, or ERP write-access.* |
-| **Org Specificity** | *Example: Single user or single team.* | *Example: Departmental (Sales Only).* | *Example: Cross-functional (Sales \+ Finance \+ Legal).* |
-| **Political Complexity** | *Example: Credit card swipe.* | *Example: Manager approval.* | *Example: InfoSec Review \+ CFO Sign-off.* |
+The calculator counts three things. This workshop decides what each of them means for your product, because "one integration point" is not self-evident and two reps will count it differently until someone rules.
 
-**Action Item:** Replace the generic examples above with your specific product features/integrations.
+| Count | What the workshop must settle | Worked example to replace |
+|---|---|---|
+| **Integration points** | What counts as one system exchanging data with yours. Does a read-only feed count? Does an identity provider? | *A browser-only product may genuinely count zero. An on-prem agent writing to an ERP counts that ERP, the agent's host, and every downstream consumer of the table it writes.* |
+| **People who can say no** | The difference between an attendee and a veto. Name the titles in your market that actually hold one. | *A departmental buyer may have one. A cross-functional purchase touching finance and legal typically has four or more, plus a security review that is a body rather than a person.* |
+| **Undocumented exception paths** | What evidence closes one. The rule is a written procedure with a volume attached. | *"Sales handles escalations case by case" is one open path, not zero, however confidently it is said.* |
+
+**Action Item:** Replace the worked examples with your own product's, and write down the ruling for each edge case the room argues about. The arguments are the output. An unwritten ruling gets re-litigated on every deal.
+
+> [!IMPORTANT]
+> **Do not replace the counts with a 1-to-5 rating.** Every team that runs this workshop proposes it, because rating feels faster than counting. The models downstream raise their inputs to powers, and exponentiating an ordinal rating is not a defensible operation. More practically, a rating cannot be audited and a count can: a disputed rating is an argument about judgment, and a disputed count is an argument about whether a named system is on a list.
 
 - *Output:* A customized version of the Deal Triage Calculator asset.
 
@@ -51,7 +56,7 @@ Time: 90 Minutes.
 
 ## Phase 2: CRM Configuration (Salesforce/HubSpot)
 
-*ILG fails if it isn't enforced in the CRM. Do not rely on spreadsheets.*
+*TCG fails if it isn't enforced in the CRM. Do not rely on spreadsheets.*
 
 ### 1\. The "Lane" Field
 
@@ -67,12 +72,15 @@ Time: 90 Minutes.
 
 - **Field:** Seller\_Clarity\_Score\_\_c (Number 0-15)  
 - **Field:** Buyer\_Clarity\_Score\_\_c (Number 0-15)  
-- **Field:** Asymmetry\_Delta\_\_c (Formula: ABS(Seller \- Buyer))  
-- **Validation Rule:** "Cannot move Stage to 'Negotiation' if Deal\_Archetype\_\_c \= 'Structural' AND Asymmetry\_Delta\_\_c \> 3."
+- **Field:** Asymmetry\_Gap\_\_c (Formula: Seller \+ Buyer)  
+- **Validation Rule:** "Cannot move Stage to 'Negotiation' if Deal\_Archetype\_\_c \= 'Structural' AND Asymmetry\_Gap\_\_c \> 7."
+
+> [!WARNING]
+> **The formula is a sum, and an earlier version of this guide specified a difference.** `ABS(Seller - Buyer)` scores a deal where both sides are equally blind as zero, which reads as symmetric and therefore forecastable when it is the most dangerous deal on the board. The [Asymmetry Scorecard](./04-incentives-asymmetry-scorecard.md) corrected this and the CRM spec did not follow. If your org already built the field, the migration is to rebuild it as a sum and re-score the open pipeline, because every deal scored under the old formula is wrong in the same direction.
 
 ### 3\. The "Artifacts" Checkbox Group
 
-- **Field:** ILG\_Artifacts\_\_c (Multi-Select Picklist)  
+- **Field:** TCG\_Artifacts\_\_c (Multi-Select Picklist)  
   * Blueprint Signed  
   * Red Team Completed  
   * MIP Drafted  

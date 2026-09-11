@@ -1,5 +1,5 @@
 extends: existence
-message: "No emojis allowed in ILG documents."
+message: "No emojis allowed in TCG documents."
 level: error
 nonword: true
 tokens:

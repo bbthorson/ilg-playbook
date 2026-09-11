@@ -4,13 +4,13 @@ layer: theory
 status: active
 version: 2.0
 operationalizes: [axiom-1, axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Mathematical Models
 
 **Version:** 2.0
-**Purpose:** To specify the functional forms behind the variables the [Constitution](./00-ilg-constitution.md) names but does not compute.
+**Purpose:** To specify the functional forms behind the variables the [Constitution](./00-tcg-constitution.md) names but does not compute.
 
 The Constitution is axioms-first. It states that effective transaction cost rises with the bilateral asymmetry gap, that consensus friction rises with committee size, and that urgency decays from a triggering event. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
 
@@ -319,7 +319,7 @@ Until then, treat every output as a structured comparison between deals rather t
 
 ## Related
 
-- [00-ilg-constitution.md](./00-ilg-constitution.md) — The axioms these models serve. Axiom II carries both cost representations reconciled in Section 1.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Axiom II carries both cost representations reconciled in Section 1.
 - [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — Motion selection, which consumes the Deal Triage Calculator score rather than these models.
 - [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
 - [Consensus Friction Calculator](../../practice/01-field-assets/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.

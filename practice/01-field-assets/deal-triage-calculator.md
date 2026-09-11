@@ -4,7 +4,7 @@ layer: practice
 status: active
 version: 5.0
 operationalizes: [axiom-1, axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Deal Triage Calculator
@@ -13,7 +13,7 @@ Version: 5.0
 Audience: Internal Rep / Pre-Sales
 Goal: Emit the two quantities Axiom I names, so that the motion follows from the deal rather than from a label. Direction selects the instruments. Level sets how much apparatus the deal can carry.
 
-**Canonical Reference:** [ILG Constitution, Axiom I](../../theory/01-foundation/00-ilg-constitution.md) for both quantities and [Axiom II](../../theory/01-foundation/00-ilg-constitution.md) for the amplification. The derivation is [06-friction-vector.md](../../theory/01-foundation/06-friction-vector.md).
+**Canonical Reference:** [TCG Constitution, Axiom I](../../theory/01-foundation/00-tcg-constitution.md) for both quantities and [Axiom II](../../theory/01-foundation/00-tcg-constitution.md) for the amplification. The derivation is [06-friction-vector.md](../../theory/01-foundation/06-friction-vector.md).
 
 | | |
 |---|---|
@@ -301,7 +301,7 @@ Re-score at every artifact boundary and keep the old rows. The sequence of direc
 
 ## Related
 
-- **Theory:** [ILG Constitution, Axiom I](../../theory/01-foundation/00-ilg-constitution.md) supplies level and direction. [Axiom II](../../theory/01-foundation/00-ilg-constitution.md) supplies the per-component amplification this instrument feeds.
+- **Theory:** [TCG Constitution, Axiom I](../../theory/01-foundation/00-tcg-constitution.md) supplies level and direction. [Axiom II](../../theory/01-foundation/00-tcg-constitution.md) supplies the per-component amplification this instrument feeds.
 - **Derivation:** [06-friction-vector.md](../../theory/01-foundation/06-friction-vector.md) is why the instrument emits a vector rather than a label.
 - **Motion framing:** [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) maps the named motions onto regions of the vector space.
 - **Functional forms:** [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) sections 2.4 and 3.1 consume these counts.

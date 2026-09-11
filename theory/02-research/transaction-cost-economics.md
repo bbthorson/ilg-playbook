@@ -3,7 +3,7 @@ title: "Transaction Cost Economics"
 layer: theory
 status: active
 operationalizes: [axiom-1]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Transaction Cost Economics
@@ -24,7 +24,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - "Slow down to speed up" — ex-ante governance investment prevents catastrophic ex-post failures.
 - Hostages (credible commitments) mitigate hold-up risk in incomplete contracts. By giving a hostage (such as performance guarantees, clawback clauses, or mutual resource commitments in the MIP), a vendor shifts downside risk back to themselves, which operationalizes as lowering the buyer's risk aversion coefficient ($a$) toward the transaction.
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom I — Law of Transaction Cost Composition** — direct theoretical basis. Asset specificity is the boundary parameter.
 - **Boundary Condition** (primary derivation) — $k > k_{threshold}$ is Williamson's threshold for governance preference.
 - **Williamson Hold-Up** (clarifying concept) — direct.

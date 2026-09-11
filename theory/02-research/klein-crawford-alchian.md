@@ -3,7 +3,7 @@ title: "Appropriable Quasi-Rents and Supplier-Side Hold-Up"
 layer: theory
 status: active
 operationalizes: [axiom-1]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Appropriable Quasi-Rents and Supplier-Side Hold-Up
@@ -22,7 +22,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - Three remedies exist: integrate vertically, write a contract that provides enforceable protection against opportunism, or hold the specific asset jointly. Klein and colleagues treat the choice as an economic comparison rather than a legal preference.
 - Teece: when an innovation depends on specialized complementary assets, the party controlling those assets captures the returns. Building a complement for a counterparty who then owns it transfers the rent along with the work.
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom I — Law of Transaction Cost Composition** — supplies the direction the axiom carries as of v16.0. The boundary condition is stated in terms of $k$, the asset specificity of the deal, which says how much specificity exists and not who is exposed to it. Klein and colleagues supply the second half: exposure follows whoever sinks the non-redeployable investment. In a forward-deployed motion that is the seller, before signature.
 - **Seller Surplus** — the theoretical basis for $Q$, the quasi-rent at risk, in [05-seller-surplus-model.md](../01-foundation/05-seller-surplus-model.md). Quasi-rent is the correct measure of what a seller loses when a deal dies after the engineering is spent, because it prices redeployability rather than hours worked.
 - **Mutual Implementation Plan** — the artifact currently reads as protection for the buyer against seller non-delivery. Klein and colleagues supply the symmetric rationale: the MIP is also the enforceable contract remedy for the seller's own exposure, which is what makes staged commitment a mutual instrument rather than a concession.

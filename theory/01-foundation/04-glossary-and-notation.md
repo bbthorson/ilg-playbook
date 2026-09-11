@@ -26,10 +26,10 @@ Two rules govern what is written here, and they differ by section.
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $S$ | Deal Surplus. Must exceed 0 for a deal to close. | [Constitution, Part III](./00-ilg-constitution.md) |
-| $OC_{switching}$ | Opportunity cost of staying with the status quo. Equals $V_{effective}(t) - V_{next\_best}$. | [Constitution, Part III](./00-ilg-constitution.md) |
-| $y$ | Total perceived transaction cost, reduced form. Equals $a\hat{\Delta}_A^2 + c$, in annual contract values. | [Constitution, Axiom II](./00-ilg-constitution.md) |
-| $D(t)$ | A deal's trajectory through time, $TC(t) - OC(t)$. Stays below the ceiling only while Axiom III holds. Carries a direction, since its cost term is the friction vector. | [Constitution, Axiom III](./00-ilg-constitution.md) |
+| $S$ | Deal Surplus. Must exceed 0 for a deal to close. | [Constitution, Part III](./00-tcg-constitution.md) |
+| $OC_{switching}$ | Opportunity cost of staying with the status quo. Equals $V_{effective}(t) - V_{next\_best}$. | [Constitution, Part III](./00-tcg-constitution.md) |
+| $y$ | Total perceived transaction cost, reduced form. Equals $a\hat{\Delta}_A^2 + c$, in annual contract values. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $D(t)$ | A deal's trajectory through time, $TC(t) - OC(t)$. Stays below the ceiling only while Axiom III holds. Carries a direction, since its cost term is the friction vector. | [Constitution, Axiom III](./00-tcg-constitution.md) |
 
 ### Seller-side terms
 
@@ -52,12 +52,12 @@ Two rules govern what is written here, and they differ by section.
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $V_{solution}$ | Peak perceived value at the triggering event. | [Constitution, Axiom I](./00-ilg-constitution.md) |
-| $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, Axiom I](./00-ilg-constitution.md) |
-| $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. | [Constitution, Axiom I](./00-ilg-constitution.md) |
-| $k$ | Asset specificity of the deal. | [Constitution, Axiom I](./00-ilg-constitution.md) |
+| $V_{solution}$ | Peak perceived value at the triggering event. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $k$ | Asset specificity of the deal. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $k_{threshold}$ | The Structural / Turnkey boundary ($k = 10$). Above it, ILG applies. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
-| $F_{deployed}$ | The friction structure the seller actually deploys. Must scale with $k$. | [Constitution, Axiom I](./00-ilg-constitution.md) |
+| $F_{deployed}$ | The friction structure the seller actually deploys. Must scale with $k$. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 
 ### Friction terms (Axiom II)
 
@@ -66,11 +66,11 @@ Two rules govern what is written here, and they differ by section.
 | $\mathbf{F}$ | The friction vector. The three components treated as one object. | [06-friction-vector.md §1](./06-friction-vector.md) |
 | $\hat{\mathbf{F}}$ | Direction. Each component's share of effective cost, summing to 1. Selects the motion. | [06-friction-vector.md §1](./06-friction-vector.md) |
 | $\lVert \mathbf{F} \rVert_1$ | Level. Base friction summed. Sets the Turnkey and Structural boundary. Equals $F_{base}$. | [06-friction-vector.md §1](./06-friction-vector.md) |
-| $F_{base}$ | The three cost components summed, before amplification. | [Constitution, Axiom II](./00-ilg-constitution.md) |
-| $F_{effective}$ | Friction after amplification. Equals $\sum_k F_k (1 + \hat{\Delta}_k)$, which factors into $F_{base}(1 + \hat{\Delta}_A)$. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $F_{base}$ | The three cost components summed, before amplification. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $F_{effective}$ | Friction after amplification. Equals $\sum_k F_k (1 + \hat{\Delta}_k)$, which factors into $F_{base}(1 + \hat{\Delta}_A)$. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $F_{search}$ | Cost of locating the category and viable vendors. Splits into category search and vendor evaluation. | [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
 | $F_{consensus}$ | Internal buyer alignment plus external bargaining. | [03-mathematical-models.md](./03-mathematical-models.md) |
-| $F_{implementation}$ | Deployment plus sustained change. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $F_{implementation}$ | Deployment plus sustained change. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 
 ### Asymmetry terms (Axiom II)
 
@@ -90,7 +90,7 @@ Two rules govern what is written here, and they differ by section.
 |---|---|---|---|
 | $a$ | Friction-asymmetry coupling. Anchored at 2.25 by analogy, not measurement. | 2.25 | [03-mathematical-models.md §1.6](./03-mathematical-models.md) |
 | $b$ | Rate at which base friction grows per unit of asymmetry. The derivation identifies $a$ with $b$. | measured | [03-mathematical-models.md §1.3](./03-mathematical-models.md) |
-| $c$ | Direct cost. The irreducible floor of licence fees and unavoidable deployment work. | measured | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $c$ | Direct cost. The irreducible floor of licence fees and unavoidable deployment work. | measured | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $\lambda$ | Loss aversion coefficient from prospect theory. **Not the same quantity as $a$.** | 2.25 | [prospect-theory.md](../02-research/prospect-theory.md) |
 | $\alpha$ | Baseline coordination overhead in the consensus model. | 1.0 | [03-mathematical-models.md §3.1](./03-mathematical-models.md) |
 | $\beta$ | Organizational complexity exponent. Above 1 because channels grow as $N(N-1)/2$. | 1.35 | [03-mathematical-models.md §3.1](./03-mathematical-models.md) |
@@ -112,9 +112,9 @@ Two rules govern what is written here, and they differ by section.
 | Symbol | Meaning | Defined in |
 |---|---|---|
 | $\delta$ | Decay rate of urgency after the triggering event. | [03-mathematical-models.md §4](./03-mathematical-models.md) |
-| $\delta_{discount}$ | A party's discount factor. The weight it places on future payoffs. | [Constitution, Axiom III](./00-ilg-constitution.md) |
-| $\gamma_k$ | Rate at which component $k$'s gap rebuilds per unit time, absent maintenance. Three rates with different drivers. | [Constitution, Axiom II](./00-ilg-constitution.md) |
-| $\gamma$ | The deal-level drift rate. The friction-weighted mean of the three $\gamma_k$, and an average rather than a mechanism. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| $\delta_{discount}$ | A party's discount factor. The weight it places on future payoffs. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $\gamma_k$ | Rate at which component $k$'s gap rebuilds per unit time, absent maintenance. Three rates with different drivers. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $\gamma$ | The deal-level drift rate. The friction-weighted mean of the three $\gamma_k$, and an average rather than a mechanism. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $\gamma_r$ | Responsiveness converting external pressure into internal action. | [03-mathematical-models.md §4.2](./03-mathematical-models.md) |
 | $\gamma_{TO}$ | Weight on the technical overlap term. | 0.20, [03-mathematical-models.md §3.4](./03-mathematical-models.md) |
 | $T$, $R$, $P$ | Temptation, reward, and punishment payoffs in the cooperation condition. | [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) |
@@ -159,9 +159,9 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Market State** | Which motion is viable, given the cost composition the market imposes. Axiom I's home. | [Constitution, Part I](./00-ilg-constitution.md) |
-| **Deal State** | The single transaction up to signature. What the seller must supply to close. Axiom II's home. | [Constitution, Part I](./00-ilg-constitution.md) |
-| **Relationship State** | Everything after T0. Whether surplus persists and who can displace it. Axiom III's home. | [Constitution, Part I](./00-ilg-constitution.md) |
+| **Market State** | Which motion is viable, given the cost composition the market imposes. Axiom I's home. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Deal State** | The single transaction up to signature. What the seller must supply to close. Axiom II's home. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Relationship State** | Everything after T0. Whether surplus persists and who can displace it. Axiom III's home. | [Constitution, Part I](./00-tcg-constitution.md) |
 
 ### Deal classification
 
@@ -173,32 +173,32 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Level** | The friction vector's $L^1$ length, on base friction. Sets the Turnkey and Structural boundary. | [06-friction-vector.md](./06-friction-vector.md) |
 | **Direction** | Each component's share of effective cost. Selects the instruments. Dominant at 0.50. | [06-friction-vector.md](./06-friction-vector.md) |
 | **Count Variance** | Scored count against actual count, taken at the Adoption Review. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
-| **Boundary Condition** | The test every deal passes before ILG investment is justified. | [Constitution, Part II](./00-ilg-constitution.md) |
+| **Boundary Condition** | The test every deal passes before heavy apparatus is justified. | [Constitution, Part II](./00-tcg-constitution.md) |
 
 ### Axiom II concepts
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce $\Delta_A$. | [Constitution, Part II](./00-ilg-constitution.md) |
+| **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce $\Delta_A$. | [Constitution, Part II](./00-tcg-constitution.md) |
 | **Single Crossing Property** | A signal informs only when it costs the high-quality actor proportionally less. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Costly Signal** | A demonstration a low-quality competitor could not afford to replicate. | [costly-signals.md](../02-research/costly-signals.md) |
-| **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom II](./00-ilg-constitution.md) |
-| **Safe No / Logical Yes** | The buyer's refusal to change, which risks nothing for the decider, versus the positive business case it defeats. | [Constitution, Axiom II](./00-ilg-constitution.md) |
+| **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| **Safe No / Logical Yes** | The buyer's refusal to change, which risks nothing for the decider, versus the positive business case it defeats. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | **Akerlof Exit Threshold** | The asymmetry level beyond which the buyer stops participating in the market. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Jevons Vulnerability** | A channel whose binding constraint is production cost, and which therefore collapses when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
 | **Buying Center** | The set of people in a purchase decision, each judging it against a different objective. | [buying-center-dynamics.md](../02-research/buying-center-dynamics.md) |
-| **Decay Clock** | The two time dynamics that erode deal viability before close. | [Constitution, Bridge Concepts](./00-ilg-constitution.md) |
+| **Decay Clock** | The two time dynamics that erode deal viability before close. | [Constitution, Bridge Concepts](./00-tcg-constitution.md) |
 
 ### Axiom III concepts
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Recursive Cooperation** | The cooperation condition must hold at every level where signal quality is adjudicated. | [Constitution, Part II](./00-ilg-constitution.md) |
-| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery. | [Constitution, Part II](./00-ilg-constitution.md) |
-| **Demurrage on Credibility** | The prescription following from depreciation. Reputation must be re-earned to retain signal value. | [Constitution, Part II](./00-ilg-constitution.md) |
+| **Recursive Cooperation** | The cooperation condition must hold at every level where signal quality is adjudicated. | [Constitution, Part II](./00-tcg-constitution.md) |
+| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery. | [Constitution, Part II](./00-tcg-constitution.md) |
+| **Demurrage on Credibility** | The prescription following from depreciation. Reputation must be re-earned to retain signal value. | [Constitution, Part II](./00-tcg-constitution.md) |
 | **Williamson Hold-Up** | Once asset-specific investment is sunk, either party can extract its value. | [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
-| **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Bridge Concepts](./00-ilg-constitution.md) |
+| **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Bridge Concepts](./00-tcg-constitution.md) |
 | **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
 | **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), operationalized in [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) |
 
@@ -238,7 +238,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 ## Related
 
-- [00-ilg-constitution.md](./00-ilg-constitution.md) supplies the axioms and the clarifying concepts most term entries point to.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms and the clarifying concepts most term entries point to.
 - [03-mathematical-models.md](./03-mathematical-models.md) supplies the functional forms and every parameter default, plus the provenance status of each.
 - [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) covers motion vocabulary in context.
-- [ilg-concept-map.md](../../publishing/02-tools/ilg-concept-map.md) is the content architecture for public writing, which is a different purpose from this file.
+- [tcg-concept-map.md](../../publishing/02-tools/tcg-concept-map.md) is the content architecture for public writing, which is a different purpose from this file.

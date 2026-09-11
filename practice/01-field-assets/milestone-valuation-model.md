@@ -3,7 +3,7 @@ title: "Milestone Valuation Model"
 layer: practice
 status: active
 operationalizes: [axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Milestone Valuation Model
@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 
 **Use when:** The Red Team has surfaced the failure modes and you are drafting the MIP's timeline and commercial terms.
 
-**Operationalizes:** Staged Commitment (Axioms II + III). Theory in the [Constitution](../../theory/01-foundation/00-ilg-constitution.md), research in [real-options.md](../../theory/02-research/real-options.md).
+**Operationalizes:** Staged Commitment (Axioms II + III). Theory in the [Constitution](../../theory/01-foundation/00-tcg-constitution.md), research in [real-options.md](../../theory/02-research/real-options.md).
 
 ---
 
@@ -104,7 +104,7 @@ It also shows what a flat payment schedule does. Charging 0.33 at every gate wou
 
 **Check that payment never leads proof.** Walk the table left to right. At every row, committed payment to date should sit below value realized to date. If a row breaks that rule, the buyer is financing the seller's delivery risk, and they will find it during legal review.
 
-**Do not stage a Turnkey deal.** Gate design carries real administrative cost on both sides. Below the ILG boundary the structure destroys more surplus than the option value it preserves. Confirm with the [Deal Triage Calculator](./deal-triage-calculator.md) first.
+**Do not stage a Turnkey deal.** Gate design carries real administrative cost on both sides. Below the Structural boundary the structure destroys more surplus than the option value it preserves. Confirm with the [Deal Triage Calculator](./deal-triage-calculator.md) first.
 
 **Quote the payment schedule in one unit and say which.** A schedule written as "25 / 35 / 40" reads as percent to a buyer and as contract values to this model. Legal review will read it the first way and the model was computed the second way. Write fractions in the model and percentages in the contract, and never carry a number from one into the other without converting it.
 
@@ -123,6 +123,6 @@ It also shows what a flat payment schedule does. Charging 0.33 at every gate wou
 ## Related
 
 - [real-options.md](../../theory/02-research/real-options.md) — Dixit-Pindyck. Why waiting has value and staging recovers it.
-- [00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) — Staged Commitment bridge concept.
+- [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) — Staged Commitment bridge concept.
 - [Mutual Implementation Plan](./ilg-motion/03-closing-mutual-implementation-plan.md) — The artifact these gates go into.
 - [Bilateral Asymmetry Scorecard](../02-internal-ops/04-incentives-asymmetry-scorecard.md) — Supplies $x_0$.

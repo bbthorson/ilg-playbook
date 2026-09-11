@@ -3,7 +3,7 @@ title: "Fear of Failure: The Empirical Evidence"
 layer: theory
 status: active
 operationalizes: [axiom-1, axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Fear of Failure: The Empirical Evidence
@@ -28,7 +28,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - Fixing a defect after delivery costs up to 100× more than fixing it during requirements and design on large systems, and closer to 5× on small ones (Boehm & Basili).
 - 17% of large initiatives present existential threat to the organization (McKinsey).
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom I — Law of Transaction Cost Composition** — empirical scale of $F_{implementation}$. Documented failure rates are why implementation is the dominant cost component in high-specificity deals, and the 17% existential-threat rate is why a buyer facing hold-up risk prefers the "make" alternative (Williamson). This is the under-frictioned Structural failure mode measured.
 - **Axiom II — Law of Uncertainty Inflation** — empirical grounding for why $\Delta_A$ multiplies friction rather than reducing value. Also the limit case: buyers leave the market entirely (Akerlof saturation) when failure rates exceed risk tolerance, because no costly signal can credibly reduce a gap that wide.
 - **Akerlof Exit Threshold** (clarifying concept, elaborating Axiom II) — the 40–60% No Decision rate is the threshold being crossed.

@@ -4,7 +4,7 @@ layer: practice
 status: active
 version: 1.0
 operationalizes: [axiom-1]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Standard Order Protocol (The Accelerator)

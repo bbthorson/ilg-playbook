@@ -12,15 +12,15 @@
 
 1.  **Angle 1: The High-Stakes Audible (The "Swallow the Whale" Strategy)**
     *   **The Gist:** Analyze this as a desperate but necessary pivot. HCTI is moving from a "commodity" service (cloud transformation) to a "high-asset-specificity" product (AI CX).
-    *   **ILG Theory:** Focus on **Asset Specificity**. They aren't just buying a company; they are buying a new competitive moat.
+    *   **TCG Theory:** Focus on **Asset Specificity**. They aren't just buying a company; they are buying a new competitive moat.
     *   **Intensity:** High/Forensic.
 
 2.  **Angle 2: The Consensus Cost Nightmare (The Shareholder View)**
     *   **The Gist:** Focus on the "Hidden Friction" of the deal structure. How does a company this small signal "Rigor" to the market when the numbers look like a typo?
-    *   **ILG Theory:** Focus on **Costly Signals**. This deal is either the ultimate "Costly Signal" of confidence or a "Cheap Talk" gamble.
+    *   **TCG Theory:** Focus on **Costly Signals**. This deal is either the ultimate "Costly Signal" of confidence or a "Cheap Talk" gamble.
     *   **Intensity:** Sober/Analytical.
 
 3.  **Angle 3: Opening the Running Lanes in LATAM/EU**
     *   **The Gist:** A more optimistic, tactical look at why geographic expansion through AI is the "Offensive Play" of the year for mid-tier health tech.
-    *   **ILG Theory:** Focus on **Information Asymmetry**. By buying Teyame, HCTI isn't just buying AI; they are buying the "Local Scouting Report" for new markets.
+    *   **TCG Theory:** Focus on **Information Asymmetry**. By buying Teyame, HCTI isn't just buying AI; they are buying the "Local Scouting Report" for new markets.
     *   **Intensity:** Helpful/Consultative.

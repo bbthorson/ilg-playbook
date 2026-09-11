@@ -3,7 +3,7 @@ title: "Implementation Veto Authority"
 layer: practice
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Implementation Veto Authority
@@ -100,7 +100,7 @@ Set these during the [setup workshop](./00-setup-implementation-guide.md). Every
 
 ## Related
 
-- [00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) — Axiom III, and the incomplete-contracts mechanism this document allocates.
+- [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) — Axiom III, and the incomplete-contracts mechanism this document allocates.
 - [incomplete-contracts.md](../../theory/02-research/incomplete-contracts.md) — Grossman-Hart-Moore. Why authority allocation, rather than better drafting, governs unspecified states.
 - [03-incentives-vested-commission.md](./03-incentives-vested-commission.md) — The rep-side exposure this document extends to the delivery organization.
 - [02-governance-review-checklist.md](./02-governance-review-checklist.md) — Where the trigger conditions are checked in the normal review cycle.

@@ -1,6 +1,6 @@
 # Cases
 
-**Real-world events analyzed through the ILG lens.**
+**Real-world events analyzed through the TCG lens.**
 
 These are *scouting reports* — short, structured deconstructions of specific deals, acquisitions, or market events using the [Transaction Cost Economics](../../theory/02-research/transaction-cost-economics.md) and [Costly Signals](../../theory/02-research/costly-signals.md) frameworks.
 

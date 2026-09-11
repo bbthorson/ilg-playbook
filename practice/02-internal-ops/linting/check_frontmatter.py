@@ -103,9 +103,9 @@ def check_file(path, rel):
 def check_version_parity(docs):
     """CLAUDE.md requires the Constitution version and the README footer to move
     together. Nothing enforced it before this check."""
-    const = docs.get("theory/01-foundation/00-ilg-constitution.md", {}).get("version")
+    const = docs.get("theory/01-foundation/00-tcg-constitution.md", {}).get("version")
     if not const:
-        return ["theory/01-foundation/00-ilg-constitution.md: no version in frontmatter"]
+        return ["theory/01-foundation/00-tcg-constitution.md: no version in frontmatter"]
     readme = open(os.path.join(ROOT, "README.md"), encoding="utf-8").read()
     m = re.search(r"\*\*Version:\*\*\s*([0-9.]+)", readme)
     if not m:

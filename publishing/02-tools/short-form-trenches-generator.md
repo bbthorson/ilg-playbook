@@ -42,9 +42,9 @@ This generator is designed for a multi-stage dialogue. **Do not jump to Phase 3 
 - Explain how the market is shifting in response to the "Offensive" move.
 
 ### 4. Possible Audibles / RPO
-*Dynamic flexibility and ILG fundamentals.*
+*Dynamic flexibility and TCG fundamentals.*
 - Admit where the "scouting report" might be wrong.
-- Return to core ILG theory (e.g., "If $\Delta_A$ doesn't drop, this play results in a sack — friction amplifies and the Decay Clock wins").
+- Return to core TCG theory (e.g., "If $\Delta_A$ doesn't drop, this play results in a sack — friction amplifies and the Decay Clock wins").
 - End with a tactical takeaway for the reader (The Alibi of Rigor).
 
 ---

@@ -26,7 +26,7 @@ The YAML parser is deliberately small. It handles the flat key/value and inline-
 | Checker | Catches | Needs installing |
 |---|---|---|
 | `check_playbook.py` | Broken relative links, malformed LaTeX delimiters | No. Python 3, no dependencies. |
-| Vale + the `ILG` style | Banned vocabulary, emojis, punctuation density, retired terms | Yes. See below. |
+| Vale + the `TCG` style | Banned vocabulary, emojis, punctuation density, retired terms | Yes. See below. |
 
 ### check_playbook.py
 
@@ -49,19 +49,19 @@ brew install vale
 vale .
 ```
 
-Configuration lives in [`.vale.ini`](../../../.vale.ini) at the repo root, which points `StylesPath` here and applies the `ILG` style to all `*.md`. `MinAlertLevel` is `warning`, so warnings surface alongside errors.
+Configuration lives in [`.vale.ini`](../../../.vale.ini) at the repo root, which points `StylesPath` here and applies the `TCG` style to all `*.md`. `MinAlertLevel` is `warning`, so warnings surface alongside errors.
 
-## The ILG style rules
+## The TCG style rules
 
 | Rule | Level | Enforces |
 |---|---|---|
-<!-- vale ILG.AntiHype = NO -->
-| [`AntiHype.yml`](./styles/ILG/AntiHype.yml) | error | The banned-word list (*synergy*, *revolutionize*, *disruptive*, *cutting-edge*, *seamlessly*, *unlock potential*). Case-insensitive. |
-| [`NoEmoji.yml`](./styles/ILG/NoEmoji.yml) | error | No emoji anywhere, across nine Unicode ranges including the variation selector. |
-| [`Punctuation.yml`](./styles/ILG/Punctuation.yml) | warning | At most 3 em dashes plus semicolons combined. Applies to prose written for publication. |
-| [`PunctuationReference.yml`](./styles/ILG/PunctuationReference.yml) | warning | At most 30, for reference and operational material. The repo-wide default. |
-| [`RetiredTerms.yml`](./styles/ILG/RetiredTerms.yml) | error | Vocabulary the framework has replaced. Reports the current term to use. |
-<!-- vale ILG.AntiHype = YES -->
+<!-- vale TCG.AntiHype = NO -->
+| [`AntiHype.yml`](./styles/TCG/AntiHype.yml) | error | The banned-word list (*synergy*, *revolutionize*, *disruptive*, *cutting-edge*, *seamlessly*, *unlock potential*). Case-insensitive. |
+| [`NoEmoji.yml`](./styles/TCG/NoEmoji.yml) | error | No emoji anywhere, across nine Unicode ranges including the variation selector. |
+| [`Punctuation.yml`](./styles/TCG/Punctuation.yml) | warning | At most 3 em dashes plus semicolons combined. Applies to prose written for publication. |
+| [`PunctuationReference.yml`](./styles/TCG/PunctuationReference.yml) | warning | At most 30, for reference and operational material. The repo-wide default. |
+| [`RetiredTerms.yml`](./styles/TCG/RetiredTerms.yml) | error | Vocabulary the framework has replaced. Reports the current term to use. |
+<!-- vale TCG.AntiHype = YES -->
 
 This file quotes retired terms and banned words in order to document them, so it fences the relevant blocks with the mechanism described under [naming a retired term on purpose](#naming-a-retired-term-on-purpose). Read the raw source to see the fences.
 
@@ -69,26 +69,26 @@ This file quotes retired terms and banned words in order to document them, so it
 
 The link checker validates hrefs. It cannot see the prose around them. In August 2026 the repo carried 40 references to retired vocabulary, and every one of them sat inside a *correctly resolving* link:
 
-<!-- vale ILG.RetiredTerms = NO -->
+<!-- vale TCG.RetiredTerms = NO -->
 ```markdown
-[ILG Constitution - Axiom II (Law of Friction)](../../../theory/01-foundation/00-ilg-constitution.md)
+[TCG Constitution - Axiom II (Law of Friction)](../../../theory/01-foundation/00-tcg-constitution.md)
 ```
 
 The href was right. The name had been retired two Constitution versions earlier. Same pattern for directory numbering: link text said `04-internal-ops/` while the href pointed at the real `02-internal-ops/`. Both classes are invisible to a link checker and to a reader who trusts the link. `RetiredTerms.yml` is the rule that sees them.
-<!-- vale ILG.RetiredTerms = YES -->
+<!-- vale TCG.RetiredTerms = YES -->
 
 Neither class shows up in a `git diff` review either, because each one was correct when it was written.
 
 ### Adding a retired term
 
-Whenever you rename an axiom, retire an equation variable, or renumber a directory, add a row to `swap:` in [`RetiredTerms.yml`](./styles/ILG/RetiredTerms.yml) **in the same commit as the rename**. That is the whole maintenance ritual.
+Whenever you rename an axiom, retire an equation variable, or renumber a directory, add a row to `swap:` in [`RetiredTerms.yml`](./styles/TCG/RetiredTerms.yml) **in the same commit as the rename**. That is the whole maintenance ritual.
 
-<!-- vale ILG.RetiredTerms = NO -->
+<!-- vale TCG.RetiredTerms = NO -->
 ```yaml
 swap:
   Law of Friction: Law of Uncertainty Inflation
 ```
-<!-- vale ILG.RetiredTerms = YES -->
+<!-- vale TCG.RetiredTerms = YES -->
 
 Keys are regexes and the match is case-sensitive. The `message` template fills `%s` with the retired term and then the replacement, so the fix is in the error output and nobody has to go looking for it.
 
@@ -107,12 +107,12 @@ Adapt the pattern to whatever is being renamed. Read every hit before adding it,
 Version-history notes sometimes need to name the old term. Fence the passage:
 
 ```markdown
-<!-- vale ILG.RetiredTerms = NO -->
+<!-- vale TCG.RetiredTerms = NO -->
 Renamed in v12 from the previous axiom name.
-<!-- vale ILG.RetiredTerms = YES -->
+<!-- vale TCG.RetiredTerms = YES -->
 ```
 
-The same form works for any rule in the table, for example `<!-- vale ILG.AntiHype = NO -->`.
+The same form works for any rule in the table, for example `<!-- vale TCG.AntiHype = NO -->`.
 
 Prefer this over deleting the row. An unenforced rule catches nothing.
 

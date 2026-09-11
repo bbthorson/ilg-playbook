@@ -28,7 +28,7 @@ This generator is designed for a multi-stage dialogue. **Do not draft the full b
 - Use a football metaphor to frame the friction (e.g., "The Fumbled Handoff between Sales and CS").
 
 ### 2. The Theory (The Chalkboard)
-- Deconstruct the problem using **Axioms of ILG**.
+- Deconstruct the problem using **Axioms of TCG**.
 - Reference specific theories: **Coase**, **Williamson**, **Kahneman & Tversky**.
 - Use the **Fundamental Equation** to show why the current system is failing.
 

@@ -35,7 +35,7 @@ Every dominant B2B sales methodology has been an evolutionary response to the sh
 |-------|-----|---------------|-----------------|------------|
 | **Nascent** | 1950s-1980s | Search | "What solutions exist?" | Sales-Led Growth (SLG) |
 | **Efficient** | 1990s-2010s | Evaluation | "Does this actually work?" | Product-Led Growth (PLG) |
-| **Saturated & Complex** | 2010s-Present | Consensus + Implementation | "Can we make this work *here*?" | Implementation-Led Growth (ILG) |
+| **Saturated & Complex** | 2010s-Present | Consensus + Implementation | "Can we make this work *here*?" | Transaction Cost Growth (TCG) |
 
 ### The Reflexive Loop (How We Got Here)
 1. **The SaaS Paradox**: Subscription economics shifted value to NRR, but sales incentives stayed focused on acquisition → misaligned incentives → proliferation of "band-aid" solutions
@@ -154,8 +154,8 @@ The companies that will win are the ones that understood implementation capacity
 - **Cadence**: 1 speaking opportunity per quarter (build toward)
 - **Purpose**: Reach new audiences, establish presence beyond written content
 
-### "Applied ILG" Case Analyses
-- Take a current event, deal, or company and analyze it through the TCE/ILG lens
+### "Applied TCG" Case Analyses
+- Take a current event, deal, or company and analyze it through the TCG lens
 - Similar to the ACCESS and Information Blocking pieces
 - **Cadence**: 1 per month (can be shorter, more reactive)
 - **Purpose**: Show the framework in action, stay relevant to current events
