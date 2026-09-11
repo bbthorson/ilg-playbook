@@ -26,7 +26,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Hostages (credible commitments) mitigate hold-up risk in incomplete contracts. By giving a hostage (such as performance guarantees, clawback clauses, or mutual resource commitments in the MIP), a vendor shifts downside risk back to themselves, which operationalizes as lowering the buyer's risk aversion coefficient ($a$) toward the transaction.
 
 **Supports in TCG:**
-- **Axiom I — Law of Transaction Cost Composition** — direct theoretical basis. Asset specificity is the boundary parameter, and frequency is the governance-form selector added in Constitution v19.0.
+- **Axiom I — Law of Transaction Cost Composition** — direct theoretical basis. Asset specificity is the boundary parameter and frequency is the governance-form selector.
 - **Governance Form** (bridge concept, Axioms I + III) — the four structures above, mapped onto level and frequency in [07-governance-forms.md](../01-foundation/07-governance-forms.md). The MIP is the bilateral form.
 - **Boundary Condition** (primary derivation) — $k > k_{threshold}$ is Williamson's threshold for governance preference.
 - **Williamson Hold-Up** (clarifying concept) — direct.

@@ -32,7 +32,7 @@ The four ILG artifacts run in order and each gates the next. They are the implem
 
 ## By friction component
 
-Since Constitution v17.0 each directory holds the instruments for one component of the friction vector rather than the artifacts of a named motion. Nothing inside them changed. What changed is what selects them: the Deal Triage Calculator's direction reading, not a label assigned at qualification.
+Each directory holds the instruments for one component of the friction vector rather than the artifacts of a named motion. What selects them is the Deal Triage Calculator's direction reading, not a label assigned at qualification.
 
 | Component | Run these when | Assets |
 |---|---|---|

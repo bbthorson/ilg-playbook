@@ -2,7 +2,7 @@
 title: "Sales Motion Comparison: ILG vs. PLG vs. SLG"
 layer: theory
 status: active
-version: 2.0
+version: 1.0
 operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---

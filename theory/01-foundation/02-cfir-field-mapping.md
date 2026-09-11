@@ -2,7 +2,7 @@
 title: "CFIR-to-Field Asset Mapping"
 layer: theory
 status: active
-version: 1.1
+version: 1.0
 operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
@@ -109,7 +109,7 @@ Two CFIR constructs govern deal triage rather than any single artifact. Both liv
 
 Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves does not need the seller to prove it, which removes the condition the implementation artifacts exist to satisfy.
 
-Constitution v17.0 changed how the divergence count enters. It used to be a parallel score read alongside the total. It is now a multiplier on the implementation component, so a high-divergence deal reads as implementation-dominant rather than needing a routing exception, and Compatibility's effect on the motion is arithmetic rather than a table row. Research backing sits in [process-misfit.md](../02-research/process-misfit.md).
+The divergence count enters as a multiplier on the implementation component rather than as a parallel score read alongside the total. A high-divergence deal therefore reads as implementation-dominant rather than needing a routing exception, which makes Compatibility's effect on the motion arithmetic rather than a table row. Research backing sits in [process-misfit.md](../02-research/process-misfit.md).
 
 ---
 
@@ -137,5 +137,5 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 
 ---
 
-**Version:** 1.1
+**Version:** 1.0
 **Last Updated:** 2026-08-28

@@ -2,6 +2,14 @@ extends: substitution
 message: "Use '%s' instead of '%s'."
 level: error
 ignorecase: false
+# NOTE ON VERSION NUMBERS IN THIS FILE. The comments below cite v13 through
+# v19, which are the Constitution's PRE-RESET numbering, used while the
+# framework was called Implementation-Led Growth. The count restarted at 1.0
+# when it was renamed to Transaction Cost Growth. The old entries are kept in
+# the Constitution's version history under their original numbers, so every
+# reference here still resolves. Do not renumber them: the point of a retired
+# term is that it records when something stopped being true.
+#
 # Retired axiom names. The canonical names live in
 # theory/01-foundation/00-tcg-constitution.md Part I. Add a row here whenever an
 # axiom is renamed, in the same commit as the Constitution version bump.

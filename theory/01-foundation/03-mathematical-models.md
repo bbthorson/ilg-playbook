@@ -2,14 +2,14 @@
 title: "Mathematical Models"
 layer: theory
 status: active
-version: 2.0
+version: 1.0
 operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Mathematical Models
 
-**Version:** 2.0
+**Version:** 1.0
 **Purpose:** To specify the functional forms behind the variables the [Constitution](./00-tcg-constitution.md) names but does not compute.
 
 The Constitution is axioms-first. It states that effective transaction cost rises with the bilateral asymmetry gap, that consensus friction rises with committee size, and that urgency decays from a triggering event. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.

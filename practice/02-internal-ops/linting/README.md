@@ -128,7 +128,7 @@ git config core.hooksPath .githooks
 
 ## Current state of the repo
 
-As of v14.0 (2026-09), both checkers pass cleanly across all files in the repository:
+Both checkers pass cleanly across all files in the repository:
 
 | Rule | State |
 |---|---|

@@ -2,14 +2,14 @@
 title: "Seller Surplus and the Implementation Investment"
 layer: theory
 status: active
-version: 1.1
+version: 1.0
 operationalizes: [axiom-1, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Seller Surplus and the Implementation Investment
 
-**Version:** 1.1
+**Version:** 1.0
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
 The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
@@ -162,7 +162,7 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/02-inter
 
 ## Open questions
 
-- **Resolved in Constitution v16.0.** Axiom I now names the party bearing the specificity, and separates composition (which selects the motion) from level (which sets the Turnkey and Structural boundary). Both were open questions raised by this document.
+- **Resolved in the Constitution.** Axiom I names the party bearing the specificity, and separates composition (which selects the motion) from level (which sets the Turnkey and Structural boundary). Both were open questions raised by this document.
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
 - **The first-year margin disqualifier assumes a single-shot game.** Section 7 shows the test is too strict when $r_t$ holds up. Correcting it means editing a disqualification rule reps rely on, so it waits for review.
 - **$C_{sustain}$ has no budget owner.** [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md) maps each variable to a department. This one is unmapped, and unmapped variables drift by that corollary's own argument.

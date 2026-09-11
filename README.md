@@ -106,5 +106,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 19.1 (tracks the [Constitution](theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Version:** 1.0 (tracks the [Constitution](theory/01-foundation/00-tcg-constitution.md) version; bump both together)
 **Last updated:** 2026-09-10
