@@ -1,18 +1,24 @@
-# Implementation-Led Growth (ILG) Knowledge Base
+# Transaction Cost Growth (TCG) Knowledge Base
 
-**A sales methodology for high-friction B2B software, grounded in Transaction Cost Economics, Behavioral Economics, and Game Theory.**
+**A theory of go-to-market built on transaction cost economics: what a deal costs a buyer beyond the price determines how it can be sold, and often whether it can be sold at all.**
 
 ---
 
-## What is ILG?
+## What is TCG?
 
-**Implementation-Led Growth (ILG)** is the GTM motion for deals where Product-Led Growth (PLG) and Sales-Led Growth (SLG) fail: deep workflow integration, multi-stakeholder consensus, and long implementation cycles.
+Buying costs more than money. Finding a solution, getting your own organization to agree, and installing the thing without breaking something are three separate bills, and a buyer pays all three before they see any value. **Transaction Cost Growth is the claim that those three costs, not the product and not the pitch, determine which go-to-market motion a deal can support.**
 
-The core insight:
+Two properties of that cost structure carry the decision.
 
-> **In high-specificity deals, reducing friction creates more surplus than increasing value. But friction is amplified by information gaps, and value erodes with time — so the goal is to close the asymmetry gap faster than urgency decays.**
+> **How much cost there is decides how much apparatus the deal can carry. Which cost dominates decides what that apparatus should be.**
 
-ILG addresses this through **discovery artifacts** (Blueprints) that reduce seller ignorance and **costly signals** (Red Teams, paid pilots) that reduce buyer uncertainty — driving the Bilateral Asymmetry Gap (Δ_A) → 0 before the Decay Clock runs out.
+The named motions are regions of that space rather than competing philosophies. A deal whose cost sits in finding and comparing is a Sales-Led deal. One whose cost is small on every axis is Product-Led. One whose cost sits in installation is Implementation-Led. One whose cost sits in getting the buyer's own people to agree has no established playbook at all, which is a finding rather than an omission. Choosing between Turnkey, search-led and implementation-led as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
+
+Three axioms carry the argument. Costs decompose and their composition selects the motion. Uncertainty inflates each cost by whatever the parties to it cannot verify, which is why unverifiable claims are expensive rather than merely unconvincing. And whether the arrangement survives depends on who holds a stake in the outcome, including the channels and platforms standing between the two sides.
+
+Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](models/), every worked example is tested against it, and every headline statistic carries a provenance row.
+
+**The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](theory/01-foundation/08-calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
 
 ---
 
@@ -22,8 +28,8 @@ The repo serves **three functions**, each in its own top-level directory, plus a
 
 | Function | Where | What it is |
 |---|---|---|
-| **[theory/](theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the ILG framework. Academic papers, axioms, definitions. |
-| **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` | Help sellers and managers actually run ILG. Templates and governance. |
+| **[theory/](theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the TCG framework. Academic papers, axioms, definitions. |
+| **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` | Help sellers and managers actually run the motions. Templates and governance. |
 | **[publishing/](publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
 | **[models/](models/)** | `models/` | Executable forms of the equations, so a worked example cannot drift from its formula. Python, no dependencies. |
 
@@ -33,13 +39,13 @@ Each group has its own README listing what is inside it.
 
 ## Start here: which state are you in
 
-The framework indexes on **state**, not on document. Name where the deal is, and the state names what governs it. The three states are defined in [Constitution Part I](theory/01-foundation/00-ilg-constitution.md).
+The framework indexes on **state**, not on document. Name where the deal is, and the state names what governs it. The three states are defined in [Constitution Part I](theory/01-foundation/00-tcg-constitution.md).
 
 | State | The question | Governed by | Go here |
 |---|---|---|---|
-| **Market** | Which motion is viable at all? | Axiom I | [Process Calculator](practice/01-field-assets/process-calculator.md), then [01-sales-motion-comparison.md](theory/01-foundation/01-sales-motion-comparison.md) |
+| **Market** | Which motion is viable at all? | Axiom I | [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md), then [01-motion-taxonomy.md](theory/01-foundation/01-motion-taxonomy.md) |
 | **Deal** (T0) | What must the seller supply before signature? | Axiom II | [practice/01-field-assets/](practice/01-field-assets/) — Blueprint, Red Team, MIP in order |
-| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) §7 |
+| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) §7 |
 
 Each axiom has a home state and none is confined to it. Part I explains where the mapping holds and where it does not.
 
@@ -51,9 +57,9 @@ Each axiom has a home state and none is confined to it. Part I explains where th
 | Look up a symbol or term | [04-glossary-and-notation.md](theory/01-foundation/04-glossary-and-notation.md) |
 | See the evidence behind a claim | [theory/02-research/00-reading-guide.md](theory/02-research/00-reading-guide.md) |
 | Decide whether to invest engineering in a deal | [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) |
-| Set up your org for ILG | [practice/02-internal-ops/](practice/02-internal-ops/) |
+| Set up your org for TCG | [practice/02-internal-ops/](practice/02-internal-ops/) |
 | Compute a formula, or check one still holds | [models/](models/) |
-| Write about ILG publicly | [publishing/02-tools/](publishing/02-tools/) |
+| Write about TCG publicly | [publishing/02-tools/](publishing/02-tools/) |
 
 **Orientation lives in two places only:** this file, and [the research reading guide](theory/02-research/00-reading-guide.md). Every other README is a local index of its own directory.
 
@@ -73,7 +79,7 @@ $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{searc
 
 ### The Three Axioms
 
-Names, scope, and taglines below are canonical. If this table and the [Constitution](theory/01-foundation/00-ilg-constitution.md) ever disagree, the Constitution wins.
+Names, scope, and taglines below are canonical. If this table and the [Constitution](theory/01-foundation/00-tcg-constitution.md) ever disagree, the Constitution wins.
 
 | Axiom | Governs | Tagline | What it says |
 |---|---|---|---|
@@ -85,8 +91,8 @@ Names, scope, and taglines below are canonical. If this table and the [Constitut
 
 | | **Turnkey Deal** | **Structural Deal** |
 |---|---|---|
-| Score | 4–9 on the [Diagnostic Rubric](practice/01-field-assets/process-calculator.md) | 10–20 |
-| Strategy | PLG / SLG — optimize for velocity | ILG — optimize for safety and certainty |
+| Level | Below 15 on the [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md) | 15 to 30 |
+| Motion | Turnkey. Optimize for velocity | Search-led, consensus-led or implementation-led, by direction |
 | Example | Standalone SaaS tools, modular utilities | Enterprise platforms, deep workflow rewiring |
 
 ---
@@ -100,5 +106,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 16.1 (tracks the [Constitution](theory/01-foundation/00-ilg-constitution.md) version; bump both together)
-**Last updated:** 2026-09-08
+**Version:** 1.0 (tracks the [Constitution](theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Last updated:** 2026-09-10

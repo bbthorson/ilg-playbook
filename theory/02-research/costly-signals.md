@@ -3,7 +3,7 @@ title: "Costly Signals"
 layer: theory
 status: active
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Costly Signals
@@ -23,7 +23,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - **Adverse selection (before signing).** The buyer cannot distinguish a capable vendor from an incapable one, so they discount price toward the average. This is the failure costly signals solve.
 - **Moral hazard (after signing).** Effort becomes unobservable once work begins, on both sides. The seller can under-resource delivery; the buyer can under-resource adoption. This is the failure governance solves, not signals.
 
-Agency friction also runs along two vectors at once, and ILG treats them differently. The **inter-organizational vector** is the buyer-seller gap that $\Delta_A$ measures. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the Blueprint and Red Team map stakeholder incentives rather than simply proving vendor capability.
+Agency friction also runs along two vectors at once, and TCG treats them differently. The **inter-organizational vector** is the buyer-seller gap that $\Delta_A$ measures. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the Blueprint and Red Team map stakeholder incentives rather than simply proving vendor capability.
 
 **Key claims:**
 - Information asymmetry without signals collapses markets to average (lemons) quality.
@@ -35,7 +35,7 @@ Agency friction also runs along two vectors at once, and ILG treats them differe
 - Bilateral signaling is required — buyer refusal to invest signals low organizational commitment.
 - When all signals become production-cheap, the channel reaches a babbling equilibrium (Crawford-Sobel).
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom II — Law of Uncertainty Inflation** — direct theoretical basis. Friction is the signal, asymmetry is the noise.
 - **Friction Allocation Principles** (primary derivation) — all four principles derive from the Single Crossing Property.
 - **Single Crossing Property** (clarifying concept) — direct.
@@ -76,7 +76,7 @@ Removing a proxy without substituting a produced signal does not reduce friction
 3. **Produced outcomes:** measured, published results. Seller-borne cost, externally verifiable.
 4. **Risk transfer:** seller holds the financial downside of the buyer's outcome. Self-enforcing, unfakeable.
 
-**Supports in ILG (proposed):**
+**Supports in TCG (proposed):**
 - **Axiom II — Law of Uncertainty Inflation**: extends the friction-as-signal claim with a quality ordering of signals. Friction removal is safe only when the deleted proxy is replaced at tier 3 or 4.
 - **Friction Allocation Principles**: candidate fifth principle, or a refinement of existing ones. When allocating friction, prefer friction that forces tier-3/tier-4 signal production over friction that merely gates access.
 - **Δ_A in the Fundamental Equation**: tier-4 signals collapse Buyer Uncertainty ($I_{buyer}$) faster than any other mechanism, because the buyer no longer needs to resolve uncertainty before contracting. The seller has priced it.

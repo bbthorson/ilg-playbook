@@ -3,7 +3,7 @@ title: "Channel Collapse: Jevons' Paradox in B2B Outreach"
 layer: theory
 status: active
 operationalizes: [axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Channel Collapse: Jevons' Paradox in B2B Outreach
@@ -30,13 +30,13 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - Cold email applied to Stage 3 (Saturated) buyers combines channel collapse with structural irrelevance.
 - Mechanism design solutions require: hostages (credible commitments), deep quality measurement, and demurrage on reputation.
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom II — Law of Uncertainty Inflation** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
 - **Friction Allocation Principles** (primary derivation) — Principle 1 (non-automatable) is the diagnostic for Jevons vulnerability.
 - **Jevons Vulnerability** (clarifying concept) — direct.
 - **Axiom III — Law of Governance** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
 - **Reputation Depreciation** (primary derivation) — demurrage on reputation is the channel-level prescription.
-- **Market States** (clarifying concept) — Jevons vulnerability varies by market stage.
+- **Friction vector direction** ([06-friction-vector.md](../01-foundation/06-friction-vector.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
 
 **Notable quotes:**
 - "It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth." (Jevons, 1865)

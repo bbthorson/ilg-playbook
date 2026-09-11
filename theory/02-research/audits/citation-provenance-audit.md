@@ -6,7 +6,7 @@ status: active
 
 # Citation Provenance Audit
 
-**Purpose:** trace every headline statistic the ILG framework cites to its primary source, and record how far each trace currently goes. The research entries quote these numbers. This file is where their provenance lives. Check a statistic's status here before quoting it outside this repository.
+**Purpose:** trace every headline statistic the TCG framework cites to its primary source, and record how far each trace currently goes. The research entries quote these numbers. This file is where their provenance lives. Check a statistic's status here before quoting it outside this repository.
 
 **Status vocabulary:**
 
@@ -15,7 +15,7 @@ status: active
 - **Primary named.** The original study is identified, but every working link is secondary (press coverage, an aggregator, a vendor blog). Verify against the original before external use.
 - **Unverified.** No primary source is confirmed. Do not cite externally.
 
-**Last reviewed:** 2026-08-28.
+**Last reviewed:** 2026-09-10.
 
 ---
 
@@ -52,6 +52,7 @@ status: active
 | Statistic | Cited in | Primary source | Status |
 |---|---|---|---|
 | λ ≈ 2.25, α, β ≈ 0.88 | [prospect-theory.md](../prospect-theory.md), [fear-of-failure.md](../fear-of-failure.md), Constitution | Tversky & Kahneman (1992), "Advances in Prospect Theory," *Journal of Risk and Uncertainty*, 5(4) | **Primary cited.** Supported by a 2024 meta-analysis across 30+ studies ([*Journal of Economic Psychology*, indexed at RePEc](https://ideas.repec.org/a/eee/joepsy/v103y2024ics0167487024000485.html)). |
+| $a = 2.25$ annual contract values per unit of squared normalized gap | [03-mathematical-models.md §1.7](../../01-foundation/03-mathematical-models.md), Constitution Axiom II | None. The magnitude is borrowed from λ above by analogy and the units are stated by the Constitution, not measured | **Unverified.** Do not cite externally as an estimate. This row exists because $a$ has stated units, which turns an unfalsifiable number into a checkable one: the reading is that entering uncertainty is worth roughly five times the first milestone payment and three percent of the last. Both figures are arithmetic from $a$ and the milestone table, not observations. λ itself is measured and dimensionless, and lending its magnitude to $a$ does not lend it its provenance. |
 | Personal Value carries 2× the impact of Business Value on purchase outcomes | [prospect-theory.md](../prospect-theory.md) | CEB Marketing Leadership Council with Google and Motista, "From Promotion to Emotion" (2013) | **Primary linked** ([whitepaper PDF](https://www.thinkwithgoogle.com/_qs/documents/3988/promotion-emotion-b2b_articles_q5pm53H.pdf)). |
 | 14% of buyers perceive enough differentiation to pay a premium. 86% perceive little or no difference between suppliers | [prospect-theory.md](../prospect-theory.md) | same whitepaper | **Primary linked.** |
 | 71% purchase likelihood and 8× premium likelihood when high Personal Value is present | [prospect-theory.md](../prospect-theory.md) | same whitepaper | **Primary linked.** |

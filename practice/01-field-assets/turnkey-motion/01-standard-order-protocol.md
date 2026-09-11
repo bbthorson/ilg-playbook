@@ -4,21 +4,21 @@ layer: practice
 status: active
 version: 1.0
 operationalizes: [axiom-1]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Standard Order Protocol (The Accelerator)
 
 Version: 1.0  
-Phase: Turnkey deal (PLG)  
+Motion: **Turnkey**. Level below 15, direction not evaluated.  
 Audience: Account Executives / Sales Ops / CS Lead  
-Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" handoffs.
+Goal: To maximize speed on Turnkey deals while preventing "Lemon" handoffs.
 
 ## The Triage Check
 
 *Before using this protocol, verify the Deal Score:*
 
-- **Process Calculator Score:** Must be **\< 10**.  
+- **Deal Triage Calculator level:** Must be **\< 15** on the 0 to 30 scale, which is the Turnkey band.  
 - **Override Check:** Customer has **NOT** asked for a Pilot, POC, or Custom Security Review.  
 - **Asset Specificity:** No deep integration required.
 

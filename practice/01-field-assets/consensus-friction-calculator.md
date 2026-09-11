@@ -3,14 +3,17 @@ title: "Consensus Friction Calculator"
 layer: practice
 status: active
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Consensus Friction Calculator
 
 **Purpose:** To estimate how much organizational friction a buying committee will generate, and to decide whether the deal needs a stakeholder map, a joint steering committee, or executive sponsorship.
 
-**Use when:** The Blueprint has identified the buying committee and you need to size $F_{consensus}$ before forecasting a close date.
+**Use when:** The [Deal Triage Calculator](./deal-triage-calculator.md) reads the deal as consensus-dominant, or the Blueprint has identified the buying committee and you need to size $F_{consensus}$ before forecasting a close date.
+
+> [!IMPORTANT]
+> **This is the consensus component's only dedicated instrument, and one instrument is not a set.** Consensus-dominant is a routing destination in its own right, and a deal arriving here finds a calculator that produces a number and then prescribes executive sponsorship, which is a tactic rather than a motion. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are the incumbent practice for this component, and this repository does not carry them. Reach for those and say on the forecast call that you are working outside the framework, rather than substituting the implementation chain because it is the one that exists.
 
 **Operationalizes:** Axiom II's $F_{consensus}$ term. Theory in [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) Section 3, research in [buying-center-dynamics.md](../../theory/02-research/buying-center-dynamics.md).
 
@@ -65,6 +68,8 @@ When you lack the detail to score each person, use the rubric:
 
 Architectural alignment among the technical evaluators, scored 1 to 5. This is tracked separately from incentive variance because technical philosophy conflicts persist even when incentives align. Two architects can both want the project to succeed and still deadlock on hosting model.
 
+This is the one ordinal rating left in the field instruments, and it survives on a technicality: it enters as $\gamma_{TO} \cdot TO$, which is linear, so nothing exponentiates it. Read it as a rank rather than a quantity, and do not carry it into any model that squares its inputs.
+
 | Score | Condition |
 |---|---|
 | **1** | Unified standards and shared infrastructure principles. |
@@ -118,6 +123,7 @@ In a committee of three, aligning incentives produces a modest gain. In a commit
 
 - [buying-center-dynamics.md](../../theory/02-research/buying-center-dynamics.md) — Cyert-March and Webster-Wind. Why the coalition behaves this way.
 - [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) — Derivation and sensitivity analysis.
-- [Contextual Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md) — Where the committee gets mapped.
-- [Red Team Protocol](./ilg-motion/02-validation-red-team-protocol.md) — The variance-reduction instrument.
+- [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) — Where the committee gets mapped.
+- [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) — The variance-reduction instrument.
+- [Deal Triage Calculator](./deal-triage-calculator.md) — Counts the veto holders and the share of them with a documented measured objective, which is this component's gap.
 - [Bilateral Asymmetry Scorecard](../02-internal-ops/04-incentives-asymmetry-scorecard.md) — The companion measure for $\Delta_A$.

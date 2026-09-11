@@ -3,7 +3,7 @@ title: "Friction Efficiency Index"
 layer: practice
 status: active
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Friction Efficiency Index
@@ -30,7 +30,7 @@ $$\text{FAR} = \frac{H_{pre}}{H_{pre} + H_{post}}$$
 
 Where $H_{pre}$ is solutions-engineering and implementation hours logged before contract signature, and $H_{post}$ is the same functions' hours from signature through go-live.
 
-**Reference band: 0.60 to 0.75.** Below 0.60, the organization is discovering the buyer's environment after it has committed to a delivery date, which is the under-frictioned Structural failure mode. Above 0.75, either the deal was a Turnkey deal that received ILG treatment, or pre-sale work is being performed that the buyer never asked for.
+**Reference band: 0.60 to 0.75.** Below 0.60, the organization is discovering the buyer's environment after it has committed to a delivery date, which is the under-frictioned Structural failure mode. Above 0.75, either the deal was a Turnkey deal that received implementation-chain treatment, or pre-sale work is being performed that the buyer never asked for.
 
 **FAR is blind to scale.** An engagement spending 10 pre-sale and 5 post-sale hours scores identically to one spending 1,000 and 500. Always report FAR alongside $H_{pre} + H_{post}$, because the ratio only becomes meaningful once total effort is proportional to the deal's asset specificity. A high FAR on a trivial hour count means the deal was small, not that the motion was well run.
 
@@ -60,7 +60,7 @@ $$\text{RMS} = 1 - \frac{N_{unresolved}}{N_{identified}}$$
 
 **This corrects an arithmetic error in the canvas form.** That version read $N_{edge} / (N_{edge} + N_{unresolved})$, which double-counts. Unresolved cases are a subset of identified cases, so they appear in both numerator and denominator. A Red Team that identified ten edge cases and resolved none scored 10/20 = 0.50, reporting half the risk mitigated when in fact none was. The corrected form returns 0.
 
-**RMS rewards shallow discovery, and must never be read alone.** A Red Team that surfaces two edge cases and closes both scores 1.00. One that surfaces forty and closes thirty-five scores 0.875. The lazier workshop wins. This is precisely the Happy-Ears Red Team failure mode named in [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md), and a metric that rewards it will produce it.
+**RMS rewards shallow discovery, and must never be read alone.** A Red Team that surfaces two edge cases and closes both scores 1.00. One that surfaces forty and closes thirty-five scores 0.875. The lazier workshop wins. This is precisely the Superficial Red Team Validation failure named in [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) section 5, and a metric that rewards it will produce it.
 
 Report $N_{identified}$ next to RMS every time, and treat a low count as the finding. Below roughly eight identified edge cases on a genuine Structural deal, the workshop did not do its job, and the RMS figure carries no information regardless of how high it is.
 
@@ -100,7 +100,7 @@ $\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed Str
 
 ## 6. Three defects in the composite, recorded
 
-Each was found by evaluating the formulas in [`models/ilg_models.py`](../../models/ilg_models.py) rather than by reading them. None is fixed here, because each fix requires choosing a shape or a weight rather than correcting arithmetic, and that is a decision rather than a repair.
+Each was found by evaluating the formulas in [`models/tcg_models.py`](../../models/tcg_models.py) rather than by reading them. None is fixed here, because each fix requires choosing a shape or a weight rather than correcting arithmetic, and that is a decision rather than a repair.
 
 **The composite is monotonic in FAR, and section 1 says it should not be.** Section 1 states that above 0.75 the organization is either treating a Turnkey deal as Structural or performing pre-sale work nobody asked for. Section 5 then weights FAR at 0.35 with no band. Holding the other three components fixed, a FAR of 0.70 scores 81.50 and a FAR of 1.00 scores 92.00. The composite rewards the state section 1 names as a failure. A fix means giving FAR a band-shaped contribution, which requires choosing how steeply to penalize each side of the band.
 
@@ -144,6 +144,6 @@ Read the provenance column before quoting any figure outside this repository. No
 - [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) — The axiom-derived models. This file deliberately sits downstream of them.
 - [Consensus Friction Calculator](../01-field-assets/consensus-friction-calculator.md) — Source of the $N$ correction applied to BCV.
 - [Bilateral Asymmetry Scorecard](./04-incentives-asymmetry-scorecard.md) — Pre-close companion. The scorecard predicts; this index scores the result.
-- [Red Team Protocol](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md) — Where $N_{identified}$ originates.
+- [Red Team Protocol](../01-field-assets/implementation-motion/02-validation-red-team-protocol.md) — Where $N_{identified}$ originates.
 - [Vested Commission](./03-incentives-vested-commission.md) — A low FEI cohort predicts clawback exposure.
 - [Deal Review Checklist](./02-governance-review-checklist.md) — Per-deal gate. This index is the aggregate view.

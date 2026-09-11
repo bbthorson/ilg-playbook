@@ -6,7 +6,7 @@ status: active
 
 # Standard Order Form
 
-> **Status:** DRAFT — inferred from [01-velocity-standard-order-protocol.md](./01-velocity-standard-order-protocol.md) Step 3. Review with legal/finance and ratify before deploying.
+> **Status:** DRAFT — inferred from [01-standard-order-protocol.md](./01-standard-order-protocol.md) Step 3. Review with legal/finance and ratify before deploying.
 
 **Purpose:** Zero-friction external contract for Turnkey deals. One signature, click-through MSA, no redlines.
 
@@ -77,6 +77,6 @@ Signature: _____________________
 
 ## Related
 
-- [01-velocity-standard-order-protocol.md](./01-velocity-standard-order-protocol.md) — Parent protocol.
+- [01-standard-order-protocol.md](./01-standard-order-protocol.md) — Parent protocol.
 - [prospect-evaluation.md](./prospect-evaluation.md) — Required prerequisite (GREEN verdict).
-- For deals where redlines are unavoidable: [../ilg-motion/03-closing-mutual-implementation-plan.md](../ilg-motion/03-closing-mutual-implementation-plan.md) — different motion, different contract.
+- For deals where redlines are unavoidable: [../implementation-motion/03-closing-mutual-implementation-plan.md](../implementation-motion/03-closing-mutual-implementation-plan.md) — different motion, different contract.

@@ -4,7 +4,7 @@ layer: practice
 status: active
 version: 1.0
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Friction Allocation Diagnostic
@@ -13,7 +13,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 **Audience:** Sales reps, sales leadership, marketing, anyone designing or evaluating a signal mechanism.
 **Goal:** Check whether a signal mechanism — a sales artifact, an outreach channel, a marketing asset, a third-party validator — actually reduces buyer-side uncertainty, or whether it is cheap talk dressed up as effort.
 
-**Canonical Reference:** [ILG Constitution, Axiom II — Law of Uncertainty Inflation](../../theory/01-foundation/00-ilg-constitution.md). The four principles are primary derivations of Axiom II.
+**Canonical Reference:** [TCG Constitution, Axiom II — Law of Uncertainty Inflation](../../theory/01-foundation/00-tcg-constitution.md). The four principles are primary derivations of Axiom II.
 
 | | |
 |---|---|
@@ -80,11 +80,11 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 | $5M ERP deal | 30-min discovery call | Wildly under-frictioned |
 | $50K SaaS deal | Three-month paid pilot | Over-frictioned |
 | $5M ERP deal | Three-month paid pilot | Proportional |
-| Buyer asks for pilot/POC at any stake | Anything less than ILG motion | Under-frictioned (override applies — see [Process Calculator](./process-calculator.md)) |
+| Buyer asks for pilot/POC at any stake | Anything less than implementation-led motion | Under-frictioned (override applies — see [Deal Triage Calculator](./deal-triage-calculator.md)) |
 
-**Common violations.** A Structural deal sold with PLG-grade signals (under-frictioned). A Turnkey deal sold with ILG-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
+**Common violations.** A Structural deal sold with Turnkey-grade signals (under-frictioned). A Turnkey deal sold with Structural-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
 
-**Fix.** Match signal weight to stakes. The [Process Calculator](./process-calculator.md) classifies deals by stage and cost score; the signal mechanism should scale to whatever the calculator returns.
+**Fix.** Match signal weight to stakes. The [Deal Triage Calculator](./deal-triage-calculator.md) returns a level and a direction. The signal's weight should scale to the level, and the component it targets should match the direction.
 
 ---
 
@@ -105,7 +105,7 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 
 **Common violations.** Pay-per-send platforms. Volume-based ad networks. Ratings agencies funded by the rated. Reputation systems that don't depreciate (the KLAS "coast on residual brand" pattern). Internal review processes where reviewers face no consequences for approving bad deals.
 
-**Fix.** Either (a) select adjudicators who already have skin in the game — peers, success-fee platforms, hostage-based access — or (b) introduce demurrage so reputation must be continuously re-earned and stale credibility loses weight. See [Constitution Axiom III: Reputation Depreciation](../../theory/01-foundation/00-ilg-constitution.md).
+**Fix.** Either (a) select adjudicators who already have skin in the game — peers, success-fee platforms, hostage-based access — or (b) introduce demurrage so reputation must be continuously re-earned and stale credibility loses weight. See [Constitution Axiom III: Reputation Depreciation](../../theory/01-foundation/00-tcg-constitution.md).
 
 ---
 
@@ -163,8 +163,8 @@ If all four hold, $\Delta_A$ shrinks. If any one fails, it doesn't — regardles
 
 ## Related
 
-- **Theory:** [ILG Constitution — Axiom II (Law of Uncertainty Inflation) and the Friction Allocation Principles](../../theory/01-foundation/00-ilg-constitution.md).
+- **Theory:** [TCG Constitution — Axiom II (Law of Uncertainty Inflation) and the Friction Allocation Principles](../../theory/01-foundation/00-tcg-constitution.md).
 - **Channel evaluation:** [channel-collapse.md](../../theory/02-research/channel-collapse.md) describes when production cost is the binding constraint, making the channel vulnerable to Principle 1 failure.
-- **Adjudicator design:** [Constitution Axiom III — Reputation Depreciation](../../theory/01-foundation/00-ilg-constitution.md) describes how to design demurrage into adjudicator structures.
-- **Deal-level scoring:** [Process Calculator](./process-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.
+- **Adjudicator design:** [Constitution Axiom III — Reputation Depreciation](../../theory/01-foundation/00-tcg-constitution.md) describes how to design demurrage into adjudicator structures.
+- **Deal-level scoring:** [Deal Triage Calculator](./deal-triage-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.
 - **Manager review:** [Governance Review Checklist](../02-internal-ops/02-governance-review-checklist.md) — should incorporate the four principles when reviewing artifacts for deal commit.

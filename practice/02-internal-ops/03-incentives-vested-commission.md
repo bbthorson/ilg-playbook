@@ -3,7 +3,7 @@ title: "Vested Commission Agreement (The Incentive)"
 layer: practice
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Vested Commission Agreement (The Incentive)
@@ -14,17 +14,17 @@ Goal: To align Sales Rep compensation with Customer NRR (Net Revenue Retention).
 
 | | |
 |---|---|
-| **Inputs** | A closed Structural deal with a signed [MIP](../01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md). |
+| **Inputs** | A closed Structural deal with a signed [MIP](../01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md). |
 | **Outputs** | Comp terms: front-load, clawback triggers, safe harbor exceptions, NRR bonus structure. |
 | **Owner** | Finance / RevOps (drafting); rep (acknowledgment). |
-| **Anchored in** | [ILG Constitution, Axiom III](../../theory/01-foundation/00-ilg-constitution.md) — Governance. Vested comp raises rep $\delta_{discount}$ above the cooperation threshold. |
+| **Anchored in** | [TCG Constitution, Axiom III](../../theory/01-foundation/00-tcg-constitution.md) — Governance. Vested comp raises rep $\delta_{discount}$ above the cooperation threshold. |
 
 ## 1\. The Philosophy
 
 Sales is an "Infinite Game." We do not pay for signatures; we pay for **successful starts**.
 
 - **Traditional Model:** 100% Commission on Signature. (Incentivizes "Hiding the Lemon").  
-- **ILG Model:** 100% Commission on Signature (for liquidity) **subject to Clawback** (for alignment).
+- **TCG Model:** 100% Commission on Signature (for liquidity) **subject to Clawback** (for alignment).
 
 ## 2\. The Terms
 
@@ -58,7 +58,7 @@ Sales is an "Infinite Game." We do not pay for signatures; we pay for **successf
 *If the Rep does the job perfectly, they participate in the renewal.*
 
 - **Bonus:** Rep receives \[Y\]% of the **Expansion Revenue** or **Early Renewal** if it occurs within 12 months.  
-- **Requirement:** Rep must attend the QBR (Quarterly Business Review) handover to Customer Success. The QBR is defined in Section 3 of the [Sustaining Adoption Review](../01-field-assets/ilg-motion/04-sustaining-adoption-review.md), including who must attend and what the review is empowered to decide.
+- **Requirement:** Rep must attend the QBR (Quarterly Business Review) handover to Customer Success. The QBR is defined in Section 3 of the [Sustaining Adoption Review](../01-field-assets/implementation-motion/04-sustaining-adoption-review.md), including who must attend and what the review is empowered to decide.
 
 ## 3\. Rep Acknowledgment
 

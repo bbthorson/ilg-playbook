@@ -2,21 +2,21 @@
 title: "Seller Surplus and the Implementation Investment"
 layer: theory
 status: active
-version: 1.1
+version: 1.0
 operationalizes: [axiom-1, axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Seller Surplus and the Implementation Investment
 
-**Version:** 1.1
+**Version:** 1.0
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
-The [Constitution](./00-ilg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
+The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
 
 That omission is invisible while the motion is advisory. It becomes binding the moment the seller deploys engineers into a buyer's environment before signature, because the seller is then sinking capital that no term of the buyer's equation accounts for.
 
-This document adds the second equation. Axiom I was revised in Constitution v16.0 to name which party bears the asset specificity, which is the claim section 3 depends on.
+This document adds the second equation. Axiom I names which party bears the asset specificity, which is the claim section 3 depends on.
 
 ---
 
@@ -118,7 +118,7 @@ $$S_{seller} = \sum_{t=1}^{T} \frac{r_t \left(V_t - C_{deliver,t} - C_{sustain,t
 
 The single-shot form in section 2 is this expression with $T = 1$ and $C_{sustain} = 0$. Two consequences follow immediately, and the first is a correction.
 
-**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) carries the same assumption in its disqualification list, where a motion is ruled out when pre-sale cost exceeds first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify.
+**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. [01-motion-taxonomy.md](./01-motion-taxonomy.md) section 4 carries the same assumption in its exclusion criteria, where a motion is ruled out when pre-sale cost exceeds first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify.
 
 **$C_{sustain}$ is not overhead.** It is the spend that holds $r_t$ up, and section 7.2 says what it actually buys.
 
@@ -140,7 +140,7 @@ After a forward-deployed engagement the incumbent's $I_{seller}$ approaches zero
 
 That is an information asset rather than a hostage. The buyer is not trapped, the alternative is genuinely more expensive, and the buyer can verify the comparison themselves. It also produces the renewal behaviour the lock-in story predicts, without raising $T$.
 
-**It decays at a rate the Constitution already names.** $\Delta_A(t) = \Delta_A(0) + \gamma t$ absent maintenance, and $\gamma$ runs on staff turnover, workflow change, and systems the seller never saw installed. $C_{sustain}$ is the spend that holds $\gamma$ down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature.
+**It decays at a rate the Constitution already names.** $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ absent maintenance. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
 
 The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom III. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
 
@@ -156,13 +156,13 @@ So a forward-deployed motion raises the seller's temptation $T$ and the seller's
 
 [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) states that Net Revenue Retention is a lagging indicator, and it lags by a full renewal cycle. Section 7.2 supplies a leading one: the incumbent's asymmetry gap, which erodes continuously and is measurable at any point.
 
-The instrument already exists. The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
+The instrument already exists. The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
 
 ---
 
 ## Open questions
 
-- **Resolved in Constitution v16.0.** Axiom I now names the party bearing the specificity, and separates composition (which selects the motion) from level (which sets the Turnkey and Structural boundary). Both were open questions raised by this document.
+- **Resolved in the Constitution.** Axiom I names the party bearing the specificity, and separates composition (which selects the motion) from level (which sets the Turnkey and Structural boundary). Both were open questions raised by this document.
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
 - **The first-year margin disqualifier assumes a single-shot game.** Section 7 shows the test is too strict when $r_t$ holds up. Correcting it means editing a disqualification rule reps rely on, so it waits for review.
 - **$C_{sustain}$ has no budget owner.** [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md) maps each variable to a department. This one is unmapped, and unmapped variables drift by that corollary's own argument.
@@ -173,6 +173,6 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/02-inter
 ## Related
 
 - **Research:** [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) for quasi-rents and supplier exposure, [real-options.md](../02-research/real-options.md) for staging under irreversibility, [process-misfit.md](../02-research/process-misfit.md) for what drives $C_{deliver}$.
-- **Buyer-side model:** [00-ilg-constitution.md](./00-ilg-constitution.md) Part III.
+- **Buyer-side model:** [00-tcg-constitution.md](./00-tcg-constitution.md) Part III.
 - **Functional forms:** [03-mathematical-models.md](./03-mathematical-models.md).
 - **Staging in practice:** [milestone-valuation-model.md](../../practice/01-field-assets/milestone-valuation-model.md).

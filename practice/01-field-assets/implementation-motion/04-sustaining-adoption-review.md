@@ -4,14 +4,14 @@ layer: practice
 status: active
 version: 1.0
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Sustaining Adoption Review (The Proof)
 
 **Version:** 1.0
 
-**Phase:** 04_The_Proof (Sustained Value)
+**Motion:** **Implementation-led**. Fourth of four artifacts, after the MIP.
 
 **Audience:** Customer Success / Implementation Lead / AE / Customer Executive Sponsor
 
@@ -29,7 +29,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 
 ## Why this artifact exists
 
-Axiom III governs whether a deal persists, and the [Constitution's Handoff Rule](../../../theory/01-foundation/00-ilg-constitution.md) states the mechanism plainly. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, meaning the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
+Axiom III governs whether a deal persists, and the [Constitution's Handoff Rule](../../../theory/01-foundation/00-tcg-constitution.md) states the mechanism plainly. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, meaning the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
 
 The first three artifacts drive $\Delta_A$ toward zero before signature. Nothing keeps it there. This document is the maintenance.
 
@@ -82,7 +82,7 @@ Before the AE steps back, the receiving CS lead answers these from memory. If th
 3. What killed their last attempt at solving this?
 
 > [!WARNING]
-> **The failure this prevents.** A customer who repeats their entire context to the new team reads the repetition as evidence that the seller's diligence was theater. The Red Team's costly signal is retroactively devalued, which is worse than never having run it. See [Axiom II](../../../theory/01-foundation/00-ilg-constitution.md) on why a signal that turns out to be cheap talk does more damage than silence.
+> **The failure this prevents.** A customer who repeats their entire context to the new team reads the repetition as evidence that the seller's diligence was theater. The Red Team's costly signal is retroactively devalued, which is worse than never having run it. See [Axiom II](../../../theory/01-foundation/00-tcg-constitution.md) on why a signal that turns out to be cheap talk does more damage than silence.
 
 ---
 
@@ -109,6 +109,25 @@ RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance) comes from 
 - **Adoption green, Effectiveness red.** People use it properly and the North Star has not moved. Either the metric was wrong at signature or the theory of value was. Escalate to the exec sponsor, because this one does not resolve at the practitioner level.
 - **Implementation red.** Customization is accumulating into a branch nobody can maintain. Every additional deviation raises the cost of the next upgrade and quietly builds the case for replacement.
 - **Everything green, Maintenance red.** Value landed and the relationship still decayed. Go to Section 4, because this is reputation depreciation rather than a delivery failure.
+
+### 2.1 The count re-take
+
+*The [Deal Triage Calculator](../deal-triage-calculator.md) counted three things before the deal was scored. By the first review cycle, all three are known rather than estimated. Record what they turned out to be.*
+
+Run this once, at the first cycle where deployment is far enough along to know. It is not repeated at later cycles.
+
+| Counted at triage | Scored | Actual | Variance |
+|---|---|---|---|
+| Integration points | ______ | ______ | ______ |
+| Workflows that change | ______ | ______ | ______ |
+| Undocumented exception paths | ______ | ______ | ______ |
+| **Total** | ______ | ______ | ______ |
+
+**Who reads this, and what for.** Not this account. The variance is recorded here and read by the manager across a book, which is the only level at which it means anything. One deal scored at 3 against 11 actual is a hard deal. A rep whose variance runs one direction across five deals is a scoring problem, and the direction says which one: consistently under is a rep routing deals away from apparatus, and consistently over is a rep routing them toward it.
+
+**No band and no threshold.** A variance of 4 on a deal counting 30 items is not the same finding as a variance of 4 on a deal counting 5, and this document does not carry the formula that would tell them apart. Record the numbers. The comparison is the manager's.
+
+This is the only audit the counting instrument has on itself. Counts are checkable where ratings are not, and this is where the check happens.
 
 ---
 
@@ -191,7 +210,7 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 
 ## Related
 
-- **Theory:** [ILG Constitution, Axiom III (Law of Governance)](../../../theory/01-foundation/00-ilg-constitution.md). This artifact operationalizes the Handoff Rule and the Reputation Depreciation derivation.
+- **Theory:** [TCG Constitution, Axiom III (Law of Governance)](../../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and the Reputation Depreciation derivation.
 - **Academic backing:** [re-aim-framework.md](../../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
 - **CFIR mapping:** [02-cfir-field-mapping.md](../../../theory/01-foundation/02-cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension and names the same failure signals.
 - **Prerequisite:** A signed [MIP](./03-closing-mutual-implementation-plan.md). This artifact has no meaning without one, because it audits commitments the MIP created.

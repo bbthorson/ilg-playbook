@@ -6,7 +6,7 @@ status: active
 
 # Research
 
-**The academic evidence backing each ILG axiom.** This directory is a canonical citation index — links and abstracts, not deep-dive synthesis. The synthesis lives in the [Constitution](../01-foundation/00-ilg-constitution.md); this directory tells you *where the claims come from* and *which axiom each source supports*.
+**The academic evidence backing each TCG axiom.** This directory is a canonical citation index — links and abstracts, not deep-dive synthesis. The synthesis lives in the [Constitution](../01-foundation/00-tcg-constitution.md); this directory tells you *where the claims come from* and *which axiom each source supports*.
 
 Parent: [theory/](../) · Sibling: [01-foundation/](../01-foundation/)
 
@@ -21,7 +21,7 @@ Each research entry follows a standard shape:
 - **Sources** — Authors, year, paper title, journal/publisher, link to primary source.
 - **Abstract** — 3–4 sentences capturing the core finding or framework.
 - **Key claims** — Bulleted statements of what the work establishes.
-- **Supports in ILG** — Which axiom, primary derivation, bridge concept, or clarifying concept this source supports, with a one-line connection.
+- **Supports in TCG** — Which axiom, primary derivation, bridge concept, or clarifying concept this source supports, with a one-line connection.
 - **Notable quotes** — Passages worth citing in blog posts or talks.
 - **Notable statistics** — Specific numbers worth referencing.
 
@@ -35,6 +35,6 @@ Each research entry follows a standard shape:
 | Type of content | Where it lives |
 |---|---|
 | Canonical citations, abstracts, source links | **`theory/02-research/`** (this directory) |
-| Theoretical synthesis of these papers | [`../01-foundation/00-ilg-constitution.md`](../01-foundation/00-ilg-constitution.md) |
+| Theoretical synthesis of these papers | [`../01-foundation/00-tcg-constitution.md`](../01-foundation/00-tcg-constitution.md) |
 | Applied analysis of a specific deal/event | [`../../publishing/01-cases/`](../../publishing/01-cases/) |
 | Published or polished commentary | [`../../publishing/02-tools/style-references/`](../../publishing/02-tools/style-references/) |

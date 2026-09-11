@@ -3,7 +3,7 @@
 **Executable forms of the equations the playbook states in LaTeX, plus the figures generated from them.** No dependencies. Python 3, standard library only, matching the two checkers in [`practice/02-internal-ops/linting/`](../practice/02-internal-ops/linting/).
 
 ```bash
-python3 models/test_ilg_models.py      # every worked example in the docs
+python3 models/test_tcg_models.py      # every worked example in the docs
 python3 models/make_figures.py --check # figures still match the equations
 ```
 
@@ -11,7 +11,7 @@ python3 models/make_figures.py --check # figures still match the equations
 
 Roughly a dozen formulas lived only as prose. Nothing verified that a worked example still matched its formula, that weights still summed to 1, or that a figure still depicted the equation it illustrated. Retune a coefficient and the prose went on quietly asserting the old one.
 
-That is the drift problem [`RetiredTerms.yml`](../practice/02-internal-ops/linting/styles/ILG/RetiredTerms.yml) solves for renames and the [citation provenance audit](../theory/02-research/audits/citation-provenance-audit.md) solves for statistics. This directory is the equivalent for formulas.
+That is the drift problem [`RetiredTerms.yml`](../practice/02-internal-ops/linting/styles/TCG/RetiredTerms.yml) solves for renames and the [citation provenance audit](../theory/02-research/audits/citation-provenance-audit.md) solves for statistics. This directory is the equivalent for formulas.
 
 ## The documents are the specification
 
@@ -29,9 +29,9 @@ The dependency chain runs `theory/` to `practice/` to `publishing/`, one way. Th
 
 | File | What it does |
 |---|---|
-| `ilg_models.py` | Every live formula, one function each, with its canonical home named in the docstring. |
-| `test_ilg_models.py` | 118 assertions. Every worked example in the documents, plus the properties the documents claim (convexity, boundedness, monotonicity, the band edges). |
-| `make_figures.py` | Writes the three axiom figures in `theory/01-foundation/assets/` by sampling `ilg_models.py`. `--check` regenerates and fails on any diff. |
+| `tcg_models.py` | Every live formula, one function each, with its canonical home named in the docstring. |
+| `test_tcg_models.py` | 118 assertions. Every worked example in the documents, plus the properties the documents claim (convexity, boundedness, monotonicity, the band edges). |
+| `make_figures.py` | Writes the three axiom figures in `theory/01-foundation/assets/` by sampling `tcg_models.py`. `--check` regenerates and fails on any diff. |
 
 Formula coverage, by canonical home:
 
@@ -42,7 +42,8 @@ Formula coverage, by canonical home:
 | [consensus-friction-calculator.md](../practice/01-field-assets/consensus-friction-calculator.md) | The worked example, the risk bands, and the variance rubric bounds. |
 | [milestone-valuation-model.md](../practice/01-field-assets/milestone-valuation-model.md) | The stage equation and the uncertainty decay chain. |
 | [05-diagnostics-friction-efficiency-index.md](../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) | FAR, BCV, RMS, SVI, both normalizations, and the composite. |
-| [process-calculator.md](../practice/01-field-assets/process-calculator.md) | The maturity gate, market stage, the four-factor total, both divergence gates, and the full step 3 routing table. |
+| [deal-triage-calculator.md](../practice/01-field-assets/deal-triage-calculator.md) | The maturity gate, the three component counts and their bands, both divergence gates and the modifier, the level and direction routing, and the frequency reading. |
+| [07-governance-forms.md](../theory/01-foundation/07-governance-forms.md) | The four governance forms selected by level and frequency, and whether the apparatus the level calls for can be amortized. |
 
 ## Nothing here is fitted, and it must stay that way
 
@@ -63,7 +64,7 @@ What would make the models empirical is already written down, in section 6 of `0
 
 `theory/01-foundation/assets/` holds three SVGs, one per axiom, replacing hand-made PNGs that depicted a potential-well curve no equation in the repository produced.
 
-Each is sampled from `ilg_models.py`, so a coefficient change moves the picture or fails the check. The SVG is written by hand rather than by a plotting library so the check runs anywhere Python does, the output is byte-for-byte reproducible, and the `prefers-color-scheme` block is authored directly rather than injected by post-processing. The old PNGs glared in dark mode.
+Each is sampled from `tcg_models.py`, so a coefficient change moves the picture or fails the check. The SVG is written by hand rather than by a plotting library so the check runs anywhere Python does, the output is byte-for-byte reproducible, and the `prefers-color-scheme` block is authored directly rather than injected by post-processing. The old PNGs glared in dark mode.
 
 **Vale does not read SVG.** Its scope is `*.md`, so label text inside a figure escapes the banned-word list, the emoji ban, and the retired-terms rule. `check_figure_text()` in `make_figures.py` closes that hole by reading the same `RetiredTerms.yml` and `AntiHype.yml` files Vale uses. It covers the figures this repository generates and nothing else, so an SVG added by hand is still unchecked.
 
@@ -71,11 +72,11 @@ Each is sampled from `ilg_models.py`, so a coefficient change moves the picture 
 
 Recorded rather than silently reconciled, on the same principle the provenance audit uses for statistics.
 
-**1. $I_{seller}$ has two incompatible definitions.** `03-mathematical-models.md` section 2.2 gives a weighted power form over inputs on $[0, 10]$, which ranges to about 14.6. The [Asymmetry Scorecard](../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) defines the same symbol as the mean of four dimensions each scored 1 to 5, which lands on $[1, 5]$. Section 1.5's normalization assumes the scorecard's range, so the theory's own functional forms cannot feed the normalizer the theory makes mandatory. The module implements both under separate names and does not pretend they compose. Resolving this means deciding which one the symbol denotes.
+**1. $I_{seller}$ has two incompatible definitions.** `03-mathematical-models.md` section 2.2 gives a weighted power form over inputs on $[0, 10]$, which ranges to about 14.6. The [Asymmetry Scorecard](../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) defines the same symbol as the mean of four dimensions each scored 1 to 5, which lands on $[1, 5]$. Section 1.5's normalization assumes the scorecard's range, so the theory's own functional forms cannot feed the normalizer the theory makes mandatory. The module implements both under separate names and does not pretend they compose. Resolving this means deciding which one the symbol denotes. Scorecard v3.0 did not resolve it: the dimensions became pairs of counts, but the presentation scale stayed at $[1, 5]$ deliberately so the bands and the normalizer kept working, so the two definitions still disagree by the same amount.
 
 **2. The consensus worked example is labelled against its own rubric.** [consensus-friction-calculator.md](../practice/01-field-assets/consensus-friction-calculator.md) describes its worked example as "two camps in genuine conflict (Var = 0.25)". The rubric a few lines above assigns that description to 0.50 and gives 0.25 as "minor divergence in priority, nobody is threatened". The arithmetic is correct and reproduces to 17.6. Only the prose label is wrong, so the test asserts the arithmetic and this note records the rest.
 
-**3. Two market-stage vocabularies are both canonical, and only one is enforced.** The replaced PNGs labelled their x-axis regions "Nascent, Efficient, Saturated", which is the taxonomy in [01-sales-motion-comparison.md](../theory/01-foundation/01-sales-motion-comparison.md) under Market States and is used again in [channel-collapse.md](../theory/02-research/channel-collapse.md). [process-calculator.md](../practice/01-field-assets/process-calculator.md) step 1 names the stages "Nascent, Transitional, Mature", which that same section states is a deliberate shorthand, since Efficient and Saturated are observationally similar from outside the buyer. Neither file is wrong. What is missing is a note in the calculator saying which vocabulary it is collapsing and why, so a reader of one does not conclude the other has drifted. Recorded here after this audit first misread the panel labels as stale.
+**3. Two market-stage vocabularies were both canonical, and Constitution v17.0 retired both.** The replaced PNGs labelled their x-axis regions "Nascent, Efficient, Saturated" and the calculator's step 1 named the stages "Nascent, Transitional, Mature". Neither file was wrong and the pair could not be reconciled, because the taxonomy was a proxy for a quantity nothing measured. Direction is now measured, so the proxy is gone and its three legibility signals survive as search evidence items. One file still carries a stage name in prose: [channel-collapse.md](../theory/02-research/channel-collapse.md) refers to Stage 3 buyers, which is a claim about the research rather than a routing rule, and it is left alone under the rule that research files are not rewritten to match a framework revision.
 
 **4. The retired panels plotted no equation the repository contains.** The U-shaped transaction cost curve over workflow legibility is not the reduced form, and no other documented form produces it. That is why the replacements plot one stated equation each rather than redrawing the same shape in code.
 

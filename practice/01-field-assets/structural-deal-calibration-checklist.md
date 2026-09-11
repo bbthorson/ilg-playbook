@@ -1,12 +1,12 @@
 ---
-title: "ILG Deal Calibration Checklist"
+title: "Structural Deal Calibration Checklist"
 layer: practice
 status: active
 operationalizes: [axiom-1, axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
-# ILG Deal Calibration Checklist
+# Structural Deal Calibration Checklist
 
 **Purpose:** A pre-close self-audit for the AE and Solutions Engineer, run before an order form is submitted on a Structural deal.
 
@@ -27,8 +27,8 @@ Answer every item with evidence rather than recollection. If you cannot point to
 ## Part 1: The lane (Stop items)
 
 - [ ] **Workflow maturity is Level 2 or Level 3.** Someone has seen the current process, and for Level 2 the Blueprint reconstructed it before the Red Team ran. *A Level 1 workflow is a mandatory veto.*
-- [ ] **The Process Calculator score is on file and still current.** Re-score if integration scope or stakeholder count changed materially since the original.
-- [ ] **The deal is not sitting on a boundary condition.** Walk the six in [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md). Name which one you checked and why it does not apply.
+- [ ] **The Deal Triage Calculator sheet is on file and still current.** Re-count if any of the three counts changed materially, and re-read the direction at every artifact boundary. A direction that has not moved since qualification means either nothing was learned or nobody re-scored.
+- [ ] **The deal is not sitting on an exclusion criterion.** Walk the six in [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) section 4. Name which one you checked and why it does not apply.
 
 ## Part 2: Asymmetry (Stop items)
 
@@ -90,5 +90,5 @@ A veto recorded here is the cheapest one available. Every later stage costs more
 - [06-governance-implementation-veto.md](../02-internal-ops/06-governance-implementation-veto.md) — The authority behind the Stop items, and the escalation path when the AE disagrees.
 - [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) — The manager review this checklist precedes.
 - [costly-signal-discovery-scripts.md](./costly-signal-discovery-scripts.md) — The ladder referenced in Part 4.
-- [process-calculator.md](./process-calculator.md) — Step 0 workflow maturity and the motion score.
+- [deal-triage-calculator.md](./deal-triage-calculator.md) — Step 0 workflow maturity, the three counts, and the level and direction.
 - [04-incentives-asymmetry-scorecard.md](../02-internal-ops/04-incentives-asymmetry-scorecard.md) — Produces the $\Delta_A$ figure in Part 2.

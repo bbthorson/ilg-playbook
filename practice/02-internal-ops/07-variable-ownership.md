@@ -3,7 +3,7 @@ title: "Variable Ownership"
 layer: practice
 status: active
 operationalizes: [axiom-1, axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Variable Ownership
@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 
 **Operationalizes:** The Constitution's organizational corollary, which lived in the Constitution as Part IV through v14.0 and moved here in v15.0. A variable-to-department mapping is operational content, and the Constitution is axioms-first.
 
-**Canonical model:** [00-ilg-constitution.md](../../theory/01-foundation/00-ilg-constitution.md) Part III for the Surplus equation, [05-seller-surplus-model.md](../../theory/01-foundation/05-seller-surplus-model.md) for the seller-side terms.
+**Canonical model:** [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) Part III for the Surplus equation, [05-seller-surplus-model.md](../../theory/01-foundation/05-seller-surplus-model.md) for the seller-side terms.
 
 ---
 

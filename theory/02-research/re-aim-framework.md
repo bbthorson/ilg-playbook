@@ -3,7 +3,7 @@ title: "RE-AIM Framework"
 layer: theory
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # RE-AIM Framework
@@ -26,12 +26,12 @@ canonical_source: theory/01-foundation/00-ilg-constitution.md
 - Top-performing SaaS achieves NRR > 120%; NRR < 100% signals institutionalization failure.
 - Technical debt consumes 20–40% of IT budgets annually.
 
-**Supports in ILG:**
+**Supports in TCG:**
 - **Axiom III — Law of Governance** — RE-AIM's Maintenance dimension is how recursive cooperation gets measured; NRR is the lagging signal.
 - **Reputation Depreciation** (primary derivation) — RE-AIM's Implementation and Maintenance dimensions are what depreciation looks like operationally.
 - **Surplus** (bridge concept) — RE-AIM measures whether surplus is preserved post-signature.
-- MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md`](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md).
-- Field instrument: the five dimensions become a fill-in review in Section 2 of [`04-sustaining-adoption-review.md`](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), which also documents the order the dimensions fail in and what each pattern implies.
+- MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md`](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md).
+- Field instrument: the five dimensions become a fill-in review in Section 2 of [`04-sustaining-adoption-review.md`](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md), which also documents the order the dimensions fail in and what each pattern implies.
 
 **Notable quotes:**
 - "A highly effective drug that no one can afford (low Reach) or a complex exercise regimen that no hospital can staff (low Adoption) has a net public health impact of zero."

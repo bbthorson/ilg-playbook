@@ -2,14 +2,14 @@
 title: "CFIR-to-Field Asset Mapping"
 layer: theory
 status: active
-version: 1.1
+version: 1.0
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-ilg-constitution.md
+canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # CFIR-to-Field Asset Mapping
 
-**Purpose:** This document maps the Consolidated Framework for Implementation Research (CFIR) constructs to the ILG field assets. CFIR is the "engineering spec" behind the tools reps use — the academic rigor lives here so the templates stay simple.
+**Purpose:** This document maps the Consolidated Framework for Implementation Research (CFIR) constructs to the TCG field assets. CFIR is the "engineering spec" behind the tools reps use — the academic rigor lives here so the templates stay simple.
 
 **Audience:** Framework designers, sales enablement, anyone updating or creating field assets.
 
@@ -87,7 +87,7 @@ The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evalua
 
 Frame Alignment Processes are the four ways to connect an initiative to what a stakeholder already believes. They come from Snow et al. (1986) rather than from CFIR. They sit in this document because CFIR names what is blocking a stakeholder and these are the moves that shift the stakeholder once named, and because all three assets use them:
 
-| Frame Process | When to Use | ILG Asset | Example |
+| Frame Process | When to Use | Asset | Example |
 |---|---|---|---|
 | **Frame Bridging** | Stakeholder cares about a different outcome than you're selling | Blueprint (Political Capital Map) | "This innovation IS risk mitigation" — bridge your solution to Legal's concern |
 | **Frame Amplification** | Tension for Change is too low | Blueprint (Cost of Inaction) | "2 hrs/week × 50 reps = $250K/year in lost productivity" |
@@ -96,18 +96,20 @@ Frame Alignment Processes are the four ways to connect an initiative to what a s
 
 ---
 
-## Intervention Characteristics → Process Calculator
+## Intervention Characteristics → Deal Triage Calculator
 
-Two CFIR constructs govern deal triage rather than any single artifact. Both live in the [Process Calculator](../../practice/01-field-assets/process-calculator.md), which routes the deal before an artifact is chosen.
+Two CFIR constructs govern deal triage rather than any single artifact. Both live in the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), which routes the deal before an artifact is chosen.
 
 | Calculator Section | CFIR Construct | What It Captures | Rep Sees It As |
 |---|---|---|---|
 | **Step 0: Workflow Maturity Gate** | Compatibility (maturity sense) | Has the buyer defined this process at all? | "Is there an SOP?" |
-| **Step 2b Gate A** | Compatibility (workflow sense) | Is there an encoded workflow for the product to fit, or does the product create the practice? | "Are we replacing something or starting something?" |
-| **Step 2b Gate B** | Trialability | Can the buyer verify fit themselves, cheaply, and walk away? | "Can they just try it?" |
-| **Step 2b divergence score** | Compatibility (workflow sense) | How far the buyer's encoded workflow sits from the one the product assumes | "How weird is their setup?" |
+| **Step 2 Gate A** | Compatibility (workflow sense) | Is there an encoded workflow for the product to fit, or does the product create the practice? | "Are we replacing something or starting something?" |
+| **Step 2 Gate B** | Trialability | Can the buyer verify fit themselves, cheaply, and walk away? | "Can they just try it?" |
+| **Step 2 divergence count** | Compatibility (workflow sense) | How many steps in the buyer's workflow have no counterpart in the product's | "How weird is their setup?" |
 
-Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves does not need the seller to prove it, which removes the condition the ILG artifacts exist to satisfy. Research backing sits in [process-misfit.md](../02-research/process-misfit.md).
+Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves does not need the seller to prove it, which removes the condition the implementation artifacts exist to satisfy.
+
+The divergence count enters as a multiplier on the implementation component rather than as a parallel score read alongside the total. A high-divergence deal therefore reads as implementation-dominant rather than needing a routing exception, which makes Compatibility's effect on the motion arithmetic rather than a table row. Research backing sits in [process-misfit.md](../02-research/process-misfit.md).
 
 ---
 
@@ -124,16 +126,16 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 
 ## Related
 
-- [00-ilg-constitution.md](./00-ilg-constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
 - [cfir.md](../02-research/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
 - [re-aim-framework.md](../02-research/re-aim-framework.md) — Companion framework for post-sale measurement.
 - Field artifacts being mapped:
-  - [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md)
-  - [02-validation-red-team-protocol.md](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md)
-  - [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md)
-  - [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
+  - [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md)
+  - [02-validation-red-team-protocol.md](../../practice/01-field-assets/implementation-motion/02-validation-red-team-protocol.md)
+  - [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md)
+  - [04-sustaining-adoption-review.md](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
 
 ---
 
-**Version:** 1.1
+**Version:** 1.0
 **Last Updated:** 2026-08-28

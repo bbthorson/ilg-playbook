@@ -1,6 +1,6 @@
 # Tools
 
-**Content generation and AI personas for writing about ILG publicly.** Persona configs, voice guides, multi-phase content generators, and a library of published examples used as style references.
+**Content generation and AI personas for writing about TCG publicly.** Persona configs, voice guides, multi-phase content generators, and a library of published examples used as style references.
 
 Parent: [publishing/](../) · Sibling: [01-cases/](../01-cases/)
 
@@ -10,7 +10,7 @@ This is *not* where reps run deals (see [`../../practice/01-field-assets/`](../.
 
 ### Strategy
 
-- **[ilg-concept-map.md](./ilg-concept-map.md)** — The content architecture: theoretical layers, content pillars, formats, and cadence. Read this first if you're planning what to write.
+- **[tcg-concept-map.md](./tcg-concept-map.md)** — The content architecture: theoretical layers, content pillars, formats, and cadence. Read this first if you're planning what to write.
 
 ### Voice & persona
 
@@ -37,7 +37,7 @@ Published examples. Use them to calibrate voice and structure, not to copy.
 ## Workflow
 
 ```
-ilg-concept-map.md            (decide what to write)
+tcg-concept-map.md            (decide what to write)
         ↓
 voice-guide.md                (calibrate voice)
         ↓
