@@ -852,7 +852,8 @@ class TestDealTriageCalculator(unittest.TestCase):
         workflow_maturity=3, n_alternatives=4, search_evidence=4,
         n_vetoes=6, n_with_documented_objective=1,
         integration_points=7, changed_workflows=3, undocumented_exceptions=4,
-        items_with_artifact=2, gate_b_trialable=False, divergent_steps=4)
+        items_with_artifact=2, gate_b_trialable=False, divergent_steps=4,
+        frequency=m.RECURRENT)
 
     # --- Step 0 -------------------------------------------------------
     def test_an_undefined_workflow_stops_before_anything_is_counted(self):
@@ -1082,6 +1083,64 @@ class TestDealTriageCalculator(unittest.TestCase):
     def test_a_large_aligned_deal_is_flagged_for_over_frictioning(self):
         result = m.triage(**dict(self.STRUCTURAL_DEAL, divergent_steps=0))
         self.assertIn("possible-over-frictioning", result.flags)
+
+    # --- Frequency and the governance form ----------------------------
+    def test_the_four_forms_match_the_document(self):
+        for freq, expected in ((m.ONE_SHOT, m.TRILATERAL),
+                               (m.RECURRENT, m.BILATERAL),
+                               (m.CONTINUOUS, m.UNIFIED_RISK)):
+            self.assertEqual(m.governance_form(m.STRUCTURAL, freq), expected)
+        for freq in m.FREQUENCIES:
+            self.assertEqual(m.governance_form(m.TURNKEY, freq), m.MARKET,
+                             "below the boundary the form is market at any "
+                             "frequency")
+
+    def test_frequency_does_not_enter_the_level(self):
+        """It selects the governance form. It is not a cost."""
+        levels = {m.triage(**dict(self.STRUCTURAL_DEAL, frequency=f)).level
+                  for f in m.FREQUENCIES}
+        self.assertEqual(len(levels), 1)
+
+    def test_a_structural_one_shot_deal_is_flagged_for_escalation(self):
+        """The level says it needs the full chain and the frequency says
+        nothing will pay for it. Both readings are correct."""
+        result = m.triage(**dict(self.STRUCTURAL_DEAL, frequency=m.ONE_SHOT))
+        self.assertEqual(result.deal_class, m.STRUCTURAL)
+        self.assertIn("structural-one-shot-escalate", result.flags)
+        self.assertFalse(m.apparatus_is_amortizable(m.STRUCTURAL, m.ONE_SHOT))
+
+    def test_a_turnkey_one_shot_deal_is_not_flagged(self):
+        light = dict(self.STRUCTURAL_DEAL, n_alternatives=2, n_vetoes=1,
+                     n_with_documented_objective=1, integration_points=1,
+                     changed_workflows=0, undocumented_exceptions=0,
+                     items_with_artifact=1, divergent_steps=0,
+                     frequency=m.ONE_SHOT)
+        result = m.triage(**light)
+        self.assertEqual(result.deal_class, m.TURNKEY)
+        self.assertEqual(result.governance, m.MARKET)
+        self.assertNotIn("structural-one-shot-escalate", result.flags)
+
+    def test_making_a_deal_recurrent_changes_the_form_not_the_deal(self):
+        """The strategic claim in 07-governance-forms.md section 5: recurrence
+        is partly a commercial choice, and it changes which governance form
+        applies rather than making an expensive one cheaper."""
+        one_shot = m.triage(**dict(self.STRUCTURAL_DEAL, frequency=m.ONE_SHOT))
+        recurrent = m.triage(**dict(self.STRUCTURAL_DEAL, frequency=m.RECURRENT))
+        self.assertEqual(one_shot.level, recurrent.level)
+        self.assertEqual(one_shot.direction, recurrent.direction)
+        self.assertEqual(one_shot.governance, m.TRILATERAL)
+        self.assertEqual(recurrent.governance, m.BILATERAL)
+
+    def test_an_unknown_frequency_is_refused(self):
+        for bad in ("annual", "subscription", None, ""):
+            with self.assertRaises(ValueError):
+                m.triage(**dict(self.STRUCTURAL_DEAL, frequency=bad))
+
+    def test_a_chaos_trap_has_no_governance_form(self):
+        """No level, so nothing to select a form from."""
+        result = m.triage(**dict(self.STRUCTURAL_DEAL, workflow_maturity=1))
+        self.assertEqual(result.route, m.CHAOS_TRAP)
+        self.assertIsNone(result.governance)
 
     def test_every_route_is_a_component_name_or_a_documented_special_case(self):
         routes = set()

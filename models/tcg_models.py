@@ -1126,9 +1126,65 @@ GATE_A_ENCODED = "encoded"
 
 SEARCH_EVIDENCE_ITEMS = 4
 
+# Frequency, Axiom I's third property. Step 1d. Not a count and not part of
+# the level: it selects the governance form and decides whether the apparatus
+# the level calls for can be amortized at all.
+ONE_SHOT, RECURRENT, CONTINUOUS = "one-shot", "recurrent", "continuous"
+FREQUENCIES = (ONE_SHOT, RECURRENT, CONTINUOUS)
+
+MARKET = "market"
+TRILATERAL = "trilateral"
+BILATERAL = "bilateral"
+UNIFIED_RISK = "bilateral, watching for unified"
+
 TriageResult = collections.namedtuple(
     "TriageResult",
-    "route level deal_class direction dominant vector flags reason")
+    "route level deal_class direction dominant vector frequency governance "
+    "flags reason")
+
+
+def governance_form(klass, frequency):
+    """Williamson's selection, on level and frequency. 07-governance-forms.md.
+
+    Below the boundary the form is market governance at any frequency: the
+    parties are strangers and the contract is complete.
+
+    At or above it, a one-shot transaction takes trilateral governance, because
+    neither party will build relational machinery for a single event and the
+    safeguards therefore have to come from outside the pair. A recurrent one
+    takes bilateral governance, where the next repetition is the safeguard and
+    the MIP is the instrument. A continuous relationship stays bilateral and
+    carries a standing question, because rising specificity eventually makes
+    the buyer's own integration beat any contract the two parties can write.
+
+    This answers a different question from the routing: not which instruments
+    run before signature, but what shape the arrangement takes after it.
+    """
+    if frequency not in FREQUENCIES:
+        raise ValueError(
+            "frequency is one of {}, not {!r}".format(FREQUENCIES, frequency))
+    if klass == TURNKEY:
+        return MARKET
+    if frequency == ONE_SHOT:
+        return TRILATERAL
+    if frequency == CONTINUOUS:
+        return UNIFIED_RISK
+    return BILATERAL
+
+
+def apparatus_is_amortizable(klass, frequency):
+    """Whether the apparatus the level calls for has anything to amortize over.
+
+    False only for a Structural one-shot deal, which is the case the document
+    says to escalate rather than decide alone. The level says the deal needs
+    the full chain and the frequency says nothing will pay for it, and both
+    readings are correct. Running a lighter version produces the
+    under-frictioned failure with the cost already sunk.
+    """
+    if frequency not in FREQUENCIES:
+        raise ValueError(
+            "frequency is one of {}, not {!r}".format(FREQUENCIES, frequency))
+    return not (klass == STRUCTURAL and frequency == ONE_SHOT)
 
 
 def _band(count, bands, what):
@@ -1252,7 +1308,7 @@ def triage(workflow_maturity,
            n_alternatives, search_evidence,
            n_vetoes, n_with_documented_objective,
            integration_points, changed_workflows, undocumented_exceptions,
-           items_with_artifact,
+           items_with_artifact, frequency,
            category_named=True, channel_exists=True,
            formal_body_required=False,
            gate_a=GATE_A_ENCODED, gate_b_trialable=None, divergent_steps=None,
@@ -1271,7 +1327,8 @@ def triage(workflow_maturity,
        rather than only the routing, because the buyer's own read of the risk
        is evidence the counts missed.
     2. The three counts, then the two gates, then the divergence modifier.
-    3. Level from base friction, direction from amplified friction.
+    3. Level from base friction, direction from amplified friction, and the
+       governance form from level and frequency together.
 
     Divergence is counted only when gate A answers "encoded" and gate B answers
     no. Where a gate passes, the modifier is skipped and the vector routes as
@@ -1282,11 +1339,15 @@ def triage(workflow_maturity,
     # --- Step 0: workflow maturity gate --------------------------------
     if workflow_maturity not in (1, 2, 3):
         raise ValueError("workflow maturity is scored 1, 2 or 3")
+    if frequency not in FREQUENCIES:
+        raise ValueError(
+            "frequency is one of {}, not {!r}".format(FREQUENCIES, frequency))
     if workflow_maturity == 1:
         if product_automates_process:
             return TriageResult(
                 route=CHAOS_TRAP, level=None, deal_class=None, direction=None,
-                dominant=None, vector=None, flags=("chaos-trap",),
+                dominant=None, vector=None, frequency=frequency,
+                governance=None, flags=("chaos-trap",),
                 reason="Step 0: no written process exists and the product "
                        "automates the process. Redirect to consulting or a "
                        "paid workshop to define the process first.")
@@ -1338,7 +1399,9 @@ def triage(workflow_maturity,
         return TriageResult(
             route="implementation", level=level, deal_class=STRUCTURAL,
             direction=vector.direction, dominant=vector.dominant,
-            vector=vector, flags=tuple(flags + ["pilot-override"]),
+            vector=vector, frequency=frequency,
+            governance=governance_form(STRUCTURAL, frequency),
+            flags=tuple(flags + ["pilot-override"]),
             reason="Override: the buyer asked for a pilot or proof of "
                    "concept, which reports Structural-level perceived risk "
                    "whatever the counts say. Pilots are governed by the Red "
@@ -1349,7 +1412,9 @@ def triage(workflow_maturity,
             return TriageResult(
                 route="implementation", level=level, deal_class=klass,
                 direction=vector.direction, dominant=vector.dominant,
-                vector=vector, flags=tuple(flags + ["hidden-structural"]),
+                vector=vector, frequency=frequency,
+                governance=governance_form(klass, frequency),
+                flags=tuple(flags + ["hidden-structural"]),
                 reason="Hidden Structural deal: the level stays Turnkey and "
                        "the routing does not. The installation is small, so "
                        "every count is low, and the workflow underneath it "
@@ -1359,7 +1424,8 @@ def triage(workflow_maturity,
         return TriageResult(
             route="velocity", level=level, deal_class=klass,
             direction=vector.direction, dominant=vector.dominant,
-            vector=vector, flags=tuple(flags),
+            vector=vector, frequency=frequency,
+            governance=governance_form(klass, frequency), flags=tuple(flags),
             reason="Turnkey level: the deal cannot carry heavy apparatus, so "
                    "the gate structure would cost more than it unlocks.")
 
@@ -1367,6 +1433,8 @@ def triage(workflow_maturity,
         flags.append("possible-over-frictioning")
     if vector.dominant == "consensus":
         flags.append("consensus-instrument-set-is-thin")
+    if not apparatus_is_amortizable(klass, frequency):
+        flags.append("structural-one-shot-escalate")
 
     reasons = {
         "search": "Structural and search-dominant: the binding cost is the "
@@ -1386,4 +1454,5 @@ def triage(workflow_maturity,
     return TriageResult(
         route=vector.dominant, level=level, deal_class=klass,
         direction=vector.direction, dominant=vector.dominant, vector=vector,
+        frequency=frequency, governance=governance_form(klass, frequency),
         flags=tuple(flags), reason=reasons[vector.dominant])

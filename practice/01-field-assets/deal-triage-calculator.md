@@ -2,23 +2,23 @@
 title: "The Deal Triage Calculator"
 layer: practice
 status: active
-version: 5.0
+version: 6.0
 operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Deal Triage Calculator
 
-Version: 5.0
+Version: 6.0
 Audience: Internal Rep / Pre-Sales
-Goal: Emit the two quantities Axiom I names, so that the motion follows from the deal rather than from a label. Direction selects the instruments. Level sets how much apparatus the deal can carry.
+Goal: Emit the three quantities Axiom I names, so that the motion follows from the deal rather than from a label. Direction selects the instruments. Level sets how much apparatus the deal can carry. Frequency sets what kind of arrangement can hold it, and whether the apparatus can be paid for at all.
 
 **Canonical Reference:** [TCG Constitution, Axiom I](../../theory/01-foundation/00-tcg-constitution.md) for both quantities and [Axiom II](../../theory/01-foundation/00-tcg-constitution.md) for the amplification. The derivation is [06-friction-vector.md](../../theory/01-foundation/06-friction-vector.md).
 
 | | |
 |---|---|
 | **Inputs** | A live deal, and a willingness to count things rather than rate them. |
-| **Outputs** | Three component scores, three component gaps, a direction, a level, and a routing. |
+| **Outputs** | Three component scores, three component gaps, a direction, a level, a frequency, a governance form, and a routing. |
 | **Next step** | See "What to run" below. |
 | **Owner** | AE / pre-sales, with manager spot-check on the counts rather than on the scores. |
 
@@ -118,6 +118,20 @@ An integration point is one system that must exchange data with yours. A workflo
 $$\hat{\Delta}_{implementation} = 1 - \frac{\text{items with a written artifact}}{n_{impl}}$$
 
 This is a seller-side reading and it is provisional. It measures $I_{seller}$ only. Once discovery has run far enough to score the buyer's side, the [Bilateral Asymmetry Scorecard](../02-internal-ops/04-incentives-asymmetry-scorecard.md) supersedes it, because the implementation pair is the one bilateral pair and half of it is invisible from here.
+
+### 1d. Frequency
+
+**This is a classification, not a count, and it does not enter the level.** Frequency is how often the same two parties transact. It selects the governance form and it decides whether the apparatus the level calls for can be amortized at all. See [07-governance-forms.md](../../theory/01-foundation/07-governance-forms.md).
+
+| Reading | Condition | Evidence required |
+|---|---|---|
+| **One-shot** | The transaction completes and neither party has a structural reason to meet again. A migration, a perpetual licence, a fixed-scope build. | No renewal date exists, and nobody on either side can name what a second purchase would be. |
+| **Recurrent** | The transaction renews on a cycle and either party can decline at the boundary. | A renewal date, and a named owner of it on each side. |
+| **Continuous** | The product sits inside the buyer's operations and leaving is itself a project. | Ask what migrating away would cost them. If nobody can answer, it is continuous rather than recurrent. |
+
+**Do not read your own pricing model as the answer.** A product billed annually that the buyer treats as a one-time installation with a maintenance fee is one-shot, whatever the invoice says. Frequency is a property of the relationship, and the question is whether a second transaction is a real event that someone is responsible for.
+
+**Frequency Reading:** ______
 
 ---
 
@@ -219,6 +233,20 @@ $$\hat{F}_k = \frac{F_k (1 + \hat{\Delta}_k)}{\sum_j F_j (1 + \hat{\Delta}_j)}$$
 | Structural | Implementation-dominant | Implementation instruments in sequence. [Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md) → [Red Team](./ilg-motion/02-validation-red-team-protocol.md) → [MIP](./ilg-motion/03-closing-mutual-implementation-plan.md) → [Adoption Review](./ilg-motion/04-sustaining-adoption-review.md). |
 | Structural | Mixed | Run the top two components in proportion, heaviest first. Do not pick one and call it the motion. |
 
+### The governance form
+
+Read it off level and frequency together. It answers a different question from the routing above: not which instruments to run before signature, but what shape the arrangement should take after it.
+
+| Level | Frequency | Form | What to write |
+|---|---|---|---|
+| Turnkey | Any | **Market** | Standard terms, published pricing, no relationship apparatus. |
+| Structural | One-shot | **Trilateral** | Safeguards from outside the pair. Fixed scope, external acceptance criteria, escrow or arbitration, a named third party who adjudicates. |
+| Structural | Recurrent | **Bilateral** | A [Mutual Implementation Plan](./ilg-motion/03-closing-mutual-implementation-plan.md). Mutual commitments, staged gates, symmetric consequence. Each repetition safeguards the next. |
+| Structural | Continuous | **Bilateral, watching for unified** | The MIP still applies. Also ask what the buyer's build alternative now costs, because rising specificity on a continuous relationship eventually makes integrating beat any contract you can write. |
+
+> [!WARNING]
+> **A Structural one-shot deal is the case to escalate.** The level says it needs the full instrument chain and the frequency says there is nothing to amortize that chain over. Both readings are correct and they point opposite ways. Do not resolve it by running a lighter version of the motion, which produces the under-frictioned failure with the cost already sunk. Either find a structure that makes the relationship recurrent, which changes the governance form rather than making an expensive one cheaper, or decline. Take it to [manager review](../02-internal-ops/02-governance-review-checklist.md) rather than deciding it alone.
+
 **Hidden Structural deal.** A Turnkey level that reads implementation-dominant after a divergence modifier of 1.5 or more is a Structural deal wearing Turnkey clothes. The installation is small, so every count is low, and the workflow underneath matches nothing the product assumes. Route to the implementation instruments anyway and record why. This is Axiom I's under-frictioned failure mode, and it is the one the level alone cannot see.
 
 **Possible over-frictioning.** A Structural level that reads implementation-dominant with a divergence count of zero is large but aligned. Run the implementation instruments and flag the deal at [manager review](../02-internal-ops/02-governance-review-checklist.md) to confirm the full chain earns its cost. Deep integration against a standard the vendor already builds to is expensive work, not uncertain work.
@@ -270,6 +298,8 @@ $$\hat{F}_k = \frac{F_k (1 + \hat{\Delta}_k)}{\sum_j F_j (1 + \hat{\Delta}_j)}$$
 | **Level** | |
 | **Direction** | |
 | **Routing** | |
+| Frequency reading | |
+| Governance form | |
 | Date scored, and by whom | |
 
 Re-score at every artifact boundary and keep the old rows. The sequence of directions is the record of what the discovery actually moved, and a deal whose direction never changes is a deal where nothing was learned.
@@ -286,6 +316,7 @@ Re-score at every artifact boundary and keep the old rows. The sequence of direc
 - **Scoring once.** The vector is a path, not a point. A direction recorded at qualification and never re-taken is stale by the time it is used.
 - **Adding the divergence modifier to the level.** It multiplies one component. Size and fit are different quantities and the instrument keeps them apart on purpose.
 - **Skipping Step 0.** A high level with no defined workflow is a Chaos Trap. The apparatus has nothing to attach to.
+- **Reading the invoice as the frequency.** Annual billing does not make a relationship recurrent. A buyer who treats the purchase as an installation with a maintenance fee is one-shot, and giving them a relational contract charges them for machinery that will never pay for itself.
 
 ---
 
@@ -296,6 +327,7 @@ Re-score at every artifact boundary and keep the old rows. The sequence of direc
 - "How many integration points, and which of them have a schema attached?"
 - "What was the direction at qualification and what is it now? If it has not moved, what did the Blueprint do?"
 - "What was the Count Variance on the last three deals this rep closed?"
+- "Who owns the renewal on their side? If nobody, why is the frequency not one-shot?"
 
 ---
 

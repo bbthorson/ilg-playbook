@@ -54,7 +54,7 @@ Two rules govern what is written here, and they differ by section.
 |---|---|---|
 | $V_{solution}$ | Peak perceived value at the triggering event. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. This is the make-or-buy boundary. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $k$ | Asset specificity of the deal. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $k_{threshold}$ | The Structural / Turnkey boundary ($k = 10$). Above it, ILG applies. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
 | $F_{deployed}$ | The friction structure the seller actually deploys. Must scale with $k$. | [Constitution, Axiom I](./00-tcg-constitution.md) |
@@ -171,6 +171,9 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Turnkey Deal** | A low-specificity deal that a velocity motion serves better. Level below 15. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
 | **Chaos Trap** | A buyer with no documented workflow, in any market. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/01-field-assets/deal-triage-calculator.md) |
 | **Level** | The friction vector's $L^1$ length, on base friction. Sets the Turnkey and Structural boundary. | [06-friction-vector.md](./06-friction-vector.md) |
+| **Frequency** | How often the same two parties transact. One-shot, recurrent, or continuous. Selects the governance form. | [07-governance-forms.md](./07-governance-forms.md) |
+| **Governance Form** | The shape of the arrangement after signature. Market, trilateral, bilateral, or unified. | [07-governance-forms.md](./07-governance-forms.md) |
+| **Make-or-buy boundary** | $V_{next\_best}$ read as Coase's founding question. A deal closes only when buying beats integrating, net of transaction cost. | [07-governance-forms.md](./07-governance-forms.md) |
 | **Direction** | Each component's share of effective cost. Selects the instruments. Dominant at 0.50. | [06-friction-vector.md](./06-friction-vector.md) |
 | **Count Variance** | Scored count against actual count, taken at the Adoption Review. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
 | **Boundary Condition** | The test every deal passes before heavy apparatus is justified. | [Constitution, Part II](./00-tcg-constitution.md) |

@@ -28,6 +28,8 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
   - How many integration points, how many workflows change, how many exception paths are undocumented? Ask for the lists, not the numbers.
   - How many people can say no, and how many of them have a documented measured objective? The second number is the consensus gap.
   - What was the direction at qualification, and what is it now? A direction that has not moved means either nothing was learned or nobody re-counted.
+  - What is the frequency reading, and who owns the renewal on their side? If the answer is nobody, this is a one-shot deal whatever the billing says
+  - If it is Structural and one-shot, why are we running the full chain against a transaction that will never amortize it? That answer goes to this review, not to the rep.
 
 - [ ] **"Did the override rule apply?"**
   - Did they ask for a pilot or POC? That routes to the implementation instruments at Structural level whatever the counts say.

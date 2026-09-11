@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 18.0
+version: 19.0
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 18.0
+**Version:** 19.0
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
@@ -56,11 +56,11 @@ Each axiom carries one figure, plotting the equation stated under that axiom. Ev
 
 ### Axiom I — The Law of Transaction Cost Composition
 
-> **Transaction costs in B2B deals decompose into three components: search, consensus, and implementation. Their composition selects the motion. Their combined level sets the boundary between Turnkey and Structural deals. Asset specificity drives that level, and the exposure it creates belongs to whichever party sinks the specific investment.**
+> **Transaction costs in B2B deals decompose into three components: search, consensus, and implementation. Their composition selects the motion. Their combined level sets the boundary between Turnkey and Structural deals. How often the transaction recurs between the same two parties selects the governance form that holds the relationship together. Asset specificity drives the level, and the exposure it creates belongs to whichever party sinks the specific investment.**
 
-> *Tagline: **"Costs determine the deal."** Which cost dominates decides how you sell. How much cost there is decides whether the deal is Turnkey or Structural.*
+> *Tagline: **"Costs determine the deal."** Which cost dominates decides how you sell. How much cost there is decides whether the deal is Turnkey or Structural. How often it repeats decides what kind of arrangement can hold it.*
 >
-> *Plain English: Buying costs more than money. Finding it, agreeing on it, and installing it are three separate bills. The largest bill tells you how to sell. The total tells you how much apparatus the deal can carry. And whoever pays for work that fits only this one deal is the one left holding it if the deal dies.*
+> *Plain English: Buying costs more than money. Finding it, agreeing on it, and installing it are three separate bills. The largest bill tells you how to sell. The total tells you how much apparatus the deal can carry. How often you will do this again tells you what kind of agreement is worth writing. And whoever pays for work that fits only this one deal is the one left holding it if the deal dies.*
 >
 > *Origin: Coase (1937). Using the price mechanism is itself costly.*
 
@@ -86,6 +86,14 @@ $$\text{Level} = \lVert \mathbf{F} \rVert_1 = F_{search} + F_{consensus} + F_{im
 
 Level is a length and composition is a direction, and the two are independent. A short vector pointed at implementation is a small technical purchase. A long vector pointed at implementation is a Structural deal. Same direction, different apparatus. The $L^1$ norm is used because the field instrument produces a sum rather than a Euclidean length, and nothing downstream depends on the choice. Axiom II amplifies each component by its own gap before composition is read, which is what lets discovery rotate the vector. [06-friction-vector.md](./06-friction-vector.md) derives the consequences and the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) measures both quantities.
 
+**Frequency is the third property of a transaction, and it selects the governance form.** Williamson's selection runs on specificity, uncertainty and frequency together. Level is the specificity, the component gaps under Axiom II are the uncertainty, and frequency is how often the same two parties transact: one-shot, recurrent, or continuous.
+
+$$\text{Governance form} = g\left(\lVert \mathbf{F} \rVert_1,\; \text{frequency}\right)$$
+
+Below the boundary the form is market governance at any frequency. At or above it, a one-shot transaction takes trilateral governance because neither party will build relational machinery for a single event, a recurrent one takes bilateral governance where each repetition safeguards the next, and a continuous relationship of rising specificity eventually takes unified governance, which is the buyer building it themselves. [07-governance-forms.md](./07-governance-forms.md) derives the four forms and what each costs.
+
+**Level says what the deal needs and frequency says whether it can be paid for.** Apparatus amortizes over repetitions, so a one-shot deal has nothing to amortize it over. This is why a deal can sit above the boundary, genuinely require the full instrument chain, and still be correct to decline.
+
 The boundary also has time dynamics. Value erodes from the triggering event:
 
 $$V_{effective}(t) = V_{solution} \cdot e^{-\delta t}$$
@@ -98,6 +106,7 @@ As $V$ decays, the buyer's relative preference shifts back toward $V_{next\_best
   - *Pre-signature.* The buyer faces hold-up risk and chooses to build internally rather than transact. Manifests as "we decided to handle this in-house" (Stanford ChatEHR, Apple's vertical silicon, any "we built it ourselves" story).
   - *Post-signature.* A buyer whose implementation uncertainty was never resolved can still transact when the commercial path is easy enough. They buy, they fail to deploy, and they leave. The failure lands in retention rather than in win rate, which is why it is usually diagnosed as a product problem or an onboarding problem. It is neither.
 - **Over-frictioned (heavy apparatus on a Turnkey deal).** Asset specificity too low for the friction deployed. The cost of Blueprints, Red Teams, and MIPs exceeds the surplus they unlock. The buyer experiences over-engineering and chooses a competitor with lighter motion.
+- **Mis-governed (right instruments, wrong arrangement).** Level and direction read correctly, frequency ignored. A one-shot deal given a relational contract carries machinery that never amortizes and reads to the buyer as overhead. A recurrent deal given fixed-scope third-party safeguards pays an arbitration premium for a relationship that would have safeguarded itself.
 - **Mis-composed (right level, wrong motion).** Total friction read correctly, dominant component read wrongly, so the motion attacks a cost that is not binding. Education aimed at a buyer who already knows the category, or implementation proof supplied to a buyer who cannot yet name the problem. The score justifies the effort and the effort lands nowhere.
 
 **Operating instruction.** Before deploying any sales motion, classify the deal against this boundary. The operational tool is the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md).
@@ -356,6 +365,18 @@ The derivation connecting the two representations, and the operating rule for wh
 
 ---
 
+#### Governance Form (Axioms I + III)
+
+Axiom I says how specific a transaction is and how often it repeats. Axiom III says an arrangement holds only while every party's weight on the future clears the cooperation threshold. Governance Form is what those two produce together: the shape of the arrangement that can actually hold a given transaction.
+
+What the bridge adds beyond either parent is that **frequency is partly a commercial choice rather than only a market fact, and changing it changes which form applies.** A one-shot transaction of high specificity needs safeguards from outside the pair, because neither side will build machinery for a single event. The same transaction made recurrent is safeguarded by the next repetition, which is Axiom III's condition doing the work an arbitrator would otherwise do, at no cost per transaction.
+
+This is the framework's account of why subscription pricing changed what could be sold rather than only when it was paid for. It converted single-play transactions into repeated ones, which brought high-specificity software inside bilateral governance and within reach of buyers who would not sign a fixed-scope build. The claim is falsifiable and section 5 of [07-governance-forms.md](./07-governance-forms.md) says how.
+
+The Mutual Implementation Plan is the bilateral form's instrument. It was justified as hold-up protection, which is true and narrower than what it is.
+
+---
+
 #### Staged Commitment (Axioms II + III)
 
 Staged Commitment explains a buyer behavior the other concepts predict but do not account for: the buyer who agrees the business case is positive and still declines to proceed.
@@ -463,6 +484,8 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 ---
 
 ## Version History
+
+**v19.0.** Axiom I gains frequency, the third property Williamson selects a governance form from and the one this framework had lost. It was present once as a scoring factor called Retention Horizon and was folded into the implementation count, as though a long relationship were a kind of installation cost. It is not a cost. It is the property that decides whether machinery to govern a relationship is worth building, because machinery amortizes over repetitions and a single transaction has nothing to amortize over. A new bridge concept, Governance Form (Axioms I + III), derives the four arrangements that follow, and [07-governance-forms.md](./07-governance-forms.md) carries the argument. Three things the framework already contained are named for the first time: the Mutual Implementation Plan is bilateral relational contracting rather than only hold-up protection, $V_{next\_best}$ in the Surplus equation is Coase's make-or-buy boundary, and a fourth governance form exists in which the buyer integrates and no contract the two parties can write will beat it. A fifth failure mode, Mis-governed, covers a deal whose instruments are right and whose arrangement is wrong.
 
 **v18.0.** The framework is renamed. Implementation-Led Growth named both the whole body of theory and one of the four motions inside it, and v17.0 made that untenable by turning a motion into a region of the friction vector's space: the framework was named after one of its own regions, and the most common misreading of it followed directly from that. The framework is **Transaction Cost Growth**. ILG keeps its name as the implementation-dominant motion, alongside PLG, SLG and the consensus-dominant region that still has no name and no instrument set. Nothing about any axiom changed in this revision. The rename is the v17.0 argument applied to the title page, which is where it should have been applied at the time.
 

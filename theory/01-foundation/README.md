@@ -24,7 +24,8 @@ The three states (Market, Deal at T0, Relationship at T1+) are the framework's p
 5. **[04-glossary-and-notation.md](./04-glossary-and-notation.md)** — *(reference, read as needed)* Every symbol and term in one place, with a pointer to where each is canonically defined. The notation index is itself canonical, since symbols had no home before it. Includes a disambiguation section for the five symbol pairs that look alike and mean different things.
 6. **[05-seller-surplus-model.md](./05-seller-surplus-model.md)** — The seller's side of the transaction. The Constitution models what the buyer gains and pays; this specifies what the seller spends before signature, what portion of it is exposed, and when the spend is worth making. Read it before designing a forward-deployed or implementation-heavy engagement.
 
-7. **[06-friction-vector.md](./06-friction-vector.md)** — Derives motion selection from the direction and length of the three-component cost vector. Adopted in Constitution v17.0, which took its per-component amplification into Axiom II and its vector notation into Axiom I. Section 9 records what adoption did not settle and section 10 records what it changed.
+7. **[06-friction-vector.md](./06-friction-vector.md)** — Derives motion selection from the direction and length of the three-component cost vector. Constitution v17.0 took its per-component amplification into Axiom II and its vector notation into Axiom I. Section 9 records what it did not settle.
+8. **[07-governance-forms.md](./07-governance-forms.md)** — What shape the arrangement should take once the deal closes. Adds frequency as Axiom I's third property, derives Williamson's four governance forms from level and frequency, and names the make-or-buy boundary that has always sat in the Surplus equation. Read it for the strategy layer rather than the deal layer.
 
 ## What goes here vs. elsewhere
 

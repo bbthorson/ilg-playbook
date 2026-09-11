@@ -42,7 +42,8 @@ Formula coverage, by canonical home:
 | [consensus-friction-calculator.md](../practice/01-field-assets/consensus-friction-calculator.md) | The worked example, the risk bands, and the variance rubric bounds. |
 | [milestone-valuation-model.md](../practice/01-field-assets/milestone-valuation-model.md) | The stage equation and the uncertainty decay chain. |
 | [05-diagnostics-friction-efficiency-index.md](../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) | FAR, BCV, RMS, SVI, both normalizations, and the composite. |
-| [deal-triage-calculator.md](../practice/01-field-assets/deal-triage-calculator.md) | The maturity gate, the three component counts and their bands, both divergence gates and the modifier, and the level and direction routing. |
+| [deal-triage-calculator.md](../practice/01-field-assets/deal-triage-calculator.md) | The maturity gate, the three component counts and their bands, both divergence gates and the modifier, the level and direction routing, and the frequency reading. |
+| [07-governance-forms.md](../theory/01-foundation/07-governance-forms.md) | The four governance forms selected by level and frequency, and whether the apparatus the level calls for can be amortized. |
 
 ## Nothing here is fitted, and it must stay that way
 
