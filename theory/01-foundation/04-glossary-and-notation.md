@@ -56,7 +56,7 @@ Two rules govern what is written here, and they differ by section.
 | $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. This is the make-or-buy boundary. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $k$ | Asset specificity of the deal. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| $k_{threshold}$ | The Structural / Turnkey boundary ($k = 10$). Above it, ILG applies. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
+| $k_{threshold}$ | The Structural / Turnkey boundary ($k = 15$ on a 0 to 30 level). Above it, direction selects the motion. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
 | $F_{deployed}$ | The friction structure the seller actually deploys. Must scale with $k$. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 
 ### Friction terms (Axiom II)
@@ -68,7 +68,7 @@ Two rules govern what is written here, and they differ by section.
 | $\lVert \mathbf{F} \rVert_1$ | Level. Base friction summed. Sets the Turnkey and Structural boundary. Equals $F_{base}$. | [06-friction-vector.md §1](./06-friction-vector.md) |
 | $F_{base}$ | The three cost components summed, before amplification. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $F_{effective}$ | Friction after amplification. Equals $\sum_k F_k (1 + \hat{\Delta}_k)$, which factors into $F_{base}(1 + \hat{\Delta}_A)$. | [Constitution, Axiom II](./00-tcg-constitution.md) |
-| $F_{search}$ | Cost of locating the category and viable vendors. Splits into category search and vendor evaluation. | [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
+| $F_{search}$ | Cost of locating the category and viable vendors. Splits into category search and vendor evaluation. | [01-motion-taxonomy.md](./01-motion-taxonomy.md) |
 | $F_{consensus}$ | Internal buyer alignment plus external bargaining. | [03-mathematical-models.md](./03-mathematical-models.md) |
 | $F_{implementation}$ | Deployment plus sustained change. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 
@@ -203,22 +203,22 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
 | **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Bridge Concepts](./00-tcg-constitution.md) |
 | **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
-| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), operationalized in [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) |
+| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), operationalized in [04-sustaining-adoption-review.md](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) |
 
 ### Artifact vocabulary
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
-| **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [02-validation-red-team-protocol.md](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md) |
-| **Mutual Implementation Plan (MIP)** | The governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) |
-| **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) |
-| **Education-Led Motion** | The SLG field asset. Written mainly as a counter-example showing which ILG machinery to leave switched off. | [01-education-led-motion.md](../../practice/01-field-assets/slg-motion/01-education-led-motion.md) |
-| **Reciprocity Gate** | The artifacts a buyer must supply before discovery advances. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
-| **Sacred Cow** | A politically protected workflow, tool, or team. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
-| **The Casualty** | The stakeholder who loses power, budget, or status if the initiative succeeds. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
-| **Negative Capability Declaration** | Stating platform limitations before signature, as a costly signal. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) |
-| **Resource Expiry Clause** | The buyer-side hostage that makes buyer delay costly. | [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) |
+| **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [02-validation-red-team-protocol.md](../../practice/01-field-assets/implementation-motion/02-validation-red-team-protocol.md) |
+| **Mutual Implementation Plan (MIP)** | The governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) |
+| **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) |
+| **Education-Led Motion** | The search-led field asset. Written mainly as a counter-example showing which implementation machinery to leave switched off. | [01-education-motion.md](../../practice/01-field-assets/search-motion/01-education-motion.md) |
+| **Reciprocity Gate** | The artifacts a buyer must supply before discovery advances. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Sacred Cow** | A politically protected workflow, tool, or team. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **The Casualty** | The stakeholder who loses power, budget, or status if the initiative succeeds. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Negative Capability Declaration** | Stating platform limitations before signature, as a costly signal. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Resource Expiry Clause** | The buyer-side hostage that makes buyer delay costly. | [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) |
 | **Vested Commission** | Comp structure tying rep payout to outcomes rather than signature. | [03-incentives-vested-commission.md](../../practice/02-internal-ops/03-incentives-vested-commission.md) |
 
 ### External frameworks
@@ -243,5 +243,5 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms and the clarifying concepts most term entries point to.
 - [03-mathematical-models.md](./03-mathematical-models.md) supplies the functional forms and every parameter default, plus the provenance status of each.
-- [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) covers motion vocabulary in context.
+- [01-motion-taxonomy.md](./01-motion-taxonomy.md) covers motion vocabulary in context.
 - [tcg-concept-map.md](../../publishing/02-tools/tcg-concept-map.md) is the content architecture for public writing, which is a different purpose from this file.

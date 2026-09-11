@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-market built on transaction cost economics, holding that what a deal costs a buyer beyond the price determines how it can be sold. PLG, SLG and ILG are motions inside it rather than rivals to it, and ILG is the implementation-dominant one. Almost all content is Markdown. The repo is organized into four groups, each with its own README:
+A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-market built on transaction cost economics, holding that what a deal costs a buyer beyond the price determines how it can be sold. Turnkey, search-led, consensus-led and implementation-led are motions inside it rather than rivals to it, each named after the cost it spends to reduce. `theory/01-foundation/09-motion-vocabulary.md` maps them onto the incumbent PLG and SLG vocabulary. Almost all content is Markdown. The repo is organized into four groups, each with its own README:
 
 | Directory | Function |
 |---|---|
@@ -23,7 +23,7 @@ Key cross-file dependencies to know:
 - The **Deal Triage Calculator** (`practice/01-field-assets/deal-triage-calculator.md`) operationalizes both of Axiom I's quantities: it emits a level and a direction, not a motion label. It is referenced by nearly every field asset.
 - The **CFIR field mapping** (`theory/01-foundation/02-cfir-field-mapping.md`) explains which research construct each artifact section operationalizes — read it before modifying any `practice/01-field-assets/` document.
 - The **Friction Allocation Diagnostic** (`practice/01-field-assets/friction-allocation-diagnostic.md`) operationalizes the four Friction Allocation Principles from Axiom II.
-- The **three ILG artifacts** (Blueprint → Red Team → MIP) in `practice/01-field-assets/ilg-motion/` run sequentially; each artifact gates the next. They are the implementation component's instruments. The directory keeps the motion's name because the motion keeps its name.
+- The **three the implementation artifacts** (Blueprint → Red Team → MIP) in `practice/01-field-assets/implementation-motion/` run sequentially; each artifact gates the next. They are the implementation component's instruments. The directory keeps the motion's name because the motion keeps its name.
 
 The **research files** in `theory/02-research/` back specific axioms:
 - Axiom I → `transaction-cost-economics.md`

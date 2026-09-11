@@ -14,7 +14,7 @@ Goal: To align Sales Rep compensation with Customer NRR (Net Revenue Retention).
 
 | | |
 |---|---|
-| **Inputs** | A closed Structural deal with a signed [MIP](../01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md). |
+| **Inputs** | A closed Structural deal with a signed [MIP](../01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md). |
 | **Outputs** | Comp terms: front-load, clawback triggers, safe harbor exceptions, NRR bonus structure. |
 | **Owner** | Finance / RevOps (drafting); rep (acknowledgment). |
 | **Anchored in** | [TCG Constitution, Axiom III](../../theory/01-foundation/00-tcg-constitution.md) — Governance. Vested comp raises rep $\delta_{discount}$ above the cooperation threshold. |
@@ -58,7 +58,7 @@ Sales is an "Infinite Game." We do not pay for signatures; we pay for **successf
 *If the Rep does the job perfectly, they participate in the renewal.*
 
 - **Bonus:** Rep receives \[Y\]% of the **Expansion Revenue** or **Early Renewal** if it occurs within 12 months.  
-- **Requirement:** Rep must attend the QBR (Quarterly Business Review) handover to Customer Success. The QBR is defined in Section 3 of the [Sustaining Adoption Review](../01-field-assets/ilg-motion/04-sustaining-adoption-review.md), including who must attend and what the review is empowered to decide.
+- **Requirement:** Rep must attend the QBR (Quarterly Business Review) handover to Customer Success. The QBR is defined in Section 3 of the [Sustaining Adoption Review](../01-field-assets/implementation-motion/04-sustaining-adoption-review.md), including who must attend and what the review is empowered to decide.
 
 ## 3\. Rep Acknowledgment
 

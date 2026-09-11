@@ -130,10 +130,10 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 - [cfir.md](../02-research/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
 - [re-aim-framework.md](../02-research/re-aim-framework.md) — Companion framework for post-sale measurement.
 - Field artifacts being mapped:
-  - [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md)
-  - [02-validation-red-team-protocol.md](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md)
-  - [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md)
-  - [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
+  - [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md)
+  - [02-validation-red-team-protocol.md](../../practice/01-field-assets/implementation-motion/02-validation-red-team-protocol.md)
+  - [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md)
+  - [04-sustaining-adoption-review.md](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
 
 ---
 

@@ -27,4 +27,4 @@
 **Output Format for LLM:**
 1. A concise summary of the "Play."
 2. A breakdown of the 3 most critical friction points (The Defensive Line).
-3. The ILG "Blueprint" for success.
+3. The Blueprint for success.

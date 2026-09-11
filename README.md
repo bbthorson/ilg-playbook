@@ -12,7 +12,7 @@ Two properties of that cost structure carry the decision.
 
 > **How much cost there is decides how much apparatus the deal can carry. Which cost dominates decides what that apparatus should be.**
 
-The named motions are regions of that space rather than competing philosophies. A deal whose cost sits in finding and comparing is a Sales-Led deal. One whose cost is small on every axis is Product-Led. One whose cost sits in installation is Implementation-Led. One whose cost sits in getting the buyer's own people to agree has no established playbook at all, which is a finding rather than an omission. Choosing between PLG, SLG and ILG as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
+The named motions are regions of that space rather than competing philosophies. A deal whose cost sits in finding and comparing is a Sales-Led deal. One whose cost is small on every axis is Product-Led. One whose cost sits in installation is Implementation-Led. One whose cost sits in getting the buyer's own people to agree has no established playbook at all, which is a finding rather than an omission. Choosing between Turnkey, search-led and implementation-led as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
 
 Three axioms carry the argument. Costs decompose and their composition selects the motion. Uncertainty inflates each cost by whatever the parties to it cannot verify, which is why unverifiable claims are expensive rather than merely unconvincing. And whether the arrangement survives depends on who holds a stake in the outcome, including the channels and platforms standing between the two sides.
 
@@ -43,9 +43,9 @@ The framework indexes on **state**, not on document. Name where the deal is, and
 
 | State | The question | Governed by | Go here |
 |---|---|---|---|
-| **Market** | Which motion is viable at all? | Axiom I | [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md), then [01-sales-motion-comparison.md](theory/01-foundation/01-sales-motion-comparison.md) |
+| **Market** | Which motion is viable at all? | Axiom I | [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md), then [01-motion-taxonomy.md](theory/01-foundation/01-motion-taxonomy.md) |
 | **Deal** (T0) | What must the seller supply before signature? | Axiom II | [practice/01-field-assets/](practice/01-field-assets/) — Blueprint, Red Team, MIP in order |
-| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) §7 |
+| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) §7 |
 
 Each axiom has a home state and none is confined to it. Part I explains where the mapping holds and where it does not.
 
@@ -92,7 +92,7 @@ Names, scope, and taglines below are canonical. If this table and the [Constitut
 | | **Turnkey Deal** | **Structural Deal** |
 |---|---|---|
 | Level | Below 15 on the [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md) | 15 to 30 |
-| Strategy | PLG / SLG — optimize for velocity | ILG — optimize for safety and certainty |
+| Motion | Turnkey. Optimize for velocity | Search-led, consensus-led or implementation-led, by direction |
 | Example | Standalone SaaS tools, modular utilities | Enterprise platforms, deep workflow rewiring |
 
 ---

@@ -10,7 +10,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 # The Standard Order Protocol (The Accelerator)
 
 Version: 1.0  
-Phase: Turnkey deal (PLG)  
+Component: none dominant. Turnkey level, below the boundary.  
 Audience: Account Executives / Sales Ops / CS Lead  
 Goal: To maximize velocity for Low-Friction deals while preventing "Lemon" handoffs.
 

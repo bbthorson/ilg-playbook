@@ -6,7 +6,7 @@ status: active
 
 # Prospect Evaluation Form
 
-> **Status:** DRAFT — inferred from [01-velocity-standard-order-protocol.md](./01-velocity-standard-order-protocol.md) Step 2. Review and ratify before deploying.
+> **Status:** DRAFT — inferred from [01-standard-order-protocol.md](./01-standard-order-protocol.md) Step 2. Review and ratify before deploying.
 
 **Purpose:** A 2-minute "Fit Check" the rep completes *before* sending the [Standard Order Form](./order-form.md). Catches Structural-deals-in-disguise so they don't slip through the velocity motion.
 
@@ -60,7 +60,7 @@ Prospect has reasonable expectations for support:
 
 - [ ] **GREEN** — All three sections pass. Proceed to [Standard Order Form](./order-form.md).
 - [ ] **YELLOW** — User Proficiency soft (will need extra hand-holding). Proceed but flag CS.
-- [ ] **RED** — Technical Fit or Karen Check failed. **Abort.** Either disqualify or escalate to Structural deal motion ([Contextual Blueprint](../ilg-motion/01-discovery-contextual-blueprint.md)).
+- [ ] **RED** — Technical Fit or Karen Check failed. **Abort.** Either disqualify or escalate to Structural deal motion ([Contextual Blueprint](../implementation-motion/01-discovery-contextual-blueprint.md)).
 
 **Rep signature / date:** _____________________
 
@@ -68,6 +68,6 @@ Prospect has reasonable expectations for support:
 
 ## Related
 
-- [01-velocity-standard-order-protocol.md](./01-velocity-standard-order-protocol.md) — Parent protocol; defines when this form is used.
+- [01-standard-order-protocol.md](./01-standard-order-protocol.md) — Parent protocol; defines when this form is used.
 - [order-form.md](./order-form.md) — The external contract that follows a GREEN verdict.
 - [../deal-triage-calculator.md](../deal-triage-calculator.md) — Upstream triage gate.

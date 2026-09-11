@@ -34,7 +34,7 @@ This generator is designed for a multi-stage dialogue. **Do not draft the full b
 
 ### 3. The Perspective (The Offensive Strategy)
 - Reframe the relationship as a **Bilateral Offensive Unit**.
-- Explain how the **ILG Blueprint** solves the specific **Information Asymmetry** identified.
+- Explain how the **Blueprint** solves the specific **Information Asymmetry** identified.
 
 ### 4. The Tactical Blueprint (The Playbook)
 - Provide 3-5 concrete steps the reader can take to apply this theory.

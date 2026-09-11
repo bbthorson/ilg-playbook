@@ -1037,13 +1037,13 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertEqual(forced.deal_class, m.STRUCTURAL)
         self.assertIn("pilot-override", forced.flags)
 
-    def test_a_turnkey_level_routes_to_velocity(self):
+    def test_a_turnkey_level_routes_to_the_turnkey_motion(self):
         light = dict(self.STRUCTURAL_DEAL, n_alternatives=2, n_vetoes=1,
                      n_with_documented_objective=1, integration_points=1,
                      changed_workflows=0, undocumented_exceptions=0,
                      items_with_artifact=1, divergent_steps=0)
         result = m.triage(**light)
-        self.assertEqual(result.route, "velocity")
+        self.assertEqual(result.route, "turnkey")
 
     def test_the_hidden_structural_deal_escapes_the_turnkey_route(self):
         """A small installation on a workflow that matches nothing. Every count
@@ -1151,7 +1151,7 @@ class TestDealTriageCalculator(unittest.TestCase):
                           changed_workflows=0, undocumented_exceptions=0,
                           items_with_artifact=1, divergent_steps=0)):
             routes.add(m.triage(**deal).route)
-        self.assertTrue(routes <= set(m.COMPONENTS) | {"velocity", m.CHAOS_TRAP,
+        self.assertTrue(routes <= set(m.COMPONENTS) | {"turnkey", m.CHAOS_TRAP,
                                                        "mixed"})
 
 

@@ -188,8 +188,8 @@ The gap is a **sum**, not a difference. Two equally blind parties do not cancel 
 
 **Routing — which half is wider.** The sum sets the risk; the balance sets the next action.
 
-- **$I_{seller}$ wider by 1.0 or more** → we are flying blind, go back to the [Blueprint](../01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md). Do not run a Red Team on an environment we have not mapped.
-- **$I_{buyer}$ wider by 1.0 or more** → they are working from an imagined product, go back to the [Red Team](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md).
+- **$I_{seller}$ wider by 1.0 or more** → we are flying blind, go back to the [Blueprint](../01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md). Do not run a Red Team on an environment we have not mapped.
+- **$I_{buyer}$ wider by 1.0 or more** → they are working from an imagined product, go back to the [Red Team](../01-field-assets/implementation-motion/02-validation-red-team-protocol.md).
 - **Within 1.0 and both high** → the most dangerous state on the card. Run Blueprint and Red Team in sequence before forecasting.
 
 ---

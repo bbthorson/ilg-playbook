@@ -40,7 +40,7 @@ Williamson's result is that specificity and frequency together select the govern
 |---|---|---|---|
 | Below the boundary | Any | **Market** | Standard terms, published pricing, no relationship apparatus. Classical contracting: the document is complete and the parties are strangers. |
 | At or above | One-shot | **Trilateral** | Neither side will build relational machinery for a transaction that happens once, so safeguards come from outside the pair. Fixed scope, external acceptance criteria, escrow, arbitration, a named third party who adjudicates. |
-| At or above | Recurrent | **Bilateral** | The parties safeguard each other directly and both keep their autonomy. Mutual commitments, staged gates, symmetric consequence. The [Mutual Implementation Plan](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) is an instrument of this form. |
+| At or above | Recurrent | **Bilateral** | The parties safeguard each other directly and both keep their autonomy. Mutual commitments, staged gates, symmetric consequence. The [Mutual Implementation Plan](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) is an instrument of this form. |
 | Far above, and rising | Continuous | **Unified** | One party absorbs the other's function. The buyer builds it internally, or the seller acquires the delivery capability. The transaction stops being a transaction. |
 
 **The MIP has always been bilateral governance and was justified as something narrower.** Its stated purpose is protection against hold-up, which is true and incomplete. What it actually is, structurally, is a relational contract: it leaves both parties autonomous, it safeguards the relationship rather than the transaction, and its gates are the mechanism by which each repetition earns the next. That is why it works on recurrent deals and reads as bureaucratic overhead on one-shot ones.
@@ -67,7 +67,7 @@ Reading it that way makes two things visible that the deal-level reading hides.
 
 ## 4. Addressable market is a property of the motion
 
-A seller who runs only velocity instruments can transact only with short-vector buyers. Buyers whose deals carry a long vector are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the cost that was blocking them.
+A seller who runs only Turnkey instruments can transact only with short-vector buyers. Buyers whose deals carry a long vector are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the cost that was blocking them.
 
 **This inverts the usual reading.** Addressable market is normally treated as a property of the product, fixed by what it does and who needs it. Under Axiom I it is a property of the motion, because the motion decides which regions of the friction space a seller can serve at all. Changing the motion changes the market, and no product change is required for that to happen.
 
@@ -111,7 +111,7 @@ The framework now emits three things about a deal and they are routinely confuse
 | **Direction** | Which instruments, of the apparatus it needs? | Discovery. Every closed gap rotates it. |
 | **Governance form** | What shape should the arrangement take after signature, and can the apparatus be paid for? | Frequency, which is partly a commercial choice rather than a finding. |
 
-**Level says what the deal needs and frequency says whether it can be afforded.** A one-shot deal at level 22 needs the full implementation chain and cannot amortize it over anything. That is the second boundary condition in [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) stated in its proper terms, and it is the case where declining is correct and running a lighter version is not.
+**Level says what the deal needs and frequency says whether it can be afforded.** A one-shot deal at level 22 needs the full implementation chain and cannot amortize it over anything. That is the second boundary condition in [01-motion-taxonomy.md](./01-motion-taxonomy.md) stated in its proper terms, and it is the case where declining is correct and running a lighter version is not.
 
 ---
 
@@ -128,9 +128,9 @@ The framework now emits three things about a deal and they are routinely confuse
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies level and frequency. Axiom III supplies the cooperation condition section 5 turns on.
 - [06-friction-vector.md](./06-friction-vector.md) — Direction and level, the other two outputs.
-- [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — The six conditions that put a deal outside the implementation region, of which the second is section 6's affordability case.
+- [01-motion-taxonomy.md](./01-motion-taxonomy.md) — The six conditions that put a deal outside the implementation region, of which the second is section 6's affordability case.
 - [05-seller-surplus-model.md](./05-seller-surplus-model.md) — What the seller spends before signature, which is what a one-shot deal has to recover in one transaction.
 - [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Williamson (1979) is the source of the four forms and the frequency dimension.
 - [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) — Axelrod, and why a repeated game safeguards itself.
-- [Mutual Implementation Plan](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) — The bilateral form's instrument.
+- [Mutual Implementation Plan](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) — The bilateral form's instrument.
 - [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) — Emits level, direction and frequency.

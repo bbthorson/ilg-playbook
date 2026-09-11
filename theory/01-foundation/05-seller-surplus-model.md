@@ -118,7 +118,7 @@ $$S_{seller} = \sum_{t=1}^{T} \frac{r_t \left(V_t - C_{deliver,t} - C_{sustain,t
 
 The single-shot form in section 2 is this expression with $T = 1$ and $C_{sustain} = 0$. Two consequences follow immediately, and the first is a correction.
 
-**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) carries the same assumption in its disqualification list, where a motion is ruled out when pre-sale cost exceeds first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify.
+**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. [01-motion-taxonomy.md](./01-motion-taxonomy.md) carries the same assumption in its disqualification list, where a motion is ruled out when pre-sale cost exceeds first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify.
 
 **$C_{sustain}$ is not overhead.** It is the spend that holds $r_t$ up, and section 7.2 says what it actually buys.
 
@@ -156,7 +156,7 @@ So a forward-deployed motion raises the seller's temptation $T$ and the seller's
 
 [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) states that Net Revenue Retention is a lagging indicator, and it lags by a full renewal cycle. Section 7.2 supplies a leading one: the incumbent's asymmetry gap, which erodes continuously and is measurable at any point.
 
-The instrument already exists. The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
+The instrument already exists. The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
 
 ---
 

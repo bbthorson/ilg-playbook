@@ -14,9 +14,9 @@ status: active
 
 Tools reps fill in on a live deal. Includes:
 - The [deal triage calculator](01-field-assets/deal-triage-calculator.md), which emits a level and a direction
-- The four implementation-component artifacts (Blueprint → Red Team → MIP → [Sustaining Adoption Review](01-field-assets/ilg-motion/04-sustaining-adoption-review.md)) for Structural deals whose direction points at implementation
-- The PLG velocity protocol + order form for Turnkey deals
-- The [education-led motion](01-field-assets/slg-motion/01-education-led-motion.md) for search-dominant deals, written mainly as a counter-example to the implementation chain
+- The four implementation-component artifacts (Blueprint → Red Team → MIP → [Sustaining Adoption Review](01-field-assets/implementation-motion/04-sustaining-adoption-review.md)) for Structural deals whose direction points at implementation
+- The standard order protocol and order form for Turnkey deals
+- The [education-led motion](01-field-assets/search-motion/01-education-motion.md) for search-dominant deals, written mainly as a counter-example to the implementation chain
 
 ### [02-internal-ops/](02-internal-ops/)
 

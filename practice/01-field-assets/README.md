@@ -21,12 +21,12 @@ The three states are defined in [Constitution Part I](../../theory/01-foundation
 | State | Your question | Asset |
 |---|---|---|
 | **Market** | How long is this deal's friction vector, and where does it point? | [Deal Triage Calculator](./deal-triage-calculator.md) |
-| **Deal** (T0) | What do I not yet know about their environment? | [01. Contextual Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md) |
-| **Deal** (T0) | How does this implementation fail? | [02. Red Team Protocol](./ilg-motion/02-validation-red-team-protocol.md) |
-| **Deal** (T0) | Who commits what, and what happens when a stage fails? | [03. Mutual Implementation Plan](./ilg-motion/03-closing-mutual-implementation-plan.md) |
-| **Relationship** (T1+) | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./ilg-motion/04-sustaining-adoption-review.md) |
+| **Deal** (T0) | What do I not yet know about their environment? | [01. Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Deal** (T0) | How does this implementation fail? | [02. Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) |
+| **Deal** (T0) | Who commits what, and what happens when a stage fails? | [03. Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) |
+| **Relationship** (T1+) | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md) |
 
-The four ILG artifacts run in order and each gates the next. They are the implementation component's instruments, and the Deal Triage Calculator decides whether the implementation component is what this deal is paying for.
+The four the implementation artifacts run in order and each gates the next. They are the implementation component's instruments, and the Deal Triage Calculator decides whether the implementation component is what this deal is paying for.
 
 ---
 
@@ -36,10 +36,10 @@ Each directory holds the instruments for one component of the friction vector ra
 
 | Component | Run these when | Assets |
 |---|---|---|
-| **Implementation** | Level 15 or above and implementation-dominant, or a Hidden Structural deal at a lower level | [ilg-motion/](./ilg-motion/) — the four artifacts above |
-| **Search** | Level 15 or above and search-dominant | [slg-motion/01-education-led-motion.md](./slg-motion/01-education-led-motion.md) — deliberately thin, covering only where it meets the implementation chain |
-| **Consensus** | Level 15 or above and consensus-dominant | [consensus-friction-calculator.md](./consensus-friction-calculator.md), plus the stakeholder work inside the Blueprint and Red Team. **This set is the thinnest here**, and a deal routing to it is routing to a gap. |
-| **Any, at a short vector** | Level below 15 | [plg-motion/](./plg-motion/) — [order protocol](./plg-motion/01-velocity-standard-order-protocol.md), [prospect evaluation](./plg-motion/prospect-evaluation.md), [order form](./plg-motion/order-form.md) |
+| **Implementation** | Level 15 or above and implementation-dominant, or a Hidden Structural deal at a lower level | [implementation-motion/](./implementation-motion/) — the four artifacts above |
+| **Search** | Level 15 or above and search-dominant | [search-motion/01-education-motion.md](./search-motion/01-education-motion.md) — deliberately thin, covering only where it meets the implementation chain |
+| **Consensus** | Level 15 or above and consensus-dominant | [consensus-motion/](./consensus-motion/) — **nearly empty by design.** The directory documents what exists, what the incumbent practice is, and what an instrument here would have to do. A deal routing to it is routing to a gap. |
+| **Any, at a short vector** | Level below 15 | [turnkey-motion/](./turnkey-motion/) — [order protocol](./turnkey-motion/01-standard-order-protocol.md), [prospect evaluation](./turnkey-motion/prospect-evaluation.md), [order form](./turnkey-motion/order-form.md) |
 
 A vector with no component at half of effective cost is mixed, and the instruction is to run the top two in proportion rather than pick the nearest name.
 
@@ -53,7 +53,7 @@ These serve whichever state you are in rather than sitting at one point in the s
 |---|---|
 | [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md) | Tests whether a signal mechanism satisfies the four Friction Allocation Principles from Axiom II. Use when designing an artifact, diagnosing a failing signal, or evaluating a channel. |
 | [Costly Signal Discovery Scripts](./costly-signal-discovery-scripts.md) | The escalating ladder of asks that converts stated interest into evidenced commitment. Run during Blueprint discovery. |
-| [ILG Deal Calibration Checklist](./ilg-deal-calibration-checklist.md) | Pre-close self-audit for the AE and SE, carrying every mandatory-veto condition so the deal team meets it before the manager does. |
+| [Structural Deal Calibration Checklist](./structural-deal-calibration-checklist.md) | Pre-close self-audit for the AE and SE, carrying every mandatory-veto condition so the deal team meets it before the manager does. |
 
 ---
 
@@ -73,6 +73,6 @@ The three map onto the Three Sales Levers from Axiom II. The scorecard says how 
 
 ## Related
 
-- **Theory:** [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) for the axioms, [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) for why each motion fits where.
+- **Theory:** [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) for the axioms, [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) for why each motion fits where.
 - **Manager tools:** [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) carries the forecast questions and the commit rule.
 - **Before modifying any asset here:** [02-cfir-field-mapping.md](../../theory/01-foundation/02-cfir-field-mapping.md) says which research construct each section operationalizes.

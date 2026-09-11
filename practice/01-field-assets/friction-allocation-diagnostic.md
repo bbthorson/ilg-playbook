@@ -80,9 +80,9 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 | $5M ERP deal | 30-min discovery call | Wildly under-frictioned |
 | $50K SaaS deal | Three-month paid pilot | Over-frictioned |
 | $5M ERP deal | Three-month paid pilot | Proportional |
-| Buyer asks for pilot/POC at any stake | Anything less than ILG motion | Under-frictioned (override applies — see [Deal Triage Calculator](./deal-triage-calculator.md)) |
+| Buyer asks for pilot/POC at any stake | Anything less than implementation-led motion | Under-frictioned (override applies — see [Deal Triage Calculator](./deal-triage-calculator.md)) |
 
-**Common violations.** A Structural deal sold with PLG-grade signals (under-frictioned). A Turnkey deal sold with Structural-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
+**Common violations.** A Structural deal sold with Turnkey-grade signals (under-frictioned). A Turnkey deal sold with Structural-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
 
 **Fix.** Match signal weight to stakes. The [Deal Triage Calculator](./deal-triage-calculator.md) returns a level and a direction. The signal's weight should scale to the level, and the component it targets should match the direction.
 

@@ -182,7 +182,7 @@ The modifier is capped so that $F_{implementation}$ does not exceed 10.
 
 **Who codified the workflow is the question that predicts the count.** A workflow codified by a regulator converges across buyers, which is how mature Turnkey categories form. A workflow codified by the buyer diverges from every other buyer, and it diverges more the longer it has been in place. Both are well-defined workflows and they route to opposite motions.
 
-**What a demonstration can and cannot show.** Misfit runs across six domains: functionality, data, usability, role, control, and organizational culture. A product demonstration reaches the first two. The remaining four surface during implementation unless discovery goes looking for them, which is what the [Contextual Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md) is for.
+**What a demonstration can and cannot show.** Misfit runs across six domains: functionality, data, usability, role, control, and organizational culture. A product demonstration reaches the first two. The remaining four surface during implementation unless discovery goes looking for them, which is what the [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) is for.
 
 ---
 
@@ -221,16 +221,16 @@ $$\hat{F}_k = \frac{F_k (1 + \hat{\Delta}_k)}{\sum_j F_j (1 + \hat{\Delta}_j)}$$
 | Condition | Route |
 |---|---|
 | Step 0 returned Chaos Trap | Stop. Consulting or a paid definition workshop. |
-| The buyer asked for a pilot or proof of concept | Structural, implementation-dominant, whatever was counted. A buyer requesting a pilot is reporting Structural-level perceived risk, and pilots are governed by the [Red Team Protocol](./ilg-motion/02-validation-red-team-protocol.md). |
+| The buyer asked for a pilot or proof of concept | Structural, implementation-dominant, whatever was counted. A buyer requesting a pilot is reporting Structural-level perceived risk, and pilots are governed by the [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md). |
 
 **Then the vector.**
 
 | Level | Direction | Run |
 |---|---|---|
-| Turnkey | Any | Velocity instruments. [Standard order protocol](./plg-motion/01-velocity-standard-order-protocol.md), [prospect evaluation](./plg-motion/prospect-evaluation.md), [order form](./plg-motion/order-form.md). |
-| Structural | Search-dominant | Search instruments. [Education-led motion](./slg-motion/01-education-led-motion.md), reference architectures, category definition, channel work. |
-| Structural | Consensus-dominant | Consensus instruments. Stakeholder mapping from the [Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md), then the [Red Team](./ilg-motion/02-validation-red-team-protocol.md) workshop, scored by the [Consensus Friction Calculator](./consensus-friction-calculator.md). **This instrument set is the thinnest in the repository.** See the note below. |
-| Structural | Implementation-dominant | Implementation instruments in sequence. [Blueprint](./ilg-motion/01-discovery-contextual-blueprint.md) → [Red Team](./ilg-motion/02-validation-red-team-protocol.md) → [MIP](./ilg-motion/03-closing-mutual-implementation-plan.md) → [Adoption Review](./ilg-motion/04-sustaining-adoption-review.md). |
+| Turnkey | Any | Velocity instruments. [Standard order protocol](./turnkey-motion/01-standard-order-protocol.md), [prospect evaluation](./turnkey-motion/prospect-evaluation.md), [order form](./turnkey-motion/order-form.md). |
+| Structural | Search-dominant | Search instruments. [Education-led motion](./search-motion/01-education-motion.md), reference architectures, category definition, channel work. |
+| Structural | Consensus-dominant | Consensus instruments. Stakeholder mapping from the [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md), then the [Red Team](./implementation-motion/02-validation-red-team-protocol.md) workshop, scored by the [Consensus Friction Calculator](./consensus-friction-calculator.md). **This instrument set is the thinnest in the repository.** See the note below. |
+| Structural | Implementation-dominant | Implementation instruments in sequence. [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) → [Red Team](./implementation-motion/02-validation-red-team-protocol.md) → [MIP](./implementation-motion/03-closing-mutual-implementation-plan.md) → [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
 | Structural | Mixed | Run the top two components in proportion, heaviest first. Do not pick one and call it the motion. |
 
 ### The governance form
@@ -241,7 +241,7 @@ Read it off level and frequency together. It answers a different question from t
 |---|---|---|---|
 | Turnkey | Any | **Market** | Standard terms, published pricing, no relationship apparatus. |
 | Structural | One-shot | **Trilateral** | Safeguards from outside the pair. Fixed scope, external acceptance criteria, escrow or arbitration, a named third party who adjudicates. |
-| Structural | Recurrent | **Bilateral** | A [Mutual Implementation Plan](./ilg-motion/03-closing-mutual-implementation-plan.md). Mutual commitments, staged gates, symmetric consequence. Each repetition safeguards the next. |
+| Structural | Recurrent | **Bilateral** | A [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md). Mutual commitments, staged gates, symmetric consequence. Each repetition safeguards the next. |
 | Structural | Continuous | **Bilateral, watching for unified** | The MIP still applies. Also ask what the buyer's build alternative now costs, because rising specificity on a continuous relationship eventually makes integrating beat any contract you can write. |
 
 > [!WARNING]
@@ -262,7 +262,7 @@ Read it off level and frequency together. It answers a different question from t
 **What it does not buy: honesty.** A count can be manipulated, and a sales leader who wants a deal routed to a velocity motion can undercount every component. Three things make that harder than manipulating a rating, and none of them makes it impossible.
 
 1. **Every count is a list.** The instrument asks for the list first and the number second. A disputed rating is an argument about judgment. A disputed count is an argument about whether a named system is on a list, which one party can lose.
-2. **The counts are re-taken after the fact.** At the [Adoption Review](./ilg-motion/04-sustaining-adoption-review.md), count the integration points, changed workflows, and exception paths that actually existed. Record **Count Variance** as the difference. A rep who scored 3 and delivered against 11 has a number attached to that, and the manager sees the pattern across a book long before any single deal proves it.
+2. **The counts are re-taken after the fact.** At the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md), count the integration points, changed workflows, and exception paths that actually existed. Record **Count Variance** as the difference. A rep who scored 3 and delivered against 11 has a number attached to that, and the manager sees the pattern across a book long before any single deal proves it.
 3. **Both directions cost something.** Inflating counts raises the level, which pulls the deal into manager review and heavier apparatus. Deflating them routes to a velocity motion and produces the post-signature failure Axiom I names, which [vested commission](../02-internal-ops/03-incentives-vested-commission.md) already attaches to compensation. Neither direction is free, which is the Axiom III condition this instrument needs to satisfy and the reason the comp structure is not optional alongside it.
 
 **What it also does not buy: measurement.** These are counts of real things converted to scores by chosen bands. The counts are observations and the bands are not. Read the level as a comparison between deals in your own book, never as a quantity.
@@ -335,7 +335,7 @@ Re-score at every artifact boundary and keep the old rows. The sequence of direc
 
 - **Theory:** [TCG Constitution, Axiom I](../../theory/01-foundation/00-tcg-constitution.md) supplies level and direction. [Axiom II](../../theory/01-foundation/00-tcg-constitution.md) supplies the per-component amplification this instrument feeds.
 - **Derivation:** [06-friction-vector.md](../../theory/01-foundation/06-friction-vector.md) is why the instrument emits a vector rather than a label.
-- **Motion framing:** [01-sales-motion-comparison.md](../../theory/01-foundation/01-sales-motion-comparison.md) maps the named motions onto regions of the vector space.
+- **Motion framing:** [01-motion-taxonomy.md](../../theory/01-foundation/01-motion-taxonomy.md) maps the named motions onto regions of the vector space.
 - **Functional forms:** [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) sections 2.4 and 3.1 consume these counts.
 - **Deeper implementation gap:** [Bilateral Asymmetry Scorecard](../02-internal-ops/04-incentives-asymmetry-scorecard.md) supersedes this instrument's provisional implementation gap once both halves are scored.
 - **Manager review:** Phase 1 of [02-governance-review-checklist.md](../02-internal-ops/02-governance-review-checklist.md) validates the counts on every Structural deal.

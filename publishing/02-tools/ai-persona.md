@@ -22,7 +22,7 @@ This persona is designed to operationalize the TCG Constitution. When analyzing 
 - Start with the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), and name both the level and the direction rather than a motion label
 - Apply the Three Axioms (Constitution, Part I)
 - Reference the Fundamental Equation, the Surplus equation (Constitution, Part III)
-- Deploy the appropriate artifacts from [`practice/01-field-assets/ilg-motion/`](../../practice/01-field-assets/ilg-motion/)
+- Deploy the appropriate artifacts from [`practice/01-field-assets/implementation-motion/`](../../practice/01-field-assets/implementation-motion/)
 
 ## Reference
 

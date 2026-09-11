@@ -33,9 +33,9 @@ The State column is the framework's primary index. A practitioner arrives holdin
 
 | State | The question it answers | Where the answer lives |
 |---|---|---|
-| **Market** | How long is the friction vector, and where does it point? | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), [06-friction-vector.md](./06-friction-vector.md), [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) |
-| **Deal** (T0) | What must be true, and what must the seller supply, before signature? | [Contextual Blueprint](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) → [Red Team](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md) → [MIP](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md) |
-| **Relationship** (T1+) | Does the surplus survive, and can a competitor take it? | [Sustaining Adoption Review](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
+| **Market** | How long is the friction vector, and where does it point? | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), [06-friction-vector.md](./06-friction-vector.md), [01-motion-taxonomy.md](./01-motion-taxonomy.md) |
+| **Deal** (T0) | What must be true, and what must the seller supply, before signature? | [Contextual Blueprint](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) → [Red Team](../../practice/01-field-assets/implementation-motion/02-validation-red-team-protocol.md) → [MIP](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) |
+| **Relationship** (T1+) | Does the surplus survive, and can a competitor take it? | [Sustaining Adoption Review](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
 
 **Each axiom has a home state, and none is confined to it.** Axiom II runs past signature, where $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ governs how fast an incumbent's advantage erodes, and which component it erodes in. Axiom III runs at T0, because the MIP is signed at close. Axiom I recurs whenever a category commoditizes and the motion must be re-scored. Treat the mapping as where each axiom does most of its work, not as a partition.
 
@@ -67,7 +67,7 @@ Each axiom carries one figure, plotting the equation stated under that axiom. Ev
 >
 > *Origin: Coase (1937). Using the price mechanism is itself costly.*
 
-**Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs. Williamson operationalized this through *asset specificity*, the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the ILG artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Turnkey deal does not need a Blueprint.
+**Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs. Williamson operationalized this through *asset specificity*, the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the the implementation artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Turnkey deal does not need a Blueprint.
 
 **Who bears the specificity (Klein, Crawford and Alchian).** Exposure follows the investment rather than the invoice. Whoever sinks capital that cannot be redeployed is the exposed party, whichever side of the transaction they sit on. Williamson's account is usually read from the buyer's side because the buyer is usually the one making the specific investment. That reading fails for a forward-deployed motion, where the seller commits engineering into the buyer's environment before signature and therefore holds the exposure first. The measure of what is at stake is the appropriable quasi-rent, not the hours worked, and the seller-side model is [05-seller-surplus-model.md](./05-seller-surplus-model.md). Research is in [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md).
 
@@ -471,7 +471,7 @@ The equation is a diagnostic, not a forecast. When a deal stalls, walk through i
 | I | Under-frictioned Structural deal, pre-signature | Level above threshold, treated with velocity motion → buyer builds internally |
 | I | Under-frictioned Structural deal, post-signature | Same cause, easy commercial path → buyer signs, fails to deploy, and churns |
 | I | Mis-composed deal | Level read correctly, direction misread → the motion attacks a cost that is not binding |
-| I | Over-frictioned Turnkey deal | Level below threshold, treated with ILG motion → buyer chooses competitor |
+| I | Over-frictioned Turnkey deal | Level below threshold, treated with implementation-led motion → buyer chooses competitor |
 | II | Cheap talk | Signal violates Single Crossing → no $\Delta_A$ reduction |
 | II | Misallocated friction | Receiver bears cost → babbling equilibrium |
 | II | Akerlof saturation | $\Delta_A > \Delta_A^*$ → buyer exits market |
@@ -508,9 +508,9 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 
 **v16.0.** Axiom I is restated. Two claims were fused in one sentence: that the sum of the three costs picks the motion, and that it sets the Turnkey and Structural boundary. Only the second holds. A deal weighted toward search takes a different motion from one of identical total weighted toward implementation, which is why the Deal Triage Calculator has always needed market stage as a separate axis the axiom did not mention. Composition now selects the motion and level now sets the boundary, stated as two sentences that can be cited separately. The axiom also now names which party bears the asset specificity, since exposure follows whoever sinks the non-redeployable investment, and in a forward-deployed motion that is the seller before signature. The claim that the three components arise independently is withdrawn: they arise from distinct conditions, which is what makes the decomposition useful, but they are not statistically independent. A third failure mode, Mis-composed, covers a correctly measured level with a misread dominant component. No equation changed.
 
-**v15.0.** Structural pass, no change to any axiom, equation, or derivation. Part I's Scale column is renamed **State** and promoted from a table cell to the framework's primary index, with the three states (Market, Deal at T0, Relationship at T1+) each mapped to the question it answers and the artifacts that answer it. The mapping is stated as a primary assignment rather than a partition, since Axiom II runs past signature and Axiom III runs at close. Part II's Clarifying Concepts tier is removed: seven of its nine entries restated a concept that already had a dedicated research file and a glossary row pointing at it, making the Constitution a third home for the same definition. Three Transaction Costs restated Axiom II's own mechanism paragraph, and the $F_{search}$ split is stated in [01-sales-motion-comparison.md](./01-sales-motion-comparison.md). Market States moves to that same document, where motion-to-market mapping belongs. Part IV's Organizational Corollary moves to [practice/02-internal-ops/07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), since a variable-to-department mapping is operational content by the Constitution's own rule. Nothing was deleted without a surviving canonical home.
+**v15.0.** Structural pass, no change to any axiom, equation, or derivation. Part I's Scale column is renamed **State** and promoted from a table cell to the framework's primary index, with the three states (Market, Deal at T0, Relationship at T1+) each mapped to the question it answers and the artifacts that answer it. The mapping is stated as a primary assignment rather than a partition, since Axiom II runs past signature and Axiom III runs at close. Part II's Clarifying Concepts tier is removed: seven of its nine entries restated a concept that already had a dedicated research file and a glossary row pointing at it, making the Constitution a third home for the same definition. Three Transaction Costs restated Axiom II's own mechanism paragraph, and the $F_{search}$ split is stated in [01-motion-taxonomy.md](./01-motion-taxonomy.md). Market States moves to that same document, where motion-to-market mapping belongs. Part IV's Organizational Corollary moves to [practice/02-internal-ops/07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), since a variable-to-department mapping is operational content by the Constitution's own rule. Nothing was deleted without a surviving canonical home.
 
-**v14.0.** Retired the "Bridge" and "Toaster" deal analogies in favor of the 2x2 Deal Archetype Matrix. Deals are now canonically classified as **Turnkey Deals** ($k \le 9$, low friction/specificity, velocity motion) vs. **Structural Deals** ($k \ge 10$, high friction/specificity, ILG motion) across category legibility. Core axioms, mathematical content, and derivations unchanged.
+**v14.0.** Retired the "Bridge" and "Toaster" deal analogies in favor of the 2x2 Deal Archetype Matrix. Deals are now canonically classified as **Turnkey Deals** ($k \le 9$, low friction/specificity, velocity motion) vs. **Structural Deals** ($k \ge 10$, high friction/specificity, implementation-led motion) across category legibility. Core axioms, mathematical content, and derivations unchanged.
 
 **v13.3.** Editorial pass, no change to any axiom or equation. Axiom I's statement is tightened to three sentences. The Three Sales Levers move from Axiom II's statement in Part I to Part II as a primary derivation, which is where operational consequences live. Signposting sentences that restated a document relationship in reverse ("the why / the how") are removed here and in the glossary and reading guide.
 
@@ -531,7 +531,7 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 ## Related
 
 **Sibling theory:**
-- [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — When to use ILG vs. PLG vs. SLG.
+- [01-motion-taxonomy.md](./01-motion-taxonomy.md) — When to use the motion taxonomy.
 - [02-cfir-field-mapping.md](./02-cfir-field-mapping.md) — How CFIR constructs map to the artifacts.
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms behind the variables named here, and the derivation reconciling the two cost representations.
 - [04-glossary-and-notation.md](./04-glossary-and-notation.md) — Canonical index of every symbol used here, plus disambiguation of the pairs that collide ($\delta$ vs $\delta_{discount}$, $\gamma$ vs $\gamma_r$, $\Delta_A$ vs $\hat{\Delta}_A$).
@@ -544,10 +544,10 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 
 **Field operationalization:**
 - Triage gate → [deal-triage-calculator.md](../../practice/01-field-assets/deal-triage-calculator.md)
-- Blueprint → [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md)
-- Red Team → [02-validation-red-team-protocol.md](../../practice/01-field-assets/ilg-motion/02-validation-red-team-protocol.md)
-- MIP → [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/ilg-motion/03-closing-mutual-implementation-plan.md)
-- Handoff Rule and Reputation Depreciation → [04-sustaining-adoption-review.md](../../practice/01-field-assets/ilg-motion/04-sustaining-adoption-review.md)
+- Blueprint → [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md)
+- Red Team → [02-validation-red-team-protocol.md](../../practice/01-field-assets/implementation-motion/02-validation-red-team-protocol.md)
+- MIP → [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md)
+- Handoff Rule and Reputation Depreciation → [04-sustaining-adoption-review.md](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md)
 
 **Org-level enforcement:**
 - Setup → [00-setup-implementation-guide.md](../../practice/02-internal-ops/00-setup-implementation-guide.md)

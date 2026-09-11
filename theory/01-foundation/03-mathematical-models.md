@@ -300,7 +300,7 @@ Until then, treat every output as a structured comparison between deals rather t
 ## Related
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Axiom II carries both cost representations reconciled in Section 1.
-- [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — Motion selection, which consumes the Deal Triage Calculator score rather than these models.
+- [01-motion-taxonomy.md](./01-motion-taxonomy.md) — Motion selection, which consumes the Deal Triage Calculator score rather than these models.
 - [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
 - [Consensus Friction Calculator](../../practice/01-field-assets/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
 - [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) — Applies staged uncertainty decay to MIP gate design.

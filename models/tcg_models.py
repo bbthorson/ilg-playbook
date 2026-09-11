@@ -660,7 +660,7 @@ def friction_allocation_ratio(h_pre, h_post):
     The share of total implementation effort spent before signature. Reference
     band 0.60 to 0.75. Below 0.60 the organization is discovering the buyer's
     environment after committing to a delivery date. Above 0.75, either a
-    Turnkey deal received ILG treatment or pre-sale work is being performed
+    Turnkey deal received implementation-chain treatment, or pre-sale work is being performed
     that the buyer never asked for.
 
     FAR is blind to scale. An engagement spending 10 pre-sale and 5 post-sale
@@ -1422,12 +1422,14 @@ def triage(workflow_maturity,
                        "direction disagree, which is the under-frictioned "
                        "failure mode the level alone cannot see.")
         return TriageResult(
-            route="velocity", level=level, deal_class=klass,
+            route="turnkey", level=level, deal_class=klass,
             direction=vector.direction, dominant=vector.dominant,
             vector=vector, frequency=frequency,
             governance=governance_form(klass, frequency), flags=tuple(flags),
             reason="Turnkey level: the deal cannot carry heavy apparatus, so "
-                   "the gate structure would cost more than it unlocks.")
+                   "the gate structure would cost more than it unlocks. "
+                   "Direction is not asked below the boundary, because every "
+                   "share of a small number is still small.")
 
     if vector.dominant == "implementation" and steps == 0 and modifier_governs:
         flags.append("possible-over-frictioning")

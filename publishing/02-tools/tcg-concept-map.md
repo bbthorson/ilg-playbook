@@ -30,12 +30,12 @@ Every dominant B2B sales methodology has been an evolutionary response to the sh
 
 ### The Three Market Phases
 
-> **These are eras, not a routing taxonomy.** Constitution v17.0 retired Nascent, Efficient and Saturated as a way of deciding which motion a deal takes, because they were a proxy for a friction profile that is now measured directly. The historical claim below is unaffected: these are the periods in which each cost came to dominate, which is why the ILG motion arrived when it did. Do not route a live deal off this table. Route off the direction the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) returns.
+> **These are eras, not a routing taxonomy.** Constitution v17.0 retired Nascent, Efficient and Saturated as a way of deciding which motion a deal takes, because they were a proxy for a friction profile that is now measured directly. The historical claim below is unaffected: these are the periods in which each cost came to dominate, which is why the implementation-led motion arrived when it did. Do not route a live deal off this table. Route off the direction the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) returns.
 | Phase | Era | Dominant Cost | Buyer's Question | GTM Motion |
 |-------|-----|---------------|-----------------|------------|
-| **Nascent** | 1950s-1980s | Search | "What solutions exist?" | Sales-Led Growth (SLG) |
-| **Efficient** | 1990s-2010s | Evaluation | "Does this actually work?" | Product-Led Growth (PLG) |
-| **Saturated & Complex** | 2010s-Present | Consensus + Implementation | "Can we make this work *here*?" | Transaction Cost Growth (TCG) |
+| **Nascent** | 1950s-1980s | Search, category legibility | "What solutions exist?" | Education, category creation |
+| **Efficient** | 1990s-2010s | Search, fit verification | "Does this actually work?" | Trial and self-service |
+| **Saturated & Complex** | 2010s-Present | Consensus and implementation | "Can we make this work *here*?" | The instrument sets in `practice/` |
 
 ### The Reflexive Loop (How We Got Here)
 1. **The SaaS Paradox**: Subscription economics shifted value to NRR, but sales incentives stayed focused on acquisition → misaligned incentives → proliferation of "band-aid" solutions
@@ -54,7 +54,7 @@ Every dominant B2B sales methodology has been an evolutionary response to the sh
 
 ---
 
-## Layer 3: The ILG Playbook (Implementation Science Applied to Sales)
+## Layer 3: The implementation-led playbook (Implementation Science Applied to Sales)
 
 ### Theoretical Basis: PARIHS Framework
 **Successful Implementation = f(Evidence, Context, Facilitation)**
@@ -63,7 +63,7 @@ Every dominant B2B sales methodology has been an evolutionary response to the sh
 - Clinical and efficacy data, performance benchmarks
 - Robust case studies with quantifiable ROI
 - End-user experience data (adoption rates, satisfaction, workflow improvements)
-- **Difference from value selling**: In ILG, evidence isn't a sales tool — it's the foundation. Without it, you don't move forward.
+- **Difference from value selling**: In the implementation-led motion, evidence isn't a sales tool — it's the foundation. Without it, you don't move forward.
 
 ### C = Context (The Diagnostic Phase → Contextual Blueprint)
 Replaces superficial qualification (BANT, MEDDIC) with deep organizational assessment:
@@ -105,7 +105,7 @@ Replaces superficial qualification (BANT, MEDDIC) with deep organizational asses
 - **The Certification Paradox**: Compliance is necessary but insufficient. Certification gives permission to play; implementation capacity determines survival.
 - **The lesson**: In high-asset-specificity markets, buyers purchase risk mitigation, not technology
 
-### 4C: Epic as the ILG Case Study
+### 4C: Epic as the implementation-led case study
 - Epic didn't win on technology — they won on implementation
 - Military-grade implementation methodology (100+ person teams, months on-site)
 - Created profound human and procedural asset specificity
@@ -149,7 +149,7 @@ The companies that will win are the ones that understood implementation capacity
 
 ### Speaking / Podcast Talking Points
 - The Potential Well Curve is inherently visual and explainable in 5-10 minutes
-- The SLG → PLG → ILG evolution is a natural conference talk arc
+- The way a category's dominant cost migrates over time is a natural conference talk arc
 - Healthcare-specific applications (ACCESS, information blocking) work for industry events
 - **Cadence**: 1 speaking opportunity per quarter (build toward)
 - **Purpose**: Reach new audiences, establish presence beyond written content

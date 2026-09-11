@@ -41,7 +41,7 @@ ignorecase: false
 # Retired directory (v15.0). practice/03-learning-plan/ was removed: an
 # LLM-facilitated curriculum restating theory/ in parallel, with nothing linking
 # a module to the axiom it taught, so an axiom revision could not reach it. The
-# 2x2 matrix in module-0 had already drifted from 01-sales-motion-comparison.md.
+# 2x2 matrix in module-0 had already drifted from 01-motion-taxonomy.md.
 # Superseded Axiom I description (v16.0). The axiom name did not change, so
 # nothing here catches a paragraph that uses every current term while describing
 # the pre-v16 version. These two phrases are the load-bearing ones.
@@ -85,7 +85,26 @@ ignorecase: false
 # scoped to the shapes that could only ever have meant the framework, which is
 # the same trade the v15.0 and v17.0 rows make. A reviewer still has to read
 # descriptions, not just names.
+# Motion taxonomy (v1.0). The three inherited names were named on three
+# different axes: Product-Led after the instrument, Sales-Led after the actor,
+# Implementation-Led after the cost component. Only the last names a cost,
+# which is why Search-Led Growth and Consensus-Led Growth had nowhere to sit.
+# Every motion is now named after the cost it spends to reduce, and the short
+# vector takes the deal class's own word.
+#
+# The acronyms are retired rather than rebased, because SLG would otherwise
+# mean Search-Led here and Sales-Led everywhere else. 09-motion-vocabulary.md
+# carries the map, so the incumbent terms stay findable without being live.
 swap:
+  ILG motion: implementation-led motion
+  PLG motion: Turnkey motion
+  SLG motion: search-led motion
+  ilg-motion: implementation-motion
+  plg-motion: turnkey-motion
+  slg-motion: search-motion
+  Implementation-Led Growth \(ILG\): "implementation-led motion (the framework is Transaction Cost Growth)"
+  Product-Led Growth \(PLG\): "the Turnkey motion, though the two are not equal; see 09-motion-vocabulary.md section 3"
+  Sales-Led Growth \(SLG\): "the search-led motion, which is wider; see 09-motion-vocabulary.md section 4"
   ILG Constitution: TCG Constitution
   Constitution of Implementation-Led Growth: Constitution of Transaction Cost Growth
   ILG framework: TCG framework
@@ -143,8 +162,8 @@ swap:
   Bridge deals: Structural deals
   bridge deal: structural deal
   bridge deals: structural deals
-  Bridge motion: ILG motion (Structural deal)
-  bridge motion: ILG motion (structural deal)
+  Bridge motion: implementation-led motion (Structural deal)
+  bridge motion: implementation-led motion (structural deal)
   Bridge vs. Toaster: Structural vs. Turnkey
   bridge vs. toaster: structural vs. turnkey
   Bridge and Toaster: Structural and Turnkey

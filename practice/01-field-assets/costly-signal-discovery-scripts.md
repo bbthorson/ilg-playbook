@@ -113,6 +113,6 @@ A buyer who declines every rung has not failed qualification. They have complete
 
 - [costly-signals.md](../../theory/02-research/costly-signals.md) — Spence, Akerlof, and the Single Crossing Property behind every ask here.
 - [friction-allocation-diagnostic.md](./friction-allocation-diagnostic.md) — Test any new ask against the four principles before adding it to the ladder.
-- [01-discovery-contextual-blueprint.md](./ilg-motion/01-discovery-contextual-blueprint.md) — Where rungs 1 through 3 run, and where the Reciprocity Gate is recorded.
+- [01-discovery-contextual-blueprint.md](./implementation-motion/01-discovery-contextual-blueprint.md) — Where rungs 1 through 3 run, and where the Reciprocity Gate is recorded.
 - [deal-triage-calculator.md](./deal-triage-calculator.md) — Step 0 workflow maturity, which rung 4 is designed to verify independently.
-- [ilg-deal-calibration-checklist.md](./ilg-deal-calibration-checklist.md) — Pre-close audit confirming the ladder was actually run.
+- [structural-deal-calibration-checklist.md](./structural-deal-calibration-checklist.md) — Pre-close audit confirming the ladder was actually run.

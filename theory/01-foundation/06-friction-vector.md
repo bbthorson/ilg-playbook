@@ -57,7 +57,7 @@ This resolves a question the current framing cannot answer. Asking whether conse
 
 ### 2.1 The three sub-costs of search
 
-$F_{search}$ carries three distinct blockers, and [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) already separates the first and third. The middle one is new here.
+$F_{search}$ carries three distinct blockers, and [01-motion-taxonomy.md](./01-motion-taxonomy.md) already separates the first and third. The middle one is new here.
 
 | Blocker | Instrument |
 |---|---|
@@ -99,10 +99,10 @@ Named motions become regions of the space rather than members of a list.
 
 | Region | Signature | Name kept | State of the instruments |
 |---|---|---|---|
-| Short vector, any direction | Level below 15 | PLG, velocity | Present and thin |
-| Long, search-dominant | $\hat{F}_{search} \ge 0.50$ | SLG, education-led | Present and thin |
+| Short vector, any direction | Level below 15 | Turnkey | Present and thin |
+| Long, search-dominant | $\hat{F}_{search} \ge 0.50$ | Search-led | Present and thin |
 | Long, consensus-dominant | $\hat{F}_{consensus} \ge 0.50$ | Unnamed | Absent |
-| Long, implementation-dominant | $\hat{F}_{implementation} \ge 0.50$ | ILG | Present and developed |
+| Long, implementation-dominant | $\hat{F}_{implementation} \ge 0.50$ | Implementation-led | Present and developed |
 | Long, mixed | No component reaches 0.50 | Unnamed | Composed from the two above it |
 
 The dominance threshold of 0.50 is chosen, and a vector reaching no component's threshold is read as mixed rather than forced into the nearest label. The three motion names survive as names for regions. What does not survive is treating them as a list a deal is assigned to.
@@ -212,7 +212,7 @@ The remedy is [03-incentives-vested-commission.md](../../practice/02-internal-op
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies both quantities and Axiom II supplies the amplification derived here.
 - [07-governance-forms.md](./07-governance-forms.md) — The third quantity, frequency, and what the seller's market follows from.
-- [01-sales-motion-comparison.md](./01-sales-motion-comparison.md) — The named motions, mapped onto regions of this space.
+- [01-motion-taxonomy.md](./01-motion-taxonomy.md) — The named motions, mapped onto regions of this space.
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms for the components, and the calibration status that governs every number here.
 - [05-seller-surplus-model.md](./05-seller-surplus-model.md) — The seller's side of the transaction, which section 8 depends on.
 - [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Coase and Williamson, the source of the decomposition.

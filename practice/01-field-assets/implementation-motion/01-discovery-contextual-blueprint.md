@@ -131,7 +131,7 @@ We use this Blueprint to map your specific environment—your politics, your dat
 
 - **Green Light:** Catalyst is a "Crisis" \+ Skeptic is identified \+ Artifacts provided. \-\> *Move to Red Team Workshop.*  
 - **Yellow Light:** Catalyst is weak, but Champion is strong. \-\> *Assign "Homework" to Champion to quantify cost of status quo.*  
-- **Red Light:** "Graveyard" shows cultural toxicity \+ No Skeptic identified. \-\> *Disqualify or downgrade to Transactional (PLG) Lane.*
+- **Red Light:** "Graveyard" shows cultural toxicity \+ No Skeptic identified. \-\> *Disqualify, or downgrade to the Turnkey motion.*
 
 ---
 

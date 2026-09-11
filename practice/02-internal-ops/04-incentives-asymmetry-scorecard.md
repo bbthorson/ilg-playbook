@@ -39,7 +39,7 @@ So a fully evidenced dimension scores 1 and a fully unevidenced one scores 5, wh
 
 ## Part 1: Seller Ignorance ($I_{seller}$)
 
-What we still do not know about their environment. The [Contextual Blueprint](../01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) is the instrument that reduces this half.
+What we still do not know about their environment. The [Contextual Blueprint](../01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) is the instrument that reduces this half.
 
 | Dimension | Items in scope | Evidence that counts |
 |---|---|---|
@@ -58,7 +58,7 @@ $$I_{seller} = \frac{1}{4}\sum_{k=1}^{4} S_k \qquad I_{seller} \in [1, 5]$$
 
 ## Part 2: Buyer Uncertainty ($I_{buyer}$)
 
-What they still do not know about us, the work, or their own exposure. The [Red Team Protocol](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md) is the instrument that reduces this half.
+What they still do not know about us, the work, or their own exposure. The [Red Team Protocol](../01-field-assets/implementation-motion/02-validation-red-team-protocol.md) is the instrument that reduces this half.
 
 | Dimension | Items in scope | Evidence that counts |
 |---|---|---|
@@ -130,6 +130,6 @@ The whole 1-to-5 presentation cancels. A deal where the seller has evidence for 
 - [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) — Axiom II defines the three component gaps. This card measures the implementation one.
 - [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) — Functional forms for $I_{seller}$ and $I_{buyer}$, the normalization rule, and the three-gap table in section 2.4.
 - [Deal Triage Calculator](../01-field-assets/deal-triage-calculator.md) — Emits the search and consensus gaps, and a provisional implementation gap this card supersedes.
-- [Contextual Blueprint](../01-field-assets/ilg-motion/01-discovery-contextual-blueprint.md) — Reduces $I_{seller}$.
-- [Red Team Protocol](../01-field-assets/ilg-motion/02-validation-red-team-protocol.md) — Reduces $I_{buyer}$.
+- [Contextual Blueprint](../01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) — Reduces $I_{seller}$.
+- [Red Team Protocol](../01-field-assets/implementation-motion/02-validation-red-team-protocol.md) — Reduces $I_{buyer}$.
 - [Deal Review Checklist](./02-governance-review-checklist.md) — Where this score enters the forecast call.
